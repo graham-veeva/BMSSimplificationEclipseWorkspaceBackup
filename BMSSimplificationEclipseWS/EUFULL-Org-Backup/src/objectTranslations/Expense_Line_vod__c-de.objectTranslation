@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ausgabenposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ausgabenpositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ausgabenposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ausgabenpositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ausgabenposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ausgabenpositionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ausgabenposition</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Ausgabenpositionen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action --></label>
+        <name>Action_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>CANCEL</masterLabel>
+            <translation>Stornieren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEW</masterLabel>
+            <translation>Neu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPDATE</masterLabel>
+            <translation><!-- UPDATE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zActual Amount in Requested Currency --></label>
+        <name>Actual_Amount_Requested_Currency1_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ist Betrag in Bestellwährung</label>
+        <name>Actual_Amount_Requested_Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- zActual Amount in Funding Currency --></label>
+        <name>Actual_Amount_in_Funding_Currency1_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ist Betrag in Bestellwährung</label>
+        <name>Actual_Requested_Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated by SAP in funding currency --></help>
+        <label>Ist Kosten</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Number --></label>
+        <name>Check_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- zCommitted Amount in Funding Currency --></label>
+        <name>Committed_Amount_Funding_Currency1_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Gebuchte Kosten</label>
+        <name>Committed_Amount_in_Requested_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Bestellwährung</label>
+        <name>Committed_Requested_Currency1_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Bestellwährung</label>
+        <name>Committed_Requested_Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated by SAP in funding currency --></help>
+        <label>Gebuchte Kosten</label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center --></label>
+        <name>Cost_Center_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Anzahl SAP Zeilen</label>
+        <name>Count_of_SAP_Lines_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Währung</label>
+        <name>Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Beschreibung</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Need</label>
+        <name>Event_Budget_vod__c</name>
+        <relationshipLabel>Ausgabenposition</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Activity</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Ausgabenposition</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ausgabendetail Zeilennr.</label>
+        <name>Expense_Detail_Line_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Geplante Kosten</label>
+        <name>Expense_Estimate_vod__c</name>
+        <relationshipLabel>Ausgabenschätzungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ausgabendetailname</label>
+        <name>Expense_Header_vod__c</name>
+        <relationshipLabel>Ausgabenposition</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ausgabenpositionsnr.</label>
+        <name>Expense_Line_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Kostenart Code</label>
+        <name>Expense_Type_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kostenartname</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kostenart</label>
+        <name>Expense_Type_vod__c</name>
+        <relationshipLabel>Ausgabentypen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help>Need Währung</help>
+        <label>Finanz. Währung</label>
+        <name>Funding_Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Stundenrate</label>
+        <name>Hourly_Rate_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung am</label>
+        <name>Last_Modified_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Material Group</label>
+        <name>MaterialGroup_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltungsdauer (Stunden)</label>
+        <name>Meeting_Time_Hours_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anzahl Personen</label>
+        <name>Number_Of_People_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- OriginatingSystemLineNumber --></label>
+        <name>OriginatingSystemLineNumber_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordneter Kostenart Code</label>
+        <name>Parent_Expense_Type_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordneter Kostenartname</label>
+        <name>Parent_Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zahlungsdatum</label>
+        <name>Payment_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Zahlungsdokumentnr.</label>
+        <name>Payment_Document_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Zahlungsart</label>
+        <name>Payment_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nachbereitungszeit</label>
+        <name>Post_Work_Hours_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Vorbereitungszeit</label>
+        <name>Pre_Work_Hours_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Document Number --></label>
+        <name>SAP_Document_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Reference Number --></label>
+        <name>SAP_Reference_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Indicator --></label>
+        <name>Sign_Indicator_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>+</masterLabel>
+            <translation><!-- + --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-</masterLabel>
+            <translation><!-- - --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Aufteilung Anzahl Personen</label>
+        <name>Split_Amount_Per_Person_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation>Bezahlt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Paid</masterLabel>
+            <translation>Teilbezahlt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid</masterLabel>
+            <translation>Unbezahlt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Textzeile</label>
+        <name>Text_Line_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Gesamt Festbetrag</label>
+        <name>Total_Fixed_Rate_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Gesamt Vorbereitung</label>
+        <name>Total_Pre_Work_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>WBS Element</label>
+        <name>WBSElement_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Cost Center (Kostenstelle) leer, dann wird WBS Element angezeigt und umgekehrt.</help>
+        <label><!-- WBS/Cost Center --></label>
+        <name>WBS_Cost_Center_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Expense_Type_vod --></label>
+        <name>zvod_Expense_Type_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Veranstaltungs-Ausgabenposition</label>
+        <name>Event_Expense_Line_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the Expense once it has been Requested. --></errorMessage>
+        <name>Cannot_Edit_Expense_Lines_Simple_HCPTS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The committed amount must be greater than zero to request a PO/Payment. --></errorMessage>
+        <name>Committed_Greater_than_0_to_request_PO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only enter actuals for Manual Payment Entry --></errorMessage>
+        <name>Only_Enter_Actuals_for_Manual_Payment</name>
+    </validationRules>
+</CustomObjectTranslation>

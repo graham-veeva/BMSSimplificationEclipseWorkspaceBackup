@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Besøgsfejl</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Besøgsfejl</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Besøgsfejl</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Besøgsfejl</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Besøgsfejl</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Besøgsfejl</value>
+    </caseValues>
+    <fields>
+        <label>Kunde</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>Besøgstidspunkt</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Besøgstype</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Årsag</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>Kundeadgang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>Besøg spærret</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>Objektadgang</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Bruger</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Besøgsfejl</relationshipLabel>
+    </fields>
+    <fields>
+        <label>XML-tekst</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <webLinks>
+        <label>Slet</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Løs</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

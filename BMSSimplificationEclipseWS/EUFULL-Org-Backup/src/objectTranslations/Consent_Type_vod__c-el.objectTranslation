@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Τύπος συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Τύποι συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Τύπο συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Τύπους συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Τύπου συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Τύπων συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Τύπε συναίνεσης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Τύποι συναίνεσης</value>
+    </caseValues>
+    <fields>
+        <label>Ετικέτα καναλιού</label>
+        <name>Channel_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πηγή καναλιού</label>
+        <name>Channel_Source_vod__c</name>
+    </fields>
+    <fields>
+        <help>Η διάρκεια είναι σε μήνες</help>
+        <label>Συναίνεση προσαρμογής διάρκειας</label>
+        <name>Consent_Custom_Duration_vod__c</name>
+    </fields>
+    <fields>
+        <label>Η συναίνεση λήγει σε</label>
+        <name>Consent_Expires_In_vod__c</name>
+        <picklistValues>
+            <masterLabel>Custom_Duration_vod</masterLabel>
+            <translation>Προσαρμογή διάρκειας</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Calendar_Year_vod</masterLabel>
+            <translation>Τέλος ημερολογιακού έτους</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Next_Calendar_Year_vod</masterLabel>
+            <translation>Τέλος επόμενου ημερολογιακού έτους</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One_Year_vod</masterLabel>
+            <translation>Ένα έτος</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Επικεφαλίδα συναίνεσης</label>
+        <name>Consent_Header_vod__c</name>
+        <relationshipLabel>Τύποι συναίνεσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Καθορισμένος τύπος συναίνεσης</label>
+        <name>Default_Consent_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Explicit_vod</masterLabel>
+            <translation>Opt in απαιτείται</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implicit_vod</masterLabel>
+            <translation>Opt in δεν απαιτείται</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Κείμενο αποποίησης ευθύνης</label>
+        <name>Disclaimer_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εμφάνιση παραγγελίας</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Διπλό Opt In</label>
+        <name>Double_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προτίμηση προϊόντος</label>
+        <name>Product_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_Content_Types_vod</masterLabel>
+            <translation>Τύπος όλου του περιεχομένου</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Lines_vod</masterLabel>
+            <translation>Όλες οι γραμμές</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Products_vod</masterLabel>
+            <translation>Όλα τα προϊόντα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My_Setup_vod</masterLabel>
+            <translation>Η ρύθμισή μου</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restrictive_My_Setup_vod</masterLabel>
+            <translation>Περιοριστικές Οι ρυθμίσεις μου</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Default_Consent_Text_vod --></label>
+        <name>zvod_Consent_Default_Consent_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Line_vod --></label>
+        <name>zvod_Consent_Line_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Signature_Capture_vod --></label>
+        <name>zvod_Signature_Capture_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <recordTypes>
+        <label>Approved Email</label>
+        <name>Approved_Email_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM</label>
+        <name>CLM_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

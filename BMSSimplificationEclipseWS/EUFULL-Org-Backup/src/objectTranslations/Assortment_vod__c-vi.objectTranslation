@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mặt Hàng</value>
+    </caseValues>
+    <fields>
+        <label>Nhóm Tài Khoản</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại Bản Ghi Tài Khoản</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Dược Khoa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Người Bán Sỉ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tất Cả Những Thứ Khác</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhóm Mặt Hàng</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày Kết Thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mã Ngoại</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại Bản Ghi Giám Sát Tồn Kho</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Giám Sát Tồn Kho</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Loại Bản Ghi Đơn Đặt Hàng</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Trực Tiếp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Chuyển</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ràng Buộc Sản Phẩm</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày Bắt Đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>Tên</nameFieldLabel>
+    <recordTypes>
+        <label>Mặt Hàng IM</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Mặt Hàng Quản Lý Đơn Đặt Hàng</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Ngày bắt đầu sau ngày kết thúc</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể hiển thị mục Tất Cả Các Phần Khác của một loại Mặt Hàng Ràng Buộc Sản Phẩm</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Xem Trước</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

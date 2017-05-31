@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Modelo de consentimento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modelos de consentimento</value>
+    </caseValues>
+    <fields>
+        <label>Data de entrada em vigor do calendário</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de conclusão</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limite de validade</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de validade</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Calendário</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Definindo data de término</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data de início</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do modelo</nameFieldLabel>
+    <recordTypes>
+        <label>Modelo de consentimento para recebimento de amostras</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>A data de entrada em vigor do calendário é obrigatória quando o tipo de validade é Calendário</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Campos obrigatórios ausentes</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>A data de conclusão não pode ser anterior à data de início</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

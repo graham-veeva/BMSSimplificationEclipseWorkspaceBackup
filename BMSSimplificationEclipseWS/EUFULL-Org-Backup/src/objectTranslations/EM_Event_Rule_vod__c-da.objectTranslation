@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Begivenhedsregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Begivenhedsregel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Begivenhedsregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Begivenhedsregler</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Begivenhedsregler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Begivenhedsregler</value>
+    </caseValues>
+    <fields>
+        <label>Kundedeltagerfelter</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>CLM-præsentation</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Begivenhedsregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kontaktdeltagerfelter</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Lande-override</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Begivenhedsregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>E-mailskabelon</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Begivenhedsregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Begivenhedskonfiguration</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Begivenhedsregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Eksternt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Filtertype</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Obligatorisk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Valgfri (fra som standard)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Valgfri (til som standard)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Materiale Type</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Materiale</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Begivenhed typer med brug af materialer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Online registreringsfelter</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kvalifikation</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Begivenhedsregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Søg udenfor mit område</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Talerfelter</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Brugerdeltagerfelter</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Walk in-felter</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Navn</nameFieldLabel>
+    <recordTypes>
+        <label>Deltagerfelter</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Materiale</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Online registreringsfelter</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Talerfelter</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Talerkvalifikation</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>felter som skal bruges for de folk der kommer</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>En enkelt regel kan ikke have både e-mailskabelon og CLM-præsentation populeret. Opret venligst separate regler for disse to artikler.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En enkelt regel kan ikke have både materiale og CLM-præsentation populeret. Opret venligst separate regler for disse to artikler.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En enkelt regel kan ikke både have Materiale og E-mailskabelon populeret. Opret venligst separate regler for disse to artikler.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

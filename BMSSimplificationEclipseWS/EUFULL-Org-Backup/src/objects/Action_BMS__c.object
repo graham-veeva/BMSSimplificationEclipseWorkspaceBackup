@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>BMS_Action_Default_View</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom object to store information related to activities to be completed by specific users.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_BMS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the account related to an action.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Actions</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Action_Date_BMS__c</fullName>
+        <description>Custom field to store the Action date.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Action Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Action_Name_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the name of an action.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Action Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Action_Type_BMS__c</fullName>
+        <description>VPRO - January 2012 - BMS Oncology Requirements &amp; Design: Custom field to capture the type action type.</description>
+        <externalId>false</externalId>
+        <label>Action Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Appropriate use</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dosing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Response Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Patient services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Confirm receipt of mailed voucher</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Confirm receipt of mailed MSS Enrollment Guide</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Address_BMS__c</fullName>
+        <description>VPRO - March 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the address associated with non-personal actions.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_To_BMS_CA__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Actions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Completion_Date_BMS__c</fullName>
+        <description>VPRO - January 2012 - BMS Oncology Requirements &amp; Design: Custom field created to allow users to enter the date they completed an action.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Completion Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture a description related to a specific activity.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Due_Date_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the due date of a given action.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Mail_Email_Type_BMS__c</fullName>
+        <description>VPRO - January 2012 - BMS Oncology Requirements &amp; Design: Custom field to capture the mail/email type for non-personal actions.</description>
+        <externalId>false</externalId>
+        <label>Mail/Email Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Product_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to a product related to an action.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Resources_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Resources</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Resource 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resource 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resource 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture if an action has been completed or not.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Completed</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visit - HCP Unresponsive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visit - HCP Unavailable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visit - HCP refused visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visit - HCP is not actively treating patients</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ZS_ID_BMS__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the related ZS identification number for a given action.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>ZS ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Action</label>
+    <listViews>
+        <fullName>All_Actions</fullName>
+        <columns>NAME</columns>
+        <columns>Account_BMS__c</columns>
+        <columns>Product_BMS__c</columns>
+        <columns>Description_BMS__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Status_BMS__c</columns>
+        <columns>Due_Date_BMS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Actions</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>My_Actions_BMS</fullName>
+        <columns>NAME</columns>
+        <columns>Account_BMS__c</columns>
+        <columns>Product_BMS__c</columns>
+        <columns>Description_BMS__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Status_BMS__c</columns>
+        <columns>Due_Date_BMS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Actions</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Actions_NC_BMS</fullName>
+        <columns>NAME</columns>
+        <columns>Account_BMS__c</columns>
+        <columns>Product_BMS__c</columns>
+        <columns>Description_BMS__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Status_BMS__c</columns>
+        <columns>Due_Date_BMS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status_BMS__c</field>
+            <operation>equals</operation>
+            <value>Not Completed</value>
+        </filters>
+        <label>My Actions - Not Completed</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Territory_Actions_BMS</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account_BMS__c</columns>
+        <columns>Product_BMS__c</columns>
+        <columns>Description_BMS__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>OWNER.FIRST_NAME</columns>
+        <columns>Address_BMS__c</columns>
+        <columns>Status_BMS__c</columns>
+        <columns>Due_Date_BMS__c</columns>
+        <columns>Completion_Date_BMS__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status_BMS__c</field>
+            <operation>equals</operation>
+            <value>Not Completed</value>
+        </filters>
+        <filters>
+            <field>Product_BMS__c</field>
+            <operation>equals</operation>
+            <value>Yervoy</value>
+        </filters>
+        <label>Territory Actions Yervoy not completed</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <nameField>
+        <displayFormat>ACT-{00000000}</displayFormat>
+        <label>Action ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Actions</pluralLabel>
+    <recordTypes>
+        <fullName>Actions</fullName>
+        <active>true</active>
+        <description>Use of Actions to create Personal and Non Personal actions for Peers</description>
+        <label>Actions</label>
+        <picklistValues>
+            <picklist>Action_Type_BMS__c</picklist>
+            <values>
+                <fullName>Appropriate use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed MSS Enrollment Guide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed voucher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dosing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Response Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mail_Email_Type_BMS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resources_BMS__c</picklist>
+            <values>
+                <fullName>Resource 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Completed</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Non_Personal_Actions_BMS</fullName>
+        <active>true</active>
+        <description>Non-Personal Action Requests</description>
+        <label>Non-Personal Actions</label>
+        <picklistValues>
+            <picklist>Action_Type_BMS__c</picklist>
+            <values>
+                <fullName>Appropriate use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed MSS Enrollment Guide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed voucher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dosing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Response Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mail_Email_Type_BMS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resources_BMS__c</picklist>
+            <values>
+                <fullName>Resource 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP Unresponsive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP is not actively treating patients</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP refused visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Personal_Actions_BMS</fullName>
+        <active>true</active>
+        <description>Personal Action Requests</description>
+        <label>Personal Actions</label>
+        <picklistValues>
+            <picklist>Action_Type_BMS__c</picklist>
+            <values>
+                <fullName>Appropriate use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed MSS Enrollment Guide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed voucher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dosing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Response Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mail_Email_Type_BMS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resources_BMS__c</picklist>
+            <values>
+                <fullName>Resource 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP Unresponsive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP is not actively treating patients</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP refused visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Personal_Actions_Completed</fullName>
+        <active>true</active>
+        <description>Completed Personal Action Requests</description>
+        <label>Personal Actions (Completed)</label>
+        <picklistValues>
+            <picklist>Action_Type_BMS__c</picklist>
+            <values>
+                <fullName>Appropriate use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed MSS Enrollment Guide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm receipt of mailed voucher</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dosing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Response Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mail_Email_Type_BMS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Resources_BMS__c</picklist>
+            <values>
+                <fullName>Resource 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resource 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP Unresponsive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP is not actively treating patients</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit - HCP refused visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Record_an_Interaction_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>sControl</linkType>
+        <masterLabel>Record an Interaction</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <scontrol>Call_Report_from_Action_BMS</scontrol>
+    </webLinks>
+</CustomObject>

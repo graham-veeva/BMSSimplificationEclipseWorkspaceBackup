@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plantilla mapeo de datos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plantillas mapeo de datos</value>
+    </caseValues>
+    <fields>
+        <label>Activo</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cubos</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Etiqueta de la columna</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>Si el archivo tiene las etiquetas de columnas como primera línea de esta plantilla, marque esta casilla.</help>
+        <label>Etiquetas de columnas incluidas</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>¿Contiene objetivos?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Posiciones decimales</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>Para usar el informe de análisis de ventas de mercado, designe solo archivos de datos de ventas de escala mensual. Los datos de ventas también deben contener ID del facultativo, ID de mercado, ID de grupo de productos</help>
+        <label>Habilitar informe anál. ventas mercado</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activar para fuera de línea</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cobertura para etiqueta de representante</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Primera etiqueta de columna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ninguno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>2ª etiqueta de la columna</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo de carga incremental</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Completa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Incrementa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Parcial</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Incremental</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>¿Están asignados los mercados?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anular umbral de cuentas</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>¿Está asignado el pagador/plan?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Escala</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Mensual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Semana</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Etiquetas de columna secundarias</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>¿Nombres de territorios incluidos?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Seleccione un valor de lista de selección válido. Si esta cargando datos, asegúrese de que está utilizando el valor de la lista de selección principal, no la etiqueta traducida</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El informe del análisis de ventas de mercado se puede seleccionar solo si se ha seleccionado la escala mensual y no se ha seleccionado la casilla de verificación Pagador/Plan asignado</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Asegúrese de que la etiqueta de columna no contiene alguno de los caracteres siguientes: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El número de decimales debe ser de 0 a 4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Seleccione un valor de lista de selección válido. Si esta cargando datos, asegúrese de que está utilizando el valor de la lista de selección principal, no la etiqueta traducida</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

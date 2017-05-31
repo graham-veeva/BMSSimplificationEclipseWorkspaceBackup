@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Заказ образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Заказы образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Заказ образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Заказы образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Заказа образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Заказов образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Заказу образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Заказам образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Заказом образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Заказами образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Заказе образцов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Заказах образцов</value>
+    </caseValues>
+    <fields>
+        <label>ASSMCA</label>
+        <name>ASSMCA_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор организации</label>
+        <name>Account_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Имя организации</label>
+        <name>Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Организация</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Операция заказа образцов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Адрес 1</label>
+        <name>Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Адрес 2</label>
+        <name>Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Приспособить для</label>
+        <name>Adjust_For_vod__c</name>
+        <relationshipLabel>Транзакция образца заказа (корректировать)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Дата скорректированна</label>
+        <name>Adjusted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Уровень воздействия распределения</label>
+        <name>Allocation_Impact_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата визита</label>
+        <name>Call_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата / время визита</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор визита</label>
+        <name>Call_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Наименование визита</label>
+        <name>Call_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор образца</label>
+        <name>Call_Sample_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Название образца</label>
+        <name>Call_Sample_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Город</label>
+        <name>City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Комментарии</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Утвержденное количество</label>
+        <name>Confirmed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Данные для верификации в системе</label>
+        <name>Credentials_vod__c</name>
+    </fields>
+    <fields>
+        <label>Пользовательский текст</label>
+        <name>Custom_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата окончания DEA</label>
+        <name>DEA_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>DEA #</label>
+        <name>DEA_vod__c</name>
+    </fields>
+    <fields>
+        <label>Статус доставки</label>
+        <name>Delivery_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cancel_Request_vod</masterLabel>
+            <translation>Отменить запрос</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled_vod</masterLabel>
+            <translation>Отменен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered_vod</masterLabel>
+            <translation>Доставлено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Выполняется</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped_vod</masterLabel>
+            <translation>Отправлено</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Отказ</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Несоответствие</label>
+        <name>Discrepancy_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дистрибьютор</label>
+        <name>Distributor_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор группы</label>
+        <name>Group_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор транзакции группы</label>
+        <name>Group_Transaction_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Партия №</label>
+        <name>Lot_vod__c</name>
+        <relationshipLabel>Операция заказа образцов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Производитель</label>
+        <name>Manufacturer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Количество</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Причина</label>
+        <name>Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Destroyed</masterLabel>
+            <translation>Разрушен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation>Потерян</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen</masterLabel>
+            <translation>Украден</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Комментарии получателя</label>
+        <name>Receipt_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Получено</label>
+        <name>Received_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор транзакции исх. заказа</label>
+        <name>Ref_Order_Transaction_Id_vod__c</name>
+        <relationshipLabel>Операция заказа образцов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Запрос получен</label>
+        <name>Request_Receipt_vod__c</name>
+    </fields>
+    <fields>
+        <label>Приветствие</label>
+        <name>Salutation_vod__c</name>
+    </fields>
+    <fields>
+        <label>Причина для карты по образцам</label>
+        <name>Sample_Card_Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Application Unavailable</masterLabel>
+            <translation>Приложение недоступно</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop Unavailable</masterLabel>
+            <translation>Ноутбук недоступен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Другой</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Номер карты отсылки образцов</label>
+        <name>Sample_Send_Card_vod__c</name>
+    </fields>
+    <fields>
+        <label>Образец U/M</label>
+        <name>Sample_U_M__c</name>
+    </fields>
+    <fields>
+        <label>Образец</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>Адрес отгрузки 1</label>
+        <name>Ship_Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Адрес отгрузки 2</label>
+        <name>Ship_Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата оконч. срока действия CDS поставки</label>
+        <name>Ship_CDS_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>CDS поставки №</label>
+        <name>Ship_CDS_vod__c</name>
+    </fields>
+    <fields>
+        <label>Город отгрузки</label>
+        <name>Ship_City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Страна отгрузки</label>
+        <name>Ship_Country_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата истечения лицензии на отгрузку</label>
+        <name>Ship_License_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Статус лицензии на отгрузку</label>
+        <name>Ship_License_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Лицензия на отгрузку</label>
+        <name>Ship_License_vod__c</name>
+    </fields>
+    <fields>
+        <label>Место доставки</label>
+        <name>Ship_Location_vod__c</name>
+    </fields>
+    <fields>
+        <label>Область отгрузки</label>
+        <name>Ship_State_vod__c</name>
+    </fields>
+    <fields>
+        <label>Индекс отгрузки 4</label>
+        <name>Ship_Zip_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>Индекс отгрузки</label>
+        <name>Ship_Zip_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор перевозки/отгрузки</label>
+        <name>Shipment_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата подписи</label>
+        <name>Signature_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Отображаемое имя страницы подписей</label>
+        <name>Signature_Page_Display_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Подпись</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Область</label>
+        <name>State_vod__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Сохранено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Представлено</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Дата подтверждения</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Территория</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Перемещено кому</label>
+        <name>Transfer_To_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Перемещено куда</label>
+        <name>Transfer_To_vod__c</name>
+        <relationshipLabel>Транзакция образца заказа (передать)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Дата перемещения</label>
+        <name>Transferred_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Перемещено от (имя)</label>
+        <name>Transferred_From_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Перемещено из</label>
+        <name>Transferred_From_vod__c</name>
+        <relationshipLabel>Транзакция образца заказа (передано от)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Adjustment_vod</masterLabel>
+            <translation>Поправка</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRC_vod</masterLabel>
+            <translation><!-- BRC_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt_vod</masterLabel>
+            <translation>Подтверждение получения</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Транспортировка</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Boxes</masterLabel>
+            <translation>Коробки/упаковки</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Ящики</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Разблокировать</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Индекс 4</label>
+        <name>Zip_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>Индекс</label>
+        <name>Zip_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Transaction Id --></nameFieldLabel>
+    <recordTypes>
+        <label>Поправка</label>
+        <name>Adjustment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BRC</label>
+        <name>BRC</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Подтверждение получения</label>
+        <name>Receipt_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Транспортировка</label>
+        <name>Transfer_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Ошибка: количество &gt; 0</errorMessage>
+        <name>Return_Quantity_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ошибка: количество &gt; 0</errorMessage>
+        <name>Transfer_Quantity_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Коррекция нового заказа</label>
+        <name>New_Order_Adjustment_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Передача нового заказа</label>
+        <name>New_Order_Transfer_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Подтвердить</label>
+        <name>Submit_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Разблокировать</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

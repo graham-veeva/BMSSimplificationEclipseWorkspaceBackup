@@ -1,0 +1,118 @@
+<apex:page id="p1" standardController="User" recordSetvar="users" sidebar="false" showHeader="false"> 
+<script type="text/javascript">
+function callSetPasswords() {
+    newpw = document.getElementById('newpw').value ;
+    if (newpw == '') {
+        alert ('No password entered') ;
+        return ;
+    }
+    var userids = "";
+    var usernames = "" ;
+    var c = new Array();
+    c = document.getElementsByTagName('input');
+    for(var i = 0; i < c.length; i++){
+        if(c[i].type == "checkbox" && c[i].checked && c[i].id != 'ctrlId') {
+            if (userids != "") {
+                userids += "," ;
+                usernames += "," ;
+            }
+            userids += c[i].id;
+            usernames += document.getElementById(c[i].id + '_fullname').innerHTML;
+        }
+    }
+    if(userids == "") {
+        alert("No users selected");
+    } else {
+        // alert (usernames + '/' + newpw);
+        window.open("/apex/veevaUtilsUPSDirect?itemNumb=0&newpw=" + newpw + "&usernames=" + usernames + "&userids=" + userids, 'newwin', 'width=700,height=700') ;
+    }
+    return ;
+}
+
+function cancel() {
+    top.location.replace("/apex/veevaUtilsHome") ;
+    return ;
+}
+
+function setAllCheckboxes (ctrlId) {
+    var chx = document.getElementById(ctrlId).checked ;
+    var c = new Array();
+    c = document.getElementsByTagName('input');
+    for(var i = 0; i < c.length; i++){
+        if(c[i].type == "checkbox" && c.id != ctrlId) {
+            c[i].checked = chx ;
+        }
+    }
+}
+
+</script>
+  <apex:pageBlock id="pb1" title="Find/Select Users">
+Click <a href="/ui/list/FilterEditPage?ftype=s&setupid=ManageUsers&retURL={!URLENCODE($CurrentPage.URL)}&isdtp=mn">here</a> to create a new User view
+<br/>
+<br/>
+  <apex:form id="theForm">
+    <apex:panelGrid columns="2">
+      <apex:outputLabel value="Select View:"/>
+      <apex:selectList value="{!filterId}" size="1">
+        <apex:actionSupport event="onchange"/>
+        <apex:selectOptions value="{!listviewoptions}"/>
+      </apex:selectList>
+    </apex:panelGrid>
+    
+    <p><b>Please note: only active, non System Admin users are displayed</b></p>
+<br/>
+<center>
+<apex:commandButton value="First" action="{!first}"/>
+<apex:commandButton value="Next" action="{!next}"/>
+<apex:commandButton value="Previous" action="{!previous}"/>
+<apex:commandButton value="Last" action="{!last}"/>
+</center>
+<br/>
+<br/>
+
+        <table>
+        <tr>
+        <td style="font-weight:bold;border : 1px solid black">
+          <input type="checkbox" id="ctrlId" checked="on" onClick="setAllCheckboxes('ctrlId')"/>
+        </td>
+        <td style="font-weight:bold">Full Name</td>
+        <td style="font-weight:bold">Username</td>
+        <td style="font-weight:bold">Profile</td>
+        <td style="font-weight:bold">Role</td>
+        </tr>
+      <apex:repeat id="r1" var="u" value="{!users}">
+        <apex:outputPanel rendered="{!AND(u.IsActive,u.Profile.Name != 'System Administrator')}">
+      <tr>
+      <td>
+      <input type="checkbox" id="{!u.Id}" checked="on"/>
+      </td>
+      <td>
+      <span id="{!u.Id}_fullname">{!u.Name}</span>
+      </td>
+      <td>
+      {!u.Username}
+      </td>
+      <td>
+      {!u.Profile.Name}
+      </td>
+      <td>
+      {!u.UserRole.Name}
+      </td>
+      </tr>
+        </apex:outputPanel>
+      </apex:repeat>
+      </table>
+
+    <br/>
+    Please enter the new password
+    <br/>
+    <input type="text" id="newpw"/>
+    <br/>
+    <br/>
+    <input type="submit" name="Submit" onclick="callSetPasswords();return false;" value="Set password for selected Users"/>
+    <input type="submit" name="Submit" onclick="cancel();return false;" value="Cancel"/>
+    
+    
+  </apex:form> 
+  </apex:pageBlock>
+</apex:page>

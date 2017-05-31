@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Απάντηση διεκπεραίωσης ιατρικού αιτήματος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Απαντήσεις διεκπεραίωσης ιατρικού αιτήματος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Απάντηση διεκπεραίωσης ιατρικού αιτήματος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Απαντήσεις διεκπεραίωσης ιατρικού αιτήματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Απάντηση διεκπεραίωσης ιατρικού αιτήματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Απαντήσεις διεκπεραίωσης ιατρικού αιτήματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Απάντηση διεκπεραίωσης ιατρικού αιτήματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Απαντήσεις διεκπεραίωσης ιατρικού αιτήματος</value>
+    </caseValues>
+    <fields>
+        <label>Ανάθεση σε σχόλια</label>
+        <name>Assign_To_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ανάθεση σε χρήστη</label>
+        <name>Assign_To_User_vod__c</name>
+        <relationshipLabel>Απαντήσεις διεκπεραίωσης ιατρ. αιτήματος (Ανάθεση σε χρήστη)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ολοκληρώθηκε από</label>
+        <name>Completed_By_vod__c</name>
+        <relationshipLabel>Απαντήσεις διεκπεραίωσης ιατρ. αιτήματος (Ολοκληρώθηκε από)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ημερομηνία και ώρα ολοκλήρωσης</label>
+        <name>Completed_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Υλικά διεκπεραίωσης</label>
+        <name>Fulfillment_Materials_vod__c</name>
+    </fields>
+    <fields>
+        <label>Απάντηση διεκπεραίωσης</label>
+        <name>Fulfillment_Response_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αλληλεπίδραση</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Απαντήσεις διεκπεραίωσης ιατρ. αιτήματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Διεκπεραίωσης ιατρικού αιτήματος</label>
+        <name>Medical_Inquiry_Fulfillment_vod__c</name>
+        <relationshipLabel>Απαντήσεις διεκπεραίωσης ιατρ. αιτήματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Μέθοδος</label>
+        <name>Method_vod__c</name>
+        <picklistValues>
+            <masterLabel>Email_vod</masterLabel>
+            <translation>E-mail</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face_to_Face_vod</masterLabel>
+            <translation>Δια ζώσης</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax_vod</masterLabel>
+            <translation>Φαξ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail_vod</masterLabel>
+            <translation>Ταχυδρομική διεύθυνση</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone_vod</masterLabel>
+            <translation>Τηλέφωνο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ημερομηνία και ώρα δημιουργίας σε κινητό</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id κινητού</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Να γίνει ανάθεση εκ νέου;</label>
+        <name>Reassign_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Ολοκληρωμένο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Νέο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Αποθηκευμένο</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Ml Id απάντησης διεκπεραίωσης</nameFieldLabel>
+    <recordTypes>
+        <label>Απάντηση διεκπεραίωσης ιατρ. αιτήματος</label>
+        <name>Medical_Inquiry_Fulfillment_Response_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

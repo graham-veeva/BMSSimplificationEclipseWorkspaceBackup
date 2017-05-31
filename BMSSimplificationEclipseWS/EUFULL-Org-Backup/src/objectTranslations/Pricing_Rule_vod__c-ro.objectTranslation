@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Regulă de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Regulă de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Reguli de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Reguli de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Regulii de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Regulii de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Regulilor de stabilire a preţului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Regulilor de stabilire a preţului</value>
+    </caseValues>
+    <fields>
+        <label>Grupul contului</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cont</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Reguli de stabilire a preţului</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Activ</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Operator regulă serie</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>ŞI</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>SAU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Regulă serie</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Comparaţie_Produs</label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel>Reguli stabil. preț (Comparaţie_produs)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tip de comparaţie</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Valoarea listei</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation>Valoarea netă</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Cantitatea produsului</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Reguli de stabilire a preţului</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Regulă_produs_vectorial</label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data încheiere livrare</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Comandă de livrare</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dată începere livrare</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Maxim de suprascriere al reducerii</label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Suprascriere a reducerii</label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label>Reducere</label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de sfârşit</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID extern</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Maxim de bunuri gratuite</label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Maxim procentaj bunuri gratuite</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Procentaj bunuri gratuite</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bunuri gratuite</label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>Marginea limitei</label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Preţ al listei</label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cadru temporal minim de livrare</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label>Minimul preţului net</label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Preţ net</label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Campanie de comandă</label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel>Reguli de stabilire a preţului</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Maximul plăţii</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Plată</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Catalog preţuri</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grup al preţului</label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tip produs comparativ</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Valoarea listei</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Cantitatea produsului</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produs maxim</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produs minim</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produs</label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Reguli de stabilire a preţului</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cantitate maximă</label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantitatea minimă</label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Descriere a regulii</label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de început</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Preţul de vânzare cu amânuntul sugerat</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Text al sugestiei</label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prag al sugestiei</label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Regulă de stabilire a modalităţii nivelului</label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Perioadă livrare</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regula de stabilire a reducerii</label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă de stabilire a procentajului bunurilor gratuite</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă de stabilire a bunurilor gratuite</label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă de stabilire a limitei</label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă de stabilire a listei de preţuri</label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă de stabilire a termenilor de plată</label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă de stabilire a nivelului grupului de produse</label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Numai unul din conturi şi grup de conturi trebuie sa fie specificat.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipul de produs „Detaliu” este permis</errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Trebuie bifată numai câte o regulă de preț condiționat şi o regulă privind achiziția interconectată a produselor</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produsul pentru comparaţie trebuie să fie gol</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Regulă serie nu poate fi Comandă de livrare</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Regulă serie nu poate fi limitată.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Operator regulă serie trebuie să fie ŞI sau SAU</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produs trebuie să aibă o valoare şi nu poate fi egală cu Articol set</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cantitatea maximă trebuie să fie mai mare decât cantitatea minimă.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Comparaţia Tip „Valoare Netă” nu este acceptată.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Reducerea nu poate fi negativă.</errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Regulile limită a comenzii de livrare nu pot fi asociate unui anumit produs.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai regulile privind limitele pot fi marcate ca o comandă de livrare.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Data de încheiere a livrării trebuie să fie ulterioară datei de începere a livrării</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Dacă tipul de produs= ‘Order’, datele de începere şi de încheiere a livrării trebuie să fie completate</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produsul poate fi „necompletat” sau de tipul „comandă”</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Data de începere a livrării trebuie să fie aceeaşi sau ulterioară datei de începere a regulii</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produsul poate fi gol sau de tipul „Comandă” şi „Articol set”.</errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Suprascrierea maximă a reducerii este mai mică decât reducerea</errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Data de început după data de sfârşit</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maxim procentaj bunuri gratuite nu poate fi populat pentru reguli obișnuite Bunuri gratuite</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Comparaţia Tip „Valoare listă” nu este acceptată.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max. bunuri gratuite nu este acceptat.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipul de produs „Comandă” și „Articol set” este permis.</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maximul bunurilor gratuite este mai mic decât bunurile gratuite</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Articolul set nu este permis în reducerea produsului vectorial.</errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produsul poate fi gol sau de tipul „Comandă”, „Detaliu”, „Grup de produse”, „Articol set”.</errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipul de produs „Comandă” şi „Articol set” este permis.</errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cantitatea maximă trebuie să fie mai mare decât cantitatea minimă.</errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Dacă este specificat cadrul temporal minim de livrare, data de începere a livrării şi data de încheiere a livrării trebuie să fie necompletate</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Dacă este specificat cadrul temporal minim de livrare, Product_vod trebuie să fie necompletat</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Preţul net şi suprascrierea reducerii sunt toate prezente.</errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Preţul net minim este mai mare decât preţul net</errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Regulile de stabilire a termenului de plată nu suportă reducerea produsului vectorial.</errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Regulile de stabilire a termenelor de plată nu suportă tipul de produs Articol set.</errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipurile produse Comandă, detaliu, [gol] sau grup de produse sunt permise. Şi atunci când produsul nu este gol, caseta de selecţie pentru Reguli de stabilire a produsului vectorial trebuie să fie selectată.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Este necesar un tip valid de produs de comparaţie</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produsul trebuie să fie diferit decât produsul comparaţiei şi nu gol.</errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipul de produs „Grup de produse” este permis</errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Este necesară valoarea minimă sau valoarea maximă a produsului</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

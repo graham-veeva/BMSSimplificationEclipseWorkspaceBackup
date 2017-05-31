@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>EM Activity</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>EM Activities</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>EM Activity</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>EM Activities</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>EM Activity</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>EM Activities</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>EM Activity</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>EM Activities</value>
+    </caseValues>
+    <fields>
+        <label>Account-Teilnehmerfelder</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Format --></label>
+        <name>Activity_Format_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>In Person</masterLabel>
+            <translation>Persönlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual</masterLabel>
+            <translation>Virtuell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual/In-Person</masterLabel>
+            <translation>Virtuell / Persönlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event ID --></label>
+        <name>Activity_ID_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- System ID --></label>
+        <name>Activity_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>Activity_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Activity Typ</label>
+        <name>Activity_Type_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Event - for eg - Speaker Meeting, Advisory Board etc --></help>
+        <label><!-- Event Type --></label>
+        <name>Activity_Type_Simple_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits Booths &amp; Displays</masterLabel>
+            <translation><!-- Exhibits Booths &amp; Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Preceptorship</masterLabel>
+            <translation><!-- HCP Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Sponsorship</masterLabel>
+            <translation><!-- HCP Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Consulting</masterLabel>
+            <translation><!-- Other Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider Training</masterLabel>
+            <translation><!-- Service Provider Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Meeting</masterLabel>
+            <translation><!-- Speaker Meeting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tatsächliche Teilnahme</label>
+        <name>Actual_Attendance_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ist-Kosten</label>
+        <name>Actual_Cost_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ist Verpflegungskosten pro Person</label>
+        <name>Actual_Meal_Cost_Per_Person_vod__c</name>
+    </fields>
+    <fields>
+        <label>Detailierte Infos zum Veranstaltungsort</label>
+        <name>Additional_Venue_Details_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Häkchen gesetzt, dann enthält Activity ein Advisory Board.</help>
+        <label><!-- Advisory Board --></label>
+        <name>Advisory_Board_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Alter</label>
+        <name>Age_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Allianzpartner</label>
+        <name>Alliance_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Häkchen setzen, wenn AMEX Unterstützung gewünscht</help>
+        <label>Logistische Unterstützung nötig</label>
+        <name>Amex_Support_Needed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>BU Genehmiger Email</label>
+        <name>Approver_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>BU Genehmiger ID</label>
+        <name>Approver_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmerabstimmung abgeschlossen</label>
+        <name>Attendee_Reconciliation_Complete_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmer mit Verpflegungswunsch</label>
+        <name>Attendees_Requesting_Meals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmer mit Verpflegung</label>
+        <name>Attendees_With_Meals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Muss angegeben werden, wenn Unterstützung für die Logistik erforderlich ist (Beschaffung Hotel, Verpflegung, Reisebuchung, Teilnehmermanagement, Vor Ort Betreuung)</help>
+        <label>Unterstützung bei Organisation</label>
+        <name>Audio_Visual_Support_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie &quot;yes&quot; oder &quot;no&quot; wenn diese Aktivität vor, während oder nach einem Kongress stattfindet</help>
+        <label>Vor,während, nach Kongress?</label>
+        <name>Before_during_or_after_a_Congress__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Experte</label>
+        <name>Certifier_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Checkliste Vollständig</label>
+        <name>Checklist_Complete_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>For Approval</masterLabel>
+            <translation>Zur Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For Closeout</masterLabel>
+            <translation>Zum Abschluss</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For Execution</masterLabel>
+            <translation>Zur Durchführung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>For Processor Review</masterLabel>
+            <translation>Zur Bearbeitungsprüfung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue city to be fed from Integration --></help>
+        <label><!-- Confirmed Venue City --></label>
+        <name>City_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ort</label>
+        <name>City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gebuchte Kosten</label>
+        <name>Committed_Cost_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed Venue Postal Code --></label>
+        <name>Confirmed_Venue_Postal_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Kongressname - sollte mt StarCite Daten übereinstimmen</help>
+        <label>Kongressname</label>
+        <name>Congress_Names_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>AACR</masterLabel>
+            <translation><!-- AACR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AARC</masterLabel>
+            <translation><!-- AARC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AASLD</masterLabel>
+            <translation><!-- AASLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACR</masterLabel>
+            <translation><!-- ACR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AHA</masterLabel>
+            <translation><!-- AHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AIDS</masterLabel>
+            <translation><!-- AIDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APASL</masterLabel>
+            <translation><!-- APASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO</masterLabel>
+            <translation><!-- ASCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO-GI</masterLabel>
+            <translation><!-- ASCO-GI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO-GU</masterLabel>
+            <translation><!-- ASCO-GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASH</masterLabel>
+            <translation><!-- ASH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVHC</masterLabel>
+            <translation><!-- AVHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CROI</masterLabel>
+            <translation><!-- CROI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EACS</masterLabel>
+            <translation><!-- EACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EADO</masterLabel>
+            <translation><!-- EADO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASL</masterLabel>
+            <translation><!-- EASL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EASL/ILC</masterLabel>
+            <translation><!-- EASL/ILC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECC</masterLabel>
+            <translation><!-- ECC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EHA</masterLabel>
+            <translation><!-- EHA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ELCC</masterLabel>
+            <translation><!-- ELCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESC</masterLabel>
+            <translation><!-- ESC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESH</masterLabel>
+            <translation><!-- ESH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESH-MM</masterLabel>
+            <translation><!-- ESH-MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESMO</masterLabel>
+            <translation><!-- ESMO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESMO ASIA</masterLabel>
+            <translation><!-- ESMO ASIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESOT</masterLabel>
+            <translation><!-- ESOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EULAR</masterLabel>
+            <translation><!-- EULAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIV Glasgow</masterLabel>
+            <translation><!-- HIV Glasgow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I-O ESMO</masterLabel>
+            <translation><!-- I-O ESMO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICML</masterLabel>
+            <translation><!-- ICML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDSA</masterLabel>
+            <translation><!-- IDSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILCA</masterLabel>
+            <translation><!-- ILCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMW</masterLabel>
+            <translation><!-- IMW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISPOR</masterLabel>
+            <translation><!-- ISPOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITOC-3</masterLabel>
+            <translation><!-- ITOC-3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LALCA</masterLabel>
+            <translation><!-- LALCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ONS</masterLabel>
+            <translation><!-- ONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHC</masterLabel>
+            <translation><!-- PHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SITC</masterLabel>
+            <translation><!-- SITC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMR</masterLabel>
+            <translation><!-- SMR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STI &amp; HIV</masterLabel>
+            <translation><!-- STI &amp; HIV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USCA</masterLabel>
+            <translation><!-- USCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VHC</masterLabel>
+            <translation><!-- VHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WCLC</masterLabel>
+            <translation><!-- WCLC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kontaktfelder Teilnehmer</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue country to be fed from Integration --></help>
+        <label><!-- Confirmed Venue Country --></label>
+        <name>Country_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country of the Venue. If Venue is looked up from the Venue database, system will always overwrite with the Value from the Country of the Looked up Venue, regardless of User specified choice --></help>
+        <label>Land</label>
+        <name>Country_HCPTS__c</name>
+        <relationshipLabel><!-- EM Events (Country) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Land</label>
+        <name>Country_vod__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Erstellt vonq</label>
+        <name>Created_By_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- CyberGrants ID --></label>
+        <name>Cybergrant_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Datum SC Review beantragt</label>
+        <name>Date_Put_In_Processor_Review__c</name>
+    </fields>
+    <fields>
+        <label>Tage in SC Review</label>
+        <name>Days_In_Processor_Review__c</name>
+    </fields>
+    <fields>
+        <label>Beschreibung</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Erklärung</label>
+        <name>Disclaimer_SRP_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>I confirm that this Standard Rep Presentation doesn&apos;t need specific approval as per the latest version of the SOP</masterLabel>
+            <translation>Ich bestätige dass diese Standard Rep Presentation keine spezielle Genehmigung benötigt laut gültiger SOP.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Duration of Event in Days -( End Date - Start Date) --></help>
+        <label><!-- Duration in Days --></label>
+        <name>Duration_in_Days_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Dauer der Veranstaltung in Stunden</label>
+        <name>Duration_of_Event_In_Hours_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Enddatum</label>
+        <name>End_Date_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Enddatum</label>
+        <name>End_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Endzeit</label>
+        <name>End_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Geschätzte Teilnehmerzahl</label>
+        <name>Estimated_Attendance_vod__c</name>
+    </fields>
+    <fields>
+        <label>Geplante Kosten</label>
+        <name>Estimated_Cost_vod__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltungskonfiguration</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Veranstaltungsanzeige Name</label>
+        <name>Event_Display_Name_vod__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Häkchen gesetzt, dann enthält Activity ein Exhibits, Booths &amp; Display.</help>
+        <label><!-- Exhibits, Booths &amp; Displays --></label>
+        <name>Exhibits_Booths_Displays__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help>Anforderungen für Mahlzeiten (z.B. Abendessen)</help>
+        <label>Anforderungen für Mahlzeiten</label>
+        <name>Food_and_Beverage_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Voller Standort Text</label>
+        <name>Full_Location_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Transfers vor Ort (z.B. Hotel zum Abendessen)</help>
+        <label>Transfer vor Ort</label>
+        <name>Ground_Transportation_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>HCO Adresse</label>
+        <lookupFilter>
+            <errorMessage>Die ausgewählte Adresse ist nicht im Kundenkonto der HCO hinterlegt.</errorMessage>
+        </lookupFilter>
+        <name>HCO_Address_HCPTS__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HCO --></label>
+        <lookupFilter>
+            <errorMessage>Eine HCO kann keine Einzelperson sein.</errorMessage>
+        </lookupFilter>
+        <name>HCO_HCPTS__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wenn Häkchen gesetzt, dann enthält Activity ein HCP Sponsorship</help>
+        <label><!-- HCP Sponsorship --></label>
+        <name>HCP_Sponsorship_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>HCPs mit verpflegung</label>
+        <name>HCPs_With_Meals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Link geplante Kosten Übertragung</label>
+        <name>Inherit_Expense_Esimates__c</name>
+    </fields>
+    <fields>
+        <help>Das ist ein Verzeichnis um den zugewiesenen Need auszuwähöen. Feld wird automatisch gefüllt vom Vererbungsauslöser und wird nicht unbedingt angezeigt.</help>
+        <label>Zugewiesener Need</label>
+        <name>Inherited_Budget_Need_HCPTS__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Eingeladene Teilnehmer</label>
+        <name>Invited_Attendees_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ist Activity mit Allianzpartner</label>
+        <name>Is_Joint_Venture_Activity_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ist am Wochenende</label>
+        <name>Is_On_Weekend__c</name>
+    </fields>
+    <fields>
+        <label>Allianz Details</label>
+        <name>Joint_Venture_Detail_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- KOL External Id --></label>
+        <name>KOL_External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letzter Kommentar</label>
+        <name>Last_Comment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue Address Line 1 to be fed from Integration --></help>
+        <label><!-- Confirmed Venue Address --></label>
+        <name>Location_Address_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue Address Line 2 to be fed from Integration --></help>
+        <label><!-- Confirmed Venue Address Line 2 --></label>
+        <name>Location_Address_Line_2_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Adresszusatz</label>
+        <name>Location_Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Strasse, Nr.</label>
+        <name>Location_Address_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue name fed from Integration --></help>
+        <label><!-- Confirmed Venue --></label>
+        <name>Location_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltungsort</label>
+        <name>Location_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sperren</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Logistische Informationen</label>
+        <name>Logistics_Information_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmerliste</label>
+        <name>Meeting_Attendee_Sheet__c</name>
+    </fields>
+    <fields>
+        <help>Angaben zu den Tagungsräumen wie Anzahl Personen, Bestuhlung, Technik, sonstige Ausstattung</help>
+        <label>Tagungsräume</label>
+        <name>Meeting_Rooms_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Definition --></label>
+        <name>Need_Definition_HCPTS__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Need ID, die mit Activity verbunden wird, wenn zugewiesen.</help>
+        <label><!-- Budget ID --></label>
+        <name>Need_ID__c</name>
+    </fields>
+    <fields>
+        <label>Anzahl der Online-Registrierten</label>
+        <name>Online_Registrant_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>Online-Registrierungsfelder</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Besitzername</label>
+        <name>Owner_Name_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordnete Activity</label>
+        <name>Parent_Event_vod__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Phase --></label>
+        <name>Phase_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Close Out</masterLabel>
+            <translation>Abschluss</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Execution</masterLabel>
+            <translation>Durchführung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation>Planung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Postleitzahl</label>
+        <name>Postal_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>SC Land</label>
+        <name>Processor_Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>SC E-Mail</label>
+        <name>Processor_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Coordinator --></label>
+        <name>Processor_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>SC Telefonnr.</label>
+        <name>Processor_Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Produkt/Therapeutischer Bereich</label>
+        <name>Product_HCPTS__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotional/Non-Promotional --></label>
+        <name>Promotional_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Non-Promotional</masterLabel>
+            <translation><!-- Non-Promotional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional</masterLabel>
+            <translation><!-- Promotional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Product/TA --></label>
+        <name>Secondary_Product_TA_Simplified__c</name>
+        <relationshipLabel><!-- EM Events (Secondary Product/TA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Activity Detail Report per Email senden</label>
+        <name>Send_Activity_Details_Report_Email__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Häkchen gesetzt, dann enthält Activity ein Speaker Meeting.</help>
+        <label><!-- Speaker Meeting --></label>
+        <name>Speaker_Meeting_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsor --></label>
+        <name>Sponsor_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logistics ID --></label>
+        <name>Starcite_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Zweite StarCite ID, die im Hintergrund benutzt wird.</help>
+        <label><!-- Logistics ID 2 --></label>
+        <name>Starcite_Id_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Bitte wählen Sie &quot;Request Estimates&quot;, wenn die Aktivität vor Genehmigung in StarCite angelegt wird, damit Sie erste Angebote erhalten können</help>
+        <label>StarCite Anfrage Status</label>
+        <name>Starcite_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>Meeting Registration Complete</masterLabel>
+            <translation>Veranstaltungsregistrierung abgeschlossen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Registration Pending</masterLabel>
+            <translation>Veranstaltungsregistrierung ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Registration Updated</masterLabel>
+            <translation>Veranstaltungsregistrierung aktualisiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Estimates</masterLabel>
+            <translation>Kostenvoranschläge angefragt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Startzeit</label>
+        <name>Start_Time_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue State fed from Integration --></help>
+        <label><!-- Confirmed Venue State / Province --></label>
+        <name>State_Province_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Bundesland/Kanton</label>
+        <name>State_Province_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed_vod</masterLabel>
+            <translation>Archiviert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Business Approval</masterLabel>
+            <translation>Zur Genehmigung eingereicht</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Closeout</masterLabel>
+            <translation>Abschluss</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Draft</masterLabel>
+            <translation>Entwurf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Execution</masterLabel>
+            <translation>Durchführung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Planning</masterLabel>
+            <translation>Planung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Post-Execution</masterLabel>
+            <translation>Nach-Ausführung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation>Service Coordinator Review</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_Approval_vod</masterLabel>
+            <translation>Zulassung ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event</masterLabel>
+            <translation><!-- Post-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event-PostApproval</masterLabel>
+            <translation><!-- Post-Event-PostApproval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Event</masterLabel>
+            <translation><!-- Pre-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stub Mobile Id --></label>
+        <name>Stub_Mobile_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stub-SFDC-ID</label>
+        <name>Stub_SFDC_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unterart</label>
+        <name>Subtype_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits, Booths &amp; Display</masterLabel>
+            <translation><!-- Exhibits, Booths &amp; Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R&amp;D Committee</masterLabel>
+            <translation><!-- R&amp;D Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Meeting</masterLabel>
+            <translation><!-- Speaker Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker, Exhibits</masterLabel>
+            <translation><!-- Speaker, Exhibits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker, Sponsorship</masterLabel>
+            <translation><!-- Speaker, Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker, Sponsorship, Exhibits</masterLabel>
+            <translation><!-- Speaker, Sponsorship, Exhibits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship</masterLabel>
+            <translation><!-- Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship, Exhibits</masterLabel>
+            <translation><!-- Sponsorship, Exhibits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Topic</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Details pro Teilnehmer für Reisebuchung und Hotelübernachtung</help>
+        <label>Reise und Übernachtung</label>
+        <name>Travel_Accomodations_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Benutzerfelder Teilnehmer</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anbieter</label>
+        <name>Vendor_vod__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Diese Option nicht nutzen</help>
+        <label>Bitte nicht benutzen</label>
+        <name>Venue_Support_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltungsortverzeichnis</label>
+        <name>Venue_vod__c</name>
+        <relationshipLabel>EM Activities</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Spontane Teilnehmer Anzahl</label>
+        <name>Walk_In_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>Spontane Teilnehmer Felder</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Behind the scenes field to indicate that this activity was approved at some point --></help>
+        <label><!-- WasApproved --></label>
+        <name>WasApproved_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Webquelle</label>
+        <name>Web_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltungslayout</label>
+        <name>zvod_Event_Layout_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Event Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Advisory Board</label>
+        <name>Advisory_Board</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kongress</label>
+        <name>Congress_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Cross Org</label>
+        <name>Cross_Org</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Event Purchase</label>
+        <name>Event_Purchase</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Exhibits, Booths and Displays</label>
+        <name>Exhibits_Booths_and_Displays</name>
+    </recordTypes>
+    <recordTypes>
+        <label>HCP Sponsorship</label>
+        <name>HCP_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Internal Speaking</label>
+        <name>Internal_Speaking</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Forscher-Besprechung</label>
+        <name>Investigator_Meeting_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Other Consulting</label>
+        <name>Other_Consulting</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Preceptorship</label>
+        <name>Preceptorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>R&amp;D Committee</label>
+        <name>R_D_Committee</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Diskussionsrunde</label>
+        <name>Round_Table_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simple Activity --></label>
+        <name>Simple_Activity_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Speaker Meeting</label>
+        <name>Speaker_Meeting</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Referententhema</label>
+        <name>Speaker_Program_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Speaker_Series --></label>
+        <name>Speaker_Series</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Service Provider Training</label>
+        <name>Speaker_Training</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Rep Presentation --></label>
+        <name>Standard_Rep_Presentation</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Veranstaltungs-Teammitglied</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage>Activity kann nicht zur Genehmigung eingereicht werden bevor nicht mindestens eine Vertragsleistung und ein Honorar/Zu erstattende Kosten für jeden Referenten hinterlegt sind.</errorMessage>
+        <name>Contract_Metadata_Submit_for_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die geplanten Kosten können nicht größer sein als das zu verbleibende Budget.</errorMessage>
+        <name>Estimate_Cannot_Exceed_Budget</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vor,während,nach Kongress? – muss ein Wert ausgewählt werden.</errorMessage>
+        <name>Must_fill_Congress_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must define a Primary Assigned Need on the Activity prior to moving Logistics Request Status to Request Estimates --></errorMessage>
+        <name>Must_have_a_Primary_Assigned_Need</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die Activity kann nicht zur Genehmigung eingereicht werden bevor folgende Felder ausgefüllt sind: Activity Format, Produkt/Therapeutischer Bereich, Veranstaltungsort Details.</errorMessage>
+        <name>Required_Fields_For_Business_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Anfangsdatum/-zeit muss vor dem Enddatum/-zeit liegen.</errorMessage>
+        <name>Start_Date_after_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Genehmigen</label>
+        <name>Approve_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Teilnehmerabstimmung</label>
+        <name>Attendee_Reconciliation_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Activity stornieren</label>
+        <name>Cancel_Event_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Schließen</label>
+        <name>Close_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Abschluss</label>
+        <name>Closeout_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Bereit zur Ausführung</label>
+        <name>Execute_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Einladungen generieren</label>
+        <name>Generate_Invitations_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Anwesenheitsliste generieren</label>
+        <name>Generate_Sign_In_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>In Planung</label>
+        <name>In_Planning_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Verwalte Teilnehmer</label>
+        <name>Manage_Attendees_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Teilnehmer</label>
+        <name>Meeting_Attendees</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PostEvent --></label>
+        <name>PostEvent</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PostEventPostApproval --></label>
+        <name>PostEventPostApproval</name>
+    </webLinks>
+    <webLinks>
+        <label>Nachdurchführungsphase</label>
+        <name>Post_Execution_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Zur Wiedergenehmigung einreichen</label>
+        <name>Reapprove_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Rückrufbitte</label>
+        <name>Recall_Approval_Request_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Antrag zurückziehen</label>
+        <name>Recall_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Besuch aufzeichnen</label>
+        <name>Record_a_Call_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Ablehnen</label>
+        <name>Reject_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Umplanen</label>
+        <name>Replan_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label>Umplanen</label>
+        <name>Reschedule_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>E-Mail senden</label>
+        <name>Send_Email_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Zur Genehmigung einreichen</label>
+        <name>Submit_for_Approval_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_SFDC_Approval_BMS --></label>
+        <name>Submit_for_SFDC_Approval_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unlock_PostApproval --></label>
+        <name>Unlock_PostApproval</name>
+    </webLinks>
+    <webLinks>
+        <label>Sperre aufheben</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Signaturen anzeigen</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

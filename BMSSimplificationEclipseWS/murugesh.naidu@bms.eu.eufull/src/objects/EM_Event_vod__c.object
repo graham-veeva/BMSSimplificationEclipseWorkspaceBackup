@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Activity_Format_HCPTS__c</fullName>
+        <description>Activity Format</description>
+        <externalId>false</externalId>
+        <label>Event Format</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Person</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Virtual/In-Person</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Activity_ID_2_HCPTS__c</fullName>
+        <description>Concatenated Activity ID AN-YEAR-COUNTRY-PRODUCT/TA-ABBREVIATEDACTIVITYTYPE-Activity ID AUTONUMBER</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Event ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Status_HCPTS__c</fullName>
+        <description>Field used in a workflow to fire Ending Status from Activity History- used in workflows only</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Event Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Type_Formula_HCPTS__c</fullName>
+        <description>Formula Field to show and relabel Record Type to Activity Type</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(RecordType.Name, &quot;_&quot;, &quot; &quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Event Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Type_Simple_HCPTS__c</fullName>
+        <description>Activity types for the Simplification Build. This field will denote the specific type of Activity and not the record type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Event - for eg - Speaker Meeting, Advisory Board etc</inlineHelpText>
+        <label>Event Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCP Preceptorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Provider Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exhibits Booths &amp; Displays</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Before_during_or_after_a_Congress__c</fullName>
+        <description>Choose yes or no depending on whether this activity is Before, during or after a Congress?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose yes or no depending on whether this activity is Before, during or after an International Congress?</inlineHelpText>
+        <label>Before, during or after Int&apos;l Congress?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>City_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed City of an event always fed by INtegration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue city to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed Venue country to be fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue country to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cybergrant_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CyberGrants ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Address_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed Venue Address Line 1 to be fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue Address Line 1 to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Address_Line_2_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed Venue Address Line 2 to be fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue Address Line 2 to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_vod_HCPTS__c</fullName>
+        <description>Confirmed Venue name fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue name fed from Integration</inlineHelpText>
+        <label>Confirmed Venue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_vod__c</fullName>
+        <description>Location of event. If using a stored venue, this is filled in automatically.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requested Venue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Links events together in a series.</description>
+        <externalId>false</externalId>
+        <label>Parent Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>EM Events</relationshipLabel>
+        <relationshipName>EM_Event_Parent_Event_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Product_TA_Simplified__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added for EM 2.0</description>
+        <externalId>false</externalId>
+        <label>Secondary Product/TA</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipName>EM_Activities_Secondary</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Send_Activity_Details_Report_Email__c</fullName>
+        <description>Link to send email containing Conga Report for Activity Details</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( 
+
+&quot;https://composer.congamerge.com/composer8/index.html?SessionId=&quot; 
++ $Api.Session_ID + &quot;&amp;ServerURL=&quot; + $Api.Partner_Server_URL_290 + 
+&quot;&amp;id=&quot; + Id + 
+&quot;&amp;QueryID=[ServicesList]&quot; + $Setup.Conga_and_Echosign_Ids__c.ContractAndRelationsForServices__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[SponsorshipList]&quot; + $Setup.Conga_and_Echosign_Ids__c.ContractAndRelationsForSponsorship__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[EventsList]&quot; + $Setup.Conga_and_Echosign_Ids__c.ContractAndRelationsForEvents__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[Activity]&quot; + $Setup.Conga_and_Echosign_Ids__c.ActivityDetails__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[TeamMembers]&quot; + $Setup.Conga_and_Echosign_Ids__c.Activity_Details_Team_Members__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[Materials]&quot; + $Setup.Conga_and_Echosign_Ids__c.Materials_for_Event__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[ExpEstimates]&quot; + $Setup.Conga_and_Echosign_Ids__c.Activity_Details_Exp_Estimates__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[Audience]&quot; + $Setup.Conga_and_Echosign_Ids__c.Activity_Details_Audience__c + &quot;?pv0=&quot; + Id + &quot;,&quot; + 
+&quot;[Participants]&quot; + $Setup.Conga_and_Echosign_Ids__c.ActivityDetailsParticipants__c + &quot;?pv0=&quot; + Id +
+&quot;&amp;CongaEmailTemplateId=&quot; + $Setup.Conga_and_Echosign_Ids__c.Activity_Details_Template__c + 
+&quot;&amp;EmailSubject=Activity+Details&quot; + 
+&quot;&amp;TemplateID=&quot; + $Setup.Conga_and_Echosign_Ids__c.Activity_Details__c + 
+&quot;&amp;DS7=2&quot; + 
+&quot;&amp;DefaultPDF=1&quot; 
+, Activity_ID_2_HCPTS__c ,&quot;_blank&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Send Event Details Report Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Starcite_ID_HCPTS__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>StarCite ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Logistics ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Starcite_Request_Status__c</fullName>
+        <description>Status Picklist for Starcite Interface.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select &quot;Request Estimates&quot; to send event data and gather initial estimates from the logistics provider.</inlineHelpText>
+        <label>Logistics Request Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Request Estimates</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Registration Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Registration Complete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Registration Updated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State_Province_HCPTS__c</fullName>
+        <description>Confirmed Venue State fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue State fed from Integration</inlineHelpText>
+        <label>Confirmed Venue State / Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of an event. Custom values can be added.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Draft</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pre-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event-PostApproval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Travel_Accomodations_HCPTS__c</fullName>
+        <description>Text Area for Starcite Interface.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the travel and accommodation details for each of the participants if available. Identify the air and rail requirements. Identify the accommodation for the participants if available.</inlineHelpText>
+        <label>Travel and Accommodations</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>WasApproved_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Behind the scenes field to indicate that this activity was approved at some point</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Behind the scenes field to indicate that this activity was approved at some point</inlineHelpText>
+        <label>WasApproved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>zvod_Event_Layout_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for configuration and debugging. Place this field on every event layout to see the name of the layout being used. Only admins should have visibility to this field.</description>
+        <externalId>false</externalId>
+        <label>Event Layout</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Activity_HCPTS</fullName>
+        <active>true</active>
+        <description>Activity type to support Simplification</description>
+        <label>Simple Activity</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_Simple_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits Booths %26 Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Provider Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Before_during_or_after_a_Congress__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Starcite_Request_Status__c</picklist>
+            <values>
+                <fullName>Request Estimates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event-PostApproval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Event</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <webLinks>
+        <fullName>Approve_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Approve</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Approve!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Attendee_Reconciliation_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Attendee Reconciliation</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Attendee_Reconciliation_vod!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Cancel_Event_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Cancel Activity</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Cancel_Event!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Close_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Close</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Close!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Closeout_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Closeout</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Closeout!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Execute_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Ready for Execution</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Execute!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Invitations_vod</fullName>
+        <availability>online</availability>
+        <description>Clicking this button opens up a list of available invitations for the user to select. Once selected, the template is merged with data from the event. An attachment with the final invitations is added to the Event for the user to print.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Invitations</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;GenerateInvitations!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_Sign_In_vod</fullName>
+        <availability>online</availability>
+        <description>Clicking this button opens up a list of available Sign In Sheet for the user to select. Once selected, the template is merged with data from the event. An attachment with the final Sign In Sheet is added to the Event for the user to print.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Sign In Sheet</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Generate Sign In!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>In_Planning_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>In Planning</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;In Planning!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Manage_Attendees_vod</fullName>
+        <availability>online</availability>
+        <description>To launch the Manage Attendee or New Attendee Hub Page.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Manage Attendees</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Managed Attendees!&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Meeting_Attendees</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Meeting Attendees</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?SessionId={!API.Session_ID}
+&amp;ServerURL={!API.Partner_Server_URL_290}
+&amp;Id={!EM_Event_vod__c.Id}
+
+&amp;QueryId=[Speakers]a4yZ0000001IDr6,
+[Audiance]a4yZ0000001IDrX
+
+&amp;TemplateGroup=EMActivity
+&amp;TemplateId=a4zZ00000002AJ5
+&amp;OFN=BMS+Attendees+for+{!EM_Event_vod__c.Name}+-+as+of:+{!Today}
+&amp;DefaultPDF=1
+
+&amp;DS7=3</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PostEvent</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Move to Post Event</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Post Event&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PostEventPostApproval</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Move to Post Event Post Approval</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;PostEventPostApproval&quot;)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Post_Execution_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Post-Execution</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Post-Execution!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reapprove_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reapprove</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Reapprove!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Recall_Approval_Request_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Recall Approval Request</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Recall Approval Request!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Recall_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Recall</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Recall!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Record_a_Call_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Record a Call</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Record a Call!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reject_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reject</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Reject!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Replan_BMS</fullName>
+        <availability>online</availability>
+        <description>Used in an Event Action to Replan an Event</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Replan</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Replan!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reschedule_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reschedule</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Reschedule!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Email_vod</fullName>
+        <availability>online</availability>
+        <description>Launches the email console to send emails to attendees</description>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Email</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Send email!);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_for_Approval_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Add PO Approver</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Submit for Approval!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_for_SFDC_Approval_BMS</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Submit for Approval</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>console.log(&quot;Submit for SFDC Approval&quot;)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Unlock_PostApproval</fullName>
+        <availability>online</availability>
+        <description>Button used in activities that need Approval for unlocking from Archived (Closed_vod) to Post-Event-PostApproval</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Unlock_PostApproval</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Unlock Post Approval&quot;)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Unlock_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Unlock</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;Unlock!&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>View_Signatures_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Signatures</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&apos;View Signatures!&apos;);</url>
+    </webLinks>
+</CustomObject>

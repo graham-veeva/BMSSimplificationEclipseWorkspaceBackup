@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attendee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attendee</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ariba SOW Number --></label>
+        <name>Ariba_SOW_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Audience Type --></label>
+        <name>Audience_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Alliance Employee</masterLabel>
+            <translation><!-- Alliance Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS Employee</masterLabel>
+            <translation><!-- BMS Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation><!-- Journalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation><!-- Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation><!-- Patient Advocacy Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacist</masterLabel>
+            <translation><!-- Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technician</masterLabel>
+            <translation><!-- Technician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Formula field evaluates to HCP, HCO or Employee value depending on Audience data and relationship to User or Account or blank for Contact --></help>
+        <label><!-- Attendee Type --></label>
+        <name>Audience_Type_Simple_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status updated by Logistics provider based on attendee response. Not editable. --></help>
+        <label><!-- Registration Status --></label>
+        <name>Registration_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Accepted_vod</masterLabel>
+            <translation>Accepted</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Approved</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended_vod</masterLabel>
+            <translation>Attended</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared_Signature_vod</masterLabel>
+            <translation>Cleared Signature</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not Attend</masterLabel>
+            <translation><!-- Did not Attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invited_vod</masterLabel>
+            <translation>Invited</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>Nominated</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Rejected</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Signed</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walked In/Attended</masterLabel>
+            <translation><!-- Walked In/Attended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc --></help>
+        <label><!-- View Contracting Buttons --></label>
+        <name>View_Online_HCPTS__c</name>
+    </fields>
+    <layouts>
+        <layout>BMS_HCPTS_Attendee_Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_HCPTS_Simple_Attendee_Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sponsored Account Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sponsored Contact Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sponsored User Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Simple Attendee --></label>
+        <name>Simple_Attendee_HCPTS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

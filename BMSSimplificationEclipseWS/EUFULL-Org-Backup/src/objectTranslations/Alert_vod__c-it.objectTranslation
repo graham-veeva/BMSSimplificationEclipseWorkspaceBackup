@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Avviso</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Avvisi</value>
+    </caseValues>
+    <fields>
+        <label>Data di attivazione</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Testo avviso</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Eliminabile</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di scadenza</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ora/data APN notifica push più recente</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Riferimento collegamento lungo</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>Riferimento collegamento</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Priorità</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation>Importante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>Urgente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Pubblico</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stato APN notifica push</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Elaborato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>In coda</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Errore: impossibile popolare i campi Riferimento collegamento lungo e Riferimento collegamento con lo stesso avviso.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

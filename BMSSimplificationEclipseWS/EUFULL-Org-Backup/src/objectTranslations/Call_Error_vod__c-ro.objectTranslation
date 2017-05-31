@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Eroarea convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Eroare a convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Erorile convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Erori ale convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Erorii convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Erorii convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Erorilor convorbirii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Erorilor convorbirii</value>
+    </caseValues>
+    <fields>
+        <label>Cont</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data și ora vizitei</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipul vizitei</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cauză</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>Acces la cont</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>Vizită blocată</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>Acces la obiect</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Utilizator</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Erori ale convorbirii</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Text XML</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <webLinks>
+        <label>Ştergere</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Soluționare</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

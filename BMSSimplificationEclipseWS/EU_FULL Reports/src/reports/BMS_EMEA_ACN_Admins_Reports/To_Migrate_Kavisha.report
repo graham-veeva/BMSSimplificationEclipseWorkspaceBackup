@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Clm_Presentation_vod__c.Presentation_Id_vod__c</field>
+    </columns>
+    <columns>
+        <field>Clm_Presentation_vod__c.Product_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Clm_Presentation_vod__c.End_Date_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Clm_Presentation_vod__c.Country_Code_BMS_EMEA__c</column>
+            <operator>equals</operator>
+            <value>GB,gb,IE,ie,UI,ui</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <operator>notContain</operator>
+            <value>admin</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>To Migrate - Kavisha</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Clm_Presentation_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Clm_Presentation_vod__c.Product_vod__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Clm_Presentation_vod__c.Copy_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

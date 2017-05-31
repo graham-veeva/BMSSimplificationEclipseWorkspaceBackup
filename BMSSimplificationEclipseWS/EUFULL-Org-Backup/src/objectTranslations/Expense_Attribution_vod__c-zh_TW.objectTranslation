@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>費用屬性</value>
+    </caseValues>
+    <fields>
+        <label>實際</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>費用行</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>費用類型</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>發生費用 (帳戶)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>發生費用 (出席者)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>發生費用 (演講者)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>發生費用 (小組成員)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>發生費用類型</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>帳戶</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>出席者</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>活動演講者</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>活動小組成員</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>廠商</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>場地</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>發生費用 (廠商)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>發生費用 (場地)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>費用屬性</relationshipLabel>
+    </fields>
+    <fields>
+        <label>發生費用</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>付款日期</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>名稱</nameFieldLabel>
+    <recordTypes>
+        <label>活動費用屬性</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

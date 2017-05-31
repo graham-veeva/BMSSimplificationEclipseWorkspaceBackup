@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Настройка за състояние на мостри</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Настройки за състояние на мостри</value>
+    </caseValues>
+    <fields>
+        <label>CDS е задължително</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setting --></label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation><!-- BRC_Sample_Only_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation><!-- Hand_Sample_Only_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation><!-- No_Sample_vod --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>CDS изискванията и начинът на доставка не може да се задават в един и същи запис.</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

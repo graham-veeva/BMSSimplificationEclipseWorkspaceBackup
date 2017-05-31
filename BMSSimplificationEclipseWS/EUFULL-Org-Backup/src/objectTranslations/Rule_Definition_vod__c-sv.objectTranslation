@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Regeldefinition</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Regeldefinition</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Regeldefinition</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Regeldefinitioner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Regeldefinitioner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Regeldefinitioner</value>
+    </caseValues>
+    <fields>
+        <help>Anger om regeln är aktiv i Salesforce.com</help>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>Fältnamn där felmeddelanden på fältnivå visas.</help>
+        <label>Visa fält</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>Regelformel</help>
+        <label>Formel för felvillkor</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>Felmeddelande för regel.</help>
+        <label>Mastermeddelande</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>Objekt som denna valideringsregel vilar på.</help>
+        <label>Objekt</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>Regeldefinitioner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Beställning</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Anges om Veeva har hittat syntax i regeldefinitionen som inte stöds.</help>
+        <label>Stöds</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>Externt Id för posten Formatet är [REGELNAMN]::[PostTyp.Namn]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC rad för uppslagsfilter</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC-regel</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

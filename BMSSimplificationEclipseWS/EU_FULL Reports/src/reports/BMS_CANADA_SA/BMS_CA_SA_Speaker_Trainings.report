@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_$Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.First_Name_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.City_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.State_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c.Product_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c.Speaker_Training_Proactive_Deck_BMS__c</field>
+    </columns>
+    <description>Formation des orateurs : Speaker Trainings</description>
+    <filter>
+        <criteriaItems>
+            <column>Call2_Discussion_vod__c.Interaction_Topic_BMS__c</column>
+            <operator>equals</operator>
+            <value>Speaker Training_cn,Speaker Training</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Speaker Trainings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Call2_vod__c$Call2_Discussion_vod__c@Call2_Discussion_vod__c.Account_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_OWNER_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Assignment_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chi nhánh</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Source Country --></label>
+        <name>Account_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Chi nhánh con</label>
+        <name>Child_affiliation_vod__c</name>
+        <relationshipLabel>Chi nhánh</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nhận xét</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tắt kích hoạt</label>
+        <name>Disable_Trigger_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID bên ngoài</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Từ tài khoản</label>
+        <name>From_Account_vod__c</name>
+        <relationshipLabel>Chi nhánh (Từ tài khoản)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Từ liên hệ</label>
+        <name>From_Contact_vod__c</name>
+        <relationshipLabel>Chi nhánh (Từ liên hệ)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ảnh hưởng</label>
+        <name>Influence_vod__c</name>
+        <picklistValues>
+            <masterLabel>Has influence</masterLabel>
+            <translation>Có ảnh hưởng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is influenced</masterLabel>
+            <translation>Bị ảnh hưởng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No influence</masterLabel>
+            <translation>Không có ảnh hưởng</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID di động</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cha</label>
+        <name>Parent_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mức độ Quan hệ</label>
+        <name>Relationship_Strength_vod__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>Yếu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Trung bình</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Mạnh</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vai trò</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Access Relationship</masterLabel>
+            <translation><!-- Access Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliated with</masterLabel>
+            <translation>Liên kết với</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Relationship</masterLabel>
+            <translation><!-- HQ Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Relationship</masterLabel>
+            <translation><!-- Medical Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Relationship</masterLabel>
+            <translation><!-- Sales Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Khu vực điều trị</label>
+        <name>Therapeutic_Area_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>Khoa tim</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Medicine</masterLabel>
+            <translation>Y khoa Cấp cứu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Medicine</masterLabel>
+            <translation>Y tế Gia đình</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation>Phòng khám Tổng quát</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Medicine</masterLabel>
+            <translation>Nội khoa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>Khoa Ung thư</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Khác</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrics</masterLabel>
+            <translation>Nhi khoa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tổng số Liên kết của Tài khoản đích</label>
+        <name>To_Account_Affiliation_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>Danh tính Tài khoản đích</label>
+        <name>To_Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên Tài khoản đích</label>
+        <name>To_Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại Bản ghi Tài khoản đích</label>
+        <name>To_Account_Record_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đến tài khoản</label>
+        <name>To_Account_vod__c</name>
+        <relationshipLabel>Chi nhánh (Đến tài khoản)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Đến liên hệ</label>
+        <name>To_Contact_vod__c</name>
+        <relationshipLabel>Chi nhánh (Đến liên hệ)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Hủy</label>
+        <name>destroy_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- AffiliationNumber --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Tài khoản nhận và tài khoản gửi không được giống nhau</errorMessage>
+        <name>DUP_TO_FROM_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Liên hệ nhận và liên hệ gửi không được giống nhau</errorMessage>
+        <name>DUP_TO_FROM_CONTACT</name>
+    </validationRules>
+</CustomObjectTranslation>

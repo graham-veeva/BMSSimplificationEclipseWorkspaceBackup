@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_43488895</developerName>
+        <masterLabel>On/Off Label （Percentage）</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Key_Message_vod__c$Name</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Adolescents</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Consequences of Nonadherence to Antiretroviral Therapy (ART)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MOA</sourceValue>
+            </sourceValues>
+            <value>On-Label</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Slide 1 Managing the Risk of Stroke</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Slide 2 The Patient Flow-Clinical Interaction Initiative</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Slide 3 New Patient Presents</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Slide 4 New Patient Evaluation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Slide 5 New Patient Treatment Asses</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Slide 6 Ongoing Management</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Slide 7 Blank</sourceValue>
+            </sourceValues>
+            <value>Off-Label</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_32681531</developerName>
+        <masterLabel>Paiten Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Key_Message_vod__c.Call2_Key_Message_vod__r$Reaction_vod__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Positive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Neutral</sourceValue>
+            </sourceValues>
+            <value>TL</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Negative</sourceValue>
+            </sourceValues>
+            <value>HCP</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Average</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Key_Message_vod__c.Call2_Key_Message_vod__r$Duration_vod__c</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Key_Message_vod__c$On_Off_Label_BMS_CN__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Key_Message_vod__c.Call2_Key_Message_vod__r$Duration_vod__c</field>
+    </columns>
+    <description>On-Off Lable KPI
+% based of avg Duration in minutes
+SIT</description>
+    <filter>
+        <criteriaItems>
+            <column>Key_Message_vod__c.Call2_Key_Message_vod__r$Duration_vod__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Key_Message_vod__c.Call2_Key_Message_vod__r$Call_Date_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Key_Message_vod__c$On_Off_Label_BMS_CN__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - CHINA Medical Content Focus</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Key_Messages_and_Interaction_Key_Messages__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Key_Message_vod__c.Call2_Key_Message_vod__r$Call_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

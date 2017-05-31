@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>活动团队成员</value>
+    </caseValues>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Member Description --></label>
+        <name>Description_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>电子邮件</label>
+        <name>Email_vod__c</name>
+    </fields>
+    <fields>
+        <label>活动</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>活动团队成员</relationshipLabel>
+    </fields>
+    <fields>
+        <label>外部编号</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>组名称</label>
+        <name>Group_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>覆盖锁定</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>电话号码</label>
+        <name>Phone_Number_vod__c</name>
+    </fields>
+    <fields>
+        <label>角色</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approver_vod</masterLabel>
+            <translation>批准人</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certifier</masterLabel>
+            <translation><!-- Certifier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cohost_vod</masterLabel>
+            <translation>协办</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor</masterLabel>
+            <translation><!-- Editor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organizer_vod</masterLabel>
+            <translation>组织方</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read Only</masterLabel>
+            <translation><!-- Read Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Coordinator</masterLabel>
+            <translation><!-- Service Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>供应商</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>团队成员</label>
+        <name>Team_Member_vod__c</name>
+        <relationshipLabel>活动团队成员</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Cross Org</masterLabel>
+            <translation><!-- Cross Org --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>名称</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Simple Event Team Member --></label>
+        <name>Activity_Team_Member_Simple_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>活动团队成员</label>
+        <name>Event_Team_Member_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>组</label>
+        <name>Group_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>请选择个人或组</errorMessage>
+        <name>Person_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

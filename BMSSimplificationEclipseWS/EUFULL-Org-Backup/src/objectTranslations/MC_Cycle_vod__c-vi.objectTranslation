@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chu Kỳ Tiếp Xúc Bán Hàng MC</value>
+    </caseValues>
+    <fields>
+        <label>Kích Hoạt Mục Tiêu Đã Chỉnh Sửa</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Nếu đúng và có các trường kéo-qua tồn tại trên đối tượng MC_Target_vod, khi thực thi tích hợp MCCP nó sẽ tạo giá trị cho các trường kéo-qua này. Khuyến cáo không nên thiết lập tác vụ này thường xuyên, chỉ làm khi cần phải tạo ra các giá trị kéo-qua.</help>
+        <label>Tính Toán Kéo Qua</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vượt Quá Mức Ngưỡng</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày Bắt Đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng thái</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Đã hoàn thành</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Đang xử lý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Đã Lên Kế Hoạch</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Đạt Dưới Mức Ngưỡng</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Xác Định Chu Kỳ Tiếp Xúc Bán Hàng</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Ngày Bắt Đầu không được lớn hơn hay bằng Ngày Kết Thúc.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

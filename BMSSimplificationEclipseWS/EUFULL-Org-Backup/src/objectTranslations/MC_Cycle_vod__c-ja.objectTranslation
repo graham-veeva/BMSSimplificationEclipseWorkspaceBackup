@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MC サイクル</value>
+    </caseValues>
+    <fields>
+        <label>編集済み目標の有効化</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>TRUE の場合および引き込みフィールドが MC_Target_vod オブジェクトに存在する場合には、MCCP 統合を実行すると引き込みフィールドに入力されます。これは頻繁に設定せず、引き込み値を入力する必要がある場合にのみ設定することが推奨されます。</help>
+        <label>引き込みの計算</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>説明</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>終了日</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>既に到達済みのしきい値</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>開始日</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ステータス</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>完了</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>予定</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>未達成のしきい値</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>サイクル定義</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>[開始日] を [終了日] 以降にすることはできません。</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

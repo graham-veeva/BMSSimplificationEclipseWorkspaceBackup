@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prissætning-underreglen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Prissætning-underregels</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Prissætning-underregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prissætning-underreglers</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Prissætning-underregler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Prissætning-underregler</value>
+    </caseValues>
+    <fields>
+        <label>Sammenligningstype</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Listeværdi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Mængde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>SKU-antal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Maksimumsmængde</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Minimumsmængde</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prisfastsættelses regel</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Prisfastsættelses underregel</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Prisfastsættelses underregel</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Navnet</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Kit-produkter understøttes ikke som sammenligningsprodukter.</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maksimal produkter skal være flere eller ens med minimums antallet.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SKU-tallet skal være &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

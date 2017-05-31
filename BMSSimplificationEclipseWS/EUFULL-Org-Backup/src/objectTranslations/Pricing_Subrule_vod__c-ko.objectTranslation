@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>하위 가격 규칙</value>
+    </caseValues>
+    <fields>
+        <label>비교 유형</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>목록 값</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>수량</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>SKU 수</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>최대 수량</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>최소 수량</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>가격 규칙</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>하위 가격 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>하위 가격 규칙</relationshipLabel>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <validationRules>
+        <errorMessage>키트 항목은 비교 제품으로 지원되지 않습니다.</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 수량은 최소 수량보다 크거나 같아야 합니다.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SKU 수는 0보다 커야 합니다.</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

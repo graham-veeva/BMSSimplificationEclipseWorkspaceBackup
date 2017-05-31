@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solicitud de cambio de datos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solicitudes de cambio de datos</value>
+    </caseValues>
+    <fields>
+        <label>ID externo de cuenta</label>
+        <name>Account_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cuenta</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Solicitudes de cambio de datos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externo de dirección</label>
+        <name>Address_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dirección</label>
+        <name>Address_vod__c</name>
+        <relationshipLabel>Solicitudes de cambio de datos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externo de cuenta subordinada</label>
+        <name>Child_Account_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cuenta subordinada</label>
+        <name>Child_Account_vod__c</name>
+        <relationshipLabel>Solicitudes de cambio de datos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Asignación de país</label>
+        <name>Country_Mapping_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>ID externo de DCR</label>
+        <name>DCR_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCR Record Type --></label>
+        <name>DCR_Record_Type_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCR URL --></label>
+        <name>DCR_URL_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Fecha/hora</label>
+        <name>Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Error</label>
+        <name>Error_vod__c</name>
+    </fields>
+    <fields>
+        <label>Estado externo</label>
+        <name>External_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE_CANCELLED</masterLabel>
+            <translation>Se ha cancelado el cambio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_NEW</masterLabel>
+            <translation>Cambiar nuevo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PARTIALLYPROCESSED</masterLabel>
+            <translation>El cambio se ha procesado parcialmente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PENDINGREVIEW</masterLabel>
+            <translation>El cambio está pendiente de revisión</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PROCESSED</masterLabel>
+            <translation>Se ha procesado el cambio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Fecha/hora de creación móvil</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID móvil</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha/hora de última modificación móvil</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Modo principal del cliente de red</label>
+        <name>Network_Customer_Master_Mode_vod__c</name>
+    </fields>
+    <fields>
+        <label>Notas</label>
+        <name>Notes_vod__c</name>
+    </fields>
+    <fields>
+        <label>Solicitud de cambio de datos principal</label>
+        <name>Parent_Data_Change_Request_vod__c</name>
+        <relationshipLabel>Peticiones de modificación relacionadas (Child DCRs)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nota de resolución</label>
+        <name>Resolution_Note_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha/hora de respuesta</label>
+        <name>Response_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Resultado</label>
+        <name>Result_vod__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE_ACCEPTED</masterLabel>
+            <translation>Se ha aceptado el cambio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_ALREADYAPPLIED</masterLabel>
+            <translation>El cambio ya se ha aplicado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_MODIFIED</masterLabel>
+            <translation>Se ha modificado el cambio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PARTIAL</masterLabel>
+            <translation>Cambio parcial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_REJECTED</masterLabel>
+            <translation>Se ha rechazado el cambio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Fecha/hora de envío</label>
+        <name>Sent_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Estado</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled_vod</masterLabel>
+            <translation>Cancelado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_vod</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Procesado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Enviado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Delete_vod</masterLabel>
+            <translation>Eliminar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit_vod</masterLabel>
+            <translation>Editar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Nuevo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Language --></label>
+        <name>User_Language_BMS_EMEA__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Data Change Request Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Cuenta</label>
+        <name>Account_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Dirección</label>
+        <name>Address_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Cuenta subordinada</label>
+        <name>Child_Account_vod</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- DCR_Link --></label>
+        <name>DCR_Link</name>
+    </webLinks>
+</CustomObjectTranslation>

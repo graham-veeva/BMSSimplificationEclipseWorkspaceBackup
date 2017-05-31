@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <fields>
+        <label>Hoạt động</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc phân bổ</label>
+        <name>Allocation_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocation Family --></label>
+        <name>Allocation_Family_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu phân bổ</label>
+        <name>Allocation_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cho phép các trường hợp ngoại lệ về ngày</label>
+        <name>Allow_Date_Exceptions_vod__c</name>
+        <picklistValues>
+            <masterLabel>DoNothing_vod</masterLabel>
+            <translation>Không làm gì</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Ngăn chặn</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Cần được phê duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Cảnh báo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cho phép các ngoại lệ về số lượng</label>
+        <name>Allow_Quantity_Exceptions_vod__c</name>
+        <picklistValues>
+            <masterLabel>DoNothing_vod</masterLabel>
+            <translation>Không làm gì</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Ngăn chặn</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Cần được phê duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Cảnh báo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS PRODUCT ID --></label>
+        <name>BMS_Product_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Delete_District --></label>
+        <name>District_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- District ID --></label>
+        <name>District_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>ID bên ngoài</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng tối thiểu của một đơn đặt hàng</label>
+        <name>Minimum_Single_Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc đặt hàng</label>
+        <name>Order_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu đặt hàng</label>
+        <name>Order_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id phân bổ chính</label>
+        <name>Parent_Allocation_Id_vod__c</name>
+        <relationshipLabel>Phân bổ đơn đặt hàng tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Remaining --></label>
+        <name>Percent_Remaining_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng phân bổ đơn đặt hàng tồn kho</label>
+        <name>Product_Order_Allocation_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Phân bổ đơn đặt hàng tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Delete_Region ID --></label>
+        <name>Region_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Allocation --></label>
+        <name>Remaining_Allocation_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Tổng số lượng đã đặt hàng</label>
+        <name>Total_Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhóm phân bổ người dùng</label>
+        <name>User_Allocation_Group_vod__c</name>
+        <picklistValues>
+            <masterLabel>Group A</masterLabel>
+            <translation>Nhóm A</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>User_Email_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Người dùng</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Phân bổ đơn đặt hàng tồn kho</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Inventory Order Allocation Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Ngày bắt đầu không được sau ngày kết thúc</errorMessage>
+        <name>VEEVA_DATES_MISMATCH_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Số lượng đặt hàng tối thiểu không được lớn hơn số lượng phân bổ</errorMessage>
+        <name>VEEVA_MINIMUM_ORDER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ngày đặt hàng phải nằm trong khoảng ngày phân bổ</errorMessage>
+        <name>VEEVA_ORDER_DATES_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Số lượng không được nhỏ hơn 0</errorMessage>
+        <name>VEEVA_QUANTITIES_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Số lượng phân bổ không được nhỏ hơn số lượng đã thực hiện.</errorMessage>
+        <name>VEEVA_QUANTITY_FULFILLED_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

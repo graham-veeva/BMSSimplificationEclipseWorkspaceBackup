@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Metrisk konfigurering</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Metrisk konfigurering</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Metrisk konfigurering</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Metriska konfigureringar</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Metriska konfigureringar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Metriska konfigureringar</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gäller för</label>
+        <name>Applies_To_vod__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>Alla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Department</masterLabel>
+            <translation><!-- BMS - Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Group Practice</masterLabel>
+            <translation><!-- BMS - Group Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Individual</masterLabel>
+            <translation><!-- BMS - Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Institution</masterLabel>
+            <translation><!-- BMS - Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization</masterLabel>
+            <translation><!-- BMS - Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization (MM)</masterLabel>
+            <translation><!-- BMS - Organization (MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board_vod</masterLabel>
+            <translation>Ledning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer_vod</masterLabel>
+            <translation>Arbetsgivare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital Department_vod</masterLabel>
+            <translation>Sjukhusavdelning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital_vod</masterLabel>
+            <translation>Sjukhus</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratory_vod</masterLabel>
+            <translation>Laboratorium</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO Plan_vod</masterLabel>
+            <translation>MCO-plan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO_vod</masterLabel>
+            <translation>MCO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Apotek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice_vod</masterLabel>
+            <translation>Praktik</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>Professionell</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Detaljgrupp</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>Metriska konfigureringar</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Detalj ämne</label>
+        <name>Detail_Topic_vod__c</name>
+    </fields>
+    <fields>
+        <label>Visningsordning</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>Måttyp</label>
+        <name>Metric_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Arrows_vod</masterLabel>
+            <translation>Pilar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box_vod</masterLabel>
+            <translation>Låda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbox_vod</masterLabel>
+            <translation>Kryssruta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number_vod</masterLabel>
+            <translation>Numeriskt värde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text_vod</masterLabel>
+            <translation>Text</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Röd/gul</label>
+        <name>Red_Yellow_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gul/grön</label>
+        <name>Yellow_Green_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Metric --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Endast typ av detaljgrupp&quot; är tillåten</errorMessage>
+        <name>Detail_Group_Type_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

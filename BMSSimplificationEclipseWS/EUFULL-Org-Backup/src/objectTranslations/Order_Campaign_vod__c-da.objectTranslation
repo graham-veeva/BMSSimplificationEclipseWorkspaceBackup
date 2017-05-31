@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Bestillingskampagne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Bestillingskampagne</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Bestillingskampagne</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Bestillingskampagner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Bestillingskampagner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Bestillingskampagner</value>
+    </caseValues>
+    <fields>
+        <label>Kundegruppe</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kundetype</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>Salgspartner/forhandler</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>Kunde - kanal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>Kunde - direkte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>Installationspartner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Andet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>Professionel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>Kundeemne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>Teknologipartner</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Standard</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivelse</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdato</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestillingskampagne begrænset</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestillingsregistreringstype</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>Alle</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Direkte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Overfør</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Startdato</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

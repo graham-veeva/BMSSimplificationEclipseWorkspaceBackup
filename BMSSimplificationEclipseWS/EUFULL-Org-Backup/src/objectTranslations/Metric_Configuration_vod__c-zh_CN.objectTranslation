@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>指标配置</value>
+    </caseValues>
+    <fields>
+        <label>已启用</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>适用于</label>
+        <name>Applies_To_vod__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>所有</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Department</masterLabel>
+            <translation><!-- BMS - Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Group Practice</masterLabel>
+            <translation><!-- BMS - Group Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Individual</masterLabel>
+            <translation><!-- BMS - Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Institution</masterLabel>
+            <translation><!-- BMS - Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization</masterLabel>
+            <translation><!-- BMS - Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization (MM)</masterLabel>
+            <translation><!-- BMS - Organization (MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board_vod</masterLabel>
+            <translation>董事会</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer_vod</masterLabel>
+            <translation>雇主</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital Department_vod</masterLabel>
+            <translation>医疗部门</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital_vod</masterLabel>
+            <translation>医疗</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratory_vod</masterLabel>
+            <translation>实验室</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO Plan_vod</masterLabel>
+            <translation>MCO 计划</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO_vod</masterLabel>
+            <translation><!-- MCO_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>药房</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice_vod</masterLabel>
+            <translation>实践</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>专业人员</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>详述组</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>指标配置</relationshipLabel>
+    </fields>
+    <fields>
+        <label>详述主题</label>
+        <name>Detail_Topic_vod__c</name>
+    </fields>
+    <fields>
+        <label>显示顺序</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>指标类型</label>
+        <name>Metric_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Arrows_vod</masterLabel>
+            <translation>箭头</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box_vod</masterLabel>
+            <translation>盒形</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbox_vod</masterLabel>
+            <translation>复选框</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number_vod</masterLabel>
+            <translation>数字</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text_vod</masterLabel>
+            <translation>文字</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>红/黄</label>
+        <name>Red_Yellow_vod__c</name>
+    </fields>
+    <fields>
+        <label>黄/绿</label>
+        <name>Yellow_Green_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Metric --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>仅允许“详述组”类型</errorMessage>
+        <name>Detail_Group_Type_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

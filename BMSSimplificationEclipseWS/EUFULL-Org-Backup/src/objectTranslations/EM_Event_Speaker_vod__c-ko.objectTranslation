@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>이벤트 연사</value>
+    </caseValues>
+    <fields>
+        <label><!-- AATemplateID --></label>
+        <name>AATemplateID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>계정</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Name --></label>
+        <name>Activity_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Product --></label>
+        <name>Activity_Product_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Activity_Service_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation><!-- Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairperson / Moderator</masterLabel>
+            <translation><!-- Chairperson / Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congress Services</masterLabel>
+            <translation><!-- Congress Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation><!-- Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer / Educator</masterLabel>
+            <translation><!-- Trainer / Educator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Terms and Conditions --></label>
+        <name>Additional_Terms_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BMS Rights to Recording of Consultant</masterLabel>
+            <translation><!-- BMS Rights to Recording of Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duration of Confidentiality - 5 years</masterLabel>
+            <translation><!-- Duration of Confidentiality - 5 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duration of Confidentiality - 7 years</masterLabel>
+            <translation><!-- Duration of Confidentiality - 7 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment for travel time</masterLabel>
+            <translation><!-- Payment for travel time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Standard</masterLabel>
+            <translation><!-- Speaker Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ariba SOW Number for this Activity Service Provider --></help>
+        <label><!-- Ariba SOW Number --></label>
+        <name>Ariba_SOW_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance Status --></label>
+        <name>Attendance_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Attended In Person</masterLabel>
+            <translation><!-- Attended In Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended Virtually</masterLabel>
+            <translation><!-- Attended Virtually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not Attend</masterLabel>
+            <translation><!-- Did not Attend --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Can Generate Contract --></label>
+        <name>Can_Generate_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Currency culture used in Conga Button url..should be hidden from end users normally --></help>
+        <label><!-- Conga Currency Culture --></label>
+        <name>CongaCurrencyCulture_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- FINAL TEMPLATE SELECTOR FORMULA AS INPUT TO CONGA --></help>
+        <label><!-- ContractTemplateId to Generate --></label>
+        <name>ContractTemplateId_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract Template Id formula field used by the Download Conga button on Activity Speaker object --></help>
+        <label><!-- ContractTemplateId to Download --></label>
+        <name>ContractTemplateId_to_Download_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- These values apply to Services Contracts. If Short-term is chosen, only a SOW/Activity Agreement is applicable. Long-term contracts will have an SOW AND an MSA/Framework agreement --></help>
+        <label><!-- Contract Format --></label>
+        <name>Contract_Format_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Long-term</masterLabel>
+            <translation><!-- Long-term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-term</masterLabel>
+            <translation><!-- Short-term --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Defaults to Speaker&apos;s language if available --></help>
+        <label><!-- Contract Language --></label>
+        <name>Contract_Language_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>ar</masterLabel>
+            <translation><!-- ar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bg</masterLabel>
+            <translation><!-- bg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cs</masterLabel>
+            <translation><!-- cs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>da</masterLabel>
+            <translation><!-- da --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation><!-- de --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>el</masterLabel>
+            <translation><!-- el --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_GB</masterLabel>
+            <translation><!-- en_GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation><!-- en_US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation><!-- es --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es_MX</masterLabel>
+            <translation><!-- es_MX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fi</masterLabel>
+            <translation><!-- fi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation><!-- fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hr</masterLabel>
+            <translation><!-- hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hu</masterLabel>
+            <translation><!-- hu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>in</masterLabel>
+            <translation><!-- in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation><!-- it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iw</masterLabel>
+            <translation><!-- iw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation><!-- ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ko</masterLabel>
+            <translation><!-- ko --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nl_NL</masterLabel>
+            <translation><!-- nl_NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pl</masterLabel>
+            <translation><!-- pl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_BR</masterLabel>
+            <translation><!-- pt_BR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_PT</masterLabel>
+            <translation><!-- pt_PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ro</masterLabel>
+            <translation><!-- ro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ru</masterLabel>
+            <translation><!-- ru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sk</masterLabel>
+            <translation><!-- sk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sl</masterLabel>
+            <translation><!-- sl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sv</masterLabel>
+            <translation><!-- sv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>th</masterLabel>
+            <translation><!-- th --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tr</masterLabel>
+            <translation><!-- tr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>uk</masterLabel>
+            <translation><!-- uk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>vi</masterLabel>
+            <translation><!-- vi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zh_CN</masterLabel>
+            <translation><!-- zh_CN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zh_TW</masterLabel>
+            <translation><!-- zh_TW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Lead Time --></label>
+        <name>Contract_Lead_Time_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Contract Party derived from the ICF. To update the Contract Party, please update the ICF. If the ICF is locked, you may use Clone ICF to create a copy and then make updates. --></help>
+        <label><!-- Contract Party --></label>
+        <name>Contract_Party_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>계약</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>이벤트 연사</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>자격 증명</label>
+        <name>Credentials_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- ESVisible = 1, Echosign send option is available, else not --></help>
+        <label><!-- ESVisible --></label>
+        <name>ESVisible_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Echosign Template Id --></label>
+        <name>Echosign_Template_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yes indicates that this Attendee requires Employer Consent. --></help>
+        <label><!-- Employer Consent Required? --></label>
+        <name>Employer_Consent_Required_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify status of EC capture stage/step --></help>
+        <label><!-- Employer Consent Status --></label>
+        <name>Employer_Consent_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Employer Email --></help>
+        <label><!-- Entity Signatory Email --></label>
+        <name>Employer_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of Employer hand typed by the user --></help>
+        <label><!-- Entity Name --></label>
+        <name>Employer_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Employer signatory --></help>
+        <label><!-- Entity Signatory Name --></label>
+        <name>Employer_Signatory_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signatory Title --></help>
+        <label><!-- Entity Signatory Title --></label>
+        <name>Employer_Signatory_Title_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>종료 시간</label>
+        <name>End_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>엔티티 참조 ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Agreement --></label>
+        <name>Event_Speaker_Contract_HCPTS__c</name>
+        <relationshipLabel><!-- Event Service Providers (Activity Agreement) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>이벤트</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>이벤트 연사</relationshipLabel>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>FSpecialty_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Template Id formula field used by the Download Conga button on Activity Speaker object --></help>
+        <label><!-- FWTemplateId For Download --></label>
+        <name>FWTemplateId_For_Download_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Framework Agreement template ID formula for Input to Conga --></help>
+        <label><!-- FWTemplateId For Generation --></label>
+        <name>FWTemplateId_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>이름</label>
+        <name>First_Name_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, Employer Signature table is shown in the Contract --></help>
+        <label><!-- Hide Employer Sign Table in Contract? --></label>
+        <name>Hide_Employer_Sign_Table_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field indicates whether the criteria are set to successfully contract with this person. Key criteria is Related ICF must be in Signed or Signed Manually status --></help>
+        <label><!-- Approved to Generate Contract? --></label>
+        <name>Is_Approved_to_Contract_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>성</label>
+        <name>Last_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master ID --></label>
+        <name>Master_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Hours --></label>
+        <name>Max_Hours_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>식사 옵트인</label>
+        <name>Meal_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>식사 선호</label>
+        <name>Meal_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>Vegetarian</masterLabel>
+            <translation>채식주의자</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>중간 이름</label>
+        <name>Middle_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>모바일 ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>별명</label>
+        <name>Nickname_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Signers --></label>
+        <name>Number_of_Signers_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>잠금 조정</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>직무</label>
+        <name>Position_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Provider Type --></label>
+        <name>Provider_Type_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Provider Type --></label>
+        <name>Provider_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>HCO</masterLabel>
+            <translation><!-- HCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JV Employee</masterLabel>
+            <translation><!-- JV Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation><!-- Journalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation><!-- Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation><!-- Patient Advocacy Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patients</masterLabel>
+            <translation><!-- Patients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacist</masterLabel>
+            <translation><!-- Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technicians</masterLabel>
+            <translation><!-- Technicians --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provider type value from the Service Provider Lookup --></help>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type_Simple_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for PO? --></label>
+        <name>Ready_to_Invoice_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Email --></label>
+        <name>Recipient_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status updated by Logistics provider based on attendee response. Not editable. --></help>
+        <label><!-- Registration Status --></label>
+        <name>Registration_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursable Expenses --></label>
+        <name>Reimbursable_Expenses_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BMS will not pay</masterLabel>
+            <translation><!-- BMS will not pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS will pay</masterLabel>
+            <translation><!-- BMS will pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS will pay max agreed amount</masterLabel>
+            <translation><!-- BMS will pay max agreed amount --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related ICF --></label>
+        <name>Related_ICF_HCPTS__c</name>
+        <relationshipLabel><!-- Event Service Providers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Service subtype --></help>
+        <label><!-- Contract Subtype --></label>
+        <name>Service_Subtype_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee for Preceptorship</masterLabel>
+            <translation><!-- Attendee for Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Preparation and/or Review</masterLabel>
+            <translation><!-- Content Preparation and/or Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Monitoring Committee</masterLabel>
+            <translation><!-- Data Monitoring Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits, Booths and Displays</masterLabel>
+            <translation><!-- Exhibits, Booths and Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Presentation (Serial)</masterLabel>
+            <translation><!-- External Presentation (Serial) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Presentation (one-time)</masterLabel>
+            <translation><!-- External Presentation (one-time) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FDA Mock Advisory Committee</masterLabel>
+            <translation><!-- FDA Mock Advisory Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty for Preceptorship</masterLabel>
+            <translation><!-- Faculty for Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Consulting</masterLabel>
+            <translation><!-- General Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Review Committee</masterLabel>
+            <translation><!-- Independent Review Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Presentation</masterLabel>
+            <translation><!-- Internal Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderator</masterLabel>
+            <translation><!-- Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presentation at a Congress</masterLabel>
+            <translation><!-- Presentation at a Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protocol Review</masterLabel>
+            <translation><!-- Protocol Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publication Steering Committee</masterLabel>
+            <translation><!-- Publication Steering Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recorded Presentation</masterLabel>
+            <translation><!-- Recorded Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Training</masterLabel>
+            <translation><!-- Speaker Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship</masterLabel>
+            <translation><!-- Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship to Congress</masterLabel>
+            <translation><!-- Sponsorship to Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Study Steering Committee</masterLabel>
+            <translation><!-- Study Steering Committee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Helps categorize a Contract per BMS Service Type. Please note: Long-term &amp; Short-term apply to Services Contract. Short-term contracts do not include an MSA while Long-term contracts do when Contracts are sent out to HCP. --></help>
+        <label><!-- Contract Type --></label>
+        <name>Service_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Events</masterLabel>
+            <translation><!-- Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>세션 제목</label>
+        <name>Session_Title_vod__c</name>
+    </fields>
+    <fields>
+        <label>서명 날짜/시간</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>서명</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Signatory --></label>
+        <name>Signer_1_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Framework Agreement --></label>
+        <name>Speaker_Contract_HCPTS__c</name>
+        <relationshipLabel><!-- Event Service Providers (Framework Agreement) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula field showing the Service Provider&apos;s email address --></help>
+        <label><!-- Service Provider Email --></label>
+        <name>Speaker_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speaker Full Address --></label>
+        <name>Speaker_Full_Address_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>연사 이름</label>
+        <name>Speaker_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>연사</label>
+        <name>Speaker_vod__c</name>
+        <relationshipLabel>이벤트 연사</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>시작 시간</label>
+        <name>Start_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/ Provence --></label>
+        <name>State_Provence_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>상태</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Accepted_vod</masterLabel>
+            <translation>수락됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>승인됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended_vod</masterLabel>
+            <translation>참석함</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared_Signature_vod</masterLabel>
+            <translation>지워진 서명</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Attend</masterLabel>
+            <translation><!-- Did Not Attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invited_vod</masterLabel>
+            <translation>초대함</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>지명됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>거부됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>서명됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stub Mobile Id --></label>
+        <name>Stub_Mobile_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stub SFDC Id --></label>
+        <name>Stub_SFDC_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>접미사</label>
+        <name>Suffix_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxes --></label>
+        <name>Taxes_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Independent</masterLabel>
+            <translation><!-- Independent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT</masterLabel>
+            <translation><!-- VAT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>제목</label>
+        <name>Title_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Value --></label>
+        <name>Total_Contract_Value__c</name>
+    </fields>
+    <fields>
+        <label>항공편 번호</label>
+        <name>Vessel_Number_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc --></help>
+        <label><!-- View Contracting Buttons --></label>
+        <name>View_Online_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>직장</label>
+        <name>Workplace_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip_HCPTS__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Event Purchase Speaker --></label>
+        <name>Event_Purchase_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>이벤트 연사</label>
+        <name>Event_Speaker_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Events Event Speaker --></label>
+        <name>Events_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Services Event Speaker --></label>
+        <name>Services_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simplified Event Speaker --></label>
+        <name>Simplified_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sponsorship Event Speaker --></label>
+        <name>Sponsorship_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>행사팀 구성원</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Cannot edit an Activity Speaker after Activity has been approved --></errorMessage>
+        <name>Cannot_Edit_after_Activity_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There cannot be more than 10 signers. --></errorMessage>
+        <name>Cannot_have_more_than_10_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Activity Agreement is already activated! You cannot generate and send this Contract again to the HCP! --></errorMessage>
+        <name>ContractGen_AA_Already_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Activity Agreement must not be already Activated --></errorMessage>
+        <name>ContractGen_ES_Status_Activated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date of SOW cannot be after End date of Framework Agreement --></errorMessage>
+        <name>ContractGen_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event must be in In Planning status --></errorMessage>
+        <name>ContractGen_Event_In_Planning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Format must be specified as Long-term or Short-term. Please make a selection. Long-term contracts generate a Framework and Activity Agreement. Short-term contracts only contain an Activity agreement. --></errorMessage>
+        <name>ContractGen_Format_Must_For_Services</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Framework Agreement is required for a Service Contract --></errorMessage>
+        <name>ContractGen_Framework_Agreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Language value must be specified. Please pick a value! --></errorMessage>
+        <name>ContractGen_Language_Must</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Related Activity agreement must be populated --></errorMessage>
+        <name>ContractGen_Need_Activity_Agreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There must be at least one signer to generate a contract. --></errorMessage>
+        <name>ContractGen_Need_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The related ICF must be signed or signed manually --></errorMessage>
+        <name>ContractGen_Related_ICF_Signed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date of SOW cannot be before Start Date of Framework Agreement for a Service Contract --></errorMessage>
+        <name>ContractGen_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Subtype cannot be blank. --></errorMessage>
+        <name>ContractGen_Subtype_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected Contract Subtype is not applicable to Activity type --></errorMessage>
+        <name>Contract_Subtype_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot associate a Framework agreement for Sponsorship and Events Contract Type --></errorMessage>
+        <name>No_Framework_Agmnt_for_Sponsors_Events</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Download_Contracts_HCPTS --></label>
+        <name>Download_Contracts_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Contract --></label>
+        <name>Generate_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Invite_Speaker --></label>
+        <name>Invite_Speaker</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Regenerate_ICF_HCPTS --></label>
+        <name>Regenerate_ICF_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Framework --></label>
+        <name>Renew_Framework</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Setup_Contract --></label>
+        <name>Setup_Contract</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>שותף לחשבון</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>שותף לחשבון</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>שותפים לחשבון</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>שותפים לחשבון</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Partner ID --></label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>חשבון</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>שותפים לחשבון</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel><!-- Account Partners --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Default --></label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Type --></label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation><!-- Direct_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation><!-- Transfer_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>סיטונאי</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Delivery_Location_vod --></label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payer_vod --></label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ספר מחירים</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wholesaler_vod --></label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>נדרש חשבון.</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

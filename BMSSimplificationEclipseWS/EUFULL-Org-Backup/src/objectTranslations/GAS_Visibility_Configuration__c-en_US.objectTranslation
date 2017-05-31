@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>GAS Criteria-Based Filter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GAS Criteria-Based Filters</value>
+    </caseValues>
+    <fields>
+        <help><!-- This is the lookup field&apos;s API name that references the Account object in cases where the criteria is specified for a Child object like Address_vod__c. For eg, for Address_vod__c, the value for this field will be Account_vod__c --></help>
+        <label><!-- Account Lookup Field API Name --></label>
+        <name>Account_Lookup_Field_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only Active CVCs are used to build criteria for Available lists --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- SOQL where (without the word &quot;where&quot;) clause that will execute on the specified Object API Name. Keywords (see desc for details):VOD_SF_USER:&lt;fieldName&gt; , VOD_SF_USER_ID, VOD_SF_PROFILEID .... more in Description --></help>
+        <label><!-- Custom Exclusion Criteria --></label>
+        <name>Custom_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Auto-populated to 18 character SFDC ID of the Entity name --></help>
+        <label><!-- Entity ID --></label>
+        <name>Entity_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies Entity type - each entity may only have one record --></help>
+        <label><!-- Entity Type --></label>
+        <name>Entity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Organization</masterLabel>
+            <translation><!-- Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation><!-- Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Group</masterLabel>
+            <translation><!-- Public Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If checked, then this condition is &quot;AND&quot;ed with other CVCs that may exist for the logged in User. Only works with Custom Criteria, i.e., &quot;Use Custom Criteria&quot;. is checked/true --></help>
+        <label><!-- Exclusive criteria? --></label>
+        <name>Exclusive_criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID 2 --></label>
+        <name>External_ID_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entity_Id__c + Object_API_Name__c --></help>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Object API name on which the custom criteria will be applicable --></help>
+        <label><!-- Object API Name --></label>
+        <name>Object_API_Name__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address_vod__c</masterLabel>
+            <translation><!-- Address_vod__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child_Account_vod__c</masterLabel>
+            <translation><!-- Child_Account_vod__c --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

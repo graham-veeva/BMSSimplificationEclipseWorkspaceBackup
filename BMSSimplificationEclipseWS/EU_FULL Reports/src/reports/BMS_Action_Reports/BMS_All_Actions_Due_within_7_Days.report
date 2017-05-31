@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Account_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Product_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Description_BMS__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Due_Date_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Status_BMS__c</field>
+    </columns>
+    <description>Report to display all actions due within the next 7 days.</description>
+    <filter>
+        <criteriaItems>
+            <column>Action_BMS__c.Status_BMS__c</column>
+            <operator>equals</operator>
+            <value>Not Completed</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - All - Actions: Due Within 7 Days</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Action_BMS__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Action_BMS__c.Due_Date_BMS__c</dateColumn>
+        <interval>INTERVAL_NEXT7</interval>
+    </timeFrameFilter>
+</Report>

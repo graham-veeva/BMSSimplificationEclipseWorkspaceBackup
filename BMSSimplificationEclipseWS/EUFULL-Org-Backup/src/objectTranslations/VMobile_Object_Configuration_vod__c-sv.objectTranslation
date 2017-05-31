@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>VMobile-objektkonfigurering</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>VMobile-objektkonfigurering</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>VMobile-objektkonfigurering</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>VMobile-objektkonfigureringar</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>VMobile-objektkonfigureringar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>VMobile-objektkonfigureringar</value>
+    </caseValues>
+    <fields>
+        <label>Kontosökfält</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Underordnat objektnamn</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Underordnad relation</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Enhet</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aktivera forcering av uppdatering av objekt som använder en modell för privat delning eller har en uppdaterad s.k. where clause. Kan innebära ökade synkroniseringstider.</help>
+        <label>Aktivera utökad synkronisering</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lista med fält som ska undantas</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>Lista med fält som ska begränsas</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>Inkludera bilageinformationen vid synkronisering av objekt.</help>
+        <label>Inkludera bilagor</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inkludera relaterade objekt</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>Endast metadata</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>Objektnamn</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Överordnat objektnamn</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profil</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profilnamn</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relationsfält</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relationsnamn</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>Underordnad och överordnad rad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>Fullständig synkronisering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>Relaterad till toppnivå</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>Toppnivå</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Where-sats</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label>PEKDATOR</label>
+        <name>TABLET</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Objektnamn måste specificeras.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Överordnat objektnamn och relationsnamn måste anges på VMOC:erna som är relaterade till ett objekt på toppnivå</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

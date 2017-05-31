@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>주제 자료</value>
+    </caseValues>
+    <fields>
+        <label>CLM 프레젠테이션</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>주제 자료</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>이메일 템플릿</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>주제 자료</relationshipLabel>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>자료 유형</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>자료</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>자료 사용 주제</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>주제</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>주제 자료(주제)</relationshipLabel>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label>주제 자료</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>하나의 규칙으로 &apos;이메일 템플릿&apos;과 &apos;CLM 프레젠테이션&apos; 필드를 둘 다 채울 수는 없습니다. 이 두 가지 항목에 대하여 별도의 규칙을 생성하여 주십시오.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>하나의 주제 자료로 &apos;자료&apos;와 &apos;CLM 프레젠테이션&apos; 필드를 둘 다 채울 수는 없습니다. 이 두 가지 항목에 대하여 별도의 규칙을 생성하여 주십시오.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>하나의 주제 자료에 &apos;자료&apos;와 &apos;이메일 템플릿&apos; 필드를 둘 다 채울 수는 없습니다. 이 두 가지 항목에 대하여 별도의 규칙을 생성하여 주십시오.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

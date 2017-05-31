@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Staatinstellingen monsters</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Staatinstellingen monsters</value>
+    </caseValues>
+    <fields>
+        <label>CDS vereist</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Instelling</label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation>BRC_Sample_Only_vod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation>Hand_Sample_Only_vod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation>No_Sample_vod</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>CDS-vereisten en levermethode mogen niet in zelfde record worden gedefinieerd</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

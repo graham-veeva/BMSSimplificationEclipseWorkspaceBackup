@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Счет, оправленный для оплаты</label>
+        <name>Invoice_sent_to_accounting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Собрание</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Ссылки на расходы, связанные с проведением собрания</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Исходный номер</label>
+        <name>Reference_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Тип / категория</label>
+        <name>Type_Category_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Concur Expenses</masterLabel>
+            <translation>Согласовывать затраты</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP PO</masterLabel>
+            <translation><!-- SAP PO --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Expense Reference Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Вы не можете изменять какие-либо поля, так как вы являетесь соавтором собрания.</errorMessage>
+        <name>BMS_EMEA_FFM_Expense_Reference_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

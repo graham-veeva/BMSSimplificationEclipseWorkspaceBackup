@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Product_vod__c.Product_Type_vod__c</field>
+    </columns>
+    <description>Provides the list of current active leave behinds per product</description>
+    <filter>
+        <criteriaItems>
+            <column>Product_vod__c.Product_Source_Country_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>FR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product_vod__c.Product_Type_vod__c</column>
+            <operator>equals</operator>
+            <value>Promotional &amp; Educational Item</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <operator>notEqual</operator>
+            <value>BMS - EMEA - ACN - ADMINS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product_vod__c.Company_Product_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Admin - Active Leave Behinds per Product</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Product_vod__c@Product_vod__c.Parent_Product_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FK_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

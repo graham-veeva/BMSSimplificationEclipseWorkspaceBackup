@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alerte</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alertes</value>
+    </caseValues>
+    <fields>
+        <label>Date d&apos;activation</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Texte de l&apos;alerte</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Peut être rejeté</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date d&apos;expiration</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date/Heure de dernière notif. Push APNS</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Version longue du lien de référence</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>Associer une référence</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Priorité</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation><!-- Important --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Public</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Statut de la notification Push APNS</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Traité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>Mis en file d&apos;attente</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Erreur : les champs Version longue du lien de référence et Lien de référence ne peuvent pas être remplis à la même alerte.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

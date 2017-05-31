@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Insight Médico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Insights Médicos</value>
+    </caseValues>
+    <fields>
+        <label>Conta</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Insights Médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Avaliação clínica</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Insights Médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Descrição</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID de referência da entidade</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interação</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Insights Médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Evento médico</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Insights Médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Outra origem</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorar bloqueio</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publicação</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Insights Médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Enviado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Resumo</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Desbloquear</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome do Insight médico</nameFieldLabel>
+    <recordTypes>
+        <label>Insight Médico</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Uma descrição é necessária para salvar ou enviar um conhecimento médico essencial</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Um resumo é necessário para salvar ou enviar um conhecimento médico essencial</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Enviar</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

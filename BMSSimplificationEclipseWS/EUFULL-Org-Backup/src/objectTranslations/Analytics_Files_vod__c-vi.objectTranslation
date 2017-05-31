@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tệp phân tích</value>
+    </caseValues>
+    <fields>
+        <label>Địa điểm phân tích</label>
+        <name>Analytics_Location_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gầu</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhãn cột</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bao gồm mục tiêu?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày dữ liệu</label>
+        <name>Data_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id mẫu bản đồ dữ liệu</label>
+        <name>Data_Map_Template_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày xử lý</label>
+        <name>Date_Processed_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vị trí thập phân</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cho Phép Báo Cáo Phân Tích Bán Hàng?</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng Thái Báo Cáo Lỗi</label>
+        <name>Error_Reports_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên người dùng FTP</label>
+        <name>FTP_User_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên tệp</label>
+        <name>File_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Danh sách thuốc cho nhãn người đại diện</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Nhãn cột đầu tiên</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Không có</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Nhãn cột thứ hai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Loại tải tăng</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation><!-- Full_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation><!-- Incremental_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation><!-- Partial_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tăng</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trường đã được lập bản đồ</label>
+        <name>Mapped_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thị trường</label>
+        <name>Market_vod__c</name>
+        <relationshipLabel>Tệp phân tích</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Đã lập bản đồ thị trường?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ghi đè ngưỡng tài khoản</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đã lập bản đồ người thanh toán/Kế hoạch?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tổng số dòng</label>
+        <name>Row_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chia tỷ lệ</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Hàng tháng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Hàng tuần</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nhãn cột thứ hai</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng thái</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Archived_vod</masterLabel>
+            <translation>Lưu Trữ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed_vod</masterLabel>
+            <translation>Thất bại</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Đang xử lý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loaded_vod</masterLabel>
+            <translation>Đã tải</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved_To_Production_vod</masterLabel>
+            <translation>Đã chuyển sang sản xuất</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process_vod</masterLabel>
+            <translation>Xử lý</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Bao gồm tên lãnh thổ?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại</label>
+        <name>Type_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- File Id --></nameFieldLabel>
+    <webLinks>
+        <label>Báo cáo lỗi tài khoản</label>
+        <name>Account_Error_Report_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Kiểm soát tổng số báo cáo</label>
+        <name>Control_Totals_Report_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Báo cáo lỗi sản phẩm</label>
+        <name>Product_Error_Report_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Báo Cáo Lỗi Hoạt Động</label>
+        <name>Run_Error_Reports_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Báo cáo lỗ zip</label>
+        <name>Zip_Error_Report_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

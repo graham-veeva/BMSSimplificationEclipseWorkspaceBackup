@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Clinical_Trial_Protocol_BMS__c.Interaction_Discussions__r$Name</field>
+    </columns>
+    <description>Report to display clinical trial discussions grouped by product.</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Clinical_Trial_Protocol_BMS__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Clinical_Trial_Protocol_BMS__c.Interaction_Discussions__r$Product_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MSL - FM Clinical Trial Discussion</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Clinical_Trials_with_Interaction_Discussion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Clinical_Trial_Protocol_BMS__c.Interaction_Discussions__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

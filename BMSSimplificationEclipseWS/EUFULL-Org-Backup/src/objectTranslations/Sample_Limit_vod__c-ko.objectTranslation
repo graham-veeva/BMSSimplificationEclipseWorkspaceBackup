@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>샘플 한도</value>
+    </caseValues>
+    <fields>
+        <help>개별 기록 형식만 사용</help>
+        <label>계정 유형</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>계정</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>샘플 한도</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Txn 작성 비활성화</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>지출액</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>배포 수량</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>마감 날짜</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>한도 적용</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>그룹 ID</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>한도액</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>통화당 제한</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>한도 수량</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>샘플 한도</relationshipLabel>
+    </fields>
+    <fields>
+        <label>잔액</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>남은 수량</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>변화 기간</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>샘플 한도 유형</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>통화당 계정 사용자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>통화당 계정</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>통화당 사용자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>통화당 계정 샘플 제품군</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>계정\사용자\제품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>계정\제품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>사용자\제품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>계정 샘플 제품군</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>기간 분할</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12개월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>연도</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>시작 날짜</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>템플릿 그룹</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>사용 중인 템플릿</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>템플릿 고유 키</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>사용자</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>샘플 한도</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>레코드를 저장할 수 없습니다. 한도액은 0보다 커야 합니다.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>레코드를 저장할 수 없습니다. 제한 수량은 0보다 &quot;크거나&quot; 같아야 합니다.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>동일한 템플릿에서 수량과 값에 대해 샘플 제한 템플릿을 생성할 수 없습니다.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>샘플 제품군에 제한을 만들 경우 사용자를 시정할 수 없습니다.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>레코드를 저장할 수 없습니다. 종료 날짜 필드를 반드시 입력해야 합니다.</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>레코드를 저장할 수 없습니다. 제품 필드를 반드시 입력해야 합니다.</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>레코드를 저장할 수 없습니다. 시작 날짜 필드를 반드시 입력해야 합니다.</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>레코드를 저장할 수 없습니다. 계정 또는 사용자 필드를 반드시 입력해야 합니다.</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product, Limit Quantity, and Start/End Dates are mandatory if Account Type is used --></errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Account Type OR User and Account Type  can not be both set --></errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rolling Period  must be empty  if Account Type is empty --></errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>종료 일자는 시작 일자 이전일 수 없음</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if Split Period  is set rolling period must be 24 --></errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Split Period can not be set if Account Type is empty --></errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

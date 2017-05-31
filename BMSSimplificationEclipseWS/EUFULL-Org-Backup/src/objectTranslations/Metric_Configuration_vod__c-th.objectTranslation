@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>เมทริกคอนฟิกูเรชัน</value>
+    </caseValues>
+    <fields>
+        <label>ใช้งานอยู่</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>นำไปใช้กับ</label>
+        <name>Applies_To_vod__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation>ทั้งหมด</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Department</masterLabel>
+            <translation><!-- BMS - Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Group Practice</masterLabel>
+            <translation><!-- BMS - Group Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Individual</masterLabel>
+            <translation><!-- BMS - Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Institution</masterLabel>
+            <translation><!-- BMS - Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization</masterLabel>
+            <translation><!-- BMS - Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization (MM)</masterLabel>
+            <translation><!-- BMS - Organization (MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board_vod</masterLabel>
+            <translation>ผู้บริหาร</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer_vod</masterLabel>
+            <translation>นายจ้าง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital Department_vod</masterLabel>
+            <translation>แผนกโรงพยาบาล</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital_vod</masterLabel>
+            <translation>โรงพยาบาล</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratory_vod</masterLabel>
+            <translation>ห้องปฏิบัติการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO Plan_vod</masterLabel>
+            <translation>แผนงาน MCO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO_vod</masterLabel>
+            <translation>MCO</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>เภสัชศาสตร์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice_vod</masterLabel>
+            <translation>ฝึกหัด</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>อาชีพ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>กลุ่มรายละเอียด</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>การกำหนดคอนฟิกเมทริก</relationshipLabel>
+    </fields>
+    <fields>
+        <label>หัวข้อรายละเอียด</label>
+        <name>Detail_Topic_vod__c</name>
+    </fields>
+    <fields>
+        <label>แสดงคำสั่งซื้อ</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทเมทริก</label>
+        <name>Metric_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Arrows_vod</masterLabel>
+            <translation>ลูกศร</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box_vod</masterLabel>
+            <translation>กล่อง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbox_vod</masterLabel>
+            <translation>กล่องกาเครื่องหมาย</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number_vod</masterLabel>
+            <translation>ตัวเลข</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text_vod</masterLabel>
+            <translation>ข้อความ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>แดง/เหลือง</label>
+        <name>Red_Yellow_vod__c</name>
+    </fields>
+    <fields>
+        <label>เหลือง/เขียว</label>
+        <name>Yellow_Green_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Metric --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>เฉพาะชนิด &apos;กลุ่มรายละเอียด&quot; เท่านั้นที่สามารถใช้ได้</errorMessage>
+        <name>Detail_Group_Type_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

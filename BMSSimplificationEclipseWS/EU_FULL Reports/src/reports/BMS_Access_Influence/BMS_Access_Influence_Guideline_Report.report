@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Access_Priority__c</field>
+    </columns>
+    <columns>
+        <field>Access_Influence__c.NCCN_guidelines_c__c</field>
+    </columns>
+    <columns>
+        <field>Access_Influence__c.Other_compendia_c__c</field>
+    </columns>
+    <columns>
+        <field>Access_Influence__c.Relationship_status_c__c</field>
+    </columns>
+    <columns>
+        <field>Account.BMS_Last_Access_Interaction_User__c</field>
+    </columns>
+    <columns>
+        <field>Account.BMS_Last_Access_Interaction_date__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>BMS - Access Influence Guideline Report</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Access_Influence__c</reportType>
+    <scope>tmteam</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BMS CN - Retargeting Send Approved/Reject Notification Mail</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>BMS CN - Retargeting Send Approved/Reject Notification Mail</name>
+    <style>freeForm</style>
+    <subject>{!Retargeting_BMS_CN__c.Name} is {!Retargeting_BMS_CN__c.Status_BMS_CN__c}</subject>
+    <textOnly>Dear {!Retargeting_BMS_CN__c.OwnerLastName},
+
+The request: {!Retargeting_BMS_CN__c.Name} is  {!Retargeting_BMS_CN__c.Status_BMS_CN__c}.
+{!Retargeting_BMS_CN__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tipo di consenso</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tipi di consenso</value>
+    </caseValues>
+    <fields>
+        <label>Etichetta canale</label>
+        <name>Channel_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Origine canale</label>
+        <name>Channel_Source_vod__c</name>
+    </fields>
+    <fields>
+        <help>Durata espressa in mesi</help>
+        <label>Durata personalizzata consenso</label>
+        <name>Consent_Custom_Duration_vod__c</name>
+    </fields>
+    <fields>
+        <label>Scadenza consenso tra</label>
+        <name>Consent_Expires_In_vod__c</name>
+        <picklistValues>
+            <masterLabel>Custom_Duration_vod</masterLabel>
+            <translation>Durata personalizzata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Calendar_Year_vod</masterLabel>
+            <translation>Fine dell&apos;anno di calendario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Next_Calendar_Year_vod</masterLabel>
+            <translation>Fine dell&apos;anno di calendario successivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One_Year_vod</masterLabel>
+            <translation>Un anno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Intestazione consenso</label>
+        <name>Consent_Header_vod__c</name>
+        <relationshipLabel>Tipi di consenso</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo di consenso predefinito</label>
+        <name>Default_Consent_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Explicit_vod</masterLabel>
+            <translation>Attivazione richiesta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implicit_vod</masterLabel>
+            <translation>Attivazione non richiesta</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Testo disclaimer</label>
+        <name>Disclaimer_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ordine di visualizzazione</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Attivazione doppia</label>
+        <name>Double_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Preferenza prodotto</label>
+        <name>Product_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_Content_Types_vod</masterLabel>
+            <translation>Tutti i tipi di contenuto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Lines_vod</masterLabel>
+            <translation>Tutte le righe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Products_vod</masterLabel>
+            <translation>Tutti i prodotti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My_Setup_vod</masterLabel>
+            <translation>Impostazione personale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restrictive_My_Setup_vod</masterLabel>
+            <translation>Impostazione personale restrittiva</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Default_Consent_Text_vod --></label>
+        <name>zvod_Consent_Default_Consent_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Line_vod --></label>
+        <name>zvod_Consent_Line_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Signature_Capture_vod --></label>
+        <name>zvod_Signature_Capture_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label>Approved Email</label>
+        <name>Approved_Email_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM</label>
+        <name>CLM_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

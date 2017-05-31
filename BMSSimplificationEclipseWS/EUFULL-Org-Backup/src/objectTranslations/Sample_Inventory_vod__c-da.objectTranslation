@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prøvebeholdning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Prøvebeholdning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Prøvebeholdning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prøvebeholdninger</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Prøvebeholdninger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Prøvebeholdninger</value>
+    </caseValues>
+    <fields>
+        <label>Kontrol</label>
+        <name>Audit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Employee ID --></label>
+        <name>Employee_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Beholdningstidspunkt</label>
+        <name>Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beholdning for</label>
+        <name>Inventory_For_vod__c</name>
+        <relationshipLabel>Prøvebeholdninger</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Beholdning fra dato</label>
+        <name>Inventory_From_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beholdningstype</label>
+        <name>Inventory_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation>Årligt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close-Out Inventory</masterLabel>
+            <translation>Lukning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Inventory</masterLabel>
+            <translation><!-- External Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Inventory</masterLabel>
+            <translation><!-- Management Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>Månedligt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>Kvartalsvist</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Inventory</masterLabel>
+            <translation><!-- Rep Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year-end</masterLabel>
+            <translation>Årsafslutning</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager Inventory --></label>
+        <name>Manager_Inventory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Mobil oprettet tidspunkt</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-id</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil sidst ændret tidspunkt</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <help>Hvis dette er markeret, kan en bruger gemme/sende en prøvebeholdning, selv om der ikke er nogen prøvebeholdningslinjeartikler [prøvepartinumre] for brugeren.</help>
+        <label>Ingen prøvepartinr.</label>
+        <name>No_Sample_Lots_vod__c</name>
+    </fields>
+    <fields>
+        <label>Forrige beholdningstidspunkt</label>
+        <name>Previous_Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Status</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Gemt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Sendt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sendt dato</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sendt</label>
+        <name>Submitted_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Inventory Count --></label>
+        <name>Total_Inventory_Count_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Lås op</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Inventory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- External Inventory --></label>
+        <name>External_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Inventory --></label>
+        <name>General_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Management Inventory --></label>
+        <name>Management_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rep Inventory --></label>
+        <name>Rep_Inventory_BMS_US</name>
+    </recordTypes>
+    <webLinks>
+        <label>Gem</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Send</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

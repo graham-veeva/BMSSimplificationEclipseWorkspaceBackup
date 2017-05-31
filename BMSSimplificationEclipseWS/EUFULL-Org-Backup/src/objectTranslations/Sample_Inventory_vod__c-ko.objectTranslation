@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>샘플 재고</value>
+    </caseValues>
+    <fields>
+        <label>감사</label>
+        <name>Audit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Employee ID --></label>
+        <name>Employee_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>재고 날짜/시간</label>
+        <name>Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>재고 대상</label>
+        <name>Inventory_For_vod__c</name>
+        <relationshipLabel>샘플 재고</relationshipLabel>
+    </fields>
+    <fields>
+        <label>재고 시작 날짜</label>
+        <name>Inventory_From_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>재고 유형</label>
+        <name>Inventory_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation>연간</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close-Out Inventory</masterLabel>
+            <translation>종료</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Inventory</masterLabel>
+            <translation><!-- External Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Inventory</masterLabel>
+            <translation><!-- Management Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>월별</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>분기별</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Inventory</masterLabel>
+            <translation><!-- Rep Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year-end</masterLabel>
+            <translation>연말</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager Inventory --></label>
+        <name>Manager_Inventory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>모바일 생성 날짜/시간</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>모바일 ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>모바일 최종 수정 날짜/시간</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <help>이 옵션을 선택하면 사용자에 대한 샘플 재고 라인 항목 [샘플 로트]가 없는 경우 사용자가 샘플 재고를 저장/제출할 수 있습니다.</help>
+        <label>샘플 로트 없음</label>
+        <name>No_Sample_Lots_vod__c</name>
+    </fields>
+    <fields>
+        <label>이전 재고 날짜/시간</label>
+        <name>Previous_Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>상태</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>저장됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>제출됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>제출한 날짜</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>제출됨</label>
+        <name>Submitted_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Inventory Count --></label>
+        <name>Total_Inventory_Count_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>잠금 해제</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Inventory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- External Inventory --></label>
+        <name>External_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Inventory --></label>
+        <name>General_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Management Inventory --></label>
+        <name>Management_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rep Inventory --></label>
+        <name>Rep_Inventory_BMS_US</name>
+    </recordTypes>
+    <webLinks>
+        <label>저장</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>제출</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

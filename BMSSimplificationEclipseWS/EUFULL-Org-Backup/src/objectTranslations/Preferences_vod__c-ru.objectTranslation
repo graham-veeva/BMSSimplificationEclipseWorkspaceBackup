@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Предпочтение</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Предпочтения</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Предпочтение</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Предпочтения</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Предпочтения</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Предпочтениий</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Предпочтению</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Предпочтениям</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Предпочтением</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Предпочтениями</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Предпочтении</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Предпочтениях</value>
+    </caseValues>
+    <fields>
+        <label>Анализировать рынок</label>
+        <name>Analytic_Market_vod__c</name>
+        <relationshipLabel>Предпочтения</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Статус аналитического визита</label>
+        <name>Analytics_Call_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Аналитика типов визита</label>
+        <name>Analytics_Call_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>Аналитическое сравнение территорий</label>
+        <name>Analytics_Compare_Territories_vod__c</name>
+    </fields>
+    <fields>
+        <label>Аналитика числа участников / присутств.</label>
+        <name>Analytics_Count_Attendees_vod__c</name>
+    </fields>
+    <fields>
+        <help>Используется для составления отчета о ср. кол-ве посещений в день. Если включено и истинно, посещения на выходных включаются в расчет. Выходные дни рассчитываются на основании настройки Veeva VINSIGHTS_CALENDAR_CONFIG</help>
+        <label>Подсчитать посещения на выходных?</label>
+        <name>Analytics_Count_Weekend_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Планы аналитических циклов</label>
+        <name>Analytics_Cycle_Plans_vod__c</name>
+    </fields>
+    <fields>
+        <label>Аналитика типов данных</label>
+        <name>Analytics_Datatype_vod__c</name>
+    </fields>
+    <fields>
+        <label>Отобразить аналитические данные по</label>
+        <name>Analytics_Display_By_vod__c</name>
+    </fields>
+    <fields>
+        <label>Показать конкурентов</label>
+        <name>Analytics_Display_Competitors_vod__c</name>
+    </fields>
+    <fields>
+        <label>Категория рынка</label>
+        <name>Analytics_Market_Category_vod__c</name>
+        <picklistValues>
+            <masterLabel>AllMarkets</masterLabel>
+            <translation>Все рынки</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyMarkets</masterLabel>
+            <translation>Мои рынки</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Мои продукты</label>
+        <name>Analytics_My_Products_vod__c</name>
+    </fields>
+    <fields>
+        <label>Лучшие продукты</label>
+        <name>Analytics_Payer_Top_Products_vod__c</name>
+    </fields>
+    <fields>
+        <label>Продукты</label>
+        <name>Analytics_Products_vod__c</name>
+    </fields>
+    <fields>
+        <label>Шкала</label>
+        <name>Analytics_Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Месяц</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter_vod</masterLabel>
+            <translation>Квартал</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Неделя</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Сегмент</label>
+        <name>Analytics_Segment_vod__c</name>
+        <relationshipLabel>Предпочтения (сегмент аналитики)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Начальные и конечные даты</label>
+        <name>Analytics_Start_End_Dates_vod__c</name>
+    </fields>
+    <fields>
+        <label>Территории</label>
+        <name>Analytics_Territories_vod__c</name>
+    </fields>
+    <fields>
+        <label>Временные рамки</label>
+        <name>Analytics_Timeframe_vod__c</name>
+        <picklistValues>
+            <masterLabel>12;Month</masterLabel>
+            <translation>12;месяц</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24;Month</masterLabel>
+            <translation>24;месяц</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3;Month</masterLabel>
+            <translation>3;месяц</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6;Month</masterLabel>
+            <translation>6;месяц</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTERLY</masterLabel>
+            <translation>ЕЖЕКВАРТАЛЬНО</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YTD</masterLabel>
+            <translation>До текущей даты</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Совместн.использ. последн.арт-ов календ.</label>
+        <name>CALENDAR_SHARE_RECENT_ITEMS_vod__c</name>
+    </fields>
+    <fields>
+        <label>Визитов в день</label>
+        <name>Calls_Per_Day_vod__c</name>
+    </fields>
+    <fields>
+        <label>Свернуть календарь</label>
+        <name>CollapseSchedule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Скрыть CLM календарь</label>
+        <name>Disable_CLM_Calendar_vod__c</name>
+    </fields>
+    <fields>
+        <label>Скрыть окно цикловых визитов</label>
+        <name>Disable_Call_Cycle_View_vod__c</name>
+    </fields>
+    <fields>
+        <label>ВКЛЮЧИТЬ ОКРУГЛЕНИЕ СУММЫ ЛИНИИ ЗАКАЗА</label>
+        <name>ENABLE_ORDER_LINE_TOTAL_ROUND_vod__c</name>
+    </fields>
+    <fields>
+        <label>Включить одиночную запись заказа</label>
+        <name>Enable_Order_Single_entry_vod__c</name>
+    </fields>
+    <fields>
+        <label>Конфигурация страны мероприятия</label>
+        <name>Event_Country_Config_vod__c</name>
+    </fields>
+    <fields>
+        <label>Пользователь управления мероприятием</label>
+        <name>Event_Management_User_vod__c</name>
+    </fields>
+    <fields>
+        <label>5-ти дневная неделя</label>
+        <name>Five_Day_Week_vod__c</name>
+    </fields>
+    <fields>
+        <label>Просмотр формуляра</label>
+        <name>Formulary_View_vod__c</name>
+    </fields>
+    <fields>
+        <label>Сегмент JDNET</label>
+        <name>JDNET_Segment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Последняя просмотренная организация</label>
+        <name>Last_Account_View_Used_vod__c</name>
+        <relationshipLabel>Предпочтения (последний использованный просмотр организации)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Последняя аналитика</label>
+        <name>Last_Analytic_vod__c</name>
+    </fields>
+    <fields>
+        <label>Перечень последних планировщиков</label>
+        <name>Last_Scheduler_Account_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>Последняя закладка диспетчера процессов</label>
+        <name>Last_Scheduler_Bookmark_vod__c</name>
+        <relationshipLabel>Установки (последняя закладка диспетчера процессов)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Последняя цель</label>
+        <name>Last_Target_vod__c</name>
+    </fields>
+    <fields>
+        <label>Последняя просмотренная территория</label>
+        <name>Last_Territory_Used_vod__c</name>
+    </fields>
+    <fields>
+        <label>Последнее просмотренное окно</label>
+        <name>Last_View_Used_vod__c</name>
+    </fields>
+    <fields>
+        <label>Переключение типа действия MCCP</label>
+        <name>MCCP_Activity_Type_Switch_vod__c</name>
+        <picklistValues>
+            <masterLabel>My_Activity_vod</masterLabel>
+            <translation>Мое действие</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team_Activity_vod</masterLabel>
+            <translation>Действие группы</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Профиль</label>
+        <name>Profile_vod__c</name>
+    </fields>
+    <fields>
+        <label>Записей на странице</label>
+        <name>Records_Per_Page_vod__c</name>
+    </fields>
+    <fields>
+        <label>Отображение плана циклов планировщика</label>
+        <name>Scheduler_Cycle_Plan_Display_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation>Профиль</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation>Пользователь</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Пользователь</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Предпочтения</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Preferences Name --></nameFieldLabel>
+</CustomObjectTranslation>

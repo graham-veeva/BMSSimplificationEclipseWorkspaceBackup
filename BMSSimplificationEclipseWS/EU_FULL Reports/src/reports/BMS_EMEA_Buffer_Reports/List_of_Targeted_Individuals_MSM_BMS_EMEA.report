@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Parent_vod__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.City_vod__c</field>
+    </columns>
+    <columns>
+        <field>Account.Specialty_1_vod__c</field>
+    </columns>
+    <columns>
+        <field>Account.Specialty_2_vod__c</field>
+    </columns>
+    <description>List of individuals on a medical plan. This report applies to MSM users.</description>
+    <filter>
+        <criteriaItems>
+            <column>Address_vod__c.Primary_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.On_Medical_Plan_BMS_EMEA__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>zDEL_List of Targeted Individuals (MSM)</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Address_vod__c</reportType>
+    <scope>myterrs</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

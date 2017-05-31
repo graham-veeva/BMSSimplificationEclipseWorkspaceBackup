@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Sample_Transaction_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$Territory_Intelligent_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$Sample_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$Lot_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$Inventory_Impact_Quantity_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$BMS_ID_BMS_US__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Transaction_vod__c$BMS_Territory_ID_BMS_Shared__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Sample Transactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Sample_Transactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sample_Transaction_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

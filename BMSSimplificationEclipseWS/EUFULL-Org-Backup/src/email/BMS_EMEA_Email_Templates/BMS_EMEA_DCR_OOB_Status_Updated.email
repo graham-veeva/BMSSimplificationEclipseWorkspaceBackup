@@ -1,0 +1,25 @@
+<messaging:emailTemplate subject="{!$ObjectType.Data_Change_Request_vod__c.label} - {!relatedTo.Name}: {!$Label.BMS_EMEA_Status_updated} " recipientType="User" relatedToType="Data_Change_Request_vod__c" language="{!relatedTo.User_Language_BMS_EMEA__c}">
+
+<messaging:htmlEmailBody >
+{!$Label.BMS_EMEA_FFM_Dear_Initiator} {!relatedTo.Owner.Name},<br></br>
+
+{!$Label.BMS_EMEA_DCR_Status_changed}<br></br>
+
+<p>
+{!$Label.BMS_EMEA_FFM_Description} {!$ObjectType.Data_Change_Request_vod__c.label}:<br></br>
+- {!$ObjectType.Data_Change_Request_vod__c.fields.Name.label}: {!relatedTo.Name} <br></br>
+- {!$ObjectType.Data_Change_Request_vod__c.fields.DCR_Record_Type_BMS_EMEA__c.label}: {!relatedTo.DCR_Record_Type_BMS_EMEA__c} <br></br>
+- {!$ObjectType.Data_Change_Request_vod__c.fields.Status_vod__c.label}:  {!relatedTo.Status_vod__c}  <br></br>
+- {!$ObjectType.Data_Change_Request_vod__c.fields.Resolution_Note_vod__c.label}: {!relatedTo.Resolution_Note_vod__c} <br></br>
+
+</p>
+
+<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!$Label.BMS_EMEA_FFM_Link}</apex:outputlink>
+
+<br></br>
+
+<br></br>
+{!$Label.BMS_EMEA_Reagrds}, <br></br>
+{!$Label.BMS_EMEA_Email_No_reply}<br></br>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

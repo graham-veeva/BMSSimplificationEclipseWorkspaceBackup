@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Sample Adjustment Request --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Sample Adjustment Request --></value>
+    </caseValues>
+    <fields>
+        <label>Dirección</label>
+        <name>Address_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Fecha del ajuste</label>
+        <name>Adjusted_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Segunda: Fecha de ajuste</label>
+        <name>Adjusted_Date_Secondary_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Nº de lote ajustado</label>
+        <name>Adjusted_Lot_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label>Segunda: Nº Lote ajustado</label>
+        <name>Adjusted_Lot_Secondary_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad ajustada</label>
+        <name>Adjusted_Quantity_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Segunda: Cantidad ajustada</label>
+        <name>Adjusted_Quantity_SECONDARY_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad a ajustar (en unidades)</label>
+        <name>Adjustment_Quantity_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>País</label>
+        <name>BMS_EMEA_Sample_Adjustment_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS_EMEA_URL --></label>
+        <name>BMS_EMEA_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BPA ID --></label>
+        <name>BPA_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blank Date --></label>
+        <name>Blank_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Ciudad</label>
+        <name>City_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Comentarios</label>
+        <name>Comments_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correct Inventory Quantity (In Units) --></label>
+        <name>Correct_Inventory_Quantity_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Prescriptor correcto</label>
+        <name>Correct_Prescriber_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Fecha</label>
+        <name>Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Compromiso</label>
+        <name>Disclaimer_BMS_CA__c</name>
+        <picklistValues>
+            <masterLabel>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email.</masterLabel>
+            <translation><!-- If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit. Review of return adjustments may take 4-6 weeks.</masterLabel>
+            <translation><!-- Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit. Review of return adjustments may take 4-6 weeks. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form. Another audit may be required if quantities cannot be verified.</masterLabel>
+            <translation><!-- Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form. Another audit may be required if quantities cannot be verified. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history.</masterLabel>
+            <translation><!-- Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments.</masterLabel>
+            <translation><!-- Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representatives are required to report sample thefts/losses to Samples Management stakeholders within 24 hours. Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident.</masterLabel>
+            <translation><!-- Representatives are required to report sample thefts/losses to Samples Management stakeholders within 24 hours. Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Representatives are permitted to distribute samples, free of charge for patient treatment only to licensed physicians. It is prohibited for BMS employees to supply samples to physicians for off-label usage.</masterLabel>
+            <translation><!-- Sales Representatives are permitted to distribute samples, free of charge for patient treatment only to licensed physicians. It is prohibited for BMS employees to supply samples to physicians for off-label usage. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Compromiso</label>
+        <name>Disclaimer_BMS_US__c</name>
+        <picklistValues>
+            <masterLabel>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management, 1-888-475-2328, option 3.</masterLabel>
+            <translation><!-- If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management, 1-888-475-2328, option 3. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representatives are required to report sample thefts/losses to Samples Management within (1) one business day. Contact Samples Management at 1-888-475-2328, Opt. #3 or email samplesmanagement@bms.com</masterLabel>
+            <translation><!-- Representatives are required to report sample thefts/losses to Samples Management within (1) one business day. Contact Samples Management at 1-888-475-2328, Opt. #3 or email samplesmanagement@bms.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments. Documentation provided by the prescriber must be signed and specify disbursement date, samples (product/strength) and quantity received.</masterLabel>
+            <translation><!-- Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments. Documentation provided by the prescriber must be signed and specify disbursement date, samples (product/strength) and quantity received. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samples Management validates Return adjustments with Return vendor issued credit. Review of return adjustments may take 4-6 weeks.</masterLabel>
+            <translation><!-- Samples Management validates Return adjustments with Return vendor issued credit. Review of return adjustments may take 4-6 weeks. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet. Another audit may be required if quantities cannot be verified.</masterLabel>
+            <translation><!-- Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet. Another audit may be required if quantities cannot be verified. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samples Management verifies lost sample disbursement data with Help Desk ticket history.</masterLabel>
+            <translation><!-- Samples Management verifies lost sample disbursement data with Help Desk ticket history. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments.</masterLabel>
+            <translation><!-- Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- District ID --></label>
+        <name>District_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Transacción duplicada: Cantidad</label>
+        <name>Duplicate_Quantity_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Transacción duplicada: Lote de muestras</label>
+        <name>Duplicate_Sample_Lot_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Transacción de muestras duplicada</label>
+        <name>Duplicate_Sample_Transaction_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras (transacción de muestras duplicada)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Transacción duplicada: Fecha</label>
+        <name>Duplicate_Transaction_Date__c</name>
+    </fields>
+    <fields>
+        <label>Desde la fecha</label>
+        <name>From_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Desk Ticket Number --></label>
+        <name>Help_Desk_Ticket_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Aumento/disminución</label>
+        <name>Increase_Decrease_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>Decrease</masterLabel>
+            <translation>Disminución</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decrease Incorrect Lot/Increase Correct Lot</masterLabel>
+            <translation>Disminución lote incorrecto/Aumento lote correcto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase</masterLabel>
+            <translation>Aumento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase Incorrect Lot/Decrease Correct Lot</masterLabel>
+            <translation>Aumento lote incorrecto/Disminución lote correcto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Report Issue - No Adjustment Needed</masterLabel>
+            <translation>Problema de reporte - No se necesita ajuste</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Interacción</label>
+        <name>Interaction_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Detalles del inventario</label>
+        <name>Inventory_Details_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Registro de inventario</label>
+        <name>Inventory_Record_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nº licencia</label>
+        <name>License_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Fecha de expiración de la licencia</label>
+        <name>License_Expiration_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Válido para entrega de muestras</label>
+        <name>License_Valid_to_Sample_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <help>Contacte con el Administrador de Muestras en el tfno 91-4565490 si no puede ser seleccionado el nº de lote que necesita un ajuste.</help>
+        <label>Nº lote</label>
+        <name>Lot_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras</relationshipLabel>
+    </fields>
+    <fields>
+        <label>¿GA receptor de muestras informado?</label>
+        <name>Notify_Recipient_TBM_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sí</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nº de pedido</label>
+        <name>Order_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Nº de informe policial</label>
+        <name>Police_Report_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <help>Lista de médicos y direcciones para las entregas no reportadas por un fallo informático.</help>
+        <label>Información adicional del prescriptor</label>
+        <name>Prescriber_Information_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Motivo</label>
+        <name>Reason_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>Annual Auditor Inventory Error</masterLabel>
+            <translation>Error de inventario de auditoría anual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concealed Short-Ship</masterLabel>
+            <translation>Conciliación envío</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disbursement Not Recorded</masterLabel>
+            <translation>Entrega no registrada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Return Recorded</masterLabel>
+            <translation>Se ha registrado una Devolución duplicada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Shipment Acknowledged</masterLabel>
+            <translation>Confirmación envío duplicado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Transaction Recorded</masterLabel>
+            <translation>Se ha registrado una Transacción duplicada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Transfer Acknowledged</masterLabel>
+            <translation>Confirmación traspaso duplicado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Transfer Out Recorded</masterLabel>
+            <translation>Se ha registrado un traspaso saliente duplicado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware/Software Failure</masterLabel>
+            <translation>Fallo de hardware/software</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Call Date Recorded</masterLabel>
+            <translation>Se ha registrado una fecha de visita incorrecta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Prescriber</masterLabel>
+            <translation>Prescriptor incorrecto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Prescriber Profile &amp; Duplicate Disbursement Recorded on Correct Profile</masterLabel>
+            <translation>Perfil de prescriptor incorrecto &amp; registrada entrega duplicada en un perfil correcto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Quantity Acknowledged</masterLabel>
+            <translation>Confirmación de cantidad incorrecta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Quantity Recorded</masterLabel>
+            <translation>Registrada cantidad incorrecta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Sample/Lot Number Acknowledged</masterLabel>
+            <translation>Confirmación de muestra/lote incorrectos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Sample/Lot Number Recorded</masterLabel>
+            <translation>Registrada muestra/lote incorrectos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Report</masterLabel>
+            <translation>Informe inicial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager Inventory Error</masterLabel>
+            <translation>Error de inventario del Gerente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Received - Not Ordered</masterLabel>
+            <translation>Producto recibido - No solicitado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Received - Unable to Acknowledge</masterLabel>
+            <translation>Producto recibido - Imposible confirmar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly Rep Inventory Error</masterLabel>
+            <translation>Error de inventario trimestral del Delegado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer Received - Unable to Acknowledge</masterLabel>
+            <translation>Traspaso recibido - Imposible confirmar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Documentación requerida:</label>
+        <name>Required_Documentation_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>Attach Police Report to Initial Report of sample theft.</masterLabel>
+            <translation>Anexar el informe policial al informe inicial de robo de muestras</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attach Prescriber Verification of samples received for adjustments due to recording duplicate disbursement on correct prescriber profile.</masterLabel>
+            <translation>Anexar la verificación por el prescriptor de las muestras recibidas como ajuste debido al registro de entrega duplicado en el perfil de prescriptor correcto.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attach Prescriber Verification of samples received for adjustments due to recording incorrect quantity on original transaction.</masterLabel>
+            <translation>Anexar la verificación por el prescriptor de las muestras recibidas como ajuste debido al registro de cantidades incorrectas en la transacción original.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attach copy of Return Authorization Form and shipping receipt.</masterLabel>
+            <translation>Anexar copia de la autorización de devolución y recepción del envío.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attach signed External Inventory Worksheet, if reporting an Annual Auditor Inventory Error.</masterLabel>
+            <translation>Anexar la hoja de inventario externo firmada, en caso de un error de inventario por auditoría anual.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disbursement quantity errors require Prescriber verification of samples received (on Rx pad or letterhead)</masterLabel>
+            <translation>Los errores en cantidades desembolsadas necesitan una verificación por el prescriptor de las muestras recibidas (en el cuaderno de prescripciones o en papel de membrete.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email from receiving representative confirming correct quantity received.</masterLabel>
+            <translation>E-mail del delegado receptor confirmando que ha recibido la cantidad correcta.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email from representative who transferred samples confirming correct quantities</masterLabel>
+            <translation>E-mail del delegado que traspasó las muestras confirmando las cantidades correctas.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police Report for initial theft report</masterLabel>
+            <translation>Informe policial relativo al informe de robo inicial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescriber verification for sample quantity errors if duplicate disbursement recorded on correct profile</masterLabel>
+            <translation>Verificación por parte del prescriptor para los errores en cantidad de muestras en caso de entregas registradas en un perfil correcto.</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Return Authorization Form and Shipping Receipt with tracking</masterLabel>
+            <translation>Formulario de Autorización de devolución y Recibo de envío</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed External Inventory Worksheet with correct inventory count</masterLabel>
+            <translation>Hoja de inventario externo firmada con recuento de inventario correcto.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nº autorización de devolución</label>
+        <name>Return_Authorization_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- STAR Form Document ID # (if applicable) --></label>
+        <name>STAR_Form_Document_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Formulario de entrega de muestras</label>
+        <name>Sample_Disbursement_Form_BMS_CA__c</name>
+    </fields>
+    <fields>
+        <label>Transacción de muestras</label>
+        <name>Sample_Transaction_BMS_SHARED__c</name>
+        <relationshipLabel>Solicitudes de ajuste de muestras</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Transacción de muestras: Fecha</label>
+        <name>Sample_Transaction_Date_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label>Transacción de muestras: Nº lote</label>
+        <name>Sample_Transaction_Lot_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Transacción de muestras: Cantidad</label>
+        <name>Sample_Transaction_Quantity_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Transportista del envío</label>
+        <name>Shipping_Carrier_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Provincia</label>
+        <name>State_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Estado</label>
+        <name>Status_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Aprobado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved</masterLabel>
+            <translation>Guardado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - Pending Approval</masterLabel>
+            <translation>Remitido - Pendiente de aprobación</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_Intelligent_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Territory_Region_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>A la fecha</label>
+        <name>To_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Nº de registro</label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Traspasado a</label>
+        <name>Transfered_To_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>GA iniciador del traspaso</label>
+        <name>Transferring_TBM_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <help>¿Se ha notificado el error al GA  iniciador del traspaso?</help>
+        <label>Error notificado a GA iniciad. traspaso?</label>
+        <name>Transferring_TBM_Notified_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Sí</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Código postal</label>
+        <name>Zip_Code_BMS_SHARED__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Sample Adjustment Request Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Fallo de hardware/software</label>
+        <name>Hardware_Software_Failure</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Perfil de prescriptor incorrecto</label>
+        <name>Incorrect_Prescriber_Profile_BMS_Core</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Inventario</label>
+        <name>Inventory</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Devolución</label>
+        <name>Return</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Entrega de muestras</label>
+        <name>Sample_Disbursement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Envío</label>
+        <name>Shipment</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Robo</label>
+        <name>Theft</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Traspaso entrante</label>
+        <name>Transfer_In</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Traspaso saliente</label>
+        <name>Transfer_Out</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Adjustment_Quantity_BMS_SHARED__c=0 --></errorMessage>
+        <name>Adjustment_Quantity_Cannot_be_Zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Conciliación envío&quot;&quot;, se debe rellenar los campos Transacción original y Cantidad de ajuste.&quot;</errorMessage>
+        <name>Concealed_Short_Shipt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para solicitudes de ajuste a la baja, la cantidad objeto de ajuste debe ser negativa.</errorMessage>
+        <name>Decrease_Adjustment_Quantity_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación de envío duplicado&quot;&quot;, se debe rellenar los campos de Transacción original, Transacción duplicada, y el Nº de ticket de Helpdesk.&quot;</errorMessage>
+        <name>Duplicate_Shipment_Acknowledged</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La información del prescriptor se debe rellenar bien en el campo de busqueda o en el campo de texto libre.</errorMessage>
+        <name>Hardware_Software_Error_Prescriber_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación de muestra/lote erróneo&quot;&quot;, el material actualizado/lote deben pertenecer al mismo grupo de producto que el de la transacción original.&quot;</errorMessage>
+        <name>Incorrect_Lot_Acknowledged_Product_Group</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación de muestra/lote erróneo&quot;&quot;, la cantidad modificada no puede ser superior a la cantidad de la  transacción original.&quot;</errorMessage>
+        <name>Incorrect_Lot_Acknowledged_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneo&quot;&quot;, la cantidad de ajuste no puede ser superior a la cantidad de la  transacción original.&quot;</errorMessage>
+        <name>Incorrect_Lot_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Perfil de prescriptor erróneo &amp; registrada cantidad duplicada en el perfil correcto&quot;&quot;, se debe especificar la transacción duplicada.&quot;</errorMessage>
+        <name>Incorrect_Presciber_With_Duplicate_Call</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación de cantidad errónea&quot;&quot;, se deben rellenar los campos &quot;&quot;Transacción original&quot;&quot; y &quot;&quot;Cantidad a modificar&quot;&quot;.&quot;</errorMessage>
+        <name>Incorrect_Quantity_Acknowledged</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, el material/lote modificado debe pertenecer al mismo grupo de producto que el de la transacción original. &quot;</errorMessage>
+        <name>Incorrect_Sample_Lot_Product_Group</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para solicitudes de ajuste al alza, la cantidad de ajuste debe ser superior a 0.</errorMessage>
+        <name>Increase_Adjustment_Quantity_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Informe inicial&quot;&quot;, se deben rellenar los campos &quot;&quot;Nº de Lote&quot;&quot; e &quot;&quot;Informe policial&quot;&quot;.&quot;</errorMessage>
+        <name>Initial_Report</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El prescriptor debe tener una licencia válida.</errorMessage>
+        <name>Prescriber_Must_Have_Valid_License</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Producto recibido - No pedido&quot;&quot;, se deben rellenar los campos &quot;&quot;Nº de Lote&quot;&quot;, &quot;&quot;Fecha&quot;&quot; y &quot;&quot;Cantidad de ajuste&quot;&quot;.&quot;</errorMessage>
+        <name>Product_Received_Not_Ordered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Producto recibido - Imposible confirmar&quot;&quot;, se deben rellenar los campos &quot;&quot;Nº de Lote&quot;&quot;, &quot;&quot;Fecha&quot;&quot;, &quot;&quot;Cantidad a modificar&quot;&quot; y &quot;&quot;Nº ticket del Heldesk&quot;&quot;.&quot;</errorMessage>
+        <name>Product_Received_Unable_to_Acknowledge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una cantidad errónea&quot;&quot;, se debe especificar la cantidad de ajuste. &quot;</errorMessage>
+        <name>Return_Adjustment_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una transacción duplicada&quot;&quot;, se debe especificar la transacción duplicada. &quot;</errorMessage>
+        <name>Return_Duplicate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una devolución  duplicada&quot;&quot;, se debe especificar la transacción duplicada. &quot;</errorMessage>
+        <name>Return_Duplicate_Transaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe especificar el nº de lote correcto y la cantidad a ajustar.&quot;</errorMessage>
+        <name>Return_Incorrect_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe especificar el nº de lote.&quot;</errorMessage>
+        <name>Return_Sample_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una cantidad errónea&quot;&quot;, se debe rellenar un número en el campo &quot;&quot;Cantidad a modificar&quot;&quot;. &quot;</errorMessage>
+        <name>Sample_Disbursement_Adjustment_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una fecha de visita errónea&quot;&quot;,  se debe especificar una fecha.&quot;</errorMessage>
+        <name>Sample_Disbursement_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste  &quot;&quot;Registrada una transacción duplicada&quot;&quot;,  se debe especificar la transacción duplicada.&quot;</errorMessage>
+        <name>Sample_Disbursement_Duplicate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, la cantidad de incremento solicitada para el Producto/lote erróneos debe ser igual a la cantidad de disminución solicitada para el Producto/Lote correctos.&quot;</errorMessage>
+        <name>Sample_Disbursement_Matching_Quanity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If &quot;Disbursement Not Recorded&quot; is selected as the adjustment reason, you must select the Interaction, Lot and Adjustment Quantity. --></errorMessage>
+        <name>Sample_Disbursement_NotRecorded_BMS_EMEA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Entrega no registrada&quot;&quot;, se deben rellenar los campos  fecha, prescriptor, dirección, nº lote y cantidad de ajuste.&quot;</errorMessage>
+        <name>Sample_Disbursement_Not_Recorded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe rellenar el campo Nº de lote.  &quot;</errorMessage>
+        <name>Sample_Disbursement_Sample_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, el material/Nº lote debe pertenecer al mismo grupo de producto que el de la transacción original.&quot;</errorMessage>
+        <name>Sample_Disbursement_Sample_Lot_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe rellenar el campo Cantidad de ajuste.  &quot;</errorMessage>
+        <name>Sample_Disbursement_Sample_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se debe especificar una transacción de muestras.</errorMessage>
+        <name>Sample_Disbursement_Sample_Transaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se deben rellenar los campos Transacción original y Nº de lote.   &quot;</errorMessage>
+        <name>Theft_Incorrect_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se deben rellenar los campos Transacción original y Nº de lote.   &quot;</errorMessage>
+        <name>Theft_Incorrect_Sample_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación Traspaso duplicado&quot;&quot;, se debe rellenar los campos Transacción duplicada y Transacción original. Debe confirmar también que el GA iniciador del traspaso ha sido notificado.   &quot;</errorMessage>
+        <name>Transfer_In_Duplicate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación Traspaso duplicado&quot;&quot;, debe seleccionar la transacción de muestras relacionada.&quot;</errorMessage>
+        <name>Transfer_In_Duplicate_Sample_Transaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Confirmación Traspaso duplicado&quot;&quot;, se debe especificar la transacción duplicada. &quot;</errorMessage>
+        <name>Transfer_In_Duplicate_Transaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se deben rellenar los campos Nº de lote, Cantidad a modificar y Transacción original.  Además debe confirmar que el GA iniciador del traspaso ha sido notificado.   &quot;</errorMessage>
+        <name>Transfer_In_Incorrect_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una cantidad errónea&quot;&quot;, se deben rellenar los campos &quot;&quot;Transacción original&quot;&quot; y &quot;&quot;Cantidad a modificar&quot;&quot;. Además debe confirmar que el GA iniciador del traspaso ha sido notificado.   &quot;</errorMessage>
+        <name>Transfer_In_Incorrect_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una cantidad errónea&quot;&quot;, se debe rellenar el campo &quot;&quot;Cantidad de ajuste&quot;&quot;.&quot;</errorMessage>
+        <name>Transfer_In_Incorrect_Quantity_Adj</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe seleccionar la transacción de muestra relacionada.    &quot;</errorMessage>
+        <name>Transfer_In_Incorrect_Sample</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Traspaso recibido - Imposible confirmar&quot;&quot;, se deben rellenar los campos Nº lote, Fecha y Cantidad de ajuste.&quot;</errorMessage>
+        <name>Transfer_In_Unable_to_Acknowledge</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Traspaso recibido - Imposible confirmar&quot;&quot;, se debe seleccionar el Nº de lote relacionado. &quot;</errorMessage>
+        <name>Transfer_In_Unable_to_Acknowledge_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Traspaso recibido - Imposible  confirmar&quot;&quot;, se debe indicar la cantidad de ajuste.&quot;</errorMessage>
+        <name>Transfer_In_Unable_to_Acknwldge_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrado un Traspaso duplicado&quot;&quot;, se debe especificar la transacción duplicada.&quot;</errorMessage>
+        <name>Transfer_Out_Duplicate_Transaction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe especificar la Cantidad a modificar y el Nº de lote.&quot;</errorMessage>
+        <name>Transfer_Out_Incorrect_Lot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una cantidad errónea&quot;&quot;, se debe especificar la Cantidad a modificar.&quot;</errorMessage>
+        <name>Transfer_Out_Incorrect_Quantity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una cantidad errónea&quot;&quot;, se debe especificar la Cantidad a modificar.&quot;</errorMessage>
+        <name>Transfer_Out_Incorrect_Quantity_Adj</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe seleccionar la transacción de muestras relacionada.&quot;</errorMessage>
+        <name>Transfer_Out_Incorrect_Sample</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Si se ha seleccionado como motivo de ajuste &quot;&quot;Registrada una muestra/lote erróneos&quot;&quot;, se debe especificar el Nº de lote correcto. &quot;</errorMessage>
+        <name>Transfer_Out_Incorrect_Sample_Lot</name>
+    </validationRules>
+</CustomObjectTranslation>

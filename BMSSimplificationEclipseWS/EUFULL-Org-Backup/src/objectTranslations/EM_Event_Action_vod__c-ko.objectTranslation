@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>이벤트 작업</value>
+    </caseValues>
+    <fields>
+        <label>코멘트 허용</label>
+        <name>Allow_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>승인자 역할</label>
+        <name>Approver_Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approver_vod</masterLabel>
+            <translation>승인자</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>버튼 이름</label>
+        <name>Button_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>확인 메시지</label>
+        <name>Confirmation_Message_vod__c</name>
+    </fields>
+    <fields>
+        <label>국가 무시</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>이벤트 작업</relationshipLabel>
+    </fields>
+    <fields>
+        <label>종료 상태</label>
+        <name>Ending_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>입력 항목 기준이 메시지에 부합하지 않음</label>
+        <name>Entry_Criteria_Not_Met_Message_vod__c</name>
+    </fields>
+    <fields>
+        <label>이벤트 구성</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>이벤트 작업</relationshipLabel>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>SFDC 작업 유형</label>
+        <name>SFDC_Action_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approve_vod</masterLabel>
+            <translation>승인</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall_Approval_Request_vod</masterLabel>
+            <translation>승인 요청 철회</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject_vod</masterLabel>
+            <translation>거절</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit_Auto_vod</masterLabel>
+            <translation>제출 - 승인자 자동 선택</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit_Manual_vod</masterLabel>
+            <translation>제출 - 승인자 직접선택</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>시작 상태</label>
+        <name>Starting_Status_vod__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label>버튼 클릭</label>
+        <name>Button_Click_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

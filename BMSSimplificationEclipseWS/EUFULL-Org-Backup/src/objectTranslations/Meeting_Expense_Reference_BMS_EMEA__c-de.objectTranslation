@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Rechnung an Buchhaltung weitergeleitet</label>
+        <name>Invoice_sent_to_accounting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltung</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Referenznummer zu den Ausgaben  für die Veranstaltung</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Referenz No</label>
+        <name>Reference_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Typ / Kategorie</label>
+        <name>Type_Category_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Concur Expenses</masterLabel>
+            <translation>Concur Ausgaben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP PO</masterLabel>
+            <translation><!-- SAP PO --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Expense Reference Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Sie sind nicht befugt, Felder zu verändern, da sie Co-Autor des Meetings sind</errorMessage>
+        <name>BMS_EMEA_FFM_Expense_Reference_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

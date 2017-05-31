@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Qui Tắc Sự Kiện </value>
+    </caseValues>
+    <fields>
+        <label>Trường Người Tham Dự Tài Khoản</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Thuyết Trình CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Các Qui Tắc Sự kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Trường Liên Hệ Người Tham Dự</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ghi Đè Quốc Gia</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Các Qui Tắc Sự kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mẫu Email</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Quy Tắc Sự Kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cấu Hình Sự Kiện</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Các Qui Tắc Sự kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kiểu Bộ Lọc</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Bắt buộc</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Tùy chọn (mặc định tắt)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Tùy chọn (mặc định bật)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Loại Vật Liệu</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vật Liệu</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Các Loại Sự Kiện Sử Dụng Vật Liệu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Trường Đăng Ký Trực Tuyến</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thẩm định</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Các Qui Tắc Sự kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tìm Kiếm Ngoài Lãnh Thổ Của Tôi</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Các Trường của Người Thuyết Trình</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trường Người Dùng Người Tham Dự</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trường Khách Vãng Lai</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <nameFieldLabel>Tên</nameFieldLabel>
+    <recordTypes>
+        <label>Trường Người Tham Dự</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Vật Liệu</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Trường Đăng Ký Trực Tuyến</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Các Trường của Người Thuyết Trình</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Chuyên Môn của Người Thuyết Trình</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Trường Khách Vãng Lai</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Một quy tắc đơn không thể có cả Mẫu Dạng Email lẫn Thuyết Trình CLM đã tạo. Xin hãy tạo các quy tắc riêng cho hai mục này.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Một quy tắc đơn không thể có cả Tài Liệu lẫn Thuyết Trình CLM đã tạo. Xin hãy tạo các quy tắc riêng cho hai mục này.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể tạo cả Tài Liệu và Mẫu Email cho một quy tắc đơn lẻ. Vui lòng tạo các quy tắc riêng biệt cho hai mặt hàng này.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

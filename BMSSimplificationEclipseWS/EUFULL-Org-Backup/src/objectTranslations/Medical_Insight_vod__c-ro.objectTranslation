@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Informaţia medicală</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Informaţie medicală</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Informaţiile medicale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Informaţii medicale</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Informaţiei medicale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Informaţiei medicale</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Informaţiilor medicale</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Informaţiilor medicale</value>
+    </caseValues>
+    <fields>
+        <label>Cont</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Informaţii medicale</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Studiu clinic</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Informaţii medicale</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dată</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Descriere</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id de referinţă al entităţii</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interacţiune</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Informaţii medicale</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Eveniment medical</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Informaţii medicale</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Altă sursă</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorare blocare</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publicaţie</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Informaţii medicale</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stare</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Transmis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Rezumat</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Deblocare</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nume informaţie medicală</nameFieldLabel>
+    <recordTypes>
+        <label>Informaţii medicale cheie</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>E necesară o Descriere pentru a salva sau transmite Informaţii medicale cheie</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>E necesar un Rezumat pentru a salva sau transmite Informaţii medicale cheie</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Transmitere</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

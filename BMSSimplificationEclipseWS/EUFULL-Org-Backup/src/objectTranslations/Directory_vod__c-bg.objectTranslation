@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Директория</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Директории</value>
+    </caseValues>
+    <fields>
+        <label>Ред на показване</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен ИД</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ниво</label>
+        <name>Level_vod__c</name>
+    </fields>
+    <fields>
+        <label>Родителска директория</label>
+        <lookupFilter>
+            <errorMessage>Стойността не съществува или не отговаря на критериите на филтъра</errorMessage>
+        </lookupFilter>
+        <name>Parent_Directory_vod__c</name>
+        <relationshipLabel>Директории</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Directory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CLM_vod --></label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

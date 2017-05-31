@@ -1,0 +1,12 @@
+<apex:page standardController="user" sidebar="false" showHeader="false">
+   <apex:pageBlock title="iPad Sync">
+      <apex:pageBlockTable value="{!User}" var="User">
+            <apex:column width="200" >
+                <apex:facet name="header">Last iPad Sync</apex:facet>
+                        {!$User.Last_iPad_Sync_vod__c}</apex:column>
+            <apex:column width="200">
+                <apex:facet name="header">Days Since Last iPad Sync</apex:facet>
+                        {!$User.Days_Since_Last_iPad_Sync__c}</apex:column>
+      </apex:pageBlockTable>
+   </apex:pageBlock>
+</apex:page>

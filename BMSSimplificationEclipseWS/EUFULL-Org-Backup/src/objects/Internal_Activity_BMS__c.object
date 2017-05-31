@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design:  Custom object to store information for the field medical team regarding what MSLs are working on when they are not in the field.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_Description_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Activity Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Type_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the type of internal activity.</description>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HQ Based Project</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Commercial Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Activity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Strategy / DAS Work</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting - Medical / Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sick Leave</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training - Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training - RCO / GDO / Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Travel / Transfer / Tour</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Holiday</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting / TC - Brand Team (Commercial)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training Self</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Date_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the date of an internal activity.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Other_Activity_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture other internal activity types.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Other Activity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the status of an internal activity.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Time_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of hours spend on an internal activity.</description>
+        <externalId>false</externalId>
+        <label>Time</label>
+        <picklist>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>¼ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>½ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>¾ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 ¼ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 ½ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 ¾ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 ¼ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 ½ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 ¾ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 ¼ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 ½ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 ¾ Day</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thru 5 days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>RAD Tracking</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Activity_Type_BMS__c</columns>
+        <columns>Time_BMS__c</columns>
+        <columns>Date_BMS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Interal_Activities</fullName>
+        <columns>NAME</columns>
+        <columns>Activity_Type_BMS__c</columns>
+        <columns>Time_BMS__c</columns>
+        <columns>Date_BMS__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Interal Activities</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>IA-{0000}</displayFormat>
+        <label>Internal Activity Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>RAD Tracking</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>BMS_Intercon_SA_IA</fullName>
+        <active>true</active>
+        <description>Used for BMS Intercon users</description>
+        <label>BMS-Intercon-SA-IA</label>
+        <picklistValues>
+            <picklist>Activity_Type_BMS__c</picklist>
+            <values>
+                <fullName>Holiday</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Strategy %2F DAS Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting %2F TC - Brand Team %28Commercial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting - Medical %2F Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sick Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training - RCO %2F GDO %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training - Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training Self</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Travel %2F Transfer %2F Tour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vacation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Time_BMS__c</picklist>
+            <values>
+                <fullName>%C2%BC Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%BD Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%C2%BE Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 %C2%BC Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 %C2%BD Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 %C2%BE Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1 Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 %C2%BC Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 %C2%BD Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 %C2%BE Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 %C2%BC Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 %C2%BD Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 %C2%BE Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Thru 5 days</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

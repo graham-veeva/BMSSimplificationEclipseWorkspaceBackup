@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>ניסוי קליני לחשבון</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>ניסוי קליני לחשבון</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>ניסויים קליניים לחשבון</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>ניסויים קליניים לחשבון</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_Id_vod__c</name>
+        <relationshipLabel><!-- Account Clinical Trials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Clinical Trial --></label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel><!-- Account Clinical Trials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>מזהה חיצוני</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participant --></label>
+        <name>Participant_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Investigator_vod</masterLabel>
+            <translation><!-- Investigator_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Study_Chair_vod</masterLabel>
+            <translation><!-- Study_Chair_vod --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Account Clinical Trial Name --></nameFieldLabel>
+</CustomObjectTranslation>

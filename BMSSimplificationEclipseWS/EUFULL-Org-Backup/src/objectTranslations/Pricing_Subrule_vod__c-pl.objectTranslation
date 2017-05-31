@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Podrzędna zasada ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Podrzędne zasady ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Podrzędną zasadę ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Podrzędne zasady ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Podrzędnej zasady ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Podrzędnych zasad ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Podrzędnej zasadzie ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Podrzędnym zasadom ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Podrzędną zasadą ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Podrzędnymi zasadami ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Podrzędnej zasadzie ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Podrzędnych zasadach ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Podrzędna zasado ustalania ceny</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Podrzędne zasady ustalania ceny</value>
+    </caseValues>
+    <fields>
+        <label>Typ porównania</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Wartość listy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Ilość</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Liczba SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Maks. ilość</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Min. ilość</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zasada ustalania ceny</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Podrzędne zasady ustalania ceny</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Podrzędne zasady ustalania ceny</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Elementy w zestawie nie są obsługiwane jako produkt do porównania</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maksymalna ilość musi być równa lub większa niż minimalna ilość.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Liczba SKU musi być większa niż 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

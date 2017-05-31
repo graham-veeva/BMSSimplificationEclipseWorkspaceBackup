@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>订购活动</value>
+    </caseValues>
+    <fields>
+        <label>客户组</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>客户类型</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>渠道合作伙伴/转售商</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>客户 - 渠道</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>客户 - 直销</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>安装合作伙伴</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>专业人士</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>潜在客户</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>技术合作伙伴</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>已启用</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>默认值</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>描述</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>结束日期</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>订购活动范围</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>订单记录类型</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>所有</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>直接</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>转移</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>开始日期</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>开始日期晚于结束日期</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

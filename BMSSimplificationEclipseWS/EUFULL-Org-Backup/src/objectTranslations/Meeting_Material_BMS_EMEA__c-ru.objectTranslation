@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Material --></value>
+    </caseValues>
+    <fields>
+        <label><!-- zDELETE_Inherited from Master File? --></label>
+        <name>BMS_EMEA_Inherited_from_Master_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Meeting --></label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Исходные действия в FFM</label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Включая презентации, приглашения и другие наименования - Описание I</help>
+        <label>Материал</label>
+        <name>Material_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Собрание</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Материалы собрания</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Исход. №</label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be approved</masterLabel>
+            <translation><!-- To be approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Использованный</label>
+        <name>Used_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Нет</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be used</masterLabel>
+            <translation>Должен использоваться</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Да</translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Material Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Материал собрания</label>
+        <name>BMS_EMEA_Meeting_Material</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Материал проведенного собрания</label>
+        <name>BMS_EMEA_Meeting_Material_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Материал проведенного собрания PTA</label>
+        <name>BMS_EMEA_Meeting_Material_PostExec_PTA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Вы не можете изменять какие-либо поля, так как вы являетесь соавтором Собрания.</errorMessage>
+        <name>BMS_EMEA_FFM_Material_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Материалы, созданные во время фазы планирования собрания, нельзя изменить во время фазы проведения. Отмените.</errorMessage>
+        <name>BMS_EMEA_PlanMaterialsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label>Новый материал</label>
+        <name>New_Material_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Правило за събитие</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Правила за събитие</value>
+    </caseValues>
+    <fields>
+        <label>Полета за клиент участник</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>CLM презентация</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Правила за събитие</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Полета за участник контакт</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Промяна на държавата</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Правила за събитие</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Шаблон за имейл</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Правила за събитие</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Конфигуриране на събитие</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Правила за събитие</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Външен ИД</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип на филтъра</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Задължителен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Незадължителен (по подразбиране изкл.)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Незадължителен (по подразбиране вкл.)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Тип на материала</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Материал</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Типове събития, които използват материала</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Полета за онлайн регистрация</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Квалификация</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Правила за събитие</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Търси извън моята територия</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Полета за говорителя</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Полета за участник потребител</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Полета за непоканен гост</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Полета за участник</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Материал</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Полета за онлайн регистрация</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Полета за говорителя</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Квалификация на говорител</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Полета за непоканен гост</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Едно единствено правило не може да има попълнени позиции за CLM презентация и имейл шаблон. Създайте отделни правила за тези две позиции.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Едно единствено правило не може да има попълнени позиции за материал и CLM презентация. Създайте отделни правила за тези две позиции.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Едно единствено правило не може да има попълнени позиции за материал и имейл шаблон. Създайте отделни правила за тези две позиции.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

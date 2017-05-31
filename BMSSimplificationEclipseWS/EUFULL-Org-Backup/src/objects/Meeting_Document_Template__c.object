@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Template for documents required for Meetings</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_Type_BMS_EMEA__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>P2P Discussion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Standard Representative Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Representative Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship of local meetings (stand)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship of Hospital meetings (stand)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship of HCPs to local Congress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advisory Boards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DA Group Meetings with External Speaker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DA MSM Presentation with MSM as Speaker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Non Promotional Meetings in response to an expressed need</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other External Meetings in response to an expressed need</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Country_Specific_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: field used to have country-specific required fields as part of the FFM Module.</description>
+        <externalId>false</externalId>
+        <label>Country Specific</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Czech Republic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Germany</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Greece</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hungary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ireland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Netherlands</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Norway</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Poland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Portugal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Romania</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Switzerland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>France</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_BMS_EMEA__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Nov 2013: external ID of the record</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>150</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FFM_Step_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: field used to have different required fields based on the FFM Step</description>
+        <externalId>false</externalId>
+        <label>FFM Step</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Master File</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Is_Required__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>True if the document is required when closing out the meeting</description>
+        <externalId>false</externalId>
+        <label>Is Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Meeting Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Corporate Support Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OLA Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lunch and Learn</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accredited</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Meeting Document Template</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>FFM_Step_BMS_EMEA__c</columns>
+        <columns>Country_Specific_BMS_EMEA__c</columns>
+        <columns>Activity_Type_BMS_EMEA__c</columns>
+        <columns>Is_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>TT</fullName>
+        <columns>NAME</columns>
+        <columns>FFM_Step_BMS_EMEA__c</columns>
+        <columns>Country_Specific_BMS_EMEA__c</columns>
+        <columns>Activity_Type_BMS_EMEA__c</columns>
+        <columns>Is_Required__c</columns>
+        <columns>External_ID_BMS_EMEA__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Country_Specific_BMS_EMEA__c</field>
+            <operation>equals</operation>
+            <value>Hungary,Czech Republic</value>
+        </filters>
+        <label>TT</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Meeting Document Template Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Meeting Document Templates</pluralLabel>
+    <recordTypes>
+        <fullName>BMS_EMEA_Document_Templates_BMS_EMEA</fullName>
+        <active>true</active>
+        <description>VPRO Nov 2013: Document Template specific to EMEA</description>
+        <label>BMS - EMEA - Document Templates</label>
+        <picklistValues>
+            <picklist>Activity_Type_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>Advisory Boards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DA Group Meetings with External Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DA MSM Presentation with MSM as Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other External Meetings in response to an expressed need</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Non Promotional Meetings in response to an expressed need</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Representative Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2P Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship of HCPs to local Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship of Hospital meetings %28stand%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship of local meetings %28stand%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Representative Presentation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Country_Specific_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>Austria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Czech Republic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Germany</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greece</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hungary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ireland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Netherlands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portugal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Romania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switzerland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FFM_Step_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>Master File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting Post-Execution</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Meeting_Type__c</picklist>
+            <values>
+                <fullName>Accredited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Support Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lunch and Learn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OLA Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

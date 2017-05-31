@@ -1,0 +1,1612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The object that stores territory specific fields for an account. If no row exists for an account / territory combination a new row will be created when an interaction is saved to that account.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Source_Country_BMS_CORE__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Account_vod__r.Account_Source_Country_BMS_CORE__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Source Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Territory_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Account_vod__c)&amp;&quot;-&quot;&amp;Territory_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Territory</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_vod__c</fullName>
+        <description>Lookup to the account for which the territory specific field is applied to.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>TSF_vod</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Address_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the address of the account assigned to the territory.</description>
+        <externalId>false</externalId>
+        <label>My Preferred Address</label>
+        <referenceTo>Address_vod__c</referenceTo>
+        <relationshipLabel>Territory Fields</relationshipLabel>
+        <relationshipName>TSF_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Allowed_Products_vod__c</fullName>
+        <description>Double semi-colon delimited list of Product Names
+-- Example: Cholecap;;Labrinone</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Double semi-colon delimited list of Product Names
+-- Example: Cholecap;;Labrinone</inlineHelpText>
+        <label>Allowed Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>BMS_RemoveFromGeography__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Remove from Geography</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Call_Plan_BMS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Call Plan?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Days_Last_Interaction_BMS_EMEA__c</fullName>
+        <description>VPRO - October 2013 - BMS EU: Formula field to calculate the number of days since the last interaction has been submitted. Create to be used to create views. (Req 571).</description>
+        <externalId>false</externalId>
+        <formula>Today()-Last_Activity_Date_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Last Interaction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Access_BMS_EMEA__c</fullName>
+        <description>VPRO March: Access specific to be added in TSF.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_MSM_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: MSM specific Email field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Sales_BMS_EMEA__c</fullName>
+        <description>BMS ACN - July 2014 : InterAct Req 1495 - Sales Specifc Email Field to be added in TSF.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id_vod__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>External Id that is populated by a Veeva Trigger. The field is populate on insert\update with a composite index of Account + &apos;__&apos; + Territory.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fax_Access_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: access specific fax field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Fax_MSL_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: MSL specific Fax field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Immunoscience_Decile_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Immunoscience Decile</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Immunoscience_Rating_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Immunoscience Rating</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>KAM_Sync_BMS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>KAM Sync?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Key_Person_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Key Person</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Activity_Date_vod__c</fullName>
+        <description>The most recent date a call was made to the account for the given territory.  This excludes &quot;Planned&quot; calls for that account/territory. Updated when calls are saved.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>My Last Activity Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Long_Term_Goal_BMS_CA__c</fullName>
+        <description>Define Long Term Goal for Account</description>
+        <externalId>false</externalId>
+        <label>Long Term Goal</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Access_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Access specific mobile field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>System field used by mobile products to aid synchronization.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_MSL_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: MSL specific Mobile field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Sales_BMS_EMEA__c</fullName>
+        <description>BMS ACN - August 2014 : Sales Specifc Mobile Field to be added on TSF.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>My_List__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>My List</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>My_MCCP_Target_BMS_EMEA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>BMS ACN - May 2016: Field used to populate the MCCP Targets.</description>
+        <externalId>false</externalId>
+        <label>My MCCP Target</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>My_Target_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether the account is specifically targeted in that territory.</description>
+        <externalId>false</externalId>
+        <label>My Target</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Network_Name_BMS_EMEA__c</fullName>
+        <description>VPRO August 2014</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Network Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Medical_Plan_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>On Medical Plan?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Access_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Access specific phone field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone_MSL_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: MSL specific phone field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Sales_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014 Sales specific Phone field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Preferred_Account_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Populated by TSF Future Apex Logic on Calls.</description>
+        <externalId>false</externalId>
+        <label>My Preferred Location</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Territory Fields (My Preferred Location)</relationshipLabel>
+        <relationshipName>Perferred_Account_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Recommend_for_Removal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this to Recommend for Removal of this Customer</description>
+        <externalId>false</externalId>
+        <label>Recommend for Removal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rep_Target_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Rep Target</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rep_Target_Reason_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Rep Target Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rep_Target_Reason_for_ZS_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASE(Rep_Target_Reason_BMS__c, &quot;Deceased&quot;, &quot;DIED&quot;, &quot;Management Approved No Calls&quot;, &quot;MANC&quot;, &quot;Moved Out Of Territory&quot;, &quot;MOOT&quot;,  &quot;Retired&quot;, &quot;RET&quot;,  &quot;Specialty Not Applicable&quot;, &quot;SNA&quot;, &quot;NONE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rep Target Reason for ZS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rep_Target_for_ZS_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASE( Rep_Target_BMS__c, &quot;Target Prescriber&quot;, &quot;1&quot;, &quot;Limited Access&quot;, &quot;2&quot;, &quot;Sample Only&quot;, &quot;3&quot;,  &quot;Non-Target&quot;, &quot;4&quot;,  &quot;No Access&quot;, &quot;5&quot;, &quot;0&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rep Target for ZS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Route_vod__c</fullName>
+        <description>The assigned route used for the account in a given territory.  To edit the routes, edit the picklist values.</description>
+        <externalId>false</externalId>
+        <label>Route</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Short_Term_Goal_BMS_CA__c</fullName>
+        <description>Define Short Term Goal for Account</description>
+        <externalId>false</externalId>
+        <label>Short Term Goal</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TA_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF((CreatedBy.Profile.Name=&quot;BMS-SPEC1-MGR-SALES&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC1-REP-SALES&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC2-MGR-RS&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC2-REP-RS&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC3-MGR-MSL&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC3-REP-MSL&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC4-OCS&quot;),&quot;ONCOLOGY&quot;,(IF((CreatedBy.Profile.Name=&quot;BMS-SPEC5-MGR-SALES&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC5-REP-SALES&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC6-MGR-RS&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC6-REP-RS&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC7-MGR-MSL&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC7-REP-MSL&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC10-REP-MSL&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC10-MGR-MSL&quot;),&quot;IMMUNOSCIENCE&quot;,&quot;N/A&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_vod__c</fullName>
+        <description>The name of the territory for which the territory specific fields of an account are created for.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Territory</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YTD_Activity_vod__c</fullName>
+        <description>The YTD total number of recorded calls (excluding &quot;Planned&quot; calls) for an account within the given territory. Updated when calls are saved.</description>
+        <externalId>false</externalId>
+        <label>My YTD Activity</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>iRep_Sync_BMS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox to control which Accounts will go to iRep? If you want to send this Account to iRep, please check this checkbox.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkbox to control which Accounts will go to iRep? If you want to send this Account to iRep, please check this checkbox.</inlineHelpText>
+        <label>iRep Sync</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>iRep_Sync_SPEC5_MGR__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox to control which Accounts will go to iRep? If you want to send this Account to iRep, please check this checkbox.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkbox to control which Accounts will go to iRep? If you want to send this Account to iRep, please check this checkbox.</inlineHelpText>
+        <label>iRep sync</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>iRep_sync_DBM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox to control which Accounts will go to iRep? If you want to send this Account to iRep, please check this checkbox.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkbox to control which Accounts will go to iRep? If you want to send this Account to iRep, please check this checkbox.</inlineHelpText>
+        <label>iRep sync</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Territory Field</label>
+    <nameField>
+        <label>TSF Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Territory Fields</pluralLabel>
+    <recordTypes>
+        <fullName>BMS_Canada_Individual</fullName>
+        <active>true</active>
+        <label>BMS Canada - Individual</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Canada_Organization</fullName>
+        <active>true</active>
+        <description>BMS Canada - Organization</description>
+        <label>BMS Canada - Organization</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Department</fullName>
+        <active>true</active>
+        <label>BMS - Department</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Group_Practice</fullName>
+        <active>true</active>
+        <label>BMS - Group Practice</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Individual</fullName>
+        <active>true</active>
+        <label>BMS - Individual</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Individual_Pending</fullName>
+        <active>true</active>
+        <label>BMS - Individual (Pending)</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Institution</fullName>
+        <active>true</active>
+        <label>BMS - Institution</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_Institution_MM</fullName>
+        <active>true</active>
+        <label>BMS - Institution (MM)</label>
+        <picklistValues>
+            <picklist>Immunoscience_Rating_BMS__c</picklist>
+            <values>
+                <fullName>1RED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2WHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3BLU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4GRN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Long_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_BMS__c</picklist>
+            <values>
+                <fullName>Limited Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Target Prescriber</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rep_Target_Reason_BMS__c</picklist>
+            <values>
+                <fullName>Management Approved No Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialty Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Route_vod__c</picklist>
+            <values>
+                <fullName>Route 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Short_Term_Goal_BMS_CA__c</picklist>
+            <values>
+                <fullName>Aware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initiating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Studying</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uninterested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

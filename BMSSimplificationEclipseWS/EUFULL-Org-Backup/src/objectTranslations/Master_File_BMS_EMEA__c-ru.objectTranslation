@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Master File --></value>
+    </caseValues>
+    <fields>
+        <label>Тип активности</label>
+        <name>Activity_Type_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Boards</masterLabel>
+            <translation>Консультативный совет</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA Group Meetings with External Speaker</masterLabel>
+            <translation>DA Групповые собрания с внешним выступающим</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DA MSM Presentation with MSM as Speaker</masterLabel>
+            <translation>DA Презентация MSM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other External Meetings in response to an expressed need</masterLabel>
+            <translation><!-- Other External Meetings in response to an expressed need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Non Promotional Meetings in response to an expressed need</masterLabel>
+            <translation>Другие не рекламные собрания с целью определения потребностей</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Representative Presentation</masterLabel>
+            <translation>Другое представительство представителя –  круглый стол с представителем</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P2P Discussion</masterLabel>
+            <translation>Обсуждение P2P  - интерактивная дискуссия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Meeting</masterLabel>
+            <translation>Собрание выступающих – круглый стол, региональная конференция с участием лектора</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship of HCPs to local Congress</masterLabel>
+            <translation>Спонсорство специалистов здравоохранения на местной конференции – спонсирование врачей на региональные конференции</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship of Hospital meetings (stand)</masterLabel>
+            <translation>Спонсорство собраний в больницу – спонсирование региональных конференций (стенд в ЛПУ)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship of local meetings (stand)</masterLabel>
+            <translation>РЕГИОНАЛЬНАЯ КОНФЕРЕНЦИЯ (СТЕНД)Спонсорство конференций (стенд) – спонсирование региональных конференций (стенд)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Representative Presentation</masterLabel>
+            <translation>СТАНДАРТНАЯ ПРЕЗЕНТАЦИЯ ПРЕДСТАВИТЕЛЯ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How is it aligned with the brand strategy --></help>
+        <label><!-- z_Alignment with Strategy --></label>
+        <name>Alignment_with_Strategy_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Проверка комментария к утверждению</label>
+        <name>Approval_Comment_Check_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Текст подтверждения данных</label>
+        <name>Approval_Disclaimer_Text_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Кому, в конечном счете, отправляется мастер-файл для утверждения?</help>
+        <label>Утверждающее лицо</label>
+        <name>Approver_BMS_EMEA__c</name>
+        <relationshipLabel>Мастер-файлы</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Все необходимые файлы были прикреплены?</help>
+        <label>Утвержденные прикрепленные файлы</label>
+        <name>Attachment_Validated_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Тип подлинного документа</label>
+        <name>BMS_EMEA_Original_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS_EMEA_URL --></label>
+        <name>BMS_EMEA_URL__c</name>
+    </fields>
+    <fields>
+        <label>Комментарии</label>
+        <name>Comments_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Информация о стандартных контрактах, которые должны использоваться для осуществления деятельности по данному мастер-файлу</help>
+        <label>Описание контракта</label>
+        <name>Contracts_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Страна</label>
+        <name>Country_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Austria</masterLabel>
+            <translation>Австрия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belgium</masterLabel>
+            <translation>Бельгия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech Republic</masterLabel>
+            <translation>Чешская республика</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denmark</masterLabel>
+            <translation>Дания</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finland</masterLabel>
+            <translation>Финляндия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation>Германия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greece</masterLabel>
+            <translation>Греция</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungary</masterLabel>
+            <translation>Венгрия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland</masterLabel>
+            <translation>Ирландия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Israel</masterLabel>
+            <translation><!-- Israel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netherlands</masterLabel>
+            <translation>Нидерланды</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norway</masterLabel>
+            <translation>Норвегия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poland</masterLabel>
+            <translation>Польша</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portugal</masterLabel>
+            <translation>Португалия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romania</masterLabel>
+            <translation>Румыния</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russia</masterLabel>
+            <translation><!-- Russia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation>Испания</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweden</masterLabel>
+            <translation>Швеция</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switzerland</masterLabel>
+            <translation>Швейцария</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation>Великобритания</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Валюта</label>
+        <name>Currency_Form_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>С учетом стратегии и целевой аудитории</help>
+        <label>Информация о собрании</label>
+        <name>Details_of_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Конец месяца</label>
+        <name>End_Date_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Январь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation>Октябрь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation>Ноябрь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation>Декабрь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Февраль</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Март</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Апрель</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Май</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Июнь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Июль</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Август</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation>Сентябрь</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date (converted) --></label>
+        <name>End_Date_converted_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Действия на FFM</label>
+        <name>FFM_Step_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Master File</masterLabel>
+            <translation>Мастер-файл</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Общий  бюджет на регистрацию HCP</label>
+        <name>HCPs_registration_All_Events_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Регистрационные пошлины третьих лиц</help>
+        <label>Бюджет на регистрацию HCP</label>
+        <name>HCPs_registration_fees_Event_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Есть все документы</label>
+        <name>Has_All_Documents_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий бюджет на гонорары</label>
+        <name>Honorarium_All_Events_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Вознаграждение за услуги специалистов в области здравоохранения в соответствии с разумной рыночной ценой (необходим контракт)</help>
+        <label>Вознаграждение, включенное в бюджет</label>
+        <name>Honorarium_Event_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий бюджет на проживание</label>
+        <name>Hotel_All_Events_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Бюджет на проживание</label>
+        <name>Hotel_Event_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Master File Title --></help>
+        <label>Название мастер-файла</label>
+        <name>Master_File_Name_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Мастер-файл заблокирован?</label>
+        <name>Master_File_Unlocked_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий бюджет на питание</label>
+        <name>Meals_All_Events_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Стоимость питания, включенная в бюджет</label>
+        <name>Meals_Event_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting August --></label>
+        <name>Meeting_August_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting December --></label>
+        <name>Meeting_Dec_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Jul --></label>
+        <name>Meeting_July_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Jun --></label>
+        <name>Meeting_June_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting May --></label>
+        <name>Meeting_May_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Название мероприятия</label>
+        <name>Meeting_Name_guidance_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Nov --></label>
+        <name>Meeting_November_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Oct --></label>
+        <name>Meeting_October_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Sep --></label>
+        <name>Meeting_September_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Apr --></label>
+        <name>Meetings_April_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Feb --></label>
+        <name>Meetings_February_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Jan --></label>
+        <name>Meetings_January_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meetings Mar --></label>
+        <name>Meetings_March_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общие цели</label>
+        <name>Objective_Total_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий  бюджет на другие расходы</label>
+        <name>Other_Costs_All_Events_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Другие затраты, включенные в бюджет</label>
+        <name>Other_Costs_Event_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Продукция на основе P&amp;L WBS/Проект/Код</help>
+        <label>Классификация затрат</label>
+        <name>P_L_Classification_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Продукция</label>
+        <name>Product_Compound_BMS_EMEA__c</name>
+        <relationshipLabel>Мастер-файлы (Продукция/субстанция)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Обоснование для бизнес-потребности</label>
+        <name>Rationale_for_Business_Need_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Оставшийся бюджет</label>
+        <name>Remaining_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- zDELETE_Reminder Trigger --></label>
+        <name>Reminder_Trigger_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Apr_Completed --></label>
+        <name>RollUp_Apr_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Apr_Planned --></label>
+        <name>RollUp_Apr_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Aug_Completed --></label>
+        <name>RollUp_Aug_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Aug_Planned --></label>
+        <name>RollUp_Aug_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Dec_Completed --></label>
+        <name>RollUp_Dec_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Dec_Planned --></label>
+        <name>RollUp_Dec_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Feb_Completed --></label>
+        <name>RollUp_Feb_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Feb_Planned --></label>
+        <name>RollUp_Feb_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Jan_Completed --></label>
+        <name>RollUp_Jan_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Jan_Planned --></label>
+        <name>RollUp_Jan_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Jul_Completed --></label>
+        <name>RollUp_Jul_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Jul_Planned --></label>
+        <name>RollUp_Jul_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Jun_Completed --></label>
+        <name>RollUp_Jun_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Jun_Planned --></label>
+        <name>RollUp_Jun_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Mar_Completed --></label>
+        <name>RollUp_Mar_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Mar_Planned --></label>
+        <name>RollUp_Mar_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_May_Completed --></label>
+        <name>RollUp_May_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_May_Planned --></label>
+        <name>RollUp_May_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Nov_Completed --></label>
+        <name>RollUp_Nov_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Nov_Planned --></label>
+        <name>RollUp_Nov_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Oct_Completed --></label>
+        <name>RollUp_Oct_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Oct_Planned --></label>
+        <name>RollUp_Oct_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Sep_Completed --></label>
+        <name>RollUp_Sep_Completed_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RollUp_Sep_Planned --></label>
+        <name>RollUp_Sep_Planned_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Услуги, полученные за вознаграждения, выплаченные компанией BMS</help>
+        <label>Услуги согласно контракта с HCP</label>
+        <name>Service_for_Contract_with_HCP_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Какие услуги должны быть включены за спонсорство</help>
+        <label>Услуги по спонсорству собрания</label>
+        <name>Service_for_Sponsorship_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий бюджет на спонсорство</label>
+        <name>Sponsorship_of_Event_All_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Спонсорство проведения мероприятий больницы или третьего лица (необходим контракт)</help>
+        <label>Спонсорство, включенное в бюджет</label>
+        <name>Sponsorship_of_Event_Budget_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Начало месяца</label>
+        <name>Start_Date_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Январь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation>Октябрь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation>Ноябрь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation>Декабрь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Февраль</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Март</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Апрель</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>Май</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>Июнь</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>Июль</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>Август</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation>Сентябрь</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Утверждено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Проект</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation>В ожидании утверждения</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Подтверждение данных</label>
+        <name>Submission_Disclaimer_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Да</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Подтверждение данных</label>
+        <name>Submission_Disclaimer_Text_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Текст отказа в предоставлении утвержден?</help>
+        <label>Отказ в предоставлении утвержден?</label>
+        <name>Submission_Disclaimer_approved_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Запланирование количество мероприятий</label>
+        <name>Targeted_number_of_Meetings_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Терапевтическая область</label>
+        <name>Therapeutic_Area_BMS_EMEA__c</name>
+        <relationshipLabel>Мастер-файлы</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Общая сумма фактических расходов</label>
+        <name>Total_Actual_Cost_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общая сумма, предусмотренная бюджетом</label>
+        <name>Total_Budget_all_Events_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий бюджет на одно мероприятие</label>
+        <name>Total_Budget_per_Event_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общая сумма планируемых затрат</label>
+        <name>Total_Planned_Cost_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общее количество рабочих дней</label>
+        <name>Total_Working_Days__c</name>
+    </fields>
+    <fields>
+        <label>Общее количество планирований собрания</label>
+        <name>Total_number_of_Meeting_Plans_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общее кол-во проведенных мероприятий</label>
+        <name>Total_number_of_Meeting_PostExc_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общее количество собраний</label>
+        <name>Total_number_of_Meetings_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Бюджет на транспорт</label>
+        <name>Transportation_Budget_Event_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Общий бюджет на транспорт</label>
+        <name>Transportation_Budget_all_Event_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Место проведения</label>
+        <name>Venue_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Год</label>
+        <name>Year_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>2014</masterLabel>
+            <translation><!-- 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015</masterLabel>
+            <translation><!-- 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016</masterLabel>
+            <translation><!-- 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017</masterLabel>
+            <translation><!-- 2017 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Количество участников</label>
+        <name>of_Audience_Participants_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Количество сотрудников компании BMS</label>
+        <name>of_BMS_Employees_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Количество спонсируемых участников</label>
+        <name>of_Sponsored_Participants_BMS_EMEA__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Master File Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Не серийные мастер-файлы MSM</label>
+        <name>BMS_EMEA_MSM_Non_Serial_Master_Files</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Не серийные мастер-файлы MSM (утверждены)</label>
+        <name>BMS_EMEA_MSM_Non_Serial_Master_Files_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Серийные мастер-файлы MSM</label>
+        <name>BMS_EMEA_MSM_Serial_Master_Files</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Серийные мастер-файлы MSM (утверждены)</label>
+        <name>BMS_EMEA_MSM_Serial_Master_Files_approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Не серийные мастер-файлы MSM</label>
+        <name>BMS_EMEA_Non_Serial_Master_Files</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Не серийные мастер-файлы MSM (утверждены)</label>
+        <name>BMS_EMEA_Non_Serial_Master_Files_Sales_approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Серийные мастер-файлы</label>
+        <name>BMS_EMEA_Serial_Master_Files</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Продажи серийных мастер-файлов (утверждено)</label>
+        <name>BMS_EMEA_Serial_Master_Files_Sales_approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Стандартная презентация представителя</label>
+        <name>BMS_EMEA_Standard_Rep_Presentations</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Стандартная презентация представителя (утверждено)</label>
+        <name>BMS_EMEA_Standard_Rep_Presentations_approved</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Share_Master_File_with_Approver_ReadOnly --></label>
+        <name>Share_MF_with_Approver_ReadOnly_BMS_EMEA</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage>Дата начала (месяц) не должна быть после даты завершения (месяц)</errorMessage>
+        <name>BMSEMEAStartDateBeforeEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Мастер-файлы не могут утверждаться самостоятельно. Выберите другое утверждающее лицо.</errorMessage>
+        <name>BMS_EMEA_Approver_different_from_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Нельзя выбрать месяц или год окончания собрания, которые уже прошли. Выберите другую дату.</errorMessage>
+        <name>BMS_EMEA_End_MonthYear_In_Past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Выберите, по меньшей мере, одну категорию подтипа. Все пустые.</errorMessage>
+        <name>BMS_EMEA_One_Cost_Subtype_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Нельзя выбрать месяц или год начала собрания, которые уже прошли. Выберите другую дату.</errorMessage>
+        <name>BMS_EMEA_Start_MonthYear_In_Past</name>
+    </validationRules>
+    <webLinks>
+        <label>Скопируйте мастер-файл</label>
+        <name>Deep_Clone</name>
+    </webLinks>
+    <webLinks>
+        <label>Новое собрание</label>
+        <name>New_Meeting</name>
+    </webLinks>
+    <webLinks>
+        <label>Уведомить FLM &amp; Reps</label>
+        <name>Notify_FLM_Reps_BMS_EMEA</name>
+    </webLinks>
+    <webLinks>
+        <label>Отправить напоминание об утверждении</label>
+        <name>Send_Reminder_BMS_EMEA</name>
+    </webLinks>
+    <webLinks>
+        <label>Повторно вызвать мастер-файл</label>
+        <name>Unlock_the_Record_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

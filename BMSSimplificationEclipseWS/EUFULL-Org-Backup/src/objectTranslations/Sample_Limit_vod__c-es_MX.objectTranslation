@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Límite de muestra</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Límites de muestra</value>
+    </caseValues>
+    <fields>
+        <help>Utilizar tipo de registro Solo persona</help>
+        <label>Tipos de cuenta</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel><!-- Sample Limits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Txn Create --></label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad desembolsada</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disbursed Quantity --></label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Limit --></label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Id --></label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad límite</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Límite por visita</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Quantity --></label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Sample Limits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cantidad restante</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Quantity --></label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Periodo rotatorio</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de límite de muestra</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Cuenta-Usuario-Por visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Cuenta-Por visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Usuario-Por visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Cuenta-Grupo de productos de muestra-Por visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Cuenta-Usuario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Cuenta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Usuario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Cuenta-Grupo de productos de muestra</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Periodo dividido</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12Meses</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Año</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grupo de plantillas</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Plantilla en uso</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Clave exclusiva de plantilla</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User_vod__c</name>
+        <relationshipLabel><!-- Sample Limits --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>No se ha podido guardar el registro. La cantidad límite no puede ser inferior a 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se ha podido guardar el registro. La cantidad límite no puede ser inferior a 0.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede crear una plantilla de límite de muestra para cantidad y valor en la misma plantilla.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No puede especificar un usuario al crear límites para un grupo de productos de muestra.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: End Date --></errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: Product --></errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: Start Date --></errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: Account Or User Or Account Type --></errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product, Limit Quantity, and Start/End Dates are mandatory if Account Type is used --></errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Account Type OR User and Account Type  can not be both set --></errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rolling Period  must be empty  if Account Type is empty --></errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Fecha final debe ser posterior a inicial</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if Split Period  is set rolling period must be 24 --></errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Split Period can not be set if Account Type is empty --></errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

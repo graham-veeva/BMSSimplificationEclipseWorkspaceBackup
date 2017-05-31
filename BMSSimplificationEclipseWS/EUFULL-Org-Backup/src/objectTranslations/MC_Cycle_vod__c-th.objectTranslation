@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>วงจร MC</value>
+    </caseValues>
+    <fields>
+        <label>เรียกใช้เป้าหมายที่แก้ไข</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>ถ้าเป็นจริงและมีฟิลด์ การดึงผ่าน อยู่บนอ็อบเจ็กต์ MC_Target_vod เมื่อการผสาน MCCP รันก็จะกระจายข้อมูลในฟิลด์ การดึงผ่าน ซึ่งไม่แนะนำใวห้ตั้งค่านี้บ่อยๆ ใช้เฉพาะเมื่อจำเป็นต้องการจายข้อมูลของค่าการดึงผ่าน</help>
+        <label>คำนวณการดึงผ่าน</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>คำอธิบาย</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่สิ้นสุด</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID ภายนอก</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>ใกล้เธรชโฮลด์เกินไป</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่เริ่มต้น</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>สถานะ</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>เสร็จสมบูรณ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>กำลังดำเนินการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>วางแผน</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ไกลเธรชโฮลด์เกินไป</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>นิยามเวียน</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>วันที่เริ่มต้นต้องมากกว่าหรือเท่ากับวันที่สิ้นสุด</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

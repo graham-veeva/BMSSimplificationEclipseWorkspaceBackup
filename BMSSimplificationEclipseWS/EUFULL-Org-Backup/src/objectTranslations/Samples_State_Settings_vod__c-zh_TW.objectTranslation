@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>樣本狀態設定</value>
+    </caseValues>
+    <fields>
+        <label>需要 CDS</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部識別碼</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>設定</label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation>僅限 BRC 樣本</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation>僅限手動樣本</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation>無樣本</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>無法定義相同記錄中的「CDS 需求」與「交貨方法」。</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

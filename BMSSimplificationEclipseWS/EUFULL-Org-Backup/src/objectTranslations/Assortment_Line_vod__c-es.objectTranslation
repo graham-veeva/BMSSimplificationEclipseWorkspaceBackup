@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Línea de selección</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Líneas de selección</value>
+    </caseValues>
+    <fields>
+        <label>Selección</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Líneas de selección</relationshipLabel>
+    </fields>
+    <fields>
+        <label>¿Contraer por defecto?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sección principal</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Líneas de selección</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Producto</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Líneas de selección</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Etiqueta de sección</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ordenando</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <recordTypes>
+        <label>Producto de selección IM</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sección de selección IM</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Producto de selección de OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sección de selección de OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Las líneas de selección OM solo se pueden asociar con selecciones OM y las líneas de selección IM solo se pueden asociar con selecciones IM</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo se puede comprobar para tipo de registro IM_Assortment_Section_vod o OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Una sección no se puede vincular a una sección principal</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No puede especificar una sección y un producto en el mismo registro.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

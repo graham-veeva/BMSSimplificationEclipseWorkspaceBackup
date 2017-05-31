@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Varning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Varning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Varning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Varningar</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Varningar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Varningar</value>
+    </caseValues>
+    <fields>
+        <label>Aktiveringsdatum</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Varningstext</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorerbar</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>Förfallodatum</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sista push-meddelande APNS datum/tid</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lång referenslänk</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hänvisning till länk</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prioritet</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation>Viktig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>Brådskande</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Offentligt</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Push-meddelande APNS-status</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Bearbetat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>Köat</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Fel: Det går inte att fylla i både fältet för lång länkreferens och fältet för länkreferens i samma varning.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

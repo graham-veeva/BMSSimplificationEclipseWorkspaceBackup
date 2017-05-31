@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Affiliation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Affiliations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Source Country --></label>
+        <name>Account_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Affiliation enfant</label>
+        <name>Child_affiliation_vod__c</name>
+        <relationshipLabel>Affiliations</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Commentaires</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Désactiver le déclencheur</label>
+        <name>Disable_Trigger_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Compte source</label>
+        <name>From_Account_vod__c</name>
+        <relationshipLabel>Affiliations (Compte source)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Contact source</label>
+        <name>From_Contact_vod__c</name>
+        <relationshipLabel>Affiliations (Contact source)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Influence</label>
+        <name>Influence_vod__c</name>
+        <picklistValues>
+            <masterLabel>Has influence</masterLabel>
+            <translation>A de l&apos;influence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is influenced</masterLabel>
+            <translation>Est influencé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No influence</masterLabel>
+            <translation>Aucune influence</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID mobile</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Parent</label>
+        <name>Parent_vod__c</name>
+    </fields>
+    <fields>
+        <label>Force de la relation</label>
+        <name>Relationship_Strength_vod__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>Faible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Moyen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Fort</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Rôle</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Access Relationship</masterLabel>
+            <translation>Réseau Market Access</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliated with</masterLabel>
+            <translation>-</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Relationship</masterLabel>
+            <translation>Réseau Siège</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Relationship</masterLabel>
+            <translation>Réseau Médical</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Relationship</masterLabel>
+            <translation>Réseau Ventes</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Domaine thérapeutique</label>
+        <name>Therapeutic_Area_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>Cardiologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Medicine</masterLabel>
+            <translation>Médecine d&apos;urgence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Medicine</masterLabel>
+            <translation>Médecine généraliste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation>Cabinet généraliste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Medicine</masterLabel>
+            <translation>Médecine interne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>Oncologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrics</masterLabel>
+            <translation>Pédiatrie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nombre d&apos;affiliations du compte cible</label>
+        <name>To_Account_Affiliation_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identifiant du compte cible</label>
+        <name>To_Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom du compte cible</label>
+        <name>To_Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;enregistrement du compte cible</label>
+        <name>To_Account_Record_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Compte cible</label>
+        <name>To_Account_vod__c</name>
+        <relationshipLabel>Affiliations (Compte cible)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Contact cible</label>
+        <name>To_Contact_vod__c</name>
+        <relationshipLabel>Affiliations (Contact cible)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Détruire</label>
+        <name>destroy_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- AffiliationNumber --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Les comptes cible et source ne doivent pas être identiques.</errorMessage>
+        <name>DUP_TO_FROM_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Les contacts cible et source ne doivent pas être identiques.</errorMessage>
+        <name>DUP_TO_FROM_CONTACT</name>
+    </validationRules>
+</CustomObjectTranslation>

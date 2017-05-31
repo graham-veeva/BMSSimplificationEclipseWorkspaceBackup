@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Catálogo de lotes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Catálogo de lotes</value>
+    </caseValues>
+    <fields>
+        <label>Ativo</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de expiração</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>ID do item</label>
+        <name>Item_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externo do catálogo de lotes</label>
+        <name>Lot_Catalog_External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Catálogo de lotes</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Descrição de amostras</label>
+        <name>Sample_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Amostra</label>
+        <name>Sample_vod__c</name>
+        <picklistValues>
+            <masterLabel>ELIQUIS 5MG BMS 1283086</masterLabel>
+            <translation><!-- ELIQUIS 5MG BMS 1283086 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 20mg</masterLabel>
+            <translation><!-- ERBITUX 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 40mg</masterLabel>
+            <translation><!-- ERBITUX 40mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 10mg</masterLabel>
+            <translation><!-- SPRYCEL 10mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 20mg</masterLabel>
+            <translation><!-- SPRYCEL 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 40mg</masterLabel>
+            <translation><!-- SPRYCEL 40mg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Suprimir lote</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label>U/M</label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Caixa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Embalagens</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation><!-- Unit --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>N° do lote deve ser No_Lot_vod em caso de lotes virtuais.</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O campo Nome do produto é necessário para criação de um registro de catálogo de lote de um produto que não seja amostra e não tenha n° de lote</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;É necessário marcar Suprimir lote ao usar o nome do nº do lote &quot;&quot;No_Lot_vod&quot;&quot;.&quot;</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O campo Amostra ou Produto é necessário para criação de um registro de catálogo de lote de um produto que seja amostra e tenha n° de lote</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Criar lotes de amostras</label>
+        <name>Create_Sample_Lots_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

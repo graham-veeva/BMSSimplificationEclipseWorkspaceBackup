@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Time_Off_Territory_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c$Owner</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c$Reason_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c$Time_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c$Date_vod__c</field>
+    </columns>
+    <description>İçinde bulunulan yılın  &quot;Bölge Dışında Geçirilen Zaman&apos;ı&quot; verir. (İzin, Eğitim, Kongre ve Toplantı Katılımı gibi)</description>
+    <filter>
+        <criteriaItems>
+            <column>Time_Off_Territory_vod__c$Territory_vod__c</column>
+            <operator>contains</operator>
+            <value>TRSLS</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>7.1-Time Off Territory (Yıl)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Time_Off_Territory__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Time_Off_Territory_vod__c$Date_vod__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Time_Off_Territory_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

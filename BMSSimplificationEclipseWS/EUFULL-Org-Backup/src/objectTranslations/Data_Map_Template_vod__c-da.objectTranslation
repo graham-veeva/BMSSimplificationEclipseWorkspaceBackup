@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Datatilknytningsskabelon</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Datatilknytningsskabelon</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Datatilknytningsskabelon</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Datatilknytningsskabeloner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Datatilknytningsskabeloner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Datatilknytningsskabeloner</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Krukker</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kolonneetiket</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>Marker dette felt, hvis filen skal have kolonneetiketterne som første linje i denne skabelon.</help>
+        <label>Kolonneetiketter medtaget</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Indeholder mål?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Decimaler</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>For at bruge markedssalgsanalyserapporten skal du kun betegne en salgsdatafil for månedlig skala. Salgsdata skal også indeholde ordinator-id, markeds-id, produktgruppe-id</help>
+        <label>Aktiver markedssalgsanalyserapport</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Aktiver for offline</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Etiket for farmakopé for sælgere</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Første kolonneetiket</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Anden kolonneetiket</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Delvis indlæsningstype</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Fuld</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Trinvis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Delvis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Delvis</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Markeder tilknyttet?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tilsidesæt kundegrænseværdi</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Betaler/plan tilknyttet?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skala</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Månedligt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Ugentligt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Anden kolonneetiket</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Områdenavne medtaget?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Vælg en gyldig værdi fra valglisten.  Når du indlæser data, skal du bruge mastervalglisteværdien, ikke den oversatte etiket</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Markedssalgsanalyserapporten kan kun vælges, når målestok er valgt til månedlig og Betaler/Plan kortlagt-boksen ikke er markeret</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kontrollér, at kolonneetiketten ikke indeholder nogle af de følgende tegn: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Antal decimaler skal være 0 - 4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vælg en gyldig værdi fra valglisten. Når du indlæser data, skal du bruge mastervalglisteværdien, ikke den oversatte etiket</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Definición de regla</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Definiciones de reglas</value>
+    </caseValues>
+    <fields>
+        <help>Indica si la regla está activa en Salesforce.com</help>
+        <label>Activo</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de campo donde aparecerán los mensajes de error a nivel de campo.</help>
+        <label>Mostrar campo</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>Fórmula de regla</help>
+        <label>Fórmula de condición de error</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>Mensaje de error para la regla.</help>
+        <label>Mensaje principal</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>Objeto en el que reside la regla de validación.</help>
+        <label>Objeto</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>Definiciones de reglas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Pedido</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Indica si Veeva ha encontrado una sintaxis no admitida en la definición de regla.</help>
+        <label>Compatible</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>ID externa para el registro. El formato es [NOMBRE REGLA]::[TipoRegistro.Nombre]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Línea de filtro de búsqueda de SFDC</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regla de SFDC</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

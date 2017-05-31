@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Name</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>Account$Id</primaryTableColumn>
+        <relatedTable>Call2_Key_Message_vod__c</relatedTable>
+        <relatedTableJoinColumn>Account_vod__c</relatedTableJoinColumn>
+    </crossFilters>
+    <description>Key messages delivered to Engagement plan Customers.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Call2_vod__r$Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Submitted_vod,Submitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Call2_vod__r.Call2_Key_Message_vod__r$Key_Message_vod__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Account.Call2_vod__r$Call_Date_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Call2_vod__r.Call2_Key_Message_vod__r$Key_Message_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Call2_vod__r.Call2_Key_Message_vod__r$Account_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Key messages delivered to EP customers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountswithCallsandCallKeyMessages__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

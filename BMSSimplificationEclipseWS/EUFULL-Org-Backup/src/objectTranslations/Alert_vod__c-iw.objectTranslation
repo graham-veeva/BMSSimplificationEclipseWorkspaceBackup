@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>התראה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>התראה</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>התראות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>התראות</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activation Date --></label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Text --></label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dismissible --></label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Push Notify APNS Date/Time --></label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>הסימוכין לקישור ארוך</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Reference --></label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation><!-- Important --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Public --></label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push Notify APNS Status --></label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation><!-- Processed_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation><!-- Queued_vod --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>שגיאה: לא ניתן לאכלס גם את השדה &apos;סימוכין לקישור ארוך&apos; וגם את השדה &apos;סימוכין לקישור&apos;.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

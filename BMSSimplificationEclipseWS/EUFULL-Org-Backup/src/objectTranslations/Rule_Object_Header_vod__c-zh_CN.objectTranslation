@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>规则对象标题</value>
+    </caseValues>
+    <fields>
+        <help>指示哪个设备当前在使用为对象定义的逻辑。</help>
+        <label>设备</label>
+        <name>Devices_vod__c</name>
+    </fields>
+    <fields>
+        <help>适用于对象的验证规则数量。</help>
+        <label>数字验证规则</label>
+        <name>Number_Validation_Rules_vod__c</name>
+    </fields>
+    <fields>
+        <label>断言</label>
+        <name>Predicate_vod__c</name>
+    </fields>
+    <fields>
+        <help>整体对象部署状态。</help>
+        <label>状态</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Disabled_vod</masterLabel>
+            <translation>已禁用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enabled_vod</masterLabel>
+            <translation>已启用</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>记录的外部 ID。格式为 [Object Name]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Object Header Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC 查找筛选标题</label>
+        <name>SFDC_Lookup_Filter_Header_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC 规则对象标题</label>
+        <name>SFDC_Rule_Object_Header_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

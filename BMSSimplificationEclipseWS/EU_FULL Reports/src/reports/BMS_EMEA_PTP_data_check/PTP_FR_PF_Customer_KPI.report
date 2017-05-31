@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Account.Potential_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Account.Monthly_Visit_Pressure_BMS_EMEA__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>TERR_NAME</column>
+            <operator>startsWith</operator>
+            <value>FT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Monthly_Visit_Pressure_BMS_EMEA__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Potential_BMS_EMEA__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>PTP - FR-PF Customer KPI</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Monthly_Visit_Pressure_BMS_EMEA__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2015-04-01</startDate>
+    </timeFrameFilter>
+</Report>

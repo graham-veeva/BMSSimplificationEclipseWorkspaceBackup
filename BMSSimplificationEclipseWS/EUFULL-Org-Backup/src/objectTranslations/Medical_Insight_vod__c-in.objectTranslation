@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Wawasan Medis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Wawasan Medis</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Wawasan Medis</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Percobaan Klinis</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Wawasan Medis</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tanggal</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Uraian</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id Rujukan Entitas</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interaksi</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Wawasan Medis</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Acara Medis</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Wawasan Medis</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sumber Lain</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunci Prioritas</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publikasi</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Wawasan Medis</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Disimpan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Dikirim</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ringkasan</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Buka</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <nameFieldLabel>Nama Wawasan Medis</nameFieldLabel>
+    <recordTypes>
+        <label>Wawasan Medis Utama</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Deskripsi diperlukan untuk menyimpan atau mengirim Wawasan Medis Utama</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ringkasan diperlukan untuk menyimpan atau mengirim Wawasan Medis Utama</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Submit_vod --></label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

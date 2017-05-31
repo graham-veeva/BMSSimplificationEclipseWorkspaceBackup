@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγές προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγές προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγές προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγές προϋπολογισμού περιοχής</value>
+    </caseValues>
+    <fields>
+        <label>Περιγραφή</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ποσότητα</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προϋπολογισμοί περιοχής</label>
+        <name>Territory_Budget_vod__c</name>
+        <relationshipLabel>Συναλλαγές προϋπολογισμών περιοχής</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ημερομηνία συναλλαγής</label>
+        <name>Transaction_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τιμή</label>
+        <name>Value_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Territory Budget Transaction Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Δεν μπορεί να δημιουργηθεί συναλλαγή για μη ενεργό προϋπολογισμό</errorMessage>
+        <name>VEEVA_ACTIVE_BUDGET_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

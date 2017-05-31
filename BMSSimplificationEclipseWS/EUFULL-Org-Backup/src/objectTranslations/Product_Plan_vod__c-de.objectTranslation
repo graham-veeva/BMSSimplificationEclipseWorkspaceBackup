@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Produktplan</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Produktpläne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Produktplan</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Produktpläne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Produktplans</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Produktpläne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Produktplan</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Produktplänen</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>% abgeschlossen</label>
+        <name>Complete__c</name>
+    </fields>
+    <fields>
+        <label>Beschreibung</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Detailgruppe</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>Produktpläne (Detailgruppe)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Produktpläne</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Status</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Zugelassen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In  Progress</masterLabel>
+            <translation>In Bearbeitung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Product Plan Name --></nameFieldLabel>
+    <webLinks>
+        <label>Metrik aktualisieren</label>
+        <name>Update_Metrics</name>
+    </webLinks>
+</CustomObjectTranslation>

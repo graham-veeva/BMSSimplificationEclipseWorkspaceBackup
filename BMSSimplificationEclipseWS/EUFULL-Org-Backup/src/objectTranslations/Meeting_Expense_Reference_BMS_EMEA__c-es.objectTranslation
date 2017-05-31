@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referencia de Gastos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referencias de Gastos</value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Factura enviada a contabilizar</label>
+        <name>Invoice_sent_to_accounting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Evento</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Referencias de gastos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nº de referencia</label>
+        <name>Reference_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Tipo/categoria</label>
+        <name>Type_Category_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Concur Expenses</masterLabel>
+            <translation>Nota de gastos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP PO</masterLabel>
+            <translation>SAP  PO</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Meeting Expense Reference Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>No está autorizado a cambiar campos, puesto que Ud es co-autor del Evento.</errorMessage>
+        <name>BMS_EMEA_FFM_Expense_Reference_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

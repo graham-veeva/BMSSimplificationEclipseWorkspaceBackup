@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Child_Account_vod__c.Child_Name_vod__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.OneKey_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Child_Account_vod__c.Parent_Name_vod__c</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ADDR2_STREET</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ADDR2_ZIP</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Brick_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ADDR2_CITY</field>
+    </columns>
+    <format>Tabular</format>
+    <name>AT - Übergeordnete Kundenliste</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Child_Account_vod__c@Child_Account_vod__c.Parent_Account_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Limite campione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Limiti campione</value>
+    </caseValues>
+    <fields>
+        <help>Usa solo tipo di record persona</help>
+        <label>Tipi di account</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Limiti campione</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Disattiva creazione trans.</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Importo pagato</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantità pagata</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di fine</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Applica limite</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id esterno</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id gruppo</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limite importo</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limite per visita</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantità limite</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prodotto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Limiti campione</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Importo rimanente</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantità rimanente</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Periodo continuativo</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo limite campione</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Account - Utente - Per visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Account - Per visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Utente - Per visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Account - Gruppo di prodotti campione - Per visita</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Account\Utente\Prodotto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Account\Prodotto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Utente\Prodotto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Account - Gruppo di prodotti campione</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Periodo frazionato</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12 mesi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Anno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data di inizio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gruppo modello</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Modello in uso</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chiave unica modello</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utente</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Limiti campione</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Impossibile salvare il record. Il limite dell&apos;importo non può essere inferiore a zero.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Impossibile salvare il record.  La quantità limite deve essere &quot;&quot;maggiore di&quot;&quot; o uguale a 0.&quot;</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile creare un Modello di limite campione per la quantità e il valore nello stesso modello.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile specificare un utente durante la creazione di limiti per un gruppo di prodotti campione.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile salvare il record. Record could not be saved. Sono richiesti i seguenti campi: Data di fine</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile salvare il record. Record could not be saved. Sono richiesti i seguenti campi: Prodotto</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile salvare il record. Record could not be saved. Sono richiesti i seguenti campi: Data di inizio</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile salvare il record. Record could not be saved. Sono richiesti i seguenti campi: Account o Utente</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il tipo di account è stato impostato, i valori di prodotto, quantità limite e data di inizio/fine sono obbligatori</errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Account e tipo di account O utente e tipo di account non possono essere entrambi impostati</errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il tipo di account è vuoto, il campo Periodo continuativo deve essere vuoto</errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Data fine deve essere dopo data inizio</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il periodo frazionato è impostato, il valore Periodo continuativo deve essere 24</errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se il tipo di account è vuoto, non è possibile impostare il periodo frazionato</errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

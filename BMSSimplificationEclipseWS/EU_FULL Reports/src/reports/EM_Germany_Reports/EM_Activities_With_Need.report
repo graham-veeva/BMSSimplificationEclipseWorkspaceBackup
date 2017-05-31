@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EM_Event_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.Event_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c$Activity_ID_2_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c$Activity_Id_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.Event_vod__r$Id</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.Event_vod__r$Budget_Name_vod__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.Event_vod__r$Estimated_Remaining_vod__c</field>
+    </columns>
+    <description>This Report will display all the activities with need</description>
+    <format>Tabular</format>
+    <name>EM Activities With Need</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>EM_Activities_with_Needs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>EM_Event_vod__c.Event_vod__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

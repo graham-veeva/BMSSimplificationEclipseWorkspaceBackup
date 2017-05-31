@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>สไลด์งานนำเสนอ CLM</value>
+    </caseValues>
+    <fields>
+        <label>งานนำเสนอ CLM</label>
+        <name>Clm_Presentation_vod__c</name>
+        <relationshipLabel>สไลด์งานนำเสนอ CLM</relationshipLabel>
+    </fields>
+    <fields>
+        <label>แสดงคำสั่งซื้อ</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>รหัสประจำภายนอก</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>ข้อความสำคัญ</label>
+        <name>Key_Message_vod__c</name>
+        <relationshipLabel>สไลด์งานนำเสนอ CLM</relationshipLabel>
+    </fields>
+    <fields>
+        <label>สไลด์บังคับ</label>
+        <name>Mandatory_Slides_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID อุปกรณ์เคลื่อนที่</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>งานนำเสนอย่อย</label>
+        <name>Sub_Presentation_vod__c</name>
+        <relationshipLabel>สไลด์งา่นนำเสนอ CLM (งานนำเสนอย่อย)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- CLM Presentation Slide Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You cannot make the parent presentation refer to itself as a sub presentation --></errorMessage>
+        <name>NO_REFER_TO_MAIN_PRESENTATION</name>
+    </validationRules>
+</CustomObjectTranslation>

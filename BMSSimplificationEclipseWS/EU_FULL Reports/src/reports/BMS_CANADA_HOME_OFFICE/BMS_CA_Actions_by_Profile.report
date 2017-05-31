@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Action_BMS__c$Name</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c$Account_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c$Action_Type_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c$Owner</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c$Assigned_To_BMS_CA__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c$Description_BMS__c</field>
+    </columns>
+    <description>Action par profil : Actions by Profile</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Action_BMS__c$Owner.Profile</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Actions by Profile</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Actions_BMS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Action_BMS__c$Action_Date_BMS__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

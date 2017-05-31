@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Factura enviada para a contabilidade</label>
+        <name>Invoice_sent_to_accounting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Reunião</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Referência da despesa da reunião</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Referência número</label>
+        <name>Reference_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Tipo / Categoria</label>
+        <name>Type_Category_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Concur Expenses</masterLabel>
+            <translation>Despesas Concur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP PO</masterLabel>
+            <translation>Ordem de compra SAP</translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Meeting Expense Reference Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Não está autorizado a alterar nenhum campo, porque é co-autor.</errorMessage>
+        <name>BMS_EMEA_FFM_Expense_Reference_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

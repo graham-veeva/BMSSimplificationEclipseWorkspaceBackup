@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cấu hình đối tượng VMobile</value>
+    </caseValues>
+    <fields>
+        <label>Trường tìm kiếm tài khoản</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hoạt động</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên đối tượng phụ</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mối quan hệ phụ</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thiết bị</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Cho phép để áp đặt sự tái nạp cho các đối tượng sử dụng chế độ chia sẻ Riêng Tư hoặc có mệnh đề Where đã cập nhật. Có thể làm tăng thời gian đồng bộ.</help>
+        <label>Cho Phép Đồng Bộ Nâng Cao</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>Không bao gồm danh sách trường</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID bên ngoài</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>Giới hạn các trường tới danh sách</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>Bao gồm thông tin đính kèm khi đồng bộ hóa đối tượng.</help>
+        <label>Bao gồm các tài liệu đính kèm</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bao gồm các đối tượng liên quan</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chỉ siêu dữ liệu</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên đối tượng</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên đối tượng chính.</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hồ sơ</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên hồ sơ</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trường mối quan hệ</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên mối quan hệ</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>Hàng con và hàng mẹ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>Đồng bộ hóa toàn bộ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>Liên quan đến cấp cao nhất</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>Cấp cao nhất</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Mệnh đề ở đâu</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label>MÁY TÍNH BẢNG</label>
+        <name>TABLET</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Tên Đối Tượng phải được xác định rõ.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tên Quan Hệ và Tên Đối Tượng Mẹ phải được xác định rõ trên VOC có liên quan tới một đối tượng cấp cao nhất</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

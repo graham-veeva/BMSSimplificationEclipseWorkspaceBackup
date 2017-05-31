@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Name_of_Venue_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Planned_Start_Date_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Planned_End_Date_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Status_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Product_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.MF_Product_Compound_BMS_EMEA__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Medical_Event_vod__c.Status_BMS_CORE__c</column>
+            <operator>notContain</operator>
+            <value>saved</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>PT - Transparência - Report ao Infarmed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Medical_Event_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Medical_Event_vod__c.Status_BMS_CORE__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Medical_Event_vod__c.End_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

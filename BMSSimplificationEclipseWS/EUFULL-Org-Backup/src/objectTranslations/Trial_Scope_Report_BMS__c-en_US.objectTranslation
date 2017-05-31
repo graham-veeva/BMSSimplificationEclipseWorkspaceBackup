@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Study Visit Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Study Visit Reports</value>
+    </caseValues>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protocol Manager Email --></label>
+        <name>BMS_Protocol_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Trial Protocol --></label>
+        <name>Clinical_Trial_Protocol_BMS__c</name>
+        <relationshipLabel><!-- Study Visit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Clinical Trial Site --></label>
+        <name>Clinical_Trial_Site_BMS__c</name>
+        <relationshipLabel><!-- Study Visit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HCP --></label>
+        <name>Customer_BMS__c</name>
+        <relationshipLabel><!-- Study Visit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Protocol Distribution List --></label>
+        <name>Email_Protocol_Distribution_List_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Recipient 1 --></label>
+        <name>Email_Recipient_1_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Recipient 2 --></label>
+        <name>Email_Recipient_2_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Recipient 3 --></label>
+        <name>Email_Recipient_3_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Recipient 4 --></label>
+        <name>Email_Recipient_4_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Recipient 5 --></label>
+        <name>Email_Recipient_5_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interaction --></label>
+        <name>Interaction_BMS__c</name>
+        <relationshipLabel><!-- Study Visit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Principle Investigator &amp; Location: --></label>
+        <name>Investigator_Location_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSL --></label>
+        <name>MSL_BMS__c</name>
+        <relationshipLabel><!-- Study Visit Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mandatory Touch Point Visit --></label>
+        <name>Mandatory_Touch_Point_Visit_BMS_IC__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notified MG --></label>
+        <name>Notified_MG_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Clinical Trial Site --></label>
+        <name>Other_Clinical_Trial_Site_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Investigator &amp; Location --></label>
+        <name>Principal_Investigator_Location_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protocol Distribution List --></label>
+        <name>Protocol_Distribution_List_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protocol Manager Email --></label>
+        <name>Protocol_Manager_Email_BMS__c</name>
+    </fields>
+    <fields>
+        <help><!-- List names of all site staff/RCO/CRO present during visit --></help>
+        <label><!-- Names of site staff/CRO/RCO: --></label>
+        <name>Q10_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>Q11_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- If no, provide details --></label>
+        <name>Q1_Comments_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please confirm that RCO/CRO/Site manager was contacted prior to site visit: --></help>
+        <label><!-- Was RCO/CRO/Site manager contacted? --></label>
+        <name>Q1_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Details of topics highlighted by RCO/CRO/site manager to be discussed with the study site: --></help>
+        <label>Details of topics discussed during visit</label>
+        <name>Q2_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Were additional trainings required? --></label>
+        <name>Q3_1_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>Q3_Comments_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the site require additional training on any of the following: --></help>
+        <label><!-- If yes, select the additional trainings --></label>
+        <name>Q3_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>AEs and their management</masterLabel>
+            <translation><!-- AEs and their management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS Data</masterLabel>
+            <translation><!-- BMS Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product / mode of action</masterLabel>
+            <translation><!-- Product / mode of action --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If yes, provide details --></label>
+        <name>Q4_Comments_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have any potential competing trials at the site been identified? --></help>
+        <label><!-- Have competing trials been identified? --></label>
+        <name>Q4_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Patient recruitment status at the time of this visit: --></help>
+        <label><!-- Patient recruitment status: --></label>
+        <name>Q5_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, provide details --></label>
+        <name>Q6_Comments_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any recruitment barriers identified? --></label>
+        <name>Q6_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>Q7_Comments_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Were there any other study topics discussed (safety, efficacy, protocol training, CRO related or general comments)? --></help>
+        <label><!-- Other study topics discussed? --></label>
+        <name>Q7_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>Q8_Comments_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Were there any other study topics discussed (safety, efficacy, protocol training, CRO related or general comments)? --></help>
+        <label><!-- Was the most recent newsletter reviewed? --></label>
+        <name>Q8_EU_TSR_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describe any trial related issues (not AEs) which need further action --></help>
+        <label><!-- Describe follow-up actions needed: --></label>
+        <name>Q9_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Notes --></label>
+        <name>Scope_Documentation_Notes_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SUMMARY OF DISCUSSION WITH SITE STAFF --></label>
+        <name>Static_Text_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Name --></label>
+        <name>Study_Name_EU_TSR_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Therapeutic Area --></label>
+        <name>Therapeutic_Area_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Touch point achieved --></label>
+        <name>Touch_point_achieved_BMS_IC__c</name>
+    </fields>
+    <recordTypes>
+        <label>Study Visit Report</label>
+        <name>Trial_Scope_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Study Visit Report Submitted</label>
+        <name>Trial_Scope_Report_Submitted</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Study Visit Report cannot be created when selecting &quot;Study Visit Report (Submitted)&quot; in the previous screen. Please go back and select &quot;Study Visit Report&quot; instead. --></errorMessage>
+        <name>BMS_EMEA_Cannot_create_with_Submitted_RT</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Submit_BMS --></label>
+        <name>Submit_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unlock_BMS --></label>
+        <name>Unlock_BMS</name>
+    </webLinks>
+</CustomObjectTranslation>

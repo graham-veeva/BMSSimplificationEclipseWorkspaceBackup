@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>產品群組</value>
+    </caseValues>
+    <fields>
+        <label>描述</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>結束日期</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>產品目錄</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>產品群組 (產品目錄)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>產品</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>產品群組</relationshipLabel>
+    </fields>
+    <fields>
+        <label>數量</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>開始日期</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>您無法將不屬於「公司產品」的「詳細資料群組」連結至「公司產品」的「詳細資料產品」或「主題」。</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>僅有「詳細資料主題」或「詳細資料」產品類型可與「詳細資料產品群組」相關聯。</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>僅允許「產品群組」類型</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>僅允許「訂單」類型</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>僅有「樣本」或「BRC」類型的產品可以關聯於「樣本產品群組」</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>若已定義「數量」，則必須填入「開始日期」和「結束日期」</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>必須具備有效的開始日期和結束日期。</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

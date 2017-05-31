@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerkategorie</value>
+    </caseValues>
+    <fields>
+        <help>Link zur Activity. Wir nur angegeben, wenn sich die Teilnehmerkategorie in der Activity erstellt wird und nicht im Need. Sollte automatisch gezogen werden in der Activity.</help>
+        <label><!-- Activity --></label>
+        <name>Activity_HCPTS__c</name>
+        <relationshipLabel>Teilnehmerkategorie</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Activity Typ</label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Link zum Need. Wir nur angegeben, wenn sich die Teilnehmerkategorie im Need erstellt wird und nicht in der Activity. Sollte automatisch gezogen werden im Need.</help>
+        <label><!-- Need --></label>
+        <name>Budget_HCPTS__c</name>
+        <relationshipLabel>Teilnehmerkategorie</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Anzahl pro Activity</label>
+        <name>Max_per_Event_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Mobil ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmerkategorie</label>
+        <name>Participant_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Audience- BMS Employee</masterLabel>
+            <translation>Publikum - BMS Mitarbeiter/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- HCP</masterLabel>
+            <translation>Publikum - HCP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- JV Employee</masterLabel>
+            <translation>Publikum - Allianzpartner Mitarbeiter/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- Nurse Practitioner</masterLabel>
+            <translation>Publikum - Krankenpfleger/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- Pharmacist</masterLabel>
+            <translation>Publikum - Apotheker/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- Technicians</masterLabel>
+            <translation>Publikum - Techniker/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider(s)</masterLabel>
+            <translation><!-- Service Provider(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsored Attendees</masterLabel>
+            <translation>Gesponserte Teilnehmer</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Weiterer Fachbereich für einzuladene Teilnehmer dieser Kategorie.</help>
+        <label>Fachbereich 2</label>
+        <name>Specialty_2_HCPTS__c</name>
+        <relationshipLabel>Teilnehmerkategorie</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fachbereich für einzuladene Teilnehmer dieser Kategorie.</help>
+        <label>Fachbereich</label>
+        <name>Specialty_HCPTS__c</name>
+        <relationshipLabel>Teilnehmerkategorie</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Therapeutischer Bereich, der einzuladene Teilnehmer dieser Kategorie.</help>
+        <label>Therapeutischer Bereich</label>
+        <name>Therapeutic_Area_HCPTS__c</name>
+        <relationshipLabel>Teilnehmerkategorie</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Der Need ist bereits genehmigt. Es können daher keine Änderungen zu den Teilnehmerkategorien mehr vorgenommen werden.</errorMessage>
+        <name>CannotAddParticipantstoApprovedBudget</name>
+    </validationRules>
+</CustomObjectTranslation>

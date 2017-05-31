@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>EM_Event_vod__c.Expense_Header_vod__r.Expense_Lines_vod__r.Expense_Attributions_vod__r$Actual_vod__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.Expense_Header_vod__r.Expense_Lines_vod__r.Expense_Attributions_vod__r$Expense_Type_Name_vod__c</field>
+    </columns>
+    <description>Expense By Person (All)</description>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>EM_Event_vod__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>EM_Event_vod__c.Expense_Header_vod__r.Expense_Lines_vod__r.Expense_Attributions_vod__r$Incurred_Expense_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Expense By Person (All)</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Event_Expense_vod__c</reportType>
+    <scope>user</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>EM_Event_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

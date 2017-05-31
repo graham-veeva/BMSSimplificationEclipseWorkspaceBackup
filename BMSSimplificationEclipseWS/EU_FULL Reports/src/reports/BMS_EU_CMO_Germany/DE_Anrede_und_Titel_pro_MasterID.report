@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Account.OneKey_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>PC_SALUTATION</field>
+    </columns>
+    <columns>
+        <field>Account.Title_formula_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>PC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>PC_LAST_NAME</field>
+    </columns>
+    <description>Anrede, Titel, MasterID, ONEKEY für Mailings</description>
+    <filter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>PersonAccount.BMS_Individual_No_Profiling_Consent,PersonAccount.BMS_Individual,PersonAccount.BMS_Individual_Pending</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>DE - Anrede und Titel pro MasterID</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList@Account.Title_BMS_EMEA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

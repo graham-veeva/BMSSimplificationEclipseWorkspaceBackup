@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Výstraha</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Výstrahy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Výstrahu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Výstrahy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Výstrahy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Výstrah</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Výstrahe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Výstrahám</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Výstrahou</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Výstrahami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Výstrahe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Výstrahách</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activation Date --></label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert Text --></label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dismissible --></label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dátum/čas poslednej notifikácie APNS</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dlhý referenčný odkaz</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Reference --></label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation><!-- Important --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Public --></label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stav APNS</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Spracované</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>V rade</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Chyba: dlhý odkaz na referenciu ani polia s odkazom na referenciu nemôžu byť vyplnené pri rovnakej výstrahe.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

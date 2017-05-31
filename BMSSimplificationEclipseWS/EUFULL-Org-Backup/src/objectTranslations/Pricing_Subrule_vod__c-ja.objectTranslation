@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格設定サブルール</value>
+    </caseValues>
+    <fields>
+        <label>比較タイプ</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>定価</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>数量</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>SKU 数</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>最大数量</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>最少数量</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>価格設定ルール</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>価格設定サブルール</relationshipLabel>
+    </fields>
+    <fields>
+        <label>製品</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>価格設定サブルール</relationshipLabel>
+    </fields>
+    <nameFieldLabel>名前</nameFieldLabel>
+    <validationRules>
+        <errorMessage>キット品目は比較製品としてサポートされていません</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>最大数量は最小数量以上である必要があります</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SKU 数は 0 より大きい値でなければなりません</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,211 @@
+<apex:page standardController="Meeting_Speaker_BMS__c" extensions="EventsManagementSpeaker_BMS">
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+  <script language="javascript"> 
+
+       function updateCost(hours,costId,totalCostId) {
+            var cost = document.getElementById(costId);
+            var totalCost = document.getElementById(totalCostId);
+            
+            if (!isNaN(parseFloat(cost.innerHTML.replace('$','')))) {
+                totalCost.innerHTML = '$' + (parseFloat(hours.value) * parseFloat(cost.innerHTML.replace('$',''))).toFixed(2);
+                
+            }
+            updateTotalCost();
+        } 
+        function updateFixedCost(cost,totalFixedCostId) {
+            //alert('updateFixedCost');
+            var totalFixedCost = document.getElementById(totalFixedCostId);
+            if (!isNaN(parseFloat(cost.value))) {
+                totalFixedCost.innerHTML = '$' + parseFloat(cost.value).toFixed(2);
+            }    
+           
+            updateTotalCost();
+        }
+        function updateTotalCost() {
+            //alert('starting update total cost');
+            var totalCostSum = 0;
+            $j = jQuery.noConflict();
+            $j('[id$=totalCost]').each(function() {
+                //alert(this);
+                var num = parseFloat(($j(this).html()).replace(/[^0-9\.]+/g, ""));
+                if (!isNaN(num) && num != null) {
+                    //alert(num);
+                    totalCostSum += num;
+                }                
+            });
+            $j('[id$=totalFixedCost]').each(function() {
+                //alert(this);
+                var num = parseFloat(($j(this).html()).replace(/[^0-9\.]+/g, ""));
+                if (!isNaN(num) && num != null) {
+                    //alert(num);
+                    totalCostSum += num;
+                }                
+            });
+            
+            $j('#[id$=totalCostSum]').html('$'+totalCostSum.toFixed(2));
+            //alert('totalcostsum ' + totalCostSum); 
+        } 
+    </script>        
+</head>
+<apex:form >
+    <apex:pageMessages />        
+        
+<apex:outputPanel id="planning" rendered="{!eventStage == 'Planning'}">
+
+        <apex:outputPanel >
+        <table style="text-align: left; width: 100%;" cellpadding="4" cellspacing="2"> 
+          <tbody>
+            <tr>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Phone</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.Phone}"/></td>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Specialty</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.Specialty_1_vod__c}"/></td>
+            </tr>
+            <tr>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Email</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.PersonEmail}"/></td>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Designation</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.Credentials_vod__c}"/></td>
+            </tr>
+            <tr>
+              <td style="width: 1px; white-space: nowrap; vertical-align: top;"><span style="font-weight: bold;">Address</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Name}"/><br/>
+                  &nbsp;&nbsp;<apex:outputField value="{!speakerSummary.City_vod__c}"/>, 
+                  <apex:outputField value="{!speakerSummary.State_vod__c}"/>
+                  <apex:outputField value="{!speakerSummary.Zip_vod__c}"/></td>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">SAP Vendor ID</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.SAP_Vendor_ID_BMS_IC__c}"/></td>
+            </tr>
+            <tr>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">ONYX Contract Number</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.ONYX_Contract_Number_BMS__c}"/></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        
+        </apex:outputPanel>
+        <br/><br/> 
+        <apex:pageBlock title="Meeting Expenses">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveRateCard}" value="Save Expenses"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!displayRateCards}" var="rc">    
+                <apex:column value="{!rc.Name}" headerValue="Description"/>
+                <apex:column headerValue="Hourly Rate">
+                  <apex:outputText value="${0, number, ###,##0.00}" id="cost">
+                    <apex:param value="{!rc.HourlyRate}"/>
+                  </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Hours">
+                  <apex:inputText value="{!rc.Hours}" style="width:50px" onchange="javascript:updateCost(this,'{!$Component.cost}','{!$Component.totalCost}')"/>
+                </apex:column>
+                <apex:column headerValue="Total">
+                  <apex:outputText value="${0, number, ###,##0.00}" id="totalCost">
+                    <apex:param value="{!rc.Total}"/>
+                  </apex:outputText>
+                </apex:column>      
+            </apex:pageBlockTable>
+            <br/><br/>
+            <apex:pageBlockTable value="{!fixedDisplayRateCards}" var="rc">    
+                <apex:column headerValue="Description">
+                    <!-- start -->
+                    <apex:selectList value="{!rc.SelectedName}" size="1">
+                        <apex:selectOptions value="{!rc.Names}"/>
+                    </apex:selectList>
+                    <!-- end -->
+                </apex:column>
+                <apex:column headerValue="Total">
+                  <apex:inputText value="{!rc.Total}" onchange="javascript:updateFixedCost(this,'{!$Component.totalFixedCost}')"/>
+                </apex:column>
+                <apex:column headerValue="Total">
+                  <apex:outputText value="${0, number, ###,##0.00}" id="totalFixedCost" rendered="{!rc.Total != null}">
+                    <apex:param value="{!rc.Total}"/>
+                  </apex:outputText>
+                </apex:column>      
+            </apex:pageBlockTable>
+            <div align="right" style="padding:10px;">
+                <b>Total:</b>&nbsp;&nbsp;
+              <apex:outputText value="{0,number,$#,##0.00}" id="totalCostSum">
+                <apex:param value="{!totalCostSum}"/>
+              </apex:outputText>
+            </div>
+        </apex:pageBlock>
+
+    </apex:outputPanel>
+    <apex:outputPanel id="planning2" rendered="{!eventStage == 'Planning_2'}"> 
+        <b>Speaker</b>&nbsp;&nbsp;&nbsp; <apex:outputField value="{!meetingSpeaker.Account__c}"/>
+        <br/><br/>
+        <apex:outputPanel >
+        <table style="text-align: left; width: 100%;" cellpadding="4" cellspacing="2"> 
+          <tbody>
+            <tr>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Phone</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.Phone}"/></td>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Specialty</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.Specialty_1_vod__c}"/></td>
+            </tr>
+            <tr>
+              <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Email</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.PersonEmail}"/></td>
+               <td style="width: 1px; white-space: nowrap;"><span style="font-weight: bold;">Designation</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Account_vod__r.Credentials_vod__c}"/></td>
+            </tr>
+            <tr>
+              <td style="width: 1px; white-space: nowrap; vertical-align: top;"><span style="font-weight: bold;">Address</span></td>
+              <td>&nbsp;&nbsp;<apex:outputField value="{!speakerSummary.Name}"/><br/>
+                  &nbsp;&nbsp;<apex:outputField value="{!speakerSummary.City_vod__c}"/>, 
+                  <apex:outputField value="{!speakerSummary.State_vod__c}"/>
+                  <apex:outputField value="{!speakerSummary.Zip_vod__c}"/></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>        
+        </apex:outputPanel>
+        <br/><br/>
+        <apex:pageBlock title="Meeting Expenses">
+            <apex:pageBlockTable value="{!displayRateCards}" var="rc">    
+                <apex:column value="{!rc.Name}" headerValue="Description"/>
+                <apex:column headerValue="Hourly Rate">
+                  <apex:outputText value="${0, number, ###,##0.00}">
+                    <apex:param value="{!rc.HourlyRate}"/>
+                  </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Hours">
+                    <apex:outputText value="{!rc.Hours}" style="width:50px"/>
+                </apex:column>
+                <apex:column headerValue="Total">
+                  <apex:outputText value="${0, number, ###,##0.00}">
+                    <apex:param value="{!rc.Total}"/>
+                  </apex:outputText>
+                </apex:column>
+        
+            </apex:pageBlockTable><br/><br/>
+            <apex:pageBlockTable value="{!fixedDisplayRateCards}" var="rc">    
+                <apex:column headerValue="Description">
+                   <apex:outputText value="{!rc.SelectedName}"/>
+                </apex:column>
+                <apex:column headerValue="Total">
+                  <apex:outputText value="${0, number, ###,##0.00}" id="totalFixedCost" rendered="{!rc.Total != null}">
+                    <apex:param value="{!rc.Total}"/>
+                  </apex:outputText>
+                </apex:column>      
+            </apex:pageBlockTable>
+            <div align="right" style="padding:10px;">
+                <b>Total:</b>&nbsp;&nbsp;
+              <apex:outputText value="{0,number,$#,##0.00}" id="totalCostSum">
+                <apex:param value="{!totalCostSum}"/>
+              </apex:outputText>
+            </div>
+        </apex:pageBlock>
+    </apex:outputPanel>
+    
+</apex:form>
+</apex:page>

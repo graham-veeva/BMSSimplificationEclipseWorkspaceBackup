@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plantilla de consentimiento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plantillas de consentimiento</value>
+    </caseValues>
+    <fields>
+        <label>Fecha de entrada en vigor de calendario</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha final</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Umbral de caducidad</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de caducidad</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Calendario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Rotatorio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Fecha de inicio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre del formato</nameFieldLabel>
+    <recordTypes>
+        <label>Plantilla de consentimiento de muestra</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Fecha de entrada en vigor de calendario es obligatorio cuando Tipo de caducidad es Calendario</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se requieren campos obligatorios</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Fecha final no puede ser anterior a Fecha de inicio</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

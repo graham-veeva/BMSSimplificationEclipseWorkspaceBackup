@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ομάδα προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ομάδες προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ομάδα προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ομάδες προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ομάδα προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ομάδες προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Ομάδα προϊόντων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Ομάδες προϊόντων</value>
+    </caseValues>
+    <fields>
+        <label>Περιγραφή</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάλογος προϊόντων</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Ομάδες προϊόντων (κατάλογος προϊόντων)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Προϊόν</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Ομάδες προϊόντων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ποσότητα</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Δεν μπορείς να συνδέσεις μία Ομάδα Λεπτομερειών που δεν αποτελεί Προϊόν Εταιρείας με Λεπτομέρεια Προϊόντος ή Θέμα που είναι Προϊόν Εταιρείας.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο προϊόντα του τύπου &quot;Θέμα λεπτομέρειας &quot; or &quot;Λεπτομέρειες&quot; μπορούν να συνδυαστούν με μία Ομάδα Λεπτομερειών Προϊόντος</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Επιτρέπεται μόνο ο τύπος &quot;Ομάδα προϊόντων&quot;</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Επιτρέπεται μόνο ο τύπος &quot;Παραγγελία&quot;</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο προϊόντα τύπου &quot;Δείγμα&quot; &apos;η &quot;BRC&quot; μπορούν να συσχετιστούν με μια ομάδα προϊόντων δειγμάτων</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η ημερομηνία έναρξης και λήξης πρέπει να συμπληρωθούν αν μια ποσότητα ορίζεται</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Απαιτούνται έγκυρη ημερομηνία έναρξης και λήξης.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

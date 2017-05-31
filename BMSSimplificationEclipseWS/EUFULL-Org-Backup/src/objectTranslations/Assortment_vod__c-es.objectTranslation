@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Selección</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Selecciones</value>
+    </caseValues>
+    <fields>
+        <label>Grupo de cuentas</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de registro de cuenta</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Farmacia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Mayorista</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>El resto</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grupo de selección</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha final</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo registro de supervisión del invent.</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Supervisión del inventario</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo de registro de pedido</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Directo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Transferir</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vinculado a producto</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha de inicio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <recordTypes>
+        <label>Selección IM</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Selección de OM</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>La fecha de inicio es posterior a la de finalización</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Una selección vinculada a un producto no puede mostrar la sección Todos los demás</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Vista previa</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

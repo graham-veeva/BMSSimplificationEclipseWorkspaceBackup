@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Aturan Acara</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Aturan Acara</value>
+    </caseValues>
+    <fields>
+        <label>Bidang Peserta Account</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Penyajian CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Aturan Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Bidang Peserta Kontak</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Timpa Negara</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Aturan Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Templat Email</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Aturan Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Konfigurasi Acara</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Aturan Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Filter</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Wajib</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Opsional (default mati)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Opsional (default nyala)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Jenis Bahan</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bahan</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Jenis Acara yang Menggunakan Bahan</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Bidang Pendaftaran Online</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kualifikasi</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Aturan Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cari Di Luar Area Saya</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bidang Pembicara</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bidang Peserta Pengguna</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bidang Peserta Dadakan</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Bidang Peserta</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bahan</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bidang Pendaftaran Online</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bidang Pembicara</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kualifikasi Pembicara</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bidang Peserta Dadakan</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Satu aturan tidak boleh diisi Templat Email dan Penyajian CLM. Buat aturan terpisah untuk dua item ini.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Satu aturan tidak boleh diisi Bahan dan Penyajian CLM. Buat aturan terpisah untuk dua item ini.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Satu aturan tidak boleh diisi Templat Bahan dan Email. Buat aturan terpisah untuk dua item ini.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

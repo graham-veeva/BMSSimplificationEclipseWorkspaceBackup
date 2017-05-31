@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Dostawca</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Dostawcy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Dostawcę</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Dostawców</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Dostawcy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Dostawców</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Dostawcy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Dostawcom</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Dostawcą</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Dostawcami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Dostawcy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Dostawcach</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Dostawco</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Dostawcy</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>DOCT</masterLabel>
+            <translation><!-- DOCT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VEN1</masterLabel>
+            <translation><!-- VEN1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Klient</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Dostawcy</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master ID --></label>
+        <name>BP_ID_BMS_CORE_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Address --></label>
+        <name>Bank_Address_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Country --></label>
+        <name>Bank_Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>Bank_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Building --></label>
+        <name>Building_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can Generate VMF --></label>
+        <name>Can_Generate_VMF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Central Deletion Block For Master Record --></label>
+        <name>Central_Deletion_Block_For_Master_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Central Deletion Flag --></label>
+        <name>Central_Deletion_Flag_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Central Posting Block --></label>
+        <name>Central_Posting_Block_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Centrally Imposed Purchasing Block --></label>
+        <name>Centrally_Imposed_Purchasing_Block_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments for VMT --></label>
+        <name>Comments_for_VMT_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>Contract_City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Contract_Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Contract_Party_Address_Line_1_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Contract_Party_Address_Line_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>Contract_Party_District_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field to indicate if the Payee is an Individual or Entity --></help>
+        <label><!-- Payee Type --></label>
+        <name>Contract_Party_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Entity</masterLabel>
+            <translation><!-- Entity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payee is HCP HCPTS --></label>
+        <name>Contract_Party_is_HCP_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Contract_Postal_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>Contract_State_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>Contract_Tax_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Kraj</label>
+        <name>Country_vod__c</name>
+        <relationshipLabel>Dostawcy</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Currency --></label>
+        <name>Currency_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BRL</masterLabel>
+            <translation><!-- BRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Decline FFS --></label>
+        <name>Decline_FFS_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decline OOP --></label>
+        <name>Decline_OOP_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates Invoice type - fed from SAP --></help>
+        <label><!-- ERS --></label>
+        <name>ERS_Simple_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email for Payment Notification --></label>
+        <name>Email_Address_for_e_signature_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>E-mail</label>
+        <name>Email_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Tax ID (CIF) --></label>
+        <name>Entity_Contract_Party_Tax_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extend To Company Code --></label>
+        <name>Extend_To_Company_Code_HCPTS__c</name>
+        <relationshipLabel><!-- Payees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- zExtend to Comp Code --></label>
+        <name>Extend_to_Comp_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ID zewnętrzne</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Customer ID --></label>
+        <name>Global_Customer_ID2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Customer ID --></label>
+        <name>Global_Customer_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBAN # --></label>
+        <name>IBAN_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incoterm --></label>
+        <name>Incoterm_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>CFR</masterLabel>
+            <translation><!-- CFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOB</masterLabel>
+            <translation><!-- FOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICF</masterLabel>
+            <translation><!-- ICF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTH</masterLabel>
+            <translation><!-- OTH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry Code --></label>
+        <name>Industry_Code_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>0000</masterLabel>
+            <translation><!-- 0000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0100-HCP(Individual)</masterLabel>
+            <translation><!-- 0100-HCP(Individual) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0101-HCO (Entity)</masterLabel>
+            <translation><!-- 0101-HCO (Entity) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0102-Non-HCP (Individual or Entity)</masterLabel>
+            <translation><!-- 0102-Non-HCP (Individual or Entity) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kluczowa osoba kontaktowa</label>
+        <name>Key_Contact_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains PII Data which will be encrypted using Force.com Platform Encryption. Preceding ICF Field API names with letters PII_ will ensure that Process Payee button copies the values from ICF to matching fields on this reference object --></help>
+        <label><!-- PII Data --></label>
+        <name>PII_Data_HCPTS__c</name>
+        <relationshipLabel><!-- Payees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Numer telefonu</label>
+        <name>Phone_Number_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Material Group --></label>
+        <name>Primary_Material_Group_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>HCPT01 (HCP Services)</masterLabel>
+            <translation><!-- HCPT01 (HCP Services) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT02 (Event Sponsorship)</masterLabel>
+            <translation><!-- HCPT02 (Event Sponsorship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT03 (HCP Sponsorship)</masterLabel>
+            <translation><!-- HCPT03 (HCP Sponsorship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS04</masterLabel>
+            <translation><!-- IMMS04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS22</masterLabel>
+            <translation><!-- IMMS22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS23</masterLabel>
+            <translation><!-- IMMS23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITRD09 (Educatoinal Grants)</masterLabel>
+            <translation><!-- ITRD09 (Educatoinal Grants) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Org --></label>
+        <name>Purchase_Org_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>FR01</masterLabel>
+            <translation><!-- FR01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR02</masterLabel>
+            <translation><!-- FR02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR03</masterLabel>
+            <translation><!-- FR03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR04</masterLabel>
+            <translation><!-- FR04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR05</masterLabel>
+            <translation><!-- FR05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR06</masterLabel>
+            <translation><!-- FR06 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR07</masterLabel>
+            <translation><!-- FR07 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR08</masterLabel>
+            <translation><!-- FR08 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Block</masterLabel>
+            <translation><!-- Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change</masterLabel>
+            <translation><!-- Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change and Unblock</masterLabel>
+            <translation><!-- Change and Unblock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extend</masterLabel>
+            <translation><!-- Extend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extend and Unblock</masterLabel>
+            <translation><!-- Extend and Unblock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unblock</masterLabel>
+            <translation><!-- Unblock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Block Statuses --></label>
+        <name>SAP_Block_Statuses_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Material Group --></label>
+        <name>Secondary_Material_Group_1_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>HCPT01 (HCP Services)</masterLabel>
+            <translation><!-- HCPT01 (HCP Services) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT02 (Event Sponsorship)</masterLabel>
+            <translation><!-- HCPT02 (Event Sponsorship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT03 (HCP Sponsorship)</masterLabel>
+            <translation><!-- HCPT03 (HCP Sponsorship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITRD09 (Educational Grants)</masterLabel>
+            <translation><!-- ITRD09 (Educational Grants) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Secondary Material Groups --></label>
+        <name>Secondary_Material_Group_2_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>HCPT01 (HCP Services)</masterLabel>
+            <translation><!-- HCPT01 (HCP Services) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT02 (Event Sponsorship)</masterLabel>
+            <translation><!-- HCPT02 (Event Sponsorship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT03 (HCP Sponsorship)</masterLabel>
+            <translation><!-- HCPT03 (HCP Sponsorship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITRD09 (Educational Grants)</masterLabel>
+            <translation><!-- ITRD09 (Educational Grants) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Provider Reference --></label>
+        <name>Service_Provider_Reference_HCPTS__c</name>
+        <relationshipLabel><!-- Payees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signer&apos;s Email --></label>
+        <name>Signer_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signatory name on FW agreement and Events AA --></help>
+        <label><!-- Signer Name --></label>
+        <name>Signer_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer&apos;s Phone --></label>
+        <name>Signer_Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signer&apos;s Title --></label>
+        <name>Signer_Title_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Eligible_vod</masterLabel>
+            <translation>Dopuszczone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive_vod</masterLabel>
+            <translation>Nieaktywne</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Swift /BIC Code --></label>
+        <name>Swift_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Tax ID (DNI) --></label>
+        <name>Tax_ID_National_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Withholding --></label>
+        <name>Tax_Withholding_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>[ CO-C1-COFINS – 1% ]</masterLabel>
+            <translation><!-- [ CO-C1-COFINS – 1% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ CS-L1-CSSL-3% ]</masterLabel>
+            <translation><!-- [ CS-L1-CSSL-3% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ GP-P1-PIS/COFINS/CSSL-4,65% ]</masterLabel>
+            <translation><!-- [ GP-P1-PIS/COFINS/CSSL-4,65% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IJ-R6-IRRF-1,00% ]</masterLabel>
+            <translation><!-- [ IJ-R6-IRRF-1,00% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IJ-R7-IRRF-1,50% ]</masterLabel>
+            <translation><!-- [ IJ-R7-IRRF-1,50% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IN-N1-INSS 11% ]</masterLabel>
+            <translation><!-- [ IN-N1-INSS 11% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IP-N3-INSS-11% ]</masterLabel>
+            <translation><!-- [ IP-N3-INSS-11% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R1-IRRF – CPF – 1 DEPENDENTE ]</masterLabel>
+            <translation><!-- [ IR-R1-IRRF – CPF – 1 DEPENDENTE ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R2-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-R2-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R3-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-R3-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R4-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-R4-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R5-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-R5-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R8-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-R8-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-R8-IRRF – CPF – AUTONOMOS ]</masterLabel>
+            <translation><!-- [ IR-R8-IRRF – CPF – AUTONOMOS ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-RA-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-RA-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IR-RB-IRRF – CPF – 2 DEPENDENTES ]</masterLabel>
+            <translation><!-- [ IR-RB-IRRF – CPF – 2 DEPENDENTES ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IS-S2-ISS 2% ]</masterLabel>
+            <translation><!-- [ IS-S2-ISS 2% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IS-S5-ISS 5% ]</masterLabel>
+            <translation><!-- [ IS-S5-ISS 5% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IS-S5-ISS-2% ]</masterLabel>
+            <translation><!-- [ IS-S5-ISS-2% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ IS-S5-ISS-5% ]</masterLabel>
+            <translation><!-- [ IS-S5-ISS-5% ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ P1-P2-PIS – 0.65%  ]</masterLabel>
+            <translation><!-- [ P1-P2-PIS – 0.65%  ] --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>[ ZN-N0-INSS 20% ]</masterLabel>
+            <translation><!-- [ ZN-N0-INSS 20% ] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Docteur</masterLabel>
+            <translation><!-- Docteur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.</masterLabel>
+            <translation><!-- M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mme.</masterLabel>
+            <translation><!-- Mme. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professeur</masterLabel>
+            <translation><!-- Professeur --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Użytkownik</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Dostawcy</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VAT Liable? --></label>
+        <name>VAT_Liable_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VAT Registration ID --></label>
+        <name>VAT_Registration_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Vendor ID --></label>
+        <name>Vendor_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Mat. Group Concat --></label>
+        <name>Vendor_Mat_Group_Concat_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Request Status --></label>
+        <name>Vendor_Request_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Vendor ID Created</masterLabel>
+            <translation><!-- Vendor ID Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor ID Requested</masterLabel>
+            <translation><!-- Vendor ID Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Update Requested</masterLabel>
+            <translation><!-- Vendor Update Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Updated</masterLabel>
+            <translation><!-- Vendor Updated --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Payee --></label>
+        <name>Payee_Simple_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Dostawa</label>
+        <name>Vendor_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- SAP Vendor ID Must be 10 Digits --></errorMessage>
+        <name>BMS_EMEA_EM_Vendor_ID_Must_be_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterm is a required field to generate a Vendor Master Form. --></errorMessage>
+        <name>Need_Incoterm_To_Generate_VMF</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Update_Vendor --></label>
+        <name>Create_Update_Vendor</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_DOCT_Vendor --></label>
+        <name>Request_DOCT_Vendor</name>
+    </webLinks>
+</CustomObjectTranslation>

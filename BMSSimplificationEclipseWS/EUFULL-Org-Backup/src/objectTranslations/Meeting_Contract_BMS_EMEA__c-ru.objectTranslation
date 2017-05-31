@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <fields>
+        <help>Информация о стандартных контрактах, использующихся в данной деятельности.</help>
+        <label>Контракт</label>
+        <name>Contract_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Meeting --></label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Исходные действия в FFM</label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Собрание</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Контракты на проведение собраний</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Исходный номер</label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Contract Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Контракт на проведение собрания</label>
+        <name>BMS_EMEA_Meeting_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Контракт на проведенное собрание</label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Контракт на проведенное собрание PTA</label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec_PTA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Вы не можете изменять какие-либо поля, так как вы являетесь соавтором собрания.</errorMessage>
+        <name>BMS_EMEA_FFM_Contract_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Контракты, созданные во время фазы планирования собрания, не могут быть изменены во время фазы проведения собрания. Отмените.</errorMessage>
+        <name>BMS_EMEA_PlanContractsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label>Новый контракт</label>
+        <name>New_Contract_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

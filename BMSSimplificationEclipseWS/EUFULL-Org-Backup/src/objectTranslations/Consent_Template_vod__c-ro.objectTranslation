@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Şablonul de aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Şablon aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Şabloanele de aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Şabloane aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Şablonului de aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Unui şablon de aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Şabloanelor de aprobare</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Unor şabloane aprobare</value>
+    </caseValues>
+    <fields>
+        <label>Dată calendaristică intrare în vigoare</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de sfârşit</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prag de expirare</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tip de expirare</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Calendar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Stabilire dată variabilă</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data de început</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Denumire a şablonului</nameFieldLabel>
+    <recordTypes>
+        <label>Şablon aprobare mostre</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Data calendaristică de intrare în vigoare este obligatorie atunci când tipul de dată de expirare este calendaristică</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lipsă câmpuri necesare</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Data de încheiere nu poate fi anterioară datei de începere</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

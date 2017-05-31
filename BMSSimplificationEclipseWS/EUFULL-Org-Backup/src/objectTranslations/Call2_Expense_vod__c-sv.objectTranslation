@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Möteskostnad</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Möteskostnad</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Möteskostnad</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Möteskostnader</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Möteskostnader</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Möteskostnader</value>
+    </caseValues>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Möteskostnader (konton)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mängd</label>
+        <name>Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ av deltagare</label>
+        <name>Attendee_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Contact_vod</masterLabel>
+            <translation>Kontakt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_vod</masterLabel>
+            <translation>Händelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group_Account_vod</masterLabel>
+            <translation>Gruppkonto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Person_Account_vod</masterLabel>
+            <translation>Personkonto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User_vod</masterLabel>
+            <translation>Användare</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Möte</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Möteskostnader</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum</label>
+        <name>Call_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt</label>
+        <name>Contact_vod__c</name>
+        <relationshipLabel>Möteskostnader (kontakter)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Enhetens referens-ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Är det ett överordnat möte?</label>
+        <name>Is_Parent_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anteckning</label>
+        <name>Note_vod__c</name>
+    </fields>
+    <fields>
+        <label>Åsidosättningslås</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Meals</masterLabel>
+            <translation><!-- Meals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Costs</masterLabel>
+            <translation><!-- Other Costs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Användare</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Möteskostnader</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Interaction Expense Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- BMS - EMEA Sales Standard Rep Presentation --></label>
+        <name>BMS_EMEA_Sales_Standard_Rep_Presentation</name>
+    </recordTypes>
+</CustomObjectTranslation>

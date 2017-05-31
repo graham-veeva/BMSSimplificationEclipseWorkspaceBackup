@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preferinţă</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preferinţă</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preferinţe</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preferinţe</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Preferinţei</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Preferinţei</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Preferinţelor</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Preferinţelor</value>
+    </caseValues>
+    <fields>
+        <label>Piaţă de date analitice</label>
+        <name>Analytic_Market_vod__c</name>
+        <relationshipLabel>Preferinţe</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stare a datelor analitice ale vizitei</label>
+        <name>Analytics_Call_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipuri de date analitice ale vizitei</label>
+        <name>Analytics_Call_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>Comparare date analit. ale teritoriilor</label>
+        <name>Analytics_Compare_Territories_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date analitice ale nr. participanţilor</label>
+        <name>Analytics_Count_Attendees_vod__c</name>
+    </fields>
+    <fields>
+        <help>Utilizat pentru raportul privind media vizitelor pe zi. Când sunt activate şi adevărate, vizitele de weekend sunt incluse în calcul. Zilele de weekend se bazează pe setarea Veeva VINSIGHTS_CALENDAR_CONFIG</help>
+        <label>Contorizaţi vizitele de weekend?</label>
+        <name>Analytics_Count_Weekend_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Planuri ale ciclului de date analitice</label>
+        <name>Analytics_Cycle_Plans_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tip de date analitice</label>
+        <name>Analytics_Datatype_vod__c</name>
+    </fields>
+    <fields>
+        <label>Afişaj de date analitice</label>
+        <name>Analytics_Display_By_vod__c</name>
+    </fields>
+    <fields>
+        <label>Afişare date analit. ale competitorilor</label>
+        <name>Analytics_Display_Competitors_vod__c</name>
+    </fields>
+    <fields>
+        <label>Categorie a pieţei de date analitice</label>
+        <name>Analytics_Market_Category_vod__c</name>
+        <picklistValues>
+            <masterLabel>AllMarkets</masterLabel>
+            <translation>Toate pieţele</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyMarkets</masterLabel>
+            <translation>Pieţele mele</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Date analitice ale produselor mele</label>
+        <name>Analytics_My_Products_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date analit. prod. principale plătitor</label>
+        <name>Analytics_Payer_Top_Products_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produse de date analitice</label>
+        <name>Analytics_Products_vod__c</name>
+    </fields>
+    <fields>
+        <label>Scară de date analitice</label>
+        <name>Analytics_Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Lună</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter_vod</masterLabel>
+            <translation>Trimestru</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Săptămână</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Segment de date analitice</label>
+        <name>Analytics_Segment_vod__c</name>
+        <relationshipLabel>Preferinţe (Segment de date analitice)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date  încep. şi sfârş. pt. date analit.</label>
+        <name>Analytics_Start_End_Dates_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teritorii ale datelor analitice</label>
+        <name>Analytics_Territories_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interval temporal al datelor analitice</label>
+        <name>Analytics_Timeframe_vod__c</name>
+        <picklistValues>
+            <masterLabel>12;Month</masterLabel>
+            <translation>12; Lună</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24;Month</masterLabel>
+            <translation>24; Lună</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3;Month</masterLabel>
+            <translation>3; Lună</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6;Month</masterLabel>
+            <translation>6; Lună</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QUARTERLY</masterLabel>
+            <translation>TRIMESTRIAL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YTD</masterLabel>
+            <translation><!-- YTD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Partajări recente de calendare</label>
+        <name>CALENDAR_SHARE_RECENT_ITEMS_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vizite pe zi</label>
+        <name>Calls_Per_Day_vod__c</name>
+    </fields>
+    <fields>
+        <label>Distrugere program</label>
+        <name>CollapseSchedule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dezactivare calendar CLM</label>
+        <name>Disable_CLM_Calendar_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dezactivare a vizualiz. ciclului vizitei</label>
+        <name>Disable_Call_Cycle_View_vod__c</name>
+    </fields>
+    <fields>
+        <label>ACTIVAREA RUNDEI TOTALE A LINIEI COMANDĂ</label>
+        <name>ENABLE_ORDER_LINE_TOTAL_ROUND_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activarea unei singure intr. a comenzii</label>
+        <name>Enable_Order_Single_entry_vod__c</name>
+    </fields>
+    <fields>
+        <label>Configurare ţară eveniment</label>
+        <name>Event_Country_Config_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utilizator gestionare evenimente</label>
+        <name>Event_Management_User_vod__c</name>
+    </fields>
+    <fields>
+        <label>Săptămână cu cinci zile</label>
+        <name>Five_Day_Week_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vizualizare listă de medicamente</label>
+        <name>Formulary_View_vod__c</name>
+    </fields>
+    <fields>
+        <label>Segment JDNET</label>
+        <name>JDNET_Segment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ultima vizualizare de cont utilizată</label>
+        <name>Last_Account_View_Used_vod__c</name>
+        <relationshipLabel>Preferinţe (Ultima viz. cont utilizată)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ultimele date analitice</label>
+        <name>Last_Analytic_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ultimul planificator pt. listă conturi</label>
+        <name>Last_Scheduler_Account_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ultimul marcaj al planificatorului</label>
+        <name>Last_Scheduler_Bookmark_vod__c</name>
+        <relationshipLabel>Preferinţe (Ultimul marcaj al planificatorului)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ultima ţintă</label>
+        <name>Last_Target_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ultimul teritoriu utilizat</label>
+        <name>Last_Territory_Used_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ultima vizualizare utilizată</label>
+        <name>Last_View_Used_vod__c</name>
+    </fields>
+    <fields>
+        <label>Comutare tip activitate MCCP</label>
+        <name>MCCP_Activity_Type_Switch_vod__c</name>
+        <picklistValues>
+            <masterLabel>My_Activity_vod</masterLabel>
+            <translation>Activitatea mea</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team_Activity_vod</masterLabel>
+            <translation>Activitate echipă</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Profil</label>
+        <name>Profile_vod__c</name>
+    </fields>
+    <fields>
+        <label>Înregistrări pe pagină</label>
+        <name>Records_Per_Page_vod__c</name>
+    </fields>
+    <fields>
+        <label>Afişare plan ciclu al planificatorului</label>
+        <name>Scheduler_Cycle_Plan_Display_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tip</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Profile</masterLabel>
+            <translation>Profil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation>Utilizator</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Utilizator</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Preferinţe</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Preferences Name --></nameFieldLabel>
+</CustomObjectTranslation>

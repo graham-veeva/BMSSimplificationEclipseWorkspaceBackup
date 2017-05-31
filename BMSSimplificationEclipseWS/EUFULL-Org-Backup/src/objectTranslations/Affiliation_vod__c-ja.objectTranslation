@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>関係</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Source Country --></label>
+        <name>Account_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>子関係</label>
+        <name>Child_affiliation_vod__c</name>
+        <relationshipLabel>関係</relationshipLabel>
+    </fields>
+    <fields>
+        <label>コメント</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>トリガーの無効化</label>
+        <name>Disable_Trigger_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>From アカウント</label>
+        <name>From_Account_vod__c</name>
+        <relationshipLabel>関係 (From アカウント)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>From コンタクト</label>
+        <name>From_Contact_vod__c</name>
+        <relationshipLabel>関係 (From コンタクト)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>影響</label>
+        <name>Influence_vod__c</name>
+        <picklistValues>
+            <masterLabel>Has influence</masterLabel>
+            <translation>影響力がある</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is influenced</masterLabel>
+            <translation>影響を受ける</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No influence</masterLabel>
+            <translation>影響なし</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>モバイル ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>親</label>
+        <name>Parent_vod__c</name>
+    </fields>
+    <fields>
+        <label>関係強度</label>
+        <name>Relationship_Strength_vod__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>弱</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>強</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ロール</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Access Relationship</masterLabel>
+            <translation><!-- Access Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliated with</masterLabel>
+            <translation>関係先</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Relationship</masterLabel>
+            <translation><!-- HQ Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Relationship</masterLabel>
+            <translation><!-- Medical Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Relationship</masterLabel>
+            <translation><!-- Sales Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>治療領域</label>
+        <name>Therapeutic_Area_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>心臓病学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Medicine</masterLabel>
+            <translation>救急医学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Medicine</masterLabel>
+            <translation>家庭医学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation>一般診療</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Medicine</masterLabel>
+            <translation>内科学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>オンコロジー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrics</masterLabel>
+            <translation>小児科</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>関連先アカウント数</label>
+        <name>To_Account_Affiliation_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>関連先アカウントID</label>
+        <name>To_Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>関連先アカウント名</label>
+        <name>To_Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>関連先アカウントレコードタイプ</label>
+        <name>To_Account_Record_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>To アカウント</label>
+        <name>To_Account_vod__c</name>
+        <relationshipLabel>関係 (To アカウント)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>To コンタクト</label>
+        <name>To_Contact_vod__c</name>
+        <relationshipLabel>関係 (To コンタクト)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>破棄</label>
+        <name>destroy_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- AffiliationNumber --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>[To アカウント] は [From アカウント] と同じにはできません。</errorMessage>
+        <name>DUP_TO_FROM_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[To コンタクト] は [From コンタクト] と同じにはできません。</errorMessage>
+        <name>DUP_TO_FROM_CONTACT</name>
+    </validationRules>
+</CustomObjectTranslation>

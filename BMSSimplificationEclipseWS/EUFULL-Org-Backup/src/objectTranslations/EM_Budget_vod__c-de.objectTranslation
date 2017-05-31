@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Need</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Need</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Need</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Need</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Needs</value>
+    </caseValues>
+    <fields>
+        <help>Ländersitz der geplanten Activity</help>
+        <label>Land</label>
+        <name>Activity_Country_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Country) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Aktivitätenformat</label>
+        <name>Activity_Format_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>In-Person</masterLabel>
+            <translation>Persönlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual</masterLabel>
+            <translation>Virtuell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual/In-Person</masterLabel>
+            <translation>Virtuell / Persönlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Activity Typ für den Need aufgesetzt wird.</help>
+        <label>Activity Typ</label>
+        <name>Activity_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cross Border</masterLabel>
+            <translation>International</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits, Booths and Displays</masterLabel>
+            <translation><!-- Exhibits, Booths and Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Sponsorship</masterLabel>
+            <translation><!-- HCP Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Speaker</masterLabel>
+            <translation>Interne/r Referent/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Consulting</masterLabel>
+            <translation><!-- Other Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preceptorship</masterLabel>
+            <translation><!-- Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R&amp;D Committees</masterLabel>
+            <translation><!-- R&amp;D Committees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SRP Activity</masterLabel>
+            <translation>SRP Activity</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Meeting</masterLabel>
+            <translation><!-- Speaker Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Training</masterLabel>
+            <translation><!-- Speaker Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ist-Kosten</label>
+        <name>Actual_Expenses_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verbleibendes Budget</label>
+        <name>Actual_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Genehmigungsstatus</label>
+        <name>Approval_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Approved</masterLabel>
+            <translation>GenehmigtVom Management genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Abgeschlossen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Draft</masterLabel>
+            <translation><!-- In Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by Certifier</masterLabel>
+            <translation>Abgelehnt durch Experten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by Reviewer</masterLabel>
+            <translation>Abgelehnt vom Prüfer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Completed</masterLabel>
+            <translation>Prüfung abgeschlossen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent For Approval</masterLabel>
+            <translation>Zur Genehmigung eingereicht</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Bitte einen BU Genehmiger bestimmen der diesen Need freigaben kann. Wenn ein Prüfer und Experte ausgewählt wurden, dann ist der Genehmiger die 2. Person für die Freigabe und der Experte der Letzte.</help>
+        <label>BU Genehmiger</label>
+        <name>Approving_User_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>System erstellt eindeutige ID für den Need.</help>
+        <label><!-- Budget ID --></label>
+        <name>Budget_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zuordnung untergeordnetes Budget</label>
+        <name>Child_Budget_Allocation_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gebuchte Kosten</label>
+        <name>Committed_Expenses_vod__c</name>
+    </fields>
+    <fields>
+        <label>Offenes Budget</label>
+        <name>Committed_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Währung</label>
+        <name>Company_Code_Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Leitet sich von der WBS Nr/Cost Center ab und wird automatisch bei ausgefüllt. Wird überschrieben, wenn WBS Nr/Cost Center einen gültigen Company Code enthält. Manuelle Eingabe kann nur dann überschreiben, wenn WBS/Cost Center keinen Company Code enthält.</help>
+        <label><!-- Company Code --></label>
+        <name>Company_Code_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Strasse und Hausnummer des Kongressstandortes</help>
+        <label>Strasse, Nr.</label>
+        <name>Congress_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <help>Adresszusatz des Kongressstandortes</help>
+        <label>Adresszusatz</label>
+        <name>Congress_Address_Line_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Ort in dem Kongress stattfindet</help>
+        <label>Stadt</label>
+        <name>Congress_City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Name / Beschreibung des Kongresses</help>
+        <label>Name/Beschreibung</label>
+        <name>Congress_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>PLZ des Kongressstandortes</help>
+        <label>PLZ</label>
+        <name>Congress_Postal_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Bundesland/ Kanton des Kongressstandortes</help>
+        <label>Bundesland/Kanton</label>
+        <name>Congress_State_Province_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Eigenbetrag, der von HCP/HCO erbracht werden muss. Optionales und informatives Feld.</help>
+        <label>Selbstbeteiligung</label>
+        <name>Copayment_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Kostenstelle</label>
+        <name>Cost_Center_Code_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ersteller</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Währung</label>
+        <name>Currency_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BRL</masterLabel>
+            <translation><!-- BRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cybergrant ID --></label>
+        <name>Cybergrant_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wenn in dieser Box ein Häkchen gesetzt wird, erhält der Service Coordinator Rechte diesen Need mit anderen zu teilen. Nur der aktuelle Besitzer des Needs kann diese Option nutzen.</help>
+        <label>An SC Freigaberechte delegieren</label>
+        <name>Delegate_Sharing_rights_to_Processor__c</name>
+    </fields>
+    <fields>
+        <help>Platz um Zusatzinformationen zum Need zu hinterlegen</help>
+        <label>Beschreibung</label>
+        <name>Description_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Enddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Geplante Kosten</label>
+        <name>Estimated_Expenses_vod__c</name>
+    </fields>
+    <fields>
+        <label>Geplante Anzahl an Activites</label>
+        <name>Estimated_Number_of_Activities_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Zu verplanendes Budget</label>
+        <name>Estimated_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- 2nd set of Fields for Approval - Define a default value comma seperated similar to default value defined in  Fields_For_Approval_HCPTS field...another set helps define more fields since each fields can only hold 255 characters --></help>
+        <label>Felder für Genehmigungsprozess 1</label>
+        <name>Fields_For_Approval_1_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default value of this field is used by Code in determining which fields to check before submitting record for Approval. ChildRelationship API names can also be provided.Comma seperated Field API names only, No spaces anywhere --></help>
+        <label>Felder für Genehmigungsprozess</label>
+        <name>Fields_For_Approval_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Standort des finanzierenden Landes/ Ursprungsland</help>
+        <label>Finanzierendes Land</label>
+        <name>Funding_Country_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Funding Country) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Initierende Abteilung</label>
+        <name>Initiating_BU_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>HEOR</masterLabel>
+            <translation><!-- HEOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Access</masterLabel>
+            <translation><!-- Market Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation>Medizin</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy</masterLabel>
+            <translation>Patientenvertretung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Affairs</masterLabel>
+            <translation><!-- Public Affairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R&amp;D</masterLabel>
+            <translation><!-- R&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Vertrieb</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ist Allianzpartner Activity</label>
+        <name>Is_Joint_Venture_Activity_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Allianzdetails</label>
+        <name>Joint_Venture_Detail_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Number --></label>
+        <name>Need_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Need Owner ist der Besitzer dieses Needs... kann auch der Gesamtbesitzer dieses Datensatzes sein.</help>
+        <label><!-- Need Owner --></label>
+        <name>Need_Owner_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Need Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Zugehöriges Need</label>
+        <name>Parent_Budget_vod__c</name>
+        <relationshipLabel><!-- EM Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Zahl der Teilnehmerkategorien für dieses Budget.</help>
+        <label>Teilnehmeranzahl</label>
+        <name>Participant_Count_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wählen Sie den Service Coordinator für diesen Need aus.</help>
+        <label><!-- Service Coordinator --></label>
+        <name>Processor_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Service Coordinator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- EM Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Promotional/Non-Promotional --></label>
+        <name>Promotional_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Non-Promotional</masterLabel>
+            <translation><!-- Non-Promotional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional</masterLabel>
+            <translation><!-- Promotional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Bitte wahlweise eine Experten der diesen Need prüfen &amp; genehmigen kann auswählen. Der Experte wird seine Genehmigung als Letztes liefern.</help>
+        <label>Experte</label>
+        <name>Regulatory_Reviwer_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Certifier) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bitte wahlweise einen Prüfer für diesen Need auswählen. Wenn BU Genehmiger und Experten auch bestimmt wurden, dann wird der Prüfer die 1. Genehmigung liefern.</help>
+        <label>Prüfer</label>
+        <name>Reviewing_User_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets (Reviewer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ich bin der Service Coordinator</label>
+        <name>SC_Needs_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Kongressart - Einzelwert aus der Auswahlliste bestimmen</help>
+        <label>Umfang</label>
+        <name>Scope_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation>International</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation>Lokal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Status</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Available_For_Use_vod</masterLabel>
+            <translation>Aktiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft_vod</masterLabel>
+            <translation>Entwurf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Abgelaufen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Approval</masterLabel>
+            <translation>Zur Genehmigung eingereicht</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Pre-Activation</masterLabel>
+            <translation>Vor-Aktivierung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation>Service Coordinator Review</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marked For Delete</masterLabel>
+            <translation><!-- Marked For Delete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Territorium</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Therapeutischer Bereich</label>
+        <name>Therapeutic_Area_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>Kardiologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dermatology</masterLabel>
+            <translation>Dermatologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation>Nicht zutreffend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>Onkologie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Topic das Leitfadenmaterial &amp; -aufgaben enthält.</help>
+        <label><!-- Topic --></label>
+        <lookupFilter>
+            <errorMessage>Topic muss dem Typ &quot;Event&quot; entsprechen.</errorMessage>
+        </lookupFilter>
+        <name>Topic_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Genehmigter Betrag für die Durchführung von Activities im Rahmen dieses Budgets.</help>
+        <label>Gesamtbudget</label>
+        <name>Total_Budget_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Version_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Entsprechende WBS Nummer/ Cost Center für diesen Need auswählen.</help>
+        <label>WBS Nummer</label>
+        <lookupFilter>
+            <informationalMessage>Es werden nur aktuell gültige Projektnummern (WBS) angezeigt.</informationalMessage>
+        </lookupFilter>
+        <name>WBS_Number_HCPTS__c</name>
+        <relationshipLabel><!-- EM Budgets --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Budget</label>
+        <name>Budget_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>HCP Sponsorship</label>
+        <name>Budget_with_HCP_Sponsorship_Guidance</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Serial Need</label>
+        <name>Budget_with_Speaker_Meeting_Serial_Guidance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- zInitiative --></label>
+        <name>Initiative_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- zNeed --></label>
+        <name>Need_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Budget Only</label>
+        <name>Simple_Budget_No_Guidance</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Serial Need</label>
+        <name>Speaker_Meeting_PartiallyLocked</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Approver --></label>
+        <name>Approver_HCPTS</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Certifier --></label>
+        <name>Certifier_HCPTS</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label>Budget Owner</label>
+        <name>Need_Owner_HCPTS</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Processor --></label>
+        <name>Processor_HCPTS</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Reviewer --></label>
+        <name>Reviewer_HCPTS</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage>Der Genehmiger kann nicht gleichzeitig der Need Owner sein.</errorMessage>
+        <name>Approver_cannot_be_Need_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Entweder WBS Element oder Cost Center muss angegeben werden. Nicht beides!</errorMessage>
+        <name>Cannot_chose_both_WBS_Cost_Center</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Um einen Need zu aktivieren, muss entweder eine gültige WBS Nummer &amp; Company Code oder ein gültiges Cost Center &amp; Company Code angegeben werden.</errorMessage>
+        <name>Company_Cd_Required_for_Available_Budget</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Das Enddatum kann nicht vor dem Startdatum sein.</errorMessage>
+        <name>End_Date_cannot_be_later_than_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Um eine Need zu aktivieren, muss ein company code angegeben werden</errorMessage>
+        <name>Must_Have_Company_Code</name>
+    </validationRules>
+    <webLinks>
+        <label>Zur Genehmigung einreichen</label>
+        <name>Submit_for_Approval_BMS</name>
+    </webLinks>
+</CustomObjectTranslation>

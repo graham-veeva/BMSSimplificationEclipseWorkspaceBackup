@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Specialty_1_vod__c</field>
+    </columns>
+    <columns>
+        <field>Account$Local_Influence_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Account$Regional_Influence_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Account$National_Influence_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Call_Datetime_vod__c</field>
+    </columns>
+    <description>Report to display all Colorectal TLs and their interaction activity.</description>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Account$Local_Influence_BMS__c</column>
+            <operator>equals</operator>
+            <value>Colorectal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Regional_Influence_BMS__c</column>
+            <operator>equals</operator>
+            <value>Colorectal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$National_Influence_BMS__c</column>
+            <operator>equals</operator>
+            <value>Colorectal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Call2_vod__r$RecordType</column>
+            <operator>equals</operator>
+            <value>Call2_vod__c.BMS_MSL_Interaction</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BMS - MSL - Colorectal TL Interactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Interactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

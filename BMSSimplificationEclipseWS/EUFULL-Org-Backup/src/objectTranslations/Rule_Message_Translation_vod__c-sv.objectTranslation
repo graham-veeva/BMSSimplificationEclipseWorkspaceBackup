@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Regelmeddelande översättning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Regelmeddelande översättning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Regelmeddelande översättning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Regelmeddelande översättningar</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Regelmeddelande översättningar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Regelmeddelande översättningar</value>
+    </caseValues>
+    <fields>
+        <help>ISO-koden för det språk som motsvarar denna översättning</help>
+        <label>Språk</label>
+        <name>Language_vod__c</name>
+    </fields>
+    <fields>
+        <help>Felmeddelande översättning för regel.</help>
+        <label>Meddelande översättning</label>
+        <name>Message_Translation_vod__c</name>
+    </fields>
+    <fields>
+        <help>Hänvisning till den regeldefinitionspost som detta meddelande är en översättning av.</help>
+        <label>Regeldefinition</label>
+        <name>Rule_Definition_vod__c</name>
+        <relationshipLabel>Regelmeddelande översättningar</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Externt Id för posten Formatet är [REGELNAMN]::[PostTyp.Namn]::[Språk_vod]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Rule Message Translation Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC regelmeddelande översättning</label>
+        <name>SFDC_Rule_Message_Translation_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ciclo MC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cicli MC</value>
+    </caseValues>
+    <fields>
+        <label>Attiva obiettivi modificati</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Se vero e i campi pull-through esistono sull&apos;oggetto MC_Target_vod, quando l&apos;integrazione MCCP viene eseguita, essa popolerà i campi pull-through. Eseguire questa operazione con frequenza, ma solo quando è necessario popolare i valori del pull-through.</help>
+        <label>Calcola Pull through</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di fine</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Soglia superata</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di inizio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Completato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>In corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Pianificato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Soglia non raggiunta</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Definizione del ciclo</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La data di inizio non può essere successiva o uguale alla data di fine.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

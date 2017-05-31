@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Activity Service Providers</value>
+    </caseValues>
+    <fields>
+        <label>Activity Vertragsvorlagen ID</label>
+        <name>AATemplateID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Name --></label>
+        <name>Activity_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Activity Produkt</label>
+        <name>Activity_Product_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Service Art</label>
+        <name>Activity_Service_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation>Ratgeber/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairperson / Moderator</masterLabel>
+            <translation>Vorsitzende/r Moderator/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congress Services</masterLabel>
+            <translation>Kongresservice</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Fachberater/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation>Referent/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer / Educator</masterLabel>
+            <translation>Trainer/in Ausbilder/-in</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Activity Typ</label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Zusätzliche Konditionen</label>
+        <name>Additional_Terms_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BMS Rights to Recording of Consultant</masterLabel>
+            <translation>BMS Rechte den Fachberater/-in aufzunehmen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duration of Confidentiality - 5 years</masterLabel>
+            <translation>Geheimhaltungszeitraum - 5 Jahre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duration of Confidentiality - 7 years</masterLabel>
+            <translation>Geheimhaltungszeitraum - 7 Jahre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment for travel time</masterLabel>
+            <translation>Zahlung für Reisezeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Standard</masterLabel>
+            <translation>Referentenstandard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ariba SOW Number for this Activity Service Provider --></help>
+        <label><!-- Ariba SOW Number --></label>
+        <name>Ariba_SOW_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Teilnahme Status</label>
+        <name>Attendance_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Attended In Person</masterLabel>
+            <translation>Persönlich anwesend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended Virtually</masterLabel>
+            <translation>Virtuell anwesend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not Attend</masterLabel>
+            <translation>Hat nicht teilgenommen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kann Vertrag erstellen</label>
+        <name>Can_Generate_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Ort</label>
+        <name>City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Currency culture used in Conga Button url..should be hidden from end users normally --></help>
+        <label>Conga Währungskultur</label>
+        <name>CongaCurrencyCulture_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- FINAL TEMPLATE SELECTOR FORMULA AS INPUT TO CONGA --></help>
+        <label>Vertragsvorlagenr. zum generieren</label>
+        <name>ContractTemplateId_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Vertragsvorlage ID Formelfeld, das von der Conga Download Funktion für Activity Service Provider benutzt wird.</help>
+        <label>Vertragsvorlagenr. zum Download</label>
+        <name>ContractTemplateId_to_Download_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Diese Werte beziehen sich auf die Service Vereinbarungen. Wenn Kurzzeit, so ist nur der Activity Vertrag gültig. Langezeitverträge haben ein Activity Vertrag und einen Rahmenvertrag.</help>
+        <label>Vertragsformat</label>
+        <name>Contract_Format_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Long-term</masterLabel>
+            <translation>Langzeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-term</masterLabel>
+            <translation>Kurzzeit</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Voreingestellt auf Activity Service Provider Sprache, wenn verfügbar.</help>
+        <label>Vertragssprache</label>
+        <name>Contract_Language_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>ar</masterLabel>
+            <translation>Arabisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bg</masterLabel>
+            <translation>Bulgarisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cs</masterLabel>
+            <translation>Kroatisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>da</masterLabel>
+            <translation>Dänisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation>Deutsch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>el</masterLabel>
+            <translation>Griechisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_GB</masterLabel>
+            <translation>Englisch (GB)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation>Englisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation>Spanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es_MX</masterLabel>
+            <translation>Spanisch (Mexiko)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fi</masterLabel>
+            <translation>Finnisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation>Französisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hr</masterLabel>
+            <translation>Hebräisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hu</masterLabel>
+            <translation>Ungarisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>in</masterLabel>
+            <translation>Indonesisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation>Italienisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iw</masterLabel>
+            <translation>Hebräisch (veraltet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation>Japanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ko</masterLabel>
+            <translation>Koreanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nl_NL</masterLabel>
+            <translation>Holländisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation>Norwegisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pl</masterLabel>
+            <translation>Polnisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_BR</masterLabel>
+            <translation>Portugiesisch (Brasilien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_PT</masterLabel>
+            <translation>Portugiesisch (Portugal)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ro</masterLabel>
+            <translation>Rumänisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ru</masterLabel>
+            <translation><!-- ru --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sk</masterLabel>
+            <translation><!-- sk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sl</masterLabel>
+            <translation><!-- sl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sv</masterLabel>
+            <translation><!-- sv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>th</masterLabel>
+            <translation><!-- th --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tr</masterLabel>
+            <translation><!-- tr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>uk</masterLabel>
+            <translation><!-- uk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>vi</masterLabel>
+            <translation><!-- vi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zh_CN</masterLabel>
+            <translation><!-- zh_CN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zh_TW</masterLabel>
+            <translation><!-- zh_TW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vertragsvorlaufzeit</label>
+        <name>Contract_Lead_Time_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Name des Vertragspartner aus dem DB. Um den Vertragspartner zu ändern, muss das DB aktualisiert werden. Wenn das DB gesperrt ist, nutze die Funktion &quot; DB entsperren&quot; und dann &quot;DB erneuern&quot; um Änderungen vorzunehmen.</help>
+        <label>Vertragspartner</label>
+        <name>Contract_Party_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Vertrag</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Activity Service Provider</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Land</label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Qualifikationsnachweis</label>
+        <name>Credentials_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- ESVisible = 1, Echosign send option is available, else not --></help>
+        <label><!-- ESVisible --></label>
+        <name>ESVisible_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Echosign Vorlagen ID</label>
+        <name>Echosign_Template_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>E-Mail</label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Ja, zeigt an das für den HCP eine DHG erforderlich ist. Bei Ja-Antwort, wird die Seite für die Dienstherrengenehmigung dem Vertrag beigefügt.</help>
+        <label>DHG erforderlich?</label>
+        <name>Employer_Consent_Required_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Aktuellen DHG Status auswählen</help>
+        <label>DHG Status</label>
+        <name>Employer_Consent_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation>Nicht zutreffend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation>Erhalten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Arbeitgeber E-Mail</help>
+        <label>Unterzeichner E-Mail</label>
+        <name>Employer_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Name des Arbeitgeber. (Manuell vom Nutzer hinzugefügt)</help>
+        <label>Firmenbezeichnung</label>
+        <name>Employer_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Arbeitgeber Unterzeichner</help>
+        <label>Unterzeichner Name</label>
+        <name>Employer_Signatory_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Titel Unterzeichner</help>
+        <label>Unterzeichner Titel</label>
+        <name>Employer_Signatory_Title_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Enddatum</label>
+        <name>End_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Endzeit</label>
+        <name>End_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Entitätenreferenz-ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activity Vertrag</label>
+        <lookupFilter>
+            <informationalMessage>Es können nur nicht abgelaufene Activity Verträge für den ASP ausgewählt werden, die der Vertragsart und -unterart entsprechen.</informationalMessage>
+        </lookupFilter>
+        <name>Event_Speaker_Contract_HCPTS__c</name>
+        <relationshipLabel>Activity Service Provider</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Activity</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Activity Service Provider</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fachbereich</label>
+        <name>FSpecialty_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Vorlagen ID Formelfeld, das von der Conga Download Funktion für Activity Service Provider benutzt wird.</help>
+        <label>Rahmenvertragsvorlagenr. für Download</label>
+        <name>FWTemplateId_For_Download_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Rahmenvertragsvorlage ID für Conga Eingabe</help>
+        <label>Rahmenvertragsvorlagenr. für Download</label>
+        <name>FWTemplateId_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Vorname</label>
+        <name>First_Name_vod__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Häkchen  gesetzt, dann wird eine Seite für die Dienstherrengenehmigung dem Vertrag beigefügt.</help>
+        <label><!-- Hide Employer Sign Table in Contract? --></label>
+        <name>Hide_Employer_Sign_Table_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld zeigt an, ob alle Bedingungen für einen Vertrag mit dieser Person erfüllt wurden. Hauptkriterium ist ein verwandtes DB, das den Status unterschrieben oder handschriftlich unterschrieben erfüllt.</help>
+        <label>Genehmigt um Vertrag zu erstellen?</label>
+        <name>Is_Approved_to_Contract_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Nachname</label>
+        <name>Last_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master ID --></label>
+        <name>Master_ID__c</name>
+    </fields>
+    <fields>
+        <label>Max. Stunden</label>
+        <name>Max_Hours_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Mahlzeit-Opt-In</label>
+        <name>Meal_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mahlzeit-Präferenz</label>
+        <name>Meal_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>Vegetarian</masterLabel>
+            <translation>Vegetarisch</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Zweiter Name</label>
+        <name>Middle_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Spitzname</label>
+        <name>Nickname_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anzahl der Unterzeichner</label>
+        <name>Number_of_Signers_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Telefon</label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>Position_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bevorzugte Sprache</label>
+        <name>Preferred_Language_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Provider Typ</label>
+        <name>Provider_Type_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Provider Typ</label>
+        <name>Provider_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>HCO</masterLabel>
+            <translation><!-- HCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JV Employee</masterLabel>
+            <translation>Allianzpartner Mitarbeiter/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation>Journalist/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation>Krankenpfleger/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation>Patientenorganisation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patients</masterLabel>
+            <translation>Patient/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacist</masterLabel>
+            <translation>Pharmazeut/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technicians</masterLabel>
+            <translation>Techniker/-in</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provider type value from the Service Provider Lookup --></help>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type_Simple_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Für PO bereit?</label>
+        <name>Ready_to_Invoice_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Empfänger E-Mail</label>
+        <name>Recipient_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld existiert im Activity Service Provider und Teilnehmer Abschnitt, und nennt sich Registierungsstatus. Es kann nicht vom Endnutzer geändert werden. Der Wert kommt aus Starcite.</help>
+        <label>Registrierungsstatus</label>
+        <name>Registration_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Zu erstattende Kosten</label>
+        <name>Reimbursable_Expenses_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BMS will not pay</masterLabel>
+            <translation>BMS wird nicht zahlen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS will pay</masterLabel>
+            <translation>BMS wird zahlen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS will pay max agreed amount</masterLabel>
+            <translation>BMS wird maximalen vereinbarten Betrag zahlen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Verwandtes DB</label>
+        <lookupFilter>
+            <informationalMessage>Es können nur nicht abgelaufene DBs, die der Vertragsart und -unterart entsprechen.</informationalMessage>
+        </lookupFilter>
+        <name>Related_ICF_HCPTS__c</name>
+        <relationshipLabel>Activity Service Provider</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Vertragsunterart</help>
+        <label>Vertragsunterart</label>
+        <name>Service_Subtype_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee for Preceptorship</masterLabel>
+            <translation>Teilnehmer/-in Preceptorship</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Preparation and/or Review</masterLabel>
+            <translation>Erstellung wissenschaftl. Materialien und/oder Review</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Monitoring Committee</masterLabel>
+            <translation><!-- Data Monitoring Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits, Booths and Displays</masterLabel>
+            <translation><!-- Exhibits, Booths and Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Presentation (Serial)</masterLabel>
+            <translation>Vortrag (mehrmalig)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Presentation (one-time)</masterLabel>
+            <translation>Vortrag (einmalig)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FDA Mock Advisory Committee</masterLabel>
+            <translation><!-- FDA Mock Advisory Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faculty for Preceptorship</masterLabel>
+            <translation>Fakultät des Preceptorships</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Consulting</masterLabel>
+            <translation>Other Consulting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Review Committee</masterLabel>
+            <translation><!-- Independent Review Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Presentation</masterLabel>
+            <translation>Vortrag für BMS Mitarbeiter interne VA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderator</masterLabel>
+            <translation>Moderator/-in/Chair</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presentation at a Congress</masterLabel>
+            <translation>Vortrag am Kongress</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protocol Review</masterLabel>
+            <translation><!-- Protocol Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publication Steering Committee</masterLabel>
+            <translation><!-- Publication Steering Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recorded Presentation</masterLabel>
+            <translation>Aufgezeichneter Vortrag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Training</masterLabel>
+            <translation><!-- Speaker Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship</masterLabel>
+            <translation>Teilnehmersponsoring</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship to Congress</masterLabel>
+            <translation>Teilnehmersponsoring zum Kongress</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Study Steering Committee</masterLabel>
+            <translation><!-- Study Steering Committee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Unterstützt Aufteilung der Verträge in BMS Vertragsarten. Bitte beachten: Für Service Vereinbarungen gelten Lang- &amp; Kurzzeit Verträge. Kurzzeitverträge enthalten keinen Rahmenvertrag. Bei Langzeitverträgen wird der Rahmenvertrag mit an den HCP gesendet.</help>
+        <label>Vertragsart</label>
+        <name>Service_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Events</masterLabel>
+            <translation>Veranstaltungen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation>Service</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sitzungstitel</label>
+        <name>Session_Title_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum und Uhrzeit der Signatur</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Signatur</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hauptunterzeichner</label>
+        <name>Signer_1_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Rahmenvertrag</label>
+        <lookupFilter>
+            <informationalMessage>s können nur nicht abgelaufene Rahmenverträge für den ASP ausgewählt werden.</informationalMessage>
+        </lookupFilter>
+        <name>Speaker_Contract_HCPTS__c</name>
+        <relationshipLabel>Activity Service Provider</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Formelfeld, das Service Provider E-Mail anzeigt.</help>
+        <label>Service Provider E-Mail</label>
+        <name>Speaker_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Vollständige Anschrift</label>
+        <name>Speaker_Full_Address_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Provider Name --></label>
+        <name>Speaker_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Service Provider</label>
+        <name>Speaker_vod__c</name>
+        <relationshipLabel>Activity Service Provider</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Fachbereich</label>
+        <name>Specialty_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Startzeit</label>
+        <name>Start_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bundesland/Kanton</label>
+        <name>State_Provence_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Accepted_vod</masterLabel>
+            <translation>Akzeptiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended_vod</masterLabel>
+            <translation>Teilgenommen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared_Signature_vod</masterLabel>
+            <translation>Gelöschte Signatur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Attend</masterLabel>
+            <translation>Nicht teilgenommen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invited_vod</masterLabel>
+            <translation>Eingeladen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>Nominiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Unterzeichnet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stub Mobile Id --></label>
+        <name>Stub_Mobile_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stub-SFDC-ID</label>
+        <name>Stub_SFDC_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>Suffix_vod__c</name>
+    </fields>
+    <fields>
+        <label>Steuern</label>
+        <name>Taxes_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Independent</masterLabel>
+            <translation>Unabhängig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VAT</masterLabel>
+            <translation>MwSt.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Titel</label>
+        <name>Title_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gesamtvertragswert</label>
+        <name>Total_Contract_Value__c</name>
+    </fields>
+    <fields>
+        <label>Schiffsnummer</label>
+        <name>Vessel_Number_vod__c</name>
+    </fields>
+    <fields>
+        <help>Navigiert zum Datensatz - nützlich für iRep.</help>
+        <label>Online einsehen</label>
+        <name>View_Online_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Arbeitsplatz</label>
+        <name>Workplace_vod__c</name>
+    </fields>
+    <fields>
+        <label>PLZ</label>
+        <name>Zip_HCPTS__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Event Purchase Speaker --></label>
+        <name>Event_Purchase_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Veranstaltungsredner</label>
+        <name>Event_Speaker_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Veranstaltungsredner</label>
+        <name>Events_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Referent</label>
+        <name>Services_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simplified Event Speaker --></label>
+        <name>Simplified_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Gesponserter HCP</label>
+        <name>Sponsorship_Event_Speaker_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Veranstaltungs-Teammitglied</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage>Der Activity Service Provider kann nicht geändert werden, nach dem die Activity genehmigt wurde.</errorMessage>
+        <name>Cannot_Edit_after_Activity_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es können maximal 10 Vertragsunterzeichner hinterlegt werden.</errorMessage>
+        <name>Cannot_have_more_than_10_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Der Activity Vertrag ist bereits aktiviert. Man kann den Vertrag nicht nochmal erstellen und zum Vertragspartner senden.</errorMessage>
+        <name>ContractGen_AA_Already_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Der Activity Vertrag ist noch nicht aktiviert.</errorMessage>
+        <name>ContractGen_ES_Status_Activated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Das Startdatum des Activity Vertrages darf nicht nach dem Ende des Rahmenvertrages liegen.</errorMessage>
+        <name>ContractGen_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die Veranstaltung muss in dem Statuts &quot; Planung&quot; sein.</errorMessage>
+        <name>ContractGen_Event_In_Planning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Das Vertragsformat muss entweder als Langzeit oder Kurzzeit angegeben werden. Das Langzeitformat erstellt einen Rahmenvertrag und Activity Vertrag. Das Kurzzeitformat nur einen Activity Vertrag.</errorMessage>
+        <name>ContractGen_Format_Must_For_Services</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Für eine Service Vereinbarung ist ein Rahmenvertrag nötig.</errorMessage>
+        <name>ContractGen_Framework_Agreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die Vertragssprache muss ausgewählt werden.</errorMessage>
+        <name>ContractGen_Language_Must</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es muss ein entsprechender Activity Vertrag angelegt werden.</errorMessage>
+        <name>ContractGen_Need_Activity_Agreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es muss mindestens ein Vertragsunterzeichner (EchoSign) angelegt werden, um den vertrag zu generieren.</errorMessage>
+        <name>ContractGen_Need_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Das verwandete DB muss den Status &quot;Handschriftlich unterschrieben&quot; erfüllen.</errorMessage>
+        <name>ContractGen_Related_ICF_Signed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Das Startdatum des Activity Vertrages darf nicht vor dem Startdatum des Rahmenvertrages liegen.</errorMessage>
+        <name>ContractGen_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die Vertragsunterart muss angegeben werden.</errorMessage>
+        <name>ContractGen_Subtype_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Der ausgewählte Vertragsuntertyp trifft nicht auf den Activity Typ zu.</errorMessage>
+        <name>Contract_Subtype_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sie können keinen Rahmenvertrag mit einen Sponsorship und Event Vertrag verknüpfen.</errorMessage>
+        <name>No_Framework_Agmnt_for_Sponsors_Events</name>
+    </validationRules>
+    <webLinks>
+        <label>Download Vertragsentwürfe</label>
+        <name>Download_Contracts_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label>Vertrag generieren</label>
+        <name>Generate_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label>Referent einladen</label>
+        <name>Invite_Speaker</name>
+    </webLinks>
+    <webLinks>
+        <label>DB erneuern</label>
+        <name>Regenerate_ICF_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label>Rahmenvertrag erneuern</label>
+        <name>Renew_Framework</name>
+    </webLinks>
+    <webLinks>
+        <label>Vertrag &amp; DB erstellen</label>
+        <name>Setup_Contract</name>
+    </webLinks>
+</CustomObjectTranslation>

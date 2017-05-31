@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contrat de l&apos;événement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contrats de l&apos;événement</value>
+    </caseValues>
+    <fields>
+        <help>Détails des contrats standard à utiliser pour cette activité.</help>
+        <label>Contrat</label>
+        <name>Contract_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Meeting --></label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Étape FFM d’origine</label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Événément</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Contrats d&apos;événements</relationshipLabel>
+    </fields>
+    <fields>
+        <label>N° de réf.</label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Meeting Contract Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Contrat d&apos;événement</label>
+        <name>BMS_EMEA_Meeting_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contrat d&apos;événement post-exé.</label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contrat d&apos;événement post-exé. PTA</label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec_PTA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Vous n’avez pas le droit de modifier les champs, car vous êtes co-auteur de l&apos;événement.</errorMessage>
+        <name>BMS_EMEA_FFM_Contract_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Les contrats créés en cours de la phase de planification ne sont pas modifiables pendant la phase de post-exécution. Veuillez annuler.</errorMessage>
+        <name>BMS_EMEA_PlanContractsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label>Nouveau contrat</label>
+        <name>New_Contract_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

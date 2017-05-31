@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partenaire contractuel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partenaires contractuels</value>
+    </caseValues>
+    <fields>
+        <label>N° d&apos;acceptation</label>
+        <name>Acceptance_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identificateur de compte</label>
+        <name>Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Compte</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Partenaires contractuels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>J&apos;ai lu et approuvé ce contenu</label>
+        <name>Acknowledgment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Accord</label>
+        <name>Agreement_vod__c</name>
+    </fields>
+    <fields>
+        <label>Visite</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Partenaires contractuels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Contrat</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Partenaires contractuels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Type de périphérique</label>
+        <name>Device_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Chargement des données</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation>En ligne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation>Tablette</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Limitation de responsabilité</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Conférencier</label>
+        <name>EM_Speaker_vod__c</name>
+        <relationshipLabel>Partenaires contractuels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date de fin</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Expiré ?</label>
+        <name>Expired_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom formaté</label>
+        <name>Formatted_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verrouiller</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date/heure de création mobile</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobile</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date/heure de la dernière modif. mobile</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorer le verrou</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date/heure de la signature</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature --></label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Signataire</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de début</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Activé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Rejeté</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Enregistré</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Signé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Signature de l&apos;utilisateur</label>
+        <name>User_Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utilisateur</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Partenaires contractuels</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Contract Partner ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Activity Agreement for Exhibits &amp; Displays (Events) --></label>
+        <name>Activity_Agreement_EBD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Services (SOW) --></label>
+        <name>Activity_Agreement_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Sponsorship --></label>
+        <name>Activity_Agreement_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contrat de conférencier</label>
+        <name>EM_Speaker_Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Framework Agreement --></label>
+        <name>Framework_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Relevé</label>
+        <name>Listing_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Ventes</label>
+        <name>Sales_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsorshipLetter --></label>
+        <name>SponsorshipLetter_HCPTS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La date de fin ne peut pas être antérieure à la date de début.</errorMessage>
+        <name>End_Date_After_Start_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Activer</label>
+        <name>Activate_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Nouveau partenaire contractuel</label>
+        <name>New_Contract_Partner_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Déverrouiller</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Afficher les signatures</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

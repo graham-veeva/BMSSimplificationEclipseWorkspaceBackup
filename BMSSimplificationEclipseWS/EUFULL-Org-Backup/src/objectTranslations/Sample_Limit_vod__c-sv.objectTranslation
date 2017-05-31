@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Provgräns</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Provgräns</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Provgräns</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Provgränser</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Provgränser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Provgränser</value>
+    </caseValues>
+    <fields>
+        <help>Använd registertyp för enskild person</help>
+        <label>Kontotyper</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Provgränser</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Inaktivera transaktionsskapande</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utbetalat belopp</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Given kvantitet</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Upprätthåll gräns</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grupp-ID</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gränsvärde</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gräns per möte</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gränskvantitet</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Provgränser</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Återstående belopp</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Återstående kvantitet</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Löpande period</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Provgränstyp</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Konto-Användare-Per möte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Konto-Per möte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Användare-Per möte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Konto-Provproduktgrupp-Per möte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Konto\Användare\Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Konto\Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Användare\Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Konto-Provproduktgrupp</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Delad period</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12 månader</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>År</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mallgrupp</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mall som används</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unikt lösenord mall</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Användare</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Provgränser</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Det gick inte att spara posten. Gränsvärdet kan inte vara mindre än 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Det gick inte att spara posten. Gränskvantitet måste vara större än eller lika med 0.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En Provbegränsningsmall kan inte skapas för både mängd och värde i samma mall.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Du kan inte ange en användare när du skapar gränser för en provproduktgrupp.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Det gick inte att spara posten. Följande fält är obligatoriska: Slutdatum</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Det gick inte att spara posten. Följande fält är obligatoriska: Produkt</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Det gick inte att spara posten. Följande fält är obligatoriska: Startdatum</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Det gick inte att spara posten. Följande fält är obligatoriska: Konto eller användare</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product, Limit Quantity, and Start/End Dates are mandatory if Account Type is used --></errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Account Type OR User and Account Type  can not be both set --></errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rolling Period  must be empty  if Account Type is empty --></errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Slutdatum ska vara högre än startdatum.</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if Split Period  is set rolling period must be 24 --></errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Split Period can not be set if Account Type is empty --></errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

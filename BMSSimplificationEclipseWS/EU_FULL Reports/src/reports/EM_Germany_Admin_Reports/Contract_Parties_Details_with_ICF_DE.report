@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EM_Vendor_vod__c.Information_Collection_Forms__r$Activity_Source_2__c</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c.Information_Collection_Forms__r$SPKR_Formula_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c$Vendor_ID_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c$Vendor_Request_Status_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c$Global_Customer_ID2_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c.Information_Collection_Forms__r$Name</field>
+    </columns>
+    <columns>
+        <field>EM_Vendor_vod__c.Information_Collection_Forms__r$Status_HCPTS__c</field>
+    </columns>
+    <description>Contract Party details with ICF for Germany</description>
+    <filter>
+        <criteriaItems>
+            <column>EM_Vendor_vod__c$Country_vod__c</column>
+            <operator>equals</operator>
+            <value>DE</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Contract Parties Details with ICF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contract_Parties_with_ICF_Service_Providers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>EM_Vendor_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

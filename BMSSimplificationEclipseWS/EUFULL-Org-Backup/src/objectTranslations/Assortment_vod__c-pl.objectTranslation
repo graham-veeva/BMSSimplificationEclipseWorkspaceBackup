@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Asortyment</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Asortymenty</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Asortyment</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Asortymenty</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Asortymentów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Asortymentowi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Asortymentom</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Asortymentem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Asortymentami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Asortymencie</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Asortymentach</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Asortyment</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Asortymenty</value>
+    </caseValues>
+    <fields>
+        <label>Grupa klientów</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ rekordu klienta</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Apteka</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Hurtownik</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Wszystkie pozostałe</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grupa asortymentu</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data zakończenia</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identyfikator zewnętrzny</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ rekordu monitorowania inwentaryzacji</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Monitoring inwentaryzacji</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Typ rekordu zamówienia</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Bezpośredni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Przeniesienie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Brzeg produktu</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data rozpoczęcia</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa</nameFieldLabel>
+    <recordTypes>
+        <label>Asortyment IM</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Asortyment OM</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Data rozpoczęcia następuje po dacie zakończenia</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>W asortymencie Brzeg produktu nie może być widoczna sekcja „Wszystkie inne”</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Podgląd</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

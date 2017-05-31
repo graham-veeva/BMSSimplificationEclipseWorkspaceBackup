@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Inventar de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Inventar de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Inventare de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Inventare de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Inventarului de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Inventarului de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Inventarelor de mostre</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Inventarelor de mostre</value>
+    </caseValues>
+    <fields>
+        <label><!-- Audit --></label>
+        <name>Audit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Employee ID --></label>
+        <name>Employee_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Data și ora inventarului</label>
+        <name>Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inventar pentru</label>
+        <name>Inventory_For_vod__c</name>
+        <relationshipLabel>Inventare de mostre</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Inventar din data</label>
+        <name>Inventory_From_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Perioada inventarului</label>
+        <name>Inventory_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation>Anual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close-Out Inventory</masterLabel>
+            <translation>Stoc de lichidare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Inventory</masterLabel>
+            <translation>Stoc extern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Inventory</masterLabel>
+            <translation>Stoc de administrare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>Lunar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>Trimestrial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Inventory</masterLabel>
+            <translation>Stocul reprezentantului</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year-end</masterLabel>
+            <translation>Sfârşitul anului</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Manager Stocuri</label>
+        <name>Manager_Inventory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Data și ora create pe mobil</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobil</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data ultim. modif. dată și oră pe mobil</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <help>Dacă se bifează, Utilizatorul poate să Salveze/să Trimită un Stoc de mostre atunci când nu există Rubrici pentru Stocuri de mostre [Loturi de mostre] pentru Utilizator.</help>
+        <label>Niciun lot de mostre</label>
+        <name>No_Sample_Lots_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data inventarului anterior</label>
+        <name>Previous_Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Stare</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Transmis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data transmisă</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Transmis</label>
+        <name>Submitted_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Total stocuri</label>
+        <name>Total_Inventory_Count_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Deblocare</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Inventory Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Inventar extern</label>
+        <name>External_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Inventar general</label>
+        <name>General_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Stoc de administrare</label>
+        <name>Management_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Stocul reprezentantului</label>
+        <name>Rep_Inventory_BMS_US</name>
+    </recordTypes>
+    <webLinks>
+        <label>Salvare</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Transmitere</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

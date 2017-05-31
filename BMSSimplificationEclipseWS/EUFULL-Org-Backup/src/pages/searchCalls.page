@@ -1,0 +1,194 @@
+<apex:page id="p1" controller="searchCalls" tabStyle="Sample_Report_Query__tab">
+
+<style type="text/css">
+#blanket {
+background-color:#111;
+opacity: 0.65;
+filter:alpha(opacity=65);
+position:absolute;
+z-index: 9001;
+top:0px;
+left:0px;
+width:100%;
+}
+#popUpDiv {
+text-align: center;
+position:absolute;
+background-color:#eeeeee;
+width:700px;
+height:700px;
+z-index: 9002; /*ooveeerrrr nine thoussaaaannnd*/
+top:50px;
+left:300px;
+}
+</style>
+
+<script type="text/javascript">
+
+function selectAll (ctrlCB) {
+  var c = new Array();
+  c = document.getElementsByTagName('input');
+  for (var i = 0; i < c.length; i++)
+  {
+    if (c[i] != ctrlCB && c[i].type == 'checkbox')
+    {
+      c[i].checked = ctrlCB.checked;
+    }
+  }
+}
+
+function validateMultiAndSigAdmRep () {
+  var c = new Array();
+  c = document.getElementsByTagName('input');
+  for (var i = 0; i < c.length; i++)
+  {
+    if (c[i].id.indexOf("cbox") != -1 && c[i].type == 'checkbox')
+    {
+      if (c[i].checked) {
+        sigAdminreportJS () ;
+        return true ;
+      }
+    }
+  }
+    alert ('You must select at least one call') ;
+    return false ;
+}
+
+function validateSingle () {
+  var countx = 0 ;
+  var c = new Array();
+  c = document.getElementsByTagName('input');
+  for (var i = 0; i < c.length; i++)
+  {
+    if (c[i].id.indexOf("cbox") != -1 && c[i].type == 'checkbox')
+    {
+      if (c[i].checked) {
+        countx++ ;
+        if (countx > 1) {
+            alert ('You may only select one call for this report') ;
+            return false ;
+        }
+      }
+    }
+  }
+  if (countx == 0) {
+    alert ('You must select a call') ;
+  }
+    return (countx == 1) ;
+}
+
+function validateSingleAndSigSampRecp () {
+    if (validateSingle()) {
+        sigSampleReceiptJS() ;
+    }
+}
+
+function validateSigReceipt() {
+    sigReceiptJS();
+}
+
+function validateSingleAndSigLtrCtct () {
+    if (validateSingle()) {
+        sigLetterContactJS() ;
+    }
+}
+
+function validateSingleAndSigVdrLtrCtct () {
+    if (validateSingle()) {
+        sigVendorLetterContactJS() ;
+    }
+}
+
+</script>
+
+<div id="blanket" style="display:none;"></div> 
+    <div id="popUpDiv" style="display:none;"> 
+        <iframe id="if1" src="about:blank" width="700px" height="700px" scrolling="auto"/>
+    </div>  
+
+<A NAME="TOPX"></A>
+
+
+<apex:outputPanel id="messagesOP">
+<apex:messages style="color:red"/>
+</apex:outputPanel>
+
+<apex:outputPanel rendered="{!noSig == false}">
+
+<!--
+<apex:outputLink value="javascript:window.history.back();">
+<span style="font-size:14px;font-weight:bold;margin-left:50px">
+Return to Query
+</span>
+</apex:outputLink>
+<br/>
+<br/>
+-->
+
+<apex:outputText id="errorM" style="color:red"/>
+    <apex:form target="_blank" id="f1">
+        <apex:actionFunction name="sigReceiptJS" action="{!sigReceipt}"/>   
+        <apex:actionFunction name="sigAdminreportJS" action="{!sigAdminreport}"/>
+        <apex:actionFunction name="sigSampleReceiptJS" action="{!sigSampleReceipt}"/>
+        <apex:actionFunction name="sigLetterContactJS" action="{!sigLetterContact}"/>
+        <apex:actionFunction name="sigVendorLetterContactJS" action="{!sigVendorLetterContact}"/>
+
+<A NAME="RESDETAIL"></A>
+
+        <apex:outputPanel id="restableOP">
+        <apex:pageBlock id="pb2" title="Retrieved Calls">
+        <apex:actionStatus id="waiting" startText="Processing, please wait..." startStyle="color:red;font-size:14pt">
+            <apex:facet name="stop"> 
+            </apex:facet>
+        </apex:actionStatus> 
+            
+            <apex:pageBlockButtons >
+                <input type="button" style="cursor:pointer" value="Signature Audit Report" name="Search" onclick="validateSigReceipt()"/>
+              
+                <input type="button" style="cursor:pointer" value="Rep Cross Reference Report" name="Search" onclick="validateMultiAndSigAdmRep()"/>
+<!--                
+                <input type="button" style="cursor:pointer" value="Signature Sample Receipt" name="Search" onclick="validateSingleAndSigSampRecp()"/>
+                <input type="button" style="cursor:pointer" value="Letter to Contact" name="Search" onclick="validateSingleAndSigLtrCtct()"/>
+                <input type="button" style="cursor:pointer" value="Vendor Letter to Contact" name="Search" onclick="validateSingleAndSigVdrLtrCtct()"/>
+-->
+            </apex:pageBlockButtons>
+                
+                <table cellspacing="5" cellpadding="5" id="restable">
+                <tr>
+                    <td align="left">
+                    <input type="checkbox" id="selall" onClick="selectAll(this)"/>&nbsp;Select/Unselect All
+                    </td>
+                    <apex:repeat value="{!resultHeaders}" var="rh">
+                        <td>
+                        <apex:outputPanel rendered="{!rh.apiname!='ADD.Primary_vod__c'}">
+                        <apex:commandLink rerender="restableOP" action="{!sortResults}" status="waiting" style="font-weight:bold" value="{!rh.label}">
+                        <apex:param name="sortKey" value="{!rh.apiname}"/>
+                        <apex:image rendered="{!sortKey==rh.apiname}" value="{!IF(sortDir=='A','/img/sort_asc_arrow.gif','/img/sort_desc_arrow.gif')}"/>
+                        </apex:commandLink>
+                        </apex:outputPanel>
+                        <apex:outputText rendered="{!rh.apiname=='ADD.Primary_vod__c'}" style="font-weight:bold" value="{!rh.label}"/>
+                        </td>
+                    </apex:repeat>
+                </tr>
+                <apex:repeat value="{!results}" var="item">
+                <tr>
+                        <td>
+                        <apex:inputCheckbox id="cbox" value="{!item.isSelected}"/>
+                        <apex:outputText style="display:none" id="callId" value="{!item.callId}"/>
+                        <apex:outputText style="display:none" id="callName" value="{!item.callName}"/>
+                        </td>
+                    <apex:repeat value="{!item.srFields}" var="rfld">
+                        <td>
+                        <apex:outputText value="{!rfld.value}"/> 
+                        </td>
+                    </apex:repeat>
+                </tr>
+                </apex:repeat> 
+                </table>
+        </apex:pageBlock>
+        </apex:outputPanel>
+
+    </apex:form>
+</apex:outputPanel>
+
+</apex:page>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>產品搭配行</value>
+    </caseValues>
+    <fields>
+        <label>產品搭配</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>產品搭配行</relationshipLabel>
+    </fields>
+    <fields>
+        <label>根據預設摺疊？</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部識別碼</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>父系區段</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>產品搭配行</relationshipLabel>
+    </fields>
+    <fields>
+        <label>產品</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>產品搭配行</relationshipLabel>
+    </fields>
+    <fields>
+        <label>區段標籤</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>排序</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <nameFieldLabel>名稱</nameFieldLabel>
+    <recordTypes>
+        <label>IM 產品搭配產品</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>IM 產品搭配區段</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM 產品搭配產品</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM 產品搭配區段</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>「OM 產品搭配行」只能夠和「OM 產品搭配」關聯，「IM 產品搭配行」只能夠和「IM 產品搭配」關聯</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只能夠針對「IM_Assortment_Section_vod 記錄類型」或 OM_Assortment_Section_vod 勾選</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>無法將區段連結到父系區段。</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>相同的記錄上無法指定「區段」及「產品」。</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

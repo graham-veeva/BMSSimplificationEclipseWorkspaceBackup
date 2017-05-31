@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Территориальный бюджет</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Территориальные бюджеты</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Территориальный бюджет</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Территориальные бюджеты</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Территориального бюджета</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Территориальных бюджетов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Территориальному бюджету</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Территориальным бюджетам</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Территориальным бюджетом</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Территориальными бюджетами</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Территориальном бюджете</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Территориальных бюджетах</value>
+    </caseValues>
+    <fields>
+        <label>Активный</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Текущее количество</label>
+        <name>Current_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Текущее значение</label>
+        <name>Current_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Описание</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата завершения</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Последняя финансовая операция</label>
+        <name>Last_Transaction_vod__c</name>
+    </fields>
+    <fields>
+        <label>Продукт</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Территориальные бюджеты</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Дата начала</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Начальное количество</label>
+        <name>Start_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Начальное значение</label>
+        <name>Start_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Утверждено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Закрыто</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Новый</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Approval</masterLabel>
+            <translation>Передано на утверждение</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Территория</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation>Общий</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation>Отдел маркетинга</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Продукт</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Продажи</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Territory Budget Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Дата начала не может быть позднее даты завершения</errorMessage>
+        <name>VEEVA_DATES_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

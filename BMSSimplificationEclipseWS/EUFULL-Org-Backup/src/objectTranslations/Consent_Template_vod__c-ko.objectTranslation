@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>동의 템플릿</value>
+    </caseValues>
+    <fields>
+        <label>유효기일 캘린더</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>종료 날짜</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>만료 한계값</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>만료 유형</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>캘린더</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>시작일에 따른 종료일</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>시작 날짜</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>템플릿 이름</nameFieldLabel>
+    <recordTypes>
+        <label>샘플 승인 템플릿</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>만료 유형이 캘린더면 유효기일 캘린더가 필요함</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>필수 필드가 누락됨</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>종료 일자는 시작 일자 이전일 수 없음</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

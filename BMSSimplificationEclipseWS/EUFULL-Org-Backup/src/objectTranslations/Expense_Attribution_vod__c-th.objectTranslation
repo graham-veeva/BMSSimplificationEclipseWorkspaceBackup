@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>แอ็คทรีบิวต์ค่าใช้จ่าย</value>
+    </caseValues>
+    <fields>
+        <label>จริง</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>บรรทัดค่าใช้จ่าย</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ประเภทค่าใช้จ่าย</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น (แอคเคาต์)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น (ผู้เข้าร่วม)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น (โฆษก)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น (สมาชิกทีม)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ประเภทค่าใช้จ่ายที่เกิดขึ้น</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>แอคเคาต์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>ผู้เข้าร่วม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>โฆษกของเหตุการณ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>สมาชิกทีมของเหตุการณ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>ผู้ขาย</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>สถานที่</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น (ผู้ขาย)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น (สถานที่)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>แอ็ตทริบิวต์ค่าใช้จ่าย</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายที่เกิดขึ้น</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่ชำระเงิน</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>ชื่อ</nameFieldLabel>
+    <recordTypes>
+        <label>แอ็ตทริบิวต์ค่าใช้จ่ายของเหตุการณ์</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

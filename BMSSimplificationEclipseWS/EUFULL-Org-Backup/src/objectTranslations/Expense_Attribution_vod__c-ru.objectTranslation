@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Распределение расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Распределение расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Распределение расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Распределение расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Распределения расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Распределения расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Распределению расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Распределению расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Распределением расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Распределением расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Распределение расходов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Распределение расходов</value>
+    </caseValues>
+    <fields>
+        <label>Фактически</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Строка расходов</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип расходов</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Понесенные расходы (организация)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесенные расходы (участник)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесенные расходы (докладчик)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесенные расходы (член группы)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип понесенных расходов</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Организация</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Участник</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Докладчик мероприятия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Член группы мероприятия</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Продавец</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Место проведения</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Понесенные расходы (продавец)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесенные расходы (место проведения)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Распределение расходов</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесенные затраты</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата платежа</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Имена</nameFieldLabel>
+    <recordTypes>
+        <label>Распределение расходов мероприятия</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

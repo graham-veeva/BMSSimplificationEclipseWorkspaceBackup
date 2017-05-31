@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Modelo de mapa de dados</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modelos de mapa de dados</value>
+    </caseValues>
+    <fields>
+        <label>Ativo</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Buffers</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Etiqueta da coluna</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>Se o modelo deste arquivo tiver etiquetas de coluna na primeira linha, marque esta caixa.</help>
+        <label>Etiquetas de coluna incluídas</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Contém metas?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lugares para decimais</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>Para usar o relatório de análise de vendas no mercado, atribua apenas um arquivo de dados de vendas da escala mensal. Os dados de venda devem contar ID do prescritor, ID do mercado, ID do grupo de produtos</help>
+        <label>Habilitar rel. análise vendas no mercado</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ativar para uso offline</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Etiq. de prod. da rel. de aprov. p/ repr</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Etiqueta da primeira coluna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Nenhum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Etiqueta da segunda coluna</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo de carregamento incremental</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Integral</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Incremental</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Parcial</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Incremental(is)</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mapeado para mercados?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorar limiar de conta</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mapeado para pagantes/planos?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Escala</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Mensal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Semanal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Etiqueta da segunda coluna</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nomes de territórios incluídos?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Selecione um valor válido na lista de opções. Se estiver carregando dados, use o valor mestre da lista de opções e não a etiqueta traduzida</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O relatório de análise de vendas no mercado só pode ser selecionado quando a escala selecionada é mensal e a caixa de seleção Pagador/plano mapeado não é selecionada</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>A etiqueta da coluna não pode conter nenhum dos seguintes caracteres: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O número de lugares para decimais deve estar entre 0 e 4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Selecione um valor válido na lista de opções. Se estiver carregando dados, use o valor mestre da lista de opções e não a etiqueta traduzida</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

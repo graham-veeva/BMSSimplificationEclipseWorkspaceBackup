@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Inventory_Order_Allocation_vod__c.Product_Order_Allocation_Quantity_vod__c:SUM - Inventory_Order_Allocation_vod__c.Total_Order_Fulfilled_Quantity_vod__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Remaining</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c.Inventory_Order_Lines_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$Territory_BMS_US__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$User_vod__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Inventory_Order_Allocation_vod__c$Product_Order_Allocation_Quantity_vod__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c.Inventory_Order_Lines_vod__r$Order_Fulfilled_Quantity_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Inventory_Order_Allocation_vod__c$Active_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Inventory_Order_Allocation_vod__c$Product_Order_Allocation_Quantity_vod__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Inventory_Order_Allocation_vod__c$Product_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Allocation Dump (Allocation Qty &gt; 0)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Inventory_Order_Allocations_and_Lines__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Inventory_Order_Allocation_vod__c$Allocation_End_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

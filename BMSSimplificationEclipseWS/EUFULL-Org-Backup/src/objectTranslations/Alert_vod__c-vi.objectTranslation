@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cảnh báo</value>
+    </caseValues>
+    <fields>
+        <label>Ngày kích hoạt</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Văn bản cảnh báo</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Có thể giải tán</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày hết hạn</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đẩy Lần Trước Thông Báo Ngày / Giờ APNS</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Liên Kết Tham Chiếu Dài</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tham chiếu liên kết</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mức ưu tiên</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation>Quan trọng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Bình thường</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>Khẩn</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Công cộng</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đẩy Thông Báo Tình Trạng APNS</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Đã xử lý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>Đã Lập Hàng Đợi</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Lỗi: Không thể tạo cả hai trường Liên Kết Tham Chiếu Dài và Tham Chiếu Liên Kết trong cùng một cảnh báo.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

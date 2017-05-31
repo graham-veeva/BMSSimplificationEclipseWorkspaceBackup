@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Beställningskampanj</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Beställningskampanj</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Beställningskampanj</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Beställningskampanjer</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Beställningskampanjer</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Beställningskampanjer</value>
+    </caseValues>
+    <fields>
+        <label>Kontogrupp</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kontotyp</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>Kanalpartner/återförsäljare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>Kund – kanal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>Kund – direkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>Installationspartner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Övrigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>Professionell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>Prospekt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>Teknikpartner</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Standard</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivning</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beställningar bundna till kampanj</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beställningsposttyp</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>Alla</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Direkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Överför</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

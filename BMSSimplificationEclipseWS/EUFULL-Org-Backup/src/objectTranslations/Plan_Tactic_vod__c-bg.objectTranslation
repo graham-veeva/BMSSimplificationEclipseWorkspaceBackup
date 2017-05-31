@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Планова тактика</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Планови тактики</value>
+    </caseValues>
+    <fields>
+        <label>План на клиент</label>
+        <name>Account_Plan_vod__c</name>
+        <relationshipLabel>Планови тактики</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Клиентски тактики в ход</label>
+        <name>Account_Tactic_Progress_vod__c</name>
+    </fields>
+    <fields>
+        <label>Завършени клиентски тактики</label>
+        <name>Completed_Account_Tactics_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prioritization --></label>
+        <name>Prioritization_BMS_CORE__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very High</masterLabel>
+            <translation><!-- Very High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Продукт</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Планови тактики</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Състояние</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Завършени</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_vod</masterLabel>
+            <translation>Чакащи</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Общо клиентски тактики</label>
+        <name>Total_Account_Tactics_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+</CustomObjectTranslation>

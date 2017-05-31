@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Expense_Header_vod__c.Contract_Party_Name_2_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Expense_Header_vod__c.Status_vod__c</field>
+    </columns>
+    <columns>
+        <field>Expense_Header_vod__c.Created_By_HCTPS__c</field>
+    </columns>
+    <columns>
+        <field>Expense_Header_vod__c.Purchase_Order_Number__c</field>
+    </columns>
+    <columns>
+        <field>Expense_Header_vod__c.Vendor_ID_2_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Expense Header Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Expense_Header_vod__c$Expense_Line_vod__c@Expense_Line_vod__c.Event_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Expense_Header_vod__c.Payment_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

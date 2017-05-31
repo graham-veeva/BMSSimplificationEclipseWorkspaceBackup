@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Giới hạn thuốc mẫu</value>
+    </caseValues>
+    <fields>
+        <help>Chỉ sử dụng loại bản ghi Người</help>
+        <label>Loại Tài Khoản</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tài khoản</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Giới hạn thuốc mẫu</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Tắt chức năng Tạo Txn</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lượng tiền Chi tiêu</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng đã thanh toán</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giới hạn bắt buộc</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID bên ngoài</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id nhóm</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lượng tiền Giới hạn</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giới hạn trên một lần tiếp xúc bán hàng</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng giới hạn</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Giới hạn thuốc mẫu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Lượng tiền Còn lại</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng còn lại</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thời Gian Quay Vòng</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại giới hạn thuốc mẫu</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Tài khoản-Người dùng-Trên mỗi lần tiếp xúc bán hàng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Tài khoản-Trên mỗi lần tiếp xúc bán hàng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Người dùng-Trên mỗi lần tiếp xúc bán hàng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Tài khoản-Nhóm sản phẩm mẫu-Trên mỗi lần tiếp xúc bán hàng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Tài khoản\Người dùng\Sản phẩm</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Tài khoản\Sản phẩm</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Người dùng\Sản phẩm</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Tài khoản-Nhóm sản phẩm mẫu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Chia Thời Gian</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation><!-- 12Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Năm</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhóm Mẫu</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mẫu Sử Dụng</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Khóa Duy Nhất Mẫu</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Người dùng</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Giới hạn thuốc mẫu</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Không thể lưu bản ghi. Lượng tiền Giới hạn không thể nhỏ hơn 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể lưu bản ghi. Số lượng giới hạn phải &quot;lớn hơn&quot; hoặc bằng 0.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể tạo Biểu Mẫu Giới Hạn Thuốc Mẫu cho cả số lượng và giá trị trong cùng một biểu mẫu.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bạn không thể chỉ định một người dùng khi đang tạo các hạn chế cho nhóm sản phẩm mẫu.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể lưu bản ghi. Yêu cầu điền thông tin vào các trường sau: Ngày kết thúc</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể lưu bản ghi. Yêu cầu điền thông tin vào các trường sau: Sản phẩm</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể lưu bản ghi. Yêu cầu điền thông tin vào các trường sau: Ngày bắt đầu</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể lưu bản ghi. Yêu cầu điền thông tin vào các trường sau: Ngày bắt đầu</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product, Limit Quantity, and Start/End Dates are mandatory if Account Type is used --></errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Account Type OR User and Account Type  can not be both set --></errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rolling Period  must be empty  if Account Type is empty --></errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ngày Kết Thúc phải lớn hơn Ngày Bắt Đầu</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if Split Period  is set rolling period must be 24 --></errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Split Period can not be set if Account Type is empty --></errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Access Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Access Profile</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access Influencer? --></label>
+        <name>Access_Influencer_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Priority --></label>
+        <name>Access_Priority_c__c</name>
+        <picklistValues>
+            <masterLabel>High Priority (Select Health Plan and/or MAC)</masterLabel>
+            <translation><!-- High Priority (Select Health Plan and/or MAC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Priority</masterLabel>
+            <translation><!-- Low Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Priority</masterLabel>
+            <translation><!-- Medium Priority --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Access Profile --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker at Practice/Hospital --></label>
+        <name>Additional_roles_c__c</name>
+        <picklistValues>
+            <masterLabel>C-Suite / Board of Directors</masterLabel>
+            <translation><!-- C-Suite / Board of Directors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Pathways Committee Member</masterLabel>
+            <translation><!-- Clinical Pathways Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical/HEOR Research Leadership</masterLabel>
+            <translation><!-- Clinical/HEOR Research Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guidelines or Protocol Committee Member</masterLabel>
+            <translation><!-- Guidelines or Protocol Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P &amp; T Committee Member</masterLabel>
+            <translation><!-- P &amp; T Committee Member --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>BMS_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Journal Editorial Board Member --></label>
+        <name>Editorial_board_c__c</name>
+        <picklistValues>
+            <masterLabel>JOP: Journal of Oncology Practice</masterLabel>
+            <translation><!-- JOP: Journal of Oncology Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO: Managed Care Oncology</masterLabel>
+            <translation><!-- MCO: Managed Care Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OBR: Oncology Business Review</masterLabel>
+            <translation><!-- OBR: Oncology Business Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VBCC: Value-Based Cancer Care</masterLabel>
+            <translation><!-- VBCC: Value-Based Cancer Care --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Known Links to Health Plans --></label>
+        <name>Health_plans_c__c</name>
+        <picklistValues>
+            <masterLabel>Aetna</masterLabel>
+            <translation><!-- Aetna --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assurant Health</masterLabel>
+            <translation><!-- Assurant Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Alabama</masterLabel>
+            <translation><!-- BCBS of Alabama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Arizona</masterLabel>
+            <translation><!-- BCBS of Arizona --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Florida</masterLabel>
+            <translation><!-- BCBS of Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Hawaii</masterLabel>
+            <translation><!-- BCBS of Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Illinois</masterLabel>
+            <translation><!-- BCBS of Illinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Kansas</masterLabel>
+            <translation><!-- BCBS of Kansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Kansas City</masterLabel>
+            <translation><!-- BCBS of Kansas City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Louisiana</masterLabel>
+            <translation><!-- BCBS of Louisiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Massachusetts</masterLabel>
+            <translation><!-- BCBS of Massachusetts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Michigan</masterLabel>
+            <translation><!-- BCBS of Michigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Minnesota</masterLabel>
+            <translation><!-- BCBS of Minnesota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Nebraska</masterLabel>
+            <translation><!-- BCBS of Nebraska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of North Carolina</masterLabel>
+            <translation><!-- BCBS of North Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Oklahoma</masterLabel>
+            <translation><!-- BCBS of Oklahoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of South Carolina</masterLabel>
+            <translation><!-- BCBS of South Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Tennessee</masterLabel>
+            <translation><!-- BCBS of Tennessee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCBS of Texas</masterLabel>
+            <translation><!-- BCBS of Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue Shield of CA</masterLabel>
+            <translation><!-- Blue Shield of CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIGNA</masterLabel>
+            <translation><!-- CIGNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capital BlueCross</masterLabel>
+            <translation><!-- Capital BlueCross --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CareFirst BCBS</masterLabel>
+            <translation><!-- CareFirst BCBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coventry</masterLabel>
+            <translation><!-- Coventry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excellus BCBS</masterLabel>
+            <translation><!-- Excellus BCBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government Employees Health Assoc.(GEHA)</masterLabel>
+            <translation><!-- Government Employees Health Assoc.(GEHA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Govt Employees Health Association (GEHA)</masterLabel>
+            <translation><!-- Govt Employees Health Association (GEHA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Health Cooperative (WA)</masterLabel>
+            <translation><!-- Group Health Cooperative (WA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Health/Emblem</masterLabel>
+            <translation><!-- Group Health/Emblem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIP Health Plan</masterLabel>
+            <translation><!-- HIP Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harvard Pilgrim</masterLabel>
+            <translation><!-- Harvard Pilgrim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Net</masterLabel>
+            <translation><!-- Health Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HealthPartners</masterLabel>
+            <translation><!-- HealthPartners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Highmark BCBS</masterLabel>
+            <translation><!-- Highmark BCBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horizon of New Jersey</masterLabel>
+            <translation><!-- Horizon of New Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Humana</masterLabel>
+            <translation><!-- Humana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independence Blue Cross</masterLabel>
+            <translation><!-- Independence Blue Cross --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaiser</masterLabel>
+            <translation><!-- Kaiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MVP Health Insurance Company</masterLabel>
+            <translation><!-- MVP Health Insurance Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medica</masterLabel>
+            <translation><!-- Medica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Mutual of Ohio</masterLabel>
+            <translation><!-- Medical Mutual of Ohio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premera Blue Cross</masterLabel>
+            <translation><!-- Premera Blue Cross --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal PPO</masterLabel>
+            <translation><!-- Principal PPO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority Health</masterLabel>
+            <translation><!-- Priority Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regence</masterLabel>
+            <translation><!-- Regence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SelectHealth</masterLabel>
+            <translation><!-- SelectHealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRIPLE-S</masterLabel>
+            <translation><!-- TRIPLE-S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tufts Health Plan</masterLabel>
+            <translation><!-- Tufts Health Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnitedHealth</masterLabel>
+            <translation><!-- UnitedHealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veterans Affairs (VA)/Dept. of Defense</masterLabel>
+            <translation><!-- Veterans Affairs (VA)/Dept. of Defense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WellPoint</masterLabel>
+            <translation><!-- WellPoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wellmark</masterLabel>
+            <translation><!-- Wellmark --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Known Links to MACs --></label>
+        <name>MACs__c</name>
+        <picklistValues>
+            <masterLabel>CGS Administrators (KY, OH)</masterLabel>
+            <translation><!-- CGS Administrators (KY, OH) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cahaba GBA (AL, GA, TN)</masterLabel>
+            <translation><!-- Cahaba GBA (AL, GA, TN) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Coast Service Options (FL, PR, VI)</masterLabel>
+            <translation><!-- First Coast Service Options (FL, PR, VI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Government Services (CT, NY)</masterLabel>
+            <translation><!-- National Government Services (CT, NY) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Government Services (IL, MN, WI)</masterLabel>
+            <translation><!-- National Government Services (IL, MN, WI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Heritage Insurance (ME, MA, NH, RI, VT)</masterLabel>
+            <translation><!-- National Heritage Insurance (ME, MA, NH, RI, VT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Noridian Administrative Services (AK, AZ, ID, MT, ND, OR, SD, UT, WA, WY)</masterLabel>
+            <translation><!-- Noridian Administrative Services (AK, AZ, ID, MT, ND, OR, SD, UT, WA, WY) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novitas Solutions (AR, LA, MS)</masterLabel>
+            <translation><!-- Novitas Solutions (AR, LA, MS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novitas Solutions (DE, DC, MD, NJ, PA)</masterLabel>
+            <translation><!-- Novitas Solutions (DE, DC, MD, NJ, PA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palmetto GBA (CA, HI, NV)</masterLabel>
+            <translation><!-- Palmetto GBA (CA, HI, NV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palmetto GBA (NC, SC, VA, WV)</masterLabel>
+            <translation><!-- Palmetto GBA (NC, SC, VA, WV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TrailBlazer Health Enterprises (CO, NM, OK, TX)</masterLabel>
+            <translation><!-- TrailBlazer Health Enterprises (CO, NM, OK, TX) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wisconsin Physician Services (IA, KS, MO, NE)</masterLabel>
+            <translation><!-- Wisconsin Physician Services (IA, KS, MO, NE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wisconsin Physician Services (IN, MI)</masterLabel>
+            <translation><!-- Wisconsin Physician Services (IN, MI) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leadership Position at NCCN --></label>
+        <name>NCCN_guidelines_c__c</name>
+        <picklistValues>
+            <masterLabel>Breast Guidelines Panel</masterLabel>
+            <translation><!-- Breast Guidelines Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CML Guidelines Panel</masterLabel>
+            <translation><!-- CML Guidelines Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colon Guidelines Panel</masterLabel>
+            <translation><!-- Colon Guidelines Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Head &amp; Neck Guidelines Panel</masterLabel>
+            <translation><!-- Head &amp; Neck Guidelines Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Melanoma Guidelines Panel</masterLabel>
+            <translation><!-- Melanoma Guidelines Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rectal Guidelines Panel</masterLabel>
+            <translation><!-- Rectal Guidelines Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steering Committee</masterLabel>
+            <translation><!-- Steering Committee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leadership Position at National Assoc --></label>
+        <name>National_associations_c__c</name>
+        <picklistValues>
+            <masterLabel>ACCC: Assoc. of Community Cancer Center</masterLabel>
+            <translation><!-- ACCC: Assoc. of Community Cancer Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACMPE: Am. College of Medical Practice</masterLabel>
+            <translation><!-- ACMPE: Am. College of Medical Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACOA: Am. College of Onc. Administrators</masterLabel>
+            <translation><!-- ACOA: Am. College of Onc. Administrators --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AHS ASH: Am. Society of Hematology</masterLabel>
+            <translation><!-- AHS ASH: Am. Society of Hematology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO QOPI: Quality Onc. Practice Initiat</masterLabel>
+            <translation><!-- ASCO QOPI: Quality Onc. Practice Initiat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASCO: Am. Society of Clinical Onc.</masterLabel>
+            <translation><!-- ASCO: Am. Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COA: Community Onc. Alliance</masterLabel>
+            <translation><!-- COA: Community Onc. Alliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Oncology</masterLabel>
+            <translation><!-- US Oncology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leadership Position at Other Access Org --></label>
+        <name>Other_Access_Organizations_c__c</name>
+        <picklistValues>
+            <masterLabel>D3 Oncology Solutions</masterLabel>
+            <translation><!-- D3 Oncology Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eviti</masterLabel>
+            <translation><!-- Eviti --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Experienced Prescribers</masterLabel>
+            <translation><!-- High Experienced Prescribers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICORE</masterLabel>
+            <translation><!-- ICORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovent Oncology</masterLabel>
+            <translation><!-- Innovent Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Century Health</masterLabel>
+            <translation><!-- New Century Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology analytics</masterLabel>
+            <translation><!-- Oncology analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation><!-- P4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RainTree Advisor</masterLabel>
+            <translation><!-- RainTree Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RainTree Leadership</masterLabel>
+            <translation><!-- RainTree Leadership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Oncology</masterLabel>
+            <translation><!-- US Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ViaOncology</masterLabel>
+            <translation><!-- ViaOncology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leadership Position at Other Compendia --></label>
+        <name>Other_compendia_c__c</name>
+        <picklistValues>
+            <masterLabel>ASCO Guidelines</masterLabel>
+            <translation><!-- ASCO Guidelines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Am. Hospital Formulary Service</masterLabel>
+            <translation><!-- Am. Hospital Formulary Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DrugDex</masterLabel>
+            <translation><!-- DrugDex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elsevier Gold Standard</masterLabel>
+            <translation><!-- Elsevier Gold Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milliman</masterLabel>
+            <translation><!-- Milliman --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Known Links to PBMs --></label>
+        <name>PBMs__c</name>
+        <picklistValues>
+            <masterLabel>Argus</masterLabel>
+            <translation><!-- Argus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVS/Caremark</masterLabel>
+            <translation><!-- CVS/Caremark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catalyst Rx</masterLabel>
+            <translation><!-- Catalyst Rx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Managed</masterLabel>
+            <translation><!-- Company Managed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Scripts, Inc.</masterLabel>
+            <translation><!-- Express Scripts, Inc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FutureScripts</masterLabel>
+            <translation><!-- FutureScripts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InformedRx</masterLabel>
+            <translation><!-- InformedRx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaiser Permanente Pharmacy</masterLabel>
+            <translation><!-- Kaiser Permanente Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MedImpact</masterLabel>
+            <translation><!-- MedImpact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medco Health</masterLabel>
+            <translation><!-- Medco Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Therapeutics, Inc.</masterLabel>
+            <translation><!-- Prime Therapeutics, Inc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regence Rx</masterLabel>
+            <translation><!-- Regence Rx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Right Source (Humana subsidiary)</masterLabel>
+            <translation><!-- Right Source (Humana subsidiary) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Medicaid Formulary</masterLabel>
+            <translation><!-- State Medicaid Formulary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regional Associations --></label>
+        <name>Regional_associations_c__c</name>
+        <picklistValues>
+            <masterLabel>AK: Alaska Cancer Care Alliance</masterLabel>
+            <translation><!-- AK: Alaska Cancer Care Alliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL: Alabama Cancer Congress</masterLabel>
+            <translation><!-- AL: Alabama Cancer Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL: Alabama State Management Society</masterLabel>
+            <translation><!-- AL: Alabama State Management Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ: The Arizona Clinical Onc. Society</masterLabel>
+            <translation><!-- AZ: The Arizona Clinical Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA: Assoc. of Northern California Oncol</masterLabel>
+            <translation><!-- CA: Assoc. of Northern California Oncol --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA: Medical Onc. Assoc. of Southern Cali</masterLabel>
+            <translation><!-- CA: Medical Onc. Assoc. of Southern Cali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO: Rocky Mountain Onc. Society</masterLabel>
+            <translation><!-- CO: Rocky Mountain Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT: Connecticut Onc. Assoc.</masterLabel>
+            <translation><!-- CT: Connecticut Onc. Assoc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE: Delaware Med. Group Management Assoc</masterLabel>
+            <translation><!-- DE: Delaware Med. Group Management Assoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE: Delaware Society for Clinical Onc.</masterLabel>
+            <translation><!-- DE: Delaware Society for Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL: Florida Society of Clinical Onc.</masterLabel>
+            <translation><!-- FL: Florida Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL: Onc. Managers of Florida</masterLabel>
+            <translation><!-- FL: Onc. Managers of Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA: Georgia Society of Clinical Onc.</masterLabel>
+            <translation><!-- GA: Georgia Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA: Medical Group Management Assoc.</masterLabel>
+            <translation><!-- GA: Medical Group Management Assoc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI: Hawaii Society of Clinical Onc.</masterLabel>
+            <translation><!-- HI: Hawaii Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA: Iowa Onc. Society</masterLabel>
+            <translation><!-- IA: Iowa Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID: Idaho Society of Clinical Onc.</masterLabel>
+            <translation><!-- ID: Idaho Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL: Illinois Medical Onc. Society</masterLabel>
+            <translation><!-- IL: Illinois Medical Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN: Indiana Onc. Society</masterLabel>
+            <translation><!-- IN: Indiana Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS: Kansas Society of Clinical Onc.</masterLabel>
+            <translation><!-- KS: Kansas Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA: Louisiana Onc. Society</masterLabel>
+            <translation><!-- LA: Louisiana Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA: Massachusetts Society of Clinical On</masterLabel>
+            <translation><!-- MA: Massachusetts Society of Clinical On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD: Maryland and District of Columbia So</masterLabel>
+            <translation><!-- MD: Maryland and District of Columbia So --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME: Northern New England Clinical Onc. S</masterLabel>
+            <translation><!-- ME: Northern New England Clinical Onc. S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI: Michigan Society of Hematology and O</masterLabel>
+            <translation><!-- MI: Michigan Society of Hematology and O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN: Minnesota Society of Clinical Onc.</masterLabel>
+            <translation><!-- MN: Minnesota Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO: Missouri Onc. Society</masterLabel>
+            <translation><!-- MO: Missouri Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS: Mississippi Onc. Society</masterLabel>
+            <translation><!-- MS: Mississippi Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare Carrier Adv Comm Mem (Pick MAC)</masterLabel>
+            <translation><!-- Medicare Carrier Adv Comm Mem (Pick MAC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC: Am. Society of Hematology</masterLabel>
+            <translation><!-- NC: Am. Society of Hematology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC: North Carolina Onc. Assoc.</masterLabel>
+            <translation><!-- NC: North Carolina Onc. Assoc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC: North Carolina Onc. Management Socie</masterLabel>
+            <translation><!-- NC: North Carolina Onc. Management Socie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE: Nebraska Onc. Society</masterLabel>
+            <translation><!-- NE: Nebraska Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH: Northern New England Clinical Onc. S</masterLabel>
+            <translation><!-- NH: Northern New England Clinical Onc. S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ: Medical Onc. Society of New Jersey</masterLabel>
+            <translation><!-- NJ: Medical Onc. Society of New Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ: New Jersey Society of Onc. Managers</masterLabel>
+            <translation><!-- NJ: New Jersey Society of Onc. Managers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM: New Mexico Society of Clinical Onc.</masterLabel>
+            <translation><!-- NM: New Mexico Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV: Nevada Onc. Society</masterLabel>
+            <translation><!-- NV: Nevada Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY: The New York State Society</masterLabel>
+            <translation><!-- NY: The New York State Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH: Medical Group Management Assoc.</masterLabel>
+            <translation><!-- OH: Medical Group Management Assoc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH: Ohio Hematology Onc. Society</masterLabel>
+            <translation><!-- OH: Ohio Hematology Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK: Oklahoma Society of Clinical Onc.</masterLabel>
+            <translation><!-- OK: Oklahoma Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR: Oregon Society of Medical Onc.</masterLabel>
+            <translation><!-- OR: Oregon Society of Medical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA: Pennsylvania Society of Onc. and Hem</masterLabel>
+            <translation><!-- PA: Pennsylvania Society of Onc. and Hem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA: Premier Onc. Hematology Management S</masterLabel>
+            <translation><!-- PA: Premier Onc. Hematology Management S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI: Society of Rhode Island Clinical Onc</masterLabel>
+            <translation><!-- RI: Society of Rhode Island Clinical Onc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC: South Carolina Onc. Society</masterLabel>
+            <translation><!-- SC: South Carolina Onc. Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN: Tennessee Onc. Practice Society</masterLabel>
+            <translation><!-- TN: Tennessee Onc. Practice Society --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX: Texas Society of Clinical Onc.</masterLabel>
+            <translation><!-- TX: Texas Society of Clinical Onc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT: Society of Utah Medical Oncologists</masterLabel>
+            <translation><!-- UT: Society of Utah Medical Oncologists --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA: Virginia Assoc. of Hematologists and</masterLabel>
+            <translation><!-- VA: Virginia Assoc. of Hematologists and --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT: Northern New England Clinical Onc. S</masterLabel>
+            <translation><!-- VT: Northern New England Clinical Onc. S --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA: Washington State Medical Onc. Societ</masterLabel>
+            <translation><!-- WA: Washington State Medical Onc. Societ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI: Wisconsin Assoc. of Hematology and O</masterLabel>
+            <translation><!-- WI: Wisconsin Assoc. of Hematology and O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV: West Virginia Onc. Society</masterLabel>
+            <translation><!-- WV: West Virginia Onc. Society --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Knowledge of Access Dynamics --></label>
+        <name>Relationship_status_c__c</name>
+        <picklistValues>
+            <masterLabel>Access Active</masterLabel>
+            <translation><!-- Access Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Aware</masterLabel>
+            <translation><!-- Access Aware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access Unaware</masterLabel>
+            <translation><!-- Access Unaware --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Known Links to SPPs --></label>
+        <name>SPPs__c</name>
+        <picklistValues>
+            <masterLabel>Accredo</masterLabel>
+            <translation><!-- Accredo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Avella</masterLabel>
+            <translation><!-- Avella --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biologics, Inc.</masterLabel>
+            <translation><!-- Biologics, Inc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CVS/Caremark Specialty Pharmacy</masterLabel>
+            <translation><!-- CVS/Caremark Specialty Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CuraScript</masterLabel>
+            <translation><!-- CuraScript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diplomat Specialty Pharmacy</masterLabel>
+            <translation><!-- Diplomat Specialty Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater Sacramento Pharmacy</masterLabel>
+            <translation><!-- Greater Sacramento Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OncologyRx Care Advantage</masterLabel>
+            <translation><!-- OncologyRx Care Advantage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Specialty</masterLabel>
+            <translation><!-- Prime Specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RightSource-Humana</masterLabel>
+            <translation><!-- RightSource-Humana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Community (formerly BioScrip)</masterLabel>
+            <translation><!-- The Community (formerly BioScrip) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Bioservices</masterLabel>
+            <translation><!-- US Bioservices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walgreens Specialty Pharmacy</masterLabel>
+            <translation><!-- Walgreens Specialty Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walmart Specialty Pharmacy</masterLabel>
+            <translation><!-- Walmart Specialty Pharmacy --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- There is already an access influence record associated with this account. --></errorMessage>
+        <name>Access_influence_rule</name>
+    </validationRules>
+</CustomObjectTranslation>

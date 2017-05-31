@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Paramètre Régional des Echantillons</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Paramètre Régional des Echantillons</value>
+    </caseValues>
+    <fields>
+        <label>CDS requis</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Paramètre</label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation>Échantillon de biothèque uniquement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation>Échantillon commercial uniquement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation>Pas d&apos;échantillon</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Impossible de définir la méthode de livraison et les exigences CDS dans le même enregistrement.</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

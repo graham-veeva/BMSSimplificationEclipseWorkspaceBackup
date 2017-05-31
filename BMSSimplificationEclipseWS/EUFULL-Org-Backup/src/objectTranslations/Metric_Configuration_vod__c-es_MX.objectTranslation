@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración de métrica</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuraciones de métricas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applies To --></label>
+        <name>Applies_To_vod__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Department</masterLabel>
+            <translation><!-- BMS - Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Group Practice</masterLabel>
+            <translation><!-- BMS - Group Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Individual</masterLabel>
+            <translation><!-- BMS - Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Institution</masterLabel>
+            <translation><!-- BMS - Institution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization</masterLabel>
+            <translation><!-- BMS - Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS - Organization (MM)</masterLabel>
+            <translation><!-- BMS - Organization (MM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board_vod</masterLabel>
+            <translation><!-- Board_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer_vod</masterLabel>
+            <translation><!-- Employer_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital Department_vod</masterLabel>
+            <translation><!-- Hospital Department_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital_vod</masterLabel>
+            <translation><!-- Hospital_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratory_vod</masterLabel>
+            <translation><!-- Laboratory_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO Plan_vod</masterLabel>
+            <translation><!-- MCO Plan_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCO_vod</masterLabel>
+            <translation><!-- MCO_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation><!-- Pharmacy_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Practice_vod</masterLabel>
+            <translation><!-- Practice_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation><!-- Professional_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Grupo de detalles</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>Configuraciones de estadísticas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tema de detalle</label>
+        <name>Detail_Topic_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metric Type --></label>
+        <name>Metric_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Arrows_vod</masterLabel>
+            <translation><!-- Arrows_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box_vod</masterLabel>
+            <translation><!-- Box_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checkbox_vod</masterLabel>
+            <translation><!-- Checkbox_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number_vod</masterLabel>
+            <translation><!-- Number_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text_vod</masterLabel>
+            <translation><!-- Text_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Red/Yellow --></label>
+        <name>Red_Yellow_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yellow/Green --></label>
+        <name>Yellow_Green_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Metric --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Solo el tipo &apos;Grupo de detalles&quot; está permitido</errorMessage>
+        <name>Detail_Group_Type_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

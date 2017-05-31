@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TERR_NAME</field>
+    </columns>
+    <columns>
+        <field>TERR_DESC</field>
+    </columns>
+    <description>Report to display the Territories included in a given sales force.  This report is filtered to only include Oncology Sales Territories.</description>
+    <filter>
+        <criteriaItems>
+            <column>Territory.Sales_Force_Name_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>BMSO BLUE,CSO BLUE,BMSO THORACIC,BMSO RED,CSO RED,BMSO CML SPECIALIST,ONCOLOGY CUSTOMER SERVICE,BMSO GREEN,BMSO HAWAII,BMSO MELANOMA,ONCOLOGY KAM,ONCOLOGY REGION,ONCOLOGY DISTRICT A,ONCOLOGY DISTRICT B,ONCOLOGY GREEN DISTRICT,ONC NATIONAL OCS DISTRICT,ONC NATIONAL OCS REGION</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory.Sales_Force_Name_BMS_CORE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - PTU - Territory Summary/Onc Sales</name>
+    <params>
+        <name>user</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Territory</reportType>
+    <showDetails>true</showDetails>
+</Report>

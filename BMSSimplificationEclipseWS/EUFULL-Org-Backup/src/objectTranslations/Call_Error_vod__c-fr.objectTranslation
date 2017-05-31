@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Erreur de Visite</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Erreurs de Visites</value>
+    </caseValues>
+    <fields>
+        <label>Compte</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date/heure de la visite</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type de la visite</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cause</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>Accès au compte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>Visite verrouillée</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>Accès à l&apos;objet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Utilisateur</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Erreurs de visites</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Texte XML</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>Supprimer</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Résoudre</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

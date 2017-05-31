@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>MC-Zyklusplan-Ziel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>MC-Zyklusplan-Ziele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>MC-Zyklusplan-Ziel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>MC-Zyklusplan-Ziele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>MC-Zyklusplan-Ziels</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>MC-Zyklusplan-Ziele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>MC-Zyklusplan-Ziel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>MC-Zyklusplan-Zielen</value>
+    </caseValues>
+    <fields>
+        <label>Zielerreichung Kanal</label>
+        <name>Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktionen Ist</label>
+        <name>Channel_Interactions_Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktionen erreicht</label>
+        <name>Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktionen Ziel</label>
+        <name>Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktionen Max.</label>
+        <name>Channel_Interactions_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktionen Verbleibend</label>
+        <name>Channel_Interactions_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalstatus</label>
+        <name>Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Im Zeitplan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Übererfüllt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Untererfüllt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Untergeordneter Account</label>
+        <name>Child_Account_vod__c</name>
+        <relationshipLabel>Zyklusplanziele</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Zyklusplan</label>
+        <name>Cycle_Plan_vod__c</name>
+        <relationshipLabel>MC-Zyklusplan Ziele</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Furigana --></label>
+        <name>Furigana_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ziele bearbeitet</label>
+        <name>Goals_Edited_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Berechnung</label>
+        <name>Last_Calculated_vod__c</name>
+    </fields>
+    <fields>
+        <label>Standort</label>
+        <name>Location_vod__c</name>
+        <relationshipLabel>Zyklusplanziele (Standort)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master ID --></label>
+        <name>Master_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordneter/untergeordneter Name</label>
+        <name>Parent_Child_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zielerreichung Produkt</label>
+        <name>Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktinteraktionen Verdient</label>
+        <name>Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktinteraktionen Ziel</label>
+        <name>Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Interactions Remaining --></label>
+        <name>Product_Interactions_Remaining_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Produktstatus</label>
+        <name>Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Im Zeitplan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Übererfüllt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Untererfüllt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_BMS_LATAM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Active_vod</masterLabel>
+            <translation>Aktiv</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged_vod</masterLabel>
+            <translation>Zusammengeführt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ziel</label>
+        <name>Target_vod__c</name>
+        <relationshipLabel>Zyklusplanziele</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Team-Kanalleistung</label>
+        <name>Team_Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Kanalinteraktionen Ist</label>
+        <name>Team_Channel_Interactions_Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Kanalinteraktionen Erreicht</label>
+        <name>Team_Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Kanalinteraktionen Ziel</label>
+        <name>Team_Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Kanalinteraktionen Max.</label>
+        <name>Team_Channel_Interactions_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Kanalinteraktionen Verbleibend</label>
+        <name>Team_Channel_Interactions_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Kanalstatus</label>
+        <name>Team_Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Im Zeitplan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Übererfüllt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Untererfüllt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Team-Produktleistung</label>
+        <name>Team_Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Produktinteraktionen Verdient</label>
+        <name>Team_Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Produktinteraktionen Ziel</label>
+        <name>Team_Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team-Produktstatus</label>
+        <name>Team_Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Im Zeitplan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Übererfüllt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Untererfüllt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Plan Target --></nameFieldLabel>
+    <recordTypes>
+        <label>Zyklusplan Ziel</label>
+        <name>Cycle_Plan_Target_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Kanalinteraktionen Ziel darf nicht kleiner als 0 sein</errorMessage>
+        <name>Goal_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Location_vod kann nicht mit dem Account einer Person gefüllt werden.</errorMessage>
+        <name>LocationIsPersonAccount_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Location_vod kann nicht gefüllt werden, wenn Target_vod ein Geschäfts-Account ist.</errorMessage>
+        <name>Location_TargetIsBusinessAcct_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Kanalinteraktionen Max. darf nicht kleiner als 0 oder kleiner als &quot;&quot;Kanalinteraktionen Ziel&quot;&quot; sein.&quot;</errorMessage>
+        <name>Max_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Team-Kanalinteraktionen Ziel&quot; darf nicht kleiner als 0 sein</errorMessage>
+        <name>Team_Goal_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Team-Kanalinteraktionen Max.&quot; darf nicht kleiner als 0 oder kleiner als &quot;Team-Kanalinteraktionen Ziel&quot; sein.</errorMessage>
+        <name>Team_Max_Validations_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

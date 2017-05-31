@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Şablon al hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Şablon al hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Şabloane ale hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Şabloane ale hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Şablonului hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Şablonului hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Şabloanelor hărţii de date</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Şabloanelor hărţii de date</value>
+    </caseValues>
+    <fields>
+        <label>Activ</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unități de memorie</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Etichetă de coloană</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the file will have the column lables as the first line for this template, then check this box. --></help>
+        <label>Etichete ale coloanei incluse</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Conţine obiective?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zecimale</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>Pentru a utiliza raportul Analiză vânzări pe piaţă, desemnaţi numai un fişier de date de vânzări de scală lunară. Datele de vânzări trebuie să conţine de asemenea ID medic curant, ID piaţă, ID grup de produse</help>
+        <label>Activare raport analiză vânzări pe piaţă</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activare pentru offline</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Listă medicam. pt. etich. repr. vânzări</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Etichetă a primei coloane</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Niciuna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Etichetă a coloanei a doua</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tip al încărcăturii graduale</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Complet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Gradual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Parţial</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Gradual</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pieţe mapate?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prag de suprascriere a contului</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Plătitor/Plan mapat?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Scară</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Lunar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Săptămânal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Etichetă a coloanei a doua</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Denumiri ale teritoriului incluse?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Vă rugăm să selectaţi o valoare validă a listei de selecţie.  Dacă încărcaţi date asiguraţi-vă că utilizaţi valoarea principală a listei de selecţie, nu eticheta tradusă</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Raportul Analiză vânzări pe piaţă este selectabil numai atunci când scala selectată este lunară şi caseta de selectare Plătitor/plan asociat nu este selectată</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Asiguraţi-vă că eticheta coloanei nu conţine oricare dintre următoarele caractere: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numărul de zecimale trebuie să fie de 0 - 4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vă rugăm să selectaţi o valoare validă a listei de selecţie. Dacă încărcaţi date asiguraţi-vă că utilizaţi valoarea principală a listei de selecţie, nu eticheta tradusă</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

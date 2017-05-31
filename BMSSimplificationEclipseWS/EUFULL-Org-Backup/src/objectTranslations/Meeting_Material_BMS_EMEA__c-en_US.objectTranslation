@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meeting Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meeting Materials</value>
+    </caseValues>
+    <fields>
+        <label><!-- zDELETE_Inherited from Master File? --></label>
+        <name>BMS_EMEA_Inherited_from_Master_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Meeting --></label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Original --></label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Including presentations, invitations and other items - Description --></help>
+        <label><!-- Material --></label>
+        <name>Material_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting --></label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Meeting Materials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ref No --></label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be approved</masterLabel>
+            <translation><!-- To be approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Used --></label>
+        <name>Used_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be used</masterLabel>
+            <translation><!-- To be used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label>Meeting Material</label>
+        <name>BMS_EMEA_Meeting_Material</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Meeting Material PostExec</label>
+        <name>BMS_EMEA_Meeting_Material_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Meeting Material PostExec PTA</label>
+        <name>BMS_EMEA_Meeting_Material_PostExec_PTA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change any fields as you are co-author of the Meeting. --></errorMessage>
+        <name>BMS_EMEA_FFM_Material_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Materials created during the Meeting Planning phase cannot be modified during the Post-Execution phase. Please Cancel. --></errorMessage>
+        <name>BMS_EMEA_PlanMaterialsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Material_BMS_EMEA --></label>
+        <name>New_Material_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

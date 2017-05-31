@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>拜访错误</value>
+    </caseValues>
+    <fields>
+        <label>客户</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>拜访时间</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>拜访类型</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>原因</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>客户访问权限</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>呼叫锁定</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>对象访问权限</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>用户</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>业务拜访错误</relationshipLabel>
+    </fields>
+    <fields>
+        <label>XML文本</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <webLinks>
+        <label>删除</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>解决</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

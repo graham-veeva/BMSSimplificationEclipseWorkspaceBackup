@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BMS CHINA - Medical Info Request Confirmation Email Template</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>BMS CHINA - Medical Info Request Conf Mail Template</name>
+    <style>freeForm</style>
+    <subject>Medical Info Request: {!Medical_Inquiry_vod__c.Name} - {!Medical_Inquiry_vod__c.Account_vod__c} - {!Medical_Inquiry_vod__c.CreatedDate}</subject>
+    <textOnly>Dear all,
+Please view the Medical Info Request as below:
+Requestor Detail
+Name: {!Medical_Inquiry_vod__c.Account_vod__c}
+Title: {!Medical_Inquiry_vod__c.Title_BMS_CN__c}
+Professional Title: {!Medical_Inquiry_vod__c.Professional_Title_BMS_CN__c}
+Hospital or Organization: {!Medical_Inquiry_vod__c.Hospital_or_Organization_BMS_CN__c}
+Delivery Method: {!Medical_Inquiry_vod__c.Delivery_Method_vod__c}
+E-mail: {!Medical_Inquiry_vod__c.Email_vod__c}
+Phone: {!Medical_Inquiry_vod__c.BMS_Phone_Number__c}
+Address: {!Medical_Inquiry_vod__c.Address_Line_1_vod__c} {!Medical_Inquiry_vod__c.Address_Line_2_vod__c} {!Medical_Inquiry_vod__c.City_vod__c} {!Medical_Inquiry_vod__c.State_vod__c} {!Medical_Inquiry_vod__c.Zip_vod__c} {!Medical_Inquiry_vod__c.Country_vod__c}
+
+
+Information Request
+Urgent Delivery Request Justificaiton: {!Medical_Inquiry_vod__c.Urgent_Reason_BMS_CN__c}
+Product: {!Medical_Inquiry_vod__c.Product__c}
+Medical Info Type:{!Medical_Inquiry_vod__c.Medical_Info_Type_BMS_CN__c}
+
+Inquiry
+{!Medical_Inquiry_vod__c.Inquiry_Text__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

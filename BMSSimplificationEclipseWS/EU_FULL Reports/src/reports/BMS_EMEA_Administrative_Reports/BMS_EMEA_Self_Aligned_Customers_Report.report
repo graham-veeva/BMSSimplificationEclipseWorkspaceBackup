@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>GAS_Alignment_History_vts__c$CreatedBy.FirstName</field>
+    </columns>
+    <columns>
+        <field>GAS_Alignment_History_vts__c$CreatedBy.LastName</field>
+    </columns>
+    <columns>
+        <field>GAS_Alignment_History_vts__c$CreatedBy.Territory_Intelligent_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>GAS_Alignment_History_vts__c$CreatedBy.Sales_Force_Name_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>GAS_Alignment_History_vts__c$Account__c.Name</field>
+    </columns>
+    <columns>
+        <field>GAS_Alignment_History_vts__c$Account__c.External_ID_vod__c</field>
+    </columns>
+    <columns>
+        <field>GAS_Alignment_History_vts__c$Account__c.RecordType</field>
+    </columns>
+    <description>This report will display the list of self aligned customers per user/country.</description>
+    <filter>
+        <criteriaItems>
+            <column>GAS_Alignment_History_vts__c$CreatedBy.User_Source_Country_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>DE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>GAS_Alignment_History_vts__c$Account__c.Account_Status_BMS_CA__c</column>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BMS-EMEA-Self Aligned Customers Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>BMS_EMEA_GAS_Alignment_with_Customer_User__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>GAS_Alignment_History_vts__c$CreatedBy.Territory_Intelligent_ID_BMS_SHARED__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>GAS_Alignment_History_vts__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

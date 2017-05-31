@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Orders</value>
+    </caseValues>
+    <fields>
+        <label>Accountgroep</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Account-ID</label>
+        <name>Account_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Accountnaam</label>
+        <name>Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Account</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Orders</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Assortiment</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Regel beste korting</label>
+        <name>Best_Discount_Rule_vod__c</name>
+        <picklistValues>
+            <masterLabel>Campaign_with_Contract_vod</masterLabel>
+            <translation>Campagne met contract</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Combined_vod</masterLabel>
+            <translation>Gecombineerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract_vod</masterLabel>
+            <translation><!-- Contract_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order_Campaign_vod</masterLabel>
+            <translation>Ordercampagne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard_vod</masterLabel>
+            <translation>Standaard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Factuuradresregel 1</label>
+        <name>Billing_Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Factuuradresregel 2</label>
+        <name>Billing_Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Factuuradres</label>
+        <name>Billing_Address_vod__c</name>
+        <relationshipLabel>Orders (factuuradres)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Plaats factuur</label>
+        <name>Billing_City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Contactpersoon factuur</label>
+        <name>Billing_Contact_vod__c</name>
+    </fields>
+    <fields>
+        <label>Land factuur</label>
+        <name>Billing_Country_vod__c</name>
+    </fields>
+    <fields>
+        <label>Postcode 4 factuur</label>
+        <name>Billing_Postal_Code_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>Postcode factuur</label>
+        <name>Billing_Postal_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Staat factuur</label>
+        <name>Billing_State_vod__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Bezoek</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum en tijd</label>
+        <name>DateTime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leverdatum</label>
+        <name>Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leveringslocatie</label>
+        <name>Delivery_Location_vod__c</name>
+        <relationshipLabel>Orders (leveringslocatie)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Waarschuwing leverorder</label>
+        <name>Delivery_Order_Warning_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leverorder</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Levervolgorde</label>
+        <name>Delivery_Rank_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disclaimer --></label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Referentie-ID entiteit</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lijstbedrag</label>
+        <name>List_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vergrendelen</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Masterorder</label>
+        <name>Master_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum en tijd gemaakt op mobiel</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobiel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum en tijd laatst gewijzigd mobiel</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nettobedrag</label>
+        <name>Net_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Notities</label>
+        <name>Notes_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ordercampagne</label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel>Orders</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Orderdatum</label>
+        <name>Order_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Regel orderkorting</label>
+        <name>Order_Discount_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Orderkorting</label>
+        <name>Order_Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gratis goederen order</label>
+        <name>Order_Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lijstbedrag order</label>
+        <name>Order_List_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Order nettobedrag regel</label>
+        <name>Order_Net_Amount_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Order nettobedragsregel</label>
+        <name>Order_Net_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Totaal orderkorting</label>
+        <name>Order_Total_Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Totale winst order</label>
+        <name>Order_Total_Profit_vod__c</name>
+    </fields>
+    <fields>
+        <label>Totaal orderhoeveelheid</label>
+        <name>Order_Total_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vergrendeling overrulen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bovenliggende order</label>
+        <name>Parent_Order_vod__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Betaler</label>
+        <name>Payer_vod__c</name>
+        <relationshipLabel>Orders (betaler)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Betalingsregel</label>
+        <name>Payment_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Betaling</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prijslijst</label>
+        <name>Price_Book_vod__c</name>
+        <relationshipLabel>Orders (prijslijst)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>E-mailadres ontvangstbewijs</label>
+        <name>Receipt_Email_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ontvangstbewijs aanvragen</label>
+        <name>Request_Receipt_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verzendadres, regel 1</label>
+        <name>Ship_Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verzendadres, regel 2</label>
+        <name>Ship_Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Plaats verzendadres</label>
+        <name>Ship_City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Land verzendadres</label>
+        <name>Ship_Country_vod__c</name>
+    </fields>
+    <fields>
+        <label>Postcode 4 verzendadres</label>
+        <name>Ship_Postal_Code_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>Postcode verzendadres</label>
+        <name>Ship_Postal_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Staat verzendadres</label>
+        <name>Ship_State_vod__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tekst verzendadres</label>
+        <name>Ship_To_Address_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verzendadres</label>
+        <name>Ship_To_Address_vod__c</name>
+        <relationshipLabel>Orders</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum handtekening</label>
+        <name>Signature_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Handtekening</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Status</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Opgeslagen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Ingediend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voided_vod</masterLabel>
+            <translation>Vervallen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Totale korting</label>
+        <name>Total_Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Waarschuwing</label>
+        <name>Warning_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groothandelpartner</label>
+        <name>Wholesaler_Account_Partner_vod__c</name>
+        <relationshipLabel>Orders (accountpartner)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Groothandelaar prioriteit</label>
+        <name>Wholesaler_Priority_vod__c</name>
+    </fields>
+    <fields>
+        <help>De keuzelijst van de groothandelaar wordt gevuld met accounts van het type Groothandelaar die een relatie hebben met de account die de order plaatst.</help>
+        <label>Groothandel</label>
+        <name>Wholesaler_vod__c</name>
+        <relationshipLabel>Orders (groothandel)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Verzendadres</label>
+        <name>zvod_Delivery_Address_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leverdatum</label>
+        <name>zvod_Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gratis goederen levering</label>
+        <name>zvod_Delivery_Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lijstbedrag levering</label>
+        <name>zvod_Delivery_List_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nettobedrag levering</label>
+        <name>zvod_Delivery_Net_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Totale leverhoeveelheid</label>
+        <name>zvod_Delivery_Total_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod Delivery Wholesaler --></label>
+        <name>zvod_Delivery_Wholesaler_vod__c</name>
+    </fields>
+    <fields>
+        <label>Betaler</label>
+        <name>zvod_Payer_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod Recipients --></label>
+        <name>zvod_Recipients_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod Wholesaler Priority --></label>
+        <name>zvod_Wholesaler_Priority_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Order Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Direct</label>
+        <name>Direct_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Overdracht</label>
+        <name>Transfer_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Voor deze account kunnen geen orders worden ingediend.</errorMessage>
+        <name>ON_SUBMIT_NO_ORDER</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Order_3_vod --></label>
+        <name>New_Order_3_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Nieuwe order</label>
+        <name>New_Order_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Afdrukken</label>
+        <name>Print_Order_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Opslaan</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Opsplitsen</label>
+        <name>Split_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Indienen</label>
+        <name>Submit_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Vervallen</label>
+        <name>Void_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

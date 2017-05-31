@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ルール定義</value>
+    </caseValues>
+    <fields>
+        <help>Salesforce.com でルールが有効であるかどうかを指します</help>
+        <label>有効</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>フィールドレベルのエラーメッセージが表示されるフィールド名。</help>
+        <label>表示フィールド</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>ルール式</help>
+        <label>エラー条件式</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>ルールのエラーメッセージ。</help>
+        <label>マスターメッセージ</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>この検証ルールがあるオブジェクト。</help>
+        <label>オブジェクト</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>ルール定義</relationshipLabel>
+    </fields>
+    <fields>
+        <label>注文</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Veeva がルール定義の中でサポートされていない構文を検出したかどうかを指します。</help>
+        <label>サポート済み</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>レコードの外部 ID。式は [ルール名]::[RecordType.Name]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC ルックアップフィルタ品目</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC ルール</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

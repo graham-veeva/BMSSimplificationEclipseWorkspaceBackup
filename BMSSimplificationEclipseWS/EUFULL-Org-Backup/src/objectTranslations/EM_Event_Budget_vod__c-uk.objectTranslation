@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Бюджет події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Бюджети події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Бюджет події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Бюджети події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Бюджета події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Бюджетів події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Бюджету події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Бюджетам події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Бюджетом події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Бюджетами події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Бюджеті події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Бюджетах події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Бюджет події</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Бюджети заходів</value>
+    </caseValues>
+    <fields>
+        <label>Дійсний</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ім&apos;я бюджету</label>
+        <name>Budget_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Бюджет</label>
+        <name>Budget_vod__c</name>
+        <relationshipLabel>Бюджет подій</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Затверджені</label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Розрахункові</label>
+        <name>Estimate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Розрахунковий залишок</label>
+        <name>Estimated_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Подія скасованa</label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label>Подія</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Бюджет подій</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Зовнішній ідентифікатор</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Inheriting Expense Estimates --></label>
+        <name>Failure_Inheriting_Expense_Estimates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Is_Need__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ідентифікація номера мобільного телефону</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Перевизначити блокування</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting for Expense Estimate Inheritance --></label>
+        <name>Waiting_for_Expense_Estimate_Inheritance__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Назва</nameFieldLabel>
+    <recordTypes>
+        <label>Бюджет події</label>
+        <name>Event_Budget_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WBS/CC --></label>
+        <name>WBS_CC_Simple_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Член групи події</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has an End Date After the Event&apos;s End Date. --></errorMessage>
+        <name>Need_End_Date_After_Atvty_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has a start date before the Event&apos;s Start Date. --></errorMessage>
+        <name>Need_Start_Date_Before_Atvty_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

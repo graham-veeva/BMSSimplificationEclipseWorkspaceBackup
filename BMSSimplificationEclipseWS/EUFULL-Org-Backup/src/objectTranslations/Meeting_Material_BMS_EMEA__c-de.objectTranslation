@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Materials</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Materials</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Materials</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Materials</value>
+    </caseValues>
+    <fields>
+        <label><!-- zDELETE_Inherited from Master File? --></label>
+        <name>BMS_EMEA_Inherited_from_Master_File__c</name>
+    </fields>
+    <fields>
+        <label>FFM-Schritt Meeting</label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>FFM-Schritt Original</label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Inklusive Vorträge, Einladungen und sonstige Informationen. Bitte beschreiben</help>
+        <label><!-- Material --></label>
+        <name>Material_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltungen</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Material für Veranstaltung</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Referenznummer</label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be approved</masterLabel>
+            <translation><!-- To be approved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>genutzt</label>
+        <name>Used_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be used</masterLabel>
+            <translation>zu benutzen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Meeting Material Name --></nameFieldLabel>
+    <recordTypes>
+        <label>BMS - EMEA - Veranstaltungsmaterial</label>
+        <name>BMS_EMEA_Meeting_Material</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BMS - EMEA - Veranstaltungmaterial Nachabwcklg</label>
+        <name>BMS_EMEA_Meeting_Material_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BMS - EMEA - Veranstaltungmaterial Nachabwcklg PTA</label>
+        <name>BMS_EMEA_Meeting_Material_PostExec_PTA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Sie sind nicht befugt, Felder zu verändern, da sie Co-Autor des Meetings sind</errorMessage>
+        <name>BMS_EMEA_FFM_Material_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Materialien die im Zuge der Planung der Veranstaltung erstellt wurden, können beim Abschluss der Veranstaltungen nicht mehr geändert werden. Bitte löschen</errorMessage>
+        <name>BMS_EMEA_PlanMaterialsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label>Neues Material</label>
+        <name>New_Material_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

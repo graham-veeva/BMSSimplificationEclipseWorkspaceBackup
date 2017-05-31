@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Strona umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Strony umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Stronę umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Strony umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Strony umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Stron umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Stronie umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Stronom umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Stroną umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Stronami umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Stronie umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Stronach umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Strona umowy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Strony umowy</value>
+    </caseValues>
+    <fields>
+        <label>Nr akceptacji</label>
+        <name>Acceptance_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identyfikator klient</label>
+        <name>Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Klient</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Strony umowy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Potwierdzam przeczytanie i zrozumienie</label>
+        <name>Acknowledgment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Porozumienie</label>
+        <name>Agreement_vod__c</name>
+    </fields>
+    <fields>
+        <label>Wizyta</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Strony umowy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Umowa</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Strony umowy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Typ urządzenia</label>
+        <name>Device_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Wczytywanie danych</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation><!-- Online_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Wyłączenie odpowiedzialności</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mówca</label>
+        <name>EM_Speaker_vod__c</name>
+        <relationshipLabel>Strony umowy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data zakończenia</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ważność wygasła ?</label>
+        <name>Expired_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identyfikator zewnętrzny</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nazwa sformatowana</label>
+        <name>Formatted_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zablokuj</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utworzona data/godzina (mobilnie)</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identyfikator urządzenia mobilnego</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data ostatniej modyfikacji (mobilne)</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zastąp blokadę</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data/godzina podpisu</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Podpis</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Podpisujący</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data rozpoczęcia</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Aktywne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Odrzucono</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Zapisane</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Podpisano</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Podpis użytkownika</label>
+        <name>User_Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Użytkownik</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Strony umowy</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Contract Partner ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Activity Agreement for Exhibits &amp; Displays (Events) --></label>
+        <name>Activity_Agreement_EBD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Services (SOW) --></label>
+        <name>Activity_Agreement_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Sponsorship --></label>
+        <name>Activity_Agreement_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Umowa mówcy</label>
+        <name>EM_Speaker_Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Framework Agreement --></label>
+        <name>Framework_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Spis</label>
+        <name>Listing_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sprzedaż</label>
+        <name>Sales_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsorshipLetter --></label>
+        <name>SponsorshipLetter_HCPTS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Data zakończenia nie może wypadać przed datą rozpoczęcia.</errorMessage>
+        <name>End_Date_After_Start_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Aktywuj</label>
+        <name>Activate_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Nowy partner umowy</label>
+        <name>New_Contract_Partner_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Odblokuj</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Wyświetl podpisy</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

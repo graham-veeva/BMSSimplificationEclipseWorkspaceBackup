@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nhóm sản phẩm</value>
+    </caseValues>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ca-ta-lô sản phẩm</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Nhóm sản phẩm (Ca-ta-lô sản phẩm)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Nhóm sản phẩm</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Số Lượng</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Bạn không thể liên kết từ một Nhóm chi tiết không phải là Sản phẩm của công ty đến một Sản phẩm chi tiết hoặc Chủ đề là Sản phẩm của Công ty.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Chỉ sản phẩm loại &quot; Chủ đề Chi tiết &quot; hoặc &quot;Chi tiết&quot; có thể được kết hợp thành Nhóm sản phẩm chi tiết</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Chỉ cho phép loại &apos;Nhóm sản phẩm&apos;</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Chỉ cho phép loại &apos;Đơn đặt hàng&apos;</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Chỉ những sản phẩm thuộc loại &quot;Mẫu&quot; hoặc &quot;BRC&quot; mới được liên kết với Nhóm sản phẩm mẫu</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Khi đưa ra một Số Lượng, phải định rõ Ngày Bắt Đầu và Ngày Kết Thúc.</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bắt buộc phải có ngày bắt đầu và ngày kết thúc hiệu lực.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

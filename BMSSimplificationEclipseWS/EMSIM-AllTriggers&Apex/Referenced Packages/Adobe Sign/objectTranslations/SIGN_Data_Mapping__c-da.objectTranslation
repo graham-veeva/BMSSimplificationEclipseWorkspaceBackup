@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Datatilknytning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Datatilknytning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Datatilknytning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Datatilknytninger</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Datatilknytninger</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Datatilknytninger</value>
+    </caseValues>
+    <fields>
+        <label>Cachelagret inputtype</label>
+        <name>Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box if you want this data mapping to run by default for all agreements sent. You can override the default if you specify a different data mapping to use with a specific agreement or agreement template. --></help>
+        <label>Standarddatatilknytning?</label>
+        <name>Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivelse</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label>Flet felt – CSV</label>
+        <name>Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label>Giv bruger besked om fejl</label>
+        <name>Notify_User_of_Errors__c</name>
+        <relationshipLabel>Datatilknytninger</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Navn på datatilknytning</nameFieldLabel>
+</CustomObjectTranslation>

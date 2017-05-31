@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Розподіл витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Розподіл витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Розподіл витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Розподіл витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Розподілу витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Розподілу витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Розподілу витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Розподілу витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Розподілом витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Розподілом витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Розподілі витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Розподілі витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Розподіл витрат</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Розподіл витрат</value>
+    </caseValues>
+    <fields>
+        <label>Дійсний</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Рядок витрат</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип витрат</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Понесені витрати (організація)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесені витрати (учасник)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесені витрати (доповідач)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесені витрати (член групи)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип понесених витрат</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Обліковий запис</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Учасник</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Доповідач події</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Член групи події</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Продавець</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Місце проведення</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Понесені витрати (продавець)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесені витрати (місце проведення)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Розподіл витрат</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Понесені витрати</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата платежу</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Імена</nameFieldLabel>
+    <recordTypes>
+        <label>Розподіл видатків заходу</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

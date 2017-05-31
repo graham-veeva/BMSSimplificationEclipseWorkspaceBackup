@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Description</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Descriptions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Parent Contract object --></help>
+        <label><!-- Contract --></label>
+        <name>Contract_HCPTS__c</name>
+        <relationshipLabel><!-- Contract Descriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Subtype --></label>
+        <name>Contract_Subtype_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter free text description for this service which maybe more appropriate for the Activity and/or situation --></help>
+        <label><!-- Contract Description Details --></label>
+        <name>Service_Description_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the Service --></help>
+        <label><!-- Lookup Contract Description --></label>
+        <name>Service_HCPTS__c</name>
+        <relationshipLabel><!-- Contract Descriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Description Name --></label>
+        <name>Service_Name_HCPTS__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Contract Type and/or Subtype on Contract Description does not match with values on Contract --></errorMessage>
+        <name>Contract_Type_Subtype_Must_Match</name>
+    </validationRules>
+</CustomObjectTranslation>

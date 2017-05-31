@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżenie medyczne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżenia medyczne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżenie medyczne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżenia medyczne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżenia medycznego</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżeń medycznych</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżeniu medycznemu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżeniom medycznym</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżeniem medycznym</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżeniami medycznymi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżeniu medycznym</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżeniach medycznych</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Spostrzeżenie medyczne</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Spostrzeżenia medyczne</value>
+    </caseValues>
+    <fields>
+        <label>Klient</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Spostrzeżenia medyczne</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Badanie kliniczne</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Spostrzeżenia medyczne</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Opis</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identyfikator referencyjny jednostki</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcja</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Spostrzeżenia medyczne</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Zdarzenie medyczne</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Spostrzeżenia medyczne</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inne źródło</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zastąp blokadę</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publikacja</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Spostrzeżenia medyczne</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Zapisane</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Zatwierdzone</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Podsumowanie</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Odblokuj</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa spostrzeżenia medycznego</nameFieldLabel>
+    <recordTypes>
+        <label>Kluczowe spostrzeżenie medyczne</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Opis jest wymagany w celu zapisania lub przesłania kluczowego spostrzeżenia medycznego</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Podsumowanie jest wymagane w celu zapisania lub przesłania kluczowego spostrzeżenia medycznego</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Zatwierdź</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

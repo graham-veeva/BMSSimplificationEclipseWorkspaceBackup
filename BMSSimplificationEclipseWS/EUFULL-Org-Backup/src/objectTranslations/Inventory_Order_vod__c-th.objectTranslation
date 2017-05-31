@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>คำสั่งซื้อสินค้าคงคลัง</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Address_Line_1_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Address_Line_2_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>อนุมัติโดย</label>
+        <name>Approved_By_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่อนุมัติ</label>
+        <name>Approved_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>อนุมัติแล้ว</label>
+        <name>Approved_vod__c</name>
+    </fields>
+    <fields>
+        <label>ผู้อนุมัติ</label>
+        <name>Approver_User_ID_vod__c</name>
+        <relationshipLabel>คำสั่งซื้อสินค้าคงคลัง (ผู้อนุมัติ)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Carrier --></label>
+        <name>Carrier_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carrier Tracking Number --></label>
+        <name>Carrier_Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>Delivery_Date_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Priority --></label>
+        <name>Delivery_Priority_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Tof Standard Ganztags bis 16:00</masterLabel>
+            <translation><!-- Tof Standard Ganztags bis 16:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof Standard Samstags bis 16:00</masterLabel>
+            <translation><!-- Tof Standard Samstags bis 16:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof Standard Vormittags bis 12:00</masterLabel>
+            <translation><!-- Tof Standard Vormittags bis 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof Vertraulichdienst Ganztags bis 16:00</masterLabel>
+            <translation><!-- Tof Vertraulichdienst Ganztags bis 16:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof Vertraulichdienst Samstag bis 16:00</masterLabel>
+            <translation><!-- Tof Vertraulichdienst Samstag bis 16:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof Vertraulichdienst Vormittags bis 12:00</masterLabel>
+            <translation><!-- Tof Vertraulichdienst Vormittags bis 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof amb conf.</masterLabel>
+            <translation><!-- Tof amb conf. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof amb conf. 12:00</masterLabel>
+            <translation><!-- Tof amb conf. 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tof amb conf. Sat.</masterLabel>
+            <translation><!-- Tof amb conf. Sat. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>early morning</masterLabel>
+            <translation><!-- early morning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>saturday</masterLabel>
+            <translation><!-- saturday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>รหัสประจำสำหรับผู้ใช้ภายนอก</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่สร้างคำสั่งซื้อ</label>
+        <name>Order_Create_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>คำสั่งซื้อสำหรับผู้ใช้</label>
+        <name>Order_For_User_vod__c</name>
+        <relationshipLabel>คำสั่งซื้อสินค้าคงคลัง (คำสั่งซื้อสำหรับผู้ใช้)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Line Status --></label>
+        <name>Order_Line_Status_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>สถานะของคำสั่งซื้อ</label>
+        <name>Order_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>ยกเลิก</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>เสร็จสมบูรณ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Received and Initiated</masterLabel>
+            <translation><!-- Order Received and Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Receipt Confirmation</masterLabel>
+            <translation><!-- Pending Receipt Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_approval_vod</masterLabel>
+            <translation>กำลังรออนุมัติ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>บันทึกแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipment in Transit</masterLabel>
+            <translation><!-- Shipment in Transit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>ส่งแล้ว</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>วันที่ส่งคำสั่งซื้อ</label>
+        <name>Order_Submit_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทคำสั่งซื้อ</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation>ปกติ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special</masterLabel>
+            <translation>พิเศษ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner_Lookup_BMS_CORE --></label>
+        <name>Owner_Lookup_BMS_CORE__c</name>
+        <relationshipLabel><!-- Inventory Orders (Owner_Lookup_BMS_CORE) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pic Doc Number --></label>
+        <name>Pic_Doc_Number_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>จำเป็นต้องมีการอนุมัติ</label>
+        <name>Require_Approval_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Number --></label>
+        <name>SAP_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Number --></label>
+        <name>SAP_Order_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Status --></label>
+        <name>SAP_Order_Status_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To_BMS_CA__c</name>
+        <picklistValues>
+            <masterLabel>Home Address</masterLabel>
+            <translation><!-- Home Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage Locker Location</masterLabel>
+            <translation><!-- Storage Locker Location --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Home Address</masterLabel>
+            <translation><!-- Home Address --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipment Date --></label>
+        <name>Shipment_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <help><!-- (including telephone number) --></help>
+        <label><!-- Special Instructions --></label>
+        <name>Special_Instructions_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>AB</masterLabel>
+            <translation><!-- AB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB</masterLabel>
+            <translation><!-- BB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BW</masterLabel>
+            <translation><!-- BW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BY</masterLabel>
+            <translation><!-- BY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HB</masterLabel>
+            <translation><!-- HB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HE</masterLabel>
+            <translation><!-- HE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HH</masterLabel>
+            <translation><!-- HH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MV</masterLabel>
+            <translation><!-- MV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NB</masterLabel>
+            <translation><!-- NB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NI</masterLabel>
+            <translation><!-- NI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NS</masterLabel>
+            <translation><!-- NS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NT</masterLabel>
+            <translation><!-- NT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NU</masterLabel>
+            <translation><!-- NU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NW</masterLabel>
+            <translation><!-- NW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON</masterLabel>
+            <translation><!-- ON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PE</masterLabel>
+            <translation><!-- PE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QC</masterLabel>
+            <translation><!-- QC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RP</masterLabel>
+            <translation><!-- RP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SH</masterLabel>
+            <translation><!-- SH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK</masterLabel>
+            <translation><!-- SK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SL</masterLabel>
+            <translation><!-- SL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SN</masterLabel>
+            <translation><!-- SN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST</masterLabel>
+            <translation><!-- ST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH</masterLabel>
+            <translation><!-- TH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YT</masterLabel>
+            <translation><!-- YT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ปริมาณรวมคำสั่งซื้อ</label>
+        <name>Total_Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_Link_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>ปลดล็อก</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip_BMS_SHARED__c</name>
+    </fields>
+    <nameFieldLabel><!-- Inventory Order Number --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Inventory Order Canada --></label>
+        <name>Inventory_Order_Canada</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inventory Order - EMEA --></label>
+        <name>Inventory_Order_EMEA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Error: You must enter a value (State) --></errorMessage>
+        <name>BMS_EMEA_State_Not_Blank</name>
+    </validationRules>
+    <webLinks>
+        <label>อนุมัติ</label>
+        <name>Approve_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>ปฏิเสธ</label>
+        <name>Reject_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>บันทึก</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>ส่ง</label>
+        <name>Submit_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>ปลดล็อก</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

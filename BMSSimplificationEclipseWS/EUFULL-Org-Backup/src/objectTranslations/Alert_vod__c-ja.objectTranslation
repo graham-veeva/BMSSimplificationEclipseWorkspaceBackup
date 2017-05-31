@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>警告</value>
+    </caseValues>
+    <fields>
+        <label>有効化日付</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>警告テキスト</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>却下可能</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>有効期限</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>最後に APNS 通知した日時</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>リンク参照ロング</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>リンク参照</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>優先度</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation>重要</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>正常</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>緊急</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>公開</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>APNS 通知ステータス</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>処理済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>キュー処理済み</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>エラー: リンク参照ロングとリンク参照の両フィールドを同じ警告上で作成することはできません。</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

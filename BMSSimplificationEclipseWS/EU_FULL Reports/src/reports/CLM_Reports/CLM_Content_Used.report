@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_43956086</developerName>
+        <masterLabel>Slides</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Call2_vod__c.Number_of_CLM_Slides_Presented_BMS__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>No Slides Presented</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+            </sourceValues>
+            <value>Slides Presented</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Call2_vod__c.Number_of_CLM_Slides_Presented_BMS__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Call2_vod__c.Total_Duration_of_IVA_Presentation_BMS__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Call2_vod__c.Detailed_Products_vod__c</column>
+            <operator>contains</operator>
+            <value>NULOJIX</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_43956086</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CLM - Content Used?</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call2_vod__c@Call2_vod__c.Account_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Assignment_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

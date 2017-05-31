@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Превод на съобщение за правило</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Преводи на съобщения за правила</value>
+    </caseValues>
+    <fields>
+        <help>ISO код на езика за този превод.</help>
+        <label>Език</label>
+        <name>Language_vod__c</name>
+    </fields>
+    <fields>
+        <help>Превод на съобщението за грешка в правило.</help>
+        <label>Превод на съобщението</label>
+        <name>Message_Translation_vod__c</name>
+    </fields>
+    <fields>
+        <help>Препратка към записа на дефиницията на правилото, за което се отнася преведеното съобщение.</help>
+        <label>Дефиниция на правило</label>
+        <name>Rule_Definition_vod__c</name>
+        <relationshipLabel>Преводи на съобщения за правила</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Външен Ид за записа. Форматът е [ИМЕ НА ПРАВИЛО]::[Име на Тип_на_записа]::[Vod_на_език]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Rule Message Translation Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Превод на съобщение за SFDC правило</label>
+        <name>SFDC_Rule_Message_Translation_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BMS CHINA - AE/PQC Report Confirmation Email Template</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>BMS CHINA - AE/PQC Report Conf Mail Template</name>
+    <style>freeForm</style>
+    <subject>AE/Product Problem Report:{!Medical_Inquiry_vod__c.Name} - {!Medical_Inquiry_vod__c.Account_vod__c} - {!Medical_Inquiry_vod__c.CreatedDate}</subject>
+    <textOnly>Dear all,
+
+Please view the Adverse Event/Product Problem Report as below:
+
+Requestor Detail
+Name: {!Medical_Inquiry_vod__c.Account_vod__c}
+Title: {!Medical_Inquiry_vod__c.Title_BMS_CN__c}
+Professional Title: {!Medical_Inquiry_vod__c.Professional_Title_BMS_CN__c}
+Hospital or Organization: {!Medical_Inquiry_vod__c.Hospital_or_Organization_BMS_CN__c}
+Date BMS employee aware of AE: {!Medical_Inquiry_vod__c.Date_BMS_employee_aware_of_AE_BMS_CN__c}
+Will be contacted by BMS safety: {!Medical_Inquiry_vod__c.Is_be_contacted_BMS_CN__c}
+Delivery Method: {!Medical_Inquiry_vod__c.Delivery_Method_vod__c}
+E-mail: {!Medical_Inquiry_vod__c.Email_vod__c}
+Phone: {!Medical_Inquiry_vod__c.BMS_Phone_Number__c}
+Address: {!Medical_Inquiry_vod__c.Address_Line_1_vod__c} {!Medical_Inquiry_vod__c.Address_Line_2_vod__c} {!Medical_Inquiry_vod__c.City_vod__c} {!Medical_Inquiry_vod__c.State_vod__c} {!Medical_Inquiry_vod__c.Zip_vod__c} {!Medical_Inquiry_vod__c.Country_vod__c}
+
+
+Patient Information and Product Information
+Patient Identifier: {!Medical_Inquiry_vod__c.Patient_Initials_BMS_CN__c}
+Age or DOB: {!Medical_Inquiry_vod__c.Age_or_DOB_BMS_CN__c}
+Sex: {!Medical_Inquiry_vod__c.Sex_BMS_CN__c}
+Weight (kg): {!Medical_Inquiry_vod__c.Weight_BMS_CN__c}
+Indication: {!Medical_Inquiry_vod__c.Indication_BMS_CN__c}
+Country of Event: {!Medical_Inquiry_vod__c.Country_of_Event__c}
+Product: {!Medical_Inquiry_vod__c.Product__c}
+Dose&amp;Frequency(e.g 1 mg BD): {!Medical_Inquiry_vod__c.Dose_Frequency_BMS_CN__c}
+Route of Drug Admin: {!Medical_Inquiry_vod__c.Route_of_Drug_Admin_BMS_CN__c}
+Duration of Drug Use (if known): {!Medical_Inquiry_vod__c.Duration_of_Drug_Use_BMS_CN__c}
+
+Adverse Event or Product Quality Problem
+SAE Criteria-Check all that apply:  {!Medical_Inquiry_vod__c.SAE_all_apply_BMS_CN__c}
+Action Taken: {!Medical_Inquiry_vod__c.Clinical_Outcome_BMS_CN__c}
+Product Quality Problem: {!Medical_Inquiry_vod__c.Product_Quality_Problem_BMS_CN__c}
+Onset Date: {!Medical_Inquiry_vod__c.Onset_Date_BMS_CN__c}
+
+If Product Defect selected, please indicate the BATCH NUMBER and DATE OF EXPIRY
+{!Medical_Inquiry_vod__c.Product_info_BMS_CN__c}
+
+Describe Adverse Event, Product Complaint or Product Use Error
+{!Medical_Inquiry_vod__c.Narrative_BMS_CN__c}
+
+Other Relevant History(e.g Prexisting Med Conditions)
+{!Medical_Inquiry_vod__c.Other_Med_His_BMS_CN__c}
+
+Other(Concomitant) Medical Products
+{!Medical_Inquiry_vod__c.Other_Medications_BMS_CN__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

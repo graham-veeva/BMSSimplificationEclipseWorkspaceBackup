@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>產品計劃</value>
+    </caseValues>
+    <fields>
+        <label>啟用中</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>% 已完成</label>
+        <name>Complete__c</name>
+    </fields>
+    <fields>
+        <label>描述</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>詳細資料群組</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>產品計劃 (詳細資料群組)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>產品</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>產品計劃</relationshipLabel>
+    </fields>
+    <fields>
+        <label>狀態</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>已批准</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In  Progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>待處理</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>已拒絕</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Product Plan Name --></nameFieldLabel>
+    <webLinks>
+        <label>更新度量指標</label>
+        <name>Update_Metrics</name>
+    </webLinks>
+</CustomObjectTranslation>

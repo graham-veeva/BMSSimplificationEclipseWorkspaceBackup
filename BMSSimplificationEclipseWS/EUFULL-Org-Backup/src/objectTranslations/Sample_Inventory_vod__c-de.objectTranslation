@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Musterbestand</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Musterbestände</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Musterbestand</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Musterbestände</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Musterbestands</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Musterbestände</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Musterbestand</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Musterbeständen</value>
+    </caseValues>
+    <fields>
+        <label>Prüfung</label>
+        <name>Audit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Employee ID --></label>
+        <name>Employee_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Bestand: Datum</label>
+        <name>Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestand für</label>
+        <name>Inventory_For_vod__c</name>
+        <relationshipLabel>Musterbestände</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Bestand ab: Datum</label>
+        <name>Inventory_From_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestandstyp</label>
+        <name>Inventory_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation>Jährlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close-Out Inventory</masterLabel>
+            <translation>Liquidation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Inventory</masterLabel>
+            <translation>Externer Bestand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Inventory</masterLabel>
+            <translation>Management des Bestands</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>Monatlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>Vierteljährlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Inventory</masterLabel>
+            <translation>ADM Bestand</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year-end</masterLabel>
+            <translation>Jahresende</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Manager des Bestands</label>
+        <name>Manager_Inventory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-Erstellung: Datum/Uhrzeit</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Mobil-Änderung: Datum/Uhrzeit</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <help>Wenn diese Option ausgewählt ist, kann der Benutzer einen Musterbestand speichern/übermitteln, falls keine Musterbestand-Belegposten [Musterchargen] für den Benutzer vorhanden sind.</help>
+        <label>Keine Musterchargen</label>
+        <name>No_Sample_Lots_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vorheriger Bestand: Datum</label>
+        <name>Previous_Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Status</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Gespeichert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Übermittelt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Datum der Übermittlung</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Übermittelt</label>
+        <name>Submitted_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Gesamtbestandsmenge</label>
+        <name>Total_Inventory_Count_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Sperre aufheben</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Inventory Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Externer Bestand</label>
+        <name>External_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Allgemeiner Bestand</label>
+        <name>General_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Management des Bestands</label>
+        <name>Management_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ADM Bestand</label>
+        <name>Rep_Inventory_BMS_US</name>
+    </recordTypes>
+    <webLinks>
+        <label>Speichern</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Übermitteln</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Anggota Tim Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Anggota Tim Account</value>
+    </caseValues>
+    <fields>
+        <label>Rencana Account</label>
+        <name>Account_Plan_vod__c</name>
+        <relationshipLabel>Anggota Tim Account</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Peran</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Executive Sponsor</masterLabel>
+            <translation>Sponsor Eksekutif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Account Manager</masterLabel>
+            <translation>Manajer Account Utama</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Rep</masterLabel>
+            <translation><!-- Sales Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Member</masterLabel>
+            <translation>Anggota Tim</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nama Anggota Tim</label>
+        <name>Team_Member_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anggota Tim</label>
+        <name>Team_Member_vod__c</name>
+        <relationshipLabel>Anggota Tim Account</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Account_Team_Member_vod --></label>
+        <name>Account_Team_Member_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

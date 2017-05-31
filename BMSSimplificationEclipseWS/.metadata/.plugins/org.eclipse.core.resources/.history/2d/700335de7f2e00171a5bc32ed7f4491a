@@ -1,0 +1,3411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>Contract_View_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Contract_View_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contract header to establish an agreement between the company and one or more parties (accounts).</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Specific_Template_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flags a Contract template as associated with a particular account(s).</description>
+        <externalId>false</externalId>
+        <label>Account Specific Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Agreement_ID_HCPTS__c</fullName>
+        <description>Activity Agreement ID</description>
+        <displayFormat>AA-{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Activity Agreement ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Terms_HCPTS__c</fullName>
+        <description>Specify Additional terms to include in Contract text under Additonal Terms section</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Additional terms to include in Contract text under Additonal Terms section</inlineHelpText>
+        <label>Additional Terms to Include</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Payment after Delivery</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Agreement_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flags the Contract record as an Agreement. Records flagged as Agreements do not appear in Order Management and Inventory Monitoring.</description>
+        <externalId>false</externalId>
+        <label>Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BMS_Entity_HCPTS__c</fullName>
+        <description>BMS Entity entering into contract</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Entity</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Batch_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag for contract target batch job.</description>
+        <externalId>false</externalId>
+        <label>Enable Batch</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Call_Objective_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link to the Call Objective from which the contract record was created</description>
+        <externalId>false</externalId>
+        <label>Call Objective</label>
+        <referenceTo>Call_Objective_vod__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Description_Count__c</fullName>
+        <description>Count of Contract Descriptions for Backend Validation Rule</description>
+        <externalId>false</externalId>
+        <label>Contract Description Count</label>
+        <summaryForeignKey>Contract_Description_HCPTS__c.Contract_HCPTS__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Lines_w_Rate_Count_HCPTS__c</fullName>
+        <description>Count of Contract Lines with Rate Information</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Contract Lines with Rate Information</inlineHelpText>
+        <label>Contract Lines With Rate</label>
+        <summaryFilterItems>
+            <field>Contract_Line_vod__c.EM_Rate_vod__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Contract_Line_vod__c.Contract_vod__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Country_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Default_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to make this particuler contract the default one among other valid contracts.</description>
+        <externalId>false</externalId>
+        <label>Default</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Stores and shows the statement describing the contract.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Device_Type_vod__c</fullName>
+        <description>Used to capture the device used to generate the record.</description>
+        <externalId>false</externalId>
+        <label>Device Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Disclaimer_vod__c</fullName>
+        <description>Displays the disclaimer value from the Veeva Message DISCLAIMER in the CONTRACTS category.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Disclaimer</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Employer_Email_HCPTS__c</fullName>
+        <description>Employer Email</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer Email</inlineHelpText>
+        <label>Employer Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Name_HCPTS__c</fullName>
+        <description>Name of Employer hand typed by the user</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Employer hand typed by the user</inlineHelpText>
+        <label>Employer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Signatory_Name_HCPTS__c</fullName>
+        <description>Employer signatory</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Employer signatory</inlineHelpText>
+        <label>Employer Signatory Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Signatory_Title_HCPTS__c</fullName>
+        <description>Signatory Title</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Signatory Title</inlineHelpText>
+        <label>Employer Signatory Title</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date_vod__c</fullName>
+        <description>End date of the contract.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expired_vod__c</fullName>
+        <description>If current date &gt; End_Date_vod__c, the contract is considered expired. Used to facilitate reporting.</description>
+        <externalId>false</externalId>
+        <formula>End_Date_vod__c &lt; TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expired?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID is used for data loading only.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Framework_Agreement_ID_HCPTS__c</fullName>
+        <description>Framework Agreement ID</description>
+        <displayFormat>FA-{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Framework Agreement ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Hide_Employer_Sign_Table_HCPTS__c</fullName>
+        <description>If checked, Employer Signature table is shown in the Contract</description>
+        <externalId>false</externalId>
+        <formula>ISBLANK(Employer_Name_HCPTS__c)</formula>
+        <inlineHelpText>If checked, Employer Signature table is shown in the Contract</inlineHelpText>
+        <label>Hide Employer Sign Table in Contract?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Include_Service_Footnotes_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, footnotes defined in the template will get added to the Services table. For eg: Payment will be made after the delivery of the presentation scheduled following the training</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, footnotes defined in the template will get added to the Services table. For eg: Payment will be made after the delivery of the presentation scheduled following the training</inlineHelpText>
+        <label>Include Service Footnotes</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Information_Collection_Form_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>ICF Lookup</description>
+        <externalId>false</externalId>
+        <label>Information Collection Form</label>
+        <referenceTo>Information_Collection_Form__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Monitoring_Type_vod__c</fullName>
+        <description>Inventory Monitoring record type that the contract is valid for.</description>
+        <externalId>false</externalId>
+        <label>Inventory Monitoring Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Is_Non_standard_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if this is non-standard negotiated contract. All non-standard negotiated contract templates must be approved externally and indicated as such before being able to be sent to the HCP/Payee</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if this is non-standard negotiated contract. All non-standard negotiated contract templates must be approved externally and indicated as such before being able to be sent to the HCP/Payee</inlineHelpText>
+        <label>Is Non-standard?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Template_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this box is checked, when &quot;Setup Contracts &amp; ICF&quot; is clicked, system will populate meta-data elements based on this template (only certain elements are useable; for eg start date &amp; end date is not copied over, speaker is not etc)..Contract descriptions &amp; Fee/Reimbursables are copied over</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Base template used by Setup Contracts/ICF button - Contract descriptions &amp; Fee/Reimbursables are copied over..template recordtype, contract type and subtype must match the actual runtime contract</inlineHelpText>
+        <label>Is Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Batch_Datetime_vod__c</fullName>
+        <description>Last date and time this contract was updated by the batch job.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Batch Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Date_Content_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Location/Date Content</label>
+        <picklist>
+            <controllingField>Service_Subtype_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+                <controllingFieldValues>Advisory Board</controllingFieldValues>
+                <controllingFieldValues>Data Monitoring Committee</controllingFieldValues>
+                <controllingFieldValues>External Presentation (Serial)</controllingFieldValues>
+                <controllingFieldValues>External Presentation (one-time)</controllingFieldValues>
+                <controllingFieldValues>FDA Mock Advisory Committee</controllingFieldValues>
+                <controllingFieldValues>Faculty for Preceptorship</controllingFieldValues>
+                <controllingFieldValues>General Consulting</controllingFieldValues>
+                <controllingFieldValues>Independent Review Committee</controllingFieldValues>
+                <controllingFieldValues>Internal Presentation</controllingFieldValues>
+                <controllingFieldValues>Moderator</controllingFieldValues>
+                <controllingFieldValues>Publication Steering Committee</controllingFieldValues>
+                <controllingFieldValues>Study Steering Committee</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+                <controllingFieldValues>Advisory Board</controllingFieldValues>
+                <controllingFieldValues>Data Monitoring Committee</controllingFieldValues>
+                <controllingFieldValues>External Presentation (Serial)</controllingFieldValues>
+                <controllingFieldValues>External Presentation (one-time)</controllingFieldValues>
+                <controllingFieldValues>FDA Mock Advisory Committee</controllingFieldValues>
+                <controllingFieldValues>General Consulting</controllingFieldValues>
+                <controllingFieldValues>Independent Review Committee</controllingFieldValues>
+                <controllingFieldValues>Internal Presentation</controllingFieldValues>
+                <controllingFieldValues>Moderator</controllingFieldValues>
+                <controllingFieldValues>Publication Steering Committee</controllingFieldValues>
+                <controllingFieldValues>Speaker Training</controllingFieldValues>
+                <controllingFieldValues>Study Steering Committee</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+                <controllingFieldValues>External Presentation (Serial)</controllingFieldValues>
+                <controllingFieldValues>FDA Mock Advisory Committee</controllingFieldValues>
+                <controllingFieldValues>General Consulting</controllingFieldValues>
+                <controllingFieldValues>Independent Review Committee</controllingFieldValues>
+                <controllingFieldValues>Publication Steering Committee</controllingFieldValues>
+                <controllingFieldValues>Study Steering Committee</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+                <controllingFieldValues>External Presentation (Serial)</controllingFieldValues>
+                <controllingFieldValues>FDA Mock Advisory Committee</controllingFieldValues>
+                <controllingFieldValues>General Consulting</controllingFieldValues>
+                <controllingFieldValues>Independent Review Committee</controllingFieldValues>
+                <controllingFieldValues>Publication Steering Committee</controllingFieldValues>
+                <controllingFieldValues>Study Steering Committee</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+                <controllingFieldValues>Speaker Training</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+                <controllingFieldValues>External Presentation (Serial)</controllingFieldValues>
+                <controllingFieldValues>FDA Mock Advisory Committee</controllingFieldValues>
+                <controllingFieldValues>General Consulting</controllingFieldValues>
+                <controllingFieldValues>Independent Review Committee</controllingFieldValues>
+                <controllingFieldValues>Publication Steering Committee</controllingFieldValues>
+                <controllingFieldValues>Study Steering Committee</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+                <controllingFieldValues>Content Preparation and/or Review</controllingFieldValues>
+                <controllingFieldValues>Presentation at a Congress</controllingFieldValues>
+                <controllingFieldValues>Protocol Review</controllingFieldValues>
+                <controllingFieldValues>Recorded Presentation</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add subsequent mtg details later note</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If locked, cannot be edited.</description>
+        <externalId>false</externalId>
+        <label>Lock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Maximum_Events_HCPTS__c</fullName>
+        <defaultValue>1</defaultValue>
+        <description>Delivery of[maximum of #] informational presentation to third parties on behalf of BMS – line will be added if this value is greater than 1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Delivery of[maximum of #] informational presentation to third parties on behalf of BMS – line will be added if this value is greater than 1</inlineHelpText>
+        <label>Maximum # of Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Created_Datetime_vod__c</fullName>
+        <description>Date and time the Contract was created on the mobile device.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile Created Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>System field used by mobile products to aid synchronization.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Last_Modified_Datetime_vod__c</fullName>
+        <description>Date and time the Contract was last modified on the mobile device.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile Last Modified Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>No_Fees_are_to_be_Paid_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if you are not paying any fees</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if you are not paying any fees</inlineHelpText>
+        <label>No Fees are to be Paid</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Non_standard_Contract_Comments__c</fullName>
+        <description>Any comments applicable to this Nonstandard contracts. For eg: Negotiation reason, details, rates as applicable</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Any comments applicable to this Nonstandard contracts. For eg: Negotiation reason, details, rates as applicable</inlineHelpText>
+        <label>Non-standard Contract Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Non_standard_Contract_Template_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Non Standard Contract template that was pre-approved. For eg: Institutional Contracts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Non Standard Contract template that was pre-approved. For eg: Institutional Contracts</inlineHelpText>
+        <label>Pre-approved Template</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>APXTConga4__Conga_Template__c.Is_BMS_Non_std_Contract_Template_HCPTS__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Only Conga templates that have &quot;Is BMS Non-standard Contract Template?&quot; checked are available for selection</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>APXTConga4__Conga_Template__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Non_std_Contract_Approver_HCPTS__c</fullName>
+        <description>Name of the person/authority that approved the use of Non-standard Contract Template</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the person/authority that approved the use of Non-standard Contract Template</inlineHelpText>
+        <label>Non-standard Contract Approver Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Originating_Activity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>EM Activity</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Override_Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This allows a non-Admin User to make changes to a Submitted Contract or Contract Lines without requiring the User to unlock the Order. This is only intended for integration and/or custom pages/coding i.e. not through our Contract User Interface</description>
+        <externalId>false</externalId>
+        <label>Override Lock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product_Bound_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If enabled, only the products associated to this contract via pricing rules will be selectable when creating a new order related to this contract. For inventory monitoring, only products with corresponding Contract Lines can be selected. If disabled, other products will be selectable as well.</description>
+        <externalId>false</externalId>
+        <label>Product Bound</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Related_Framework_Agreement_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For Contract/Service type of Services, an Activity agreement always maps back to a Framework agreement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For Contract/Service type of Services, an Activity agreement always maps back to a Framework agreement</inlineHelpText>
+        <label>Related Framework Agreement (Services)</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>No framework agreements exist for this Speaker</errorMessage>
+            <filterItems>
+                <field>$Source.Speaker_HCPTS__c</field>
+                <operation>equals</operation>
+                <valueField>Contract_vod__c.Speaker_HCPTS__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Contract_vod__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Framework Agreement</value>
+            </filterItems>
+            <infoMessage>Framework Agreements filtered by Speaker</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contract_vod__c</referenceTo>
+        <relationshipLabel>Activity Agreements</relationshipLabel>
+        <relationshipName>ActivityAgreements</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Add a Service Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup Contract Descriptions that match in Contract Type and Contract Subtype. The Service you lookup will be added as a Contract Line item once you click Save.</inlineHelpText>
+        <label>Select a Contract Description</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>No Service Descriptions matching Contract Type and subtype</errorMessage>
+            <filterItems>
+                <field>$Source.Service_Type_HCPTS__c</field>
+                <operation>equals</operation>
+                <valueField>EM_Catalog_vod__c.Service_Type_HCPTS__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>$Source.Service_Subtype_HCPTS__c</field>
+                <operation>equals</operation>
+                <valueField>EM_Catalog_vod__c.Service_Subtype__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>EM_Catalog_vod__c.Category_HCPTS__c</field>
+                <operation>equals</operation>
+                <value>Contract Description</value>
+            </filterItems>
+            <infoMessage>Lookup Contract Descriptions that match in Contract Type and Contract Subtype.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>EM_Catalog_vod__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_Provider_Hourly_Rate_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <formula>Speaker_HCPTS__r.Hourly_Rate_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Provider Hourly Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Subtype_HCPTS__c</fullName>
+        <description>Service subtype</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service subtype</inlineHelpText>
+        <label>Contract Subtype</label>
+        <picklist>
+            <controllingField>Service_Type_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Presentation (one-time)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Presentation (Serial)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Content Preparation and/or Review</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sponsorship</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sponsorship</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exhibits, Booths and Displays</fullName>
+                <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>General Consulting</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Type_HCPTS__c</fullName>
+        <description>Helps categorize a Contract per BMS Service Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Helps categorize a Contract per BMS Service Type</inlineHelpText>
+        <label>Contract Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_Country_Text_HCPTS__c</fullName>
+        <description>Text Country name matching the Speaker country. Country name must match Service Provider Country name for a template to be autoselected for metadata creation</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Text Country name matching the Speaker country. Country name must match Service Provider Country name for a template to be autoselected for metadata creation</inlineHelpText>
+        <label>Service Provider Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speaker_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Provider</label>
+        <referenceTo>EM_Speaker_vod__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sponsorship_Category_HCPTS__c</fullName>
+        <description>Describes the category of Sponsorship if applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Describes the category of Sponsorship if applicable</inlineHelpText>
+        <label>Sponsorship Category (if applicable)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date_vod__c</fullName>
+        <description>Start date of the contract.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Stores and shows the status of the contract.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Saved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Signed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In_Approval_Process_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Activated_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Treatment_HCPTS__c</fullName>
+        <description>Tax Treatment in accordance with Section 2 of the Global Terms and conditions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tax Treatment in accordance with Section 2 of the Global Terms and conditions.</inlineHelpText>
+        <label>Tax Treatment</label>
+        <picklist>
+            <picklistValues>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Template_Name_vod__c</fullName>
+        <description>Name of the Template.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Template Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Template_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flags the Contract record as a Template. Records flagged as Templates do not appear in Order Management and Inventory Monitoring.</description>
+        <externalId>false</externalId>
+        <label>Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_Fees_HCPTS__c</fullName>
+        <description>Sum of total fees</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum of total fees</inlineHelpText>
+        <label>zTotal Fees</label>
+        <summarizedField>Contract_Line_vod__c.Total_Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Contract_Line_vod__c.Service_Category_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Fee, Deduction</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Contract_Line_vod__c.Contract_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Reimbursables_HCPTS__c</fullName>
+        <description>Rollup sum of all Fee reimbursables where  category = &apos;Reimbursable&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rollup sum of all Fee reimbursables where  category = &apos;Reimbursable&apos;</inlineHelpText>
+        <label>Total Reimbursables</label>
+        <summarizedField>Contract_Line_vod__c.Total_Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Contract_Line_vod__c.Service_Category_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Reimbursable</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Contract_Line_vod__c.Contract_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Value__c</fullName>
+        <description>Total Value of Contract where Category = Fees and Deduction (does not include reimbursables)</description>
+        <externalId>false</externalId>
+        <label>Total Contract Value</label>
+        <summarizedField>Contract_Line_vod__c.Total_Value__c</summarizedField>
+        <summaryFilterItems>
+            <field>Contract_Line_vod__c.Service_Category_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Fee, Deduction</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Contract_Line_vod__c.Contract_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payee</label>
+        <referenceTo>EM_Vendor_vod__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Wholesaler_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to associate a particular wholesaler to a contract.</description>
+        <externalId>false</externalId>
+        <label>Wholesaler</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value does not exist or does not match filter criteria.</errorMessage>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Wholesaler_vod</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Contract</label>
+    <listViews>
+        <fullName>Activated</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status_vod__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status_vod__c</field>
+            <operation>equals</operation>
+            <value>Activated_vod</value>
+        </filters>
+        <filters>
+            <field>Is_Template_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Activated</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status_vod__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Contract_Templates</fullName>
+        <columns>NAME</columns>
+        <columns>Country_HCPTS__c</columns>
+        <columns>Service_Type_HCPTS__c</columns>
+        <columns>Service_Subtype_HCPTS__c</columns>
+        <columns>Currency_HCPTS__c</columns>
+        <columns>Contract_Lines_w_Rate_Count_HCPTS__c</columns>
+        <columns>External_ID_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_Template_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Contract Templates</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>In_Draft</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status_vod__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status_vod__c</field>
+            <operation>equals</operation>
+            <value>Draft_vod</value>
+        </filters>
+        <filters>
+            <field>Is_Template_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>In Draft</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Agreement Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contracts</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Activity_Agreement_EBD</fullName>
+        <active>true</active>
+        <description>Activity Agreement for Exhbits &amp; Displays (Events)</description>
+        <label>Activity Agreement for Exhibits &amp; Displays (Events)</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inventory_Monitoring_Type_vod__c</picklist>
+            <values>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Activity_Agreement_Services</fullName>
+        <active>true</active>
+        <description>Activity Agreement for Services (SOW)</description>
+        <label>Activity Agreement for Services (SOW)</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inventory_Monitoring_Type_vod__c</picklist>
+            <values>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add subsequent mtg details later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Activity_Agreement_Sponsorship</fullName>
+        <active>true</active>
+        <description>Activity Agreement for Sponsorship</description>
+        <label>Activity Agreement for Sponsorship</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inventory_Monitoring_Type_vod__c</picklist>
+            <values>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>EM_Speaker_Contract_vod</fullName>
+        <active>true</active>
+        <description>Used to define a contract for speaker services.</description>
+        <label>EM_Speaker_Contract_vod</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inventory_Monitoring_Type_vod__c</picklist>
+            <values>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Activated_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In_Approval_Process_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Framework_Agreement</fullName>
+        <active>true</active>
+        <description>Framework Agreement</description>
+        <label>Framework Agreement</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inventory_Monitoring_Type_vod__c</picklist>
+            <values>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Listing_vod</fullName>
+        <active>true</active>
+        <description>Used for Contracts that will be associated with Inventory Monitoring.</description>
+        <label>Listing_vod</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Activated_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In_Approval_Process_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sales_vod</fullName>
+        <active>true</active>
+        <description>Used for Contracts that will be associated with Orders.</description>
+        <label>Sales_vod</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Activated_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In_Approval_Process_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SponsorshipLetter_HCPTS</fullName>
+        <active>true</active>
+        <description>Contract recordtype for Sponsorship Letter</description>
+        <label>SponsorshipLetter</label>
+        <picklistValues>
+            <picklist>Additional_Terms_HCPTS__c</picklist>
+            <values>
+                <fullName>Payment after Delivery</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>da-DK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>de-DE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-AU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-CA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-GB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-IN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-NZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en-ZA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>es-MX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ja-JP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nb-NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pl-PL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>pt-BR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ru-RU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>zh-HK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Device_Type_vod__c</picklist>
+            <values>
+                <fullName>Data_Load_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WinModern_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inventory_Monitoring_Type_vod__c</picklist>
+            <values>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_Date_Content_HCPTS__c</picklist>
+            <values>
+                <fullName>Add Details communicated later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Not Applicable note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Speaker Training note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add onsite presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add subsequent mtg details later note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual meeting details note</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add virtual presentation delivery note</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype_HCPTS__c</picklist>
+            <values>
+                <fullName>Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sponsorship_Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Direct Sponsorship for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Treatment_HCPTS__c</picklist>
+            <values>
+                <fullName>All payment amounts are exclusive of VAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All payment amounts exclusive of relevant taxes withheld pursuant to Applicable Law</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Start_Date_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Speaker_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Is_Non_standard_HCPTS__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>AA_Start_Date_not_before_or_after_FW</fullName>
+        <active>true</active>
+        <description>Validation to ensure AA (SOW) start date is not before FW start date and cannot be after the End date of FWA</description>
+        <errorConditionFormula>AND ( RecordType.DeveloperName = &apos;Activity_Agreement_Services&apos;,
+  NOT( ISBLANK(Related_Framework_Agreement_HCPTS__c) ),
+ OR (Start_Date_vod__c &lt;  Related_Framework_Agreement_HCPTS__r.Start_Date_vod__c,
+Start_Date_vod__c &gt; Related_Framework_Agreement_HCPTS__r.End_Date_vod__c)
+)</errorConditionFormula>
+        <errorDisplayField>Related_Framework_Agreement_HCPTS__c</errorDisplayField>
+        <errorMessage>Activity Agreement [SOW] start date cannot be prior to the start date of the Framework agreement or after the end date of the Framework Agreement.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_be_No_Fee_w_Rated_Contract_Lines</fullName>
+        <active>true</active>
+        <description>If there are Contract Lines with non-zero Rate information, then you cannot check the &quot;No Fee&quot; check box</description>
+        <errorConditionFormula>AND(Contract_Lines_w_Rate_Count_HCPTS__c &gt; 0, No_Fees_are_to_be_Paid_HCPTS__c )</errorConditionFormula>
+        <errorDisplayField>No_Fees_are_to_be_Paid_HCPTS__c</errorDisplayField>
+        <errorMessage>If there are Contract Lines with non-zero Rate information, then you may not check the &quot;No Fee&quot; check box</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_Date_After_Start_Date</fullName>
+        <active>true</active>
+        <description>End Date must be later than Start Date.</description>
+        <errorConditionFormula>End_Date_vod__c &lt; Start_Date_vod__c</errorConditionFormula>
+        <errorMessage>The End Date cannot be before the Start Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LocationDate_Content_Not_Applicable_1</fullName>
+        <active>false</active>
+        <description>Location/Date Content Not Applicable for Subtype</description>
+        <errorConditionFormula>OR
+(
+  IF(
+      AND(  
+        OR( 
+        TEXT(Service_Subtype_HCPTS__c) = &apos;External Presentation (Serial)&apos;, 
+        TEXT(Service_Subtype_HCPTS__c) = &apos;Independent Review Committee&apos;, 
+        TEXT(Service_Subtype_HCPTS__c) = &apos;Publication Steering Committee&apos;, 
+        TEXT(Service_Subtype_HCPTS__c) = &apos;Study Steering Committee&apos;, 
+        TEXT(Service_Subtype_HCPTS__c) = &apos;FDA Mock Advisory Committee&apos; 
+        ),
+        OR( 
+            NOT(OR(
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add subsequent mtg details later note&apos;) ,
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual presentation delivery note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite presentation delivery note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite meeting details note&apos;)  ,
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual meeting details note&apos;),
+            ISBLANK(Location_Date_Content_HCPTS__c)
+             )),
+            OR(
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Speaker Training note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Details communicated later note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Not Applicable note&apos;)
+           )
+         )           
+       ) ,
+        TRUE,
+        FALSE    
+    ),
+
+  IF(
+      AND(   
+          OR(
+             TEXT(Service_Subtype_HCPTS__c) = &apos;Advisory Board&apos;, 
+             TEXT(Service_Subtype_HCPTS__c) = &apos;Moderator&apos;, 
+             TEXT(Service_Subtype_HCPTS__c) = &apos;Data Monitoring Committee&apos;, 
+             TEXT(Service_Subtype_HCPTS__c) = &apos;External Presentation (one-time)&apos;, 
+             TEXT(Service_Subtype_HCPTS__c) = &apos;Internal Presentation&apos;
+            ), 
+        OR(        
+           NOT(OR(
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite meeting details note&apos;) ,
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual meeting details note&apos;),
+            ISBLANK(Location_Date_Content_HCPTS__c)
+          )),
+           OR(
+
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Speaker Training note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual presentation delivery note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite presentation delivery note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add subsequent mtg details later note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Details communicated later note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Not Applicable note&apos;)
+           )           
+          )
+       ) ,
+        TRUE,
+        FALSE    
+    )
+
+)</errorConditionFormula>
+        <errorDisplayField>Service_Subtype_HCPTS__c</errorDisplayField>
+        <errorMessage>Location/Date Content Not Applicable for given Contract Subtype</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LocationDate_Content_Not_Applicable_2</fullName>
+        <active>false</active>
+        <description>Location/Date Content Not Applicable for Subtype</description>
+        <errorConditionFormula>OR
+(
+  IF( 
+    AND( 
+       OR( 
+           TEXT(Service_Subtype_HCPTS__c) = &apos;Content Preparation and/or Review&apos;, 
+           TEXT(Service_Subtype_HCPTS__c) = &apos;Recorded Presentation&apos;, 
+           TEXT(Service_Subtype_HCPTS__c) = &apos;Protocol Review&apos;, 
+           TEXT(Service_Subtype_HCPTS__c) = &apos;Presentation at a Congress&apos; 
+         ), 
+       OR( 
+           NOT(OR( 
+                   INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Not Applicable note&apos;), 
+                   ISBLANK(Location_Date_Content_HCPTS__c) 
+           )), 
+OR( 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Speaker Training note&apos;), 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Details communicated later note&apos;), 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite meeting details note&apos;) , 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual meeting details note&apos;), 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add subsequent mtg details later note&apos;) , 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual presentation delivery note&apos;), 
+INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite presentation delivery note&apos;) 
+) 
+) 
+) , 
+TRUE, 
+FALSE 
+)
+,
+
+  IF(
+      AND(   
+          TEXT(Service_Subtype_HCPTS__c) = &apos;Speaker Training&apos;, 
+        OR(        
+           NOT(OR(
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual meeting details note&apos;) ,
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Speaker Training note&apos;),
+            ISBLANK(Location_Date_Content_HCPTS__c)
+          )),
+           OR(
+
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite meeting details note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add virtual presentation delivery note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add onsite presentation delivery note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add subsequent mtg details later note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Details communicated later note&apos;),
+            INCLUDES( Location_Date_Content_HCPTS__c, &apos;Add Not Applicable note&apos;)
+           )           
+          )
+       ) ,
+        TRUE,
+        FALSE    
+    )
+
+)</errorConditionFormula>
+        <errorDisplayField>Service_Subtype_HCPTS__c</errorDisplayField>
+        <errorMessage>Location/Date Content Not Applicable for given Contract Subtype</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>NonStdCommentsApproverReqdifNonStdCntrct</fullName>
+        <active>true</active>
+        <description>If &quot;Is Non-standard?&quot; is checked, Non-standard Contract Comments and Approver fields must be populated</description>
+        <errorConditionFormula>AND( Is_Non_standard_HCPTS__c ,
+
+OR(
+ISBLANK( Non_std_Contract_Approver_HCPTS__c ),
+ISBLANK( Non_standard_Contract_Comments__c )
+)
+
+)</errorConditionFormula>
+        <errorDisplayField>Is_Non_standard_HCPTS__c</errorDisplayField>
+        <errorMessage>If &quot;Is Non-standard?&quot; is checked, Non-standard Contract Comments and Approver fields must be populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changes_After_Business_Approval</fullName>
+        <active>false</active>
+        <description>Prevent Activity Agreement changes after Originating Activity is in Planning and before Activiation</description>
+        <errorConditionFormula>and(
+Ispickval(Status_vod__c, &apos;Draft&apos;), 
+ispickval(Originating_Activity__r.Status_vod__c,&apos;In Planning&apos;)
+, 
+ischanged( Contract_Description_Count__c))</errorConditionFormula>
+        <errorMessage>You may not edit the Activity Agreement when the Originating Activity is In Planning</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Activate_vod</fullName>
+        <availability>online</availability>
+        <description>Clicking this button changes a contract&apos;s status to Activated_vod.  The Contract and its related Contract Line items will also be locked.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Activate</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+
+var record = sforce.connection.query(&quot;SELECT Id FROM Contract_vod__c WHERE Id = &apos;{!Contract_vod__c.Id}&apos;&quot;).getArray(&quot;records&quot;)[0];
+record.Status_vod__c = &apos;Activated_vod&apos;;
+
+var result = sforce.connection.upsert(&quot;Id&quot;, [record]);
+
+if(result[0].success === &quot;false&quot;) {
+    var error = result[0].errors;
+    alert(error.message);
+} else {
+    window.location.reload();
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Initiate_Contract_HCPTS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Framework Agreement</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com?sessionId={!API.Session_ID}&amp;serverUrl={!API.Partner_Server_URL_290}&amp;id={!Contract_vod__c.Id}&amp;ESVisible=1
+&amp;QueryId=[ContractAccount]a4yZ00000000loyIAA?pv0={!Contract_vod__c.Speaker_HCPTSId__c },[ContractICF]a4yZ00000000lp3IAA?pv0={!Contract_vod__c.Vendor_HCPTSId__c}
+&amp;DefaultPDF=1
+&amp;OFN=BMS+Framework+Agreement-+{!Contract_vod__c.Name}+-+{!TEXT(YEAR(TODAY()))}-{!LPAD(TEXT(MONTH(TODAY())),2,&quot;0&quot;)}-{!LPAD(TEXT(DAY(TODAY())),2,&quot;0&quot;)}
+&amp;TemplateId=a4zZ00000000Sf2
+&amp;TemplateGroup=FrameworkAgreement
+&amp;ESVisible=1
+&amp;ESCustomField=Contract_HCPTS__c
+&amp;ESCustomFieldValue={!Contract_vod__c.Id}
+&amp;ESSignatureType=2
+&amp;ESRemindRecipient=2
+&amp;DS7=4</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Unlock_vod</fullName>
+        <availability>online</availability>
+        <description>Clicking this button sets the Lock_vod value to FALSE on both the Contract and related Contract Lines, and sets Status_vod to Draft_vod.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Unlock</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/28.0/connection.js&quot;)}
+
+var record = sforce.connection.query(&quot;SELECT Id FROM Contract_vod__c WHERE Id = &apos;{!Contract_vod__c.Id}&apos;&quot;).getArray(&quot;records&quot;)[0];
+record.Lock_vod__c = &apos;false&apos;;
+
+var result = sforce.connection.upsert(&quot;Id&quot;, [record]);
+
+if(result[0].success === &quot;false&quot;) {
+    var error = result[0].errors;
+    alert(error.message);
+} else {
+    window.location.reload();
+}</url>
+    </webLinks>
+</CustomObject>

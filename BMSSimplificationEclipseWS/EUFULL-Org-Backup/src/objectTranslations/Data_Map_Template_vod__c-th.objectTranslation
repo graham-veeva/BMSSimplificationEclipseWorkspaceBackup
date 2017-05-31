@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>เท็มเพลตการแม็พข้อมูล</value>
+    </caseValues>
+    <fields>
+        <label>ใช้งานอยู่</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>กลุ่ม</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>เลเบลคอลัมน์</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>ถ้าไฟล์มีเลเบลคอลัมน์เป็นบรรทัดแรกสำหรับเท็มเพลตนี้ ให้ทำเครื่องหมายกล่องนี้</help>
+        <label>รวมเลเบลคอลัมน์</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>มีเป้าหมาย?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>ตำแหน่งจุดทศนิยม</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>เมื่อต้องการใช้เปิดใช้งานรายงานวิเคราะห์ตลาดการขาย ให้กำหนดเฉพาะไฟล์ข้อมูลการขายเดียวของสเกลรายเดือน ข้อมูลการขายต้องมี ID ผู้สั่งยา, ID ตลาด, ID กลุ่มผลิตภัณฑ์</help>
+        <label>เปิดใช้งานรายงานวิเคราะห์ตลาดการขาย</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>เปิดใช้งานสำหรับออฟไลน์</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>ตำรับยาสำหรับเลเบล Rep</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>เลเบลคอลัมน์แรก</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>ไม่มี</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>เลเบลคอลัมน์ที่สอง</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ประเภทโหลดแบบส่วนเสริม</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>สมบูรณ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>ส่วนเพิ่ม</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>บางส่วน</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ส่วนเสริม</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>แม็พการตลาด?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>ลบล้างเธรชโฮลด์แอคเคาต์</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>แม็พ ผู้ชำระ/แผนงาน?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>สเกล</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>รายเดือน</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>รายสัปดาห์</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>เลเบลคอลัมน์ที่สอง</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>รวมชื่อขอบเขต?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>โปรดเลือกค่ารายการเลือกที่ถูกต้อง  ถ้ากำลังโหลดข้อมูล ให้แน่ใจว่าคุณใช้ค่ารายการเลือกหลัก ไม่ใช่เลเบลที่แปล</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>รายงานวิเคราะห์ตลาดการขายสามารถเลือกได้ก็ต่อเมื่อสเกลที่เลือกคือ รายเดือน และไม่เลือกกล่องกาเครื่องหมาย การแม็พผู้ชำระ/แผนงาน</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ให้แน่ใจว่าเลเบลคอลัมน์ไม่มีอักขระต่อไปนี้: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>จำนวนจุดทศนิยมต้องเป็น 0 - 4</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดเลือกค่ารายการเลือกที่ถูกต้อง ถ้ากำลังโหลดข้อมูล ให้แน่ใจว่าคุณใช้ค่ารายการเลือกหลัก ไม่ใช่เลเบลที่แปล</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

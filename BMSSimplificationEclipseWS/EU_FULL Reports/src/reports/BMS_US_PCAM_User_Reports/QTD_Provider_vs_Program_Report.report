@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Account_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Channel_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Topic_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Number_of_Attendees_BMS__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Call2_vod__c.Call_Activity_Description_BMS_US__c</column>
+            <operator>equals</operator>
+            <value>Provider,LNL Program</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Call2_vod__c.Call_Activity_Description_BMS_US__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>QTD Provider vs. Program Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call2_vod__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Call_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CURRENTQ</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Sortiment</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Sortimenty</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Sortiment</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Sortimenty</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Sortimentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Sortimentů</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Sortimentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Sortimentům</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Sortimentem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Sortimenty</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Sortimentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Sortimentech</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Sortimente</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Sortimenty</value>
+    </caseValues>
+    <fields>
+        <label>Skupina účtů</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ záznamu účtu</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Lékárna</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Velkoobchodník</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Všechny ostatní</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skupina sortimentu</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum ukončení</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externí ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ záznamu sledování inventáře</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Sledování inventáře</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Typ záznamu objednávky</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Přímý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Přenos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produkt vázán</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum zahájení</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Název</nameFieldLabel>
+    <recordTypes>
+        <label>Sortiment IM</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sortiment správy objednávek</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Datum zahájení po datu ukončení</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sortiment vázaný k produktu nemůže mít zobrazenu část All Others (Všechny ostatní).</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Náhled</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

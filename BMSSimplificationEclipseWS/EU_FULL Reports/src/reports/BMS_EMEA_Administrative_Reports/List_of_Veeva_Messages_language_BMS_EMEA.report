@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Message_vod__c$Category_vod__c</field>
+    </columns>
+    <columns>
+        <field>Message_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Message_vod__c$Text_vod__c</field>
+    </columns>
+    <description>List of Veeva Messages per language.</description>
+    <filter>
+        <criteriaItems>
+            <column>Message_vod__c$Active_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Message_vod__c$Type_vod__c</column>
+            <operator>equals</operator>
+            <value>Label_vod,Label</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Message_vod__c$Language_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>List of Veeva Messages per language</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Veeva_Messages_BMS_EMEA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Message_vod__c$Category_vod__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Message_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

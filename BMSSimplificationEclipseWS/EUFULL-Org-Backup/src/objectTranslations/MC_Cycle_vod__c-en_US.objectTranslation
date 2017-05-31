@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MC Cycle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MC Cycles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activate Edited Goals --></label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true and pull-through fields exist on the MC_Target_vod object, when the MCCP integration runs it will populate the pull-through fields. It is not advised to set this often, only when pull-through values are needed to be populated. --></help>
+        <label><!-- Calculate Pull Through --></label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over Reached Threshold --></label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Completed</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>In Progress</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Planned</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Under Reached Threshold --></label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <recordTypes>
+        <label>Cycle Definition</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Start Date cannot be greater than or equal to the End Date. --></errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

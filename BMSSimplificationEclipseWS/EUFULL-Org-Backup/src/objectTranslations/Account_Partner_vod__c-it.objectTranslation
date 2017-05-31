@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner account</value>
+    </caseValues>
+    <fields>
+        <label>ID partner account</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Partner account</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Contratto</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Partner account</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Predefinito</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID cellulare</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo di ordine</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Diretto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Trasferimento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Priorità</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grossista</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Località di consegna</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Pagante</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Libro prezzi</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Grossista</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Account necessario.</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

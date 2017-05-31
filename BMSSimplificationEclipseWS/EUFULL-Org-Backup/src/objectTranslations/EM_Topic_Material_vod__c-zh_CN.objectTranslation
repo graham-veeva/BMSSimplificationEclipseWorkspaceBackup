@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>主题材料</value>
+    </caseValues>
+    <fields>
+        <label>CLM 演示</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>主题材料</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>电子邮件模板</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>主题材料</relationshipLabel>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>材料类型</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>材料</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>主题使用的材料</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>主题</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>主题材料（主题）</relationshipLabel>
+    </fields>
+    <nameFieldLabel>名称</nameFieldLabel>
+    <recordTypes>
+        <label>主题材料</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>单一规则不能同时填充电子邮件模板和 CLM 演示。请为这两个项目创建单独规则。</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>单一主题材料不能同时填充材料和 CLM 演示。请为这两个项目创建单独规则。</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>同一主题材料不能同时设置材料和电子邮件模板。请为这两个项目创建单独的规则。</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

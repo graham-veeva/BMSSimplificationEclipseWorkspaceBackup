@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuration d&apos;objet VMobile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurations d&apos;objets VMobile</value>
+    </caseValues>
+    <fields>
+        <label>Champ de recherche de compte</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Actif</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom d&apos;objet enfant</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relation enfant</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Périphérique</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation>Tablette</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Activez cette option pour forcer l&apos;actualisation des objets utilisant un modèle de partage privé ou ceux dont la clause WHERE a été mise à jour. Cette opération risque de rallonger la durée de la synchronisation.</help>
+        <label>Activer la synchronisation avancée</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>Exclure la liste des champs</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>Limiter les champs à une liste</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>Incluez des informations sur les pièces jointes lors de la synchronisation de l&apos;objet.</help>
+        <label>Inclure des pièces jointes</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inclure les objets associés</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>Métadonnées uniquement</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom d&apos;objet</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom d&apos;objet parent</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profil</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom de profil</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Champ de relation</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nom de relation</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>Ligne parent et enfant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>Synchronisation complète</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>Associé au niveau maximal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>Niveau maximal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Clause WHERE</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label>TABLETTE</label>
+        <name>TABLET</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Le nom de l&apos;objet doit être spécifié.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le nom de l&apos;objet parent et le nom de la relation doivent être spécifiés sur les VMOC qui se rapportent à un objet de niveau principal</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

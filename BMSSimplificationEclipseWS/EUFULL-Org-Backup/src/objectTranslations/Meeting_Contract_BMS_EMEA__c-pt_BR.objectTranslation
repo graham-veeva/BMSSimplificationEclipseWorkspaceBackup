@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <fields>
+        <help>Detalhes dos contratos modelo a serem utilizados para esta actividade</help>
+        <label>Contrato</label>
+        <name>Contract_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Meeting --></label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Reuniões org.força vendas etapa original</label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Reunião</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Contratos da reunião</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Referência número</label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Meeting Contract Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Contrato da reunião</label>
+        <name>BMS_EMEA_Meeting_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contrato da reunião Pós-execução</label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contrato da reunião Pós-execução PTA</label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec_PTA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Não está autorizado a alterar nenhum campo, porque é co-autor.</errorMessage>
+        <name>BMS_EMEA_FFM_Contract_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Os contratos criados durante o planeamento da reunião não podem ser modificados na fase pós-execução. Por favor Cancelar.</errorMessage>
+        <name>BMS_EMEA_PlanContractsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label>Novo Contrato</label>
+        <name>New_Contract_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

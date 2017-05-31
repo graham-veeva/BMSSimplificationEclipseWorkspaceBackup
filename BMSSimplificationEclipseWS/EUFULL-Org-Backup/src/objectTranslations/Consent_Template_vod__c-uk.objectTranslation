@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Шаблон згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Шаблони згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Шаблон згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Шаблони згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Шаблона згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Шаблонів згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Шаблону згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Шаблонам згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Шаблоном згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Шаблонами згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Шаблоні згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Шаблонах згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Шаблон згоди</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Шаблони згоди</value>
+    </caseValues>
+    <fields>
+        <label>Календарна дата набрання чинності</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата закінчення</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Поріг закінчення терміну</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип закінчення терміну</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Календар</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Час дії</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Дата початку</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Назва шаблону</nameFieldLabel>
+    <recordTypes>
+        <label>Шаблон згоди на зразки</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Календарна дата набрання чинності потрібна, якщо встановлений Календарний тип закінчення терміну</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Відсутні обов&apos;язкові поля</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Дата закінчення має бути пізніше Дати початку</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

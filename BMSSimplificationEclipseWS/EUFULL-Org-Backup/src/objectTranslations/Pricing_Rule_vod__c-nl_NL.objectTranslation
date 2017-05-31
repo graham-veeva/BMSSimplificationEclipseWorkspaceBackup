@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prijsregel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prijsregels</value>
+    </caseValues>
+    <fields>
+        <label>Accountgroep</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Account</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Prijsregels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Actief</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Operator kettingregel</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>EN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>OF</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kettingregel</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vergelijkingsproduct</label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel>Prijsregels (vergelijkingsproduct)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Type vergelijking</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Lijstwaarde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation>Nettowaarde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Producthoeveelheid</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Prijsregels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kruisproductregel</label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum levering</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leverorder</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Startdatum levering</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Max overschrijving korting</label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Overschrijving korting</label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label>Korting</label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Max vrije goederen</label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Max. percentage vrije goederen</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Percentage vrije goederen</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vrije goederen</label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>Op basis van limiet</label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prijslijstprijs</label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Minimum levertijd</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label>Min nettoprijs</label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nettoprijs</label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ordercampagne</label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel>Prijsregels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Betalingsmax</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Betaling</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prijslijst</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prijsgroep</label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type productvergelijking</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Lijstwaarde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Producthoeveelheid</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Productmaximum</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Productminimum</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Product</label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Prijsregels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Maximumhoeveelheid</label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Minimumhoeveelheid</label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Regelbeschrijving</label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Voorgestelde retailprijs</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Suggestietekst</label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Suggestiedrempel</label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Regel merkniveau</label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Leverperiode</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kortingregel</label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel percentage vrije goederen</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel vrije goederen</label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Limietregel</label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel prijslijstprijs</label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Betalingsvoorwaardenregel</label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel productgroepsniveau</label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Geef een account of een accountgroep op, niet beide.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producttype &apos;Detail&apos; is toegestaan</errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kettingregel en kruisproductregel mogen niet beide zijn geselecteerd</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vergelijkingsproduct moet leeg zijn</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kettingregel mag niet gelijk zijn aan leverorder</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kettingregel mag geen grenzen hebben.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kettingregel-operator moet AND of OR zijn</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Product moet een waarde hebben en mag niet gelijk zijn aan pakketitem</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>De maximumhoeveelheid moet groter zijn dan de minimumhoeveelheid.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vergelijkingstype &apos;Nettowaarde&apos; wordt niet ondersteund.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Korting mag niet negatief zijn.</errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Limietregels voor leverorder kunnen geassocieerd worden met een bepaald product.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen limietregels kunnen worden gevlagd als leverorder.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>De startdatum van een levering mag niet later zijn dan de einddatum.</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Als producttype = ‘Order’, moeten de start- en einddatum van de levering gevuld zijn</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Product kan leeg zijn of van type &apos;Order&apos;</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Startdatum van de levering moet gelijk zijn aan of later zijn dan de startdatum van de regel</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Product kan leeg zijn of van type &apos;Order&apos; en &apos;Pakketitem&apos;</errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max overschrijving korting is lager dan Korting</errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Begindatum is later dan einddatum</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max. percentage vrije goederen kan niet worden gevuld voor reguliere regels vrije goederen</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vergelijkingstype &apos;Lijstwaarde&apos; wordt niet ondersteund.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max vrije goederen wordt niet ondersteund.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producttype &apos;Order&apos; of &apos;Pakketitem&apos; is toegestaan.</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max vrije goederen is lager dan Vrije goederen</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Pakketitem is niet toegestaan in Kruisproductkorting</errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Product kan leeg zijn of van type &apos;Order&apos;, &apos;Detail&apos;, &apos;Product_Group&apos; en &apos;Pakketitem&apos;</errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producttype &apos;Order&apos; en &apos;Pakketitem&apos; zijn toegestaan</errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>De maximumhoeveelheid moet groter zijn dan de minimumhoeveelheid.</errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Als minimum levertijdsbestek gevuld is, moeten de startdatum en de einddatum van de levering leeg zijn</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Als minimum levertijdsbestek gevuld is, moet Product_vod leeg zijn</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Nettoprijs en Overschrijving korting allemaal aanwezig</errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Min nettoprijs is groter dan Nettoprijs</errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Betalingsvoorwaardenregel ondersteunt geen Kruisproductkorting.</errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Betalingsvoorwaardenregel ondersteunt geen producttype Pakketitem.</errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producttype &apos;Order&apos;, &apos;Detail&apos;, [leeg] of &apos;Productgroep&apos; is toegestaan Als het product niet leeg is, moet het vakje Kruisproductregel zijn ingeschakeld.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Geldig type productvergelijking vereist</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Product mag niet hetzelfde zijn als Vergelijkingsproduct en mag niet leeg zijn.</errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producttype &apos;Productgroep&apos; is toegestaan</errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Productminimum of productmaximum vereist</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

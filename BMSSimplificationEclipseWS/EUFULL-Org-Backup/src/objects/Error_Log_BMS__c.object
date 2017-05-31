@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Error Log entries for BMS web services integration.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Error_Details__c</fullName>
+        <description>Actual System Error</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Actual System Error</inlineHelpText>
+        <label>Error Details</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>15</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Error__c</fullName>
+        <description>BMS-friendly Error Message</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Error Message</inlineHelpText>
+        <label>Error</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Populate this with account id</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Populate this with account id.</inlineHelpText>
+        <label>External ID</label>
+        <length>25</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Error Logs (Related Account)</relationshipLabel>
+        <relationshipName>Error_Logs1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Address__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Address to which this error belongs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Address to which this error belongs.</inlineHelpText>
+        <label>Related Address</label>
+        <referenceTo>Address_vod__c</referenceTo>
+        <relationshipLabel>Error Logs</relationshipLabel>
+        <relationshipName>Error_Logs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Resolved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will be automatically checked if the error is resolved.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will be automatically checked if the error is resolved.</inlineHelpText>
+        <label>Resolved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Error Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Resolved__c</columns>
+        <columns>Error__c</columns>
+        <columns>Error_Details__c</columns>
+        <columns>Related_Account__c</columns>
+        <columns>Related_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Non_Integration_Error_Logs</fullName>
+        <columns>NAME</columns>
+        <columns>Error__c</columns>
+        <columns>Error_Details__c</columns>
+        <columns>External_ID__c</columns>
+        <columns>Resolved__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Error_Log_BMS__c.general</value>
+        </filters>
+        <label>Non Integration Error Logs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Un_Resolved_Integration_Error_Logs</fullName>
+        <columns>NAME</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Resolved__c</columns>
+        <columns>Related_Account__c</columns>
+        <columns>Related_Address__c</columns>
+        <columns>Error_Details__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Resolved__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Error_Log_BMS__c.integration</value>
+        </filters>
+        <label>Unresolved Integration Error Logs</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>E-{000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Error Logs</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>general</fullName>
+        <active>true</active>
+        <description>Record type used for general errors</description>
+        <label>general</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>integration</fullName>
+        <active>true</active>
+        <description>Record type used for integration errors</description>
+        <label>integration</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Re_Submit_to_BMS_CM</fullName>
+        <availability>online</availability>
+        <description>Re-submitts the current address/account shown in the error record to BMS CM.</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>200</height>
+        <isResizable>false</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Re-Submit to BMS CM</masterLabel>
+        <openType>newWindow</openType>
+        <page>ResubmitBMSCMRequest</page>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <width>250</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Re_Submit_to_BMS_CM_CORE</fullName>
+        <availability>online</availability>
+        <description>Re-submits the current address/account shown in the error record to BMS CM.</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>200</height>
+        <isResizable>false</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Re-Submit to BMS CM_CORE</masterLabel>
+        <openType>newWindow</openType>
+        <page>ResubmitBMSCMRequest_CORE</page>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <width>250</width>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Giao dịch ngân sách theo lãnh thổ</value>
+    </caseValues>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngân sách lãnh thổ</label>
+        <name>Territory_Budget_vod__c</name>
+        <relationshipLabel>Giao dịch ngân sách lãnh thổ</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày giao dịch</label>
+        <name>Transaction_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giá trị</label>
+        <name>Value_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Territory Budget Transaction Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Không thể tạo giao dịch cho ngân sách không hoạt động</errorMessage>
+        <name>VEEVA_ACTIVE_BUDGET_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

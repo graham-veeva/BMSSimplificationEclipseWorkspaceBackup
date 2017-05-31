@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>แผนผลิตภัณฑ์</value>
+    </caseValues>
+    <fields>
+        <label>ใช้งานอยู่</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>% เสร็จสิ้น</label>
+        <name>Complete__c</name>
+    </fields>
+    <fields>
+        <label>คำอธิบาย</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>กลุ่มรายละเอียด</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>แผนงานผลิตภัณฑ์ (กลุ่มรายละเอียด)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ผลิตภัณฑ์</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>แผนผลิตภัณฑ์</relationshipLabel>
+    </fields>
+    <fields>
+        <label>สถานะ</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>อนุมัติแล้ว</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In  Progress</masterLabel>
+            <translation>กำลังดำเนินการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>ค้างอยู่</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>ถูกปฏิเสธ</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Product Plan Name --></nameFieldLabel>
+    <webLinks>
+        <label>อัพเดตเมทริก</label>
+        <name>Update_Metrics</name>
+    </webLinks>
+</CustomObjectTranslation>

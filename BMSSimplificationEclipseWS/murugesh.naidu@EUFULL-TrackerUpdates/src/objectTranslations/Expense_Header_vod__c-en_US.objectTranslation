@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expense</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity Agreement --></label>
+        <name>Activity_Agreement_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated by SAP in funding currency --></help>
+        <label><!-- Actual Amount in Funding Currency --></label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed Amount in Requested Currency --></label>
+        <name>Committed_Requested_Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated by SAP in funding currency --></help>
+        <label><!-- Committed Amount in Funding Currency --></label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Code --></label>
+        <name>Company_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Invoice Group --></label>
+        <name>Conga_Invoice_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Name --></label>
+        <name>Contract_Party_Name_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Center Code --></label>
+        <name>Cost_Center_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_vod__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Type --></label>
+        <name>Document_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Invoice - Fixed Fees</masterLabel>
+            <translation><!-- Invoice - Fixed Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice - Hourly Fees</masterLabel>
+            <translation><!-- Invoice - Hourly Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice - Reimbursable Expenses Only</masterLabel>
+            <translation><!-- Invoice - Reimbursable Expenses Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Canceled --></label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Recordtype Dev Name --></label>
+        <name>Event_Recordtype_Dev_Name_Simple_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event_vod__c</name>
+        <relationshipLabel><!-- Expenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- # of Expense Line Items --></label>
+        <name>Expense_Line_Items_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Invoice Validation --></label>
+        <name>Generate_Invoice_Validation_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generate Invoice --></label>
+        <name>Generate_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Account) --></label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel><!-- Expenses (Incurred Expense (Account)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Attendee) --></label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel><!-- Expenses (Incurred Expense (Attendee)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Service Provider) --></label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel><!-- Expenses (Incurred Expense (Service Provider)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Team Member) --></label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel><!-- Expenses (Incurred Expense (Team Member)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Vendor) --></label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel><!-- Expenses (Incurred Expense (Vendor)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Venue) --></label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel><!-- Expenses (Incurred Expense (Venue)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Service Provider --></label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yes/No, based on Payee&apos;s ERS Value --></help>
+        <label><!-- Invoice? --></label>
+        <name>Invoice_Simple_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>Last_Modified_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material Group --></label>
+        <name>Material_Group__c</name>
+        <picklistValues>
+            <masterLabel>HCPT01</masterLabel>
+            <translation><!-- HCPT01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT02</masterLabel>
+            <translation><!-- HCPT02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPT03</masterLabel>
+            <translation><!-- HCPT03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS04</masterLabel>
+            <translation><!-- IMMS04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS22</masterLabel>
+            <translation><!-- IMMS22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS23</masterLabel>
+            <translation><!-- IMMS23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMMS25</masterLabel>
+            <translation><!-- IMMS25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISVO06</masterLabel>
+            <translation><!-- ISVO06 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- OriginatingSystemReferenceID --></label>
+        <name>OriginatingSystemReferenceID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Lock --></label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Create Date --></label>
+        <name>PO_Create_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee (Account) --></label>
+        <name>Payee_Account_vod__c</name>
+        <relationshipLabel><!-- Expenses (Payee (Account)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee (Attendee) --></label>
+        <name>Payee_Attendee_vod__c</name>
+        <relationshipLabel><!-- Expenses (Payee (Attendee)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee (Service Provider) --></label>
+        <name>Payee_Speaker_vod__c</name>
+        <relationshipLabel><!-- Expenses (Payee (Service Provider)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee (Team Member) --></label>
+        <name>Payee_Team_Member_vod__c</name>
+        <relationshipLabel><!-- Expenses (Payee (Team Member)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee Lookup --></label>
+        <name>Payee_Vendor_vod__c</name>
+        <relationshipLabel><!-- Expenses (Payee Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee (Venue) --></label>
+        <name>Payee_Venue_vod__c</name>
+        <relationshipLabel><!-- Expenses (Payee (Venue)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee --></label>
+        <name>Payee_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Due Date --></label>
+        <name>Payment_Due_Date_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Payment Requested will trigger the payment to the HCP!
+Manual Payment Entry should only be used for documentation only. This will not trigger an interface update. --></help>
+        <label><!-- Payment Status --></label>
+        <name>Payment_Status_HCPTS_S1__c</name>
+        <picklistValues>
+            <masterLabel>Manual Payment Entry</masterLabel>
+            <translation><!-- Manual Payment Entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Pending</masterLabel>
+            <translation><!-- Payment Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Processed</masterLabel>
+            <translation><!-- Payment Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Requested</masterLabel>
+            <translation><!-- Payment Requested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plant Code Name --></label>
+        <name>Plant_Code_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Coordinator ID --></label>
+        <name>Processor_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Set by SAP nightly process --></help>
+        <label><!-- PO#/Concur ID --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Purchase Org --></label>
+        <name>Purchase_Org_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Currency --></label>
+        <name>Requested_Currency_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BRL</masterLabel>
+            <translation><!-- BRL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPY</masterLabel>
+            <translation><!-- JPY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEK</masterLabel>
+            <translation><!-- SEK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Company Code --></label>
+        <name>SAP_Company_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Cost Center Code --></label>
+        <name>SAP_Cost_Center_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP WBS Code --></label>
+        <name>SAP_WBS_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC ID --></label>
+        <name>SFDC_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Lines? --></label>
+        <name>Split_Lines_vod__c</name>
+        <picklistValues>
+            <masterLabel>No_vod</masterLabel>
+            <translation>No</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes_vod</masterLabel>
+            <translation>Yes</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Concur Completed</masterLabel>
+            <translation><!-- Concur Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concur Pending</masterLabel>
+            <translation><!-- Concur Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Cancelled</masterLabel>
+            <translation><!-- PO Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Created</masterLabel>
+            <translation><!-- PO Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Pending</masterLabel>
+            <translation><!-- PO Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Requested</masterLabel>
+            <translation><!-- PO Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Updated</masterLabel>
+            <translation><!-- PO Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid_in_Full_vod</masterLabel>
+            <translation>Paid in Full</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_Payment_vod</masterLabel>
+            <translation>Partial Payment</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for SAP</masterLabel>
+            <translation><!-- Ready for SAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid_vod</masterLabel>
+            <translation>Unpaid</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax Code --></label>
+        <name>Tax_Code_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BA - BE 21%</masterLabel>
+            <translation><!-- BA - BE 21% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE - BE 0% Domestic</masterLabel>
+            <translation><!-- BE - BE 0% Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BQ - BE 0% EU Reverse Charge</masterLabel>
+            <translation><!-- BQ - BE 0% EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BR - BE - 0% Non-EU Reverse Charge</masterLabel>
+            <translation><!-- BR - BE - 0% Non-EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BZ - BE 0% Charities</masterLabel>
+            <translation><!-- BZ - BE 0% Charities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EZ - ES - 0% Domestic</masterLabel>
+            <translation><!-- EZ - ES - 0% Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FZ - FR - 0% Domestic</masterLabel>
+            <translation><!-- FZ - FR - 0% Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IW - IT - 0% Domestic</masterLabel>
+            <translation><!-- IW - IT - 0% Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA - ES - 21%</masterLabel>
+            <translation><!-- PA - ES - 21% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA - FR - 20%</masterLabel>
+            <translation><!-- PA - FR - 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA - IT - 22%</masterLabel>
+            <translation><!-- PA - IT - 22% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PE - UK - 0% Domestic</masterLabel>
+            <translation><!-- PE - UK - 0% Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PG - UK - 20%</masterLabel>
+            <translation><!-- PG - UK - 20% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA - ES - 21% EU Reverse Charge</masterLabel>
+            <translation><!-- QA - ES - 21% EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QB - ES - 21% Non-EU Reverse Charge</masterLabel>
+            <translation><!-- QB - ES - 21% Non-EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA - FR - 20% EU Reverse Charge</masterLabel>
+            <translation><!-- RA - FR - 20% EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RA - IT - 21% EU Reverse Charge</masterLabel>
+            <translation><!-- RA - IT - 21% EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RD - UK - EU Reverse Charge</masterLabel>
+            <translation><!-- RD - UK - EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA - FR - 20% Non-EU Reverse Charge</masterLabel>
+            <translation><!-- SA - FR - 20% Non-EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA - IT - 22% Non-EU Reverse Charge</masterLabel>
+            <translation><!-- SA - IT - 22% Non-EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SB - UK - Non-EU Reverse Charge</masterLabel>
+            <translation><!-- SB - UK - Non-EU Reverse Charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YA - FR - 20% Claim at payment</masterLabel>
+            <translation><!-- YA - FR - 20% Claim at payment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax Market --></label>
+        <name>Tax_Market_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Belgium</masterLabel>
+            <translation><!-- Belgium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation><!-- Spain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the Payee is VAT Liable --></help>
+        <label><!-- VAT Liable? --></label>
+        <name>VAT_Liable_Simple_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Vendor ID --></label>
+        <name>Vendor_ID_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Vendor ID (from Contract) --></label>
+        <name>Vendor_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Mat. Group Concat --></label>
+        <name>Vendor_Mat_Group_Concat_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- WBS Code --></label>
+        <name>WBS_Code_HCPTS__c</name>
+    </fields>
+    <recordTypes>
+        <label>Activity Expense Header</label>
+        <name>Event_Expense_Header_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simple Expense Header --></label>
+        <name>Simple_Expense_Header</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Event Team Member --></label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the Expense once it has been Requested. --></errorMessage>
+        <name>Cannot_Edit_Expense_Header</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the expense header after the PO has been created and Payment has been requested. --></errorMessage>
+        <name>Cannot_Edit_Expense_Header_after_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a valid Material Group --></errorMessage>
+        <name>Check_Material_Groups_are_Valid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Payee&apos;s Account Group is DOCT then incurred expense is required. --></errorMessage>
+        <name>Incurred_Expense_required_for_DOCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status cannot be changed to PO Requested until the following criteria are met: 
+SAP Vendor ID is populated.
+Requested Currency is set in the Expense Header.
+Committed Amount is greater than zero in Expense line. --></errorMessage>
+        <name>Need_Vendor_to_Request_PO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have an Expense Approver and your Committed amount must be greater than 0. --></errorMessage>
+        <name>Need_Vendor_to_Request_PO_Simplified</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not request a PO for Manual Payment Entry. Please change the status back to Draft. --></errorMessage>
+        <name>No_PO_Request_for_Manual_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selection invalid. Please select another status. --></errorMessage>
+        <name>PO_Pending_Lock</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO can only be requested if the related contract is activated. --></errorMessage>
+        <name>PO_Requested_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To Request Payment, you must have a PO# and select the Tax Market and Tax Code. --></errorMessage>
+        <name>Payment_Request_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have a PO Approver and at least one Expense Line to Request a PO --></errorMessage>
+        <name>Required_to_Request_PO_Simplified</name>
+    </validationRules>
+</CustomObjectTranslation>

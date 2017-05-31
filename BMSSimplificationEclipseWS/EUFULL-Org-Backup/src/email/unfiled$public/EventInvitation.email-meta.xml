@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>VerteoBiotechLetterhead</letterhead>
+    <name>Event Invitation</name>
+    <style>formalLetter</style>
+    <subject>Restolar Event Invitation</subject>
+    <textOnly>Dear Dr. {!Contact.Name},
+
+Just a quick note to remind you of our upcoming (Insert Event Name) on (Insert Date) at (Insert Time).  We&apos;ll be discussing Restolar efficacy and  treatment and the link between RLS and cardiovascular disease.  
+
+Don&apos;t forget, the lunch is being held at (Insert Location).
+
+I look forward to seeing you there!
+
+Sincerely,
+{!User.FirstName} {!User.LastName}
+Sales Representative
+Verteo Biotech, Inc.</textOnly>
+    <type>html</type>
+</EmailTemplate>

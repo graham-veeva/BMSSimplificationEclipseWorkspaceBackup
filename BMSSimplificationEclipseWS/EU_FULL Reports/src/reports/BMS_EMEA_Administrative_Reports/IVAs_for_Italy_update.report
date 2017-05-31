@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CUSTENT_ID</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CUSTENT_OWNER_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <operator>contains</operator>
+            <value>Reyataz 2013 C1 segment1 - RU-RU,Reyataz 2013 C1 segment2 - RU-RU,Reyataz 2013 C1 segment4 - RU-RU,Reyataz 2014 Wave 1 - RU-RU,BARACLUDE_Precall_RU_RU_MAR2013</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <operator>notEqual</operator>
+            <value>BMS - EMEA - RU Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUSTENT_OWNER_NAME</column>
+            <operator>notEqual</operator>
+            <value>BMS - EMEA - RU Sales</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IVAs migration -update</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Clm_Presentation_vod__c$Clm_Presentation_Slide_vod__c@Clm_Presentation_Slide_vod__c.Key_Message_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Clm_Presentation_vod__c.Copy_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Document Cloud Settings --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Document Cloud Settings --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Determine how Document Cloud windows open in users&apos; browsers. &apos;Window&apos; - Open in a new windows; &apos;Frame&apos; - Open as a layer on top of the Agreement page; Default/Empty: Auto-detect based on the user&apos;s browser capabilities. --></help>
+        <label>Type de fenêtre d’action</label>
+        <name>Action_Window_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether a PDF of the audit trail is attached to the Agreement record after an agreement is signed. --></help>
+        <label>Ajout PDF d’audit à liste pièces jointes</label>
+        <name>Add_Audit_PDF_to_Attachment_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting applies only for pushed agreements sent outside of Salesforce.  Enable this setting to add a link for signed PDF to the Agreement record. --></help>
+        <label>Ajout lien PDF signé pour accord poussé</label>
+        <name>Add_Signed_PDF_Link_to_Agreement__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether the signed agreement is attached to the agreement record as separate PDFs. To stop receiving the signed agreement as a merged PDF, please contact Document Cloud Support. --></help>
+        <label>Ajout PDF signés comme pj distinctes</label>
+        <name>Add_Signed_PDF_Separate_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting applies to agreements sent from outside of Salesforce and pushed into Salesforce. Enable this setting to attach the signed PDF to the Agreement record. --></help>
+        <label>Ajouter PDF signé pour accords poussés</label>
+        <name>Add_Signed_PDF_to_Attachment_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether PDF versions of any supporting documents uploaded by signers are attached to the Agreement record after an agreement is signed. --></help>
+        <label>Ajout fichiers accomp. à liste pj</label>
+        <name>Add_Supporting_PDF_to_Attachment_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to allow sending agreements on behalf of other users. --></help>
+        <label>Autoriser envoi au nom d’autres utilis.</label>
+        <name>Allow_Delegated_Sending__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to automatically move users to the correct Document Cloud groups when their Salesforce user profiles are updated. --></help>
+        <label>Synchro auto des mappages de groupes</label>
+        <name>Auto_Sync_Group_Mappings__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting is the Secure Web Address copied from the Document Cloud Callback Site which is set up to send large agreements transactions over 2.8MB.  Follow instructions in the installation and configuration guide. --></help>
+        <label>URL de rappel DC vers le site Salesforce</label>
+        <name>Callback_URL_EchoSign_to_Salesforce_Site__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to display Salesforce alerts reminding users when the agreements sent are about to expire. Specify the number of days before agreement expiration that the alert is shown in the Days Sign Deadline Reminder Event setting. --></help>
+        <label>Créer événmnt rappel échéance signature</label>
+        <name>Create_Sign_Deadline_Reminder_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a number of days and enable the Create Deadline Reminder Event setting. This allows ‘agreement about-to-expire alerts’ to be shown to your users in Salesforce. Alerts are shown the specified number of days before agreement expiration. --></help>
+        <label>Evnmnt rappel échéance signature (jours)</label>
+        <name>Days_Sign_Deadline_Reminder_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the account lookup option for draft agreements. --></help>
+        <label>Masquer la référence de comptes</label>
+        <name>Disable_Account_Lookup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the add recipient option for draft agreements. --></help>
+        <label>Masquer Ajouter un destinataire</label>
+        <name>Disable_Add_Recipient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to turn off the Chatter feed on the Agreement object. --></help>
+        <label>Désactiver le flux Chatter de l’accord</label>
+        <name>Disable_Agreement_Chatter_Feed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the option to add Salesforce Documents to draft agreements. --></help>
+        <label>Masquer documents joints Salesforce</label>
+        <name>Disable_Attach_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the &apos;Send email copies to:&apos; field for draft agreements. --></help>
+        <label>Masquer Envoyer des copies de courriel</label>
+        <name>Disable_Cc__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether users can use Contact records as Recipients on Agreements. --></help>
+        <label>Désactiver type destinataire Contact</label>
+        <name>Disable_Contact_Recipient_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the option to add Salesforce Content or Files to draft agreements. --></help>
+        <label>Masquer contenu Salesforce/pièces jtes</label>
+        <name>Disable_Content_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the delete option for attachments associated with draft agreements. --></help>
+        <label>Masquer Suppr. pièces jointes accord</label>
+        <name>Disable_Delete_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the delete recipient option for draft agreements. --></help>
+        <label>Masquer Supprimer le destinataire</label>
+        <name>Disable_Delete_Recipient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the edit option for attachments associated with draft agreements. --></help>
+        <label>Masquer modif. pièces jtes de l’accord</label>
+        <name>Disable_Edit_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether users can type in manual Email addresses as Recipients on Agreements. --></help>
+        <label>Désactiver type destinataire e-mail</label>
+        <name>Disable_Email_Recipient_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the Knowledge Based Authentication (KBA) option for agreements. Powered by RSA, KBA requires signers to provide and verify personal information to sign the document. Usage of this feature is limited and may incur added costs. --></help>
+        <label>Désact authent. fondée sur connaissances</label>
+        <name>Disable_Knowledge_Based_Authentication__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the link which allows senders to &quot;Add Form Field Template&quot; on draft documents. --></help>
+        <label>Masquer capacité ajout modèles de champs</label>
+        <name>Disable_Layer_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether users can use Lead records as Recipients on Agreements. --></help>
+        <label>Désactiver le type de destinataire Piste</label>
+        <name>Disable_Lead_Recipient_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the opportunity lookup option for draft agreements. --></help>
+        <label>Masquer la référence d’opportunités</label>
+        <name>Disable_Opportunity_Lookup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the preview or position option for draft agreements. --></help>
+        <label>Masquer l’aperçu ou la position</label>
+        <name>Disable_Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the ability to replace the current signer or approver after the agreement has been sent. --></help>
+        <label>Masquer Remplacer le signataire</label>
+        <name>Disable_Replace_Signer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the sender signs option for draft agreements. --></help>
+        <label>Masquer les signatures de l’expéditeur</label>
+        <name>Disable_Sender_Signs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the signing deadline option for draft agreements. --></help>
+        <label>Masquer l’expiration de signature</label>
+        <name>Disable_Sign_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the signing password option. --></help>
+        <label>Masquer le mot de passe de signature</label>
+        <name>Disable_Sign_Password__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the sign reminder option for draft agreements. --></help>
+        <label>Masquer le rappel de signature</label>
+        <name>Disable_Sign_Reminder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the signature type option for draft agreements. --></help>
+        <label>Masquer le type de signature</label>
+        <name>Disable_Signature_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the sort attachments option for draft agreements. --></help>
+        <label>Masquer Réorganiser les pièces jointes</label>
+        <name>Disable_Sort_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the sort recipients option for draft agreements. --></help>
+        <label>Masquer réorganisation des destinataires</label>
+        <name>Disable_Sort_Recipients__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the option to upload local files for draft agreements. --></help>
+        <label>Masquer transfert pièces jointes accord</label>
+        <name>Disable_Upload_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to prevent users from being auto-provisioned with an Adobe user account when they send or manage agreements. This setting does not prevent auto-provisioning of users that occurs when Update Agreement is clicked from the Agreement list. --></help>
+        <label>Désactiver la configuration utilisateur</label>
+        <name>Disable_User_Provisioning__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting controls whether users can use User records as Recipients on Agreements. --></help>
+        <label>Désact. type de destinataire Utilisateur</label>
+        <name>Disable_User_Recipient_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the view option for attachments associated with draft agreements. --></help>
+        <label>Masquer affichage pièces jointes accord</label>
+        <name>Disable_View_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the password protection option for signed PDFs. --></help>
+        <label>Masquer mot de passe pour les PDF signés</label>
+        <name>Disable_View_Password__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the Web Identity option for agreements.  Web Identity verification requires signers to verify their identity by signing in to one of the following sites: Facebook, Google, LinkedIn, Twitter, Yahoo! or Microsoft Live.) --></help>
+        <label>Désact. vérification de l’identité Web</label>
+        <name>Disable_Web_Identity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables the host signing option to obtain in-person signatures --></help>
+        <label>Afficher l’option de signature hébergée</label>
+        <name>Enable_Hosted_Signing_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to show the Document Cloud form field layer templates that will be applied to documents. --></help>
+        <label>Afficher les modèles de champs DC</label>
+        <name>Enable_Layers_Section__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to show the option to add Document Cloud document templates. --></help>
+        <label>Afficher les PJ de bibliothèque DC</label>
+        <name>Enable_Library_Agreement_Attachments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to send the Salesforce admin email notifications when there are merge mapping or data mapping execution errors. --></help>
+        <label>Activer notification d’erreur du mappage</label>
+        <name>Enable_Mapping_Error_Notification__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to show the phone authentication option for verifying recipient identity.  Usage of this feature is limited and may incur added costs. --></help>
+        <label>Activer l’authentification par téléphone</label>
+        <name>Enable_Phone_Authentication__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this option to take your singers to a landing page of your choice. This makes the ‘Post Sign Redirect URL’ and ‘Post Sign Redirect Delay’ options available for Agreements. Signers of an agreement are redirected to the specified URL after they sign. --></help>
+        <label>Activer les options de post-signature</label>
+        <name>Enable_Post_Sign_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recipients marked as approvers review and approve the document but they are not required to sign it. They may be required to enter data into fields. --></help>
+        <label>Activer rôle approbateur destinataire</label>
+        <name>Enable_Recipient_Approver_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to allow each signer to have a different identity verification method. (e.g. password, phone, social identity, KBA) --></help>
+        <label>Activer vérif. identité par signataire</label>
+        <name>Enable_Recipient_Security_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to show 2 options for recipient signing: serial (ordered entered) or parallel (in any order) --></help>
+        <label>Afficher options d’ordre signataires</label>
+        <name>Enable_Recipient_Signing_Order_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- By default send written signature to fax is disabled. Check this box to enable this feature. --></help>
+        <label>Act. env. signatures écrites vers n° fax</label>
+        <name>Enable_Send_Written_Signature_To_Fax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to display and enable the ‘Sender Signs Only’/‘Only I sign&apos; option in the Recipients section of the send agreement page.  When the ‘Sender Signs Only’ option is used, the agreement or document is presented to only to the sender to sign --></help>
+        <label>Activer signatures expéditeur uniquement</label>
+        <name>Enable_Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to allow different verification methods (KBA, web identity, password) to be selected for signers internal or external to your Document Cloud account. --></help>
+        <label>Act. autres méthodes identif. signataire</label>
+        <name>Enable_Separate_Signer_Identity_Methods__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to hide the sidebar in the Agreement Editor page. This page can be accessed by clicking on the name of an agreement displayed in the sidebar, in the Agreements Home page, or in the list of agreements for a related object. --></help>
+        <label>Masquer barre latérale Editeur d’accords</label>
+        <name>Hide_Sidebar_Agreement_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting will override the list of recipients in an agreement. Specify the full API name of the fields on the agreement record where recipients should be read from, in order and separated by commas. (e.g. SignerA_Email__c, SignerB_Email__c) --></help>
+        <label>Ignorer liste champs du destinataire</label>
+        <name>Override_Recipient_Field_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Account field a read-only agreement field. --></help>
+        <label>Compte en lecture seule</label>
+        <name>Read_Only_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Agreement Name field a read-only agreement field. --></help>
+        <label>Nom de l’accord en lecture seule</label>
+        <name>Read_Only_Agreement_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the &quot;Send email copies to&quot; field a read-only agreement field. --></help>
+        <label>Copies message électr. lecture seule</label>
+        <name>Read_Only_Cc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Additional Fields section read-only on an agreement. --></help>
+        <label>Ensemble de champs en lecture seule</label>
+        <name>Read_Only_Field_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Hosted Signing checkbox a read-only agreement field. --></help>
+        <label>Signature hébergée en lecture seule</label>
+        <name>Read_Only_Hosted_Signing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Language field a read-only agreement field. --></help>
+        <label>Langue en lecture seule</label>
+        <name>Read_Only_Language__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Message field a read-only agreement field. --></help>
+        <label>Message en lecture seule</label>
+        <name>Read_Only_Message__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Opportunity lookup field a read-only agreement field. --></help>
+        <label>Opportunité en lecture seule</label>
+        <name>Read_Only_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to display the ‘Post Sign Redirect URL’ and ‘Post Sign Redirect Delay’ options as read-only in the Recipients section of the Agreement page. This setting works in conjunction with the Enable Post Sign Options setting. --></help>
+        <label>Options de post-signature en lecture sle</label>
+        <name>Read_Only_Post_Sign_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the &quot;Preview document or position signature fields&quot; checkbox a read-only agreement field. --></help>
+        <label>Aperçu ou position en lecture seule</label>
+        <name>Read_Only_Preview_Position__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the options for recipient signing order read-only on an agreement --></help>
+        <label>Ordre signature destinataires(lect. sle)</label>
+        <name>Read_Only_Recipient_Signing_Order_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Recipients section read-only on an agreement. --></help>
+        <label>Destinataire en lecture seule</label>
+        <name>Read_Only_Recipient__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Security Options section read-only on an agreement. --></help>
+        <label>Options de sécurité en lecture seule</label>
+        <name>Read_Only_Security_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to display the ‘Sender Signs Only’ option as read-only in the Recipients section of the Agreement page. This setting works in conjunction with the Enable Sender Signs Only setting. --></help>
+        <label>Signatures expéditeur en lecture seule</label>
+        <name>Read_Only_Sender_Signs_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the &quot;I also need to sign this document&quot; checkbox a read-only agreement field. --></help>
+        <label>Signatures expéditeur en lecture seule</label>
+        <name>Read_Only_Sender_Signs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the &quot;Allow signers X days to sign this document.&quot; a read-only agreement field. --></help>
+        <label>Expiration signature en lecture seule</label>
+        <name>Read_Only_Sign_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the &quot;Remind recipient to sign&quot; checkbox a read-only agreement field. --></help>
+        <label>Rappel de signature en lecture seule</label>
+        <name>Read_Only_Sign_Reminder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to make the Signature Type field a read-only agreement field. --></help>
+        <label>Type de signature en lecture seule</label>
+        <name>Read_Only_Signature_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rename the agreement using the name of the attached document --></help>
+        <label>Renommer accord avec nom de pièce jointe</label>
+        <name>Rename_Agreement_Attachment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable this setting to wipe the encrypted password field on the agreement after it is sent. --></help>
+        <label>Effacer le mot de passe de l’accord</label>
+        <name>Wipe_Agreement_Password__c</name>
+    </fields>
+    <gender><!-- Masculine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

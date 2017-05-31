@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mitra Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mitra Account</value>
+    </caseValues>
+    <fields>
+        <label>ID Mitra Account</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Mitra Account</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kontrak</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Mitra Account</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Standar</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Ponsel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Pesanan</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Langsung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Transfer</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Prioritas</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pedagang Grosir</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Lokasi Pengiriman</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Pembayar</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Buku Harga</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Pedagang Grosir</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Diperlukan Account.</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

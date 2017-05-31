@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Message_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Message_vod__c$Text_vod__c</field>
+    </columns>
+    <columns>
+        <field>Message_vod__c$Category_vod__c</field>
+    </columns>
+    <columns>
+        <field>Message_vod__c$Type_vod__c</field>
+    </columns>
+    <description>Lists the Veeva Messages and their Text based on the filter settings</description>
+    <filter>
+        <criteriaItems>
+            <column>Message_vod__c$Category_vod__c</column>
+            <operator>equals</operator>
+            <value>MEDICAL_INQUIRY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Message_vod__c$Name</column>
+            <operator>startsWith</operator>
+            <value>DISCLAIMER-EMEA</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Veeva Messages</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Veeva_Messages_BMS_EMEA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Message_vod__c$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

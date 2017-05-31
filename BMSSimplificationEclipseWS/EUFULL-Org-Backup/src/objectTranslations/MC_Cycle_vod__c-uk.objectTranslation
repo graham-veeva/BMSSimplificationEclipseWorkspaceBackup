@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>MC цикл</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>MC цикли</value>
+    </caseValues>
+    <fields>
+        <label>Активувати відредаговану мету</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Якщо в об&apos;єкті MC_Target_vod існують істинні і наскрізні поля, при запуску інтеграції MCCP виконується заповнення наскрізних полів. Їх не рекомендується встановлювати часто, тільки при необхідності заповнення наскрізних значень.</help>
+        <label>Розрахунок наскрізних значень</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Опис</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата закінчення</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Зовнішній ідентифікатор</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Перевищення порогового значення</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата початку</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Завершено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>В процесі</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Заплановано</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Недолік порогового значення</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Визначення циклу</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Дата початку не може бути більше або дорівнювати даті завершення.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

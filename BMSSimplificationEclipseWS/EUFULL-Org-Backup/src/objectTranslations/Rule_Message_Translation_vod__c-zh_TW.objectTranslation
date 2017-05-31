@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>規則訊息翻譯</value>
+    </caseValues>
+    <fields>
+        <help>此翻譯所對應的語言 ISO 代碼。</help>
+        <label>語言</label>
+        <name>Language_vod__c</name>
+    </fields>
+    <fields>
+        <help>規則的錯誤訊息翻譯。</help>
+        <label>訊息翻譯</label>
+        <name>Message_Translation_vod__c</name>
+    </fields>
+    <fields>
+        <help>此為訊息翻譯之「規則定義」記錄的參照。</help>
+        <label>規則定義</label>
+        <name>Rule_Definition_vod__c</name>
+        <relationshipLabel>規則訊息翻譯</relationshipLabel>
+    </fields>
+    <fields>
+        <help>記錄的外部識別碼。格式為 [RULE NAME]::[RecordType.Name]::[Language_vod]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Message Translation Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC 規則訊息翻譯</label>
+        <name>SFDC_Rule_Message_Translation_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

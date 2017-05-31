@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Sync_Tracking_vod__c$OwnerId$Name</field>
+    </columns>
+    <description>How many times the user synchronised in a week and when is his last synchronisation date stamp</description>
+    <filter>
+        <criteriaItems>
+            <column>User.Sync_Tracking_vod__c$OwnerId$Sync_Type_vod__c</column>
+            <operator>equals</operator>
+            <value>Incremental_Sync_vod,User_Full_Sync_vod,Forced_Full_Sync_vod</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User$Profile</column>
+            <operator>contains</operator>
+            <value>uki</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Sync_Tracking_vod__c$OwnerId$Successful_Sync_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Week</dateGranularity>
+        <field>User.Sync_Tracking_vod__c$OwnerId$Sync_Start_Datetime_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User*User$Last_iPad_Sync_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Weekly Synchronisation Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Sync_Tracking_with_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User.Sync_Tracking_vod__c$OwnerId$Sync_Start_Datetime_vod__c</dateColumn>
+        <endDate>2016-05-22</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2016-01-04</startDate>
+    </timeFrameFilter>
+</Report>

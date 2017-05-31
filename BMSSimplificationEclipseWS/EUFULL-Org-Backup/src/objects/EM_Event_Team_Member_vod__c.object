@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>EM_Event_Team_Member_Edit_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>EM_Event_Team_Member_View_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Team members for events in Veeva Event Management. Team members are automatically granted edit permission to an event.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Country_HCPTS__c</fullName>
+        <description>Formula Field to stamp the Team Member&apos;s Country from their User Profile</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Team_Member_vod__r.Country</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Team Member Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_HCPTS__c</fullName>
+        <description>Formula field to stamp Team Member&apos;s email from their User profile</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Team_Member_vod__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_vod__c</fullName>
+        <description>Primary email address of the team member.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <description>The event for which the person is a team member.</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Event Team Members</relationshipLabel>
+        <relationshipName>EM_Event_Team_Member_vod</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Group_Name_vod__c</fullName>
+        <description>Stores the name of the public group or queue that is added as a team member.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Group Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Field used by mobile products for synchronization.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Override_Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Helper field for data loads.</description>
+        <externalId>false</externalId>
+        <label>Override Lock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone_HCPTS__c</fullName>
+        <description>Forumla to stamp Team Member&apos;s Phone from User Profile</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Team_Member_vod__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_Number_vod__c</fullName>
+        <description>Primary phone number of the team member</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Role_vod__c</fullName>
+        <description>Role of an event team member. Team members will automatically have read/write access to an event. Roles can be used in the Event Configuration Page Layout Engine. Custom values can be added to this fied.</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Organizer_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vendor_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approver_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cohost_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Coordinator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certifier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Editor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Read Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Team_Member_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>System users who are part of an event team.</description>
+        <externalId>false</externalId>
+        <label>Team Member</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Event_Team_Members_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cross Org</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Event Team Member</label>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Event Team Members</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Activity_Team_Member_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>Team Member for the Simple EM Event</description>
+        <label>Simple Event Team Member</label>
+        <picklistValues>
+            <picklist>Role_vod__c</picklist>
+            <values>
+                <fullName>Editor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Coordinator</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Cross Org</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Event_Team_Member_vod</fullName>
+        <active>true</active>
+        <description>Event Team Member</description>
+        <label>Event_Team_Member_vod</label>
+        <picklistValues>
+            <picklist>Role_vod__c</picklist>
+            <values>
+                <fullName>Approver_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cohost_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Organizer_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Service Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Cross Org</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Group_vod</fullName>
+        <active>true</active>
+        <description>Used for a group team member</description>
+        <label>Group_vod</label>
+        <picklistValues>
+            <picklist>Role_vod__c</picklist>
+            <values>
+                <fullName>Approver_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cohost_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Organizer_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Service Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Cross Org</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Person_Group_vod</fullName>
+        <active>true</active>
+        <description>Please select a person or a group</description>
+        <errorConditionFormula>AND( LEN( Team_Member_vod__r.Id )&gt;0,  LEN( Group_Name_vod__c )&gt;0  )</errorConditionFormula>
+        <errorMessage>Please select a person or a group</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prøvegrænse</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Prøvegrænse</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Prøvegrænse</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prøvegrænser</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Prøvegrænser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Prøvegrænser</value>
+    </caseValues>
+    <fields>
+        <help>Brug kun personoptegnelsestype</help>
+        <label>Kundetyper</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunde</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Prøvegrænser</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Deaktiver Opret transaktion</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Udbetalt beløb</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Udleveret mængde</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdato</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gennemtving grænse</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>Eksternt id</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gruppe-id</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Begrænsningsbeløb</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grænse pr. besøg</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grænsemængde</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Prøvegrænser</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tilbageværende beløb</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Resterende mængde</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Rullende periode</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prøvegrænsetype</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Kunde-bruger-pr. besøg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Kunde-pr. besøg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Bruger-pr. besøg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Kunde-prøveproduktgruppe-pr. besøg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Kunde\Bruger\Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Kunde\Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Bruger\Produkt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Kunde-prøveproduktgruppe</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Delt periode</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12Måneder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>År</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Startdato</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skabelonsgruppe</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skabelon i brug</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skabelons unik nøgle</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bruger</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Prøvegrænser</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Optegnelse kunne ikke gemmes. Beløbsgrænse kan ikke være mindre end 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringen kunne ikke gemmes. Grænsemængde skal være &quot;større end&quot; eller lig med 0.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Der kan ikke oprettes en prøvebegrænsningsskabelon for både kvantitet og værdi i den samme skabelon.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Du kan ikke angive en bruger, når du opretter grænser for en prøveproduktgruppe.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringen kunne ikke gemmes. Følgende felter er påkrævet: Slutdato</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringen kunne ikke gemmes. Følgende felter er påkrævet: Produkt</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringen kunne ikke gemmes. Følgende felter er påkrævet: Startdato</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registreringen kunne ikke gemmes. Følgende felter er påkrævet: Kunde eller Bruger</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product, Limit Quantity, and Start/End Dates are mandatory if Account Type is used --></errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Account Type OR User and Account Type  can not be both set --></errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rolling Period  must be empty  if Account Type is empty --></errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Slutdato skal være større end startdato</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if Split Period  is set rolling period must be 24 --></errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Split Period can not be set if Account Type is empty --></errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

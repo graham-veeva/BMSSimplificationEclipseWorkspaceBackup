@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Anggaran Acara</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Anggaran Acara</value>
+    </caseValues>
+    <fields>
+        <label>Aktual</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nama Anggaran</label>
+        <name>Budget_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anggaran</label>
+        <name>Budget_vod__c</name>
+        <relationshipLabel>Anggaran Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Wajib</label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Estimasi</label>
+        <name>Estimate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Estimasi Sisa</label>
+        <name>Estimated_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Acara Dibatalkan</label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label>Acara</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Anggaran Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Inheriting Expense Estimates --></label>
+        <name>Failure_Inheriting_Expense_Estimates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Is_Need__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ID Ponsel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunci Prioritas</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting for Expense Estimate Inheritance --></label>
+        <name>Waiting_for_Expense_Estimate_Inheritance__c</name>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Anggaran Acara</label>
+        <name>Event_Budget_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WBS/CC --></label>
+        <name>WBS_CC_Simple_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Anggota Tim Acara</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has an End Date After the Event&apos;s End Date. --></errorMessage>
+        <name>Need_End_Date_After_Atvty_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has a start date before the Event&apos;s Start Date. --></errorMessage>
+        <name>Need_Start_Date_Before_Atvty_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

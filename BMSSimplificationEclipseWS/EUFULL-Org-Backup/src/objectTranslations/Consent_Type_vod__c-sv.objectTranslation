@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Samtyckestyp</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Samtyckestyp</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Samtyckestyp</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Samtyckestyper</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Samtyckestyper</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Samtyckestyper</value>
+    </caseValues>
+    <fields>
+        <label>Kanaletikett</label>
+        <name>Channel_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalkälla</label>
+        <name>Channel_Source_vod__c</name>
+    </fields>
+    <fields>
+        <help>Varaktighet uttrycks i månader</help>
+        <label>Anpassad varaktighet av godkännande</label>
+        <name>Consent_Custom_Duration_vod__c</name>
+    </fields>
+    <fields>
+        <label>Godkännande utgår om</label>
+        <name>Consent_Expires_In_vod__c</name>
+        <picklistValues>
+            <masterLabel>Custom_Duration_vod</masterLabel>
+            <translation>Egen varaktighet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Calendar_Year_vod</masterLabel>
+            <translation>Slutet av kalenderåret</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Next_Calendar_Year_vod</masterLabel>
+            <translation>Slutet av nästa kalenderår</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One_Year_vod</masterLabel>
+            <translation>Ett år</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Intressent rubrik</label>
+        <name>Consent_Header_vod__c</name>
+        <relationshipLabel>Samtyckestyper</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Standard Godkännandetyp</label>
+        <name>Default_Consent_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Explicit_vod</masterLabel>
+            <translation>Opt-in krävs</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implicit_vod</masterLabel>
+            <translation>Opt-in krävs ej</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Friskrivningstext</label>
+        <name>Disclaimer_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Visa order</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dubbel opt In</label>
+        <name>Double_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktinställning</label>
+        <name>Product_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_Content_Types_vod</masterLabel>
+            <translation>Typ för allt innehåll</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Lines_vod</masterLabel>
+            <translation>Alla rader</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Products_vod</masterLabel>
+            <translation>Alla produkter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My_Setup_vod</masterLabel>
+            <translation>Mina inställningar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restrictive_My_Setup_vod</masterLabel>
+            <translation>Begränsande Mina inställningar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Default_Consent_Text_vod --></label>
+        <name>zvod_Consent_Default_Consent_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Line_vod --></label>
+        <name>zvod_Consent_Line_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Signature_Capture_vod --></label>
+        <name>zvod_Signature_Capture_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namn</nameFieldLabel>
+    <recordTypes>
+        <label>Approved Email</label>
+        <name>Approved_Email_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM</label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

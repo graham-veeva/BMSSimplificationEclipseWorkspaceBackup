@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Đối tác Hợp đồng</value>
+    </caseValues>
+    <fields>
+        <label>Số Biên nhận</label>
+        <name>Acceptance_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Danh tính Tài khoản</label>
+        <name>Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tài khoản</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Đối tác Hợp đồng</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tôi đã đọc và hiểu rõ</label>
+        <name>Acknowledgment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thỏa Thuận</label>
+        <name>Agreement_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cuộc gọi tiếp xúc bán hàng</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Đối tác Hợp đồng</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Hợp đồng</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Đối tác Hợp đồng</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Loại Thiết bị</label>
+        <name>Device_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Tải Dữ liệu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation>Trực tuyến</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tuyên bố từ chối</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Người Thuyết Trình</label>
+        <name>EM_Speaker_vod__c</name>
+        <relationshipLabel>Đối tác Hợp đồng</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hết hạn ?</label>
+        <name>Expired_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Ngoại</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên đã định dạng</label>
+        <name>Formatted_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Khóa</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày giờ tạo Di động</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Di động</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày giờ sửa đổi Di động lần trước</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Khóa ghi đè</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày giờ ký</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chữ ký</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Người ký</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng thái</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Đã kích hoạt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Bị Từ Chối</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Đã lưu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Đã ký</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Chữ Ký Người Dùng</label>
+        <name>User_Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Người dùng</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Đối tác Hợp đồng</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Contract Partner ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Activity Agreement for Exhibits &amp; Displays (Events) --></label>
+        <name>Activity_Agreement_EBD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Services (SOW) --></label>
+        <name>Activity_Agreement_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Sponsorship --></label>
+        <name>Activity_Agreement_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Hợp Đồng của Người Thuyết Trình</label>
+        <name>EM_Speaker_Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Framework Agreement --></label>
+        <name>Framework_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Danh sách</label>
+        <name>Listing_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bán hàng</label>
+        <name>Sales_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsorshipLetter --></label>
+        <name>SponsorshipLetter_HCPTS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Ngày Kết Thúc không được trước Ngày Bắt Đầu</errorMessage>
+        <name>End_Date_After_Start_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Kích hoạt</label>
+        <name>Activate_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Đối tác Hợp đồng mới</label>
+        <name>New_Contract_Partner_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Mở khóa</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Xem Chữ Ký</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

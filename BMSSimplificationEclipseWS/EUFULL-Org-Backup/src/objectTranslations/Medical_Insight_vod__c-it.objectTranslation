@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Approfondimento medico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Approfondimenti medici</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Approfondimenti medici</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Studio clinico</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Approfondimenti medici</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id riferimento entità</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interazione</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Approfondimenti medici</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Evento medico</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Approfondimenti medici</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Altra origine</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Forza blocco</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pubblicazione</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Approfondimenti medici</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Inviato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Riepilogo</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sblocca</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome approfondimento medico</nameFieldLabel>
+    <recordTypes>
+        <label>Approfondimento medico principale</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Per salvare o inviare un approfondimento medico principale è necessario inserire una descrizione</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Per salvare o inviare un approfondimento medico principale è necessario inserire un riepilogo</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Invia</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

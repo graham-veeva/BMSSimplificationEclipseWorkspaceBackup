@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>메디컬 인사이트</value>
+    </caseValues>
+    <fields>
+        <label>계정</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>메디컬 인사이트</relationshipLabel>
+    </fields>
+    <fields>
+        <label>임상 시험</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>메디컬 인사이트</relationshipLabel>
+    </fields>
+    <fields>
+        <label>날짜</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>설명</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>엔티티 참조 ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>대응</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>메디컬 인사이트</relationshipLabel>
+    </fields>
+    <fields>
+        <label>메디컬 이벤트</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>메디컬 인사이트</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>기타 출처</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>잠금 재정의</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>발행</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>메디컬 인사이트</relationshipLabel>
+    </fields>
+    <fields>
+        <label>상태</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>저장됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>제출됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>요약</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>잠금 해제</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <nameFieldLabel>메디컬 인사이트 이름</nameFieldLabel>
+    <recordTypes>
+        <label>주요 메디컬 인사이트</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>주요 의학적 분석을 저장 또는 제출하려면 &apos;설명&apos;이 필요합니다.</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주요 의학적 분석을 저장 또는 제출하려면 &apos;요약&apos;이 필요합니다.</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>제출</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

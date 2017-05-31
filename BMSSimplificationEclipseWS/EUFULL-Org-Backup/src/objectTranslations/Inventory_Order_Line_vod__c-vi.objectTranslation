@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Carrier Name --></label>
+        <name>Carrier_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Nhận xét trường hợp ngoại lệ</label>
+        <name>Exception_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mức độ nghiêm trọng của ngoại lệ</label>
+        <name>Exception_Severity_vod__c</name>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Ngăn chặn</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Cần được phê duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Cảnh báo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Loại trường hợp ngoại lệ</label>
+        <name>Exception_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Date_vod</masterLabel>
+            <translation>Ngày</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityDate_vod</masterLabel>
+            <translation>Số lượng &amp; Ngày</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Số lượng</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Phân bổ đơn đặt hàng tồn kho</label>
+        <name>Inventory_Order_Allocation_vod__c</name>
+        <relationshipLabel>Dòng đơn đặt hàng tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tiêu đề đơn đặt hàng tồn kho</label>
+        <name>Inventory_Order_Header_vod__c</name>
+        <relationshipLabel>Dòng đơn đặt hàng tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Trạng thái dòng đơn đặt hàng tồn kho</label>
+        <name>Inventory_Order_Line_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Đã hủy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Đã hoàn thành</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Process_vod</masterLabel>
+            <translation>Đang xử lý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Tạo mới</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Đã lưu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Đã gửi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory Order Status --></label>
+        <name>Inventory_Order_Status_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lot Number --></label>
+        <name>Lot_Number_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng đặt hàng đã hoàn thành</label>
+        <name>Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>UOM số lượng đặt hàng</label>
+        <name>Order_Quantity_UOM_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Hộp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carton</masterLabel>
+            <translation>Các tông</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation>Trường hợp</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Số lượng đặt hàng</label>
+        <name>Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Doc Number --></label>
+        <name>Pick_Doc_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Dòng đơn đặt hàng tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày giao hàng theo yêu cầu</label>
+        <name>Requested_Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Delivered Qty --></label>
+        <name>SAP_Delivered_Qty_BMS_CA__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Status --></label>
+        <name>SAP_Order_Status_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Date --></label>
+        <name>Shipment_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <nameFieldLabel><!-- Inventory Order Line Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Ngày giao hàng không được trước ngày tạo đơn đặt hàng</errorMessage>
+        <name>VEEVA_DELIVERY_DATE_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Số lượng đặt hàng không được nhỏ hơn 0</errorMessage>
+        <name>VEEVA_NEGATIVE_QUANTITY</name>
+    </validationRules>
+</CustomObjectTranslation>

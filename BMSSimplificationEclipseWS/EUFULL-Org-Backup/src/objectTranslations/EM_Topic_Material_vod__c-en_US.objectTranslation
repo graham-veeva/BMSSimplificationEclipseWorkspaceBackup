@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Topic Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Topic Materials</value>
+    </caseValues>
+    <fields>
+        <label><!-- CLM Presentation --></label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel><!-- Topic Materials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel><!-- Topic Materials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Type --></label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel><!-- Topics Using Material --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Topic Materials &lt;==&gt; Activity Materials</relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label>Topic Material</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A single rule cannot have both Email Template and CLM Presentation populated. Please create separate rules for these two items. --></errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A single topic material cannot have both Material and CLM Presentation populated. Please create separate rules for these two items. --></errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A single topic material cannot have both Material and Email Template populated. Please create separate rules for these two items. --></errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

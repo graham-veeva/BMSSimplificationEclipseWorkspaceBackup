@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Material subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Material subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Materiale subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Materiale subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Material subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Material subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Materiale subiect</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Materiale subiect</value>
+    </caseValues>
+    <fields>
+        <label>Prezentare CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Materiale privind subiectul</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Şablon de e-mail</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Materiale subiect</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID extern</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Tip material</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Subiecte care utilizează materialul</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Subiect</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Materiale subiect (Subiect)</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nume</nameFieldLabel>
+    <recordTypes>
+        <label>Material privind subiectul</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>O regulă unică nu poate avea populate atât Șablon e-mail cât și Prezentare CLM. Vă rugăm să creați reguli separate pentru aceste două elemente.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un material de subiect unic nu poate avea populate atât Material cât și Prezentare CLM. Vă rugăm să creați reguli separate pentru aceste două elemente.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un material de subiect unic nu poate avea Material şi Şablon e-mail populate în acelaşi timp. Creaţi reguli separate pentru aceste două articole.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

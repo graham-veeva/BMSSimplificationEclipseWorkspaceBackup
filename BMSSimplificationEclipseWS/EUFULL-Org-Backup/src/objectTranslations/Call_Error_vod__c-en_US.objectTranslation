@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interaction Error</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interaction Errors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Datetime --></label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Type --></label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cause --></label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation><!-- Account Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation><!-- Call Locked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation><!-- Object Access --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Call Errors</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- XML Text --></label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Delete_vod --></label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Resolve_vod --></label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

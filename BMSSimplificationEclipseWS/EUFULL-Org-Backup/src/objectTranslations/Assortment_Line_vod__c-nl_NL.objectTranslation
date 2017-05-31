@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assortimentslijst</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assortimentslijsten</value>
+    </caseValues>
+    <fields>
+        <label>Assortiment</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Assortimentslijsten</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Standaard inklappen?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bovenliggende sectie</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Assortimentslijsten</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Assortimentslijsten</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sectielabel</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Wordt gesorteerd</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam</nameFieldLabel>
+    <recordTypes>
+        <label>VB-assortiment product</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>VB-assortiment sectie</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM-assortiment product</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM-assortiment sectie</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>OM-assortimentsregels kunnen alleen geassocieerd worden met OM-assortimenten en IG-assortimentsregels kunnen alleen geassocieerd worden met IG-assortimenten</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kan alleen worden ingeschakeld voor het recordtype IM_Assortment_Section_vod of OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Een sectie kan niet gekoppeld zijn aan een bovenliggende sectie</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Een sectie en een product kunnen niet op hetzelfde record worden gespecificeerd.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

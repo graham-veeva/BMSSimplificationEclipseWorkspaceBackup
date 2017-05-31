@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regeldefinitie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regeldefinities</value>
+    </caseValues>
+    <fields>
+        <help>Geeft aan of de regel actief is op Salesforce.com</help>
+        <label>Actief</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>Veldnaam waar foutmeldingen op veldniveau worden weergegeven.</help>
+        <label>Weergaveveld</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>Regelformule</help>
+        <label>Foutformule</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>Foutmelding voor regel.</help>
+        <label>Hoofdbericht</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>Object van deze validatieregel.</help>
+        <label><!-- Object --></label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>Regeldefinities</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Geeft aan of er niet-ondersteunde syntaxis in de regeldefinitie is aangetroffen.</help>
+        <label>Ondersteund</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>Externe ID voor de record. Notatie is [RULE NAME]::[RecordType.Name]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Regel SFDC-opzoekfilter</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC-regel</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

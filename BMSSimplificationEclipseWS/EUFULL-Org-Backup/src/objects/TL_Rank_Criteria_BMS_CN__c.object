@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>TL Rank Criteria</relationshipLabel>
+        <relationshipName>TL_Rank_Criteria</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Apply_TL_To_Medical_Plan_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Apply Low-Ranked TL to Medical Plan?</description>
+        <externalId>false</externalId>
+        <label>Apply Low-Ranked TL to Medical Plan?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International1_Green1_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Member of Int Guideline Panel ≤2 yrs</description>
+        <externalId>false</externalId>
+        <label>Member of Int Guideline Panel ≤2 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International2_Green2_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Member of Int Sci Committee ≤2 yrs</description>
+        <externalId>false</externalId>
+        <label>Member of Int Sci Committee ≤2 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International3_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Chair/Speaker at Int Sci Meeting</description>
+        <externalId>false</externalId>
+        <label>Chair/Speaker at Int Sci Meeting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International4_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Assoc/Prof with Med School affiliation</description>
+        <externalId>false</externalId>
+        <label>Assoc/Prof with Med School affiliation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International5_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Key Investigator of Int Clinical Trial</description>
+        <externalId>false</externalId>
+        <label>Key Investigator of Int Clinical Trial</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International6_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Editorial board Member for Int Journal</description>
+        <externalId>false</externalId>
+        <label>Editorial board Member for Int Journal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International7_Green3_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Published in Int Journal ≤2 yrs</description>
+        <externalId>false</externalId>
+        <label>Published in Int Journal ≤2 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International8_Green4_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Presented Abstr at Int Congress ≤2 yrs</description>
+        <externalId>false</externalId>
+        <label>Payer Advisor to Medical Policy Org</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Justification_for_Approval_BMS_CN__c</fullName>
+        <description>Justification for Approval</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Justification for Approval</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>NationalQ1_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Member of Nat Guideline Panel ≤2 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NationalQ2_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Member of Nat Sci Committee  ≤2 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NationalQ3_Green1_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Chair/Speaker at Nat Sci Meeting</description>
+        <externalId>false</externalId>
+        <label>Chair/Speaker at Nat Sci Meeting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NationalQ4_Green2_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Assoc/Prof with Med School affiliation</description>
+        <externalId>false</externalId>
+        <label>Assoc/Prof with Med School affiliation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NationalQ5_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Key Investigator of Nat Clinical Trial</description>
+        <externalId>false</externalId>
+        <label>Key Investigator of Nat Clinical Trial</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NationalQ6_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Editorial board member for Nat Journal</description>
+        <externalId>false</externalId>
+        <label>Editorial board member for Nat Journal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NationalQ7_Green3_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Published in Nat Journal ≤3 yrs</description>
+        <externalId>false</externalId>
+        <label>Published in Nat Journal ≤3 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rank_Score_BMS_CN__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Rank Score</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RegionalQ1_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Recognized Leader of Reg Sci community</description>
+        <externalId>false</externalId>
+        <label>Recognized Leader of Reg Sci community</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RegionalQ2_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Regional Chair/Leader in Disease Area</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RegionalQ3_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Recognized Speaker or Chair (BMS or CME)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RegionalQ4_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Medical Academic Faculty Affiliation</description>
+        <externalId>false</externalId>
+        <label>Academic affiliation (Medical or HEOR)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RegionalQ6_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Decision Maker on Access to Medicines</description>
+        <externalId>false</externalId>
+        <label>Decision Maker on Access to Medicines</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RegionalQ7_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Investigator at Local Clinical Trial</description>
+        <externalId>false</externalId>
+        <label>Lead Investigator at Clinical Trial Site</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RegionalQ8_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Published in Local Journal ≤5 yrs</description>
+        <externalId>false</externalId>
+        <label>Published in Local Journal ≤5 yrs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status for Medical Plan</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Auto Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apply for remove from Medical Plan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TL_Level_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <label>TL Level</label>
+        <picklist>
+            <picklistValues>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>TL Rank Criteria</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account_BMS_CN__c</columns>
+        <columns>Status_BMS_CN__c</columns>
+        <columns>Rank_Score_BMS_CN__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Need_be_approved</fullName>
+        <columns>NAME</columns>
+        <columns>Account_BMS_CN__c</columns>
+        <columns>Status_BMS_CN__c</columns>
+        <columns>Rank_Score_BMS_CN__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status_BMS_CN__c</field>
+            <operation>equals</operation>
+            <value>Apply for Medical Plan</value>
+        </filters>
+        <label>Need be approved</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>TL-{000000}</displayFormat>
+        <label>TL Rank Criteria Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>TL Rank Criteria</pluralLabel>
+    <recordTypes>
+        <fullName>Remove_from_Med_Plan_BMS_CN</fullName>
+        <active>true</active>
+        <description>Remove from Medical Plan</description>
+        <label>Remove from Medical Plan</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for remove from Medical Plan</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TL_Rank_Criteria_Create_Edit</fullName>
+        <active>true</active>
+        <description>TL Rank Criteria</description>
+        <label>TL Rank Criteria Create Edit</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auto Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TL_Rank_Criteria_Create_Edit_In</fullName>
+        <active>true</active>
+        <description>Created for india users</description>
+        <label>TL Rank Criteria Create Edit India</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auto Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TL_Rank_Criteria_Lock_All</fullName>
+        <active>true</active>
+        <label>TL Rank Criteria Lock All</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auto Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TL_Rank_Criteria_Lock_All_India</fullName>
+        <active>true</active>
+        <description>TL Rank Criteria Lock All For India</description>
+        <label>TL Rank Criteria Lock All India</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auto Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TL_Rank_Criteria_Lock_MSM</fullName>
+        <active>true</active>
+        <label>TL Rank Criteria Lock MSM</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TL_Rank_Criteria_Lock_MSM_India</fullName>
+        <active>true</active>
+        <description>TL Rank Criteria Lock MSM For India</description>
+        <label>TL Rank Criteria Lock MSM India</label>
+        <picklistValues>
+            <picklist>Status_BMS_CN__c</picklist>
+            <values>
+                <fullName>Apply for Medical Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TL_Level_BMS_CN__c</picklist>
+            <values>
+                <fullName>International - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>International - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National - 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional - 3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

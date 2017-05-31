@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contractpartner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contractpartners</value>
+    </caseValues>
+    <fields>
+        <label>Acceptatie #</label>
+        <name>Acceptance_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Account-ID</label>
+        <name>Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Contractpartners</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ik heb gelezen en begrepen</label>
+        <name>Acknowledgment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Overeenkomst</label>
+        <name>Agreement_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bezoek</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Contractpartners</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Contractpartners</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Apparaattype</label>
+        <name>Device_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Databelasting</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation><!-- Online_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disclaimer --></label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Spreker</label>
+        <name>EM_Speaker_vod__c</name>
+        <relationshipLabel>Contractpartners</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verlopen?</label>
+        <name>Expired_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Opgemaakte naam</label>
+        <name>Formatted_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vergrendelen</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum en tijd gemaakt op mobiel</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobiel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum en tijd laatst gewijzigd mobiel</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vergrendeling overschrijven</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum en tijd handtekening</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Handtekening</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ondertekenaar</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Geactiveerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Afgewezen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Opgeslagen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Ondertekend</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Handtekening gebruiker</label>
+        <name>User_Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gebruiker</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Contractpartners</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Contract Partner ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Activity Agreement for Exhibits &amp; Displays (Events) --></label>
+        <name>Activity_Agreement_EBD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Services (SOW) --></label>
+        <name>Activity_Agreement_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Sponsorship --></label>
+        <name>Activity_Agreement_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contract spreker</label>
+        <name>EM_Speaker_Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Framework Agreement --></label>
+        <name>Framework_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Lijst</label>
+        <name>Listing_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Verkoop</label>
+        <name>Sales_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsorshipLetter --></label>
+        <name>SponsorshipLetter_HCPTS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>De einddatum moet later zijn dan de startdatum.</errorMessage>
+        <name>End_Date_After_Start_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Activeren</label>
+        <name>Activate_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Nieuwe contractpartner</label>
+        <name>New_Contract_Partner_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Ontgrendelen</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Handtekeningen weergeven</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

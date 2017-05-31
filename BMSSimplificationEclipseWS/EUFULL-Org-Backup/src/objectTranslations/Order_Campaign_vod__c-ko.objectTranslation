@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>주문 캠페인</value>
+    </caseValues>
+    <fields>
+        <label>계정 그룹</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>계정 유형</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>채널 파트너/리셀러</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>고객 - 채널</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>고객 - 직접</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>설치 파트너</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>기타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>전문가</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>유망업체</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>기술 파트너</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>활성</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>기본</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>설명</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>마감 날짜</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>바인딩된 주문 캠페인</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>주문 레코드 유형</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>모두</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>직접</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>전송</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>시작 날짜</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

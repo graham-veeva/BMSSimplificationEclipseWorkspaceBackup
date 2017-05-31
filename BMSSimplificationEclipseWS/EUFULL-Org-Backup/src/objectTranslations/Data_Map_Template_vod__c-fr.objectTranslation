@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Modèle de mapping des données</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modèles de mapping des données</value>
+    </caseValues>
+    <fields>
+        <label>Actif</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groupes</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Étiquette de colonne</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>Si le fichier doit avoir les étiquettes de colonne comme première ligne pour ce modèle, cochez cette case.</help>
+        <label>Étiquettes de colonne incluses</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Contient les objectifs ?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Décimales</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>Pour utiliser le rapport d&apos;analyse de transactions de vente, désignez uniquement un fichier de données commerciales à l&apos;échelle mensuelle. Les données commerciales doivent également contenir l&apos;ID de prescripteur, l&apos;ID de marché, l&apos;ID de groupe de produits</help>
+        <label>Activer rapport analyse trans. vente </label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activation de l&apos;utilisation hors ligne</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Étiquette Liste médicaments pour repr.</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Première étiquette de colonne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Aucun(e)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Deuxième étiquette de colonne</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type de Chargement Incrémental</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Complet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Progressif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Partiel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Incrémental</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Marchés mappés ?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorer le seuil du compte</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Payeur/plan mappé ?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Échelle</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Mensuel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Hebdomadaire</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Deuxième étiquette de colonne</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Noms de territoire inclus ?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Sélectionnez une valeur valide dans la liste de sélection.  En cas de chargement de données, veillez à bien utiliser la valeur de liste de sélection maître et non l&apos;étiquette traduite.</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le rapport d&apos;analyse de transactions de vente peut être sélectionné uniquement lorsque l&apos;échelle choisie est mensuelle et que la case Payeur/plan mappé n&apos;est pas sélectionnée</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vérifiez que l&apos;étiquette de la colonne ne contient aucun des caractères suivants : : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le nombre de décimales doit être compris entre 0 et 4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sélectionnez une valeur valide dans la liste de sélection. En cas de chargement de données, veillez à bien utiliser la valeur de liste de sélection maître et non l&apos;étiquette traduite.</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

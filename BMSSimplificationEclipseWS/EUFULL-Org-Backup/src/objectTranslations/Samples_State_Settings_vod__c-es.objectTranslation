@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración de estado de muestras</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuración de estado de muestras</value>
+    </caseValues>
+    <fields>
+        <label>CDS obligatorio</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ajuste</label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation>Sólo de muestra BRC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation>Sólo muestra en mano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation>Sin muestras</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>No se pueden definir requisitos de CDS y el método de entrega en el mismo registro.</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

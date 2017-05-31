@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <description>Report to display the number of Accounts aligned to a given territory.  This report is filtered to only include PR territories.</description>
+    <filter>
+        <criteriaItems>
+            <column>Territory.Sales_Force_Name_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>ONC,IMMUNOSCIENCE,PUERTO RICO MSL IMMUNOLOGY,PUERTO RICO MSL ONCOLOGY,PUERTO RICO MSL AREA,PUERTO RICO MSL REGION,PUERTO RICO MSL  DISTRICT</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory.Sales_Force_Name_BMS_CORE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TERR_DESC</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - PTU - Customer Summary/PR</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Linia asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Linie asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Linię asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Linie asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Linii asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Linii asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Linii asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Liniom asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Linią asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Liniami asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Linii asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Liniach asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Linia asortymentu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Linie asortymentu</value>
+    </caseValues>
+    <fields>
+        <label>Asortyment</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Linie asortymentu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Zwijać domyślnie?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Identyfikator zewnętrzny</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sekcja nadrzędna</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Linie asortymentu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Linie asortymentu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Etykieta sekcji</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sortowanie</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa</nameFieldLabel>
+    <recordTypes>
+        <label>Produkt asortymentu IM</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sekcja asortymentu IM</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Produkt asortymentu OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sekcja asortymentu OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Linie asortymentu OM mogą być skojarzone wyłącznie z asortymentami OM, a pozycje asortymentu IM wyłącznie z asortymentami IM</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Można sprawdzić wyłącznie w przypadku typu rekordu IM_Assortment_Section_vod lub OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sekcji nie można powiązać z sekcją nadrzędną</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sekcji i produktu nie można określić w tym samym rekordzie.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

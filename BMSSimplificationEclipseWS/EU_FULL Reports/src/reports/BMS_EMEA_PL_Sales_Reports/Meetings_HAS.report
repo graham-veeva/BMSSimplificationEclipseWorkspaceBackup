@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Start_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Master_File_BMS_EMEA__c.Product_Compound_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Status_BMS_CORE__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Meetings_HAS</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Medical_Event_vod__c@Medical_Event_vod__c.Master_File_BMS_EMEA__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Medical_Event_vod__c.Start_Date_vod__c</dateColumn>
+        <endDate>2017-03-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

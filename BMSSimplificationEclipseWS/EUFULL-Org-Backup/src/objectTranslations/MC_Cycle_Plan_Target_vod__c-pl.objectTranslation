@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Plan cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Plany cyklu MC: cele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Plan cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Plany cyklu MC: cele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Planu cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Planów cyklu MC: cele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Planowi cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Planom cyklu MC: cele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Planem cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Planami cyklu MC: cele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Planie cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Planach cyklu MC: cele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Planie cyklu MC: cel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Plany cyklu MC: cele</value>
+    </caseValues>
+    <fields>
+        <label>Wynik kanału</label>
+        <name>Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału: rzeczywiste</label>
+        <name>Channel_Interactions_Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału: uzyskane</label>
+        <name>Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału: cel</label>
+        <name>Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału: maks</label>
+        <name>Channel_Interactions_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału: pozostałe</label>
+        <name>Channel_Interactions_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zmień status</label>
+        <name>Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Zgodne z harmonogramem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Nadmiar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Niedomiar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Klient podrzędny</label>
+        <name>Child_Account_vod__c</name>
+        <relationshipLabel>Cele planu cyklu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Plan cyklu</label>
+        <name>Cycle_Plan_vod__c</name>
+        <relationshipLabel>Plan cyklu MC: cele</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Identyfikator zewnętrzny</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Furigana --></label>
+        <name>Furigana_vod__c</name>
+    </fields>
+    <fields>
+        <label>Edytowane cele</label>
+        <name>Goals_Edited_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ostatnio obliczone</label>
+        <name>Last_Calculated_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lokalizacja</label>
+        <name>Location_vod__c</name>
+        <relationshipLabel>Cele planu cyklu (lokalizacja)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master ID --></label>
+        <name>Master_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Nazwa elementu nadrzędnego/podrzędnego</label>
+        <name>Parent_Child_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Wynik produktu</label>
+        <name>Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje produktu: uzyskane</label>
+        <name>Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje produktu: cel</label>
+        <name>Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Interactions Remaining --></label>
+        <name>Product_Interactions_Remaining_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Status produktu</label>
+        <name>Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Zgodne z harmonogramem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Nadmiar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Niedomiar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_BMS_LATAM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Active_vod</masterLabel>
+            <translation>Aktywne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged_vod</masterLabel>
+            <translation>Scalono</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cel</label>
+        <name>Target_vod__c</name>
+        <relationshipLabel>Cele planu cyklu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Wynik kanału zespołu</label>
+        <name>Team_Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału zespołu: rzeczywiste</label>
+        <name>Team_Channel_Interactions_Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału zespołu: uzyskane</label>
+        <name>Team_Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału zespołu: cel</label>
+        <name>Team_Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału zespołu: maks.</label>
+        <name>Team_Channel_Interactions_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje kanału zespołu: pozostałe</label>
+        <name>Team_Channel_Interactions_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Status kanału zespołu</label>
+        <name>Team_Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Zgodne z harmonogramem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Nadmiar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Niedomiar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Wynik produktu zespołu</label>
+        <name>Team_Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje produktu zespołu: uzyskane</label>
+        <name>Team_Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcje produktu zespołu: cel</label>
+        <name>Team_Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Status produktu zespołu</label>
+        <name>Team_Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Zgodne z harmonogramem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Nadmiar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Niedomiar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Plan Target --></nameFieldLabel>
+    <recordTypes>
+        <label>Plan cyklu: cel</label>
+        <name>Cycle_Plan_Target_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Cel interakcji kanału nie może być mniejszy niż 0</errorMessage>
+        <name>Goal_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Nie można uzupełnić pola Location_vod danymi klienta pojedynczego</errorMessage>
+        <name>LocationIsPersonAccount_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Nie można uzupełnić pola Location_vod, jeżeli pole Target_vod to klient biznesowy</errorMessage>
+        <name>Location_TargetIsBusinessAcct_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maksimum interakcji kanału nie może być mniejsze niż 0 ani cel interakcji kanału.</errorMessage>
+        <name>Max_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wartość Interakcje kanału zespołu: cel nie może być mniejsza niż 0</errorMessage>
+        <name>Team_Goal_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wartość Interakcje kanału zespołu: maks. nie może być mniejsza niż 0 lub wartość Interakcje kanału zespołu: cel.</errorMessage>
+        <name>Team_Max_Validations_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

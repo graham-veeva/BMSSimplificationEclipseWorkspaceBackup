@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Directorul</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Director</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Directoarele</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Directoare</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Directorului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Directorului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Directoarelor</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Directoarelor</value>
+    </caseValues>
+    <fields>
+        <label>Ordine de afişare</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID extern</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nivel</label>
+        <name>Level_vod__c</name>
+    </fields>
+    <fields>
+        <label>Director principal</label>
+        <lookupFilter>
+            <errorMessage>Valoarea nu există sau nu concordă cu criteriile de filtrare</errorMessage>
+        </lookupFilter>
+        <name>Parent_Directory_vod__c</name>
+        <relationshipLabel>Directoare</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Directory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CLM_vod --></label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>상품 분류</value>
+    </caseValues>
+    <fields>
+        <label>계정 그룹</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>계정 레코드 유형</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Pharmacy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>도매상</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>기타 전체</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>상품 분류 그룹</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>종료 일자</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>재고 모니터링 레코드 유형</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>재고 모니터링</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>주문 레코드 유형</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>직접</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>전송</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>결합된 제품</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>시작 일자</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label>IM 모음</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM 상품 분류</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>시작 일자가 종료 일자 이후 입니다.</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>결합된 제품 모음에 대해 기타 모두 섹션을 표시할 수 없습니다.</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>미리 보기</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>VMobile-objectconfiguratie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>VMobile-objectconfiguraties</value>
+    </caseValues>
+    <fields>
+        <label>Accountreferentieveld</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Actief</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Naam onderliggend object</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Onderliggende relatie</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Apparaat</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Inschakelen om vernieuwen af te dwingen op objecten die een privé-deelmodel gebruiken of een bijgewerkte Where-clause hebben. Resulteert mogelijk in langere synctijden.</help>
+        <label>Uitgebreide sync inschakelen</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>Veldlijst weglaten</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>Velden in lijst beperken</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>Voeg bijlageinformatie toe wanneer het object wordt gesynchroniseerd.</help>
+        <label>Bijlagen bijvoegen</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gerelateerde objecten opnemen</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>Alleen metagegevens</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>Objectnaam</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Naam bovenliggend object</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profiel</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profielnaam</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relatieveld</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relatienaam</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>Onderliggende en bovenliggende rij</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>Volledige synchronisatie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>Gerelateerd aan hoogste niveau</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>Hoogste niveau</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Where-clausule</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label>TABLET</label>
+        <name>TABLET</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Objectnaam moet zijn opgegeven.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Naam bovenliggend object en Naam relatie moeten worden opgegeven bij VMOC&apos;s die te maken hebben met het object op topniveau.</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

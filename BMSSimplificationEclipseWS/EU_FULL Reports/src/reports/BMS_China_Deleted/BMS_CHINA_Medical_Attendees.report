@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Time_Off_Territory_vod__c.Attendee_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Time_Off_Territory_vod__c.Attendees_Time_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Time_Off_Territory_vod__c.Sales_Training_Times_BMS_CN__c</field>
+    </columns>
+    <description>Sales Training Times
+Attendees
+Attendees*Time</description>
+    <filter>
+        <criteriaItems>
+            <column>Time_Off_Territory_vod__c.Sub_Type_BMS_CN__c</column>
+            <operator>equals</operator>
+            <value>Medical Training Meeting,Deliver Commercial Training</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>Time_Off_Territory_vod__c.Date_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS CHINA Medical Attend and train times</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntity$Time_Off_Territory_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Time_Off_Territory_vod__c.Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Materiał do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Materiały do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Materiał do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Materiały do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Materiału do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Materiałów do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Materiałowi do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Materiałom do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Materiałem do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Materiałami do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Materiału do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Materiałach do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Materiale do tematu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Materiały do tematu</value>
+    </caseValues>
+    <fields>
+        <label>Prezentacja CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Materiały do tematu</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Szablon e-mail</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Materiały do tematu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Identyfikator zewnętrzny</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Typ materiału</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Materiał</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Tematy używające materiału</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Temat</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Materiały do tematu (temat)</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa</nameFieldLabel>
+    <recordTypes>
+        <label>Materiał do tematu</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>W jednej regule nie można uzupełnić jednocześnie pól Szablon e-mail i Prezentacja CLM. Utwórz osobne reguły dla tych dwóch elementów.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Materiał jednego tematu nie może mieć jednocześnie uzupełnionych pól Materiał i Prezentacja CLM. Utwórz osobne reguły dla tych dwóch elementów.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Pojedynczy materiał do tematu nie może mieć jednocześnie wypełnionych pól Materiał i Szablon e-mail. Utwórz oddzielne reguły dla tych dwóch elementów.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

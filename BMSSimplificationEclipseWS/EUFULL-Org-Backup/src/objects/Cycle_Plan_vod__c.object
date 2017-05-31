@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>Edit_Cycle_Plan_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>View_Cycle_Plan_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The Cycle Plan object holds a list of target accounts for a specified time frame.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the Cycle Plan is considered Active.  There should be only one active Cycle Plan per user in a territory.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Calls_vod__c</fullName>
+        <description>number of calls the user has made to date against his/her targeted accounts</description>
+        <externalId>false</externalId>
+        <label>Actual Calls</label>
+        <summarizedField>Cycle_Plan_Target_vod__c.Actual_Calls_vod__c</summarizedField>
+        <summaryForeignKey>Cycle_Plan_Target_vod__c.Cycle_Plan_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Algorithm_BMS_CN__c</fullName>
+        <description>The algorithm of cycle plan segmentation and frequency calculation per territory</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Algorithm</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approval_Rejection_Comments_BMS_Core__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Approval/Rejection Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Attainment_Difference_vod__c</fullName>
+        <description>Subtracts the actual attainment from the expected attainment. This value is used to color the Attained container on the VMobile Home page widget.</description>
+        <externalId>false</externalId>
+        <formula>(Expected_Attainment_vod__c - Attainment_vod__c) * 100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attainment Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Attainment_vod__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Planned_Calls_vod__c &gt; 0, Actual_Calls_vod__c / Planned_Calls_vod__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attainment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>BMS_Country_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Owner:User.User_Source_Country_BMS_CORE__c )</formula>
+        <inlineHelpText>VPRO BMS EMEA Feb-2014: created the field, used by any Region, sourced from the User Source Country field.</inlineHelpText>
+        <label>BMS Country Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Employee_ID_BMS_EMEA__c</fullName>
+        <description>BMS ACN : June 2015: Display the BMS Employee ID of the Cycle Plan Owner</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Owner:User.BMS_Employee_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BMS Employee ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BU_BMS_CN__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BU</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CN_Sales_Manager_KPI_Report_BMS_CN__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is using by showing as related list in CN Sales Manager KPI Reports.
+Should be loaded by Managed Services together with CN Sales Manager KPI Reports initially.
+Or can updated later once CN Sales Manager KPI Reports loading done.</description>
+        <externalId>false</externalId>
+        <label>CN Sales Manager KPI Report</label>
+        <referenceTo>Sales_Manager_KPI_Report_BMS_CN__c</referenceTo>
+        <relationshipLabel>Cycle Plans</relationshipLabel>
+        <relationshipName>Cycle_Plans</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CP_External_ID_BMS_IC__c</fullName>
+        <description>Used as CP External ID for data loading new Cycle Plan. The External_ID_vod is overwritten by a trigger.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CP External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Duration_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For BMS CHINA Medical Report purpose. don&apos;t display in UI
+Calculate duration # Days for all interactions.
+Sum from Cycle Plan Target.
+8 hours = 1 day
+Updated by night batch job</description>
+        <externalId>false</externalId>
+        <label>Call Duration</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_vod__c</fullName>
+        <description>comments or instructions about the goals of this Cycle Plan</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Daily_Calls_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Target_Working_Days_BMS_CN__c &gt; ToT_BMS_CN__c, Actual_Calls_vod__c  /  ( Target_Working_Days_BMS_CN__c - ToT_BMS_CN__c ), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Daily Calls (Inv)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date_vod__c</fullName>
+        <description>The last day the Cycle Plan is in effect.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Attainment_vod__c</fullName>
+        <description>Calculates the expected attainment percentage for the cycle plan period.</description>
+        <externalId>false</externalId>
+        <formula>IF ( TODAY()  &gt;= End_Date_vod__c , 1, 
+  IF ( TODAY() &lt; Start_Date_vod__c, 0,  
+     (TODAY() - Start_Date_vod__c) / (End_Date_vod__c - Start_Date_vod__c)
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Attainment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Calls_vod__c</fullName>
+        <description>Calculates the expected number of calls to be completed.</description>
+        <externalId>false</externalId>
+        <formula>Expected_Attainment_vod__c * Planned_Calls_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Calls</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>H_Actual_Call_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report.
+Count for Target whose dr level=H, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>H Actual Call</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>H_Call_Frequency_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(H_Doctors_Visited_BMS_CN__c&gt;0,H_Actual_Call_BMS_CN__c / H_Doctors_Visited_BMS_CN__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>H Call Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>H_Detail_lnk_BMS_CN__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( $Setup.bms_cn_setting__c.ORG_URL__c  &amp;  $Setup.bms_cn_setting__c.Cycle_Plan_Detail_Report_ID__c &amp; &quot;?pv0=&quot; &amp;  Id &amp; 
+if( BU_BMS_CN__c =&quot;HP&quot;,&quot;&amp;pv2=6&quot;,&quot;&amp;pv1=H&quot;)
+, &quot;Doctor Detail&quot;,&quot;_blank&quot;)</formula>
+        <label>H Detail lnk</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>H_Doctors_Visited_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report.
+Count for Target whose dr level=H, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>H Doctors Visited</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>H_Dr_Coverage_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(H_Total_Dr_Number_BMS_CN__c&gt;0,H_Doctors_Visited_BMS_CN__c / H_Total_Dr_Number_BMS_CN__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>H Dr Coverage %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>H_Total_Dr_Number_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report.
+Count for Target whose dr level=H, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>H Total Dr Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Owner_Sales_BMS_CN__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Whether the owner of Cycle Plan is Sales Rep or not. This field should be initialized every monthly  loaded Cycle Plan Data.</description>
+        <externalId>false</externalId>
+        <label>Is Owner Sales?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legend_BMS_CA__c</fullName>
+        <description>Displays legend for Cycle Plan Detail - A, P, S, Rs for the users
+A: Actual; P: Planned; S: Scheduled; Rs: Remaining to Schedule</description>
+        <externalId>false</externalId>
+        <label>Legend</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A: Actual; P: Planned; S: Scheduled; Rs: Remaining to Schedule</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Legend_BMS_EMEA__c</fullName>
+        <description>VPRO - November 2013 - BMS EMEA Requirements: Displays legend for Cycle Plan Detail</description>
+        <externalId>false</externalId>
+        <label>Legend</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Actual: Number of interactions submitted; Obj: Objective of interactions for the period; Planned: Scheduled interactions; %: Percent of interactions submitted against the objective.</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Lock</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MTD_Calls_Per_Day_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>Actual_Calls_vod__c /( Working_Days_BMS_CN__c -  ToT_BMS_CN__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MTD Calls Per Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_Actual_Call_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report. 
+Count for Target whose dr level=M, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>M Actual Call</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_Call_Frequency_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(M_Doctors_Visited_BMS_CN__c&gt;0,M_Actual_Call_BMS_CN__c / M_Doctors_Visited_BMS_CN__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>M Call Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_Detail_lnk_BMS_CN__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( $Setup.bms_cn_setting__c.ORG_URL__c  &amp;  $Setup.bms_cn_setting__c.Cycle_Plan_Detail_Report_ID__c &amp; &quot;?pv0=&quot; &amp;  Id  &amp; 
+if( BU_BMS_CN__c =&quot;HP&quot;,&quot;&amp;pv2=2&quot;,&quot;&amp;pv1=M&quot;)
+, &quot;Doctor Detail&quot;,&quot;_blank&quot;)</formula>
+        <label>M Detail lnk</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_Doctors_Visited_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report. 
+Count for Target whose dr level=M, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>M Doctors Visited</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M_Dr_Coverage_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(M_Total_Dr_Number_BMS_CN__c&gt;0,M_Doctors_Visited_BMS_CN__c / M_Total_Dr_Number_BMS_CN__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>M Dr Coverage %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>M_Total_Dr_Number_BMS_CN__c</fullName>
+        <description>For Sales Rep KPI Report. 
+Count for Target whose dr level=M, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>M Total Dr Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_Lookup_BMS_CORE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Owner Lookup</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cycle_Plans</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Calls_vod__c</fullName>
+        <description>number of calls the user is supposed to make during the Cycle Plan’s time period</description>
+        <externalId>false</externalId>
+        <label>Planned Calls</label>
+        <summarizedField>Cycle_Plan_Target_vod__c.Planned_Calls_vod__c</summarizedField>
+        <summaryForeignKey>Cycle_Plan_Target_vod__c.Cycle_Plan_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Remaining_vod__c</fullName>
+        <description>The remaining number of calls the user must complete in the Cycle Plan period to achieve their overall planned call objective. Default value is 0.</description>
+        <externalId>false</externalId>
+        <formula>IF(AND(ISBLANK(Planned_Calls_vod__c),ISBLANK(Actual_Calls_vod__c)),0
+                  ,IF(ISBLANK(Actual_Calls_vod__c) ,Planned_Calls_vod__c 
+                      , IF(ISBLANK(Planned_Calls_vod__c ),0
+                            , IF((Planned_Calls_vod__c  -Actual_Calls_vod__c )&gt;=0,Planned_Calls_vod__c  -Actual_Calls_vod__c ,0)
+                        )
+                    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date_vod__c</fullName>
+        <description>The first day the Cycle Plan is in effect.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_BMS_Core__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Holds the status of the Cycle Plan.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In_Progress_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Target_Working_Days_BMS_CN__c</fullName>
+        <description>Target working days, initial by data loading.</description>
+        <externalId>false</externalId>
+        <label>Target Working Days</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_vod__c</fullName>
+        <description>the territory of the Cycle Plan</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToT_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <label>ToT</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Targets_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <label># Total Targets</label>
+        <summaryForeignKey>Cycle_Plan_Target_vod__c.Cycle_Plan_vod__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>User_Source_Country_BMS_CORE__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Owner_Lookup_BMS_CORE__r.User_Source_Country_BMS_CORE__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Source Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VH_Actual_Call_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report.
+Count for Target whose dr level=VH, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>VH Actual Call</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VH_Call_Frequency_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(VH_Doctors_Visited_BMS_CN__c&gt;0,VH_Actual_Call_BMS_CN__c / VH_Doctors_Visited_BMS_CN__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VH Call Frequency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VH_Detail_lnk_BMS_CN__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( $Setup.bms_cn_setting__c.ORG_URL__c  &amp;  $Setup.bms_cn_setting__c.Cycle_Plan_Detail_Report_ID__c &amp; &quot;?pv0=&quot; &amp;  Id  &amp; 
+if( BU_BMS_CN__c =&quot;HP&quot;,&quot;&amp;pv2=8&quot;,&quot;&amp;pv1=VH&quot;)
+, &quot;Doctor Detail&quot;,&quot;_blank&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VH Detail lnk</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VH_Doctors_Visited_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report.
+Count for Target whose dr level=VH, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>VH Doctors Visited</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VH_Dr_Coverage_BMS_CN__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(VH_Total_Dr_Number_BMS_CN__c&gt;0,VH_Doctors_Visited_BMS_CN__c / VH_Total_Dr_Number_BMS_CN__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VH Dr Coverage %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>VH_Total_Dr_Number_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>For Sales Rep KPI Report.
+Count for Target whose dr level=VH, 
+count and updated by night batch job BMS_CN_BATCH_CYCLE_PLAN_CALC_CALLS</description>
+        <externalId>false</externalId>
+        <label>VH Total Dr Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Working_Days_BMS_CN__c</fullName>
+        <description>Actual working days, updated every day.</description>
+        <externalId>false</externalId>
+        <label>Working Days</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ZS_ID_BMS__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>ZS External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Cycle Plan</label>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>Start_Date_vod__c</columns>
+        <columns>End_Date_vod__c</columns>
+        <columns>Active_vod__c</columns>
+        <columns>Territory_vod__c</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Total_Targets_BMS_CN__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Meine_Aktionspl_ne_BMS_EMEA</fullName>
+        <columns>NAME</columns>
+        <columns>Start_Date_vod__c</columns>
+        <columns>End_Date_vod__c</columns>
+        <columns>Planned_Calls_vod__c</columns>
+        <columns>Actual_Calls_vod__c</columns>
+        <columns>Remaining_vod__c</columns>
+        <columns>Status_BMS_Core__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>Meine Aktionspläne</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>ATONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>DECVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>DEIMM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>DEONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>DEVIR00000000_BU</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Cycle_Plans</fullName>
+        <columns>NAME</columns>
+        <columns>Start_Date_vod__c</columns>
+        <columns>End_Date_vod__c</columns>
+        <columns>Planned_Calls_vod__c</columns>
+        <columns>Actual_Calls_vod__c</columns>
+        <columns>Remaining_vod__c</columns>
+        <columns>Status_BMS_Core__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Cycle Plans</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>BEACC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>BECVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>BEONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>BEPAI00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>BEVIM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>CZONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>CZSPC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ESCVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ESONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ESVIM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>GRACC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>GRHQR00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>GRMED00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>GRONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>GRVIM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>HUONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>HUONV00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>HUVIM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ITCVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ITIMM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ITONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ITVIR00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>NDACC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>NDHQR00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>NDMED00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>NDPLB00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>NDSLS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>NLSLS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>PLCVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>PLHCS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>PTCVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>PTONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>PTVIR00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ROCVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ROONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>ROVIM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>RUINO00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>RUVIO00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>RUVIR00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>TRONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>TRVIM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>UICVS00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>UIIMM00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>UIONC00000000_BU</roleAndSubordinates>
+            <roleAndSubordinates>UIVIR00000000_BU</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Cycle Plans</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Start_Date_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date_vod__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>StartDateGreaterThanEndDate</fullName>
+        <active>true</active>
+        <description>Start Date cannot be greater than End Date</description>
+        <errorConditionFormula>Start_Date_vod__c  &gt;  End_Date_vod__c</errorConditionFormula>
+        <errorMessage>Start Date cannot be greater than End Date.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Submit_vod</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Submit</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>//</url>
+    </webLinks>
+</CustomObject>

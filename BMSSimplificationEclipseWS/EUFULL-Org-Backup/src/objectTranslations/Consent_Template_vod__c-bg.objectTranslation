@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Шаблон за съгласие</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Шаблони за съгласие</value>
+    </caseValues>
+    <fields>
+        <label>Календарна дата на влизане в сила</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Крайна дата</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Праг за изтичане</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип изтичане</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Календар</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Пълзящo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Начална дата</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име на шаблон</nameFieldLabel>
+    <recordTypes>
+        <label>Шаблон на съгласие за мостра</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Календарната дата на влизане в сила е задължителна, когато изтичането е от тип &quot;Календар&quot;</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Липсват задължителни полета</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Крайната дата не може да бъде преди началната дата</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

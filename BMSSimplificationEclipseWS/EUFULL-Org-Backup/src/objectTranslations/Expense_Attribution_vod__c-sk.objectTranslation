@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Atribúcia výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Atribúcie výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Atribúciu výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Atribúcie výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Atribúcie výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Atribúcií výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Atribúcii výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Atribúciám výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Atribúciou výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Atribúciami výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Atribúcii výdavkov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Atribúciách výdavkov</value>
+    </caseValues>
+    <fields>
+        <label>Aktuálne</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Riadok výdavku</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Typ výdavkov</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok (účet)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok (účastník)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok (rečník)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok (člen tímu)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Typ vzniknutého výdavku</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Účet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Účastník</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Rečník na udalosti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Člen tímu udalosti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Predajca</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Miesto konania</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok (predajca)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok (miesto konania)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Atribúcie výdavkov</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vzniknutý výdavok</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dátum platby</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Názvoch</nameFieldLabel>
+    <recordTypes>
+        <label>Atribúcia výdavku udalosti</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

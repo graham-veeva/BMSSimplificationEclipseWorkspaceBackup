@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Veeva EM Child Locking Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Veeva EM Child Locking Setting</value>
+    </caseValues>
+    <fields>
+        <help><!-- The API name of the lookup to the activity record --></help>
+        <label><!-- Activity Lookup API Name --></label>
+        <name>Activity_Lookup_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Activity Recordtypes --></label>
+        <name>Applicable_Activity_Recordtypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of record types that this rule should apply to, separated by commas. By default this is set to &quot;All&quot;, meaning that the rule applies to all record types. --></help>
+        <label><!-- Applicable Parent Recordtypes --></label>
+        <name>Applicable_Parent_Recordtypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this field is checked, users will not be able to create records of this object type and link them to an activity of the specified statuses. --></help>
+        <label><!-- CreateLock --></label>
+        <name>CreateLock__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this field is checked, users will not be able to delete this object when the activity is in the specified statuses. --></help>
+        <label><!-- DeleteLock --></label>
+        <name>DeleteLock__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this field is checked, users will not be able to edit this object when the activity is in the specified statuses. --></help>
+        <label><!-- EditLock --></label>
+        <name>EditLock__c</name>
+    </fields>
+    <fields>
+        <help><!-- When this box is checked, admin users with the &quot;Modify All Data&quot; permission will be able to bypass the lock. --></help>
+        <label><!-- ModifyAllOverride --></label>
+        <name>ModifyAllOverride__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the object. --></help>
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the API name of the parent object. --></help>
+        <label><!-- Parent API Name --></label>
+        <name>Parent_API_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the lookup to the parent object --></help>
+        <label><!-- Parent Lookup API Name --></label>
+        <name>Parent_Object__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the API name of the field on the parent record that will be checked. --></help>
+        <label><!-- Parent Status Field --></label>
+        <name>Parent_Status_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter all statuses on the Activity that should lock the child records for this object type. Please separate each status with a comma. --></help>
+        <label><!-- Parent Statuses --></label>
+        <name>Parent_Statuses__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

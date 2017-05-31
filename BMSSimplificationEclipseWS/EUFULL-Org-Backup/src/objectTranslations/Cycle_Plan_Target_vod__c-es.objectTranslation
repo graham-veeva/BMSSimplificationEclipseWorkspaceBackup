@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Objetivo del plan de ciclo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Objetivos del plan de ciclo</value>
+    </caseValues>
+    <fields>
+        <label>Activo</label>
+        <name>Active_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Visitas reales</label>
+        <name>Actual_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Algorithm Products --></label>
+        <name>Algorithm_Products_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>Alcanzado</label>
+        <name>Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Durations --></label>
+        <name>Call_Durations_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>Destino</label>
+        <name>Cycle_Plan_Account_vod__c</name>
+        <relationshipLabel>Objetivos del Ciclo</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Plan de ciclo</label>
+        <name>Cycle_Plan_vod__c</name>
+        <relationshipLabel>Objetivos del Ciclo</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dr Level --></label>
+        <name>Dr_Level_BMS_CN__c</name>
+        <picklistValues>
+            <masterLabel>H</masterLabel>
+            <translation><!-- H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VH</masterLabel>
+            <translation><!-- VH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- HP Dr Level --></label>
+        <name>HP_Dr_Level_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- HP Usage Level --></label>
+        <name>HP_Usage_Level_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospital --></label>
+        <name>Hospital_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>ID móvil</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Apellidos</label>
+        <name>Name_Last_First_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Visitas planificadas originales</label>
+        <name>Original_Planned_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Visitas planificadas</label>
+        <name>Planned_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Programa restante</label>
+        <name>Remaining_Schedule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Restante</label>
+        <name>Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Visitas programadas</label>
+        <name>Scheduled_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Especialidad</label>
+        <name>Specialty_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- TL Level --></label>
+        <name>TL_Level_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Territory from the Cycle Plan this Cycle Plan Target belongs to --></help>
+        <label><!-- Territory --></label>
+        <name>Territory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Total real de visitas</label>
+        <name>Total_Actual_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Total de logros</label>
+        <name>Total_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Total de visitas planificadas</label>
+        <name>Total_Planned_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>Programa restante total</label>
+        <name>Total_Remaining_Schedule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Total restante</label>
+        <name>Total_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Total de visitas programadas</label>
+        <name>Total_Scheduled_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Source Country --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visited --></label>
+        <name>Visited_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZS External ID --></label>
+        <name>ZS_ID_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Institution --></label>
+        <name>zvod_ACCOUNT_Main_Institution_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Cycle Plan Targets (Main Institution) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dirección principal</label>
+        <name>zvod_ACCOUNT_Primary_Parent_vod__c</name>
+        <relationshipLabel>Objetivos del Ciclo (Dirección principal)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>zvod Mostrar detalles de producto</label>
+        <name>zvod_Display_Product_Details_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Las visitas planificadas no pueden ser inferiores a 0.</errorMessage>
+        <name>PlannedCallsLessThan0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Especifique una cuenta de destino.</errorMessage>
+        <name>Require_Trarget_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El total de las visitas planificadas no puede ser inferior a 0.</errorMessage>
+        <name>TotalPlannedCallsLessThan0</name>
+    </validationRules>
+    <webLinks>
+        <label>Aplicar listado</label>
+        <name>Cycle_Plan_Apply_List_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Nuevo Target</label>
+        <name>Cycle_Plan_New_Target_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Planificar Visitas</label>
+        <name>Cycle_Plan_Schedule_Calls_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

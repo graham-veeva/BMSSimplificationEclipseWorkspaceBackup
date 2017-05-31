@@ -1,0 +1,487 @@
+<apex:page standardController="Meeting_Speaker_BMS__c" extensions="EventsManagementContract_BMS" renderAs="{!RenderAs}" showHeader="false">
+<apex:form >
+<html>
+<head>
+
+</head>
+<body>
+<!-- start choose buttons -->
+<apex:outputPanel id="buttons" rendered="{!renderAsPdf == false}" >
+    <div align="center">
+    <br/><br/><br/><br/><br/>
+    <apex:commandButton action="{!english}" value="Print in English" id="english"/>
+    <br/><br/>
+    <apex:commandButton action="{!french}" value="Print in French" id="french"/>
+</div>
+</apex:outputPanel>
+<!-- end choose buttons -->
+<!-- start english corporate -->
+<apex:outputPanel id="englishCorp" rendered="{!render == 'englishCorp'}">
+<div style="font-weight: bold; text-align: center;">
+<h1>Bristol-Myers Squibb Canada</h1>
+</div>
+<div style="text-align: right;">Event Number <apex:outputField value="{!medicalEvent.Event_Number_BMS__c}"/></div>
+<div><apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+    <apex:param value="{!TODAY()}" /> 
+</apex:outputText><br />
+<apex:outputField value="{!speaker.Name}"/><br />
+<apex:outputField value="{!speakerAddress.Name}"/><br />
+<apex:outputField value="{!speakerAddress.City_vod__c}"/>,&nbsp;
+<apex:outputField value="{!speakerAddress.State_vod__c}"/>&nbsp;&nbsp; 
+<apex:outputField value="{!speakerAddress.Zip_vod__c}"/>
+<br />
+<br />
+<br />
+Dear <apex:outputText value="{!speaker.Name}"/>,<br/><br/>
+The following is in response to your request for sponsorship of the
+<apex:outputField value="{!medicalEvent.Name}"/>. I am happy to confirm Bristol-Myers Squibb Canada’s
+("BMS Canada") participation at and support of the event and in
+consideration&nbsp;for such support the undersigned agree to the
+following:<br />
+<br />
+</div>
+<div style="padding-left: 50px;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>BMS Canada shall provide
+a speaker to present on an agreed upon topic.</div>
+<div style="padding-left: 50px;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>BMS Canada shall have an
+opportunity for product promotion; for example
+booth at a symposium, promotional material distribution.</div>
+<div style="padding-left: 50px;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>BMS Canada shall provide
+the HCP with a clinical study to be reviewed
+by the HCP at the Journal Club.</div>
+<div><br />
+The parties agree to abide by RX&amp;D, legal and regulatory
+guidelines with respect to the execution of the agreed upon activities.
+In accordance with Rx&amp;D’s Code of Ethical
+Practices, any amounts paid by BMS Canada pursuant hereto shall not be
+used to defray any expenses for HCP’s
+spouses, families or guests.<br />
+<br />
+Upon agreement by both parties, BMS Canada will forward payment in the
+amount of <apex:outputField value="{!meetingspeaker.Planned_Expenses_BMS_IC__c}"/> made payable to 
+<apex:outputField value="{!speaker.Name}"/> and delivered by our 
+representative.<br />
+<br />
+Please sign and return a copy of this letter at your earliest
+convenience to the following fax number: 1-866-429-1235<br />
+<br />
+Best Regards, <br />
+<br />
+<br />
+<br />
+<table style="width: 100%; text-align: left;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">_____________________________<br />
+<!--Vice President--><br />
+<!--Business Unit--><br />
+Bristol-Myers Squibb Canada<br />
+Date</td>
+      <td style="vertical-align: top;">_____________________________<br />
+Name<br />
+Title <br />
+Company<br />
+Date</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+</div>
+
+
+</apex:outputPanel>
+<!-- end english corporate -->
+<!-- start french corporate -->
+<apex:outputPanel id="frenchCorp" rendered="{!render == 'frenchCorp'}">
+
+<div style="font-weight: bold; text-align: center;">
+<h1>Bristol-Myers Squibb Canada</h1>
+</div>
+<div style="text-align: right;">Event Number <apex:outputField value="{!medicalEvent.Event_Number_BMS__c}"/></div>
+<div>
+<apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+    <apex:param value="{!TODAY()}" /> 
+</apex:outputText><br />
+<apex:outputField value="{!speaker.Name}"/><br />
+<apex:outputField value="{!speakerAddress.Name}"/><br />
+<apex:outputField value="{!speakerAddress.City_vod__c}"/>,&nbsp;
+<apex:outputField value="{!speakerAddress.State_vod__c}"/>&nbsp;&nbsp; 
+<apex:outputField value="{!speakerAddress.Zip_vod__c}"/>
+<br />
+<br />
+<br />
+<apex:outputText value="{!speaker.Name}"/>,<br/><br/>
+La présente fait suite à votre demande de commandite pour <apex:outputField value="{!medicalEvent.Name}"/>. C’est avec plaisir que je confirme la participation et le soutien de Bristol Myers Squibb Canada ("BMS Canada") à cet événement et que, en contrepartie, les soussignés conviennent de ce qui suit :<br />
+<br />
+</div>
+<div style="padding-left: 50px;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>BMS Canada nommera un conférencier qui traitera d’un sujet sur lequel les deux parties se seront entendues.</div>
+<div style="padding-left: 50px;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>BMS Canada aura une opportunité de faire la promotion d’un produit; par exemple un stand à un symposium et la distribution de matériel promotionnel.</div>
+<div style="padding-left: 50px;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>BMS Canada fournira au professionnel de la santé les résultats d’une étude clinique afin qu’il en parle dans le cadre d’un club de lecture.</div>
+<div><br />
+Les parties acceptent de respecter les directives de RX&amp;D, légales et de normalisation en ce qui concerne l'exécution des activités convenues.  Conformément au Code d’éthique du Rx&amp;D, n'importe quelles sommes payées par BMS Canada ne seront pas utilisées pour rembourser les dépenses pour les conjoints des professionnels de la santé, les membres de la famille ou les invités.<br />
+<br />
+Sous réserve d’une entente entre les deux parties, BMS Canada fera parvenir un chèque payable au nom de <apex:outputField value="{!speaker.Name}"/>,
+ au montant de $<apex:outputField value="{!meetingspeaker.Planned_Expenses_BMS_IC__c}"/>, livré par notre représentant.
+
+Upon agreement by both parties, BMS Canada will forward payment in the
+amount of <apex:outputField value="{!meetingspeaker.Planned_Expenses_BMS_IC__c}"/> made payable to 
+<apex:outputField value="{!speaker.Name}"/> and delivered by our 
+representative.<br />
+<br />
+Veuillez signer la présente et me la faire parvenir dès que possible par télécopieur au 
+1-866-429-1235.
+<br />
+<br />
+Veuillez agréer, <br />
+<br />
+<br />
+<br />
+<table style="width: 100%; text-align: left;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">_____________________________<br />
+{Vice President}<br />
+{Business Unit}<br />
+Bristol-Myers Squibb Canada<br />
+Date</td>
+      <td style="vertical-align: top;">_____________________________<br />
+Nom<br />
+Titre<br />
+Société<br />
+Date</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+</div>
+</apex:outputPanel>
+<!-- end french corporate -->
+<!-- start french honorarium -->
+<apex:outputPanel id="frenchHonorarium" rendered="{!render == 'frenchHonorarium'}">
+<div style="page-break-after: always;">
+<h2 style="text-align: center;">Bristol-Myers Squibb Canada</h2>
+<div style="text-align: right;">NUMÉRO DE L'ÉVÉNEMENT &nbsp;&nbsp;&nbsp;&nbsp;<apex:outputField value="{!medicalEvent.Event_Number_BMS__c}"/></div>
+<div style="text-align: right;">Nom du repr. &nbsp;&nbsp;&nbsp;&nbsp;<apex:outputField value="{!owner.Name}"/></div>
+<div style="text-align: right;">Région/Terr. &nbsp;&nbsp;&nbsp;&nbsp;<apex:outputText value="{!ownerTerritory}"/></div>
+<div style="text-align: center;">
+<h3><span style="font-weight: bold;">DEMANDE D'HONORAIRES</span></h3>
+TYPE DE SERVICE FOURNI</div>
+<br />
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/> CONFÉRENCIER</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> MODÉRATEUR</td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: center;">SI LE BÉNÉFICIAIRE N'EST PAS LE MÊME, VEUILLEZ COCHER LA CASE APPROPRIÉE
+ET INSCRIRE SON NOM, SON ADRESSE COMPLÈTE ET SON NUMÉRO DE TÉLÉPHONE
+</div>
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/> Établissement du professional de la santé</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> Association médicale ou hôpital</td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: center;">NOM DU BÉNÉFICIARE (PERSONNE OU ORGANISATION))</div>
+<apex:outputField value="{!speaker.Name}"/><br />
+<apex:outputField value="{!medicalEvent.Name}"/><br />
+<apex:outputField value="{!medicalEvent.Location__c}"/> &nbsp;<apex:outputField value="{!medicalEvent.State_BMS__c}"/><br />
+<apex:outputField value="{!speaker.Name}"/><br />
+<apex:outputField value="{!speakerAddress.Name}"/><br />
+<apex:outputField value="{!speakerAddress.City_vod__c}"/>,
+<apex:outputField value="{!speakerAddress.State_vod__c}"/> 
+<apex:outputField value="{!speakerAddress.Zip_vod__c}"/>
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;">Date: <apex:outputField value="{!medicalEvent.Start_Date_vod__c}"/></td>
+      <td style="text-align: right;">Honorarium Amount:
+<apex:outputField value="{!meetingspeaker.Rate_Card_Planned_Expenses__c}"/></td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: center;">LE BÉNÉFICIAIRE EST AUTORISÉ À RECEVOIR</div>
+<br />
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td>TPS</td>
+      <td nowrap="true"><img src="{!$Resource.BMS_Square}" width="20" height="20"/> 
+      NON</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> OUI</td>
+      <td>No D'INSCRIPTION:
+&nbsp;_____________________________</td>
+      
+    </tr>
+    <tr>
+      <td>TVQ</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> NON</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> OUI</td>
+      <td>No D'INSCRIPTION:
+&nbsp;_____________________________</td>
+      </tr>
+    <tr>
+      <td>HST</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> NON</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> OUI</td>
+      <td>No D'INSCRIPTION:
+&nbsp;_____________________________</td>
+     </tr>
+    
+    <tr align="right">
+      <td colspan="5" rowspan="1">TOTAL:
+________________________</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;">_____________________________</td>
+      <td>_____________________________</td>
+    </tr>
+    <tr>
+      <td style="width: 50%;">SIGNATURE DU PROFESSIONNEL DE LA SANTÉ</td>
+      <td>DATE</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+</div>
+<div style="page-break-after: always;">
+<table style="text-align: left; width: 100%; font-style: italic;"
+ border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-size: small;">Dans le cas où vous choisissez Bristol-Myers Squibb Canada pour discuter des produits d'une manière qui est inconsistante avec leurs monographies de produits approuvés, un avis devra être fait à l'auditoire avant de présenter, et que la présentation contienne des éléments qui sont en dehors de la monographie de produit approuvé.<br />
+      <br />
+De plus, vous devez inclure un désistement sur votre présentation qui stipule ce qui suit:  <span
+ style="text-decoration: underline; font-weight: bold;">Le soutien financier pour cette présentation a été fourni par Bristol-Myers Squibb Canada.  Bristol-Myers Squibb Canada ne recommande pas l'utilisation de ses produits d'une manière incompatible avec celui décrit dans la monographie complète du produit.</span><br />
+      <br />
+Dans toutes circonstances votre présentation doit être scientifiquement exacte, équilibrée et non faux ou trompeuse.<br />
+      <br />
+Comprenez que lors de la présentation de ces services, le professionnel de la santé doit suivre les codes d'éthiques et les lignes directrices de sa profession.</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+<h4><span style="text-decoration: underline;">À être coché par des fonctionnaires gouvernementaux SEULEMENT</span></h4>
+<img src="{!$Resource.BMS_Square}" width="20" height="20"/> Par la présente, je certifie être membre d'un organisme ou d'un comité gouvernemental à l'échelle provinciale ou fédérale (organisme chargé de choisir les produits à inscrire sur une liste de médicaments, ou de répondre aux demandes d'homologation relatives aux produits BMS), ou du comité d'un établissement public ou privé responsable de l'achat des produits, et je déclare et garantis ne pas être tenu d'obtenir une autorisation ou que cet organisme ou cet établissement m'a autorisé à fournir les services énoncés aux présentes et à recevoir une rémunération pour la prestation de tels services.</div>
+<div style="text-align: center;">
+<span style="font-weight: bold;">SVP veuillez faire parvenir par fax - incluant le numéro d'événement - au bureau à 1-866-429-1235 (locale (514) 331-8984)</span></div>
+<br/><br/>
+<div style="text-align: center;"><span style="font-weight: bold;">TERMES ET CONDITIONS</span></div>
+<div>Bristol-Myers Squibb Canada s’engage &#224; soutenir la prestation de programmes d&#39;&#233;ducation de haute qualit&#233; 
+dans le domaine de la sant&#233; qui sont destin&#233;s aux professionnels du domaine, et l’int&#233;grit&#233; de ces programmes 
+est de la plus haute importance pour l’entreprise.  Les honoraires vous seront vers&#233;s une fois l’engagement termin&#233;. 
+De plus, Bristol-Myers Squibb Canada d&#233;frayera les frais de voyage et d’h&#233;bergement raisonnables et n&#233;cessaires 
+que vous aurez engag&#233;s dans le cadre de la prestation de vos services de conf&#233;rencier, &#224; condition que vous lui 
+fournissiez les documents appropri&#233;s pour les frais engag&#233;s, y compris les re&#231;us originaux. Conform&#233;ment au 
+Code de d&#233;ontologie de Rx&amp;D, Bristol-Myers Squibb Canada ne remboursera aucuns frais engag&#233;s par un 
+conjoint ou un invit&#233;. Vous agirez &#224; titre de consultant ind&#233;pendant et serez le seul responsable de payer 
+tous les imp&#244;ts relatifs au soutien fourni par Bristol-Myers Squibb Canada.<br/>
+<br />
+Vous avez &#233;t&#233; s&#233;lectionn&#233; &#224; titre de conf&#233;rencier en raison de vos qualifications et de votre expertise dans le domaine en question et non, d’aucune fa&#231;on, pour vous inciter &#224; prescrire, &#224; administrer, &#224; recommander, &#224; acheter, &#224; utiliser ou &#224; fournir, actuellement ou &#224; l’avenir, des produits ou des services vendus ou fournis par Bristol-Myers Squibb Canada, ni pour vous r&#233;compenser de l’avoir fait dans le pass&#233;.</div>
+</div>
+</apex:outputPanel>
+<!-- end french honorarium -->
+<!-- start english honorarium -->
+<apex:outputPanel id="englishHonorarium" rendered="{!render == 'englishHonorarium'}">
+<div style="page-break-after: always;">
+<h2 style="text-align: center;">Bristol-Myers Squibb Canada</h2>
+<div style="text-align: right;">Event Number&nbsp;&nbsp;&nbsp;&nbsp;<apex:outputField value="{!medicalEvent.Event_Number_BMS__c}"/></div>
+<div style="text-align: right;">Rep Name&nbsp;&nbsp;&nbsp;&nbsp;<apex:outputField value="{!owner.Name}"/></div>
+<div style="text-align: right;">Region/Terr.&nbsp;&nbsp;&nbsp;&nbsp;<apex:outputText value="{!ownerTerritory}"/></div>
+<div style="text-align: center;">
+<h3><span style="font-weight: bold;">REQUEST FOR
+HONORARIUM</span></h3>
+TYPE OF SERVICE PROVIDED</div>
+<br />
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/> SPEAKER</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> MODERATOR</td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: center;">IF THE BENEFICIARY IS
+DIFFERENT, PLEASE CHECK THE APPROPRIATE CASE AND RECORD THE NAME,
+COMPLETE ADDRESS AND PHONE NUMBER OF THE BENEFICIARY</div>
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;"><img src="{!$Resource.BMS_Square}" width="20" height="20"/> Health Care Professional's Company</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> Medical Association or Hospital Affiliation</td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: center;">NAME OF BENEFICIARY
+(PERSON OR ORGANIZATION)</div>
+<apex:outputField value="{!speaker.Name}"/><br />
+<apex:outputField value="{!medicalEvent.Name}"/><br />
+<apex:outputField value="{!medicalEvent.Location__c}"/> &nbsp;<apex:outputField value="{!medicalEvent.State_BMS__c}"/><br />
+<apex:outputField value="{!speaker.Name}"/><br />
+<apex:outputField value="{!speakerAddress.Name}"/><br />
+<apex:outputField value="{!speakerAddress.City_vod__c}"/>,
+<apex:outputField value="{!speakerAddress.State_vod__c}"/> 
+<apex:outputField value="{!speakerAddress.Zip_vod__c}"/>
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;">Date: <apex:outputField value="{!medicalEvent.Start_Date_vod__c}"/></td>
+      <td style="text-align: right;">Honorarium Amount:
+<apex:outputField value="{!meetingspeaker.Rate_Card_Planned_Expenses__c}"/></td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: center;">THE BENEFICIARY IS
+AUTHORIZED TO RECEIVE</div>
+<br />
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td>GST</td>
+      <td nowrap="true"><img src="{!$Resource.BMS_Square}" width="20" height="20"/>
+      NO</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> YES</td>
+      <td>REGISTRATION#
+&nbsp;_____________________________</td>
+      
+    </tr>
+    <tr>
+      <td>QST</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> NO</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> YES</td>
+      <td>REGISTRATION#
+&nbsp;_____________________________</td>
+      
+    </tr>
+    <tr>
+      <td>HST</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> NO</td>
+      <td><img src="{!$Resource.BMS_Square}" width="20" height="20"/> YES</td>
+      <td>REGISTRATION#
+&nbsp;_____________________________</td>
+      
+    </tr>
+    
+    <tr align="right">
+      <td colspan="5" rowspan="1">TOTAL:
+________________________</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 50%;">_____________________________</td>
+      <td>_____________________________</td>
+    </tr>
+    <tr>
+      <td style="width: 50%;">SIGNATURE
+OF HEALTH CARE PROFESSIONAL</td>
+      <td>DATE</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table style="text-align: left; width: 100%; font-style: italic;"
+ border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="font-size: small;">In
+the event you choose to discuss Bristol-Myers Squibb Canada products in
+a manner which is inconsistent with their approved product monographs
+you shall advise the audience prior to the presentation that
+the presentation contains content which is outside of the approved
+product monograph.<br />
+      <br />
+In addition you must include a disclaimer on your presentation which
+states the following: <span
+ style="text-decoration: underline; font-weight: bold;">The
+financial support for this presentation was
+provided by Bristol-Myers Squibb Canada. Bristol-Myers Squibb Canada
+does not recommend the use of its products in any manner
+inconsistent with that described in the full product monograph.</span><br />
+      <br />
+In all
+circumstances your presentation must be scientifically accurate,
+balanced and not false or misleading.<br />
+      <br />
+In rendering the services, the healthcare professional shall comply
+with his/her professional and ethical codes and guidelines.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div style="page-break-after: always;">
+<div>
+<h4><span style="text-decoration: underline;">To be
+checked off by government officials ONLY</span></h4>
+<img src="{!$Resource.BMS_Square}" width="20" height="20"/> I hereby certify that I am a member of a federal or provincial
+government agency or board (agency that decides which products 
+are included in a formulary or list or decides registration issues
+related to BMS products) or a public or private institution 
+purchasing board, and I represent and warrant either authorization is
+not required or that such agency or institution has 
+authorized me to provide the services set forth herein and to be
+compensated for the provision of such services.
+</div>
+<div style="text-align: center;">
+<span style="font-weight: bold;">Fax completed form -
+including event number - to Head Office at 1-866-429-1235 (or local
+(514) 331-8984)</span></div>
+<br/><br/>
+<div style="text-align: center;"><span
+ style="font-weight: bold;">TERMS AND CONDITIONS TO REQUEST
+FOR HONORARIUM</span></div>
+<div>Bristol-Myers Squibb Canada is committed to supporting high
+quality health education programs for health care professionals and the
+integrity of
+such programs is of utmost importance to us. Payment will be made
+following completion of the speaking engagement. Bristol-Myers Squibb
+Canada will also reimburse you for reasonable and necessary travel and
+accommodation expenses that you incur in making the presentation,
+provided that you submit appropriate documentation for such expenses,
+including original receipts. In accordance with Rx&amp;D’s Code of
+Ethical
+Practices, Bristol-Myers Squibb Canada will not reimburse you for any
+expenses for spouses or guests. You will be acting as an independent
+contractor and will be solely responsible for paying any and all taxes
+applicable to the support being provided to you by Bristol-Myers Squibb
+Canada.<br />
+<br />
+You have been selected to speak because of your qualifications and
+expertise in the relevant subject matter and not, in any way, as an
+incentive or
+reward for any past, present or future willingness to prescribe,
+administer, recommend, purchase, use, or supply any product or service
+sold or
+provided by Bristol-Myers Squibb Canada. 
+</div>
+</div>
+</apex:outputPanel>
+<!-- end english honorarium -->
+
+</body>
+</html>
+</apex:form>
+</apex:page>

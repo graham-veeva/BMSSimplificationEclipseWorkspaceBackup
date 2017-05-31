@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Konfigurasi Acara</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Konfigurasi Acara</value>
+    </caseValues>
+    <fields>
+        <label>Tanggal Selesai</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Acara</label>
+        <name>Event_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Mulai</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Konfigurasi Acara</label>
+        <name>Event_Configuration_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Tanggal akhir harus sama atau lebih besar dari tanggal mulai.</errorMessage>
+        <name>StartDateBeforeEndDate</name>
+    </validationRules>
+</CustomObjectTranslation>

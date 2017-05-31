@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cycle MC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cycle MC</value>
+    </caseValues>
+    <fields>
+        <label>Aktifkan Tujuan yang Telah Diedit</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Jika bidang benar dan tarik-terobos ada di objek MC_Target_vod, saat integrasi MCCP dijalankan, bidang tarik-terobos akan diisi. Anda tidak disarankan untuk sering-sering mengaturnya, kecuali bila nilai tarik-terobos perlu diisi.</help>
+        <label>Kalkulasi Tarik Terobos</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Deskripsi</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Selesai</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Batas Lebih dari yang Dijangkau</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Mulai</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Selesai</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Sedang Berlangsung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Direncanakan</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Batas Di Bawah yang Dijangkau</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Definisi Cycle</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Tanggal Mulai tidak boleh lebih besar daripada atau sama dengan Tanggal Akhir.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

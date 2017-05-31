@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>VSB Prolifiq Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>VSB Prolifiq Request</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Account ID --></label>
+        <name>HCP_Account_ID_BMS__c</name>
+        <relationshipLabel><!-- VSB Prolifiq Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HCP Email --></label>
+        <name>HCP_Email_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rep --></label>
+        <name>Rep_BMS__c</name>
+        <relationshipLabel><!-- VSB Prolifiq Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request --></label>
+        <name>Request_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_BMS__c</name>
+        <picklistValues>
+            <masterLabel>Exception State</masterLabel>
+            <translation><!-- Exception State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfilled by Prolifiq</masterLabel>
+            <translation><!-- Fulfilled by Prolifiq --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Prolifiq</masterLabel>
+            <translation><!-- Sent to Prolifiq --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

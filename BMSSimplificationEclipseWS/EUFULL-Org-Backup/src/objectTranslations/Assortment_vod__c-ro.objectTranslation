@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Set</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Set</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Seturi</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Seturi</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Setului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Setului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Seturilor</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Seturilor</value>
+    </caseValues>
+    <fields>
+        <label>Grupul contului</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tip înregistrare cont</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Farmacie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Comerciant en-gros</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Toate celelalte</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grupul setului</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de sfârşit</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID extern</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tip înregistrare monitorizare inventar</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Monitorizare a inventarului</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipul de înregistrare al comenzii</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation><!-- Direct_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation><!-- Transfer_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Legat de produs</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de început</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nume</nameFieldLabel>
+    <recordTypes>
+        <label>Set IM</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Set Gestionare comenzi</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Data de început după data de sfârşit</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un set legat de produs nu poate avea afișată secțiunea Toate celelalte</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Previzualizare</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

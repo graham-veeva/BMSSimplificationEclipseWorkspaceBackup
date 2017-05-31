@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sottoregola determinazione prezzi</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sottoregole determinazione prezzi</value>
+    </caseValues>
+    <fields>
+        <label>Tipo di confronto</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Valore elenco</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Quantità</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Conteggio SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Quantità massima</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantità minima</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Regola determinazione prezzi</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Sottoregole determinazione prezzi</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Prodotto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Sottoregole determinazione prezzi</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Articoli kit non sono supportati come Prodotto di confronto</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La quantità massima deve essere maggiore o uguale alla quantità minima.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Il conteggio SKU deve essere &gt; di 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

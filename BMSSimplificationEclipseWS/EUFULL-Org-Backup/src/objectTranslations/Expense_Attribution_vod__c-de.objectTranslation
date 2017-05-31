@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ausgabenzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ausgabenzuordnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ausgabenzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ausgabenzuordnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ausgabenzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ausgabenzuordnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ausgabenzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Ausgabenzuordnungen</value>
+    </caseValues>
+    <fields>
+        <label>Aktuell</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ausgabenposition</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ausgabentyp</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten (Account)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten (Teilnehmer)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten (Redner)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten (Teammitglied)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten –Typ</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation><!-- Account_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Teilnehmer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Veranstaltungsredner</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Veranstaltungs-Teammitglied</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Anbieter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Veranstaltungsort</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten (Anbieter)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten (Veranstaltungsort)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Ausgabenzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Angefallene Kosten</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zahlungsdatum</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namen</nameFieldLabel>
+    <recordTypes>
+        <label>Veranstaltungsbezogene Ausgaben</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Call2_vod__c.Region__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.BP_ID_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.First_Name_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.MI_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.City_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.State_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c.Country_ID_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c.Country_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c.Deck_ID_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c.iPlan_Deck_Name_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Date_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Call2_vod__c.Interaction_Topic_BMS_SHARED__c</column>
+            <operator>equals</operator>
+            <value>Speaker Training</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BMS-CA-SA-Speaker Training</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Call2_vod__c$Call2_Discussion_vod__c@Call2_Discussion_vod__c.Account_vod__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Assignment_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

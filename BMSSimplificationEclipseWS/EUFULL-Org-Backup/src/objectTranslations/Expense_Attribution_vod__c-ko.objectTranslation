@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>비용 속성</value>
+    </caseValues>
+    <fields>
+        <label>실제</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>비용 라인</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>비용 유형</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>발생 비용(계정)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>발생 비용(참석자)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>발생 비용(연사)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>발생 비용(팀원)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>발생 비용 유형</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>계정</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>참석자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>이벤트 강사</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>이벤트팀 구성원</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>업체</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>장소</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>발생 비용(업체)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>발생 비용(장소)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>비용 속성</relationshipLabel>
+    </fields>
+    <fields>
+        <label>발생 비용</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>지급일</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label>이벤트 비용 속성</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

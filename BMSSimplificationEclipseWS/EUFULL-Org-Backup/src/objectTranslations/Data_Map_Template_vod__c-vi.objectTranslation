@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mẫu sơ đồ dữ liệu</value>
+    </caseValues>
+    <fields>
+        <label>Hoạt động</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gầu</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhãn cột</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>&quot;Nếu tệp sẽ có nhãn cột như dòng thứ nhất của mẫu này, hãy chọn hộp này.&quot;</help>
+        <label>Bao gồm nhãn cột</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bao gồm mục tiêu?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vị trí thập phân</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>Để sử dụng báo cáo Phân Tích Thị Trường Bán Hàng, chỉ chọn một tập tin dữ liệu bán hàng hàng tháng. Dữ liệu bán hàng cũng phải chứa Mã Bác Sĩ Kê Toa, Mã Thị Trường, Mã Nhóm Sản Phẩm</help>
+        <label>Cho Phép Báo Cáo Phân Tích Bán Hàng</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cho phép ngoại tuyến</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Danh sách thuốc cho nhãn người đại diện</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Nhãn cột đầu tiên</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Không có</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Nhãn cột thứ hai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Loại tải tăng</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Toàn bộ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Gia tăng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Một phần</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tăng</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đã lập bản đồ thị trường?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ghi đè ngưỡng tài khoản</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đã lập bản đồ người thanh toán/Kế hoạch?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chia tỷ lệ</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Hàng tháng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Hàng tuần</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Nhãn cột thứ hai</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bao gồm tên lãnh thổ?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>&quot;Vui lòng chọn một giá trị trong danh sách lựa chọn hợp lệ.  Nếu tải dữ liệu, đảm bảo rằng bạn đang sử dụng giá trị của danh sách lựa chọn chính, chứ không phải nhãn được dịch&quot;</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Chỉ có thể chọn Báo Cáo Phân Tích Thị Trường Bán Hàng khi quy mô được chọn là hàng tháng và bỏ chọn hộp kiểm Ánh Xạ Người Thanh Toán / Kế hoạch</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Đảm bảo rằng nhãn cột không chứa bất kỳ ký tự nào sau đây: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Số vị trí thập phân phải là 0 - 4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Vui lòng chọn một giá trị trong danh sách lựa chọn hợp lệ. Nếu tải dữ liệu, đảm bảo rằng bạn đang sử dụng giá trị của danh sách lựa chọn chính, chứ không phải nhãn được dịch&quot;</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

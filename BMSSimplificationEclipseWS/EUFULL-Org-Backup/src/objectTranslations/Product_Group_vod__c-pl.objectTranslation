@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Grupa produktów</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Grupy produktów</value>
+    </caseValues>
+    <fields>
+        <label>Opis</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data zakończenia</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Katalog produktów</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Grupy produktów (Katalog produktów)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Grupy produktów</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ilość</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data rozpoczęcia</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Nie możesz łączyć Grupy szczegółów, która nie jest Produktem firmy do Produktu ze szczegółami lub Tematu, będącego Produktem firmy.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tylko produkty typu &quot;Temat szczegółów&quot; lub &quot;Szczegóły&quot; mogą być skojarzone z Grupą Produktów typu szczegół.</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Dozwolone są tylko typy &apos;Grupa produktów&apos;,  &apos;Grupa produktów&apos;: próbki&apos; lub &apos;Grupa szczegółów&apos;.</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Dozwolony jest tylko typ &apos;Zamówienie&apos;</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Z obiektem typu &apos;Grupa produktów: próbki&apos; mogą być powiązane tylko produkty typu &apos;Próbka&apos; lub &apos;BRC&apos;.</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Należy podać datę rozpoczęcia i datę zakończenia, jeśli zdefiniowano ilość</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wymagane są prawidłowe daty rozpoczęcia i zakończenia.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

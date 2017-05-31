@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sous-règle de tarification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sous-règles de tarification</value>
+    </caseValues>
+    <fields>
+        <label>Type de comparaison</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Valeur de liste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Quantité</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Nombre de références</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Quantité maximale</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantité minimale</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Règle de tarification</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Sous-règles de tarification</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produit</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Sous-règles de tarification</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Les éléments du kit ne sont pas pris en charge en tant que produit de comparaison</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La quantité maximale doit être supérieure ou égale à la quantité minimale.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le nombre de références doit être supérieur à 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

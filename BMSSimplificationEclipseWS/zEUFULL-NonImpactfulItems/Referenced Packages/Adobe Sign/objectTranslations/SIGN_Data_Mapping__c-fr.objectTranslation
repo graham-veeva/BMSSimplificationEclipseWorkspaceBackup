@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mappage de données</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mappages de données</value>
+    </caseValues>
+    <fields>
+        <label>Type d’entrée mis en cache</label>
+        <name>Cached_Input_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box if you want this data mapping to run by default for all agreements sent. You can override the default if you specify a different data mapping to use with a specific agreement or agreement template. --></help>
+        <label>Mappage des données par défaut ?</label>
+        <name>Default_Data_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label>Fusionner les champs au format CSV</label>
+        <name>Merge_Field_CSV__c</name>
+    </fields>
+    <fields>
+        <label>Informer l’utilisateur des erreurs</label>
+        <name>Notify_User_of_Errors__c</name>
+        <relationshipLabel>Mappages de données</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Process Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de mappage des données</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

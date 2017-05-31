@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>상품 분류 라인</value>
+    </caseValues>
+    <fields>
+        <label>상품 분류</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>상품 분류 라인</relationshipLabel>
+    </fields>
+    <fields>
+        <label>기본적으로 축소하시겠습니까?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>상위 섹션</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>상품 분류 라인</relationshipLabel>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>상품 분류 라인</relationshipLabel>
+    </fields>
+    <fields>
+        <label>섹션 레이블</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>정렬</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label>IM 모음 제품</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>IM 모음 섹션</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM 상품 분류 제품</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM 상품 분류 섹션</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>OM 모음 라인은 OM 모음과만 연결할 수 있고, IM 모음 라인은 IM 모음과만 연결할 수 있습니다.</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>IM_Assortment_Section_vod 레코드 유형 또는 OM_Assortment_Section_vod에 대해서만 확인할 수 있습니다.</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>섹션을 상위 섹션에 링크할 수 없습니다.</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>동일한레코드에서섹션과제품을지정할수없습니다.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

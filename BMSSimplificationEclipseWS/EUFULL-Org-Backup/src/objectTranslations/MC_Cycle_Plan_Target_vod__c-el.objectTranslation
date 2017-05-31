@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>MC Στόχος πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>MC Στόχοι πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>MC Στόχοι πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>MC Στόχοι πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>MC Στόχος πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>MC Στόχοι πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>MC Στόχος πλάνου κύκλου</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>MC Στόχος πλάνου κύκλου</value>
+    </caseValues>
+    <fields>
+        <label>Επίτευξη καναλιού</label>
+        <name>Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πραγματικές δραστηριότητες καναλιού</label>
+        <name>Channel_Interactions_Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κερδισμένες αλληλεπιδράσεις καναλιού</label>
+        <name>Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Στόχος αλληλεπιδράσεων καναλιού</label>
+        <name>Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μέγιστες αλληλεπιδράσεις καναλιού</label>
+        <name>Channel_Interactions_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Υπολειπόμενες αλληλεπιδράσεις καναλιού</label>
+        <name>Channel_Interactions_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση καναλιού</label>
+        <name>Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Σε πρόγραμμα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Πάνω από το όριο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Κάτω από το όριο.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Θυγατρικός λογαριασμός</label>
+        <name>Child_Account_vod__c</name>
+        <relationshipLabel>Στόχοι πλάνου κύκλου</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Πλάνο κύκλου</label>
+        <name>Cycle_Plan_vod__c</name>
+        <relationshipLabel>Στόχοι πλάνου κύκλου MC</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Εξωτερική αναγνωριστική ταυτότητα</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Furigana --></label>
+        <name>Furigana_vod__c</name>
+    </fields>
+    <fields>
+        <label>Επεξεργασμένοι στόχοι</label>
+        <name>Goals_Edited_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τελευταίος υπολογισμός</label>
+        <name>Last_Calculated_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τοποθεσία</label>
+        <name>Location_vod__c</name>
+        <relationshipLabel>Στόχοι πλάνου κύκλου (τοποθεσία)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Master ID --></label>
+        <name>Master_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα θυγατρικού μητρικού</label>
+        <name>Parent_Child_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Επίτευξη προϊόντος</label>
+        <name>Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κερδισμένες αλληλεπιδράσεις προϊόντος</label>
+        <name>Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Στόχος αλληλεπιδράσεων προϊόντος</label>
+        <name>Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Interactions Remaining --></label>
+        <name>Product_Interactions_Remaining_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση προϊόντος</label>
+        <name>Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Σε πρόγραμμα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Πάνω από το όριο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Κάτω από το όριο.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_BMS_LATAM__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Active_vod</masterLabel>
+            <translation>Ενεργό</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged_vod</masterLabel>
+            <translation>Συγχωνευμένο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Στόχος</label>
+        <name>Target_vod__c</name>
+        <relationshipLabel>Στόχοι πλάνου κύκλου</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Επίδοση καναλιού ομάδας</label>
+        <name>Team_Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πραγματικές αλληλεπιδρ. καναλιού ομάδας</label>
+        <name>Team_Channel_Interactions_Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αποκτηθείσες αλληλεπιδρ. καναλιού ομάδας</label>
+        <name>Team_Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Στόχος αλληλεπιδράσεων καναλιού ομάδας</label>
+        <name>Team_Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μέγιστες αλληλεπιδράσεις καναλιού ομάδας</label>
+        <name>Team_Channel_Interactions_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Υπολειπόμενες αλληλεπ. καναλιού ομάδας</label>
+        <name>Team_Channel_Interactions_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση καναλιού ομάδας</label>
+        <name>Team_Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Σε πρόγραμμα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Πάνω από το όριο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Κάτω από το όριο.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Επίδοση προϊόντος ομάδας</label>
+        <name>Team_Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αποκτηθείσες αλληλεπ. προϊόντος ομάδας</label>
+        <name>Team_Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Στόχος αλληλεπιδράσεων προϊόντος ομάδας</label>
+        <name>Team_Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση προϊόντος ομάδας</label>
+        <name>Team_Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Σε πρόγραμμα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Πάνω από το όριο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Κάτω από το όριο.</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Plan Target --></nameFieldLabel>
+    <recordTypes>
+        <label>Στόχος πλάνου κύκλου</label>
+        <name>Cycle_Plan_Target_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Ο στόχος αλληλεπίδρασης καναλιού δε μπορεί να είναι μικρότερος από 0</errorMessage>
+        <name>Goal_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Δεν μπορεί να συμπληρωθεί η Location_vod με ένα λογαριασμό προσώπου</errorMessage>
+        <name>LocationIsPersonAccount_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Δεν μπορεί να συμπληρωθεί η Location_vod an το Target_vod είναι επιχειρηματικός λογαριασμός</errorMessage>
+        <name>Location_TargetIsBusinessAcct_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η μέγιστες αλληλεπιδράσεις καναλιού δε μπορεί να είναι μικρότερες από 0 ή μικρότερες από το στόχο αλληλεπίδρασης καναλιού.</errorMessage>
+        <name>Max_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο στόχος αλληλεπιδράσεων καναλιού ομάδας δεν μπορεί να είναι μικρότερος από 0</errorMessage>
+        <name>Team_Goal_Validations_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το μέγιστο των αλληλεπιδράσεων καναλιού ομάδας δεν μπορεί να είναι μικρότερο από 0 ή μικρότερο από το στόχο αλληλεπιδράσεων καναλιού ομάδας.</errorMessage>
+        <name>Team_Max_Validations_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

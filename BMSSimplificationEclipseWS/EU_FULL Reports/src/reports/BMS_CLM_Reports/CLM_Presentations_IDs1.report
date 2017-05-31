@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Clm_Presentation_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Clm_Presentation_vod__c$Presentation_ID_18_BMS__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>CLM - Presentations &amp; IDs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CLM_Presentations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Clm_Presentation_vod__c$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

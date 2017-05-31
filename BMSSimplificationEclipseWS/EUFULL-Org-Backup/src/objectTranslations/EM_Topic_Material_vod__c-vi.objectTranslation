@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vật Liệu Chủ Đề</value>
+    </caseValues>
+    <fields>
+        <label>Thuyết Trình CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Tài Liệu Chủ Đề</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Mẫu Email</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Tài Liệu Đề Tài</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mã Ngoại</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Loại Vật Liệu</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vật Liệu</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Các Chủ Đề Sử Dụng Vật Liệu</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Chủ Đề</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Vật Liệu Chủ Đề (Chủ Đề)</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Tên</nameFieldLabel>
+    <recordTypes>
+        <label>Vật Liệu Chủ Đề</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Một quy tắc đơn không thể có cả Mẫu Dạng Email lẫn Thuyết Trình CLM đã tạo. Xin hãy tạo các quy tắc riêng cho hai mục này.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Một tài liệu chủ đề đơn không thể có cả Tài Liệu lẫn Thuyết Trình CLM đã tạo. Xin hãy tạo các quy tắc riêng cho hai mục này.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Không thể tạo cả Tài Liệu và Mẫu Email cho một tài liệu chủ đề đơn lẻ. Vui lòng tạo các quy tắc riêng biệt cho hai mặt hàng này.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

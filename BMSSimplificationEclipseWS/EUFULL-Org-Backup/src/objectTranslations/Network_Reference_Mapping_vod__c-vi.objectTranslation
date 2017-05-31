@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ánh xạ Tham chiếu Mạng</value>
+    </caseValues>
+    <fields>
+        <label>ID Tra cứu CRM</label>
+        <name>CRM_Lookup_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giá trị trong Danh sách chọn CRM</label>
+        <name>CRM_Picklist_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên Loại Bản ghi CRM</label>
+        <name>CRM_Record_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chỉ dẫn</label>
+        <name>Direction_vod__c</name>
+        <picklistValues>
+            <masterLabel>Bidirectional_vod</masterLabel>
+            <translation>Hai chiều</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound_vod</masterLabel>
+            <translation>Nhập</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound_vod</masterLabel>
+            <translation>Xuất</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ánh xạ Trường Mạng</label>
+        <name>Network_Field_Mapping_vod__c</name>
+        <relationshipLabel>Ánh xạ Tham chiếu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mã Tham chiếu Mạng</label>
+        <name>Network_Reference_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Khóa Duy nhất</label>
+        <name>Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Các ghi chú phê duyệt</label>
+        <name>Validation_Notes_vod__c</name>
+    </fields>
+    <fields>
+        <help>Ánh xạ tình trạng phê duyệt</help>
+        <label>Tình trạng phê duyệt</label>
+        <name>Validation_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Invalid_vod</masterLabel>
+            <translation>Không hợp lệ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unvalidated_vod</masterLabel>
+            <translation>Chưa được phê duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid_vod</masterLabel>
+            <translation>Hợp lệ</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Network Reference Mapping ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Boolean_vod --></label>
+        <name>Boolean_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Tra cứu</label>
+        <name>Lookup_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Danh sách chọn</label>
+        <name>Picklist_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Loại Bản ghi</label>
+        <name>Record_Type_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

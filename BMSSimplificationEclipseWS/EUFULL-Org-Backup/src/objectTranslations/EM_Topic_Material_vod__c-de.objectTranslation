@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Material Topic</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Material Topics</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Material Topic</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Material Topics</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Material Topic</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Material Topics</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Material Topic</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Material Topics</value>
+    </caseValues>
+    <fields>
+        <label>CLM-Präsentation</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Themenmaterialien</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>E-Mail-Vorlage</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel><!-- Topic Materials --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Name des Materials</help>
+        <label>Name</label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Materialtyp</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Topics, die Material verwenden</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Name der Topic</help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Topic</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel><!-- Topic Materials (Topic) --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Material Topic</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Durch eine einzige Regel können nicht E-Mail-Vorlage und CLM-Präsentation gefüllt werden. Erstellen Sie separate Regeln für diese beiden Elemente.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Durch ein einziges Thema können nicht Material und CLM-Präsentation gefüllt werden. Erstellen Sie separate Regeln für diese beiden Elemente.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bei einem Einzel-Topic darf nicht sowohl die Materialvorlage als auch die E-Mail-Vorlage ausgefüllt sein. Legen Sie separate Regeln für diese beiden Artikel an</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

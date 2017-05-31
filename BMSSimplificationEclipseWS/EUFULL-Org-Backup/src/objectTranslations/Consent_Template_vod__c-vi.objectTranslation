@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mẫu Đồng Ý</value>
+    </caseValues>
+    <fields>
+        <label>Ngày Hiệu Lực Theo Niên Lịch</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngưỡng Hết Hạn</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại Hết Hạn</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Lịch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Thiết Lập Thời Hạn</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ngày Bắt Đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>Tên mẫu</nameFieldLabel>
+    <recordTypes>
+        <label>Mẫu Đồng Ý Thuốc Mẫu</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Yêu cầu Ngày Hiệu Lực Theo Niên Lịch khi Loại Hết Hạn được thiết lập theo Niên Lịch</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Trường bắt buộc bị thiếu</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ngày Kết Thúc không được sớm hơn Ngày Bắt Đầu</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

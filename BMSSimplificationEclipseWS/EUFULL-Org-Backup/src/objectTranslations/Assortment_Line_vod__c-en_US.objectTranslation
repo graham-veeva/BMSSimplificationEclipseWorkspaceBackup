@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assortment Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assortment Lines</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assortment --></label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel><!-- Assortment Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collapse By Default? --></label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Section --></label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel><!-- Assortment Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Assortment Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Section Label --></label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sorting --></label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <recordTypes>
+        <label>IM Assortment Product</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>IM Assortment Section</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM Assortment Product</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM Assortment Section</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- OM Assortment Lines can only be associated with OM Assortments, and IM Assortment Lines can only be associated with IM Assortments --></errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can only be checked for the IM_Assortment_Section_vod Record Type or OM_Assortment_Section_vod --></errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Section cannot be linked to a Parent Section --></errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Section and a Product cannot be specified on the same record. --></errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

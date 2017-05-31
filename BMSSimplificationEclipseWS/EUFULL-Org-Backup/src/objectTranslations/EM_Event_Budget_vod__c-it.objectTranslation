@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget evento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget evento</value>
+    </caseValues>
+    <fields>
+        <label>Effettivo</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome budget</label>
+        <name>Budget_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- WBS/CC --></label>
+        <name>Budget_vod__c</name>
+        <relationshipLabel>Budget evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vincolato</label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Stima</label>
+        <name>Estimate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Rimanenze stimate</label>
+        <name>Estimated_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Evento annullato</label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label>Evento</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Budget evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Inheriting Expense Estimates --></label>
+        <name>Failure_Inheriting_Expense_Estimates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Is_Need__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ID cellulare</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Forza blocco</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting for Expense Estimate Inheritance --></label>
+        <name>Waiting_for_Expense_Estimate_Inheritance__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label>Budget evento</label>
+        <name>Event_Budget_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WBS/CC --></label>
+        <name>WBS_CC_Simple_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Membro Team eventi</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has an End Date After the Event&apos;s End Date. --></errorMessage>
+        <name>Need_End_Date_After_Atvty_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has a start date before the Event&apos;s Start Date. --></errorMessage>
+        <name>Need_Start_Date_Before_Atvty_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

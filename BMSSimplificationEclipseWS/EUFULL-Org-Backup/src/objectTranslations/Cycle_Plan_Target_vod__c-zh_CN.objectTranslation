@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>拜访周期计划目标</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>实际拜访数</label>
+        <name>Actual_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Algorithm Products --></label>
+        <name>Algorithm_Products_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>实际拜访率</label>
+        <name>Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Durations --></label>
+        <name>Call_Durations_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>目标</label>
+        <name>Cycle_Plan_Account_vod__c</name>
+        <relationshipLabel>拜访周期计划目标</relationshipLabel>
+    </fields>
+    <fields>
+        <label>拜访周期计划</label>
+        <name>Cycle_Plan_vod__c</name>
+        <relationshipLabel>拜访周期计划目标</relationshipLabel>
+    </fields>
+    <fields>
+        <label>医生等级</label>
+        <name>Dr_Level_BMS_CN__c</name>
+        <picklistValues>
+            <masterLabel>H</masterLabel>
+            <translation><!-- H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VH</masterLabel>
+            <translation><!-- VH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- HP Dr Level --></label>
+        <name>HP_Dr_Level_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- HP Usage Level --></label>
+        <name>HP_Usage_Level_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hospital --></label>
+        <name>Hospital_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>移动 ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name (Last,First) --></label>
+        <name>Name_Last_First_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>最初计划的拜访数</label>
+        <name>Original_Planned_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>计划的拜访数</label>
+        <name>Planned_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>剩余计划</label>
+        <name>Remaining_Schedule_vod__c</name>
+    </fields>
+    <fields>
+        <label>剩余量</label>
+        <name>Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>计划呼叫</label>
+        <name>Scheduled_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- TL Level --></label>
+        <name>TL_Level_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Territory from the Cycle Plan this Cycle Plan Target belongs to --></help>
+        <label><!-- Territory --></label>
+        <name>Territory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>实际拜访总数</label>
+        <name>Total_Actual_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>总实际拜访率</label>
+        <name>Total_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>计划的拜访总数</label>
+        <name>Total_Planned_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label>总剩余计划</label>
+        <name>Total_Remaining_Schedule_vod__c</name>
+    </fields>
+    <fields>
+        <label>剩余总量</label>
+        <name>Total_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>计划呼叫总数</label>
+        <name>Total_Scheduled_Calls_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Source Country --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visited --></label>
+        <name>Visited_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZS External ID --></label>
+        <name>ZS_ID_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Institution --></label>
+        <name>zvod_ACCOUNT_Main_Institution_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Cycle Plan Targets (Main Institution) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>医院</label>
+        <name>zvod_ACCOUNT_Primary_Parent_vod__c</name>
+        <relationshipLabel><!-- Cycle Plan Targets (Primary Parent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>zvod 显示产品详细信息</label>
+        <name>zvod_Display_Product_Details_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>计划的拜访数不得小于零。</errorMessage>
+        <name>PlannedCallsLessThan0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>请指定目标客户。</errorMessage>
+        <name>Require_Trarget_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>总的计划拜访数不得小于零。</errorMessage>
+        <name>TotalPlannedCallsLessThan0</name>
+    </validationRules>
+    <webLinks>
+        <label>应用列表</label>
+        <name>Cycle_Plan_Apply_List_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>新目标</label>
+        <name>Cycle_Plan_New_Target_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>计划拜访</label>
+        <name>Cycle_Plan_Schedule_Calls_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

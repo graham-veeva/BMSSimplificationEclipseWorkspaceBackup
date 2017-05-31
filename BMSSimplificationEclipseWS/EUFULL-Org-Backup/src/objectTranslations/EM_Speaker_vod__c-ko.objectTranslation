@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>연사</value>
+    </caseValues>
+    <fields>
+        <label>계정</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>연사</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address Line 1 --></label>
+        <name>Address_Line_1_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Address_Line_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>주소</label>
+        <name>Address_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alternate Contact Info --></label>
+        <name>Alternate_Contact_Info_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>연간 상한</label>
+        <name>Annual_Cap_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Customer ID --></label>
+        <name>BP_ID_BMS_CORE_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>남은 상한</label>
+        <name>Cap_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_Lookup_HCPTS__c</name>
+        <relationshipLabel><!-- Service Providers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Designation --></label>
+        <name>Credentials_vod_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>AN-Advanced Nurse</masterLabel>
+            <translation><!-- AN-Advanced Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AUD-Audiologist</masterLabel>
+            <translation><!-- AUD-Audiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMR-Billing Manager (Staff)</masterLabel>
+            <translation><!-- BMR-Billing Manager (Staff) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BSN-Bachelor of Science in Nursing</masterLabel>
+            <translation><!-- BSN-Bachelor of Science in Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CFO-Chief Financial Officer</masterLabel>
+            <translation><!-- CFO-Chief Financial Officer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMA-Certified Medical Assistant</masterLabel>
+            <translation><!-- CMA-Certified Medical Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNA-Certified Nursing Assistant</masterLabel>
+            <translation><!-- CNA-Certified Nursing Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNA-Certified Registered Nurse Anesthetist</masterLabel>
+            <translation><!-- CNA-Certified Registered Nurse Anesthetist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CNS-Clinical Nurse Specialist</masterLabel>
+            <translation><!-- CNS-Clinical Nurse Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR-Cancer Registrar</masterLabel>
+            <translation><!-- CR-Cancer Registrar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRP-Chiropractor</masterLabel>
+            <translation><!-- CRP-Chiropractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CW-Case Worker</masterLabel>
+            <translation><!-- CW-Case Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DDS-Doctor of Dental Surgery</masterLabel>
+            <translation><!-- DDS-Doctor of Dental Surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DN-Director Of Nursing</masterLabel>
+            <translation><!-- DN-Director Of Nursing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNU-Discharge Nurse</masterLabel>
+            <translation><!-- DNU-Discharge Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DO-Doctor of Osteopathy</masterLabel>
+            <translation><!-- DO-Doctor of Osteopathy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPM-Doctor of Podiatric Medicine</masterLabel>
+            <translation><!-- DPM-Doctor of Podiatric Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DST-Dosimetrist</masterLabel>
+            <translation><!-- DST-Dosimetrist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPD-Epidemiologist</masterLabel>
+            <translation><!-- EPD-Epidemiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIN-Financial Counselor</masterLabel>
+            <translation><!-- FIN-Financial Counselor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HE-Health Educator</masterLabel>
+            <translation><!-- HE-Health Educator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICO-Insurance Coordinator</masterLabel>
+            <translation><!-- ICO-Insurance Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LPN-Licensed Practical Nurse</masterLabel>
+            <translation><!-- LPN-Licensed Practical Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LT-Lab Technician</masterLabel>
+            <translation><!-- LT-Lab Technician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA-Medical Assistant</masterLabel>
+            <translation><!-- MA-Medical Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD-Medical Doctor</masterLabel>
+            <translation><!-- MD-Medical Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA-Not Applicable</masterLabel>
+            <translation><!-- NA-Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND-Naturopathic Doctor</masterLabel>
+            <translation><!-- ND-Naturopathic Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE-Nurse Educator</masterLabel>
+            <translation><!-- NE-Nurse Educator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM-Nurse Midwife</masterLabel>
+            <translation><!-- NM-Nurse Midwife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NP-Nurse Practitioner</masterLabel>
+            <translation><!-- NP-Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NTR-Nutritionist</masterLabel>
+            <translation><!-- NTR-Nutritionist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OD-Doctor of Optometry</masterLabel>
+            <translation><!-- OD-Doctor of Optometry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OMGR-Office Manager</masterLabel>
+            <translation><!-- OMGR-Office Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ONN-Oncology Nurse Navigator</masterLabel>
+            <translation><!-- ONN-Oncology Nurse Navigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHE-Other</masterLabel>
+            <translation><!-- OTHE-Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA-Physician Assistant</masterLabel>
+            <translation><!-- PA-Physician Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAD-Policy Advisor</masterLabel>
+            <translation><!-- PAD-Policy Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PADM-Practice Administrator</masterLabel>
+            <translation><!-- PADM-Practice Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHI-Pharmacist Intern</masterLabel>
+            <translation><!-- PHI-Pharmacist Intern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHMD-PharmD</masterLabel>
+            <translation><!-- PHMD-PharmD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHR-Pharmacist</masterLabel>
+            <translation><!-- PHR-Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHT-Pharmacy Technician</masterLabel>
+            <translation><!-- PHT-Pharmacy Technician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PN-Psychiatric Nurse</masterLabel>
+            <translation><!-- PN-Psychiatric Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSY-Psychologist</masterLabel>
+            <translation><!-- PSY-Psychologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PhD</masterLabel>
+            <translation><!-- PhD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RC-Research Coordinator</masterLabel>
+            <translation><!-- RC-Research Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMGR-Reimbursement Manager</masterLabel>
+            <translation><!-- RMGR-Reimbursement Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RN-Registered Nurse</masterLabel>
+            <translation><!-- RN-Registered Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNP</masterLabel>
+            <translation><!-- RNP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RPH-Registered Pharmacist</masterLabel>
+            <translation><!-- RPH-Registered Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RS-Reimbursement Specialist</masterLabel>
+            <translation><!-- RS-Reimbursement Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RT-Radiation Tech</masterLabel>
+            <translation><!-- RT-Radiation Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SW-Social Worker</masterLabel>
+            <translation><!-- SW-Social Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCO-Transplant Coordinator</masterLabel>
+            <translation><!-- TCO-Transplant Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US-Unspecified</masterLabel>
+            <translation><!-- US-Unspecified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMD-Veterinary Medical Doctor</masterLabel>
+            <translation><!-- VMD-Veterinary Medical Doctor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>자격 증명</label>
+        <name>Credentials_vod__c</name>
+        <picklistValues>
+            <masterLabel>DO</masterLabel>
+            <translation><!-- DO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>없음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RN</masterLabel>
+            <translation><!-- RN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNP</masterLabel>
+            <translation><!-- RNP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Master ID --></label>
+        <name>Customer_Master_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Last Tiered --></label>
+        <name>Date_Last_Tiered_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yes indicates that this HCP requires Employer consent. Answering yes to this question also results in Employer Consent page being included in the generated contract --></help>
+        <label><!-- Employer Consent Required? --></label>
+        <name>Employer_Consent_Required_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finder Num --></label>
+        <name>Finder_Num_BMS_CA_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>이름</label>
+        <name>First_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>후리가나</label>
+        <name>Furigana_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graduation Year --></label>
+        <name>Graduation_Year_BMS_CA_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>Hourly_Rate_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICF End Date --></label>
+        <name>ICF_End_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsPersonAccount --></label>
+        <name>IsPersonAccount_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Language for the Service Provider..defaults the Contract Language to Speaker Preferred Language --></help>
+        <label><!-- Language --></label>
+        <name>Language_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>ar</masterLabel>
+            <translation><!-- ar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bg</masterLabel>
+            <translation><!-- bg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cs</masterLabel>
+            <translation><!-- cs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>da</masterLabel>
+            <translation><!-- da --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation><!-- de --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>el</masterLabel>
+            <translation><!-- el --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_GB</masterLabel>
+            <translation><!-- en_GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation><!-- en_US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation><!-- es --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es_MX</masterLabel>
+            <translation><!-- es_MX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fi</masterLabel>
+            <translation><!-- fi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation><!-- fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hr</masterLabel>
+            <translation><!-- hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hu</masterLabel>
+            <translation><!-- hu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>in</masterLabel>
+            <translation><!-- in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation><!-- it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iw</masterLabel>
+            <translation><!-- iw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation><!-- ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ko</masterLabel>
+            <translation><!-- ko --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nl_NL</masterLabel>
+            <translation><!-- nl_NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pl</masterLabel>
+            <translation><!-- pl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_BR</masterLabel>
+            <translation><!-- pt_BR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_PT</masterLabel>
+            <translation><!-- pt_PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ro</masterLabel>
+            <translation><!-- ro --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>성</label>
+        <name>Last_Name_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- This ICF represents the latest completed ICF collected from the Speaker --></help>
+        <label><!-- Latest ICF --></label>
+        <name>Latest_ICF_HCPTS__c</name>
+        <relationshipLabel><!-- Service Providers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Latest ICF Signature Date --></label>
+        <name>Latest_ICF_Signature_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- License State --></label>
+        <name>License_State_BMS_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>중간 이름</label>
+        <name>Middle_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle --></label>
+        <name>Middle_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>별명</label>
+        <name>Nickname_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- PST --></label>
+        <name>PST_BMS_CA_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferred Name --></label>
+        <name>Preferred_Name_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary contract - first contract on the speaker is set as Primary contract --></help>
+        <label><!-- Primary Contract --></label>
+        <name>Primary_Contract_HCPTS__c</name>
+        <relationshipLabel><!-- Service Providers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Parent --></label>
+        <name>Primary_Parent_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Values to classify Service Providers. These must match corresponding LOV on similarly named field on Activity Service Provider --></help>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>BMS Employee</masterLabel>
+            <translation><!-- BMS Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCO</masterLabel>
+            <translation><!-- HCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JV Employee</masterLabel>
+            <translation><!-- JV Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation><!-- Journalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation><!-- Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation><!-- Patient Advocacy Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacist</masterLabel>
+            <translation><!-- Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technician</masterLabel>
+            <translation><!-- Technician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If Customer reference exists, value is either HCP for Individual Customers or HCO for Org Customers --></help>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type_Simple_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hourly
+Daily
+Fixed --></help>
+        <label><!-- Rate Type --></label>
+        <name>Rate_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>연사 식별자</label>
+        <name>Speaker_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_1_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>상태</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Eligible_vod</masterLabel>
+            <translation>적합</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired_vod</masterLabel>
+            <translation>만료됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>지명됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>Suffix_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>접미사</label>
+        <name>Suffix_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template Id --></label>
+        <name>Template_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territories --></label>
+        <name>Territories_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier --></label>
+        <name>Tier_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>제목</label>
+        <name>Title_vod__c</name>
+    </fields>
+    <fields>
+        <label>올해 초기화 일</label>
+        <name>Year_To_Date_Reset_Day_vod__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>26</masterLabel>
+            <translation><!-- 26 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>27</masterLabel>
+            <translation><!-- 27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>28</masterLabel>
+            <translation><!-- 28 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>29</masterLabel>
+            <translation><!-- 29 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31</masterLabel>
+            <translation><!-- 31 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>올해 초기화 월</label>
+        <name>Year_To_Date_Reset_Month_vod__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>1월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation>10월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation>11월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation>12월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>2월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>3월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation>5월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation>6월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation>7월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation>8월</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation>9월</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>올해 비용</label>
+        <name>Year_to_Date_Spend_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of times a speaker has spoken this year to date. --></help>
+        <label>올해 사용률</label>
+        <name>Year_to_Date_Utilization_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code_HCPTS__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Service Provider --></label>
+        <name>Service_Provider_Simple_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>연사</label>
+        <name>Speaker_vod</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Initiate_ICF_HCPTS --></label>
+        <name>Initiate_ICF_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ICF_via_Echosign_Prompt --></label>
+        <name>Send_ICF_via_Echosign_Prompt</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Tiering_Criteria_HCPTS --></label>
+        <name>Tiering_Criteria_HCPTS</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom object to capture user feedback related to a variety of topics.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Closed_Date_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Closed Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture user feedback comments.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Feedback</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Field_Response_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Field Response</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Field_Status_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Field Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Implemented</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ops_Work_log_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Ops Work log</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RequestorEmailAddress_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requestor Email Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ticket_Number_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Only use this field in cases where you have logged a ticket with the Help Desk (Support Escalation)</inlineHelpText>
+        <label>Ticket Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Topic_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the available topics for which a user can submit feedback.</description>
+        <externalId>false</externalId>
+        <label>Topic</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Enhancement Idea</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Best Practice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Support Escalation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Feedback</label>
+    <listViews>
+        <fullName>Enhancement_Ideas_Report</fullName>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Feedback_BMS__c</columns>
+        <columns>Topic_BMS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Topic_BMS__c</field>
+            <operation>equals</operation>
+            <value>Enhancement Idea</value>
+        </filters>
+        <label>Enhancement Ideas Report</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Enhancement_Ideas_Report1</fullName>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Feedback_BMS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Topic_BMS__c</field>
+            <operation>equals</operation>
+            <value>Enhancement Idea</value>
+        </filters>
+        <label>Enhancement Ideas Report</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Enhancement_Ideas_Report2</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Feedback_BMS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Topic_BMS__c</field>
+            <operation>equals</operation>
+            <value>Enhancement Idea</value>
+        </filters>
+        <label>Enhancement Ideas Report</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_Report</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Feedback_BMS__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Topic_BMS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Topic_BMS__c</field>
+            <operation>equals</operation>
+            <value>Enhancement Idea</value>
+        </filters>
+        <label>Enhancement Ideas Report</label>
+        <language>en_US</language>
+        <sharedTo/>
+    </listViews>
+    <nameField>
+        <displayFormat>FB-{0000}</displayFormat>
+        <label>Feedback Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Feedback</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Topic_BMS__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Feedback_BMS__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

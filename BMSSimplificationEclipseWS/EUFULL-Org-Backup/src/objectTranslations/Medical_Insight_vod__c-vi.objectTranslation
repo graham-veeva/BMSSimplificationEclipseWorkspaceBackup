@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Thông Tin Y Tế </value>
+    </caseValues>
+    <fields>
+        <label>Tài Khoản</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Thông Tin Y Tế</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Thử Nghiệm Lâm Sàng</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Thông Tin Y Tế</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mô Tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mã Tham Chiếu Thực Thể</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tương Tác</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Thông Tin Y Tế</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sự Kiện Y Tế</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Thông Tin Y Tế</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nguồn Khác</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Khóa Ghi Đè</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Xuất Bản</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Thông Tin Y Tế</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tình Trạng</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Đã Lưu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Đã Đệ Trình</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tóm Tắt</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mở Khóa</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <nameFieldLabel>Tên Thông Tin Y Tế</nameFieldLabel>
+    <recordTypes>
+        <label>Thông Tin Y Tế Chính</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Một Mô Tả được yêu cầu để lưu hoặc đệ trình một Thông Tin Y Tế Chính</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Một Tóm Tắt được yêu cầu để lưu hoặc đệ trình một Thông Tin Y Tế Chính</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Đệ Trình</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

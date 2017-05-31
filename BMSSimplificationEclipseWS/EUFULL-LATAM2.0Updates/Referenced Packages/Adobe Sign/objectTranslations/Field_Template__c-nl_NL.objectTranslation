@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gegevens toewijzen aan overeenkomstveld</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gegevens toewijzen aan overeenkomstvelden</value>
+    </caseValues>
+    <fields>
+        <help><!-- Select Target Agreement Field. --></help>
+        <label>Doelveld overeenkomst</label>
+        <name>Agreement_Field__c</name>
+    </fields>
+    <fields>
+        <label>Overeenkomstsjabloon</label>
+        <name>Agreement_Template__c</name>
+        <relationshipLabel>Gegevens toewijzen aan overeenkomstvelden</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Input a value for the target field. --></help>
+        <label>Waarde doelveld</label>
+        <name>Constant_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a field from the master object to be the source field. --></help>
+        <label>Bronveld selecteren in hoofdobject</label>
+        <name>Field_Value__c</name>
+    </fields>
+    <fields>
+        <label>Toewijzingsmethode</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Input Specific Value</masterLabel>
+            <translation><!-- Input Specific Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Master Object Field</masterLabel>
+            <translation><!-- Select Master Object Field --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Map Data into Agreement Field Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Gegevens toewijzen aan naam van overeenk</nameFieldLabel>
+</CustomObjectTranslation>

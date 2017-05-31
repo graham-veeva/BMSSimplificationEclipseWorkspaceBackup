@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sjabloon toestemming</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sjablonen toestemming</value>
+    </caseValues>
+    <fields>
+        <label>Effectieve datum kalender</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Drempel verval</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type verval</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Kalender</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Lopend</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Sjabloonnaam</nameFieldLabel>
+    <recordTypes>
+        <label>Sjabloon toestemming monster</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Als vervaltype = kalender dan mag de effectieve datum kalender niet leeg zijn</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Verplichte velden ontbreken</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>De einddatum moet later zijn dan de startdatum</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

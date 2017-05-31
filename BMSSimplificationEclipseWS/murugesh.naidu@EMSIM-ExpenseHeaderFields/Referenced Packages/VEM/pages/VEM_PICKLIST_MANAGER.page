@@ -1,0 +1,24 @@
+<apex:page controller="VEM.VEM_PICKLIST_MANAGER" showHeader="true" sidebar="true" standardStylesheets="true" tabStyle="VEM_PICKLIST_MANAGER__tab"> 
+<apex:sectionHeader title="Home" subtitle="Picklist Manager" />
+<br/>
+<apex:outputPanel rendered="{!NOT(picklistsExist)}"> 
+    <apex:pageBlock title="No picklists have been assigned">
+    <h1>To begin using the Picklist Manager, create a Release implementing the Picklist Manager on VEM web</h1>
+    </apex:pageBlock>
+</apex:outputPanel>       
+<apex:outputPanel rendered="{!picklistsExist}">
+<apex:form >
+	<apex:actionFunction name="changePicklist" action="{!changePicklist}" rerender="frameWrapper">                   
+    	<apex:param name="pid" value="" />  
+	</apex:actionFunction>
+    <apex:pageBlock title="Picklist Selection" mode="detail">       
+        <apex:selectList id="picklistaboutpicklists" multiselect="false" size="1" onchange="changePicklist(this.options[this.selectedIndex].value); return false;">
+            <apex:selectOptions value="{!availablePicklists}"/>
+        </apex:selectList>
+    </apex:pageBlock>   
+	</apex:form>
+<apex:outputPanel id="frameWrapper">
+	<apex:iframe src="/apex/VEM_PICKLIST?id={!currentPicklist}" scrolling="true" id="theIframe"/>
+</apex:outputPanel>
+</apex:outputPanel>
+</apex:page>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Sample_Adjustment_Request_BMS_SHARED__c.Reason_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Adjustment_Request_BMS_SHARED__c.Increase_Decrease_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Adjustment_Request_BMS_SHARED__c.Adjustment_Quantity_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <filter>
+        <booleanFilter>((1 AND 2) OR (3 AND 4) OR (5 AND 6)) AND 7</booleanFilter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Sample_Adjustment_Request_BMS_SHARED__c.Theft</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Sample_Adjustment_Request_BMS_SHARED__c.Reason_BMS_SHARED__c</column>
+            <operator>equals</operator>
+            <value>Initial Report</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Sample_Adjustment_Request_BMS_SHARED__c.Incorrect_Prescriber_Profile_BMS_Core</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Sample_Adjustment_Request_BMS_SHARED__c.Reason_BMS_SHARED__c</column>
+            <operator>equals</operator>
+            <value>Incorrect Prescriber</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Sample_Adjustment_Request_BMS_SHARED__c.Sample_Disbursement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Sample_Adjustment_Request_BMS_SHARED__c.Reason_BMS_SHARED__c</column>
+            <operator>equals</operator>
+            <value>Incorrect Sample/Lot Number Recorded</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Sample_Adjustment_Request_BMS_SHARED__c.Status_BMS_SHARED__c</column>
+            <operator>equals</operator>
+            <value>Approved</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Adjustment Requests - Auto Approvals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sample_Adjustment_Request_BMS_SHARED__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sample_Adjustment_Request_BMS_SHARED__c.Date_BMS_SHARED__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>CLM-presentationsbild</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>CLM-presentationsbild</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>CLM-presentationsbild</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>CLM-presentationsbilder</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>CLM-presentationsbilder</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>CLM-presentationsbilder</value>
+    </caseValues>
+    <fields>
+        <label>CLM-presentation</label>
+        <name>Clm_Presentation_vod__c</name>
+        <relationshipLabel>CLM-presentationsbilder</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Visningsordning</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nyckelmeddelande</label>
+        <name>Key_Message_vod__c</name>
+        <relationshipLabel>CLM-presentationsbilder</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Obligatoriska sidor</label>
+        <name>Mandatory_Slides_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Underpresentation</label>
+        <name>Sub_Presentation_vod__c</name>
+        <relationshipLabel>CLM-presentationsbilder (underpresentation)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- CLM Presentation Slide Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You cannot make the parent presentation refer to itself as a sub presentation --></errorMessage>
+        <name>NO_REFER_TO_MAIN_PRESENTATION</name>
+    </validationRules>
+</CustomObjectTranslation>

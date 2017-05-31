@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$Region_BMS_US__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$Territory_BMS_US__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$User_vod__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$Product_vod__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c$Product_Order_Allocation_Quantity_vod__c</field>
+    </columns>
+    <columns>
+        <field>Inventory_Order_Allocation_vod__c.Inventory_Order_Lines_vod__r$Order_Fulfilled_Quantity_vod__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Entire Allocation Dump</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Inventory_Order_Allocations_and_Lines__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Inventory_Order_Allocation_vod__c$Allocation_End_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

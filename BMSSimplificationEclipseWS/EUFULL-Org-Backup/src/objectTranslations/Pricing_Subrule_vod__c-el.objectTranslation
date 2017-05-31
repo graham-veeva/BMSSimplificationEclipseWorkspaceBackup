@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Υπο-κανόνας τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Υπο-κανόνες τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Υπο-κανόνα τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Υπο-κανόνες τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Υπο-κανόνα τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Υπο-κανόνων τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Υπο-κανόνα τιμολόγησης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Υπο-κανόνες τιμολόγησης </value>
+    </caseValues>
+    <fields>
+        <label>Τύπος σύγκρισης</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Τιμή λίστας</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Ποσότητα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Μέτρηση SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Μέγιστη ποσότητα</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ελάχιστη ποσότητα</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κανόνας τιμολόγησης</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Υπο-κανόνες τιμολόγησης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Προϊόν</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Υπο-κανόνες τιμολόγησης</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Τα στοιχεία σετ δεν υποστηρίζονται ως προϊόν σύγκρισης</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η μέγιστη ποσότητα πρέπει να είναι μεγαλύτερη ή ίση με την ελάχιστη ποσότητα.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η μέτρηση SKU πρέπει να είναι &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Network 필드 매핑</value>
+    </caseValues>
+    <fields>
+        <label>CRM 필드 API 이름</label>
+        <name>CRM_Field_API_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID API 이름 검색</label>
+        <name>Lookup_ID_API_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>FieldGroup 최대값</label>
+        <name>Max_Field_Group_Values_vod__c</name>
+    </fields>
+    <fields>
+        <label>Network 필드 API 이름</label>
+        <name>Network_Field_API_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Network 대상 매핑</label>
+        <name>Network_Object_Mapping_vod__c</name>
+        <relationshipLabel>Network 필드 매핑</relationshipLabel>
+    </fields>
+    <fields>
+        <label>대상 매핑 참조</label>
+        <name>Object_Mapping_Reference_vod__c</name>
+        <relationshipLabel>상위 필드 매핑 참조</relationshipLabel>
+    </fields>
+    <fields>
+        <label>고유한 키</label>
+        <name>Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>검증 메모</label>
+        <name>Validation_Notes_vod__c</name>
+    </fields>
+    <fields>
+        <help>검증 상태 매핑</help>
+        <label>검증 상태</label>
+        <name>Validation_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Invalid_vod</masterLabel>
+            <translation>잘못됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unvalidated_vod</masterLabel>
+            <translation>검증되지 않음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid_vod</masterLabel>
+            <translation>유효</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Field Mapping ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Boolean_vod --></label>
+        <name>Boolean_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>외부 ID</label>
+        <name>External_ID_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>검색</label>
+        <name>Lookup_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>이름</label>
+        <name>Name_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>대상 참조</label>
+        <name>Object_Reference_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>선택 목록</label>
+        <name>Picklist_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>레코드 유형</label>
+        <name>Record_Type_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

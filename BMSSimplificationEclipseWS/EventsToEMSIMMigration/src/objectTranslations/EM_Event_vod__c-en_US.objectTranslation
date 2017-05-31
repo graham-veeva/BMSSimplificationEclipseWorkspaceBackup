@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EM Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EM Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation><!-- Approved_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Canceled</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed_vod</masterLabel>
+            <translation>Archived</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Business Approval</masterLabel>
+            <translation><!-- In Business Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Closeout</masterLabel>
+            <translation><!-- In Closeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Draft</masterLabel>
+            <translation><!-- In Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Execution</masterLabel>
+            <translation><!-- In Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Planning</masterLabel>
+            <translation><!-- In Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Post-Execution</masterLabel>
+            <translation><!-- In Post-Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation><!-- In Service Coordinator Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_Approval_vod</masterLabel>
+            <translation>Pending Approval</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event</masterLabel>
+            <translation><!-- Post-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Event</masterLabel>
+            <translation><!-- Pre-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation><!-- Rejected_vod --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>BMS_Simple_Approved</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_Pending_Approval</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_PostEvent</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_PreEvent</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_Read_Only</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_SysAdmin</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Simple Activity --></label>
+        <name>Simple_Activity_HCPTS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>SApprove</label>
+        <name>Approve_SFDC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PostEvent --></label>
+        <name>PostEvent</name>
+    </webLinks>
+    <webLinks>
+        <label>SReject</label>
+        <name>Reject_SFDC</name>
+    </webLinks>
+    <webLinks>
+        <label>Submit for Approval</label>
+        <name>Submit_for_SFDC_Approval</name>
+    </webLinks>
+</CustomObjectTranslation>

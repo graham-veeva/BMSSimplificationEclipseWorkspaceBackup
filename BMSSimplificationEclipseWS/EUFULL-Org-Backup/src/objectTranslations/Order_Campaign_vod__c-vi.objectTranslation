@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chiến dịch đặt hàng</value>
+    </caseValues>
+    <fields>
+        <label>Nhóm tài khoản</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại tài khoản</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>Đối tác kênh/Nhà bán lẻ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>Khách hàng - Kênh</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>Khách hàng - Trực tiếp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>Đối tác lắp đặt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Khác</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>Chuyên nghiệp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>Khách hàng tiềm năng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>Đối tác công nghệ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Hoạt động</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mặc định</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ràng buộc chiến dịch đặt hàng</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại bản ghi đặt hàng</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>Tất cả</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Trực tiếp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Chuyển</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

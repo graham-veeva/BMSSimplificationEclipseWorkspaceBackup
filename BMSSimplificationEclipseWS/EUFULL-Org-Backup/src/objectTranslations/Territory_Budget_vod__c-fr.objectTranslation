@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget Secteur</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget Secteur</value>
+    </caseValues>
+    <fields>
+        <label>Actif</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantité actuelle</label>
+        <name>Current_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Valeur actuelle</label>
+        <name>Current_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de fin</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dernière transaction</label>
+        <name>Last_Transaction_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produit</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Budgets territoriaux</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Date de début</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantité de départ</label>
+        <name>Start_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Valeur de départ</label>
+        <name>Start_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approuvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Fermé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Nouveau</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Approval</masterLabel>
+            <translation>Soumettre pour approbation</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Territoire</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation>Général</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Produit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Ventes</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Territory Budget Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La date de début ne peut pas être postérieure à la date de fin.</errorMessage>
+        <name>VEEVA_DATES_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

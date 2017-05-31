@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Budget_BMS_CORE__c.Budget_Amount_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Budget_BMS_CORE__c.Finance_Code_BMS_IC__c</field>
+    </columns>
+    <columns>
+        <field>Budget_BMS_CORE__c.Amount_Spent_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Budget_BMS_CORE__c.Remaining_Budget_BMS__c</field>
+    </columns>
+    <description>Utilisation du budget : Budget Tracking Report</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Budget_BMS_CORE__c.Parent_Budget_BMS__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Budget Tracking Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Budget_BMS_CORE__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Προσόν ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Προσόντα ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Προσόν ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Προσόντα ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Προσόν ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Προσόντα ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Προσόν ομιλητή </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Προσόντα ομιλητή </value>
+    </caseValues>
+    <fields>
+        <label>Γραμμή σύμβασης</label>
+        <name>Contract_Line_vod__c</name>
+        <relationshipLabel>Προσόντα ομιλητή</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Κατάσταση σύμβασης συνεργάτη</label>
+        <name>Contract_Partner_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Ενεργοποιήθηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Αποθηκευμένο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Κατάσταση σύμβασης</label>
+        <name>Contract_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Ενεργοποιήθηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft_vod</masterLabel>
+            <translation>Πρόχειρο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Approval_Process_vod</masterLabel>
+            <translation>Σε διαδικασία έγκρισης</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εξωτερική αναγνωριστική ταυτότητα</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα Προσόντος</label>
+        <name>Qualification_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προσόν</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Προσόντα ομιλητή</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τύπος τιμής μονάδας</label>
+        <name>Rate_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Day_vod</masterLabel>
+            <translation>Ημέρα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_vod</masterLabel>
+            <translation>Εκδήλωση_vod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hour_vod</masterLabel>
+            <translation>Ώρα</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Τιμής μονάδας</label>
+        <name>Rate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ομιλητής</label>
+        <name>Speaker_vod__c</name>
+        <relationshipLabel>Προσόντα ομιλητή</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πωλητής</label>
+        <name>Vendor_vod__c</name>
+        <relationshipLabel>Προσόντα ομιλητή</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <recordTypes>
+        <label>Υπηρεσία ομιλητή</label>
+        <name>Speaker_Service_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Εκπαίδευση ομιλητή</label>
+        <name>Speaker_Training_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

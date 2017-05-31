@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partijcatalogus</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partijcatalogus</value>
+    </caseValues>
+    <fields>
+        <label>Actief</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vervaldatum</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Item-ID</label>
+        <name>Item_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID partijcatalogus</label>
+        <name>Lot_Catalog_External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Partijcatalogus</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Monsterbeschrijving</label>
+        <name>Sample_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Monster</label>
+        <name>Sample_vod__c</name>
+        <picklistValues>
+            <masterLabel>ELIQUIS 5MG BMS 1283086</masterLabel>
+            <translation><!-- ELIQUIS 5MG BMS 1283086 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 20mg</masterLabel>
+            <translation><!-- ERBITUX 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 40mg</masterLabel>
+            <translation><!-- ERBITUX 40mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 10mg</masterLabel>
+            <translation><!-- SPRYCEL 10mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 20mg</masterLabel>
+            <translation><!-- SPRYCEL 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 40mg</masterLabel>
+            <translation><!-- SPRYCEL 40mg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Partij onderdrukken</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label>Eenh.</label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Doos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Kisten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation><!-- Unit --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Partijnr. moet No_Lot_vod zijn voor virtuele partijen.</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Het veld productnaam is vereist voor het aanmaken van een record partijcatalogus voor een niet-monsterproduct met geen partijnr..</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Partij onderdrukken moet zijn ingeschakeld bij gebruik van de naam &apos;No_Lot_vod&apos; voor het partijnummer.</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Het veld monster of het veld product is vereist voor het aanmaken van een record partijcatalogus voor een monsterproduct met partijnr..</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Monsterpartijen maken</label>
+        <name>Create_Sample_Lots_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

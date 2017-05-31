@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Sample_Lot_vod__c.Territory_Intelligent_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Lot_vod__c.U_M_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Lot_vod__c.Expiration_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Lot_vod__c.Calculated_Quantity_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Sample_Lot_vod__c.Active_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Sample_Lot_vod__c.Sample_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Sample Lots by User</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sample_Lot_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sample_Lot_vod__c.Expiration_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

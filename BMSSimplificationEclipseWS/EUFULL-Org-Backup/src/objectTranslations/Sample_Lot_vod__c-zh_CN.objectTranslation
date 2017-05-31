@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>样品批号</value>
+    </caseValues>
+    <fields>
+        <label>已启用</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>已分配的数量</label>
+        <name>Allocated_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>已计算的数量</label>
+        <name>Calculated_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- District ID --></label>
+        <name>District_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>到期日期</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>产品</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>样品批号</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Lot --></label>
+        <name>Sample_Lot_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>样品批号编号</label>
+        <name>Sample_Lot_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>样品</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>查禁批号</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_Intelligent_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Territory_Region_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>计量单位</label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Blister</masterLabel>
+            <translation><!-- Blister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>盒</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>案例</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syringe</masterLabel>
+            <translation><!-- Syringe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation><!-- Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallet</masterLabel>
+            <translation><!-- Wallet --></translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>对于虚拟批号，“批号#”应为“No_Lot_vod”。</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>必须填写产品名称字段，才能为没有批号的非样品产品创建样品批号记录</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>使用“No_Lot_vod”批号名称时，必须对抑制批次进行检查。</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>必须填写样品字段或产品名称字段，才能为具有批号的样品产品创建样品批号记录</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

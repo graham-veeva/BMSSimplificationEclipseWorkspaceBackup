@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Typ souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Typy souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Typ souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Typy souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Typu souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Typů souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Typu souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Typům souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Typem souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Typy souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Typu souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Typech souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Type souhlasu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Typy souhlasu</value>
+    </caseValues>
+    <fields>
+        <label>Popisek kanálu</label>
+        <name>Channel_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zdroj kanálu</label>
+        <name>Channel_Source_vod__c</name>
+    </fields>
+    <fields>
+        <help>Trvání je uvedeno v měsících.</help>
+        <label>Vlastní trvání souhlasu</label>
+        <name>Consent_Custom_Duration_vod__c</name>
+    </fields>
+    <fields>
+        <label>Platnost souhlasu expiruje za</label>
+        <name>Consent_Expires_In_vod__c</name>
+        <picklistValues>
+            <masterLabel>Custom_Duration_vod</masterLabel>
+            <translation>Vlastní trvání</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Calendar_Year_vod</masterLabel>
+            <translation>Konec kalendářního roku</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Next_Calendar_Year_vod</masterLabel>
+            <translation>Konec příštího kalendářního roku</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One_Year_vod</masterLabel>
+            <translation>Jeden rok</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Záhlaví souhlasu</label>
+        <name>Consent_Header_vod__c</name>
+        <relationshipLabel>Typy souhlasu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Výchozí typ souhlasu</label>
+        <name>Default_Consent_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Explicit_vod</masterLabel>
+            <translation>Je vyžadováno přihlášení</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implicit_vod</masterLabel>
+            <translation>Není vyžadováno přihlášení</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Text prohlášení o vyloučení odpovědnosti</label>
+        <name>Disclaimer_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pořadí zobrazení</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Přihlášení s potvrzením</label>
+        <name>Double_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Předvolba produktu</label>
+        <name>Product_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_Content_Types_vod</masterLabel>
+            <translation>Typ veškerého obsahu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Lines_vod</masterLabel>
+            <translation>Všechny řádky</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Products_vod</masterLabel>
+            <translation>Všechny produkty</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My_Setup_vod</masterLabel>
+            <translation>Moje nastavení</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restrictive_My_Setup_vod</masterLabel>
+            <translation>Moje omezené nastavení</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Default_Consent_Text_vod --></label>
+        <name>zvod_Consent_Default_Consent_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Line_vod --></label>
+        <name>zvod_Consent_Line_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Signature_Capture_vod --></label>
+        <name>zvod_Signature_Capture_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Název</nameFieldLabel>
+    <recordTypes>
+        <label>Approved Email</label>
+        <name>Approved_Email_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM</label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

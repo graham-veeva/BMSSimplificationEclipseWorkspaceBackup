@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Ariba_SOW_Number_HCPTS__c</fullName>
+        <description>Ariba SOW Number for this Activity Service Provider</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Ariba SOW Number for this Activity Service Provider</inlineHelpText>
+        <label>Ariba SOW Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provider_Type_Formula_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Speaker_vod__r.Provider_Type_HCPTS__c)</formula>
+        <label>Legacy Provider Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provider_Type_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Legacy Provider Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Journalist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Patients</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Patient Advocacy Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nurse Practitioner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmacist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technicians</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JV Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Provider_Type_Simple_HCPTS__c</fullName>
+        <description>Provider type value from the Service Provider Lookup</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Speaker_vod__r.Provider_Type_Simple_Formula_HCPTS__c</formula>
+        <inlineHelpText>Provider type value from the Service Provider Lookup</inlineHelpText>
+        <label>Provider Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registration_Status_HCPTS__c</fullName>
+        <description>Status updated by Logistics provider based on attendee response. Not editable.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Status updated by Logistics provider based on attendee response. Not editable.</inlineHelpText>
+        <label>Registration Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>View_Online_HCPTS__c</fullName>
+        <description>Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/&apos; &amp; Id &amp; &apos;?nooverride=1&apos;,  $Label.View_Standard_Detail_Page ,&quot;_self&quot;)</formula>
+        <inlineHelpText>Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc</inlineHelpText>
+        <label>View Contracting Buttons</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Simplified_Event_Speaker_HCPTS</fullName>
+        <active>true</active>
+        <description>ESP in the SImplified System</description>
+        <label>Simplified Event Speaker</label>
+        <picklistValues>
+            <picklist>Provider_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JV Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Journalist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patients</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technicians</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

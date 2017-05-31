@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Planeringstaktiken</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Planeringstaktik</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Planeringstaktik</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Planeringstaktikerna</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Planeringstaktiker</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Planeringstaktiker</value>
+    </caseValues>
+    <fields>
+        <label>Kontoplan</label>
+        <name>Account_Plan_vod__c</name>
+        <relationshipLabel>Planeringstaktik</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Framsteg för kontotaktik</label>
+        <name>Account_Tactic_Progress_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutförd kontotaktik</label>
+        <name>Completed_Account_Tactics_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prioritization --></label>
+        <name>Prioritization_BMS_CORE__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very High</masterLabel>
+            <translation><!-- Very High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Planeringstaktik</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Slutförd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_vod</masterLabel>
+            <translation>Väntande</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Summa av kontotaktik</label>
+        <name>Total_Account_Tactics_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namn</nameFieldLabel>
+</CustomObjectTranslation>

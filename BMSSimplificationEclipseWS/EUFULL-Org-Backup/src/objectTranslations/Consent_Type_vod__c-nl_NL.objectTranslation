@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Toestemmingstype</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Toestemmingstypes</value>
+    </caseValues>
+    <fields>
+        <label>Kanaallabel</label>
+        <name>Channel_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanaalbron</label>
+        <name>Channel_Source_vod__c</name>
+    </fields>
+    <fields>
+        <help>Duur is in maanden</help>
+        <label>Aangepaste duur toestemming</label>
+        <name>Consent_Custom_Duration_vod__c</name>
+    </fields>
+    <fields>
+        <label>Toestemming verloopt over</label>
+        <name>Consent_Expires_In_vod__c</name>
+        <picklistValues>
+            <masterLabel>Custom_Duration_vod</masterLabel>
+            <translation>Aangepaste duur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Calendar_Year_vod</masterLabel>
+            <translation>Einde kalenderjaar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>End_Of_Next_Calendar_Year_vod</masterLabel>
+            <translation>Einde volgend kalenderjaar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One_Year_vod</masterLabel>
+            <translation>Eén jaar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Toestemmingskoptekst</label>
+        <name>Consent_Header_vod__c</name>
+        <relationshipLabel>Toestemmingstypes</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Standaard toestemmingstype</label>
+        <name>Default_Consent_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Explicit_vod</masterLabel>
+            <translation>Opt-in vereist</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Implicit_vod</masterLabel>
+            <translation>Opt-in niet vereist</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Disclaimertekst</label>
+        <name>Disclaimer_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Order weergeven</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dubbele opt-in</label>
+        <name>Double_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Productvoorkeur</label>
+        <name>Product_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_Content_Types_vod</masterLabel>
+            <translation>Alle type inhoud</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Lines_vod</masterLabel>
+            <translation>Alle regels</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All_Products_vod</masterLabel>
+            <translation>Alle producten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My_Setup_vod</masterLabel>
+            <translation>Mijn instellingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restrictive_My_Setup_vod</masterLabel>
+            <translation>Beperkte Mijn instellingen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Default_Consent_Text_vod --></label>
+        <name>zvod_Consent_Default_Consent_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Consent_Line_vod --></label>
+        <name>zvod_Consent_Line_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Signature_Capture_vod --></label>
+        <name>zvod_Signature_Capture_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam</nameFieldLabel>
+    <recordTypes>
+        <label>Approved Email</label>
+        <name>Approved_Email_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM</label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

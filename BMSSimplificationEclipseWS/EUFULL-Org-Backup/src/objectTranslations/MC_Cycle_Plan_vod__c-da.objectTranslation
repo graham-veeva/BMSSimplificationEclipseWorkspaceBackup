@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>MC cyklusplan</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>MC cyklusplan</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>MC cyklusplan</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>MC cyklusplaner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>MC cyklusplaner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>MC cyklusplaner</value>
+    </caseValues>
+    <fields>
+        <label>Kanalinteraktioner opnåelse</label>
+        <name>Channel_Interaction_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktioner status</label>
+        <name>Channel_Interaction_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Tidsplan overholdes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Over opnået</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Under opnået</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kanalinteraktioner optjent</label>
+        <name>Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalinteraktioner mål</label>
+        <name>Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Cyklus</label>
+        <name>Cycle_vod__c</name>
+        <relationshipLabel>Cyklusplan</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Resterende dage</label>
+        <name>Days_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dage total</label>
+        <name>Days_Total_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivelse</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdato</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Eksternt ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Målredigeringsstatus</label>
+        <name>Goal_Edit_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Godkendt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Ny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Gemt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Indsendt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Senest beregnet</label>
+        <name>Last_Calculated_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lås</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Lookup --></label>
+        <name>Owner_Lookup_BMS_EMEA__c</name>
+        <relationshipLabel><!-- MC Cycle Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>% cyklus fuldført</label>
+        <name>Percent_Cycle_Completed_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktinteraktion opnåelse</label>
+        <name>Product_Interaction_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktinteraktion status</label>
+        <name>Product_Interaction_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Tidsplan overholdes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Over opnået</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Under opnået</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produktinteraktioner optjent</label>
+        <name>Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktinteraktioner mål</label>
+        <name>Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Startdato</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Fuldført</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Igangværende</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Planlagt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Team kanal gennemfoerelse</label>
+        <name>Team_Channel_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team kanal interaktioner optjent</label>
+        <name>Team_Channel_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Holdkanalinteraktionsmål</label>
+        <name>Team_Channel_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team kanal Status</label>
+        <name>Team_Channel_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Tidsplan overholdes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Over opnået</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Under opnået</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Teamet vare Virkeliggoerelsen</label>
+        <name>Team_Product_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team produktet interaktioner optjent</label>
+        <name>Team_Product_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team produktet interaktioner mål</label>
+        <name>Team_Product_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team produkt Status</label>
+        <name>Team_Product_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Tidsplan overholdes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Over opnået</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Under opnået</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Område</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Plan Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Cyklusplan</label>
+        <name>Cycle_Plan_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to perform this action! Please click Cancel. --></errorMessage>
+        <name>BMS_EMEA_MC_CyclePlan_Prevent_Edit</name>
+    </validationRules>
+</CustomObjectTranslation>

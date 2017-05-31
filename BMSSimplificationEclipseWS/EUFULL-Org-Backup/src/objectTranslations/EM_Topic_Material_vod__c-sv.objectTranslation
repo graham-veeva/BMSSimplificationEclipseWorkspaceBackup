@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Ämnesmaterial</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Ämnesmaterial</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Ämnesmaterial</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Ämnesmaterial</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Ämnesmaterial</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Ämnesmaterial</value>
+    </caseValues>
+    <fields>
+        <label>CLM-presentation</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Ämne material</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Mall för e-post</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Ämne material</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Materialtyp</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Ämnen som använder material</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ämne</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Ämnesmaterial (ämne)</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namn</nameFieldLabel>
+    <recordTypes>
+        <label>Ämne material</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>En enskild regel kan inte ha både mallarna för e-post och CLM-presentation ifyllda. Skapa separata regler för dessa två poster.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ett material med endast ett ämne kan inte ha både material och CLM-presentation ifyllda. Skapa separata regler för dessa två poster.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ett material med endast ett ämne kan inte ha både mallarna för material och e-post ifyllda. Skapa separata regler för dessa två poster.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

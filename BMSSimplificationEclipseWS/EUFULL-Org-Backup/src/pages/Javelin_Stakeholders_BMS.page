@@ -1,0 +1,12 @@
+<apex:page showHeader="false" sidebar="true" standardController="Account">
+
+<script type="text/javascript">
+
+window.onload = function() {
+jurl = "https://javelin.staging.zsservices.com/BMS/IdentityManager/app/Web/login.aspx?SessionId={!$Api.Session_ID}&ServerURL={!URLENCODE($Api.Partner_Server_URL_90)}&PartnerKey=BC2A168C59B006E4EBA0666BE54D5FF91DF5CB750752A8C06947955C2E83B284&ReturnUrl=https%3A%2F%2Fjavelin.staging.zsservices.com%2FBMS%2F0017%2DOnTAP%2DTest%2FWeb%2FView%2FDisplayBIForm%2FBO%2F{!Account.SFID18_BMS__c}%3Fhistory%3D4%2C%2D1%2CStakeholderTabLayout%12C0%2D0%2D1%2D1%2D1%2D1%7C53%2C9569%2CBrandImperativeLayout%2C0%2D0%2D1%2D1%2D1%26renderMode%3D0%26displayMode%3D0%26chrome%3Dfalse%26renderAll%3Dtrue" ;
+
+window.location.replace(jurl) ;
+}
+</script>  
+  
+</apex:page>

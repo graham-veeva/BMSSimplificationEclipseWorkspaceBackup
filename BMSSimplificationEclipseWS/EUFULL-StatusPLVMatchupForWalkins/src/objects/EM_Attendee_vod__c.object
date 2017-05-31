@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of the person invited to the medical event.</description>
+        <externalId>false</externalId>
+        <label>Veeva Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Nominated_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invited_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attended_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Signed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleared_Signature_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Walked In/Attended</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Declined_Simple</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Attendee_HCPTS</fullName>
+        <active>true</active>
+        <description>Attendee recordtype for Simplified Build</description>
+        <label>Simple Attendee</label>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Accepted_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attended_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined_Simple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invited_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Participant information for EM Initiatives</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to an Activity  - Only applies if you are creating a Participant record on an Activity. This field must be blank if you are creating a Participant record on a Need. This will should auto-populate on the UI if you are creating this from an Activity detail page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to an Activity  - Only applies if you are creating a Participant record on an Activity. This field must be blank if you are creating a Participant record on a Need. This will should auto-populate on the UI if you are creating this from an Activity</inlineHelpText>
+        <label>Activity</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Participants</relationshipLabel>
+        <relationshipName>EventParticipants</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Type_HCPTS__c</fullName>
+        <description>Formula field displaying the Activity Type</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Activity_HCPTS__r.Activity_Type_Formula_HCPTS__c</formula>
+        <label>Activity Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Budget_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Parent Need - Only applies if you are creating a Participant record on the Need. This field must be blank if you are creating a Participant record on an Activity. This field will auto-populate on the UI if creating from a Need/Budget detail page</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent Need - Only applies if you are creating a Participant record on the Need. This field must be blank if you are creating a Participant record on an Activity. This field will auto-populate on the UI if creating from a Need/Budget detail page</inlineHelpText>
+        <label>Need</label>
+        <referenceTo>EM_Budget_vod__c</referenceTo>
+        <relationshipLabel>Participants</relationshipLabel>
+        <relationshipName>BudgetParticipants</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_per_Event_HCPTS__c</fullName>
+        <description>Max # of Participants per activity
+SW changed on 6/7/16 to meet German/Core requirement that they don&apos;t want it to say &quot;Max&quot;. In addition, meets Concur requirement to leverage these values for the total # planned participants to calculate meal cost/attendee</description>
+        <externalId>false</externalId>
+        <label># per Activity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Participant_Type_HCPTS__c</fullName>
+        <description>Participant Type</description>
+        <externalId>false</externalId>
+        <label>Participant Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Audience- BMS Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Audience- HCP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Audience- JV Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Audience- Nurse Practitioner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Audience- Pharmacist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Audience- Technicians</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Provider(s)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsored Attendees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Specialty_2_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Specialty 2 for Participants being targeted</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specialty 2 for Participants being defined</inlineHelpText>
+        <label>Specialty 2</label>
+        <referenceTo>Specialty_BMS_EMEA__c</referenceTo>
+        <relationshipLabel>Participants (Specialty 2)</relationshipLabel>
+        <relationshipName>Participants1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Specialty_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Looks up to the Specialty custom object that Interact maintains</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specialty information for Participants to Invite</inlineHelpText>
+        <label>Specialty</label>
+        <referenceTo>Specialty_BMS_EMEA__c</referenceTo>
+        <relationshipLabel>Participants</relationshipLabel>
+        <relationshipName>Participants</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Veeva Product Catalog - Interact stores TA as Products and hence the lookup</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Therapeutic area of Participants to invite</inlineHelpText>
+        <label>Therapeutic Area</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Participants</relationshipLabel>
+        <relationshipName>Participants</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Participants</label>
+    <nameField>
+        <displayFormat>P-{0000}</displayFormat>
+        <label>Record Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Participants</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>CannotAddParticipantstoApprovedBudget</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Budget_HCPTS__c)),
+ISPICKVAL(Budget_HCPTS__r.Approval_Status_HCPTS__c,&apos;Approved&apos;)
+)</errorConditionFormula>
+        <errorMessage>The Budget and Guidance information is already Approved. You may not save/add Participants to Approved Budget/Need.</errorMessage>
+    </validationRules>
+</CustomObject>

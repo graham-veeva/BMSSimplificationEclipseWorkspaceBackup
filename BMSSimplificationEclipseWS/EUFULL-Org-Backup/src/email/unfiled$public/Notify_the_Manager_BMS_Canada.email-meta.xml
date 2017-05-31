@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify the Manager when the coaching report is approved by the Rep</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>Notify the Manager BMS CANADA</name>
+    <style>formalLetter</style>
+    <subject>Coaching Report approved</subject>
+    <textOnly>Dear {!Coaching_Report_vod__c.CreatedBy}
+
+I acknowledge the coaching report created for me.
+
+Sincerely,
+{!Coaching_Report_vod__c.Employee_vod__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

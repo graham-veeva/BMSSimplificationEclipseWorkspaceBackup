@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>คอนฟิกูเรชันอ็อบเจ็กต์ VMobile</value>
+    </caseValues>
+    <fields>
+        <label>ฟิลด์ค้นหาแอคเคาต์</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>ใช้งานอยู่</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>ชื่ออ็อบเจ็กต์ไชน์</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>ความสัมพันธ์ไชน์</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>อุปกรณ์</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>เปิดใช้งานเพื่อบังคับให้รีเฟรชบนอ็อบเจ็กต์ที่ใช้โมเดลการแบ่งใช้ส่วนตัว หรือมีวลี Where ที่อัพเดต อาจเพิ่มเวลาในการซิงค์</help>
+        <label>เปิดใช้งานการซิงค์ที่ปรับปรุง</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>ไม่รวมรายการฟิลด์</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID ภายนอก</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>จำกัดฟิลด์ที่แสดงรายการ</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>รวมข้อมูลสิ่งที่แนบเมื่อซิงโครไนซ์อ็อบเจ็กต์</help>
+        <label>รวมสิ่งที่แนบ</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>รวมอ็อบเจ็กต์ที่เกี่ยวข้อง</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>เฉพาะข้อมูลเมต้า</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>ชื่ออ็อบเจ็กต์</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>ชื่ออ็อบเจ็กต์พาเรนต์</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>โปรไฟล์</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อโปรไฟล์</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>ฟิลด์ความสัมพันธ์</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อความสัมพันธ์</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>ประเภท</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>แถวไชน์และพาเรนต์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>ซิงค์แบบสมบูรณ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>สัมพันธ์กับระดับบนสุด</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>ระดับบนสุด</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>วลี Where</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label>แท็บเลต</label>
+        <name>TABLET</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>ต้องระบุชื่ออ็อบเจ็กต์</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ต้องระบุ ชื่ออ็อบเจ็กต์พาเรนต์ และ ชื่อความสัมพันธ์ บน VMOC ที่เกี่ยวข้องกับอ็อบเจ็กต์ระดับบนสุด</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

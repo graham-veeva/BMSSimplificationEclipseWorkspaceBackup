@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.TSF_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.TSF_vod__r$Territory_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.TSF_vod__r$Network_Name_BMS_EMEA__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.TSF_vod__r$Territory_vod__c</column>
+            <operator>contains</operator>
+            <value>BECVS11S</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.TSF_vod__r$Network_Name_BMS_EMEA__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PTP - BE Networks</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_with_TSF__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Attendees_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Status_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Datetime_vod__c</field>
+    </columns>
+    <description>Report to display all unsubmitted interactions.</description>
+    <filter>
+        <criteriaItems>
+            <column>Call2_vod__c.Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Saved_vod</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BMS - Admin - Unsubmitted Interactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call2_vod__c@Call2_vod__c.Account_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Call2_vod__c.Call_Datetime_vod__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Assignment_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

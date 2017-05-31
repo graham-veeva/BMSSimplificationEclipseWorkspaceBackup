@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of an event. Custom values can be added.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pre-Event</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Activity_HCPTS</fullName>
+        <active>true</active>
+        <description>Activity type to support Simplification</description>
+        <label>Simple Activity</label>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Event</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <webLinks>
+        <fullName>Approve_SFDC</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Approve_SFDC</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;SFDC Approval&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PostEvent</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Move to Post Event</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Post Event&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Reject_SFDC</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Reject_SFDC</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Reject_SFDC&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_for_SFDC_Approval</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit for Custom Approval</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>console.log(&quot;Veeva rocks!&quot;)</url>
+    </webLinks>
+</CustomObject>

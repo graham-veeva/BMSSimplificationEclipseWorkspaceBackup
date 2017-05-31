@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Directory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Directory&apos;s</value>
+    </caseValues>
+    <fields>
+        <label>Weergavevolgorde</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Niveau</label>
+        <name>Level_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bovenliggende directory</label>
+        <lookupFilter>
+            <errorMessage>Waarde bestaat niet of komt niet overeen met filtercriteria</errorMessage>
+        </lookupFilter>
+        <name>Parent_Directory_vod__c</name>
+        <relationshipLabel>Directory&apos;s</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Directory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CLM_vod --></label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

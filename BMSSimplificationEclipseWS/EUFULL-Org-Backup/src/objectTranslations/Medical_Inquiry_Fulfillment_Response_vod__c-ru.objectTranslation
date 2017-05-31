@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ответ выполнения медицинского запроса</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ответы выполнения медицинских запросов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ответ выполнения медицинского запроса</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ответы выполнения медицинских запросов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ответа выполнения медицинского запроса</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ответов выполнения медицинских запросов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ответу выполнения медицинского запроса</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Ответам выполнения медицинских запросов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Ответом выполнения медицинского запроса</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Ответами выполнения медицинских запросов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Об ответе выполнения медицинского запроса</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Об ответах выполнения медицинских запросов</value>
+    </caseValues>
+    <fields>
+        <label>Назначить для комментариев</label>
+        <name>Assign_To_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Назначить для пользователя</label>
+        <name>Assign_To_User_vod__c</name>
+        <relationshipLabel>Ответы выполнения мед. запроса (назначить для пользователя)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Завершил</label>
+        <name>Completed_By_vod__c</name>
+        <relationshipLabel>Ответы выполнения мед. запроса (завершил)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Дата и время завершения</label>
+        <name>Completed_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Материалы выполнения</label>
+        <name>Fulfillment_Materials_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ответ выполнения</label>
+        <name>Fulfillment_Response_vod__c</name>
+    </fields>
+    <fields>
+        <label>Взаимодействие</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Ответы выполнения мед. запроса</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Выполнение медицинского запроса</label>
+        <name>Medical_Inquiry_Fulfillment_vod__c</name>
+        <relationshipLabel>Ответы выполнения мед. запроса</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Метод</label>
+        <name>Method_vod__c</name>
+        <picklistValues>
+            <masterLabel>Email_vod</masterLabel>
+            <translation>Адрес электронной почты</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face_to_Face_vod</masterLabel>
+            <translation>Лично</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax_vod</masterLabel>
+            <translation>Факс</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail_vod</masterLabel>
+            <translation>Почта</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone_vod</masterLabel>
+            <translation>Телефон</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Дата и время созд. мобильного устройства</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор мобильного устройства</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Переназначить?</label>
+        <name>Reassign_vod__c</name>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Завершено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Новый</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Сохраненный</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Об идентификаторе ответа выполнения МЗ</nameFieldLabel>
+    <recordTypes>
+        <label>Ответ выполнения мед. запроса</label>
+        <name>Medical_Inquiry_Fulfillment_Response_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

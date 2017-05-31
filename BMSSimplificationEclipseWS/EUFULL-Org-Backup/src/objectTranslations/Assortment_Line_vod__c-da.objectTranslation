@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Sortimentlinje</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Sortimentlinje</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Sortimentlinje</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Sortimentlinjer</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Sortimentlinjer</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Sortimentlinjer</value>
+    </caseValues>
+    <fields>
+        <label>Sortiment</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Sortimentlinjer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Skjult som standard?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Eksternt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Overliggende sektion</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Sortimentlinjer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Sortimentlinjer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sektionslabel</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sortering</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Navn</nameFieldLabel>
+    <recordTypes>
+        <label>IM-sortimentprodukt</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>IM-sortimentsektion</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM-sortimentprodukt</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM-sortimentsektion</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>OM-sortimentlinjer kan kun associeres med OM-sortimenter, og IM-sortimentlinjer kan kun associeres med IM-sortimenter</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kan kun kontrolleres for optegnelsestypen IM_Assortment_Section_vod eller OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En sektion må ikke være linket til en overliggende sektion</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En sektion og et produkt kan ikke specificeres i samme optegnelse.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

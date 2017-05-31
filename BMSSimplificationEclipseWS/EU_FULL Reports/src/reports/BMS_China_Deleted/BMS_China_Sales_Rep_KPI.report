@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Cycle_Plan_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Dr_Level_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <field>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Cycle_Plan_Account_vod__c</field>
+    </columns>
+    <columns>
+        <field>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Planned_Calls_vod__c</field>
+    </columns>
+    <columns>
+        <field>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Actual_Calls_vod__c</field>
+    </columns>
+    <columns>
+        <field>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Remaining_vod__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>BMS - China Sales Rep KPI</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cycle_Plans_with_Cycle_Plan_Targets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Cycle_Plan_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

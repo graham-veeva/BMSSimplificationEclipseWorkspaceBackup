@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Kontraktspartner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Kontraktspartner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Kontraktspartner</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Kontraktspartner</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Kontraktspartner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Kontraktspartner</value>
+    </caseValues>
+    <fields>
+        <label>Acceptance nr</label>
+        <name>Acceptance_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kontoidentifierare</label>
+        <name>Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Kontraktspartner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Jag har läst och förstått</label>
+        <name>Acknowledgment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Överenskommelse</label>
+        <name>Agreement_vod__c</name>
+    </fields>
+    <fields>
+        <label>Möte</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Kontraktspartner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kontrakt</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Kontraktspartner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Apparattyp</label>
+        <name>Device_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Datainläsning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation><!-- Online_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ansvarsfriskrivning</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Talare</label>
+        <name>EM_Speaker_vod__c</name>
+        <relationshipLabel>Kontraktspartner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Slutdatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Förfallen ?</label>
+        <name>Expired_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Formaterat namn</label>
+        <name>Formatted_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lås</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum och tid för mobilskapande</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum och tid då mobilen senast ändrades</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Åsidosätt lås</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum och tid för signatur</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Signatur</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Signeringsmottagare</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Aktiverad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Avvisad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Sparad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Signerad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Användarsignatur</label>
+        <name>User_Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Användare</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Kontraktspartner</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Contract Partner ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Activity Agreement for Exhibits &amp; Displays (Events) --></label>
+        <name>Activity_Agreement_EBD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Services (SOW) --></label>
+        <name>Activity_Agreement_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Sponsorship --></label>
+        <name>Activity_Agreement_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Talarkontrakt</label>
+        <name>EM_Speaker_Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Framework Agreement --></label>
+        <name>Framework_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Lista</label>
+        <name>Listing_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Försäljning</label>
+        <name>Sales_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsorshipLetter --></label>
+        <name>SponsorshipLetter_HCPTS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Slutdatumet får inte infalla tidigare än startdatumet.</errorMessage>
+        <name>End_Date_After_Start_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Aktivera</label>
+        <name>Activate_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Ny kontraktparter</label>
+        <name>New_Contract_Partner_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Lås upp</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Visa signaturer</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

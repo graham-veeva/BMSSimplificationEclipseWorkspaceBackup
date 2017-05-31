@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ricevuta campione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ricevute campioni</value>
+    </caseValues>
+    <fields>
+        <label>Stato filiera prodotti refrigerati</label>
+        <name>Cold_Chain_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>In Range</masterLabel>
+            <translation>Nell&apos;intervallo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not In Range</masterLabel>
+            <translation>Fuori dall&apos;intervallo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Commenti</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantità confermata</label>
+        <name>Confirmed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Testo personalizzato</label>
+        <name>Custom_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome n. lotto</label>
+        <name>Lot_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>N. lotto</label>
+        <name>Lot_vod__c</name>
+        <relationshipLabel>Ricevute campioni</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Quantità</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Motivo</label>
+        <name>Reason_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>No discrepancy</masterLabel>
+            <translation>Nessuna Differenza</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over-ship</masterLabel>
+            <translation>Over-Ship</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-ship</masterLabel>
+            <translation>Short-Ship</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Void transaction</masterLabel>
+            <translation>Void Transaction</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Commenti ricevuta</label>
+        <name>Receipt_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ricevuto</label>
+        <name>Received_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID transazione ordine di riferimento</label>
+        <name>Ref_Order_Transaction_Id_vod__c</name>
+        <relationshipLabel>Ricevute campioni</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Id transazione di riferimento</label>
+        <name>Ref_Transaction_Id_vod__c</name>
+        <relationshipLabel>Ricevute campioni</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Campione</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id spedizione</label>
+        <name>Shipment_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Numero avviso tag</label>
+        <name>Tag_Alert_Number_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data trasferimento</label>
+        <name>Transferred_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome origine trasferimento</label>
+        <name>Transferred_From_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Origine trasferimento</label>
+        <name>Transferred_From_vod__c</name>
+        <relationshipLabel>Ricevute campioni</relationshipLabel>
+    </fields>
+    <fields>
+        <label>U/M</label>
+        <name>U_M_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Receipt Id --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Se La Quantità Confermata Non È Uguale Alla Quantità, Bisogna Inserire La Descrizione Della Ricevuta</errorMessage>
+        <name>BMS_EMEA_Confirmed_Quantity_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;I Commenti Della Ricevuto Devono Essere Uno Dei Seguenti: &quot;&quot;Short-Ship&quot;&quot;, &quot;&quot;Over-Ship&quot;&quot;, &quot;&quot;Void Transaction&quot;&quot;, &quot;&quot;Refused Delivery&quot;&quot;&quot;</errorMessage>
+        <name>BMS_EMEA_Receipt_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the confirmed quantity does not equal the quantity, you must enter the receipt description. --></errorMessage>
+        <name>BMS_US_Confirmed_Quantity_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Receipt comments must match one of the following values exactly: &quot;Short-Ship&quot;, &quot;Over-Ship&quot;, &quot;Void Transaction&quot;, &quot;Refused Delivery&quot; --></errorMessage>
+        <name>BMS_US_Receipt_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Errore: Quantità confermata &gt;= 0</errorMessage>
+        <name>Confirmed_Quantity_Quantity_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

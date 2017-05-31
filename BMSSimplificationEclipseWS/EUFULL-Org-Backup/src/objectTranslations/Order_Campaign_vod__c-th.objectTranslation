@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>แคมเปญคำสั่งซื้อ</value>
+    </caseValues>
+    <fields>
+        <label>แอคเคาต์กลุ่ม</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทแอคเคาต์</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>แชนแนลคู่ค้า / ตัวแทนจำหน่าย</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>ลูกค้า - แชนแนล</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>ลูกค้า - โดยตรง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>การติดตั้งคู่ค้า</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>อื่นๆ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>อาชีพ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>ความคาดหวัง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>เทคโนโลยีคู่ค้า</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ใช้งานอยู่</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>ค่าดีฟอลต์</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>คำอธิบาย</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่สิ้นสุด</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ผูกแคมเปญคำสั่งซื้อ</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทเร็กคอร์ดของคำสั่งซื้อ</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>ทั้งหมด</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>โดยตรง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>โอนย้าย</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>วันที่เริ่มต้น</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

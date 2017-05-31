@@ -1,0 +1,2558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>BMS Global: Budget Management Object for Global Events Management</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_Country_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Country Location of the Planned Activity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country Location of the Planned Activity</inlineHelpText>
+        <label>Country</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipName>Budgets_Guidance_Setup</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Format_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Format</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Virtual/In-Person</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Type_HCPTS__c</fullName>
+        <description>Activity Type at for which this Budget is being defined</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Activity Type at for which this Budget is being defined</inlineHelpText>
+        <label>Activity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exhibits, Booths and Displays</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>R&amp;D Committees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cross Border</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SRP Activity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Expenses_vod__c</fullName>
+        <description>Amount of expenses already distributed from this budget.</description>
+        <externalId>false</externalId>
+        <label>Actual Expenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Remaining_vod__c</fullName>
+        <description>Total budget minus actual expenses.</description>
+        <externalId>false</externalId>
+        <formula>Total_Budget_vod__c - Actual_Expenses_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Actual Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Status_HCPTS__c</fullName>
+        <description>Status of the Need Approval Process</description>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In Draft</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sent For Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected by Reviewer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected by Certifier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Approving_User_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Approver field - required for sending the record for Approval</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify an Approver that can Approve this request. If Reviewer and Certifier(s) are specified, Approver will be the 2nd person to Approve and Certifier(s) shall be the last</inlineHelpText>
+        <label>Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Budgets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Identifier_vod__c</fullName>
+        <description>Used in the UI to help end users identify the correct budget. This field should be populated by an admin, and be read-only to end users.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Text field that can be populated with any value that uniquely identifies the budget</inlineHelpText>
+        <label>Budget ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Child_Budget_Allocation_vod__c</fullName>
+        <description>The funds that have been allocated to child budgets. This number should not exceed the Total Budget.</description>
+        <externalId>false</externalId>
+        <label>Child Budget Allocation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Committed_Expenses_vod__c</fullName>
+        <description>Amount of committed funds that will be used for events, not including non-committed estimates or paid expenses</description>
+        <externalId>false</externalId>
+        <label>Committed Expenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Committed_Remaining_vod__c</fullName>
+        <description>Total budget minus committed expenses.</description>
+        <externalId>false</externalId>
+        <formula>Total_Budget_vod__c - Committed_Expenses_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Committed Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Company_Code_Currency_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Company_Code_HCPTS__r.Currency_HCPTS__c</formula>
+        <label>Company Code Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Code_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This is derived from WBS/Cost Center code using a Workflow Field Edit or explicitly provided by the user. System will override user supplied value if WBS or Cost Center has a valid Company Code. Only allows manual overrid if WBS/CC has no Company Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is derived from WBS/Cost Center code using a Workflow Field Edit or explicitly provided by the user. System will override user supplied value if WBS or Cost Center has a valid Company Code. Only allows manual overrid if WBS/CC has no Company Code</inlineHelpText>
+        <label>Company Code</label>
+        <referenceTo>Company_Code_Details_HCPTS__c</referenceTo>
+        <relationshipName>Needs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Congress_Address_Line_1__c</fullName>
+        <description>Address Line 1 for Congress</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 1 for Congress</inlineHelpText>
+        <label>Address Line 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Congress_Address_Line_2_HCPTS__c</fullName>
+        <description>Address Line 2 for Congress</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 2 for Congress</inlineHelpText>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Congress_City_HCPTS__c</fullName>
+        <description>City where the Congress is being held</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>City where the Congress is being held</inlineHelpText>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Congress_Name_HCPTS__c</fullName>
+        <description>Name or Description for the Congress</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name or Description for the Congress</inlineHelpText>
+        <label>Name/Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Congress_Postal_Code_HCPTS__c</fullName>
+        <description>Post code of where the Congress is being held</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Post code of where the Congress is being held</inlineHelpText>
+        <label>Postal Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Congress_State_Province_HCPTS__c</fullName>
+        <description>State or Province where the Congress is being held</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>State or Province where the Congress is being held</inlineHelpText>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Copayment_HCPTS__c</fullName>
+        <description>Copay that needs to be collected. Optional &amp; Informational only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Copay that needs to be collected. Optional &amp; Informational only field</inlineHelpText>
+        <label>Copayment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Center_Code_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Cost Center Code</description>
+        <externalId>false</externalId>
+        <label>Cost Center Code</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Cost_Center_Details_HCPTS__c.Active_HCPTS__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Cost_Center_Details_HCPTS__c</referenceTo>
+        <relationshipName>Needs_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_HCPTS__c</fullName>
+        <description>Currency type for Budget</description>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>EUR</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cybergrant_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Cybergrant ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delegate_Sharing_rights_to_Processor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checking this box means the Service Coordinator will have Sharing rights of this record to other users. Only the current owner of the record can effectively use this option.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this box means the Service Coordinator will have Sharing rights of this record to other users. Only the current owner of the record can effectively use this option.</inlineHelpText>
+        <label>Delegate to Service Coordinator?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description_HCPTS__c</fullName>
+        <description>Any additional description that user wishes to provide</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Any additonal description that user wishes to provide</inlineHelpText>
+        <label>Description</label>
+        <length>32000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>End_Date_vod__c</fullName>
+        <description>End Date of a budget.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Expenses_vod__c</fullName>
+        <description>Amount of estimated funds that will be used for events, not including committed or paid expenses.</description>
+        <externalId>false</externalId>
+        <label>Estimated Expenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Number_of_Activities_HCPTS__c</fullName>
+        <description>Estimate # of Activities for the Budget</description>
+        <externalId>false</externalId>
+        <label>Estimated Number of Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Remaining_vod__c</fullName>
+        <description>Total budget minus estimated expenses.</description>
+        <externalId>false</externalId>
+        <formula>Total_Budget_vod__c - Estimated_Expenses_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Estimated Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fields_For_Approval_1_HCPTS__c</fullName>
+        <defaultValue>&apos;Total_Budget_vod__c,Start_Date_vod__c,End_Date_vod__c,Topic_HCPTS__c,BudgetParticipants__r,Need_Expense_Estimates__r&apos;</defaultValue>
+        <description>2nd set of Fields for Approval - Define a default value comma seperated similar to default value defined in  Fields_For_Approval_HCPTS field...another set helps define more fields since each fields can only hold 255 characters</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>2nd set of Fields for Approval - Define a default value comma seperated similar to default value defined in  Fields_For_Approval_HCPTS field...another set helps define more fields since each fields can only hold 255 characters</inlineHelpText>
+        <label>Fields For Approval 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fields_For_Approval_HCPTS__c</fullName>
+        <defaultValue>&apos;Initiating_BU_HCPTS__c,Approving_User_HCPTS__c,Funding_Country_HCPTS__c,Processor_HCPTS__c&apos;</defaultValue>
+        <description>The default value of this field is used by Code in determining which fields to check before submitting record for Approval. ChildRelationship API names can also be provided. Comma seperated Field API names only, No spaces anywhere</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The default value of this field is used by Code in determining which fields to check before submitting record for Approval. ChildRelationship API names can also be provided.Comma seperated Field API names only, No spaces anywhere</inlineHelpText>
+        <label>Fields For Approval</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Funding_Country_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Location of Funding/Originating Country</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Location of Funding/Originating Country</inlineHelpText>
+        <label>Funding Country</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipName>Budget_Guidance</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Initiating_BU_HCPTS__c</fullName>
+        <description>Initiating Business Unit</description>
+        <externalId>false</externalId>
+        <label>Initiated By</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>R&amp;D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Is_Joint_Venture_Activity_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if Need is a Joint Venture Activity</description>
+        <externalId>false</externalId>
+        <label>Is Joint-Venture Activity</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Joint_Venture_Detail_HCPTS__c</fullName>
+        <description>Detailed Information of the Joint Venture</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Alliance Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Need_ID_HCPTS__c</fullName>
+        <description>Need auto generated number used in the ID field</description>
+        <displayFormat>{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Need Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Need_Owner_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Need Owner is the Owner of this Need...may or may not be full Owner of the record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Need Owner is the Owner of this Need...may or may not be full Owner of the record.</inlineHelpText>
+        <label>Need Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>NeedsOwned</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Budget_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Relationship to a parent budget.</description>
+        <externalId>false</externalId>
+        <label>Related Budget</label>
+        <referenceTo>EM_Budget_vod__c</referenceTo>
+        <relationshipLabel>EM Budgets</relationshipLabel>
+        <relationshipName>Parent_Budget_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Participant_Count_HCPTS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Count of Partcipant records for this Budget</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Partcipant records for this Budget</inlineHelpText>
+        <label>Participant Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Processor_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Person Assigned as the Service Coordinator to Process this request. Lookup to the User table</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify a User that can act as Service Coordinator for this request</inlineHelpText>
+        <label>Service Coordinator</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Need_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product associated to this budget.</description>
+        <externalId>false</externalId>
+        <label>Product/Therapeutic Area</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipName>Budgets</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Promotional_HCPTS__c</fullName>
+        <description>Indicates if the Need is Promotional or Non-Promotional</description>
+        <externalId>false</externalId>
+        <label>Promotional/Non-Promotional</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Regulatory_Reviwer_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Certifier that can Review &amp; Approve this request. Certifier will provide last Approval</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please optionally specify a Certifier that can Review &amp; Approve this request. Certifier will provide last Approval</inlineHelpText>
+        <label>Certifier</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Needs_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reviewing_User_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reviewer that can Review this request. If Approver and Certifier(s) are also specified, Reviewer will provide the first Approval</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please optionally specify a Reviewer that can Review this request. If Approver and Certifier(s) are also specified, Reviewer will provide the first Approval</inlineHelpText>
+        <label>Reviewer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BudgetsforReviewingUsers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SC_Needs_HCPTS__c</fullName>
+        <description>Should not be on page layout- field to create My Needs view for Service Coordinators</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( Processor_HCPTS__r.Id = $User.Id, &quot;Yes&quot;, &quot;No&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>I am the SC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scope_HCPTS__c</fullName>
+        <description>Type of Congress</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Congress - specify a single value from the Picklist</inlineHelpText>
+        <label>Scope</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date_vod__c</fullName>
+        <description>Start Date of a budget.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of a budget. It must be marked as Available for Use to be selected on an event.</description>
+        <externalId>false</externalId>
+        <label>Availability Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Pre-Activation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marked For Delete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Territory_vod__c</fullName>
+        <description>The territory that the budget is allocated to.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area_HCPTS__c</fullName>
+        <description>Therapeutic Areas for the Need</description>
+        <externalId>false</externalId>
+        <label>Therapeutic Area</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Topic_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Topic to provide guidance materials</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Topic that encloses the Guidance materials</inlineHelpText>
+        <label>Topic</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Topic must be of Recordtype Event_Topic_vod</errorMessage>
+            <filterItems>
+                <field>EM_Catalog_vod__c.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Event_Topic_vod</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>EM_Catalog_vod__c</referenceTo>
+        <relationshipName>Budgets_Guidance_Setup</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_vod__c</fullName>
+        <description>Total value of the budget.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount approved to execute Activities against this Budget</inlineHelpText>
+        <label>Total Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Version_HCPTS__c</fullName>
+        <defaultValue>0.1</defaultValue>
+        <description>Version of the Need as it goes through the Approval Process. Field Updates will increment.</description>
+        <externalId>false</externalId>
+        <label>Version</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WBS_Number_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the WBS Code/Number Details</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup the WBS number/code as applicable to this Budget</inlineHelpText>
+        <label>WBS Number</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>WBS_Details_HCPTS__c.Active_HCPTS__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Only Active WBS Numbers are shown by default</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>WBS_Details_HCPTS__c</referenceTo>
+        <relationshipName>Needs_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>EM Budget</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Parent_Budget_vod__c</columns>
+        <columns>Start_Date_vod__c</columns>
+        <columns>End_Date_vod__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Approval_Status_HCPTS__c</columns>
+        <columns>Status_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Needs</fullName>
+        <columns>NAME</columns>
+        <columns>Activity_Type_HCPTS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Product_vod__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Budgets</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>My_Needs</fullName>
+        <columns>NAME</columns>
+        <columns>Budget_Identifier_vod__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Approval_Status_HCPTS__c</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Topic_HCPTS__c</columns>
+        <columns>Need_Owner_HCPTS__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SC_Needs_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>My Budgets</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>EM Budgets</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Budget_vod</fullName>
+        <active>true</active>
+        <description>Budget</description>
+        <label>Budget_vod</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D Committees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Business Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Budget_with_HCP_Sponsorship_Guidance</fullName>
+        <active>true</active>
+        <description>Budget with HCP Sponsorship Guidance</description>
+        <label>HCP Sponsorship</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent For Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Budget_with_Speaker_Meeting_Serial_Guidance</fullName>
+        <active>true</active>
+        <description>Budget with Speaker Meeting (Serial) Guidance</description>
+        <label>Serial Need</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>SRP Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent For Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Initiative_HCPTS</fullName>
+        <active>false</active>
+        <description>Recordtype for defining Initiatives</description>
+        <label>zInitiative</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D Committees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent For Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Need_HCPTS</fullName>
+        <active>false</active>
+        <description>Recordtype for defining Needs</description>
+        <label>zNeed</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D Committees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Rejected by Certifier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected by Reviewer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Simple_Budget_No_Guidance</fullName>
+        <active>true</active>
+        <description>Simple Budget (No Guidance)</description>
+        <label>Budget Only</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Border</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D Committees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent For Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Speaker_Meeting_PartiallyLocked</fullName>
+        <active>true</active>
+        <description>Recordtype is used to lock most fields except some</description>
+        <label>Speaker Meeting - PartiallyLocked</label>
+        <picklistValues>
+            <picklist>Activity_Format_HCPTS__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual%2FIn-Person</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approval_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent For Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiating_BU_HCPTS__c</picklist>
+            <values>
+                <fullName>HEOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Market Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Affairs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Promotional_HCPTS__c</picklist>
+            <values>
+                <fullName>Non-Promotional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Promotional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_HCPTS__c</picklist>
+            <values>
+                <fullName>International</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Therapeutic_Area_HCPTS__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <sharingReasons>
+        <fullName>Approver_HCPTS__c</fullName>
+        <label>Approver</label>
+    </sharingReasons>
+    <sharingReasons>
+        <fullName>Certifier_HCPTS__c</fullName>
+        <label>Certifier</label>
+    </sharingReasons>
+    <sharingReasons>
+        <fullName>Need_Owner_HCPTS__c</fullName>
+        <label>Need Owner</label>
+    </sharingReasons>
+    <sharingReasons>
+        <fullName>Processor_HCPTS__c</fullName>
+        <label>Processor</label>
+    </sharingReasons>
+    <sharingReasons>
+        <fullName>Reviewer_HCPTS__c</fullName>
+        <label>Reviewer</label>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Approver_cannot_be_Need_Owner</fullName>
+        <active>true</active>
+        <description>Approver cannot be Need Owner</description>
+        <errorConditionFormula>OwnerId  =  Approving_User_HCPTS__c</errorConditionFormula>
+        <errorMessage>Approver cannot be Need Owner</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_chose_both_WBS_Cost_Center</fullName>
+        <active>true</active>
+        <description>Validation rule to ensure either WBS Number or Cost Center is chosen</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(WBS_Number_HCPTS__c)),
+    NOT(ISBLANK(Cost_Center_Code_HCPTS__c))
+ )</errorConditionFormula>
+        <errorMessage>Either WBS Code or Cost Center maybe specified but not both!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Company_Cd_Required_for_Available_Budget</fullName>
+        <active>true</active>
+        <description>To make a Budget &quot;Active&quot;  you must specify:
+1. A valid WBS &amp; Company Code  
+OR
+2. A valid Cost Center and Company Code</description>
+        <errorConditionFormula>IF(
+
+AND (NOT(ISBLANK(Total_Budget_vod__c)),Total_Budget_vod__c&gt; 0),
+
+AND (
+      ISPICKVAL(Status_vod__c , &apos;Available_For_Use_vod&apos;) ,
+      OR(
+      ISBLANK( Company_Code_HCPTS__c),
+      AND( 
+         ISBLANK( WBS_Number_HCPTS__c ),
+         ISBLANK( Cost_Center_Code_HCPTS__c)
+      )
+)), FALSE
+)</errorConditionFormula>
+        <errorDisplayField>Company_Code_HCPTS__c</errorDisplayField>
+        <errorMessage>To make a Budget &quot;Active&quot;  you must specify:
+1. A valid WBS &amp; Company Code  
+OR
+2. A valid Cost Center and Company Code</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_Date_cannot_be_later_than_Start_Date</fullName>
+        <active>true</active>
+        <description>End Date cannot be later than start date</description>
+        <errorConditionFormula>IF(
+ AND(
+     NOT(ISBLANK(Start_Date_vod__c)),
+     NOT(ISBLANK(End_Date_vod__c))
+     ) , 
+    Start_Date_vod__c &gt; End_Date_vod__c, 
+     FALSE
+)</errorConditionFormula>
+        <errorDisplayField>End_Date_vod__c</errorDisplayField>
+        <errorMessage>End Date cannot be prior to Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_Have_Company_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Status_vod__c,&apos;Available_For_Use_vod&apos;), 
+ISBLANK(Company_Code_HCPTS__c) 
+)</errorConditionFormula>
+        <errorMessage>To make a Budget &quot;Active&quot; you must specify Company Code</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Submit_for_Approval_BMS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Submit for Approval (BMS)</masterLabel>
+        <openType>replace</openType>
+        <page>VPROF_SubmitBudgetForApproval</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

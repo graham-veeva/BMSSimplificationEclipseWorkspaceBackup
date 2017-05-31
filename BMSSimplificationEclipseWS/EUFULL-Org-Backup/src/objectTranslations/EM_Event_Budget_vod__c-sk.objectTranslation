@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Rozpočet udalosti</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Rozpočty udalostí</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Rozpočet udalosti</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Rozpočty udalostí</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Rozpočtu udalosti</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Rozpočtov udalostí</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Rozpočtu udalosti</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Rozpočtom udalostí</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Rozpočtom udalosti</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Rozpočtami udalostí</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Rozpočte udalosti</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Rozpočtoch udalostí</value>
+    </caseValues>
+    <fields>
+        <label>Skutočné</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Názov rozpočtu</label>
+        <name>Budget_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Rozpočet</label>
+        <name>Budget_vod__c</name>
+        <relationshipLabel>Rozpočty udalostí</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Viazaný</label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Odhad</label>
+        <name>Estimate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zostatok odhadovaných výdavkov</label>
+        <name>Estimated_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zrušená udalosť</label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label>Udalosť</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Rozpočty udalostí</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externé ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Inheriting Expense Estimates --></label>
+        <name>Failure_Inheriting_Expense_Estimates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>Is_Need__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ID mobilného zariadenia</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Blokovanie vyraďovania</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiting for Expense Estimate Inheritance --></label>
+        <name>Waiting_for_Expense_Estimate_Inheritance__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Názov</nameFieldLabel>
+    <recordTypes>
+        <label>Rozpočet udalosti</label>
+        <name>Event_Budget_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WBS/CC --></label>
+        <name>WBS_CC_Simple_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Člen tímu udalosti</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has an End Date After the Event&apos;s End Date. --></errorMessage>
+        <name>Need_End_Date_After_Atvty_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Budget that has a start date before the Event&apos;s Start Date. --></errorMessage>
+        <name>Need_Start_Date_Before_Atvty_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

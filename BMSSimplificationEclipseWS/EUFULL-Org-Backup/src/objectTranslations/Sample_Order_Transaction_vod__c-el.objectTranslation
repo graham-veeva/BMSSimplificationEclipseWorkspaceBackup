@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Συναλλαγή παραγγελίας δείγματος</value>
+    </caseValues>
+    <fields>
+        <label><!-- ASSMCA --></label>
+        <name>ASSMCA_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστική ταυτότητα λογαριασμού</label>
+        <name>Account_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα λογαριασμού</label>
+        <name>Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Λογαριασμός</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Συναλλαγή παραγγελίας δείγματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Γραμμή διεύθυνσης 1</label>
+        <name>Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Γραμμή διεύθυνσης 2</label>
+        <name>Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προσαρμογή για</label>
+        <name>Adjust_For_vod__c</name>
+        <relationshipLabel>Συναλλαγή παραγγελίας δείγματος (προσαρμογή για)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Προσαρμοσμένη ημερομηνία</label>
+        <name>Adjusted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατανομή επίπτωσης ποσότητας</label>
+        <name>Allocation_Impact_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία επίσκεψης</label>
+        <name>Call_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία και ώρα επίσκεψης</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστική ταυτότητα επίσκεψης</label>
+        <name>Call_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα επίσκεψης</label>
+        <name>Call_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστικό δείγματος επίσκεψης</label>
+        <name>Call_Sample_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα δείγματος επίσκεψης</label>
+        <name>Call_Sample_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πόλη</label>
+        <name>City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Σχόλια</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Επιβεβαιωμένη ποσότητα</label>
+        <name>Confirmed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Διαπιστευτήρια</label>
+        <name>Credentials_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προσαρμοσμένο κείμενο</label>
+        <name>Custom_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης ΕΟΦ</label>
+        <name>DEA_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEA # --></label>
+        <name>DEA_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση παράδοσης</label>
+        <name>Delivery_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cancel_Request_vod</masterLabel>
+            <translation>Ακύρωση αίτησης</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled_vod</masterLabel>
+            <translation>Ακυρώθηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered_vod</masterLabel>
+            <translation>Παραδόθηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Σε εξέλιξη</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped_vod</masterLabel>
+            <translation>Απεστάλη</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Αποποίηση ευθύνης</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ασυμφωνία</label>
+        <name>Discrepancy_vod__c</name>
+    </fields>
+    <fields>
+        <label>Διανομέας</label>
+        <name>Distributor_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστικό ομάδας</label>
+        <name>Group_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστικό συναλλαγής ομάδας</label>
+        <name>Group_Transaction_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αριθμός παρτίδας</label>
+        <name>Lot_vod__c</name>
+        <relationshipLabel>Συναλλαγή παραγγελίας δείγματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Κατασκευαστής</label>
+        <name>Manufacturer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ποσότητα</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αιτία</label>
+        <name>Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Destroyed</masterLabel>
+            <translation>Καταστράφηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation>Χάθηκε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen</masterLabel>
+            <translation>Εκλάπη</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Σχόλια παραλαβής</label>
+        <name>Receipt_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Παρελήφθη</label>
+        <name>Received_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγν συναλλ αναφ παραγγελίας</label>
+        <name>Ref_Order_Transaction_Id_vod__c</name>
+        <relationshipLabel>Συναλλαγή παραγγελίας δείγματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Αίτηση παραλαβής</label>
+        <name>Request_Receipt_vod__c</name>
+    </fields>
+    <fields>
+        <label>Χαιρετισμός</label>
+        <name>Salutation_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αιτία κάρτας δείγματος</label>
+        <name>Sample_Card_Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Application Unavailable</masterLabel>
+            <translation>Μη διαθέσιμη εφαρμογή</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop Unavailable</masterLabel>
+            <translation>Μη διαθέσιμος φορητός υπολογιστής</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Άλλο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Αριθμός αποστολής κάρτας δείγματος</label>
+        <name>Sample_Send_Card_vod__c</name>
+    </fields>
+    <fields>
+        <label>Δείγμα U/M</label>
+        <name>Sample_U_M__c</name>
+    </fields>
+    <fields>
+        <label>Δείγμα</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>Γραμμή διεύθυνσης αποστολής 1</label>
+        <name>Ship_Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Γραμμή διεύθυνσης αποστολής 2</label>
+        <name>Ship_Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης αποστολής CDS</label>
+        <name>Ship_CDS_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>CDS # αποστολής</label>
+        <name>Ship_CDS_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πόλη αποστολής</label>
+        <name>Ship_City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Χώρα αποστολής</label>
+        <name>Ship_Country_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης άδειας αποστολής</label>
+        <name>Ship_License_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάστασης άδειας αποστολής</label>
+        <name>Ship_License_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Άδεια αποστολής</label>
+        <name>Ship_License_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τοποθεσία αποστολής</label>
+        <name>Ship_Location_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πολιτεία αποστολής</label>
+        <name>Ship_State_vod__c</name>
+    </fields>
+    <fields>
+        <label>ΤΚ αποστολής 4</label>
+        <name>Ship_Zip_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>ΤΚ αποστολής</label>
+        <name>Ship_Zip_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστική ταυτότητα αποστολής</label>
+        <name>Shipment_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία υπογραφής</label>
+        <name>Signature_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα εμφάνισης σελίδας υπογραφής</label>
+        <name>Signature_Page_Display_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Υπογραφή</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Νομός</label>
+        <name>State_vod__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Κατάσταση</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Αποθηκευμένο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Υπεβλήθη</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ημερομηνία υποβολής</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Περιοχή</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Μεταφορά σε όνομα</label>
+        <name>Transfer_To_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μεταφορά προς</label>
+        <name>Transfer_To_vod__c</name>
+        <relationshipLabel>Συναλλαγή παραγγελίας δείγματος (μεταφορά προς)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ημερομηνία μεταφοράς</label>
+        <name>Transferred_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μεταφέρθηκε από όνομα</label>
+        <name>Transferred_From_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μεταφέρθηκε από</label>
+        <name>Transferred_From_vod__c</name>
+        <relationshipLabel>Συναλλαγή παραγγελίας δείγματος (μεταφέρθηκε από)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τύπος</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Adjustment_vod</masterLabel>
+            <translation>Προσαρμογή</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRC_vod</masterLabel>
+            <translation>BRC_vod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt_vod</masterLabel>
+            <translation>Απόδειξη</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Μεταφορά</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Boxes</masterLabel>
+            <translation>Κουτιά</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Θήκες</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ξεκλείδωμα</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <fields>
+        <label>ΤΚ 4</label>
+        <name>Zip_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>ΤΚ</label>
+        <name>Zip_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Transaction Id --></nameFieldLabel>
+    <recordTypes>
+        <label>Προσαρμογή</label>
+        <name>Adjustment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BRC --></label>
+        <name>BRC</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Απόδειξη</label>
+        <name>Receipt_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Μεταφορά</label>
+        <name>Transfer_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Σφάλμα: Ποσότητα &gt; 0</errorMessage>
+        <name>Return_Quantity_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Σφάλμα: Ποσότητα &gt; 0</errorMessage>
+        <name>Transfer_Quantity_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Αναπροσαρμογή νέας παραγγελίας</label>
+        <name>New_Order_Adjustment_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Μεταφορά νέας παραγγελίας</label>
+        <name>New_Order_Transfer_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Υποβολή</label>
+        <name>Submit_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Ξεκλείδωμα</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

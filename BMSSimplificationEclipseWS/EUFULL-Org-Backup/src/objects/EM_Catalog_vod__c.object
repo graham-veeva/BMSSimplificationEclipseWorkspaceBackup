@@ -1,0 +1,2742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to store the names of topics and services that pertain to Veeva Event Management.
+Changed label to Topic for HCPTS Events Management (SW 6/15)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_HCPTS__c</fullName>
+        <description>Boolean indicating if the Material is expired/active or not.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Expiration_Date_HCPTS__c), &apos;N/A&apos;,
+IF(Expiration_Date_HCPTS__c  &gt;  TODAY(), &apos;ACTIVE&apos;,&apos;EXPIRED&apos;)
+)</formula>
+        <inlineHelpText>Boolean indicating if the Material is expired/active or not.</inlineHelpText>
+        <label>Active?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Applicable_Activity_Status_HCPTS__c</fullName>
+        <description>Status field that corresponds to the Required checkbox. If this value is anything other than Not Applicable, the Required Attachment check is performed before the Activity moves into the specified status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status field that corresponds to the Required checkbox. If this value is anything other than Not Applicable, the Required Attachment check is performed before the Activity moves into the specified status</inlineHelpText>
+        <label>Applicable Activity Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Date_HCPTS__c</fullName>
+        <description>Approval Date - from external system</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Approval Date - from external system</inlineHelpText>
+        <label>Approval Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Base_Language_Name_vod__c</fullName>
+        <description>The name of the catalog entry in the base language. If populated, this field can be used to tie entries together across languages.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Fee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reimbursable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deduction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Channel_HCPTS__c</fullName>
+        <description>Channel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Channel</inlineHelpText>
+        <label>Channel</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Description of the material</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Easy_Search_Field_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Easy Search Help Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date_HCPTS__c</fullName>
+        <description>Expiration Date (Sourced from External System)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Expiration Date (Sourced from External System)</inlineHelpText>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Id_HCPTS__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Item Id from external system</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Item Id from external system</inlineHelpText>
+        <label>Item Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Location_HCPTS__c</fullName>
+        <description>URL of the external system where this item is hosted</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>URL of the external system where this item is hosted</inlineHelpText>
+        <label>Item Location</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Item_Type__c</fullName>
+        <description>Sourced from External System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sourced from External System</inlineHelpText>
+        <label>Item Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Action Item</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mandated_Completion_Status_HCPTS__c</fullName>
+        <description>Provide the required Completion status for the Action Item. The Activity owner must move the Action item into one of the Completion statuses indicated in this field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the required Completion status for the Action Item. The Activity owner must move the Action item into one of the Completion statuses indicated in this field</inlineHelpText>
+        <label>Mandated Completion Status</label>
+        <picklist>
+            <controllingField>Mandatory_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>Complete</fullName>
+                <default>true</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Mandatory_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the action item (Activity Material) must be marked as &quot;Complete&quot; before &quot;Applicable Status&quot; reaches for the Activity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the action item (Activity Material) must be marked as &quot;Complete&quot; before &quot;Applicable Status&quot; reaches for the Activity</inlineHelpText>
+        <label>Mandatory?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Name_vod__c</fullName>
+        <description>The name of the catalog entry in the local language</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Item Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_HCPTS__c</fullName>
+        <description>Veeva attribute</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Veeva attribute</inlineHelpText>
+        <label>Notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Country_HCPTS__c</fullName>
+        <description>Owner.Country</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Owner:User.Country</formula>
+        <inlineHelpText>Owner.Country</inlineHelpText>
+        <label>Owner Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_Source_Country_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Text(Owner:User.User_Source_Country_BMS_CORE__c)</formula>
+        <label>Owner Source Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purpose_HCPTS__c</fullName>
+        <description>Purpose for materials - Ad Board, Clinical Trial etc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purpose for materials - Ad Board, Clinical Trial etc</inlineHelpText>
+        <label>Purpose</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Attachment_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the corresponding Activity Material must have atleast one Attachment attached to it before moving to Applicable Activity Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the corresponding Activity Material must have atleast one Attachment attached to it before moving to Applicable Activity Status</inlineHelpText>
+        <label>Needs Attachment?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Service_Subtype__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Subtype</label>
+        <picklist>
+            <controllingField>Service_Type_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Presentation (one-time)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Presentation (Serial)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Content Preparation and/or Review</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+                <controllingFieldValues>Services</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sponsorship</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Generic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
+                <controllingFieldValues>Services</controllingFieldValues>
+                <controllingFieldValues>Sponsorship</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exhibits, Booths and Displays</fullName>
+                <default>false</default>
+                <controllingFieldValues>Events</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+                <controllingFieldValues>Sponsorship</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>General Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Type_HCPTS__c</fullName>
+        <description>Helps categorize a Topic/Service per BMS Service Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Helps categorize a Topic/Service per BMS Service Type</inlineHelpText>
+        <label>Contract Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Populate this Lookup to indicate Materials owned/provided by the Speaker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate this Lookup to indicate Materials owned/provided by the Speaker</inlineHelpText>
+        <label>Speaker</label>
+        <referenceTo>EM_Speaker_vod__c</referenceTo>
+        <relationshipName>Event_Materials</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Indicates the status of the material.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staged_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Target_Audience_HCPTS__c</fullName>
+        <description>Advocacy
+Field Medical
+Field Access</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Advocacy
+Field Medical
+Field Access</inlineHelpText>
+        <label>Target Audience</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Topic</label>
+    <listViews>
+        <fullName>ALL</fullName>
+        <columns>NAME</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Item_Id_HCPTS__c</columns>
+        <columns>Base_Language_Name_vod__c</columns>
+        <columns>Category_HCPTS__c</columns>
+        <columns>Easy_Search_Field_HCPTS__c</columns>
+        <columns>Service_Type_HCPTS__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Last_Modified_By_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>ALL</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Action_Items</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Description_vod__c</columns>
+        <columns>Applicable_Activity_Status_HCPTS__c</columns>
+        <columns>Mandatory_HCPTS__c</columns>
+        <columns>Requires_Attachment_HCPTS__c</columns>
+        <columns>Item_Type__c</columns>
+        <columns>Item_Location_HCPTS__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Item_Id_HCPTS__c</columns>
+        <columns>External_ID_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>EM_Catalog_vod__c.Action_Item_HCPTS</value>
+        </filters>
+        <label>Action Items</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Activity_Material</fullName>
+        <columns>NAME</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Base_Language_Name_vod__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Category_HCPTS__c</columns>
+        <columns>Applicable_Activity_Status_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>EM_Catalog_vod__c.Material_HCPTS</value>
+        </filters>
+        <filters>
+            <field>OWNER.LAST_NAME</field>
+            <operation>notEqual</operation>
+            <value>Neary</value>
+        </filters>
+        <label>Activity Material</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Activity_Topics</fullName>
+        <columns>NAME</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Applicable_Activity_Status_HCPTS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Active_HCPTS__c</columns>
+        <columns>Requires_Attachment_HCPTS__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>EM_Catalog_vod__c.Event_Topic_vod</value>
+        </filters>
+        <label>Activity Topics</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Easy_Search_View</fullName>
+        <columns>NAME</columns>
+        <columns>Last_Modified_By_HCPTS__c</columns>
+        <columns>Base_Language_Name_vod__c</columns>
+        <columns>Category_HCPTS__c</columns>
+        <columns>Service_Subtype__c</columns>
+        <columns>Service_Type_HCPTS__c</columns>
+        <columns>Easy_Search_Field_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Easy Search View</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>BMSEUENT_ENT</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Material_Checklist</fullName>
+        <columns>NAME</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Base_Language_Name_vod__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Category_HCPTS__c</columns>
+        <columns>Applicable_Activity_Status_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>EM_Catalog_vod__c.Material_HCPTS</value>
+        </filters>
+        <label>Material Checklist</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Other_Contract_Descriptions</fullName>
+        <columns>NAME</columns>
+        <columns>Last_Modified_By_HCPTS__c</columns>
+        <columns>Base_Language_Name_vod__c</columns>
+        <columns>Category_HCPTS__c</columns>
+        <columns>Service_Subtype__c</columns>
+        <columns>Service_Type_HCPTS__c</columns>
+        <columns>Easy_Search_Field_HCPTS__c</columns>
+        <columns>Name_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Other</value>
+        </filters>
+        <label>Other Contract Descriptions</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>BMSEUENT_ENT</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Sign_In_templates_TYLER</fullName>
+        <columns>NAME</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Active_HCPTS__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Target_Audience_HCPTS__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>EM_Catalog_vod__c.Print_Sign_In_Template_vod</value>
+        </filters>
+        <label>Sign In templates - TYLER</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Speaker_Service</fullName>
+        <columns>NAME</columns>
+        <columns>Name_vod__c</columns>
+        <columns>Category_HCPTS__c</columns>
+        <columns>Service_Type_HCPTS__c</columns>
+        <columns>Service_Subtype__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>EM_Catalog_vod__c.Speaker_Service_vod</value>
+        </filters>
+        <label>Speaker Service</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>T -{0000000000}</displayFormat>
+        <label>Topic Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Topics</pluralLabel>
+    <recordTypes>
+        <fullName>Action_Item_HCPTS</fullName>
+        <active>true</active>
+        <description>Used to store checklist items that Project Owners can refer to while conducting an Activity</description>
+        <label>Action Item</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Action Item</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Contract_Description_HCPTS</fullName>
+        <active>false</active>
+        <description>Used to store the Contract Descriptions</description>
+        <label>Contract Description</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fee</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Event_Topic_vod</fullName>
+        <active>true</active>
+        <description>Used to store a collection of Materials that can be associated either directly to an Activity or indirectly when it inherits a Need</description>
+        <label>Event_Topic_vod</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>General_Topic_vod</fullName>
+        <active>true</active>
+        <description>Used to store the general topics that a speaker can be trained on, such as compliance training.</description>
+        <label>General_Topic_vod</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Material_HCPTS</fullName>
+        <active>true</active>
+        <description>Used to store Materials that can be used at an Activity</description>
+        <label>Material</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Presentation_vod</fullName>
+        <active>false</active>
+        <description>Used to store presentations for events</description>
+        <label>Presentation_vod</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fee</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Print_Invitation_Template_vod</fullName>
+        <active>true</active>
+        <description>Used to store .docx templates for print invitations for events</description>
+        <label>Print_Invitation_Template_vod</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Print_Sign_In_Template_vod</fullName>
+        <active>true</active>
+        <description>Used to store .docx templates for print sign in sheets for events</description>
+        <label>Print_Sign_In_Template_vod</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Speaker_Service_vod</fullName>
+        <active>true</active>
+        <description>Used to store the contracted services for a speaker.</description>
+        <label>Speaker_Service_vod</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category_HCPTS__c</picklist>
+            <values>
+                <fullName>Contract Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reimbursable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Subtype__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Content Preparation and%2For Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Monitoring Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28Serial%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Presentation %28one-time%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA Mock Advisory Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Faculty for Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Review Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation at a Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Protocol Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publication Steering Committee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recorded Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship to Congress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Steering Committee</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Name_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Service_Subtype__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Service_Type_HCPTS__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Category_HCPTS__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Name_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Item_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Service_Type_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Category_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Base_Language_Name_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Name_vod__c</lookupFilterFields>
+        <lookupFilterFields>Service_Type_HCPTS__c</lookupFilterFields>
+        <lookupFilterFields>Service_Subtype__c</lookupFilterFields>
+        <lookupFilterFields>RECORDTYPE</lookupFilterFields>
+        <lookupFilterFields>Category_HCPTS__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Name_vod__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Service_Type_HCPTS__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Category_HCPTS__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Base_Language_Name_vod__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Name_vod__c</searchFilterFields>
+        <searchFilterFields>Service_Subtype__c</searchFilterFields>
+        <searchFilterFields>Service_Type_HCPTS__c</searchFilterFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>Easy_Search_Field_HCPTS__c</searchFilterFields>
+        <searchResultsAdditionalFields>Category_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Service_Type_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Service_Subtype__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Base_Language_Name_vod__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Applicable_Activity_Status_Spec</fullName>
+        <active>true</active>
+        <description>Applicable Activity Status must be specified if Mandatory or Requires Attachment is checked</description>
+        <errorConditionFormula>AND( 
+     OR( Requires_Attachment_HCPTS__c , Mandatory_HCPTS__c ) , 
+        ISBLANK(TEXT( Applicable_Activity_Status_HCPTS__c )) 
+)</errorConditionFormula>
+        <errorDisplayField>Applicable_Activity_Status_HCPTS__c</errorDisplayField>
+        <errorMessage>Applicable Activity Status cannot be blank for Mandatory Action Items and/or Materials that need Attachment</errorMessage>
+    </validationRules>
+</CustomObject>

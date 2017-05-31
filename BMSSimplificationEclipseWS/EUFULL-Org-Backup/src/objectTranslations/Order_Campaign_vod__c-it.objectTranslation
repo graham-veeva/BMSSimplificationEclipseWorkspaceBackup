@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campagne ordini</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campagne ordini</value>
+    </caseValues>
+    <fields>
+        <label>Gruppo di account</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo di account</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>Rivenditore/Partner di canale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>Cliente - Canale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>Cliente - Diretto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>Partner installazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Altro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>Professionale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>Potenziale cliente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>Partner tecnologia</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Attivo</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Predefinito</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Descrizione</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di fine</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limite campagna ordini</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo di record ordine</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>Tutto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Diretto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Trasferimento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data di inizio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Data di inizio successiva a data di fine</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

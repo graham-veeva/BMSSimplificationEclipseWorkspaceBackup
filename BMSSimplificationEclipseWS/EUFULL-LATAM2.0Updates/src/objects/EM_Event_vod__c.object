@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <fullName>Must_Provider_Venue_Country</fullName>
+        <active>true</active>
+        <description>MNAIDU - 5/11/2017 - New VR to ensure Venue country is populated so that Integration does not cause error</description>
+        <errorConditionFormula>AND( 
+TEXT(Starcite_Request_Status__c) = &apos;Request Estimates&apos;,
+ ISBLANK(Country_HCPTS__c)
+)</errorConditionFormula>
+        <errorMessage>Venue Country must be populated before moving Logistics Status to Request Estimates</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_fill_Congress_Info</fullName>
+        <active>true</active>
+        <description>GCARO - 5/23/2017 - UPDATED TO VERIFY THAT BEFORE, DURING OR AFTER INT&apos;L CONGRESS? IS POPULATED WHEN LOGISTICS REQUEST STATUS = &apos;REQUEST ESTIMATES&apos;</description>
+        <errorConditionFormula>AND( 
+TEXT(Starcite_Request_Status__c) = &apos;Request Estimates&apos;,
+   OR(ISBLANK(TEXT(Before_during_or_after_a_Congress__c)))
+)</errorConditionFormula>
+        <errorMessage>&apos;Before, during or after Int’l Congress?&apos; must have a value when &apos;Logistics Request Status&apos; is &apos;Request Estimates&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_fill_Congress_Info_2</fullName>
+        <active>true</active>
+        <description>GCARO - 5/23/2017 - CREATED TO VERIFY THAT CONGRESS NAMES IS POPULATED WHEN BEFORE, DURING OR AFTER INT&apos;L CONGRESS? = &apos;YES&apos;</description>
+        <errorConditionFormula>AND (
+TEXT(Starcite_Request_Status__c) = &apos;Request Estimates&apos;, 
+         ISPICKVAL(Before_during_or_after_a_Congress__c, &apos;Yes&apos;),
+         ISBLANK(TEXT( Congress_Names_HCPTS__c ))
+      )</errorConditionFormula>
+        <errorMessage>&apos;Congress Names&apos; must have a value when &apos;Before, during or after Int’l Congress?&apos; is &apos;Yes&apos; and Logistics Request Status is &apos;Request Estimates&apos;</errorMessage>
+    </validationRules>
+</CustomObject>

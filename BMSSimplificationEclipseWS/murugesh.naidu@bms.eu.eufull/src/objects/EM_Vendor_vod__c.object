@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <fields>
+        <fullName>ERS_Simple_HCPTS__c</fullName>
+        <description>Indicates Invoice type - fed from SAP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates Invoice type - fed from SAP</inlineHelpText>
+        <label>ERS</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Code_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Industry Code</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0100-HCP(Individual)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0101-HCO (Entity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0102-Non-HCP (Individual or Entity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Material_Group_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Material Group</label>
+        <picklist>
+            <controllingField>Industry_Code_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>HCPT01 (HCP Services)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0100-HCP(Individual)</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCPT03 (HCP Sponsorship)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCPT02 (Event Sponsorship)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0101-HCO (Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ITRD09 (Educatoinal Grants)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Provider_Reference_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Provider Reference</label>
+        <referenceTo>EM_Speaker_vod__c</referenceTo>
+        <relationshipLabel>Payees</relationshipLabel>
+        <relationshipName>Payees</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Registration_ID_HCPTS__c</fullName>
+        <description>VAT Registration ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>VAT Registration ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Payee_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>Simple Payee</description>
+        <label>Payee</label>
+        <picklistValues>
+            <picklist>ERS_Simple_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry_Code_HCPTS__c</picklist>
+            <values>
+                <fullName>0000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0100-HCP%28Individual%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0101-HCO %28Entity%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0102-Non-HCP %28Individual or Entity%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Material_Group_HCPTS__c</picklist>
+            <values>
+                <fullName>HCPT01 %28HCP Services%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT02 %28Event Sponsorship%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT03 %28HCP Sponsorship%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ITRD09 %28Educatoinal Grants%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

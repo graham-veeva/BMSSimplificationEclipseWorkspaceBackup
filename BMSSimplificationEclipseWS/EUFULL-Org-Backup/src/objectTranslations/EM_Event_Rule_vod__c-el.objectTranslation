@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Κανόνας εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Κανόνες εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Κανόνας εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Κανόνες εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Κανόνας εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Κανόνες εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Κανόνας εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Κανόνες εκδήλωσης </value>
+    </caseValues>
+    <fields>
+        <label>Πεδία λογαριασμού παρευρισκόμενου</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Παρουσίαση CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Κανόνες εκδήλωσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Πεδία επαφής παρευρισκόμενου</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Αλληλεπικάλυψη χώρας</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Κανόνες εκδήλωσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Πρότυπο Email</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Κανόνες εκδήλωσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Διαμόρφωση εκδήλωσης</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Κανόνες εκδήλωσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Εξωτερική αναγνωριστική ταυτότητα</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τύπος φίλτρου</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Υποχρεωτικό</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Προαιρετικό (προκαθορισμένο)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Προαιρετικό (μη προκαθορισμένο)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Τύπος υλικού</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Υλικό</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Τύποι εκδηλώσεων που χρησιμοποιούν υλικό</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Πεδία εγγραφής σε σύνδεση</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προσόν</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Κανόνες εκδήλωσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Αναζήτηση εκτός της περιφέρειάς μου</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πεδία ομιλητών</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πεδία χρήστη παρευρισκόμενου</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πεδία εισερχόμενου</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <recordTypes>
+        <label>Πεδία παρευρισκόμενου</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Υλικό</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Πεδία εγγραφής σε σύνδεση</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Πεδία ομιλητή</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Προσόν ομιλητή</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Πεδία εισερχόμενου</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Ένας ενιαίος κανόνας δεν μπορεί να έχει συμπληρωμένα και το Πρότυπο Email και την CLM Παρουσίαση. Παρακαλούμε δημιουργήσετε ξεχωριστούς κανόνες για αυτά τα δύο προϊόντα.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ένας ενιαίος κανόνας δεν μπορεί να έχει συμπληρωμένα και το Πρότυπο Email και την CLM Παρουσίαση. Παρακαλούμε δημιουργήσετε ξεχωριστούς κανόνες για αυτά τα δύο προϊόντα.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ένας μόνο κανόνας δεν μπορεί να έχει συμπληρωθεί για το πρότυπο τόσο του Υλικού όσο και του Email. Παρακαλούμε να δημιουργήσετε ξεχωριστούς κανόνες για αυτά τα δύο στοιχεία.&quot;</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

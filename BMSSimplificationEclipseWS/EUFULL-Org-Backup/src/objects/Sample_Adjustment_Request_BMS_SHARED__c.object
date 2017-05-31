@@ -1,0 +1,2769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Address_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Address_vod__c.Account_vod__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Correct_Prescriber_BMS_SHARED__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Address_vod__c</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(AND(RecordType.Name=&quot;Sample Disbursement&quot;,OR(TEXT( Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Recorded&quot;,TEXT( Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;)), DATEVALUE(Sample_Transaction_BMS_SHARED__r.Signature_Date_vod__c),IF(AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transaction Recorded&quot;), DATEVALUE(Duplicate_Sample_Transaction_BMS_SHARED__r.Signature_Date_vod__c), 
+
+IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Disbursement Not Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Product Received - Not Ordered&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Product Received - Unable to Acknowledge&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Initial Report&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Transfer Received - Unable to Acknowledge&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Hardware/Software Failure&quot;), Date_BMS_SHARED__c ,IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Duplicate Transaction Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Shipment Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Out Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Return Recorded&quot;), DATEVALUE(Duplicate_Sample_Transaction_BMS_SHARED__r.CreatedDate),DATEVALUE(Sample_Transaction_BMS_SHARED__r.CreatedDate)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjusted Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Date_Secondary_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Incorrect Sample/Lot Number Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;), Sample_Transaction_Date_BMS_Shared__c, Blank_Date_BMS_SHARED__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Secondary: Adjusted Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Lot_BMS_Shared__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Disbursement Not Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Product Received - Not Ordered&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Product Received - Unable to Acknowledge&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Initial Report&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Transfer Received - Unable to Acknowledge&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Hardware/Software Failure&quot;), Lot_BMS_SHARED__r.Name  ,IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Duplicate Transaction Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Shipment Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Out Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Return Recorded&quot;), Duplicate_Sample_Lot_BMS_SHARED__c, Sample_Transaction_Lot_BMS_SHARED__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjusted Lot #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Lot_Secondary_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Incorrect Sample/Lot Number Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;), Lot_BMS_SHARED__r.Name ,&quot;N/A&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Secondary: Adjusted Lot#</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Quantity_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Reason_BMS_SHARED__c)= &quot;Incorrect Prescriber Profile &amp; Duplicate Disbursement Recorded on Correct Profile&quot;,- Sample_Transaction_BMS_SHARED__r.Inventory_Impact_Quantity_vod__c ,IF(OR(TEXT(Reason_BMS_SHARED__c)= &quot;Duplicate Transaction Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Shipment Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Acknowledged&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Out Recorded&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Return Recorded&quot;),-Duplicate_Sample_Transaction_BMS_SHARED__r.Inventory_Impact_Quantity_vod__c,IF(TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Acknowledged&quot;,-Adjustment_Quantity_BMS_SHARED__c,Adjustment_Quantity_BMS_SHARED__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjusted Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Quantity_SECONDARY_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Reason_BMS_SHARED__c)= &quot;Incorrect Sample/Lot Number Acknowledged&quot;, Adjustment_Quantity_BMS_SHARED__c,IF(TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,-Adjustment_Quantity_BMS_SHARED__c,0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Secondary: Adjusted Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Adjustment_Quantity_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Adjustment Quantity (In Units)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Code_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Code ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_EMEA_Sample_Adjustment_Country__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT($User.User_Source_Country_BMS_CORE__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_EMEA_URL__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>LEFT($Api.Partner_Server_URL_140, FIND(&quot;.com/&quot;,$Api.Partner_Server_URL_140)+3)+&quot;/&quot;+Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BMS_EMEA_URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Territory_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Territory ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BPA_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_BMS_SHARED__r.External_ID_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BPA ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Blank_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Blank Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>City_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_BMS_SHARED__r.City_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>City</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Correct_Inventory_Quantity_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Correct Inventory Quantity (In Units)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Correct_Prescriber_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Correct Prescriber</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Disclaimer_BMS_CA__c</fullName>
+        <description>Used for Canada Profiles only</description>
+        <externalId>false</externalId>
+        <label>Disclaimer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Representatives are required to report sample thefts/losses to Samples Management stakeholders within 24 hours. Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit. Review of return adjustments may take 4-6 weeks.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form. Another audit may be required if quantities cannot be verified.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Representatives are permitted to distribute samples, free of charge for patient treatment only to licensed physicians. It is prohibited for BMS employees to supply samples to physicians for off-label usage.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Disclaimer_BMS_US__c</fullName>
+        <externalId>false</externalId>
+        <label>Disclaimer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management, 1-888-475-2328, option 3.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments. Documentation provided by the prescriber must be signed and specify disbursement date, samples (product/strength) and quantity received.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Representatives are required to report sample thefts/losses to Samples Management within (1) one business day. Contact Samples Management at 1-888-475-2328, Opt. #3 or email samplesmanagement@bms.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit. Review of return adjustments may take 4-6 weeks.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet. Another audit may be required if quantities cannot be verified.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>District_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>LEFT( Territory_ID_BMS_SHARED__c , 4)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>District ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Quantity_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <formula>Duplicate_Sample_Transaction_BMS_SHARED__r.Inventory_Impact_Quantity_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duplicate Transaction: Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Sample_Lot_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Duplicate_Sample_Transaction_BMS_SHARED__r.Lot_vod__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duplicate Transaction: Sample Lot</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Sample_Transaction_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Duplicate Sample Transaction</label>
+        <referenceTo>Sample_Transaction_vod__c</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests (Duplicate Sample Transaction)</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Transaction_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(  Duplicate_Sample_Transaction_BMS_SHARED__r.RecordType.Name =&quot;Disbursement_vod&quot;,Duplicate_Sample_Transaction_BMS_SHARED__r.Signature_Date_vod__c, Duplicate_Sample_Transaction_BMS_SHARED__r.CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duplicate Transaction: Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>From_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>From Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Help_Desk_Ticket_Number_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Help Desk Ticket Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Increase_Decrease_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Increase/Decrease</label>
+        <picklist>
+            <controllingField>Reason_BMS_SHARED__c</controllingField>
+            <picklistValues>
+                <fullName>Increase</fullName>
+                <default>false</default>
+                <controllingFieldValues>Duplicate Return Recorded</controllingFieldValues>
+                <controllingFieldValues>Duplicate Transaction Recorded</controllingFieldValues>
+                <controllingFieldValues>Duplicate Transfer Out Recorded</controllingFieldValues>
+                <controllingFieldValues>Incorrect Prescriber Profile &amp; Duplicate Disbursement Recorded on Correct Profile</controllingFieldValues>
+                <controllingFieldValues>Incorrect Quantity Acknowledged</controllingFieldValues>
+                <controllingFieldValues>Incorrect Quantity Recorded</controllingFieldValues>
+                <controllingFieldValues>Product Received - Not Ordered</controllingFieldValues>
+                <controllingFieldValues>Product Received - Unable to Acknowledge</controllingFieldValues>
+                <controllingFieldValues>Transfer Received - Unable to Acknowledge</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+                <controllingFieldValues>Concealed Short-Ship</controllingFieldValues>
+                <controllingFieldValues>Disbursement Not Recorded</controllingFieldValues>
+                <controllingFieldValues>Duplicate Shipment Acknowledged</controllingFieldValues>
+                <controllingFieldValues>Duplicate Transfer Acknowledged</controllingFieldValues>
+                <controllingFieldValues>Hardware/Software Failure</controllingFieldValues>
+                <controllingFieldValues>Incorrect Quantity Acknowledged</controllingFieldValues>
+                <controllingFieldValues>Incorrect Quantity Recorded</controllingFieldValues>
+                <controllingFieldValues>Initial Report</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+                <controllingFieldValues>Annual Auditor Inventory Error</controllingFieldValues>
+                <controllingFieldValues>Incorrect Call Date Recorded</controllingFieldValues>
+                <controllingFieldValues>Incorrect Prescriber</controllingFieldValues>
+                <controllingFieldValues>Manager Inventory Error</controllingFieldValues>
+                <controllingFieldValues>Quarterly Rep Inventory Error</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Increase Incorrect Lot/Decrease Correct Lot</fullName>
+                <default>false</default>
+                <controllingFieldValues>Incorrect Sample/Lot Number Recorded</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decrease Incorrect Lot/Increase Correct Lot</fullName>
+                <default>false</default>
+                <controllingFieldValues>Incorrect Sample/Lot Number Acknowledged</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Interaction_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Interaction</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$User.Id</field>
+                <operation>equals</operation>
+                <valueField>Call2_vod__c.OwnerId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Call2_vod__c</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Details_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inventory Details</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Inventory_Record_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Inventory Record</label>
+        <referenceTo>Sample_Inventory_vod__c</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>License_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_BMS_SHARED__r.License_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>License #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Expiration_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_BMS_SHARED__r.License_Expiration_Date_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>License Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>License_Valid_to_Sample_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_BMS_SHARED__r.License_Valid_To_Sample_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>License Valid to Sample</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lot_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact Samples Management at 1-888-475-2328, Opt #3 if the sample Lot # requiring an adjustment is not available for selection.</inlineHelpText>
+        <label>Lot #</label>
+        <referenceTo>Sample_Lot_vod__c</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Notify_Recipient_TBM_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Was TBM who received samples notified?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Order_Number_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Order Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Police_Report_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Police Report #</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prescriber_Information_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>List prescriber names and addresses for disbursements lost due to hardware/software failure</inlineHelpText>
+        <label>Additional Prescriber Information</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Reason_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Incorrect Quantity Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Prescriber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Prescriber Profile &amp; Duplicate Disbursement Recorded on Correct Profile</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Disbursement Not Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Sample/Lot Number Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate Transaction Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concealed Short-Ship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Quantity Acknowledged</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate Shipment Acknowledged</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Received - Not Ordered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Received - Unable to Acknowledge</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Initial Report</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transfer Received - Unable to Acknowledge</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Sample/Lot Number Acknowledged</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate Transfer Acknowledged</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate Transfer Out Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate Return Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Incorrect Call Date Recorded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hardware/Software Failure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quarterly Rep Inventory Error</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manager Inventory Error</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annual Auditor Inventory Error</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Required_Documentation_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Required Documentation:</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Attach signed External Inventory Worksheet, if reporting an Annual Auditor Inventory Error.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording duplicate disbursement on correct prescriber profile.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attach copy of Return Authorization Form and shipping receipt.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording incorrect quantity on original transaction.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attach Police Report to Initial Report of sample theft.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email from representative who transferred samples confirming correct quantities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email from receiving representative confirming correct quantity received.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Signed External Inventory Worksheet with correct inventory count</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prescriber verification for sample quantity errors if duplicate disbursement recorded on correct profile</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Return Authorization Form and Shipping Receipt with tracking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Disbursement quantity errors require Prescriber verification of samples received (on Rx pad or letterhead)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Police Report for initial theft report</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Return_Authorization_Number_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Authorization Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STAR_Form_Document_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>STAR Form Document ID # (if applicable)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Force_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Force_Name_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_Disbursement_Form_BMS_CA__c</fullName>
+        <description>Used by Canada in place of STAR document field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sample Disbursement Form</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_Transaction_BMS_SHARED__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sample Transaction</label>
+        <referenceTo>Sample_Transaction_vod__c</referenceTo>
+        <relationshipLabel>Sample Adjustment Requests</relationshipLabel>
+        <relationshipName>Sample_Adjustment_Requests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Transaction_Date_BMS_Shared__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( Sample_Transaction_BMS_SHARED__r.RecordType.Name=&quot;Disbursement_vod&quot;,Sample_Transaction_BMS_SHARED__r.Signature_Date_vod__c, Sample_Transaction_BMS_SHARED__r.CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sample Transaction: Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Transaction_Lot_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Sample_Transaction_BMS_SHARED__r.Lot_vod__r.Name</formula>
+        <label>Sample Transaction: Lot #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_Transaction_Quantity_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sample_Transaction_BMS_SHARED__r.Inventory_Impact_Quantity_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sample Transaction: Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Carrier_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Shipping Carrier</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Address_BMS_SHARED__r.State_vod__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>State</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Territory_Business_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Business Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Function_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Function Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>RIGHT( Territory_Intelligent_ID_BMS_SHARED__c , 8)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Territory ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Intelligent_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Intelligent ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Region_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Region Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Area_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Sales Area Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>To Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transfered_To_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Sample_Transaction_BMS_SHARED__r.Transfer_To_vod__r.LastName&amp;&quot;,&quot;&amp; Sample_Transaction_BMS_SHARED__r.Transfer_To_vod__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transfered To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transferring_TBM_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Transferring TBM</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transferring_TBM_Notified_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was TBM who transferred samples notified of error?</inlineHelpText>
+        <label>Was transferring TBM notified of error?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Zip_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_BMS_SHARED__r.Zip_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Zip Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sample Adjustment Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Inventory_Record_BMS_SHARED__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Reason_BMS_SHARED__c</columns>
+        <columns>Interaction_BMS_SHARED__c</columns>
+        <columns>Lot_BMS_SHARED__c</columns>
+        <columns>Status_BMS_SHARED__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_Sample_Admin_Italy_Sample_Adjustment_Request_BMS_SHARED</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - Sample Admin Italy</label>
+        <queue>BMS_EMEA_Sample_Admin_Italy</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_Sample_Admin_Turkey_Sample_Adjustment_Request_BMS_SHARED</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - Sample Admin Turkey</label>
+        <queue>BMS_EMEA_Sample_Admin_Turkey</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_Sample_Admin_UK_and_Ireland_Sample_Adjustment_Request_BMS_SHARED</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - Sample Admin UK and Ireland</label>
+        <queue>BMS_EMEA_Sample_Admin_UK_and_Ireland</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>SAR-{00000}</displayFormat>
+        <label>Sample Adjustment Request Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sample Adjustment Requests</pluralLabel>
+    <recordTypes>
+        <fullName>Hardware_Software_Failure</fullName>
+        <active>true</active>
+        <description>Request adjustment for lost disbursement data due to Hardware/Software failure</description>
+        <label>Hardware/Software Failure</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management within %281%29 one business day%2E Contact Samples Management at 1-888-475-2328%2C Opt%2E %233 or email samplesmanagement%40bms%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Hardware%2FSoftware Failure</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach Police Report to Initial Report of sample theft%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording duplicate disbursement on correct prescriber profile%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording incorrect quantity on original transaction%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach copy of Return Authorization Form and shipping receipt%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach signed External Inventory Worksheet%2C if reporting an Annual Auditor Inventory Error%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email from receiving representative confirming correct quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email from representative who transferred samples confirming correct quantities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Incorrect_Prescriber_Profile_BMS_Core</fullName>
+        <active>true</active>
+        <description>Report dibsursments recorded on incorrect prescriber profile and request adjustment when prescriber signs on both incorrect and correct profiles</description>
+        <label>Incorrect Prescriber Profile</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management within %281%29 one business day%2E Contact Samples Management at 1-888-475-2328%2C Opt%2E %233 or email samplesmanagement%40bms%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Incorrect Prescriber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Prescriber Profile %26 Duplicate Disbursement Recorded on Correct Profile</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording duplicate disbursement on correct prescriber profile%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Inventory</fullName>
+        <active>true</active>
+        <description>Report Inventory entry error</description>
+        <label>Inventory</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management within %281%29 one business day%2E Contact Samples Management at 1-888-475-2328%2C Opt%2E %233 or email samplesmanagement%40bms%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Annual Auditor Inventory Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Inventory Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly Rep Inventory Error</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach signed External Inventory Worksheet%2C if reporting an Annual Auditor Inventory Error%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Return</fullName>
+        <active>true</active>
+        <description>Request adjustment(s) for error on Return transaction</description>
+        <label>Return</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management within %281%29 one business day%2E Contact Samples Management at 1-888-475-2328%2C Opt%2E %233 or email samplesmanagement%40bms%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase Incorrect Lot%2FDecrease Correct Lot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Duplicate Return Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Quantity Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Sample%2FLot Number Recorded</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach copy of Return Authorization Form and shipping receipt%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sample_Disbursement</fullName>
+        <active>true</active>
+        <description>Request adjustment(s) for error on Sample Disbursement</description>
+        <label>Sample Disbursement</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Representatives are permitted to distribute samples%2C free of charge for patient treatment only to licensed physicians%2E It is prohibited for BMS employees to supply samples to physicians for off-label usage%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase Incorrect Lot%2FDecrease Correct Lot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Disbursement Not Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Transaction Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Call Date Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Quantity Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Sample%2FLot Number Recorded</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording incorrect quantity on original transaction%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Shipment</fullName>
+        <active>true</active>
+        <description>Request adjustment(s) for error on shipment receipt</description>
+        <label>Shipment</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Concealed Short-Ship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Shipment Acknowledged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Quantity Acknowledged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Received - Not Ordered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Received - Unable to Acknowledge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach Police Report to Initial Report of sample theft%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording duplicate disbursement on correct prescriber profile%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach Prescriber Verification of samples received for adjustments due to recording incorrect quantity on original transaction%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach copy of Return Authorization Form and shipping receipt%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attach signed External Inventory Worksheet%2C if reporting an Annual Auditor Inventory Error%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email from receiving representative confirming correct quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email from representative who transferred samples confirming correct quantities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Theft</fullName>
+        <active>true</active>
+        <description>Request adjustment(s) for initial report of theft or error on prior report of theft</description>
+        <label>Theft</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management within %281%29 one business day%2E Contact Samples Management at 1-888-475-2328%2C Opt%2E %233 or email samplesmanagement%40bms%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase Incorrect Lot%2FDecrease Correct Lot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Incorrect Quantity Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Sample%2FLot Number Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Report</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Attach Police Report to Initial Report of sample theft%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Transfer_In</fullName>
+        <active>true</active>
+        <description>Request adjustments(s) for error on Transfer receipt</description>
+        <label>Transfer In</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decrease Incorrect Lot%2FIncrease Correct Lot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase Incorrect Lot%2FDecrease Correct Lot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Duplicate Transfer Acknowledged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Quantity Acknowledged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Sample%2FLot Number Acknowledged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer Received - Unable to Acknowledge</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Email from representative who transferred samples confirming correct quantities</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Transfer_Out</fullName>
+        <active>true</active>
+        <description>Request adjustment(s) for error on Transfers Out</description>
+        <label>Transfer Out</label>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_CA__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact the Operational Effectiveness Coordinator at 1-800-267-1088 or via email%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies correct Annual External Inventory quantities with the signed Sample Inventory Audit Form%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operational Effectiveness Coordinator verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management stakeholders within 24 hours%2E Notify the Operational Effectiveness Coordinator at 1-800-267-1088 or via email on the day of the theft or loss incident%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Disclaimer_BMS_US__c</picklist>
+            <values>
+                <fullName>If your request is in response to the incorrect prescriber signing for samples and you cannot find the correct prescriber to link your sample call to then you must contact Samples Management%2C 1-888-475-2328%2C option 3%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Representatives are required to report sample thefts%2Flosses to Samples Management within %281%29 one business day%2E Contact Samples Management at 1-888-475-2328%2C Opt%2E %233 or email samplesmanagement%40bms%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management requires Prescriber verification on office letterhead or Rx pad for quantity adjustments%2E Documentation provided by the prescriber must be signed and specify disbursement date%2C samples %28product%2Fstrength%29 and quantity received%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management validates Return adjustments with Return vendor issued credit%2E Review of return adjustments may take 4-6 weeks%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies correct Annual External Inventory quantities with the signed External Inventory Worksheet%2E Another audit may be required if quantities cannot be verified%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies lost sample disbursement data with Help Desk ticket history%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samples Management verifies transferred products and quantities with both representatives involved in the transfer prior to approving adjustments%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increase_Decrease_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Decrease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Increase Incorrect Lot%2FDecrease Correct Lot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Report Issue - No Adjustment Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Notify_Recipient_TBM_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Duplicate Transfer Out Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Quantity Recorded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Sample%2FLot Number Recorded</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Required_Documentation_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Email from receiving representative confirming correct quantity received%2E</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saved</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted - Pending Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transferring_TBM_Notified_BMS_SHARED__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Status_BMS_SHARED__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Reason_BMS_SHARED__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Adjustment_Quantity_Cannot_be_Zero</fullName>
+        <active>true</active>
+        <description>Adjustment Quantity cannot be equal to zero.</description>
+        <errorConditionFormula>Adjustment_Quantity_BMS_SHARED__c=0</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>Adjustment_Quantity_BMS_SHARED__c=0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Concealed_Short_Shipt</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Reason_BMS_SHARED__c)=&quot;Concealed Short-Ship&quot;, OR(ISBLANK( Sample_Transaction_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Concealed Short-Ship&quot; is selected as the adjustment reason, the Original Transaction and Adjustment Quantity fields must be populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Decrease_Adjustment_Quantity_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Increase_Decrease_BMS_SHARED__c)=&quot;Decrease&quot;, Adjustment_Quantity_BMS_SHARED__c&gt;0)</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>For decrease adjustment requests, the adjustment quantity must be less than 0.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Duplicate_Shipment_Acknowledged</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Shipment Acknowledged&quot;, OR(ISBLANK( Sample_Transaction_BMS_SHARED__c ), ISBLANK( Duplicate_Sample_Transaction_BMS_SHARED__c ), ISBLANK(Help_Desk_Ticket_Number_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Duplicate Shipment Acknowledged&quot; is selected as the adjustment reason, the Original Transaction, Duplicate Transaction, and Help Desk Ticket Number fields must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hardware_Software_Error_Prescriber_Info</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Hardware/Software Failure&quot;, ISBLANK( Correct_Prescriber_BMS_SHARED__c), ISBLANK( Prescriber_Information_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>Prescriber information must be populated in either the lookup field or free text box.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incorrect_Lot_Acknowledged_Product_Group</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Acknowledged&quot;, Sample_Transaction_BMS_SHARED__r.Sample_vod__c&lt;&gt; Lot_BMS_SHARED__r.Sample_vod__c)</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Acknowledged&quot; is selected as the adjustment reason, the updated material/lot number must be of the same product group as the original transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incorrect_Lot_Acknowledged_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Acknowledged&quot;, ABS(Sample_Transaction_BMS_SHARED__r.Quantity_vod__c) &lt; ABS( Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Acknowledged&quot; is selected as the adjustment reason, the adjustment quantity cannot be greater than the quantity of the original transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incorrect_Lot_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;, ABS(Sample_Transaction_BMS_SHARED__r.Quantity_vod__c) &lt; ABS( Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the adjustment quantity cannot be greater than the quantity of the original transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incorrect_Presciber_With_Duplicate_Call</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Incorrect Prescriber Profile&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Prescriber Profile &amp; Duplicate Disbursement Recorded on Correct Profile&quot;, ISBLANK(  Duplicate_Sample_Transaction_BMS_SHARED__c ))</errorConditionFormula>
+        <errorDisplayField>Duplicate_Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Prescriber Profile &amp; Duplicate Disbursement Recorded on Correct Profile&quot; is selected as the adjustment reason, the duplicate transaction must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incorrect_Quantity_Acknowledged</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Acknowledged&quot;, OR(ISBLANK( Sample_Transaction_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Quantity Acknowledged&quot; is selected as the adjustment reason, the Original Transaction and Adjustment Quantity fields must be populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incorrect_Sample_Lot_Product_Group</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;, Sample_Transaction_BMS_SHARED__r.Sample_vod__c&lt;&gt; Lot_BMS_SHARED__r.Sample_vod__c)</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the updated material/lot number must be of the same product group as the original transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Increase_Adjustment_Quantity_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Increase_Decrease_BMS_SHARED__c)=&quot;Increase&quot;, Adjustment_Quantity_BMS_SHARED__c&lt;0)</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>For increase adjustment requests, the adjustment quantity must be greater than 0.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Initial_Report</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Reason_BMS_SHARED__c)=&quot;Initial Report&quot;, OR(ISBLANK(  Lot_BMS_SHARED__c), ISBLANK(  Police_Report_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Initial Report&quot; is selected as the adjustment reason, the Lot # and Police Report fields must be populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prescriber_Must_Have_Valid_License</fullName>
+        <active>false</active>
+        <description>Validation rule to ensure that the prescriber selected in a adjustment transaction has a valid license.</description>
+        <errorConditionFormula>AND(Address_BMS_SHARED__r.License_Valid_To_Sample_vod__c=&quot;Invalid&quot;, OR(RecordType.Name=&quot;Incorrect Prescriber Profile&quot;,TEXT( Reason_BMS_SHARED__c)=&quot;Disbursement Not Recorded&quot;))</errorConditionFormula>
+        <errorDisplayField>Address_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>Prescriber must have a valid license.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Product_Received_Not_Ordered</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Reason_BMS_SHARED__c)=&quot;Product Received - Not Ordered&quot;, OR(ISBLANK( Lot_BMS_SHARED__c ), ISBLANK(  Date_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Product Received - Not Ordered&quot; is selected as the adjustment reason, the Lot #, Date, and Adjustment Quantity fields must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Product_Received_Unable_to_Acknowledge</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT(Reason_BMS_SHARED__c)=&quot;Product Received - Unable to Acknowledge&quot;, OR(ISBLANK( Lot_BMS_SHARED__c ), ISBLANK( Date_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c), ISBLANK( Help_Desk_Ticket_Number_BMS_SHARED__c) ))</errorConditionFormula>
+        <errorMessage>If &quot;Product Received - Unable to Acknowledge&quot; is selected as the adjustment reason, the Lot #, Date, Adjustment Quantity, and Help Desk Ticket Number fields must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Return_Adjustment_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Return&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Recorded&quot;,ISBLANK( Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Quantity Recorded&quot; is selected as the adjustment reason, the adjustment quantity must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Return_Duplicate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Return&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Return Recorded&quot;,ISBLANK(Duplicate_Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>If &quot;Duplicate Transaction Recorded&quot; is selected as the adjustment reason, the duplicate transaction must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Return_Duplicate_Transaction</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Return&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Return Recorded&quot;,ISBLANK( Duplicate_Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Duplicate_Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Duplicate Return Recorded&quot; is selected as the adjustment reason, the duplicate transaction must be specified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Return_Incorrect_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Return&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,OR(ISBLANK(Lot_BMS_SHARED__c),ISBLANK( Adjustment_Quantity_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the correct Lot # and adjustment quantity must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Return_Sample_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Return&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,ISBLANK(Lot_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the Lot # must be specified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Adjustment_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,Text(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Recorded&quot;, ISBLANK(Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Quantity Recorded&quot; is selected as the adjustment reason, a number must be entered in the Adjustment Quantity field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Call Date Recorded&quot;,ISBLANK(Date_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Date_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Call Date Recorded&quot; is entered as the adjustment reason, a date must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Duplicate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transaction Recorded&quot;,ISBLANK( Duplicate_Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Duplicate_Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Duplicate Transaction Recorded&quot; is selected as the adjustment reason, the duplicate transaction must be specified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Matching_Quanity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Sample Disbursement&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,  ABS(Sample_Transaction_BMS_SHARED__r.Inventory_Impact_Quantity_vod__c)&lt;&gt;Adjustment_Quantity_BMS_SHARED__c)</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the quantity of increase requested for incorrect Product/Lot # must equal to quantity of decrease requested for correct Product/Lot #.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_NotRecorded_BMS_EMEA</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Disbursement Not Recorded&quot;,OR( ISBLANK(Interaction_BMS_SHARED__c),ISBLANK( Lot_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c)  ))</errorConditionFormula>
+        <errorMessage>If &quot;Disbursement Not Recorded&quot; is selected as the adjustment reason, you must select the Interaction, Lot and Adjustment Quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Not_Recorded</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Disbursement Not Recorded&quot;,OR( ISBLANK(Date_BMS_SHARED__c),ISBLANK(Correct_Prescriber_BMS_SHARED__c), ISBLANK(Address_BMS_SHARED__c), ISBLANK( Lot_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c)  ))</errorConditionFormula>
+        <errorMessage>If &quot;Disbursement Not Recorded&quot; is selected as the adjustment reason, Date, Prescriber, Address, Lot # and Adjustment Quantity fields must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Sample_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,ISBLANK( Lot_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the Lot # field must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Sample_Lot_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;, Sample_Transaction_BMS_SHARED__r.Sample_vod__c&lt;&gt; Lot_BMS_SHARED__r.Sample_vod__c)</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the updated material/lot number must be of the same product group as the original transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Sample_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;, TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,ISBLANK( Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the Adjustment Quantity field must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sample_Disbursement_Sample_Transaction</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Sample Disbursement&quot;,TEXT(Reason_BMS_SHARED__c)&lt;&gt;&quot;Disbursement Not Recorded&quot;,ISBLANK(Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>Sample Transaction must be specified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Theft_Incorrect_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Theft&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Recorded&quot;,ISBLANK(  Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the Original Transaction and Lot # fields must be populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Theft_Incorrect_Sample_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Theft&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,OR(ISBLANK(  Sample_Transaction_BMS_SHARED__c), ISBLANK( Lot_BMS_SHARED__c) ))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the Original Transaction and Lot # fields must be populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Duplicate</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Acknowledged&quot;, OR(ISBLANK( Duplicate_Sample_Transaction_BMS_SHARED__c ), ISBLANK( Sample_Transaction_BMS_SHARED__c ), TEXT(Transferring_TBM_Notified_BMS_SHARED__c)&lt;&gt;&quot;YES&quot;))</errorConditionFormula>
+        <errorMessage>If &quot;Duplicate Transfer Acknowledged&quot; is selected as the adjustment reason, the Duplicate Transaction and Original Transaction fields must be populated. You must also confirm that the transferring TBM was notified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Duplicate_Sample_Transaction</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Acknowledged&quot;, ISBLANK(Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Duplicate Transfer Acknowledged&quot; is selected as the adjustment reason, you must select the related sample transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Duplicate_Transaction</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Acknowledged&quot;,ISBLANK(Duplicate_Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Duplicate_Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Duplicate Transfer Acknowledged&quot; is selected as the adjustment reason, the duplicate transaction must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Incorrect_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Acknowledged&quot;, OR(ISBLANK( Lot_BMS_SHARED__c), ISBLANK( Sample_Transaction_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c),TEXT(Transferring_TBM_Notified_BMS_SHARED__c)&lt;&gt;&quot;YES&quot;))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Acknowledged&quot; is selected as the adjustment reason, the Lot #, Adjustment Quantity, and Original Transaction fields must be populated. In addition, you must confirm that the transferring TBM was notified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Incorrect_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Acknowledged&quot;, OR(ISBLANK(Adjustment_Quantity_BMS_SHARED__c), ISBLANK( Sample_Transaction_BMS_SHARED__c ),TEXT(Transferring_TBM_Notified_BMS_SHARED__c)&lt;&gt;&quot;YES&quot;))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Quantity Acknowledged&quot; is selected as the adjustment reason, the Adjustment Quantity and Original Transaction fields must be populated. In addition, you must confirm that the transferring TBM was notified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Incorrect_Quantity_Adj</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Acknowledged&quot;, ISBLANK(Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Quantity Acknowledged&quot; is selected as the adjustment reason, you must enter the adjustment quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Incorrect_Sample</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Acknowledged&quot;, ISBLANK(Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Acknowledged&quot; is selected as the adjustment reason, you must select the related sample transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Unable_to_Acknowledge</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Transfer Received - Unable to Acknowledge&quot;, OR(ISBLANK( Lot_BMS_SHARED__c), ISBLANK( Date_BMS_SHARED__c ), ISBLANK( Adjustment_Quantity_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Transfer Received - Unable to Acknowledge&quot; is selected as the adjustment reason, the Lot #, Date, and Adjustment Quantity fields must be populated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Unable_to_Acknowledge_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Transfer Received - Unable to Acknowledge&quot;, ISBLANK( Lot_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Transfer Received - Unable to Acknowledge&quot; is selected as the adjustment reason, you must select the related sample lot #.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_In_Unable_to_Acknwldge_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Transfer In&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Transfer Received - Unable to Acknowledge&quot;, ISBLANK(Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Transfer Received - Unable to Acknowledge&quot; is selected as the adjustment reason, you must enter the adjustment quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Out_Duplicate_Transaction</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Transfer Out&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Duplicate Transfer Out Recorded&quot;,ISBLANK( Duplicate_Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>If &quot;Duplicate Transfer Out Recorded&quot; is selected as the adjustment reason, the Duplicate Transaction must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Out_Incorrect_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Transfer Out&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;,OR(ISBLANK( Adjustment_Quantity_BMS_SHARED__c), ISBLANK( Lot_BMS_SHARED__c)))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, the Adjustment Quantity and Lot # must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Out_Incorrect_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordType.Name=&quot;Transfer Out&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Recorded&quot;,ISBLANK( Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorMessage>If &quot;Incorrect Quantity Recorded&quot; is selected as the adjustment reason, the adjustment quantity must be specified.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Out_Incorrect_Quantity_Adj</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer Out&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Quantity Recorded&quot;, ISBLANK(Adjustment_Quantity_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Adjustment_Quantity_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Quantity Recorded&quot; is selected as the adjustment reason, you must enter the adjustment quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Out_Incorrect_Sample</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer Out&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;, ISBLANK(Sample_Transaction_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Sample_Transaction_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, you must select the related sample transaction.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Out_Incorrect_Sample_Lot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( RecordType.Name=&quot;Transfer Out&quot;,TEXT(Reason_BMS_SHARED__c)=&quot;Incorrect Sample/Lot Number Recorded&quot;, ISBLANK(Lot_BMS_SHARED__c))</errorConditionFormula>
+        <errorDisplayField>Lot_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>If &quot;Incorrect Sample/Lot Number Recorded&quot; is selected as the adjustment reason, you must specify the correct Lot #.</errorMessage>
+    </validationRules>
+</CustomObject>

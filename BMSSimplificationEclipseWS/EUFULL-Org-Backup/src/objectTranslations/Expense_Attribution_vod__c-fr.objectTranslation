@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Attribution des frais</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Attributions des frais</value>
+    </caseValues>
+    <fields>
+        <label>Réel</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ligne de frais</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Type de frais</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Frais engagés (compte)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Frais engagés (participant)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Frais engagés (conférencier)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Frais engagés (membre de l&apos;équipe)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Type de frais engagés</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Compte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Participant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Conférencier de l&apos;événement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Membre de l&apos;équipe des événements</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Fournisseur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Site</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Frais engagés (fournisseur)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Frais engagés (site)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Attributions des frais</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Frais engagés</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de paiement</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <label>Attribution des frais d&apos;événement</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

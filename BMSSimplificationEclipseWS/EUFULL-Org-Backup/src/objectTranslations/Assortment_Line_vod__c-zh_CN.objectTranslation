@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>分类行</value>
+    </caseValues>
+    <fields>
+        <label>分类</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>分类行</relationshipLabel>
+    </fields>
+    <fields>
+        <label>默认折叠？</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>父区块</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>分类行</relationshipLabel>
+    </fields>
+    <fields>
+        <label>产品</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>分类行</relationshipLabel>
+    </fields>
+    <fields>
+        <label>区块标签</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>排序</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <nameFieldLabel>名称</nameFieldLabel>
+    <recordTypes>
+        <label>IM 分类产品</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>IM 分类部分</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>订单管理分类产品</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>订单管理分类区块</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>OM 分类行只能与 OM 分类关联，IM 分类行只能与 IM 分类关联</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>只能针对 IM_Assortment_Section_vod 记录类型或 OM_Assortment_Section_vod 进行检查</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>区块无法链接到父区块。</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>无法在相同记录上指定“区块”和“产品”。</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

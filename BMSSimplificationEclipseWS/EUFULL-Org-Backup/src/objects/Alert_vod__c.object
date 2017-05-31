@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores alerts that get displayed to users. Alerts can be public or be visible based on profiles or users.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activation_Date_vod__c</fullName>
+        <description>The date and time when the alert should first be displayed.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Activation Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Alert_Text_vod__c</fullName>
+        <description>Alert content.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Alert Text</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Dismissible_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if the alert can be dismissed by a user.</description>
+        <externalId>false</externalId>
+        <label>Dismissible</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date_vod__c</fullName>
+        <description>The date and time when the alert expires and is hidden from view.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_Push_Notify_APNS_Datetime_vod__c</fullName>
+        <description>Date/Time stamp of when the Scheduled Push Notification job processed the alert to the APNS</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Push Notify APNS Date/Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Link_Reference_Long_vod__c</fullName>
+        <description>Longer version of the Link_Reference_vod field. When populating this field, use the same formatting as the Link_Reference_vod field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Link Reference Long</label>
+        <length>9000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Link_Reference_vod__c</fullName>
+        <description>This field can be populated with three possible values.
+
+An absolute URL and the text to display separated by a comma. The format is ABS_URL,DISPLAY_TEXT (e.g. &quot;http://www.cnn.com, CNN&quot;). 
+
+A relative SFDC URL and the text to display separated by a comma. The format is REL_URL,DISPLAY_TEXT (e.g. &quot;/home/home.jsp, Veeva CRM&quot;). 
+
+An 18 character SFDC Id. This will drill into the detail page for the record offline. The display text for the link is the value of the Name field for the record. If the system cannot determine the source object or the referenced record is not available offline, then the link does not display.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Link Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priority_vod__c</fullName>
+        <description>Alert priority. Values: Urgent, Important, Normal.</description>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Important</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Public_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines if the alert is visible by everyone in the org (TRUE) or if visibility is limited by the selected users or profiles (FALSE).</description>
+        <externalId>false</externalId>
+        <label>Public</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Push_Notify_APNS_Status_vod__c</fullName>
+        <description>Status used by the Scheduled Push Notification job for pushing notifications to the APNS</description>
+        <externalId>false</externalId>
+        <label>Push Notify APNS Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Queued_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Processed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Alert</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_AT_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - AT - Access</label>
+        <queue>BMS_EMEA_AT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_AT_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - AT - Generic Owner</label>
+        <queue>BMS_EMEA_AT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_AT_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - AT Medical</label>
+        <queue>BMS_EMEA_AT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_AT_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - AT Sales</label>
+        <queue>BMS_EMEA_AT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE - Access</label>
+        <queue>BMS_EMEA_BE_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE - Generic Owner</label>
+        <queue>BMS_EMEA_BE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE Medical</label>
+        <queue>BMS_EMEA_BE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE Sales</label>
+        <queue>BMS_EMEA_BE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH - Access</label>
+        <queue>BMS_EMEA_CH_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH - Generic Owner</label>
+        <queue>BMS_EMEA_CH_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH Medical</label>
+        <queue>BMS_EMEA_CH_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH Sales</label>
+        <queue>BMS_EMEA_CH_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ - Access</label>
+        <queue>BMS_EMEA_CZ_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ - Generic Owner</label>
+        <queue>BMS_EMEA_CZ_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Medical</label>
+        <queue>BMS_EMEA_CZ_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Sales</label>
+        <queue>BMS_EMEA_CZ_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE - Access</label>
+        <queue>BMS_EMEA_DE_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE - Generic Owner</label>
+        <queue>BMS_EMEA_DE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Medical</label>
+        <queue>BMS_EMEA_DE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales</label>
+        <queue>BMS_EMEA_DE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK - Access</label>
+        <queue>BMS_EMEA_DK_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK - Generic Owner</label>
+        <queue>BMS_EMEA_DK_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Medical</label>
+        <queue>BMS_EMEA_DK_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Sales</label>
+        <queue>BMS_EMEA_DK_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_ES_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - ES - Access</label>
+        <queue>BMS_EMEA_ES_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_ES_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - ES - Generic Owner</label>
+        <queue>BMS_EMEA_ES_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_ES_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - ES Medical</label>
+        <queue>BMS_EMEA_ES_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_ES_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - ES Sales</label>
+        <queue>BMS_EMEA_ES_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI - Access</label>
+        <queue>BMS_EMEA_FI_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI - Generic Owner</label>
+        <queue>BMS_EMEA_FI_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Medical</label>
+        <queue>BMS_EMEA_FI_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Sales</label>
+        <queue>BMS_EMEA_FI_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR - Access</label>
+        <queue>BMS_EMEA_FR_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR - Generic Owner</label>
+        <queue>BMS_EMEA_FR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Medical</label>
+        <queue>BMS_EMEA_FR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Sales</label>
+        <queue>BMS_EMEA_FR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Generic Owner</label>
+        <queue>BMS_EMEA_GB_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_KCM_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - KCM</label>
+        <queue>BMS_EMEA_GB_KCM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB Medical</label>
+        <queue>BMS_EMEA_GB_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB Sales</label>
+        <queue>BMS_EMEA_GB_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Access</label>
+        <queue>BMS_EMEA_GR_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR - Generic Owner</label>
+        <queue>BMS_EMEA_GR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Medical</label>
+        <queue>BMS_EMEA_GR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Sales</label>
+        <queue>BMS_EMEA_GR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU - Access</label>
+        <queue>BMS_EMEA_HU_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Medical</label>
+        <queue>BMS_EMEA_HU_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Sales</label>
+        <queue>BMS_EMEA_HU_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - Generic Owner</label>
+        <queue>BMS_EMEA_IE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_KCM_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - KCM</label>
+        <queue>BMS_EMEA_IE_KCM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE Medical</label>
+        <queue>BMS_EMEA_IE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE Sales</label>
+        <queue>BMS_EMEA_IE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL - Access</label>
+        <queue>BMS_EMEA_IL_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL - Generic Owner</label>
+        <queue>BMS_EMEA_IL_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL Medical</label>
+        <queue>BMS_EMEA_IL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL Sales</label>
+        <queue>BMS_EMEA_IL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Access</label>
+        <queue>BMS_EMEA_IT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT - Generic Owner</label>
+        <queue>BMS_EMEA_IT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Medical</label>
+        <queue>BMS_EMEA_IT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Sales</label>
+        <queue>BMS_EMEA_IT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NL_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NL - Access</label>
+        <queue>BMS_EMEA_NL_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NL_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NL - Generic Owner</label>
+        <queue>BMS_EMEA_NL_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NL_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NL Medical</label>
+        <queue>BMS_EMEA_NL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NL_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NL Sales</label>
+        <queue>BMS_EMEA_NL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO - Access</label>
+        <queue>BMS_EMEA_NO_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO - Generic Owner</label>
+        <queue>BMS_EMEA_NO_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Medical</label>
+        <queue>BMS_EMEA_NO_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Sales</label>
+        <queue>BMS_EMEA_NO_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Sales</label>
+        <queue>BMS_EMEA_PF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL - Access</label>
+        <queue>BMS_EMEA_PL_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL - Generic Owner</label>
+        <queue>BMS_EMEA_PL_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL Medical</label>
+        <queue>BMS_EMEA_PL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL Sales</label>
+        <queue>BMS_EMEA_PL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Access</label>
+        <queue>BMS_EMEA_PT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT - Generic Owner</label>
+        <queue>BMS_EMEA_PT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Medical</label>
+        <queue>BMS_EMEA_PT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Sales</label>
+        <queue>BMS_EMEA_PT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RO_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RO - Access</label>
+        <queue>BMS_EMEA_RO_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RO_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RO - Generic Owner</label>
+        <queue>BMS_EMEA_RO_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RO_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RO Medical</label>
+        <queue>BMS_EMEA_RO_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RO_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RO Sales</label>
+        <queue>BMS_EMEA_RO_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU - Access</label>
+        <queue>BMS_EMEA_RU_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU - Generic Owner</label>
+        <queue>BMS_EMEA_RU_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU Medical</label>
+        <queue>BMS_EMEA_RU_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU Sales</label>
+        <queue>BMS_EMEA_RU_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE - Access</label>
+        <queue>BMS_EMEA_SE_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE - Generic Owner</label>
+        <queue>BMS_EMEA_SE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Medical</label>
+        <queue>BMS_EMEA_SE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Sales</label>
+        <queue>BMS_EMEA_SE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR - Access</label>
+        <queue>BMS_EMEA_TR_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR - Generic Owner</label>
+        <queue>BMS_EMEA_TR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Medical</label>
+        <queue>BMS_EMEA_TR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Sales</label>
+        <queue>BMS_EMEA_TR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Access</label>
+        <queue>BMS_MEA_GULF_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF  Generic Owner</label>
+        <queue>BMS_MEA_GULF_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Medical</label>
+        <queue>BMS_MEA_GULF_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Sales</label>
+        <queue>BMS_MEA_GULF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Access</label>
+        <queue>BMS_MEA_SA_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA  Generic Owner</label>
+        <queue>BMS_MEA_SA_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Medical</label>
+        <queue>BMS_MEA_SA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Sales_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Sales</label>
+        <queue>BMS_MEA_SA_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Access_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA Access</label>
+        <queue>BMS_MEA_ZA_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Generic_Owner_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA  Generic Owner</label>
+        <queue>BMS_MEA_ZA_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Medical_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA Medical</label>
+        <queue>BMS_MEA_ZA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_SAles_Alert_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA SAles</label>
+        <queue>BMS_MEA_ZA_SAles</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Title</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Alerts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Link_Reference_Long_Check</fullName>
+        <active>true</active>
+        <description>Ensure that both link reference fields are not populated on the same alert</description>
+        <errorConditionFormula>AND( NOT(ISBLANK(Link_Reference_Long_vod__c)),NOT(ISBLANK(Link_Reference_vod__c)))</errorConditionFormula>
+        <errorDisplayField>Link_Reference_Long_vod__c</errorDisplayField>
+        <errorMessage>Error: Both the Link Reference Long and Link Reference fields cannot be populated on the same alert.</errorMessage>
+    </validationRules>
+</CustomObject>

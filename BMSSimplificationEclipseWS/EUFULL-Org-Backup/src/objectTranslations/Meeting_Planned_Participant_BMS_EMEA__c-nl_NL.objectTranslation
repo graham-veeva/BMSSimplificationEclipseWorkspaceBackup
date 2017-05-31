@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- DHG is required --></label>
+        <name>DHG_is_required_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Function / Therapeutic Area / Specialty --></label>
+        <name>Function_TherArea_Specialty_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting --></label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Meeting Planned Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Number proposed in the related Master File. --></help>
+        <label><!-- Number --></label>
+        <name>Number_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsored Participant --></label>
+        <name>Sponsored_Participant_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- User input --></help>
+        <label><!-- z_DELETE_Number --></label>
+        <name>User_Number_BMS_EMEA__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Planned Participant Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- BMS - EMEA - Audience --></label>
+        <name>BMS_EMEA_Audience</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - BMS Employee --></label>
+        <name>BMS_EMEA_BMS_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - JV Partner Employee --></label>
+        <name>BMS_EMEA_JV_Partner_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - Speaker --></label>
+        <name>BMS_EMEA_Speaker</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - Sponsored --></label>
+        <name>BMS_EMEA_Sponsored</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit or delete a record as the Meeting has passed the Planning phase. --></errorMessage>
+        <name>BMS_EMEA_FFM_No_Modification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change any fields as you are co-author of the Meeting. --></errorMessage>
+        <name>BMS_EMEA_FFM_Plan_Participant_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

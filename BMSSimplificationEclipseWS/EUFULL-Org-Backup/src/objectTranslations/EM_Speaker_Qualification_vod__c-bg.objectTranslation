@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Квалификация на говорител</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Квалификации на говорител</value>
+    </caseValues>
+    <fields>
+        <label>Договорен ред</label>
+        <name>Contract_Line_vod__c</name>
+        <relationshipLabel>Квалификации на говорител</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Състояние на партньор по договор</label>
+        <name>Contract_Partner_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Активиран</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Записан</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Състояние на договор</label>
+        <name>Contract_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Активиран</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft_vod</masterLabel>
+            <translation>Чернова</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Approval_Process_vod</masterLabel>
+            <translation>В процес на одобрение</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Крайна дата</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен ИД</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Име на квалификация</label>
+        <name>Qualification_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Квалификация</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Квалификации на говорител</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип на цената</label>
+        <name>Rate_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Day_vod</masterLabel>
+            <translation>Ден</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_vod</masterLabel>
+            <translation>Събитие</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hour_vod</masterLabel>
+            <translation>Час</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Цена</label>
+        <name>Rate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Говорител</label>
+        <name>Speaker_vod__c</name>
+        <relationshipLabel>Квалификации на говорител</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Начална дата</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Доставчик</label>
+        <name>Vendor_vod__c</name>
+        <relationshipLabel>Квалификации на говорител</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Услуга на говорител</label>
+        <name>Speaker_Service_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Обучение на говорител</label>
+        <name>Speaker_Training_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

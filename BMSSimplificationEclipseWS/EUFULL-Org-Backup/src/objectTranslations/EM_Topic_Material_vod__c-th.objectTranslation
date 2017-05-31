@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>หัวข้อวัตถุดิบ</value>
+    </caseValues>
+    <fields>
+        <label>งานนำเสนอ CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>หัวข้อวัตถุดิบ</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>เท็มเพลตอีเมล</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>วัสดุหัวข้อ</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID ภายนอก</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทวัตถุดิบ</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>วัตถุดิบ</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>หัวข้อวัตถุดิบที่ใช้</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>หัวข้อ</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>หัวข้อวัตถุดิบ (หัวข้อ)</relationshipLabel>
+    </fields>
+    <nameFieldLabel>ชื่อ</nameFieldLabel>
+    <recordTypes>
+        <label>หัวข้อวัตถุดิบ</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>กฎเดี่ยวไม่สามารถมีทั้งเท็มเพลตอีเมลและงานนำเสนอ CLM กระจายข้อมูลอยู่ โปรดสร้างกฎแยกสำหรับไอเท็มทั้งสองเหล่านี้</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>กฎเดี่ยวไม่สามารถมีทั้งวัตถุดิบและงานนำเสนอ CLM กระจายข้อมูลอยู่ โปรดสร้างกฎแยกสำหรับไอเท็มทั้งสองเหล่านี้</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>วัสดุหัวข้อเดียวไม่สามารถมีทั้ง วัสดุ และ เท็มเพลตอีเมล แจกแจงอยู่ โปรดสร้างกฎแยกสำหรับไอเท็มทั้งสองเหล่านี้</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

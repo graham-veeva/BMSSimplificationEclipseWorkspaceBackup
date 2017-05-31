@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Accountpartner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Accountpartners</value>
+    </caseValues>
+    <fields>
+        <label>Accountpartner-ID</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Accountpartners</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Accountpartners</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Standaard</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobiel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ordertype</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Direct</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Overdracht</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Prioriteit</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groothandel</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Leveringslocatie</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Betaler</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Prijslijst</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Groothandel</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Account is vereist</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

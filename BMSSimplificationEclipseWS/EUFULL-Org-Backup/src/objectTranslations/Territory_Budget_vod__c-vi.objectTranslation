@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ngân sách lãnh thổ</value>
+    </caseValues>
+    <fields>
+        <label>Hoạt động</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng hiện tại</label>
+        <name>Current_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giá trị hiện tại</label>
+        <name>Current_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giao dịch mới nhất</label>
+        <name>Last_Transaction_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Ngân sách lãnh thổ</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày bắt đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng bắt đầu</label>
+        <name>Start_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giá trị bắt đầu</label>
+        <name>Start_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng thái</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Được phê duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Đã đóng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Tạo mới</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Approval</masterLabel>
+            <translation>Gửi để phê duyệt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Lãnh thổ</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation>Thông tin chung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation>Tiếp thị</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>Sản phẩm</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Bán hàng</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Territory Budget Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Ngày bắt đầu không được sau ngày kết thúc</errorMessage>
+        <name>VEEVA_DATES_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

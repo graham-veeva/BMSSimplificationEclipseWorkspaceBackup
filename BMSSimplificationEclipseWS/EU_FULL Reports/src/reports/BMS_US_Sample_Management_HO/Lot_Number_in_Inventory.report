@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User*User$Territory_Intelligent_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>User*User$BMS_Employee_ID__c</field>
+    </columns>
+    <columns>
+        <field>User.Sample_Lot_vod__c$OwnerId$Sample_vod__c</field>
+    </columns>
+    <columns>
+        <field>User.Sample_Lot_vod__c$OwnerId$Name</field>
+    </columns>
+    <columns>
+        <field>User.Sample_Lot_vod__c$OwnerId$Calculated_Quantity_vod__c</field>
+    </columns>
+    <columns>
+        <field>User.Sample_Lot_vod__c$OwnerId$Expiration_Date_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User.Sample_Lot_vod__c$OwnerId$Active_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Lot Number in Inventory</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_and_Sample_Lots__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User.Sample_Lot_vod__c$OwnerId$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

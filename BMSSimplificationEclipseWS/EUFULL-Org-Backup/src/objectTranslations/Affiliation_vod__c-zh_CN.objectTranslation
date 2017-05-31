@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>附属关系</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Source Country --></label>
+        <name>Account_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>子附属</label>
+        <name>Child_affiliation_vod__c</name>
+        <relationshipLabel>关联</relationshipLabel>
+    </fields>
+    <fields>
+        <label>评论</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>禁用触发器</label>
+        <name>Disable_Trigger_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部编号</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>主客户</label>
+        <name>From_Account_vod__c</name>
+        <relationshipLabel>附属关系（主客户）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>主联系人</label>
+        <name>From_Contact_vod__c</name>
+        <relationshipLabel>附属关系（主联系人）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>影响</label>
+        <name>Influence_vod__c</name>
+        <picklistValues>
+            <masterLabel>Has influence</masterLabel>
+            <translation>有影响</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is influenced</masterLabel>
+            <translation>被影响</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No influence</masterLabel>
+            <translation>无影响</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>手机编号</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>父记录</label>
+        <name>Parent_vod__c</name>
+    </fields>
+    <fields>
+        <label>关系强化</label>
+        <name>Relationship_Strength_vod__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>弱</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>强</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>角色</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Access Relationship</masterLabel>
+            <translation><!-- Access Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliated with</masterLabel>
+            <translation>附属于</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Relationship</masterLabel>
+            <translation><!-- HQ Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Relationship</masterLabel>
+            <translation><!-- Medical Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Relationship</masterLabel>
+            <translation><!-- Sales Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>治疗领域</label>
+        <name>Therapeutic_Area_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>心血管</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Medicine</masterLabel>
+            <translation>急诊医学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Medicine</masterLabel>
+            <translation>家庭医学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation>全科医学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Medicine</masterLabel>
+            <translation>内科医学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>肿瘤学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrics</masterLabel>
+            <translation>儿科</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>至客户隶属关系数目</label>
+        <name>To_Account_Affiliation_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>至客户识别码</label>
+        <name>To_Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>至客户姓名</label>
+        <name>To_Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>至客户记录类型</label>
+        <name>To_Account_Record_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>附属客户</label>
+        <name>To_Account_vod__c</name>
+        <relationshipLabel>附属关系（附属客户）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>附属联系人</label>
+        <name>To_Contact_vod__c</name>
+        <relationshipLabel>附属关系（附属联系人）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>删除</label>
+        <name>destroy_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- AffiliationNumber --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>目标客户不能与来源客户相同</errorMessage>
+        <name>DUP_TO_FROM_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>目标联系人不能与来源联系人相同</errorMessage>
+        <name>DUP_TO_FROM_CONTACT</name>
+    </validationRules>
+</CustomObjectTranslation>

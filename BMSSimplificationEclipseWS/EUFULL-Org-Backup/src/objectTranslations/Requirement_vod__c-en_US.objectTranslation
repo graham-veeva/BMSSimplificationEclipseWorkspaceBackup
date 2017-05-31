@@ -1,0 +1,2482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Requirement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requirements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access --></label>
+        <name>Access_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated for Adaptation and Ongoing Support. --></help>
+        <label><!-- Actual Adapt &amp; Ongoing Support --></label>
+        <name>Actual_Adapt_Ongoing_Support__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Build &amp; Unit Test --></label>
+        <name>Actual_Build_Unit_Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Design --></label>
+        <name>Actual_Design__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Hours --></label>
+        <name>Actual_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Requirements Gathering --></label>
+        <name>Actual_Requirements_Gathering__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual SIT --></label>
+        <name>Actual_SIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Train/Deploy --></label>
+        <name>Actual_Train_Deploy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual UAT --></label>
+        <name>Actual_UAT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated for Adaptation and Ongoing Support. --></help>
+        <label><!-- Adapt &amp; Ongoing Support --></label>
+        <name>Adapt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved BMS Global? --></label>
+        <name>Approved_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>Approved_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved? --></label>
+        <name>Approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To_Picklist_BMS__c</name>
+        <picklistValues>
+            <masterLabel>BMS</masterLabel>
+            <translation><!-- BMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva</masterLabel>
+            <translation><!-- Veeva --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Associated Vendor Enhancement: Reqmt ID --></label>
+        <name>Associated_Vendor_Enhancement_Reqmt_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- BRD Version --></label>
+        <name>BRD_Version_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated to complete Build and Unit Test phase. --></help>
+        <label><!-- Build --></label>
+        <name>BUT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned to --></label>
+        <name>Build_Assigned_to__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains the Build ID component that the requirements are tied to --></help>
+        <label><!-- Build ID --></label>
+        <name>Build_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Build Priority --></label>
+        <name>Build_Priority_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>1 - High</masterLabel>
+            <translation><!-- 1 - High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Medium</masterLabel>
+            <translation><!-- 2 - Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Low</masterLabel>
+            <translation><!-- 3 - Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Build Status --></label>
+        <name>Build_Status__c</name>
+        <picklistValues>
+            <masterLabel>Build Completed</masterLabel>
+            <translation><!-- Build Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Build Documentation Completed</masterLabel>
+            <translation><!-- Build Documentation Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Build in Progress</masterLabel>
+            <translation><!-- Build in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Review Design</masterLabel>
+            <translation><!-- Review Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Test Completed</masterLabel>
+            <translation><!-- Unit Test Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Test in Progress</masterLabel>
+            <translation><!-- Unit Test in Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value is calculated by the selection of the Business Benefit field: 
+High = 3 
+Medium = 2 
+Low = 1 --></help>
+        <label><!-- Business Benefit Value --></label>
+        <name>Business_Benefit_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Low: Does Not Drive Revenue or Reduce Costs 
+Medium: Drives Revenue or Reduces Costs (quantify amount, if possible) 
+High: Drives Revenue and Reduces Costs (quantify amount for both, if possible) --></help>
+        <label><!-- Business Benefit --></label>
+        <name>Business_Benefit__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Priority --></label>
+        <name>Business_Priority_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>1 - Nice to Have</masterLabel>
+            <translation><!-- 1 - Nice to Have --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Should Have</masterLabel>
+            <translation><!-- 2 - Should Have --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Must Have</masterLabel>
+            <translation><!-- 3 - Must Have --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Requirement Area --></label>
+        <name>Business_Requirement_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Business Requirement ID --></label>
+        <name>Business_Requirement_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defect: A known error in existing functionality 
+Major: A significant release of capabilities 
+Minor: An impactful release of functionality &amp; doesn&apos;t require training on new functionality
+Ongoing Activity: Activities that need to be performed regularly --></help>
+        <label><!-- Capacity Type --></label>
+        <name>Capacity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Defect</masterLabel>
+            <translation><!-- Defect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor</masterLabel>
+            <translation><!-- Minor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing Activity</masterLabel>
+            <translation><!-- Ongoing Activity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- During which phase and for which scope the req was captured? --></help>
+        <label><!-- Capture Date --></label>
+        <name>Capture_Date_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Core</masterLabel>
+            <translation><!-- Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave 1</masterLabel>
+            <translation><!-- Wave 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave 2</masterLabel>
+            <translation><!-- Wave 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave 3</masterLabel>
+            <translation><!-- Wave 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change Control --></label>
+        <name>Change_Control__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Request --></label>
+        <name>Change_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Closed/Deferred --></label>
+        <name>Closed_Deferred__c</name>
+        <picklistValues>
+            <masterLabel>Closed: Architecturally Not Recommended</masterLabel>
+            <translation><!-- Closed: Architecturally Not Recommended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Business Process</masterLabel>
+            <translation><!-- Closed: Business Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Canceled by Business</masterLabel>
+            <translation><!-- Closed: Canceled by Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Duplicate</masterLabel>
+            <translation><!-- Closed: Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Existing Functionality</masterLabel>
+            <translation><!-- Closed: Existing Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Technically Not Feasible</masterLabel>
+            <translation><!-- Closed: Technically Not Feasible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred: Product Enhancement Request</masterLabel>
+            <translation><!-- Deferred: Product Enhancement Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred: Waiting Approval</masterLabel>
+            <translation><!-- Deferred: Waiting Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred: Waiting Architecture Availabiity</masterLabel>
+            <translation><!-- Deferred: Waiting Architecture Availabiity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please insert Comments as follows:
+&lt;Name&gt; - &lt;Date&gt; - &lt;Comments&gt;
+
+If you are Closing a Requirement, please include the following:
+- Decison Rationale
+- Decision Date
+- Decision Maker --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overall Contingency allowed in percentage. --></help>
+        <label><!-- Overall Contingency(%) --></label>
+        <name>Cont__c</name>
+    </fields>
+    <fields>
+        <label><!-- Core eligible? --></label>
+        <name>Core_eligible_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Count of Approved Requests --></label>
+        <name>Count_of_Approved_Releases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Deployed Requests --></label>
+        <name>Count_of_Deployed_Requests__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Country-specific countries only. --></help>
+        <label><!-- Countries --></label>
+        <name>Countries_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation><!-- AT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All EU</masterLabel>
+            <translation><!-- All EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All MEA</masterLabel>
+            <translation><!-- All MEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH</masterLabel>
+            <translation><!-- CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CZ</masterLabel>
+            <translation><!-- CZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DK</masterLabel>
+            <translation><!-- DK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES</masterLabel>
+            <translation><!-- ES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FI</masterLabel>
+            <translation><!-- FI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FOT</masterLabel>
+            <translation><!-- FOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GR</masterLabel>
+            <translation><!-- GR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gulf</masterLabel>
+            <translation><!-- Gulf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HU</masterLabel>
+            <translation><!-- HU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Israel</masterLabel>
+            <translation><!-- Israel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Levante</masterLabel>
+            <translation><!-- Levante --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maghreb</masterLabel>
+            <translation><!-- Maghreb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT</masterLabel>
+            <translation><!-- PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RO</masterLabel>
+            <translation><!-- RO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RU</masterLabel>
+            <translation><!-- RU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saudi Arabia</masterLabel>
+            <translation><!-- Saudi Arabia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR</masterLabel>
+            <translation><!-- TR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UKI</masterLabel>
+            <translation><!-- UKI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>China</masterLabel>
+            <translation><!-- China --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland</masterLabel>
+            <translation><!-- Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation><!-- Spain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Criticality --></label>
+        <name>Criticality__c</name>
+        <picklistValues>
+            <masterLabel>Nice to Have</masterLabel>
+            <translation><!-- Nice to Have --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation><!-- Urgent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Service --></label>
+        <name>Customer_Service_UPSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Integration Complexity --></label>
+        <name>Data_Integration_Complexity__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Requested --></label>
+        <name>Date_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Date --></label>
+        <name>Decision_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker --></label>
+        <name>Decision_Maker__c</name>
+        <relationshipLabel><!-- Requirements (Decision Maker) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Decision Rationale --></label>
+        <name>Decision_Rationale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated for the Design phase. --></help>
+        <label><!-- Design --></label>
+        <name>Des__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design ID --></label>
+        <name>Design_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Review Required --></label>
+        <name>Design_Review_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Status --></label>
+        <name>Design_Status__c</name>
+        <picklistValues>
+            <masterLabel>Design Documentation Completed</masterLabel>
+            <translation><!-- Design Documentation Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Detail Design</masterLabel>
+            <translation><!-- Detail Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Design</masterLabel>
+            <translation><!-- Final Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Design</masterLabel>
+            <translation><!-- Initial Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met</masterLabel>
+            <translation><!-- Met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Met</masterLabel>
+            <translation><!-- Not Met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Met</masterLabel>
+            <translation><!-- Partially Met --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value is calculated by the User Impact of Change field. --></help>
+        <label><!-- End User Impact Value --></label>
+        <name>End_User_Impact_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will Minimally Impact End Users (i.e., high degree of adoption achieved with little  to no effort) --></help>
+        <label><!-- End User Impact --></label>
+        <name>End_User_Impact__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enhancement Description --></label>
+        <name>Enhancement_Description_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enterprise Request? --></label>
+        <name>Enterprise_Request__c</name>
+    </fields>
+    <fields>
+        <help><!-- Explain why the Core Change Request is esclated to STC. --></help>
+        <label><!-- Escalation Reasons --></label>
+        <name>Escalation_Reasons_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Estimated date when this component of Build is completed and is ready for Code Review --></help>
+        <label><!-- Estimated Build Complete Date --></label>
+        <name>Estimated_Build_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Hours --></label>
+        <name>Estimated_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe all assumptions made in order to estimate the Requirement. If contingency is used also describe how much and why. --></help>
+        <label><!-- Estimation Assumptions --></label>
+        <name>Estimation_Assumptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exploria Complexity --></label>
+        <name>Exploria_Complexity__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Label --></label>
+        <name>Field_Label_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Area --></label>
+        <name>Functional_Area_BMS__c</name>
+        <picklistValues>
+            <masterLabel>Addresses</masterLabel>
+            <translation><!-- Addresses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calls</masterLabel>
+            <translation><!-- Calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homepage</masterLabel>
+            <translation><!-- Homepage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Management</masterLabel>
+            <translation><!-- Territory Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Home Office --></label>
+        <name>Home_Office_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impacted Business Units --></label>
+        <name>Impacted_Business__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EBPU</masterLabel>
+            <translation><!-- EBPU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immunoscience</masterLabel>
+            <translation><!-- Immunoscience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Access</masterLabel>
+            <translation><!-- Market Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation><!-- Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P4</masterLabel>
+            <translation><!-- P4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Care</masterLabel>
+            <translation><!-- Primary Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speciality</masterLabel>
+            <translation><!-- Speciality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transplant</masterLabel>
+            <translation><!-- Transplant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Impacted Streams --></label>
+        <name>Impacted_Group__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMEH</masterLabel>
+            <translation><!-- CMEH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Management</masterLabel>
+            <translation><!-- Change Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DI</masterLabel>
+            <translation><!-- DI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploria</masterLabel>
+            <translation><!-- Exploria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IDL</masterLabel>
+            <translation><!-- IDL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OrgManager</masterLabel>
+            <translation><!-- OrgManager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva</masterLabel>
+            <translation><!-- Veeva --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Individual Notified --></label>
+        <name>Individual_Notified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Priority --></label>
+        <name>Initial_Priority__c</name>
+        <picklistValues>
+            <masterLabel>Emergency</masterLabel>
+            <translation><!-- Emergency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Initial Rank --></label>
+        <name>Initial_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integration Impact --></label>
+        <name>Integration_Impact_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- InterAct Process --></label>
+        <name>InterAct_Process_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Account Plan (Field Access)</masterLabel>
+            <translation><!-- Account Plan (Field Access) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Management</masterLabel>
+            <translation><!-- Address Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliations (soft relationship)</masterLabel>
+            <translation><!-- Affiliations (soft relationship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved E-mail</masterLabel>
+            <translation><!-- Approved E-mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Account (hard relationship)</masterLabel>
+            <translation><!-- Child Account (hard relationship) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching Report</masterLabel>
+            <translation><!-- Coaching Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Change Requests</masterLabel>
+            <translation><!-- Customer Change Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Management</masterLabel>
+            <translation><!-- Customer Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Satisfaction</masterLabel>
+            <translation><!-- Customer Satisfaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cycle Plan</masterLabel>
+            <translation><!-- Cycle Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Detailing</masterLabel>
+            <translation><!-- Digital Detailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement plan</masterLabel>
+            <translation><!-- Engagement plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Page</masterLabel>
+            <translation><!-- Home Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Profiling</masterLabel>
+            <translation><!-- Individual Profiling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interaction Execution</masterLabel>
+            <translation><!-- Interaction Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interaction Planning</masterLabel>
+            <translation><!-- Interaction Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KAM</masterLabel>
+            <translation><!-- KAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Markets</masterLabel>
+            <translation><!-- Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Inquiries</masterLabel>
+            <translation><!-- Medical Inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Insights</masterLabel>
+            <translation><!-- Medical Insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting (Veeva EM)</masterLabel>
+            <translation><!-- Meeting (Veeva EM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting FFM</masterLabel>
+            <translation><!-- Meeting FFM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting H2O</masterLabel>
+            <translation><!-- Meeting H2O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchandising (incl. IM)</masterLabel>
+            <translation><!-- Merchandising (incl. IM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multichannel Plan</masterLabel>
+            <translation><!-- Multichannel Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New User Profile</masterLabel>
+            <translation><!-- New User Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Capture</masterLabel>
+            <translation><!-- Order Capture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization Profiling</masterLabel>
+            <translation><!-- Organization Profiling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other UPSA topics (will be split afterwards)</masterLabel>
+            <translation><!-- Other UPSA topics (will be split afterwards) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Rules</masterLabel>
+            <translation><!-- Pricing Rules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Materials</masterLabel>
+            <translation><!-- Promotional Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Adjustments</masterLabel>
+            <translation><!-- Sample Adjustments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Allocation</masterLabel>
+            <translation><!-- Sample Allocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Disbursements</masterLabel>
+            <translation><!-- Sample Disbursements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Inventory</masterLabel>
+            <translation><!-- Sample Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Management</masterLabel>
+            <translation><!-- Sample Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Ordering</masterLabel>
+            <translation><!-- Sample Ordering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Reports</masterLabel>
+            <translation><!-- Sample Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Returns</masterLabel>
+            <translation><!-- Sample Returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Shipments</masterLabel>
+            <translation><!-- Sample Shipments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Transfers</masterLabel>
+            <translation><!-- Sample Transfers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surveys</masterLabel>
+            <translation><!-- Surveys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Administration</masterLabel>
+            <translation><!-- System Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Management</masterLabel>
+            <translation><!-- Territory Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Off Territory</masterLabel>
+            <translation><!-- Time Off Territory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Scope Reports</masterLabel>
+            <translation><!-- Trial Scope Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iCAP</masterLabel>
+            <translation><!-- iCAP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interface Title --></label>
+        <name>Interface_Title_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- KAM --></label>
+        <name>KAM_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal &amp; Compliance Value --></label>
+        <name>Legal_Compliance_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required to Implement the Change to Stay Compliant with Federal Regulations --></help>
+        <label><!-- Legal &amp; Compliance --></label>
+        <name>Legal_Compliance__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value is calculated by the Level of Business Effort formula field. 
+High = 1 
+Medium = 2 
+Low = 3 --></help>
+        <label><!-- Level of Business Effort Value --></label>
+        <name>Level_of_Business_Effort_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Low: Requires More Than 20 Days of Business Work Effort
+Medium: Requires 9 - 20 Days of Business Work Effort
+High:Requires Less Than 8 Days of Business Work Effort --></help>
+        <label><!-- Level of Business Effort --></label>
+        <name>Level_of_Business_Effort__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value is calculated by the Level of IT Effort formula field. 
+High = 1 
+Medium = 2 
+Low = 3 --></help>
+        <label><!-- Level of IT Effort Value --></label>
+        <name>Level_of_IT_Effort_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Low: Requires More Than 20 Days of IT Work Effort
+Medium: Requires 9 - 20 Days of IT Work Effort
+High: Requires Less Than 8 Days of IT Work Effort --></help>
+        <label><!-- Level of IT Effort --></label>
+        <name>Level_of_IT_Effort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Need Type --></label>
+        <name>Local_Need_Type_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Business need</masterLabel>
+            <translation><!-- Business need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal/Compliance/Data Privacy</masterLabel>
+            <translation><!-- Legal/Compliance/Data Privacy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MSM --></label>
+        <name>MSL_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobility Available? --></label>
+        <name>Mobility_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nat Group Mgers --></label>
+        <name>Nat_Group_Mgers_UPSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs BMS Global Approval? --></label>
+        <name>Needs_BMS_Global_Approval_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Needs Business Approval --></label>
+        <name>Needs_Business_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>Object__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address</masterLabel>
+            <translation><!-- Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Account</masterLabel>
+            <translation><!-- Child Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Fields</masterLabel>
+            <translation><!-- Territory Fields --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Obsolete --></label>
+        <name>Obsolete_BMS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to track whether the Core Change Request used to be a Core Requirement that could not be closed on time. --></help>
+        <label><!-- Original Request Type --></label>
+        <name>Original_Request_Type_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Core Change Request</masterLabel>
+            <translation><!-- Core Change Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Requirement</masterLabel>
+            <translation><!-- Core Requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Country Requirement</masterLabel>
+            <translation><!-- Country Requirement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Used if the Requirement Title needs to be modified. Start new comments with your initials and date. Additional information provided by BMS. --></help>
+        <label><!-- Original Requirement --></label>
+        <name>Original_Requirement_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Functional ID (FX.XX) for the requirement captured during earlier requirements gathering sessions. If this field is blank, then this requirement was documented during design or later stages. --></help>
+        <label><!-- Original Requirements Gathering ID --></label>
+        <name>Original_Requirements_Gathering_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pharmacy Reps --></label>
+        <name>Pharmacy_Reps_UPSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Platform Availability --></label>
+        <name>Platform_Availability_BMS__c</name>
+        <picklistValues>
+            <masterLabel>Offline Only</masterLabel>
+            <translation><!-- Offline Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online &amp; Offline</masterLabel>
+            <translation><!-- Online &amp; Offline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Only</masterLabel>
+            <translation><!-- Online Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential Veeva Roadmap --></label>
+        <name>Potential_Veeva_Roadmap__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Care --></label>
+        <name>Primary_Care_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process --></label>
+        <name>Process__c</name>
+        <picklistValues>
+            <masterLabel>Account Management</masterLabel>
+            <translation><!-- Account Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Planning</masterLabel>
+            <translation><!-- Account Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Address Management</masterLabel>
+            <translation><!-- Address Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adverse Event</masterLabel>
+            <translation><!-- Adverse Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliations</masterLabel>
+            <translation><!-- Affiliations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Account Profiling</masterLabel>
+            <translation><!-- Business Account Profiling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CUE Feedback</masterLabel>
+            <translation><!-- CUE Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calendar Integration</masterLabel>
+            <translation><!-- Calendar Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Center</masterLabel>
+            <translation><!-- Call Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Execution</masterLabel>
+            <translation><!-- Call Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Planning</masterLabel>
+            <translation><!-- Call Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaign Management</masterLabel>
+            <translation><!-- Campaign Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child Account</masterLabel>
+            <translation><!-- Child Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching Report</masterLabel>
+            <translation><!-- Coaching Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Controlled Substance</masterLabel>
+            <translation><!-- Controlled Substance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Information Management</masterLabel>
+            <translation><!-- Customer Information Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cycle Plan</masterLabel>
+            <translation><!-- Cycle Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Change Requests</masterLabel>
+            <translation><!-- Data Change Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Detailing</masterLabel>
+            <translation><!-- Digital Detailing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DoJ</masterLabel>
+            <translation><!-- DoJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Integration</masterLabel>
+            <translation><!-- Email Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Management</masterLabel>
+            <translation><!-- Event Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploria</masterLabel>
+            <translation><!-- Exploria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Force Allocation</masterLabel>
+            <translation><!-- Field Force Allocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GPM</masterLabel>
+            <translation><!-- GPM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Page</masterLabel>
+            <translation><!-- Home Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive Compensation</masterLabel>
+            <translation><!-- Incentive Compensation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Institutional Sales</masterLabel>
+            <translation><!-- Institutional Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mailing Requests</masterLabel>
+            <translation><!-- Mailing Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Inquiries</masterLabel>
+            <translation><!-- Medical Inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Inquiry</masterLabel>
+            <translation><!-- Medical Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Insights</masterLabel>
+            <translation><!-- Medical Insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multichannel Plan</masterLabel>
+            <translation><!-- Multichannel Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Channel Integration</masterLabel>
+            <translation><!-- Other Channel Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC Marketing</masterLabel>
+            <translation><!-- PC Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payer &amp; Formulary</masterLabel>
+            <translation><!-- Payer &amp; Formulary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Person Account Profiling</masterLabel>
+            <translation><!-- Person Account Profiling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pfizer Pro</masterLabel>
+            <translation><!-- Pfizer Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Materials</masterLabel>
+            <translation><!-- Promotional Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Feedback</masterLabel>
+            <translation><!-- Rep Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sample Management</masterLabel>
+            <translation><!-- Sample Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Starters</masterLabel>
+            <translation><!-- Starters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surveys</masterLabel>
+            <translation><!-- Surveys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Administration</masterLabel>
+            <translation><!-- System Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeting Effectiveness</masterLabel>
+            <translation><!-- Targeting Effectiveness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Management</masterLabel>
+            <translation><!-- Territory Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Time Off Territory</masterLabel>
+            <translation><!-- Time Off Territory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Support</masterLabel>
+            <translation><!-- Training Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Scope Reports</masterLabel>
+            <translation><!-- Trial Scope Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usability</masterLabel>
+            <translation><!-- Usability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Detailing</masterLabel>
+            <translation><!-- Video Detailing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Production Release Date --></label>
+        <name>Production_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A request can only be a quick hit if the IT level of effort is “low”, Business priority is “high”, the urgency of having the request is immediate, and the request can be implemented without impacting integration. --></help>
+        <label><!-- Quick Hit --></label>
+        <name>Quick_Hit__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAD --></label>
+        <name>RAD_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- RBD --></label>
+        <name>RBD_BMS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate the Request Rationale field in order to capture the purpose of the requirement and the benefit it will serve. --></help>
+        <label><!-- Request Rationale --></label>
+        <name>ROI__c</name>
+    </fields>
+    <fields>
+        <label><!-- RS --></label>
+        <name>RS_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rank --></label>
+        <name>Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Count --></label>
+        <name>Record_Count_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reg Group Mgers --></label>
+        <name>Reg_Group_Mgers_UPSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region_BMS__c</name>
+        <picklistValues>
+            <masterLabel>Asia</masterLabel>
+            <translation><!-- Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Regions that get impacted due to this requirement. --></help>
+        <label><!-- Regions Impacted --></label>
+        <name>Regions_Impacted__c</name>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific</masterLabel>
+            <translation><!-- Asia Pacific --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin America</masterLabel>
+            <translation><!-- Latin America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regions Requesting --></label>
+        <name>Regions_Requesting__c</name>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asia Pacific</masterLabel>
+            <translation><!-- Asia Pacific --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latin America</masterLabel>
+            <translation><!-- Latin America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regulated --></label>
+        <name>Regulated_BMS__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Use this field to link duplicate requirements together or to group similar requirements. --></help>
+        <label><!-- Related Requirements --></label>
+        <name>Related_Requests__c</name>
+        <relationshipLabel><!-- Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related User Requirement ID --></label>
+        <name>Related_User_Requirement_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Removed From Which Release Number --></label>
+        <name>Removed_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate that a Request was removed from a Release only if it is removed after Design is complete. --></help>
+        <label><!-- Removed from Release? --></label>
+        <name>Removed_Release__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated for Requirement Gathering. --></help>
+        <label><!-- Plan --></label>
+        <name>Req__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you are unsure of the type of request you are submitting, please select Unknown. --></help>
+        <label><!-- Requirement Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bug Fix</masterLabel>
+            <translation><!-- Bug Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Code</masterLabel>
+            <translation><!-- Custom Code --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Enhancement</masterLabel>
+            <translation><!-- Data Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exploria Enhancement</masterLabel>
+            <translation><!-- Exploria Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interface Enhancement</masterLabel>
+            <translation><!-- Interface Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational Activity</masterLabel>
+            <translation><!-- Operational Activity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform Upgrade (Force.com)</masterLabel>
+            <translation><!-- Platform Upgrade (Force.com) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor Enhancement</masterLabel>
+            <translation><!-- Vendor Enhancement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requesting Business Units --></label>
+        <name>Requesting_Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Immunoscience</masterLabel>
+            <translation><!-- Immunoscience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Access</masterLabel>
+            <translation><!-- Market Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation><!-- Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Care</masterLabel>
+            <translation><!-- Primary Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty Care</masterLabel>
+            <translation><!-- Specialty Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transplant</masterLabel>
+            <translation><!-- Transplant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requestor --></label>
+        <name>Requestor__c</name>
+        <relationshipLabel><!-- Requirements (Requestor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requests Submitted by IT --></label>
+        <name>Requests_Submitted_by_IT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirement Date --></label>
+        <name>Requirement_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Detailed Summary* 
+Screen(s) Impacted* 
+Field Name(s) &amp; Type(s)* 
+Picklist Values 
+Calculation 
+Dependency 
+Workflow/Approval Rules 
+Interfacing System Updates 
+Interface Frequency 
+Data Volumes 
+*Indicates information required for all requests! --></help>
+        <label><!-- Requirement Description --></label>
+        <name>Requirement_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirement Requestor --></label>
+        <name>Requirement_Requestor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Captures the requirement title --></help>
+        <label><!-- Requirement Title --></label>
+        <name>Requirement_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated for completing SIT. --></help>
+        <label><!-- Test --></label>
+        <name>SIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales --></label>
+        <name>Sales_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section Title --></label>
+        <name>Section_Title_BMS__c</name>
+        <picklistValues>
+            <masterLabel>Access Influencer</masterLabel>
+            <translation><!-- Access Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Management</masterLabel>
+            <translation><!-- Account Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assigned HCP Report</masterLabel>
+            <translation><!-- Assigned HCP Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching Reports</masterLabel>
+            <translation><!-- Coaching Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMM MSL Reqs</masterLabel>
+            <translation><!-- IMM MSL Reqs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMM RS Reqs</masterLabel>
+            <translation><!-- IMM RS Reqs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMM Sales Reqs</masterLabel>
+            <translation><!-- IMM Sales Reqs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interaction Summary Report</masterLabel>
+            <translation><!-- Interaction Summary Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interaction/ Activity Reporting</masterLabel>
+            <translation><!-- Interaction/ Activity Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0010</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0010 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0020</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0030a</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0030a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0040</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0040 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0050a</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0050a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0060a</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0060a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0070a</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0070a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0080a</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0080a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0090</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0090 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0100</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0101</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0101 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0102</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0102 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0103</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0103 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0104</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0104 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0105</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0105 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0106</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0106 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0107</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0107 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0108</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0108 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MIRF Report R-MSLMR-0109</masterLabel>
+            <translation><!-- MIRF Report R-MSLMR-0109 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Inquiries</masterLabel>
+            <translation><!-- Medical Inquiries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Tools</masterLabel>
+            <translation><!-- Medical Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>My List Visit Frequency Report</masterLabel>
+            <translation><!-- My List Visit Frequency Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology Interaction Detail Report</masterLabel>
+            <translation><!-- Oncology Interaction Detail Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAD Coaching Summary Report</masterLabel>
+            <translation><!-- RAD Coaching Summary Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAD Field Activity Summary Report</masterLabel>
+            <translation><!-- RAD Field Activity Summary Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAD Field Contact Report</masterLabel>
+            <translation><!-- RAD Field Contact Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security Requirements</masterLabel>
+            <translation><!-- Security Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Management</masterLabel>
+            <translation><!-- Territory Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transplant Sales Reqs</masterLabel>
+            <translation><!-- Transplant Sales Reqs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transplant and Oncology IVA Reqs</masterLabel>
+            <translation><!-- Transplant and Oncology IVA Reqs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trns and Onc IVA Access control</masterLabel>
+            <translation><!-- Trns and Onc IVA Access control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trns and Onc IVA Reporting Requirements</masterLabel>
+            <translation><!-- Trns and Onc IVA Reporting Requirements --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solution Detail --></label>
+        <name>Solution_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Type --></label>
+        <name>Solution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Configuration Request</masterLabel>
+            <translation><!-- New Configuration Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Supported</masterLabel>
+            <translation><!-- Not Supported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Completed</masterLabel>
+            <translation><!-- Request Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Custom Development</masterLabel>
+            <translation><!-- Requires Custom Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap - Confirmed</masterLabel>
+            <translation><!-- Roadmap - Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap - Open</masterLabel>
+            <translation><!-- Roadmap - Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supported via Data Interface</masterLabel>
+            <translation><!-- Supported via Data Interface --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Workshop or person the requirement comes from. --></help>
+        <label><!-- Source --></label>
+        <name>Source_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_PMO__c</name>
+        <picklistValues>
+            <masterLabel>Approve: Approved to Deploy</masterLabel>
+            <translation><!-- Approve: Approved to Deploy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close: Deployed</masterLabel>
+            <translation><!-- Close: Deployed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close: Duplicate</masterLabel>
+            <translation><!-- Close: Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close: Rejected</masterLabel>
+            <translation><!-- Close: Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close: Superseded</masterLabel>
+            <translation><!-- Close: Superseded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed &amp; Canceled</masterLabel>
+            <translation><!-- Completed &amp; Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolidate: Approve to Estimate</masterLabel>
+            <translation><!-- Consolidate: Approve to Estimate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consolidate: Pending PMO Approval</masterLabel>
+            <translation><!-- Consolidate: Pending PMO Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identify: Deferred</masterLabel>
+            <translation><!-- Identify: Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identify: New Requirement</masterLabel>
+            <translation><!-- Identify: New Requirement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identify: Submit for Review</masterLabel>
+            <translation><!-- Identify: Submit for Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More Info Needed</masterLabel>
+            <translation><!-- More Info Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Test – Full Sandbox</masterLabel>
+            <translation><!-- Ready for Test – Full Sandbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: Build</masterLabel>
+            <translation><!-- Release: Build --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: Design</masterLabel>
+            <translation><!-- Release: Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: Pending for Interfaces</masterLabel>
+            <translation><!-- Release: Pending for Interfaces --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: Ready to Migrate</masterLabel>
+            <translation><!-- Release: Ready to Migrate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: SIT</masterLabel>
+            <translation>Release: Ready for Final Review</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: Test</masterLabel>
+            <translation><!-- Release: Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release: UAT</masterLabel>
+            <translation><!-- Release: UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tested - Pending PROD Migration</masterLabel>
+            <translation><!-- Tested - Pending PROD Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva Roadmap</masterLabel>
+            <translation><!-- Veeva Roadmap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva Roadmap Rejected</masterLabel>
+            <translation><!-- Veeva Roadmap Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva Roadmap: On Roadmap</masterLabel>
+            <translation><!-- Veeva Roadmap: On Roadmap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva Roadmap: Rejected</masterLabel>
+            <translation><!-- Veeva Roadmap: Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veeva Roadmap: Submit for Review</masterLabel>
+            <translation><!-- Veeva Roadmap: Submit for Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Include information about the impacts the functionality will have to the end user. Specifically, what they will see on the interface, how often the data will be updated, etc. --></help>
+        <label><!-- Sub-Process --></label>
+        <name>Sub_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Superseded? --></label>
+        <name>Superseded_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Superseded By --></label>
+        <name>Superseded_By_BMS__c</name>
+        <relationshipLabel><!-- Requirements (Superseded By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Superseded By : External ID --></label>
+        <name>Superseded_By_External_ID_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Impact Value --></label>
+        <name>Support_Impact_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will Minimally Impact Support
+(i.e., low degree of training and documentation) --></help>
+        <label><!-- Support Impact --></label>
+        <name>Support_Impact__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- List of SaaS applications. --></help>
+        <label><!-- Impacted Applications --></label>
+        <name>System_Impacted__c</name>
+        <picklistValues>
+            <masterLabel>Data Warehouse</masterLabel>
+            <translation><!-- Data Warehouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ</masterLabel>
+            <translation><!-- HQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware - Field User</masterLabel>
+            <translation><!-- Hardware - Field User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware - HQ User</masterLabel>
+            <translation><!-- Hardware - HQ User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- System Version --></label>
+        <name>System_Version_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Description --></label>
+        <name>Technical_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Case --></label>
+        <name>Test_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Comments --></label>
+        <name>Test_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Status --></label>
+        <name>Test_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Differed</masterLabel>
+            <translation><!-- Differed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Tested</masterLabel>
+            <translation><!-- Not Tested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tested - Successful</masterLabel>
+            <translation><!-- Tested - Successful --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tested - Unsuccessful</masterLabel>
+            <translation><!-- Tested - Unsuccessful --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tested By --></label>
+        <name>Tested_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total estimated value. --></help>
+        <label><!-- Total Estimate --></label>
+        <name>TotEst__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actual --></label>
+        <name>Total_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Priority Ranking --></label>
+        <name>Total_Priority_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Variance --></label>
+        <name>Total_Variance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of days estimated. --></help>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Impact --></label>
+        <name>Training_Impact_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated for Training and Deploying. --></help>
+        <label><!-- Deploy --></label>
+        <name>TrnDep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days estimated to complete UAT. --></help>
+        <label><!-- UAT --></label>
+        <name>UAT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Value is calculated by the selection of the Urgency of Requirement field: 
+High = 3 
+Medium = 2 
+Low = 1 --></help>
+        <label><!-- Urgency of Requirement Value --></label>
+        <name>Urgency_of_Request_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Low: Not required within the next 90 days to enable a business process 
+Medium: Required within the next 46 – 90 days to enable a business process 
+High: Required within the next 30 – 45 days to enable a business process --></help>
+        <label><!-- Urgency of Requirement --></label>
+        <name>Urgency_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Value is calculated by the User Impact of Change field: 
+High = 1 
+Medium = 2 
+Low = 3 --></help>
+        <label><!-- User Impact of Change Value --></label>
+        <name>User_Impact_of_Change_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Low: Will Significantly Impact Users (high degree of adoption with significant effort) 
+Medium: Will Moderately Impact Users (high degree of adoption with moderate effort) 
+High: Will Minimally Impact Users (high degree of adoption with minimal effort) --></help>
+        <label><!-- User Impact of Change --></label>
+        <name>User_Impact_of_Change__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Requirement Area --></label>
+        <name>User_Requirement_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Values --></label>
+        <name>Values_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Build Date --></label>
+        <name>Veeva_Build_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Configuration Complexity --></label>
+        <name>Veeva_Configuration_Complexity__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Veeva Design Date --></label>
+        <name>Veeva_Design_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva ID --></label>
+        <name>Veeva_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Out Of Box --></label>
+        <name>Veeva_Out_Of_Box__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Veeva Rank --></label>
+        <name>Veeva_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Response --></label>
+        <name>Veeva_Response_BMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Status --></label>
+        <name>Veeva_Status__c</name>
+        <picklistValues>
+            <masterLabel>Current Veeva Functionality</masterLabel>
+            <translation><!-- Current Veeva Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Planned</masterLabel>
+            <translation><!-- Not Planned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap Approved</masterLabel>
+            <translation><!-- Roadmap Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap Build</masterLabel>
+            <translation><!-- Roadmap Build --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap Deployed</masterLabel>
+            <translation><!-- Roadmap Deployed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap Design</masterLabel>
+            <translation><!-- Roadmap Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap Production</masterLabel>
+            <translation><!-- Roadmap Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roadmap Test</masterLabel>
+            <translation><!-- Roadmap Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Roadmap Review</masterLabel>
+            <translation><!-- Submit for Roadmap Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved BMS EMEA? --></label>
+        <name>Verified_by_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label>CORE Change Request</label>
+        <name>BMS_EMEA_CORE_Change_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Country Requirement</label>
+        <name>BMS_EMEA_COUNTRY_Requirement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CORE Requirement</label>
+        <name>BMS_EMEA_Functional_Requirement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS EMEA UPSA Requirement --></label>
+        <name>BMS_EMEA_UPSA_Requirement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS MEA Requirement --></label>
+        <name>BMS_MEA_Requirement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Business Requirement Record Type --></label>
+        <name>Business_Requirement_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Functional Requirement Record Type --></label>
+        <name>Functional_Requirement_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- ICV Requirements --></label>
+        <name>ICV_Requirements</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Interface Requirements Type --></label>
+        <name>Interface_Requirements_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MS/SMB Record Type --></label>
+        <name>MS_SMB_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Enhancement Requests --></label>
+        <name>Product_Enhancement_R</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- User Requirement Record Type --></label>
+        <name>User_Requirement_Record_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Change Request cannot be closed without a targeted Release date. Please confirm the Release date with the Team first. --></errorMessage>
+        <name>BMS_EMEA_CR_not_closed_without_Release</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value greater than 0 for fields under Total Level of Effort. --></errorMessage>
+        <name>Positive_Effort</name>
+    </validationRules>
+</CustomObjectTranslation>

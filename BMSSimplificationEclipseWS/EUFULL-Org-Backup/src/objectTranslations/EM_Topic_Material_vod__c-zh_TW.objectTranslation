@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>主題物料</value>
+    </caseValues>
+    <fields>
+        <label>CLM 簡報</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>主題材料</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>電子郵件範本</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>主題資料</relationshipLabel>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>物料類型</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>物料</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>使用物料的相關主題</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>主題</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>主題物料 (主題)</relationshipLabel>
+    </fields>
+    <nameFieldLabel>名稱</nameFieldLabel>
+    <recordTypes>
+        <label>主題物料</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>單一規則不可同時填入電子郵件範本和 CLM 簡報。請分別為這兩個項目建立不同的規則。</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>單一主題材料不可同時填入材料和 CLM 簡報。請分別為這兩個項目建立不同的規則。</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>單一主題資料無法使「資料」和「電子郵件範本」同時填入。請針對這兩個項目建立個別的規則。</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

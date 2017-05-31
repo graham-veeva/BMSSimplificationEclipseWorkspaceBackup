@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.BP_ID__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Address_line_2_vod__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.City_vod__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.State_vod__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Zip_vod__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Status_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Flagged_for_Delete_On_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.External_ID_vod__c</field>
+    </columns>
+    <description>R-RPT-2000 Report to display all address records that have been flagged for delete.</description>
+    <filter>
+        <criteriaItems>
+            <column>Address_vod__c.Status_BMS__c</column>
+            <operator>equals</operator>
+            <value>Flag for Delete</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BMS - Adm - Addresses Flagged for Delete</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Address_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <description>Ürünlerin mevcut ana mesajlarını gösterir.</description>
+    <filter>
+        <criteriaItems>
+            <column>Key_Message_vod__c.Country_Code_BMS_EMEA__c</column>
+            <operator>equals</operator>
+            <value>TR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Key_Message_vod__c.Active_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Key_Message_vod__c.Media_File_Name_vod__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Product_vod__c.GPDV_Pduct_Type_BMS__c</column>
+            <operator>equals</operator>
+            <value>TRADE NAME</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Ürün - Ana Mesajlar</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Key_Message_vod__c@Key_Message_vod__c.Product_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FK_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Key_Message_vod__c.Deactivate_Date_BMS_US__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

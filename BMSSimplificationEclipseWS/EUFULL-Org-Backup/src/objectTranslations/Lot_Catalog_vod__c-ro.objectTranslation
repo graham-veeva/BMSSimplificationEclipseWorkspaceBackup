@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Catalog al Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Catalog al Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Cataloage ale Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Cataloage ale Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Catalogului Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Catalogului Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Cataloagelor Lotului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Cataloagelor Lotului</value>
+    </caseValues>
+    <fields>
+        <label>Activ</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dată de expirare</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Id al articolului</label>
+        <name>Item_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id extern al catalogului lotului</label>
+        <name>Lot_Catalog_External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produs</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Catalog Lot</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Descriere a mostrelor</label>
+        <name>Sample_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mostră</label>
+        <name>Sample_vod__c</name>
+        <picklistValues>
+            <masterLabel>ELIQUIS 5MG BMS 1283086</masterLabel>
+            <translation><!-- ELIQUIS 5MG BMS 1283086 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 20mg</masterLabel>
+            <translation><!-- ERBITUX 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 40mg</masterLabel>
+            <translation><!-- ERBITUX 40mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 10mg</masterLabel>
+            <translation><!-- SPRYCEL 10mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 20mg</masterLabel>
+            <translation><!-- SPRYCEL 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 40mg</masterLabel>
+            <translation><!-- SPRYCEL 40mg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Suprimare lot</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unitate de măsură</label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Casetă</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Cazuri</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation>Unitate</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Lot nr. trebuie să fie No_Lot_vod pentru loturile virtuale.</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Câmpul Nume produs este necesar pentru a crea o înregistrare Catalog de loturi pentru un produs care nu este mostră fără nr. lot.</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Suprimare lot trebuie să fie bifat în cazul utilizării numelui cu număr lot &quot;No_Lot_vod&quot;.</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Câmpul Mostră sau Produs este necesar pentru a crea o înregistrare Catalog de loturi pentru un produs mostră cu nr. lot.</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Creare loturi de mostre</label>
+        <name>Create_Sample_Lots_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Description_vod__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Event_Type__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Start_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.End_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Primary_Product__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Secondary_Product__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Active_vod__c</field>
+    </columns>
+    <description>This report defines all Medical Events by Accounts.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Event_Attendee_vod__c.Account_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Medical Events by Account</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Medical_Event_vod__c$Event_Attendee_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Medical_Event_vod__c.End_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

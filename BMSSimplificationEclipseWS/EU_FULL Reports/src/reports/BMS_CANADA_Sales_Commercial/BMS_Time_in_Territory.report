@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Start_Time_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Hours_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Time_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Status_vod__c</field>
+    </columns>
+    <description>Temps dans le territoire : Time in Territory</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Time_Off_Territory_vod__c.BMS_CA_Time_In_Territory</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Time_Off_Territory_vod__c.Reason_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Time in Territory</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Time_Off_Territory_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Time_Off_Territory_vod__c.Date_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

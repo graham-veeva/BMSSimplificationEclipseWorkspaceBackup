@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Одиниця інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Одиниці інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Одиницю інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Одиниці інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Одиниці інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Одиниць інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Одиниці інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Одиницям інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Одиницею інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Одиницями інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Одиниці інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Одиницях інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Одинице інвентаризації зразка </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Одиниці інвентаризації зразка </value>
+    </caseValues>
+    <fields>
+        <label><!-- Total Unit Count --></label>
+        <name>Count_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Difference --></label>
+        <name>Difference_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Quantity --></label>
+        <name>Expected_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventory Name --></label>
+        <name>Inventory_Name_vod__c</name>
+        <relationshipLabel><!-- Sample Inventory Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>серія #</label>
+        <name>Lot_Lookup_vod__c</name>
+        <relationshipLabel>Одиниці шаблону інвентаризації</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lot # --></label>
+        <name>Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample --></label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unlock --></label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Sample Inventory Item Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Кількість: Неправильне число</errorMessage>
+        <name>Sample_Inventory_Count_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

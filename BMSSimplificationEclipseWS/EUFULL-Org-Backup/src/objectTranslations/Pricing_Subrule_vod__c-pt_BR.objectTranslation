@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sub-regra de preços</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sub-regras de preços</value>
+    </caseValues>
+    <fields>
+        <label>Tipo de comparação</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Valor de tabela</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Quantidade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Total de SKUs</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Quantidade máxima</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantidade mínima</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Regra de preços</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Sub-regras de preços</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Sub-regras de preços</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da sub-regra de preços</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Não há suporte para Componente de kit como Produto para comparação</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>A quantidade máxima deve ser superior ou igual à quantidade mínima.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Total de SKUs deve ser &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

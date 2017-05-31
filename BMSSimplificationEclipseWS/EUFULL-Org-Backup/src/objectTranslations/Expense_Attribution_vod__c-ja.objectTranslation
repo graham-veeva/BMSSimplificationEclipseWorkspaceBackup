@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>分割経費</value>
+    </caseValues>
+    <fields>
+        <label>実績額</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>経費実績内訳</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>分割経費</relationshipLabel>
+    </fields>
+    <fields>
+        <label>経費タイプ</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>負担経費 (アカウント)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>分割経費（アカウント）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>負担経費 (出席者)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>分割経費（出席者）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>負担経費 (講演者)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>分割経費（講演者）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>負担経費 (チームメンバー)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>分割経費（イベントチームメンバー）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>負担経費タイプ</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>アカウント</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>出席者</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>イベント講演者</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>イベントチームメンバー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>ベンダー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>会場</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>負担経費 (ベンダー)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>分割経費（ベンダー）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>負担経費 (会場)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>分割経費（会場）</relationshipLabel>
+    </fields>
+    <fields>
+        <label>負担経費</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>支払日</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>名前</nameFieldLabel>
+    <recordTypes>
+        <label>イベント分割経費</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

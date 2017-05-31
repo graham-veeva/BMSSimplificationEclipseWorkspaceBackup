@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>บรรทัดการจัดประเภท</value>
+    </caseValues>
+    <fields>
+        <label>การจัดประเภท</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>บรรทัดการจัดประเภท</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ยุบตามดีฟอลต์?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID ภายนอก</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>ส่วนพาเรนต์</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>บรรทัดการจัดประเภท</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ผลิตภัณฑ์</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>บรรทัดการจัดประเภท</relationshipLabel>
+    </fields>
+    <fields>
+        <label>เลเบลส่วน</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>การจัดเรียง</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <nameFieldLabel>ชื่อ</nameFieldLabel>
+    <recordTypes>
+        <label>ผลิตภัณฑ์แบบจัดประเภทของ IM</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ส่วนแบบจัดประเภทของ IM</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ผลิตภันฑ์การจัดประเภท OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ส่วนการจัดประเภท OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>บรรทัดการจัดประเภทของ OM สามารถเชื่อมโยงได้เฉพาะกับการจัดประเภทของ OM และบรรทัดการจัดประเภทของ IM สามารถเชื่อมโยงได้เฉพาะกับการจัดประเภทของ IM</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>สามารถทำเครื่องหมายได้เฉพาะสำหรับประเภทเร็กคอร์ด IM_Assortment_Section_vod Record Type หรือ OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถเชื่อมโยงส่วนกับส่วนพาเรนต์</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถระบุส่วนและผลิตภัณฑ์บนเร็กคอร์ดเดียวกัน</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Child_Account_vod__c.Child_Name_vod__c</field>
+    </columns>
+    <columns>
+        <field>Child_Account_vod__c.Specialty_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Child_Account_vod__c.Role_BMS__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Organization_Sub_Type_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Profiling_Subtype_BMS_EMEA__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Child_Account_vod__c.Account_Source_Country_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>NL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Child_Account_vod__c.Role_BMS__c</column>
+            <operator>equals</operator>
+            <value>Cluster/Divisie/RVE Manager;Cluster/Division Manager</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>NL - RVE Manager - Test Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Child_Account_vod__c@Child_Account_vod__c.Parent_Account_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

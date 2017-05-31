@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Απόδοση δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Αποδόσεις δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Απόδοση δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Αποδόσεις δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Απόδοση δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Αποδόσεις δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Απόδοση δαπάνης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Αποδόσεις δαπάνης </value>
+    </caseValues>
+    <fields>
+        <label>Τρέχον</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Γραμμή δαπάνης</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τύπος δαπάνης</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Καταβληθείσα δαπάνη (λογαριασμός)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Καταβληθείσα δαπάνη (παρευρισκόμενος)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Καταβληθείσα δαπάνη (ομιλητής)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Καταβληθείσα δαπάνη (μέλος ομάδας)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τύπος υποβληθείσας δαπάνης</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Λογαριασμός</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Παρευρισκόμενος</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Ομιλητής εκδήλωσης</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Μέλος ομάδας εκδήλωσης</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Πωλητής</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Συνέδριο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Καταβληθείσα δαπάνη (πωλητής)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Καταβληθείσα δαπάνη (συνέδριο)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Αποδόσεις δαπάνης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Καταβληθείσες δαπάνες</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία πληρωμής</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <recordTypes>
+        <label>Απόδοση δαπάνης εκδήλωσης</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

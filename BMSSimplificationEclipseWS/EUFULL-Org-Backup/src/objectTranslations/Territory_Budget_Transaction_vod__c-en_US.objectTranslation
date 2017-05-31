@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Territory Budget Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Territory Budget Transactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Budget --></label>
+        <name>Territory_Budget_vod__c</name>
+        <relationshipLabel><!-- Territory Budget Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Transaction Date --></label>
+        <name>Transaction_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>Value_vod__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot create transaction for inactive budget --></errorMessage>
+        <name>VEEVA_ACTIVE_BUDGET_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

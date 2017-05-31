@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Подправило за цената</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Подправила за цената</value>
+    </caseValues>
+    <fields>
+        <label>Тип на сравнението</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Стойност от списък</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Количество</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Брой на складовите единици</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Максимално количество</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Минимално количество</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Правило за цената</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Подправила за цената</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Продукт</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Подправила за цената</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Артикулите от комплекта не се поддържат като продукти за сравнение</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Максималното количество трябва да бъде по-голямо или равно на минималното количество.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Броят на складовите единици трябва да бъде &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

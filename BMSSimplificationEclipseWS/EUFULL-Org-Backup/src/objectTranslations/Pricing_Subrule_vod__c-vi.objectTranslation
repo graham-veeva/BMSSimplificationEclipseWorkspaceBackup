@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quy Tắc Định Giá Phụ</value>
+    </caseValues>
+    <fields>
+        <label>Loại so sánh</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Giá trị niêm yết</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Số lượng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Tổng Số SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Số lượng tối đa</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng tối thiểu</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quy Tắc Định Giá</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Quy Tắc Định Giá Phụ</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Quy Tắc Định Giá Phụ</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Tên</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Các Món Hàng không được hỗ trợ như Sản Phẩm So Sánh</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Số lượng tối đa phải lớn hơn hoặc bằng số lượng tối thiểu.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tổng Số SKU phải &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

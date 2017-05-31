@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is used for the BMS custom reports.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ADP_Address_City__c</fullName>
+        <description>City</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Address_Line1__c</fullName>
+        <description>Address Line 1</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Address_Line2__c</fullName>
+        <description>Address Line 2 (If available)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Address Line 2 (If available)</inlineHelpText>
+        <label>Address Line2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Address_State__c</fullName>
+        <description>State</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Address_Territories__c</fullName>
+        <description>The territories of this address</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Affected Territories</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Address_Zip__c</fullName>
+        <description>Zip</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Zip</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_BPA_ID__c</fullName>
+        <description>BPA ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BPA ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Customer_Name__c</fullName>
+        <description>Customer Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Customer_Type__c</fullName>
+        <description>Customer Type</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Customer Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_Delete_Date__c</fullName>
+        <description>Date when the record is deleted</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Delete Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ADP_Delete_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>False when created. True when the record is deleted</description>
+        <externalId>false</externalId>
+        <label>Delete Status</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADP_Flagged_For_Delete_Date__c</fullName>
+        <description>When the record is flagged for delete</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Flagged For Delete Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ADP_MERGE_IND__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>True if deleted by Merge Process</description>
+        <externalId>false</externalId>
+        <label>Deleted by Merge Process</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ADP_Master_Id__c</fullName>
+        <description>Customer Master ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Master Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_User_Business_Unit__c</fullName>
+        <description>the Business Unit of the user who flagged the address for delete</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>User  Business Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_User_Salesforce_Name__c</fullName>
+        <description>Salesforce name of the user who flagged the address for delete</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>User Salesforce Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_User_Territories__c</fullName>
+        <description>The territory number of the user who flagged address  for delete</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>User Territories</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ADP_User_Who_Flagged__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Name of the User who flagged addresses for Delete</description>
+        <externalId>false</externalId>
+        <label>User Who Flagged</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Reports2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ALL_COUNT__c</fullName>
+        <externalId>false</externalId>
+        <label>ALL_COUNT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ALL_PERCENTAGE__c</fullName>
+        <externalId>false</externalId>
+        <label>ALL PERCENTAGE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ALL_TOTAL__c</fullName>
+        <externalId>false</externalId>
+        <label>ALL_TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ANSWER__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ANSWER</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Access_Influence_ONC_Assigned_HCP__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( Access_influence_Assigned_HCP__c ,&apos;YES&apos;, &apos;NO&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Access Influence</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Access_influence_Assigned_HCP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Access influence</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Group__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Local_Influence__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Local Influence</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Assigned_HCP__c</fullName>
+        <description>This field contains the account name for the Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account_Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <description>Name of the account</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_National_Influence__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account National Influence</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Regional_Influence__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Regional Influence</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Valuation__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Valuation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Attendees_Names__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Additional Attendees Names</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1_Assigned_HCP__c</fullName>
+        <description>This field contains the address line for accounts; to be used in Assigned HCP and My List Frequency Reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address_Line_1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Address_Line1__c</fullName>
+        <description>Address Line 1</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Address_Line2__c</fullName>
+        <description>Address Line 2</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Alignment__c</fullName>
+        <description>Account Territory Intelligent Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Alignment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_BP_ID__c</fullName>
+        <description>Account BP ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BP ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Child_Alignment__c</fullName>
+        <description>Child Account Territory Intelligent Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Child Alignment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Child_BP_ID__c</fullName>
+        <description>Child Account BP ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Child BP ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Child_Name__c</fullName>
+        <description>Child Account Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Child Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Child_Type__c</fullName>
+        <description>Child Account Type</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Child Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_City__c</fullName>
+        <description>City</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Name__c</fullName>
+        <description>Account Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Parent_BP_ID__c</fullName>
+        <description>Parent Account BP ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parent BP ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Parent_Name__c</fullName>
+        <description>Parent Account Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parent Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Parent_Type__c</fullName>
+        <description>Parent Account Type</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parent Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Sales_Force_Name__c</fullName>
+        <description>Sales Force Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_State__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Therapeutic_Area__c</fullName>
+        <description>Therapeutic Area</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Therapeutic Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Type__c</fullName>
+        <description>Account Type</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation_Zip__c</fullName>
+        <description>Zip</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Zip</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Attendee_name__c</fullName>
+        <description>Contains name of other attendees</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Contains name of other attendees</inlineHelpText>
+        <label>Attendee_name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_KMB__c</fullName>
+        <description>This value will contain &quot;Yes&quot; if the KMB for the Interaction is checked and will be blank if the KMB is unchecked.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS_KMB</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BPA_ID__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BPA ID</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BP_ID_Assigned_HCP__c</fullName>
+        <description>Master ID of the customer for the Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BP_ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BP_ID__c</fullName>
+        <description>Master ID of the customer</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BP ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Date_Time__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Date Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Call_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Call_Plan_Status__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Plan Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City_Assigned_HCP__c</fullName>
+        <description>This field contains the city name for accounts; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clinical_Trial_Protocol_Number__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Clinical Trial Protocol Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clinical_Trial_Support_Assigned_HCP__c</fullName>
+        <description>This field contains the Clinical Trial Support for an account; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Clinical Trial Support</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clinical_Trial_Support__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Clinical Trial Support</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_By__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Created By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disease_State_Proactive_Deck_Name__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Disease State Proactive Deck Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Assigned_HCP__c</fullName>
+        <description>This field contains the emails for accounts; to be used in Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax_Assigned_HCP__c</fullName>
+        <description>This field contains the fax numbers of accounts; to be used in Assigned HCP and My List Frequency MSL Reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>For_Payer_Government_Advocacy__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>For Payer Government Advocacy</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interaction_Discussion__c</fullName>
+        <description>Interaction Discussion: Interaction Discussion</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Interaction Discussion: Interaction Discussion</inlineHelpText>
+        <label>Interaction Discussion</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interaction_Intent__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Interaction Intent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interaction_Name__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Interaction Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interaction_Sub_Type__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Interaction Sub Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Interaction_Topic__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Interaction Topic</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Activity_Date_My_List_Visit_Freq__c</fullName>
+        <description>This field will be used in My List Visit Frequency report</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last_Activity_Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>License_State_Assigned_HCP__c</fullName>
+        <description>This field contains the license state of the account; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>License State</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Local_Influence_Assigned_HCP__c</fullName>
+        <description>This is the new field which will be added to Assigned HCP reports. This will denote the local influence of the HCP.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Local Influence</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MSL_Full_Name_Assigned_HCP__c</fullName>
+        <description>This field contains the full name of the MSL</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MSL_Full_Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MSL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>MSL</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Reports1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Main_Group__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Main Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medical_Strategy_Assigned_HCP__c</fullName>
+        <description>This field contains the Medical Strategy for an account; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Medical Strategy</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medical_Strategy__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Medical Strategy</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NO_TIER_COUNT__c</fullName>
+        <externalId>false</externalId>
+        <label>NO_TIER_COUNT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NO_TIER_PERCENTAGE__c</fullName>
+        <externalId>false</externalId>
+        <label>NO_TIER_PERCENTAGE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>NO_TIER_TOTAL__c</fullName>
+        <externalId>false</externalId>
+        <label>NO_TIER_TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>National_Influence_Assigned_HCP__c</fullName>
+        <description>This is the new field which will be added to Assigned HCP reports. This will denote the national influence of the HCP</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>National Influence</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliated_Address_Line_1__c</fullName>
+        <description>Address Line 1 for accounts which are aligned but not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliated Address Line 1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliated_Address_Line_2__c</fullName>
+        <description>Address Line 2 for accounts which are aligned but not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliated Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliated_City__c</fullName>
+        <description>Contains the city name for accounts which are aligned and not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliated City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliated_SF_Name__c</fullName>
+        <description>Contains the sales force name of the accounts which are aligned and not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliated SF Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliated_State__c</fullName>
+        <description>Contains state for addresses related to accounts which are aligned and not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliated State</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliated_Zip__c</fullName>
+        <description>Contains zip code of addresses associated with accounts which are aligned and not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliated Zip</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Affiliation_Therapeutic_Area__c</fullName>
+        <description>Contains the therapeutic area of the accounts which are aligned and not affiliated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Non Affiliation Therapeutic Area</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_MSL_Field_days__c</fullName>
+        <externalId>false</externalId>
+        <label>Non-MSL Field days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Attendees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Attendees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Sphere_of_Influence_Assigned_HCP__c</fullName>
+        <description>This field contains the Overall Sphere of Influence of an account; to be used in Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Overall Sphere of Influence</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Sphere_of_Influence__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Overall Sphere of Influence</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payer_Government_Advocacy_Assigned_HCP__c</fullName>
+        <description>This field contains the Payer/ Government/ Advocacy of an account; to be used in Assigned HCP and My List Frequency report</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payer/ Government/ Advocacy</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_Assigned_HCP__c</fullName>
+        <description>This field contains phone numbers for accounts; to be used in Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Parent_Assigned_HCP__c</fullName>
+        <description>This field contains the primary parent name of the account; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Primary Parent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Presentation_Proactive_Deck_Name__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product Presentation Proactive Deck Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Selection_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Selection Order</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professional_Designation_Assigned_HCP__c</fullName>
+        <description>This field contains the professional designation of an account; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Professional Designation</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Question__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Question</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RAD__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RAD</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Reports</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF((CreatedBy.Profile.Name=&quot;BMS-SPEC11-MGR-SALES&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC11-REP-SALES&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC12-MGR-RS&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC12-REP-RS&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC13-MGR-MSL&quot;)||(CreatedBy.Profile.Name=&quot;BMS-SPEC13-REP-MSL&quot;),&quot;PR&quot;,&quot;US&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Region</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Regional_Influence_Assigned_HCP__c</fullName>
+        <description>This is the new field which will be added to Assigned HCP reports. This will denote the regional influence of the HCP</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Regional Influence</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speaker_Training_Proactive_Deck_Name__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Speaker Training Proactive Deck Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Specialty_Assigned_HCP__c</fullName>
+        <description>This field contains the specialty of an account; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Specialty</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Specialty__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Specialty</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Assigned_HCP__c</fullName>
+        <description>This field contains the state name for accounts; to be used in Assigned HCP and My List Frequency reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TA__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( Owner:User.TA_BMS_SHARED__c = &apos;&apos;, &apos;N/A&apos;, Owner:User.TA_BMS_SHARED__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIER1_COUNT__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER1_COUNT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIER1_PERCENTAGE__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER1_PERCENTAGE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TIER1_TOTAL__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER1_TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIER2_COUNT__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER2_COUNT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIER2_PERCENTAGE__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER2_PERCENTAGE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TIER2_TOTAL__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER2_TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIER3_COUNT__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER3_COUNT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TIER3_PERCENTAGE__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER3_PERCENTAGE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TIER3_TOTAL__c</fullName>
+        <externalId>false</externalId>
+        <label>TIER3_TOTAL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_My_List_Visit_Freq__c</fullName>
+        <description>This field will be used in the My List Visit Frequency report</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Name__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Name</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area_Assigned_HCP__c</fullName>
+        <description>This field contains the therapeutic area of the MSL for the Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Therapeutic_Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Therapeutic Area</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area__c</fullName>
+        <description>This field contains the therapeutic area of the MSL for the Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Therapeutic_Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_with_MSL__c</fullName>
+        <externalId>false</externalId>
+        <label>Time with MSL</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Field_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Field Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_MSL_Field_Days__c</fullName>
+        <externalId>false</externalId>
+        <label>Total MSL Field Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Visits__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Visits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1st_QTR__c</fullName>
+        <externalId>false</externalId>
+        <label>1st Qtr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X2nd_Qtr__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Qtr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X3rd_Qtr__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Qtr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X4th_Qtr__c</fullName>
+        <externalId>false</externalId>
+        <label>4th Qtr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>YTD_Activity_My_List_Visit__c</fullName>
+        <description>This field will be used in My List Visit Frequency report</description>
+        <externalId>false</externalId>
+        <label>YTD_Activity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Zip_Assigned_HCP__c</fullName>
+        <description>This field contains the zip code for accounts; to be used in the Assigned HCP and My List Frequency MSL reports</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Zip</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zip__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Zip</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Report</label>
+    <nameField>
+        <label>Report Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Reports</pluralLabel>
+    <recordTypes>
+        <fullName>Account_Affiliation</fullName>
+        <active>true</active>
+        <description>Account-Affiliation</description>
+        <label>Account-Affiliation</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Account_Non_Affiliation</fullName>
+        <active>true</active>
+        <description>For the report which will display aligned but non affiliated accounts</description>
+        <label>Account - Non Affiliation</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Address_Flagged_For_Delete</fullName>
+        <active>true</active>
+        <description>Addresses which are flagged for Delete</description>
+        <label>Address - Flagged For Delete</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Assigned_HCP</fullName>
+        <active>true</active>
+        <description>A new record type for Assigned HCP MSL report</description>
+        <label>Assigned_HCP</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>DCI_SE_SUMMARY</fullName>
+        <active>true</active>
+        <label>DCI SE SUMMARY</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Group_Account</fullName>
+        <active>true</active>
+        <description>Group Account</description>
+        <label>Group Account</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Interaction_Detail</fullName>
+        <active>true</active>
+        <label>Interaction Detail</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>My_List_Visit_Frequency</fullName>
+        <active>true</active>
+        <description>A new record type for My List Frequency MSL report</description>
+        <label>My List Visit Frequency</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>RAD_Field_Activity</fullName>
+        <active>true</active>
+        <label>RAD Field Activity</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

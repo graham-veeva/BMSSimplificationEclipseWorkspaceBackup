@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_82826893</developerName>
+        <masterLabel>Visit Topic</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Call2_Discussion_vod__c.Interaction_Topic_BMS__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Profiling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speaker Training - Formal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speaker Training - Informal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Speaker Training - Evaluation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Med Info Department Follow-Up</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Advisory Board</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Disease State - Proactive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Disease State - Reactive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product - Proactive</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Product - Reactive</sourceValue>
+            </sourceValues>
+            <value>Product and Disease State</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Clinical Trial - 2nd Qtr Visit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clinical Trial - 3rd Qtr Visit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clinical Trial - 4th Qtr Visit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clinical Trial - Pre Initiation / Non-Scope Related</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clinical Trial - 1st Qtr Visit</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Clinical Trial</sourceValue>
+            </sourceValues>
+            <value>Clinical Trials</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Introduction</sourceValue>
+            </sourceValues>
+            <value>Introduction</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>iPlan Program</sourceValue>
+            </sourceValues>
+            <value>iPlan</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Market Access Formulary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Market Access - Outcomes Research</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Market Access - Pipeline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Market Access - Formulary / Slide Presentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pipeline (Non-Market Access)</sourceValue>
+            </sourceValues>
+            <value>Pipeline</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_82826893</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <description>R-RPT-2600 ADGI MSL discussion allocation by visit topic.</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Call2_vod__c.BMS_MSL_Interaction</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call2_Discussion_vod__c.Interaction_Topic_BMS__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call2_Discussion_vod__c.Product_vod__c</column>
+            <operator>contains</operator>
+            <value>ERBITUX</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call2_vod__c.Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Submitted_vod,Submitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call2_vod__c.Is_Parent_Call_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_82826893</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Call2_Discussion_vod__c.Interaction_Topic_BMS__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MSL - ADGI Disc Alloc by Visit Topic/ERB</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Call2_vod__c$Call2_Discussion_vod__c</reportType>
+    <scope>team</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Call_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lịch Sử Sự Kiện </value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Date --></label>
+        <name>Action_Date_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Ngày Hành Động</label>
+        <name>Action_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kiểu Hành Động</label>
+        <name>Action_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approve_vod</masterLabel>
+            <translation>Phê Duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel_Event_vod</masterLabel>
+            <translation><!-- Cancel_Event_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close_vod</masterLabel>
+            <translation>Đóng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created_vod</masterLabel>
+            <translation>Đã tạo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject_vod</masterLabel>
+            <translation>Loại bỏ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reschedule_vod</masterLabel>
+            <translation>Sắp Lịch Lại</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit_for_Approval_vod</masterLabel>
+            <translation>Gửi để Phê Duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlock_vod</masterLabel>
+            <translation>Mở khóa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event ID --></label>
+        <name>Activity_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Name --></label>
+        <name>Activity_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Mã Người Phê Duyệt</label>
+        <name>Approver_IDs_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhận xét</label>
+        <name>Comment_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>End_Time_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist value to translate --></help>
+        <label><!-- Ending Status --></label>
+        <name>Ending_Status_Simple_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation><!-- Approved_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation><!-- Canceled_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed_vod</masterLabel>
+            <translation><!-- Closed_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Business Approval</masterLabel>
+            <translation><!-- In Business Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Closeout</masterLabel>
+            <translation><!-- In Closeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Draft</masterLabel>
+            <translation><!-- In Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Execution</masterLabel>
+            <translation><!-- In Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Planning</masterLabel>
+            <translation><!-- In Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Post-Execution</masterLabel>
+            <translation><!-- In Post-Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation><!-- In Service Coordinator Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_Approval_vod</masterLabel>
+            <translation><!-- Pending_Approval_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event</masterLabel>
+            <translation><!-- Post-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event-PostApproval</masterLabel>
+            <translation><!-- Post-Event-PostApproval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Event</masterLabel>
+            <translation><!-- Pre-Event --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Trạng Thái Kết Thúc</label>
+        <name>Ending_Status_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- A before trigger copies value into this field from Event.CreatedBy.Email..required for notifications to Approver/Rejector --></help>
+        <label><!-- Event Creator Email --></label>
+        <name>Event_Creator_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Sự kiện</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Lịch Sử Sự Kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Nhóm Người Phê Duyệt Kế Tiếp</label>
+        <name>Next_Approver_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vai Trò Người Phê Duyệt Kế Tiếp</label>
+        <name>Next_Approver_Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approver_vod</masterLabel>
+            <translation>Người Phê Duyệt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Người Phê Duyệt Tiếp Theo</label>
+        <name>Next_Approver_vod__c</name>
+        <relationshipLabel>Lịch Sử Sự Kiện</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Khóa Ghi Đè</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Activity ID --></label>
+        <name>Parent_Activity_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- A before trigger copies value into this field from Event.Processor_Email_HCPTS__c..required for notifications to Approver/Rejector --></help>
+        <label><!-- Processor Email --></label>
+        <name>Processor_Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product/TA --></label>
+        <name>Product_TA_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Owner --></label>
+        <name>Project_Owner_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Starting Status --></label>
+        <name>Starting_Status_Simple_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation><!-- Approved_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed_vod</masterLabel>
+            <translation><!-- Closed_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Business Approval</masterLabel>
+            <translation><!-- In Business Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Closeout</masterLabel>
+            <translation><!-- In Closeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Draft</masterLabel>
+            <translation><!-- In Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Execution</masterLabel>
+            <translation><!-- In Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Planning</masterLabel>
+            <translation><!-- In Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Post-Execution</masterLabel>
+            <translation><!-- In Post-Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation><!-- In Service Coordinator Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_Approval_vod</masterLabel>
+            <translation><!-- Pending_Approval_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event</masterLabel>
+            <translation><!-- Post-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event-PostApproval</masterLabel>
+            <translation><!-- Post-Event-PostApproval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Event</masterLabel>
+            <translation><!-- Pre-Event --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Trạng Thái Bắt Đầu</label>
+        <name>Starting_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Người dùng</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Lịch Sử Sự Kiện</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Tên</nameFieldLabel>
+    <recordTypes>
+        <label>Lịch Sử Sự Kiện</label>
+        <name>Event_History_vod</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Thành Viên Nhóm Sự Kiện</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+</CustomObjectTranslation>

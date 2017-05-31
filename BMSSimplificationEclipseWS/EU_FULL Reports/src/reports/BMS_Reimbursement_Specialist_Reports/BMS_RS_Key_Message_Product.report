@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Key_Message_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Key_Message_vod__c$LastModifiedDate</field>
+    </columns>
+    <description>Report to display all RS key messages grouped by product.</description>
+    <filter>
+        <criteriaItems>
+            <column>Key_Message_vod__c$Owner</column>
+            <operator>equals</operator>
+            <value>BMS - ONC RS Owner</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Key_Message_vod__c$Product_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - RS - Key Message / Product</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Key_Messages__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Key_Message_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

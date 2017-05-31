@@ -1,0 +1,16 @@
+<messaging:emailTemplate subject="{!$Label.BMS_EMEA_FFM_Alert_Remaining_Budget}" recipientType="User" relatedToType="Master_File_BMS_EMEA__c">
+
+<messaging:plainTextEmailBody >
+{!$Label.BMS_EMEA_FFM_Dear_Initiator} {!relatedTo.Owner.Name},
+
+- {!$ObjectType.Master_File_BMS_EMEA__c.fields.Name.label}:  {!relatedTo.Name}  
+- {!$ObjectType.Master_File_BMS_EMEA__c.fields.Master_File_Name_BMS_EMEA__c.InlineHelpText}: {!relatedTo.Master_File_Name_BMS_EMEA__c}  
+
+{!$Label.BMS_EMEA_FFM_Recieve_Automated_notification} {!relatedTo.Name} 
+({!relatedTo.Therapeutic_Area_BMS_EMEA__r.Name} - {!relatedTo.Product_Compound_BMS_EMEA__r.Name}, {!$ObjectType.Master_File_BMS_EMEA__c.fields.Start_Date_BMS_EMEA__c.label}: {!relatedTo.Start_Date_BMS_EMEA__c} - {!$ObjectType.Master_File_BMS_EMEA__c.fields.End_Date_BMS_EMEA__c.label}: {!relatedTo.End_Date_BMS_EMEA__c} - {!relatedTo.Year_BMS_EMEA__c} ) {!$Label.BMS_EMEA_FFM_Below_Originally_Approved_Budget}
+{!$Label.BMS_EMEA_FFMS_Original_Budget} {!relatedTo.Total_Budget_all_Events_BMS_EMEA__c} {!relatedTo.Currency_Form_BMS_EMEA__c} {!$Label.BMS_EMEA_FFM_Remaining_Budget} {!relatedTo.Remaining_Budget_BMS_EMEA__c} {!relatedTo.Currency_Form_BMS_EMEA__c} 
+
+{!$Label.BMS_EMEA_FFM_Review_Original_Master_File}
+
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

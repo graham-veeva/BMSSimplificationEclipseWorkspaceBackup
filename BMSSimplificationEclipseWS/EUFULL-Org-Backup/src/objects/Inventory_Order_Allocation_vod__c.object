@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A date effective limit placed by the company on the quantity of a particular product (sample or promo item) that can be ordered by a particular user (or user group) within a particular timeframe</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_vod__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>When unchecked, indicates that this record is not currently active.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allocation_End_Date_vod__c</fullName>
+        <description>This date reflects the last day that this allocation record is in available for selection during order entry.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Allocation End Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Allocation_Family_BMS_US__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Allocation Family</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allocation_Start_Date_vod__c</fullName>
+        <description>This date reflects the first date this order allocation quantity is available for selection during order entry.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Allocation Start Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Date_Exceptions_vod__c</fullName>
+        <description>Indicates the appropriate actions when a user attempts to submit an order outside of the order dates for the current allocation.</description>
+        <externalId>false</externalId>
+        <label>Allow Date Exceptions</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Prevent_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warn_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Require_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DoNothing_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Quantity_Exceptions_vod__c</fullName>
+        <description>Indicates the appropriate actions when a user attempts to submit an order for a quantity that exceeds their current allocation.</description>
+        <externalId>false</externalId>
+        <label>Allow Quantity Exceptions</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Prevent_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warn_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Require_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DoNothing_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>BMS_Code_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Code ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Product_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS PRODUCT ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Territory_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Territory ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Customer-defined description or comment for the Order Allocation Record.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District_BMS_US__c</fullName>
+        <description>VPRO - January 2013 - BMS Global Requirements &amp; Design: User District stamp field via workflow for Sampling team. Used for reporting only.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>z_Delete_District</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>District ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <description>External ID allows customers to externally reference an ID that can assist in data loading.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minimum_Single_Order_Quantity_vod__c</fullName>
+        <description>The minimum quantity that can be ordered in a single order against this order allotment.</description>
+        <externalId>false</externalId>
+        <label>Minimum Single Order Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_End_Date_vod__c</fullName>
+        <description>The first date in which orders can begin to be submitted against this allocation.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Order End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Order_Start_Date_vod__c</fullName>
+        <description>The last date in which orders can begin to be submitted against this allocation.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Order Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Allocation_Id_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Allocation Id</label>
+        <referenceTo>Inventory_Order_Allocation_vod__c</referenceTo>
+        <relationshipLabel>Inventory Order Allocations</relationshipLabel>
+        <relationshipName>Inventory_Order_Allocations_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Percent_Remaining_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>% Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Product_Order_Allocation_Quantity_vod__c</fullName>
+        <description>The maximum quantity that can be ordered across all orders the allotment duration.</description>
+        <externalId>false</externalId>
+        <label>Inventory Order Allocation Quantity</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product ID for which the order allocation applies; 18 digit Salesforce.com ID</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Inventory Order Allocations</relationshipLabel>
+        <relationshipName>Product_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Region_BMS_US__c</fullName>
+        <description>VPRO - January 2013 - BMS Global Requirements &amp; Design: User Region stamp field via workflow for Sampling team. Used for reporting only.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Region Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>z_Delete_Region ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_Allocation_BMS_SHARED__c</fullName>
+        <externalId>false</externalId>
+        <label>Remaining Allocation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Force_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Force_Name_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_BMS_US__c</fullName>
+        <description>VPRO - January 2013 - BMS Global Requirements &amp; Design: User Territory stamp field via workflow for Sampling team. Used for reporting only.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Intelligent ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Business_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Business Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Function_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Function Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Area_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Sales Area Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Type_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Order_Fulfilled_Quantity_vod__c</fullName>
+        <description>This field represents the sum of the fulfilled quantity from all order lines that match this user, product, and allocation record.</description>
+        <externalId>false</externalId>
+        <label>Total Ordered Quantity</label>
+        <summarizedField>Inventory_Order_Line_vod__c.Order_Fulfilled_Quantity_vod__c</summarizedField>
+        <summaryForeignKey>Inventory_Order_Line_vod__c.Inventory_Order_Allocation_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>User_Allocation_Group_vod__c</fullName>
+        <description>Is used to match to the User Record new field for UserGroupAttribute. If the allocation field matches the user&apos;s allocation field, this allocation record applies to that user.</description>
+        <externalId>false</externalId>
+        <label>User Allocation Group</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Group A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>User_Email_BMS_US__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>User Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Source_Country_BMS_CORE__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>User_Source_Country_BMS_CORE</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>User ID for which the order allocation applies; 18 digit Salesforce.com ID.</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Inventory_Order_Allocations_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Inventory Order Allocation</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>User_vod__c</columns>
+        <columns>Allocation_Start_Date_vod__c</columns>
+        <columns>Allocation_End_Date_vod__c</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Product_Order_Allocation_Quantity_vod__c</columns>
+        <columns>External_ID_vod__c</columns>
+        <columns>Active_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Inventory_Order_Allocations_User</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Allocation_End_Date_vod__c</columns>
+        <columns>Allocation_Start_Date_vod__c</columns>
+        <columns>User_vod__c</columns>
+        <columns>Active_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>User_vod__c</field>
+            <operation>contains</operation>
+            <value>Global Sales User</value>
+        </filters>
+        <label>Inventory Order Allocations - User</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Inventory Order Allocation Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Inventory Order Allocations</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>User_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Active_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Order_End_Date_vod__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>VEEVA_DATES_MISMATCH_CHECK</fullName>
+        <active>true</active>
+        <description>This validation rule ensures that the Start Date always falls before the End Date.</description>
+        <errorConditionFormula>Allocation_Start_Date_vod__c &gt; Allocation_End_Date_vod__c || Order_Start_Date_vod__c &gt; Order_End_Date_vod__c</errorConditionFormula>
+        <errorMessage>Start date cannot be after end date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VEEVA_MINIMUM_ORDER_CHECK</fullName>
+        <active>true</active>
+        <description>This rule enforces that the minimum order is not greater than the allocation quantity.</description>
+        <errorConditionFormula>Minimum_Single_Order_Quantity_vod__c &gt; Product_Order_Allocation_Quantity_vod__c</errorConditionFormula>
+        <errorMessage>Minimum order quantity cannot be greater than the allocation quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VEEVA_ORDER_DATES_CHECK</fullName>
+        <active>true</active>
+        <description>This validation rule enforces Order Dates falling within the Allocation Dates.</description>
+        <errorConditionFormula>Order_Start_Date_vod__c &lt; Allocation_Start_Date_vod__c || Order_End_Date_vod__c &gt; Allocation_End_Date_vod__c</errorConditionFormula>
+        <errorMessage>Order Dates must fall within Allocation Dates</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VEEVA_QUANTITIES_CHECK</fullName>
+        <active>true</active>
+        <description>This rule enforces that the allocation quantity or minimum order quantity are positive numbers.</description>
+        <errorConditionFormula>Product_Order_Allocation_Quantity_vod__c &lt; 0 || Minimum_Single_Order_Quantity_vod__c &lt; 0</errorConditionFormula>
+        <errorMessage>Quantity cannot be less than 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VEEVA_QUANTITY_FULFILLED_CHECK</fullName>
+        <active>true</active>
+        <description>This validation rule ensures that the allocation quantity cannot be less than the fulfilled quantity.</description>
+        <errorConditionFormula>ISPICKVAL(Allow_Quantity_Exceptions_vod__c, &apos;Prevent_vod&apos;)  &amp;&amp; Product_Order_Allocation_Quantity_vod__c &lt; Total_Order_Fulfilled_Quantity_vod__c</errorConditionFormula>
+        <errorMessage>Allocation quantity cannot be less than the fulfilled quantity.</errorMessage>
+    </validationRules>
+</CustomObject>

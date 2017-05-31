@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Prisregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Prisregel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Prisregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Prisregler</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Prisregler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Prisregler</value>
+    </caseValues>
+    <fields>
+        <label>Kontogrupp</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Prisregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kedjeregeloperator</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>OCH</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>ELLER</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kedjeregel</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jämförelse produkt</label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel>Prissättningsregler (jämförelse produkt)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Jämförelsetyp</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Listvärde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation>Nettovärde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Produktkvantitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kontrakt</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Prisregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Krossproduktregel</label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leverans slutdatum</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leveransbeställning</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Leverans startdatum</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Max åsidosättande av rabatt</label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Åsidosättande av rabatt</label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label>Rabatt</label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Max gratis varor</label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Högsta procentandel gratis varor</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Procentandel gratis varor</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gratis varor</label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gräns begränsad</label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Listpris</label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Min. leveranstidsram</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label>Min nettopris</label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nettopris</label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beställningskampanj</label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel>Prisregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Max betalning</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Betalning</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prislista</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prisgrupp</label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt jämförelsetyp</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Listvärde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Produktkvantitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produktmax.</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktmin.ö</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Prisregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Maximal mängd</label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Minimimängd</label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Regelbeskrivning</label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Startdatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Föreslaget försäljningspris</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Förslagstext</label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Förslagströskel</label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Regel för märkesnivå</label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Leveransperiod</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Rabattregel</label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel för procentandel gratis varor</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel för gratis varor</label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Gränsregel</label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel för listpris</label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payment_Terms_Rule_vod --></label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regel för produktgruppnivå</label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Endast ett av alternativen Konto och Kontogrupp ska anges.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Endast typ av detalj är tillåten</errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Endast en av kedje- och korsproduktreglerna ska kontrolleras</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jämförelseprodukt måste vara tomt</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kedjeregel kan inte vara Leveransorder</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kedjeregel kan inte vara begränsad.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kedjeregeloperator måste vara antingen OCH eller ELLER</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produkt måste ha ett värde och kan inte vara detsamma som satspost</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maximalmängd måste vara större än Minimimängd.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jämförelse typ nettovärde stöds inte.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Rabatt får inte vara negativ.</errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Regler för leveransorderbegräsning kan inte knytas till någon särskild produkt.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Endast begränsningsregler kan flaggas som leveransorder.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Slutdatum för leverans måste vara senare än startdatum för leverans.</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Om produkttyp=’Beställning’, måste leveransens start- och slutdatum vara ifyllda</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produkt an vara ’tom’ eller av typen ’beställning’</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Leveransens startdatum måste vara samma eller senare än regelns startdatum</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produkten kan vara tom eller av typen Beställ och Objektsats är tillåtet.</errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max åsidosättande av rabatt är lägre än Rabatt</errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Startdatum efter slutdatum</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Högsta procentandel gratis varor kan inte fyllas i för vanliga regler för gratis varor</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jämförelse typ listvärde stöds inte.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max. gratis gods stöds inte.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bara produkttypen &apos;Beställning&apos; tillåts</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Max gratis varor är lägre än Gratis varor</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Objektsats är inte tillåten i krossproduktrabatt.</errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produkt kan vara tom eller av typen &apos;Beställning&apos;, &apos;Detalj&apos;, &apos;Produktgrupp&apos;, &apos;Satsobjekt&apos;.</errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Endast produkttyp Beställ och Objektsats är tillåtet</errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maximalmängd måste vara större än Minimimängd.</errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Om Min. leveranstidsram är ifylld, måste leveransens start- och slutdatum vara tomma</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Om Min. leveranstidsram är ifyllt måste Product_vod mara tom</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Nettopris och Åsidosättande av rabatt finns</errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Min nettopris är större än nettopriset</errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term Rules don&apos;t support Cross Product Rebate. --></errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Terms Rule does not support Kit Item product type. --></errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Endast produkttyper Beställ, Detalj, [tom] eller Produktgrupp är tillåtet. Och när produkten inte är tom måste kryssrutan Krossproduktregel markeras.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Giltig typ av produktjämförelse krävs</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produkten måste vara annan än Jämförelse produkt och inte tom.</errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Endast produkttyp Produktgrupp är tillåten</errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produktminimum eller produktmaximum krävs</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

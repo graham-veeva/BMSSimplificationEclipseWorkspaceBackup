@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Call2_vod__c.Territory_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Channel_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.BP_ID_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.First_Name_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Last_Name_BMS__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Product_vod__c.Parent_Product_vod__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_Sample_vod__c.Quantity_vod__c</field>
+    </columns>
+    <description>List of interactions with leave behinds and related product (1 line per leave behind)</description>
+    <filter>
+        <criteriaItems>
+            <column>Call2_Sample_vod__c.Product_Type_BMS_SHARED__c</column>
+            <operator>equals</operator>
+            <value>Promotional &amp; Educational Item</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call2_vod__c.Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Submitted_vod,Submitted</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Perf - Material distribution</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Call2_vod__c$Call2_Sample_vod__c@Call2_Sample_vod__c.Product_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Call_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

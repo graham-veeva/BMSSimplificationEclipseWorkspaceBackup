@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>קו אוסף מוצרים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>קו אוסף מוצרים</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>קווי מוצרים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>קווי מוצרים</value>
+    </caseValues>
+    <fields>
+        <label>מוצרים</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>קווי מוצרים</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collapse By Default? --></label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>מקטע הורה</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>קווי מוצרים</relationshipLabel>
+    </fields>
+    <fields>
+        <label>מוצר</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>קווי מוצרים</relationshipLabel>
+    </fields>
+    <fields>
+        <label>תווית מקטע</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>מיון</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם</nameFieldLabel>
+    <recordTypes>
+        <label><!-- IM Assortment Product --></label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IM Assortment Section --></label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>מוצר מאוסף המוצרים של OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>מקטע מאוסף המוצרים של OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- OM Assortment Lines can only be associated with OM Assortments, and IM Assortment Lines can only be associated with IM Assortments --></errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can only be checked for the IM_Assortment_Section_vod Record Type or OM_Assortment_Section_vod --></errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>לא ניתן לקשר &apos;מקטע&apos; ל&apos;מקטע הורה&apos;</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>לא ניתן לציין &apos;סעיף&apos; ו&apos;מוצר&apos; באותה רשומה.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

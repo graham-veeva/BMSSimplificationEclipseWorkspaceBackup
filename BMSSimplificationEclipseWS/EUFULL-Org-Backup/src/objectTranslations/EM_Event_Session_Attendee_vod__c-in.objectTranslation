@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Peserta Sesi Acara</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Peserta Sesi Acara</value>
+    </caseValues>
+    <fields>
+        <label>Nama Peserta</label>
+        <name>Attendee_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Peserta</label>
+        <name>Attendee_vod__c</name>
+        <relationshipLabel>Peserta Sesi Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sesi Acara</label>
+        <name>Event_Session_vod__c</name>
+        <relationshipLabel>Peserta Sesi Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Ponsel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunci Prioritas</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pembicara</label>
+        <name>Speaker_vod__c</name>
+        <relationshipLabel>Peserta Sesi Acara</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Anggota Tim</label>
+        <name>Team_Member_vod__c</name>
+        <relationshipLabel>Peserta Sesi Acara</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Peserta Sesi Acara</label>
+        <name>Event_Session_Attendee_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

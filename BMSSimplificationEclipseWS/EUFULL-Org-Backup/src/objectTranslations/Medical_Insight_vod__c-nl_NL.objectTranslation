@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Medisch inzicht</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Medische inzichten</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Medisch inzicht</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Klinisch onderzoek</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Medisch inzicht</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beschrijving</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Referentie-ID entiteit</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interactie</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Medisch inzicht</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Medisch evenement</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Medisch inzicht</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Andere bron</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vergrendeling overschrijven</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publicatie</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Medisch inzicht</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Opgeslagen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Ingediend</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Overzicht</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ontgrendelen</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam medisch inzicht</nameFieldLabel>
+    <recordTypes>
+        <label>Belangrijk medisch inzicht</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Voor het opslaan of indienen van een belangrijk medisch inzicht is een beschrijving vereist.</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Voor het opslaan of indienen van een belangrijke medisch inzicht is een overzicht vereist.</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Indienen</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

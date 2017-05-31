@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Traducción de mensaje de regla</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Traducciones de mensajes de reglas</value>
+    </caseValues>
+    <fields>
+        <help>El código ISO de idioma al cual corresponde esta traducción</help>
+        <label>Idioma</label>
+        <name>Language_vod__c</name>
+    </fields>
+    <fields>
+        <help>Traducción de mensaje de error para la regla.</help>
+        <label>Traducción de mensaje</label>
+        <name>Message_Translation_vod__c</name>
+    </fields>
+    <fields>
+        <help>Referencia al registro de definición de regla para el que es una traducción de mensaje.</help>
+        <label>Definición de regla</label>
+        <name>Rule_Definition_vod__c</name>
+        <relationshipLabel>Traducciones de mensajes de reglas</relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID externa para el registro. El formato es [NOMBRE REGLA]::[TipoRegistro.Nombre]::[Idioma_vod]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Rule Message Translation Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Traducción de mensajes de regla de SFDC</label>
+        <name>SFDC_Rule_Message_Translation_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>规则定义</value>
+    </caseValues>
+    <fields>
+        <help>表示该规则是否在 Salesforce.com 中处于活跃状态</help>
+        <label>已启用</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>如果是字段级错误消息，则显示字段名称。</help>
+        <label>显示字段</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>规则公式</help>
+        <label>条件公式错误</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>适用于规则的错误消息。</help>
+        <label>主消息</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>此验证规则所在的对象</help>
+        <label>对象</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>规则定义</relationshipLabel>
+    </fields>
+    <fields>
+        <label>订单</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>指示 Veeva 是否在规则定义中发现不支持的语法。</help>
+        <label>支持</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>记录的外部 ID。格式为 [RULE NAME]::[RecordType.Name]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC 查找筛选行</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC 规则</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

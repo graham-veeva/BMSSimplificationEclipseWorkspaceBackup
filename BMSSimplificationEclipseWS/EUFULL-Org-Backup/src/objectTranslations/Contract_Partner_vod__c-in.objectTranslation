@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mitra Kontrak</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mitra Kontrak</value>
+    </caseValues>
+    <fields>
+        <label>Penerimaan #</label>
+        <name>Acceptance_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pengidentifikasi Account</label>
+        <name>Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Mitra Kontrak</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Saya sudah membaca dan memahami</label>
+        <name>Acknowledgment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Perjanjian</label>
+        <name>Agreement_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call --></label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Mitra Kontrak</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kontrak</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Mitra Kontrak</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Jenis Perangkat</label>
+        <name>Device_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Pemuatan Data</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation><!-- Online_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Penyangkalan</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pembicara</label>
+        <name>EM_Speaker_vod__c</name>
+        <relationshipLabel>Mitra Kontrak</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tanggal Selesai</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kedaluwarsa ?</label>
+        <name>Expired_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nama Diformat</label>
+        <name>Formatted_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunci</label>
+        <name>Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Waktu Tanggal Dibuat Dari Ponsel</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Ponsel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Waktu Tanggal Diubah Terakhir Dar Ponsel</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunci Prioritas</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Waktu Tanggal Tanda Tangan</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanda Tangan</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Penandatangan</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Mulai</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Activated_vod</masterLabel>
+            <translation>Diaktifkan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Ditolak</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Disimpan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Ditandatangani</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tanda Tangan Pengguna</label>
+        <name>User_Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pengguna</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Mitra Kontrak</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Contract Partner ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Activity Agreement for Exhibits &amp; Displays (Events) --></label>
+        <name>Activity_Agreement_EBD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Services (SOW) --></label>
+        <name>Activity_Agreement_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Activity Agreement for Sponsorship --></label>
+        <name>Activity_Agreement_Sponsorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kontrak Pembicara</label>
+        <name>EM_Speaker_Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Framework Agreement --></label>
+        <name>Framework_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Daftar</label>
+        <name>Listing_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales_vod --></label>
+        <name>Sales_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsorshipLetter --></label>
+        <name>SponsorshipLetter_HCPTS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Tanggal Selesai tidak boleh sebelum Tanggal Mulai.</errorMessage>
+        <name>End_Date_After_Start_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>Aktifkan</label>
+        <name>Activate_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Mitra Kontrak Baru</label>
+        <name>New_Contract_Partner_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Buka</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Lihat Tanda Tangan</label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

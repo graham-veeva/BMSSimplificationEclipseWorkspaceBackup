@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Reason_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Time_vod__c</field>
+    </columns>
+    <columns>
+        <field>Time_Off_Territory_vod__c.Hours_vod__c</field>
+    </columns>
+    <description>Mon territoire de congé : My Time off Territory</description>
+    <format>Tabular</format>
+    <name>My Time off Territory</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Time_Off_Territory_vod__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Time_Off_Territory_vod__c.Date_vod__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Time_Off_Territory_vod__c.Date_vod__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

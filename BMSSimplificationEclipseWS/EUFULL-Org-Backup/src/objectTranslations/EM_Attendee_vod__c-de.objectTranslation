@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <fields>
+        <label>Kunde</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wert kann nicht geändert werden.</help>
+        <label>Activity Typ</label>
+        <name>Activity_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory_Board</masterLabel>
+            <translation><!-- Advisory_Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits_Booths_and_Displays</masterLabel>
+            <translation><!-- Exhibits_Booths_and_Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP_Sponsorship</masterLabel>
+            <translation><!-- HCP_Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal_Speaking</masterLabel>
+            <translation><!-- Internal_Speaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other_Consulting</masterLabel>
+            <translation><!-- Other_Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preceptorship</masterLabel>
+            <translation><!-- Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R_D_Committee</masterLabel>
+            <translation><!-- R_D_Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker_Meeting</masterLabel>
+            <translation><!-- Speaker_Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker_Training</masterLabel>
+            <translation><!-- Speaker_Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard_Rep_Presentation</masterLabel>
+            <translation><!-- Standard_Rep_Presentation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Strasse, Nr.</label>
+        <name>Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Adresszusatz</label>
+        <name>Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ariba SOW Number --></label>
+        <name>Ariba_SOW_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmername</label>
+        <name>Attendee_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmertyp</label>
+        <name>Attendee_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teilnehmerkategorie</label>
+        <name>Audience_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Alliance Employee</masterLabel>
+            <translation>Allianzpartner Mitarbeiter/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS Employee</masterLabel>
+            <translation>BMS Mitarbeiter/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation>Journalist/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation>Krankenpfleger/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation>Patient/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation>Patientenorganisation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacist</masterLabel>
+            <translation>Pharmazeut/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technician</masterLabel>
+            <translation>Techniker/-in</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Formula field evaluates to HCP, HCO or Employee value depending on Attendee data and relationship to User or Account or blank for Contact --></help>
+        <label><!-- Attendee Type --></label>
+        <name>Audience_Type_Simple_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Kann Vertrag erstellen</label>
+        <name>Can_Generate_Contract__c</name>
+    </fields>
+    <fields>
+        <label>Ort</label>
+        <name>City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Ort</label>
+        <name>City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kontakt</label>
+        <name>Contact_vod__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Vertragspartner zu dem dieser Brief gesendet werden soll.</help>
+        <label>Vertragspartner</label>
+        <lookupFilter>
+            <informationalMessage>Der Vertragspartei (Lieferant) &amp; Teilnehmerkunde müssen übereinstimmen.</informationalMessage>
+        </lookupFilter>
+        <name>Contract_Party_HCPTS__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Standardmäßig ist der Wert des Feldes das Gleiche wie Teilnehmername /HCP Name wenn Teilnehmer im System angelegt ist. Der Wert kann überschrieben werden wenn ein anderen Name gewünscht ist.</help>
+        <label>Vertragspartnername</label>
+        <name>Contract_Party_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Vertragsuntertyp</label>
+        <name>Contract_Subtype_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Attendee for Preceptorship</masterLabel>
+            <translation>Teilnehmer/-in in Preceptorship</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship to Congress</masterLabel>
+            <translation>Kongressteilnehmer/-in</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Vertragstyp</label>
+        <name>Contract_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Sponsorship</masterLabel>
+            <translation><!-- Sponsorship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Land</label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Referenz zum Länderdatensatz. Muss ausgefüllt werden, so dass die richtige Sponsoring Briefvorlage gewählt wird.</help>
+        <label>Länderreferenz</label>
+        <name>Country_ref_HCPTS__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Qualifikationsnachweis</label>
+        <name>Credentials_vod__c</name>
+        <picklistValues>
+            <masterLabel>DO</masterLabel>
+            <translation><!-- DO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RN</masterLabel>
+            <translation><!-- RN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNP</masterLabel>
+            <translation><!-- RNP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Global Customer Master ID --></label>
+        <name>Customer_Master_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- ESVisible_HCPTS --></label>
+        <name>ESVisible_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>E-Mail</label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>E-Mail Adresse</label>
+        <name>Email_vod__c</name>
+    </fields>
+    <fields>
+        <help>Ja zeigt an das DHG erforderlich. Durch die Ja-Antwort wird die Seite für die Dienstherrengenehmigung dem Vertrag hinzugefügt.</help>
+        <label>DHG erforderlich?</label>
+        <name>Employer_Consent_Required_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>DHG Status auswählen</help>
+        <label>DHG Status</label>
+        <name>Employer_Consent_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation>Nicht zutreffend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation>Erhalten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent for Signature</masterLabel>
+            <translation>Zur Unterschrift zugestellt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Endzeit</label>
+        <name>End_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Entitätenreferenz-ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity --></label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vorname</label>
+        <name>First_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Furigana --></label>
+        <name>Furigana_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sprache</label>
+        <name>Language__c</name>
+        <picklistValues>
+            <masterLabel>ar</masterLabel>
+            <translation>Arabisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bg</masterLabel>
+            <translation>Bulgarisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cs</masterLabel>
+            <translation>Kroatisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>da</masterLabel>
+            <translation>Dänisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation>Deutsch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>el</masterLabel>
+            <translation>Griechisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_GB</masterLabel>
+            <translation>Englisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation>Englisch (GB)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation>Spanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es_MX</masterLabel>
+            <translation>Spanisch (Mexiko)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fi</masterLabel>
+            <translation>Finnisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation>Französisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hr</masterLabel>
+            <translation>Hebräisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hu</masterLabel>
+            <translation>Ungarisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>in</masterLabel>
+            <translation>Indonesisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation>Italienisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iw</masterLabel>
+            <translation>Hebräisch (veraltet)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation>Japanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ko</masterLabel>
+            <translation>Koreanisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nl_NL</masterLabel>
+            <translation>Holländisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation>Norwegisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pl</masterLabel>
+            <translation>Polnisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_BR</masterLabel>
+            <translation>Portugiesisch (Brasilien)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_PT</masterLabel>
+            <translation>Portugiesisch (Portugal)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ro</masterLabel>
+            <translation>Rumänisch</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Nachname</label>
+        <name>Last_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mahlzeit-Opt-In</label>
+        <name>Meal_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mahlzeit-Präferenz</label>
+        <name>Meal_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>Vegetarian</masterLabel>
+            <translation>Vegetarisch</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anzahl Unterzeichner</label>
+        <name>Number_of_Signers_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Online-Registrierungsstatus</label>
+        <name>Online_Registration_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Dismissed_vod</masterLabel>
+            <translation>Verworfen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs_Reconciliation_vod</masterLabel>
+            <translation>Abgleich erforderlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_Account_vod</masterLabel>
+            <translation>Bestehendem Account zugeordnet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_User_vod</masterLabel>
+            <translation>Bestehendem Benutzer zugeordnet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_New_Account_vod</masterLabel>
+            <translation>Neuem Account zugeordnet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Organisation</label>
+        <name>Organization__c</name>
+    </fields>
+    <fields>
+        <label>Organisation</label>
+        <name>Organization_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Telefon</label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Telefon</label>
+        <name>Phone_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verordnende Person</label>
+        <name>Prescriber_vod__c</name>
+        <picklistValues>
+            <masterLabel>No_vod</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes_vod</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Berufliche Kennung</label>
+        <name>Professional_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld existiert im Activity Service Provider und Teilnehmer Abschnitt, genannt Rgistierungsstatus. Kann nicht vom Endnutzer geändert werden. Wert wird aus Starcite übertragen.</help>
+        <label>Registierungsstatus</label>
+        <name>Registration_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Verwandtes DB (früher abgefragt)</label>
+        <name>Related_ICF_HCPTS__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Service Typ</label>
+        <name>Service_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation>Ratgeber/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairperson / Moderator</masterLabel>
+            <translation>Vorsitzende/r / Moderator/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congress Services</masterLabel>
+            <translation>Kongressservice</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation>Fachberater/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation>Referent/-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer / Educator</masterLabel>
+            <translation>Trainer/-in / Ausbilder/-in</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Datum und Uhrzeit der Unterschrift</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Signatur</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unterzeichner</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fachbereich</label>
+        <name>Specialty_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Sponsoring Brief</label>
+        <name>Sponsorship_Letter_HCPTS__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Startzeit</label>
+        <name>Start_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bundesland/Kanton</label>
+        <name>State_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veeva Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Accepted_vod</masterLabel>
+            <translation>Angenommen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended_vod</masterLabel>
+            <translation>Teilgenommen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared_Signature_vod</masterLabel>
+            <translation>Unterschrift gelöscht</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not Attend</masterLabel>
+            <translation>Nicht teilgenommen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invited_vod</masterLabel>
+            <translation>Eingeladen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>Keine Antwort</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>Nominiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>Unterschrieben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walked In/Attended</masterLabel>
+            <translation>Spontan teilgenommen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stub Mobile Id --></label>
+        <name>Stub_Mobile_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stub-SFDC-ID</label>
+        <name>Stub_SFDC_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Steuernummer</label>
+        <name>Tax_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Typ der Steuernummer</help>
+        <label>Steuernummer Typ</label>
+        <name>Tax_Id_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>EIN</masterLabel>
+            <translation>An</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITIN</masterLabel>
+            <translation><!-- ITIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSN</masterLabel>
+            <translation><!-- SSN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Titel</label>
+        <name>Title_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Titel</label>
+        <name>Title_vod__c</name>
+    </fields>
+    <fields>
+        <label>Benutzer</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Schiffsnummer</label>
+        <name>Vessel_Number_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc --></help>
+        <label><!-- View Contracting Buttons --></label>
+        <name>View_Online_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Spontane Teilnehmer Referenz-ID</label>
+        <name>Walk_In_Reference_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Spontane Teilnehmer Status</label>
+        <name>Walk_In_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Dismissed_vod</masterLabel>
+            <translation>Verworfen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs_Reconciliation_vod</masterLabel>
+            <translation>Abstimmung erforderlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_Account_vod</masterLabel>
+            <translation>Abgestimmt auf Bestehenden Account</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_User_vod</masterLabel>
+            <translation>Abgestimmt auf Bestehenden Benutzer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_New_Account_vod</masterLabel>
+            <translation>Abgestimmt auf Neuen Account</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>PLZ</label>
+        <name>Zip_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>PLZ</label>
+        <name>Zip_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Teilnehmer ID</nameFieldLabel>
+    <recordTypes>
+        <label>Teilnehmer</label>
+        <name>Attendee_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simple Attendee --></label>
+        <name>Simple_Attendee_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsoredAccount --></label>
+        <name>SponsoredAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsoredContact --></label>
+        <name>SponsoredContact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsoredUser --></label>
+        <name>SponsoredUser</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Veranstaltungs-Teammitglied</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage>Es können maximal 10 Vertragsunterzeichner hinterlegt werden.</errorMessage>
+        <name>Cannot_have_more_than_10_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es muss mindestens ein Vertragsunterzeichner (EchoSign) angelegt werden, um den vertrag zu generieren.</errorMessage>
+        <name>ContractGen_Need_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die ausgewählte Vertragsunterart entspricht nicht dem Activity Typen.</errorMessage>
+        <name>Contract_Subtype_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vertrag ist noch nicht aktiv.</errorMessage>
+        <name>SponshorshipLetter_Status_Activated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die Vertragsunterart muss ausgewählt werden.</errorMessage>
+        <name>SponsorshipLetterSubtype_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die Veranstaltung muss in dem Status &quot;Planung&quot; sein.</errorMessage>
+        <name>SponsorshipLetter_Event_In_Planning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ein entsprechender Sponsorship Brief muss hinterlegt werden.</errorMessage>
+        <name>SponsorshipLetter_Need_Related</name>
+    </validationRules>
+    <webLinks>
+        <label>Download Sponsoring Brief</label>
+        <name>Generate_Sponsorship_Letter_Template</name>
+    </webLinks>
+    <webLinks>
+        <label>Sponsoring Brief senden</label>
+        <name>Send_Sponsorship_Letter_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label>Sponsoring Brief erstellen</label>
+        <name>Setup_Sponsorship_Letter_HCPTS</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Limite d&apos;Echantillon</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Limites d&apos;Echantillons</value>
+    </caseValues>
+    <fields>
+        <help>Utiliser uniquement le type d&apos;enregistrement Personne</help>
+        <label>Types de compte</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label>Compte</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Limites d&apos;échantillons</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Désactiver la création de transaction</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Montant décaissé</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantité déboursée</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de fin</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Appliquer la limite</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID du groupe</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Montant limite</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limite par visite</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limite de quantité</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produit</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Limites d&apos;échantillons</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Montant restant</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quantité restante</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Période continue</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type de limite d&apos;échantillons</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Compte/Utilisateur/Visite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Compte/Visite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Utilisateur/Visite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Compte/Groupe d&apos;Echantillons/Visite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Compte-Utilisateur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Compte</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Utilisateur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Compte/Groupe d&apos;Echantillons</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Période fractionnée</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12 mois</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Année</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Date de début</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groupe de modèles</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Modèle utilisé</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Clé unique du modèle</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utilisateur</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Limites d&apos;échantillons</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Impossible de sauvegarder l&apos;enregistrement. Le montant limite ne peut pas être inférieur à 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de sauvegarder l&apos;enregistrement. La limite de quantité doit être supérieure ou égale à 0.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un modèle de limite d&apos;échantillons ne peut pas être créé à la fois pour la quantité et la valeur dans le même modèle.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas indiquer un utilisateur lors de la création de limites pour un groupe de produits échantillons.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de sauvegarder l&apos;enregistrement. Les champs suivants sont obligatoires : Date de fin</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de sauvegarder l&apos;enregistrement. Les champs suivants sont obligatoires : Produit</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de sauvegarder l&apos;enregistrement. Les champs suivants sont obligatoires : Date de début</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de sauvegarder l&apos;enregistrement. Les champs suivants sont obligatoires : Compte ou Utilisateur</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Si Type de compte est utilisé, Produit, Limite de quantité, et Dates de début/fin sont obligatoires.</errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de définir à la fois le compte et le type de compte OU l&apos;utilisateur et le type de compte.</errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Si le champ Type de compte est vide, le champ Période continue doit l&apos;être aussi.</errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La date de fin doit être postérieure à la date de début.</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Si le paramètre Période fractionnée est activé, la période continue doit avoir la valeur 24.</errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossible de définir une période fractionnée si le type de compte n&apos;est pas indiqué.</errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cài đặt tình trạng thuốc mẫu</value>
+    </caseValues>
+    <fields>
+        <label>Yêu Cầu CDS</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID bên ngoài</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cài đặt</label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation>Chỉ mẫu BRC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation>Chỉ mẫu tay</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation>Không có mẫu</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Không thể xác định Yêu Cầu CDS và Phương Pháp Giao Hàng trong cùng một bản ghi.</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Baris Bermacam-Macam</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Baris Bermacam-Macam</value>
+    </caseValues>
+    <fields>
+        <label>Bermacam-Macam</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Baris Bermacam-Macam</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ciutkan Secara Default?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bagian Utama</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Baris Bermacam-Macam</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produk</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Baris Bermacam-Macam</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Label Bagian</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pemilahan</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Produk Bermacam-Macam IM</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bagian Bermacam-Macam IM</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Produk Bermacam-Macam OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bagian Bermacam-Macam OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Baris Bermacam-Macam OM hanya dapat dihubungkan dengan Bermacam-Macam OM, dan Baris Bermacam-Macam IM hanya dapat dihubungkan dengan Bermacam-Macam IM</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Hanya bisa diperiksa untuk Jenis Catatan IM_Assortment_Section_vod atau OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sebuah Bagian tidak dapat ditautkan ke Bagian Utama</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bagian dan Produk tidak boleh ditentukan pada catatan yang sama.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

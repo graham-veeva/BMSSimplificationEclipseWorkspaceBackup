@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Mall för datamappning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Mall för datamappning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Mall för datamappning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Mallar för datamappning</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Mallar för datamappning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Mallar för datamappning</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Containrar</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kolumnetikett</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>Om kolumnrubrikerna ska ingå som den första raden i den här mallen markerar du den här kryssrutan.</help>
+        <label>Kolumnetiketter inkluderas</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Innehåller mål?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Decimaler</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>För att använda rapporten för analys av marknadsförsäljning ska en och endast en försäljningsdatafil på månadsbasis tilldelas. Försäljningsdata måste även innehålla receptförskrivare-ID, marknads-ID, produktgrupp-ID</help>
+        <label>Aktivera marknadsförsäljningsrapport?</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Aktivera för offline</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Etikett för försäkr.täckt prod. för rep.</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Första kolumnetikett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ingen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Andra kolumnetikett</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Inkrementell inläsningstyp</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Fullständig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Inkrementell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Partiell</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Inkrementell</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Har marknader mappats?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Åsidosätt kontotröskel</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Har betalare/plan mappats?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skala</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Varje månad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Varje vecka</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Andra kolumnetikett</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ingår områdesnamn?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Ange ett giltigt kombinationsrutevärde.  Om du läser in data ska du kontrollera att du använder värdet i huvudkombinationsrutan, inte den översatta etiketten</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Rapporten för marknadsförsäljningsanalysen kan endast väljas när vald skala är månadsvis och kryssrutan Betalare/Plan mappad inte har valts</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kontrollera att kolumnetiketten inte innehåller något av följande tecken: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Antalet decimaler måste vara 0–4.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ange ett giltigt kombinationsrutevärde. Om du läser in data ska du kontrollera att du använder värdet i huvudkombinationsrutan, inte den översatta etiketten</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

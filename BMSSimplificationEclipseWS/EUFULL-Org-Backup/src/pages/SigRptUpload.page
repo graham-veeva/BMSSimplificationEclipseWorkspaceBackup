@@ -1,0 +1,68 @@
+<apex:page controller="sigRptHandler">
+
+<apex:outputPanel rendered="{!mode=='edit'}">
+  <apex:sectionHeader title="Upload Signature Report Document"/>
+ 
+  <apex:form enctype="multipart/form-data">
+    <apex:pageMessages />
+    <apex:pageBlock title="{!rptName}">
+ 
+      <apex:pageBlockButtons >
+        <apex:commandButton action="{!Savedoc}" value="Save"/>
+        <apex:commandButton action="{!cancel}" value="Cancel"/>
+      </apex:pageBlockButtons>
+ 
+      <apex:pageBlockSection showHeader="false" columns="2" id="block1">
+ 
+        <apex:pageBlockSectionItem >
+          <apex:outputLabel value="File" for="file"/>
+          <apex:inputFile value="{!mySigDoc.body}" id="file"/>
+        </apex:pageBlockSectionItem>
+ 
+      </apex:pageBlockSection>
+ 
+    </apex:pageBlock>
+  </apex:form>
+</apex:outputPanel>
+
+
+
+<apex:outputPanel rendered="{!mode=='view'}">
+
+  <apex:form >
+
+<apex:pageBlock title="Signature Report Documents">
+
+        <apex:pageBlockTable value="{!sigRpts}" var="item">
+
+            <apex:column >
+            <apex:outputPanel rendered="{!not(contains(item.Name,'20'))}">
+                <apex:commandLink action="{!doUpload}" value="Replace Document">
+                <apex:param name="a" value="{!item.Name}" assignTo="{!rptName}"/>
+                </apex:commandLink>
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!contains(item.Name,'20')}">
+                &nbsp;
+            </apex:outputPanel>
+            </apex:column>
+
+            <apex:column > 
+                <apex:outputLink value="/servlet/servlet.FileDownload?file={!item.Id}">View File</apex:outputLink>
+            </apex:column>
+
+            <apex:column value="{!item.Name}"/> 
+            <apex:column value="{!item.Description}"/> 
+            <apex:column value="{!item.BodyLength}"/> 
+            <apex:column value="{!item.CreatedDate}"/> 
+
+        </apex:pageBlockTable> 
+
+    </apex:pageBlock> 
+  </apex:form>
+
+
+
+</apex:outputPanel>
+
+
+</apex:page>

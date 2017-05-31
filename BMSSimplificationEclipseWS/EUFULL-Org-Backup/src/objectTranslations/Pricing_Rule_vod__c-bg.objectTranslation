@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Правило за цената</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Правила за цената</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Оператор на верижно правило</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>И</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>ИЛИ</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Верижно правило</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comparison_Product --></label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules (Comparison_Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comparison Type --></label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation><!-- List Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation><!-- Net Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation><!-- Product Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Договор</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Правила за цената</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cross_Product_Rule --></label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Крайна дата за доставка</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Поръчка за доставка</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Начална дата за доставка</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Override Max --></label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Override --></label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Goods Max --></label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Макс. процент на безплатните стоки</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Процент на безплатните стоки</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Goods --></label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Bound --></label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Минимална времева рамка за доставка</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price Min --></label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price --></label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Campaign --></label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Max --></label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment --></label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Книга на цените</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Group --></label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип за сравнение на продукти</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Стойност от списък</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Продуктово количество</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Макс. брой продукти</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Мин. брой продукти</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maximum Quantity --></label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Quantity --></label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Description --></label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Предложена цена на дребно</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestion Text --></label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestion Threshold --></label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Brand_Level_Rule_vod --></label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Период на доставка</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Discount_Rule_vod --></label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Правило за процента на безплатните стоки</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Free_Goods_Rule_vod --></label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Limit_Rule_vod --></label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- List_Price_Rule_vod --></label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payment_Terms_Rule_vod --></label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product_Group_Level_Rule_vod --></label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Трябва да бъде посочен само един клиент или група клиенти.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only product type of &apos;Detail&apos; is allowed --></errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Само едно верижно или междупродуктово правило трябва да бъде отметнато</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Продуктът за сравнение трябва да бъде празен</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Верижното правило не може да бъде поръчка за доставка</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Верижното правило не може да бъде лимитна граница</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Операторът на верижното правило трябва да бъде AND (И) или OR (ИЛИ)</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Продуктът трябва да има стойност и не може да се равнява на артикула от комплекта</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Стойността в &quot;Максимално количество&quot; трябва да е по-голяма от тази в &quot;Минимално количество&quot;.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Comparison Type &apos;Net Value&apos; is not supported. --></errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount may not be negative. --></errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Правилата за лимита на поръчката за доставка не могат да бъдат свързани с конкретен продукт.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Само Правилата за лимита могат да бъдат маркирани като поръчка за доставка</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Крайната дата за доставка трябва да бъде след началната дата за доставка</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ако типът на продукта = ‘Поръчка’, крайната и началната дата за доставка трябва да бъдат попълнени</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Продуктът може да бъде &quot;празен&quot; или от тип &quot;поръчка&quot;</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Началната дата за доставка трябва да съвпада или да бъде след началната дата на правилото</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product can be empty or of type &apos;Order&apos; and &apos;Kit Item&apos;. --></errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount Override Max is lower than Discount --></errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Макс. процент на безплатните стоки не може да се попълни за правилата за обикновени безплатни стоки</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Типът за сравнение &quot;Стойност от списък&quot; не се поддържа.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Макс. безплатни стоки&quot; не се поддържа.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Позволява се само продукт от тип &quot;Друг&quot; или &quot;Артикул от комплект&quot;.</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Стойността в &quot;Макс. безплатни стоки&quot; е по-малка от тази в &quot;Безплатни стоки&quot;</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Kit Item is not allowed in Cross Product Rebate. --></errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product can be empty or of type &apos;Order&apos;,&apos;Detail&apos;,&apos;Product_Group&apos;,&apos;Kit Item&apos;. --></errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only product type of &apos;Order&apos; and &apos;Kit Item&apos; is allowed --></errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Maximum Quantity must be greater than the Minimum Quantity. --></errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ако полето &quot;Минимална времева рамка за доставка&quot; е попълнено, то началната и крайната дата за доставка, трябва да са празни</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ако полето &quot;Минимална времева рамка за доставка&quot; е попълнено, Product_vod трябва да е празен</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Net Price and Discount Override all present --></errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Net Price Min is greater than net price --></errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term Rules don&apos;t support Cross Product Rebate. --></errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Terms Rule does not support Kit Item product type. --></errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Позволени са само продукти от тип &quot;Поръчка&quot;, &quot;по-подробно&quot;, [празно] или &quot;Група продукти&quot;. А когато полето за продукта не е празно, трябва да бъде отметната кутийката &quot;Междупродуктово правило&quot;.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Изисква се валиден тип на продукта за сравнение</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product must be different than Comparison Product and not empty. --></errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only product type of &apos;Product Group&apos; is allowed --></errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Изисква се минималното и максималното количество на продукта</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

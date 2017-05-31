@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>トピック資料</value>
+    </caseValues>
+    <fields>
+        <label>CLM プレゼンテーション</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>トピック資料</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>メールテンプレート</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>トピック資料</relationshipLabel>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>資料タイプ</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>資料</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>資料を使用するトピック</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>トピック</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>トピック資料 (トピック)</relationshipLabel>
+    </fields>
+    <nameFieldLabel>名前</nameFieldLabel>
+    <recordTypes>
+        <label>トピック資料</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>1つのルールにメールテンプレートとCLMプレゼンテーションの両方を設定することはできません。別々にルールを作成してください。</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>1つのトピック資料に資料とCLMプレゼンテーションの両方を設定することはできません。別々にルールを作成してください。</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>1 つのトピック資料に、資料とメールテンプレートの両方を入力することはできません。これら 2 つの項目には別々のルールを作成してください。</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

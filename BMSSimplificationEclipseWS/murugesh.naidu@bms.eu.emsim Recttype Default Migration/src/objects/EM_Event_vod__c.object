@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Audio_Visual_Support_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Planning Support for Logistics planning</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select if comprehensive support (Venue, Meals, Travel, Attendee Management, Onsite Coordination) is required from Logistics Provider.</inlineHelpText>
+        <label>Planning Support</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Food_and_Beverage_HCPTS__c</fullName>
+        <description>Text Area for Starcite Interface.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify food and beverages requests e.g. Breakfast, lunch, dinner, menu options, setup etc.</inlineHelpText>
+        <label>Food and Beverage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Ground_Transportation_HCPTS__c</fullName>
+        <description>Text Area for Starcite Interface.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify the transfers needed including when, where and how many people are to be transferred.</inlineHelpText>
+        <label>Ground Transportation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Rooms_HCPTS__c</fullName>
+        <description>Text Area for Starcite Interface.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify the size and capacity of the room, seating arrangements, audio visual equipment, office supplies etc.</inlineHelpText>
+        <label>Meeting Rooms</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Starcite_Request_Status__c</fullName>
+        <description>Status Picklist for Starcite Interface.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select “Request Estimates” if the meeting is to be registered in Logistic Provider (Logistic) prior to approval to get initial estimates from the logistics provider.</inlineHelpText>
+        <label>Logistics Request Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Request Estimates</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Registration Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Registration Complete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting Registration Updated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Travel_Accomodations_HCPTS__c</fullName>
+        <description>Text Area for Starcite Interface.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify the air and rail requirements as well as the accommodation for the participants if available.</inlineHelpText>
+        <label>Travel and Accommodations</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Venue_Support_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Select if sourcing (venue) support is required from Logistics provider</inlineHelpText>
+        <label>Sourcing Support</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Activity_HCPTS</fullName>
+        <active>true</active>
+        <description>Activity type to support Simplification</description>
+        <label>Simple Activity</label>
+        <picklistValues>
+            <picklist>Starcite_Request_Status__c</picklist>
+            <values>
+                <fullName>Request Estimates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

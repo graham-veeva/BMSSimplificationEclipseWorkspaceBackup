@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Medicinsk analysefunktions</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Medicinsk analysefunktion</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Medicinsk analysefunktion</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Medicinsk analysefunktioners</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Medicinsk analysefunktioner</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Medicinsk analysefunktioner</value>
+    </caseValues>
+    <fields>
+        <label>Kunde</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Medicinske analysefunktioner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Klinisk forsøg</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Medicinske analysefunktioner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dato</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivelse</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Entitetsreference-id</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interaktion</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Medicinske analysefunktioner</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Medicinsk begivenhed</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Medicinske analysefunktioner</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anden kilde</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tilsidesæt spærre</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publikation</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Medicinske analysefunktioner</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Gemt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Indsendt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Opsummering</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lås op</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Medicinsk analysefunktionsnavns</nameFieldLabel>
+    <recordTypes>
+        <label>Vigtig medicinsk viden</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Der kræves en beskrivelse for at gemme eller indsende en vigtig medicinsk viden</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Der kræves en opsummering for at gemme eller indsende en vigtig medicinsk viden</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Send</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

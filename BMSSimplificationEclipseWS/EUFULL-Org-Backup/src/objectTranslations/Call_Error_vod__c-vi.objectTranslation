@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lỗi tiếp xúc bán hàng</value>
+    </caseValues>
+    <fields>
+        <label>Tài khoản</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datetime tiếp xúc bán hàng</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại tiếp xúc bán hàng:</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nguyên nhân</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>Truy cập tài khoản</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>Tiếp xúc bán hàng bị khóa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>Truy cập đối tượng</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Người dùng</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Lỗi tiếp xúc bán hàng</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Văn bản XML</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <webLinks>
+        <label>Xóa</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Giải quyết</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

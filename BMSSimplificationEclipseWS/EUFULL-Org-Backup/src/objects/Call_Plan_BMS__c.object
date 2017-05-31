@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom object to store interaction plan  information for sales reps.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_BMS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to store the account associated with a given call plan.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Call Plans</relationshipLabel>
+        <relationshipName>Call_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Group_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_BMS__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID is used for data loading only.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>HQ_Original_Details_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>HQ Original Details</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Nurses_Planned_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Nurses Planned Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Nurses_Remaining_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Nurses Remaining Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outlet_BMS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Outlet</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Call Plans (Outlet)</relationshipLabel>
+        <relationshipName>Call_Plan_Outlet</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Lookup_BMS_CORE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Owner Lookup</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Call_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Product_Rating__c</fullName>
+        <description>Parent Product Rating</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Parent Product Rating</inlineHelpText>
+        <label>Parent Account Product Ratings</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Patient_Navigator_Planned_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient Navigator Planned Primary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Navigator_Remaining_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient Navigator Remaining Primary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pharmacists_Planned_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Pharmacists Planned Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pharmacists_Remaining_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Pharmacists Remaining Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Primary_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of planned primary interactions a sales rep has for their call plan.</description>
+        <externalId>false</externalId>
+        <label>Planned Primary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Secondary_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of planned secondary interactions a sales rep has for their call plan..</description>
+        <externalId>false</externalId>
+        <label>Planned Secondary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Tertiary_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of planned tertiary interactions a sales rep has for their call plan.</description>
+        <externalId>false</externalId>
+        <label>Planned Tertiary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_Administration_Planned_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Practice Administration Planned Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Practice_Administration_Remaining_Prim__c</fullName>
+        <externalId>false</externalId>
+        <label>Practice Administration Remaining Primar</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_BMS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipName>Call_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rating_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reimbursement_Manager_Planned_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Reimbursement Manager Planned Primary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reimbursement_Manager_Remaining_Primary__c</fullName>
+        <externalId>false</externalId>
+        <label>Reimbursement Manager Remaining Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_Primary_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of remaining primary interactions a sales rep has for their call plan.</description>
+        <externalId>false</externalId>
+        <label>Remaining Primary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_Secondary_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of remaining secondary interactions a sales rep has for their call plan.</description>
+        <externalId>false</externalId>
+        <label>Remaining Secondary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remaining_Tertiary_BMS__c</fullName>
+        <description>VPRO - November 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the number of remaining tertiary interactions a sales rep has for their call plan.</description>
+        <externalId>false</externalId>
+        <label>Remaining Tertiary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stakeholder_BMS_US__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Stakeholder</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stakeholder_Display_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Stakeholder</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Territory_BMS__c</fullName>
+        <description>VPRO - December 2011 - BMS Oncology Requirements &amp; Design: Custom field to capture the territory associated with a given call plan.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Total_Details_Completed_BMS__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Planned_Details_BMS__c - Total_Remaining_Details_BMS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Details Completed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Planned_Details_BMS__c</fullName>
+        <externalId>false</externalId>
+        <formula>Planned_Primary_BMS__c +  Planned_Secondary_BMS__c  +  Planned_Tertiary_BMS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Planned Details</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Primary_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Primary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Remaining_Details_BMS__c</fullName>
+        <description>VPRO - December 2011 - BMS Oncology Requirements &amp; Design: Custom formula field to calculate the total number of details remaining for a given call plan.</description>
+        <externalId>false</externalId>
+        <formula>Remaining_Primary_BMS__c + Remaining_Secondary_BMS__c + Remaining_Tertiary_BMS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Remaining Details</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Secondary_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Secondary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Tertiary_BMS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Tertiary</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_BMS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>VPRO - December 2011 - BMS Oncology Requirements &amp; Design: Custom field to store the user associated with a given call plan.</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Call_Plans1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User_Source_Country_BMS_CORE__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Owner_Lookup_BMS_CORE__r.User_Source_Country_BMS_CORE__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Source Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Call Plan</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account_BMS__c</columns>
+        <columns>Product_BMS__c</columns>
+        <columns>Territory_BMS__c</columns>
+        <columns>Rating_BMS__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Planned_Primary_BMS__c</columns>
+        <columns>Planned_Secondary_BMS__c</columns>
+        <columns>Planned_Tertiary_BMS__c</columns>
+        <columns>Remaining_Primary_BMS__c</columns>
+        <columns>Remaining_Secondary_BMS__c</columns>
+        <columns>Remaining_Tertiary_BMS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>CP - {0000}</displayFormat>
+        <label>Call Plan Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Call Plans</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, ROW_GRAND_SUMMARY, COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Medical_Inquiry_vod__c$Topic_Source_Referenced_BMS__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% of Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Medical_Inquiry_vod__c$Name</field>
+    </columns>
+    <description>Report to display medical inquiries grouped by Topic &amp; Source Referenced.</description>
+    <filter>
+        <criteriaItems>
+            <column>Medical_Inquiry_vod__c$RecordType</column>
+            <operator>equals</operator>
+            <value>Medical_Inquiry_vod__c.EMEA_Unsolicited_Off_Label_Question</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Medical_Inquiry_vod__c$Topic_Source_Referenced_BMS__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Medical_Inquiry_vod__c$Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Submitted_vod</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Medical_Inquiry_vod__c$CreatedDate</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Medical_Inquiry_vod__c$Topic_Source_Referenced_BMS__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>BMS - MSL - USOL Questions by Topic</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Medical_Inquiries__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Medical_Inquiry_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

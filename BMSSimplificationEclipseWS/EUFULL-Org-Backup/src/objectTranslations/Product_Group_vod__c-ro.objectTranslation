@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Grup al produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Grup al produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Grupuri ale produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Grupuri ale produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Grupului produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Grupului produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Grupurilor produsului</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Grupurilor produsului</value>
+    </caseValues>
+    <fields>
+        <label>Descriere</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de sfârşit</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Catalog al produsului</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Grupuri ale produsului (Catalog produse)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produs</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Grupuri ale produsului</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cantitate</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de început</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Nu puteţi crea un link între un Grup de detalii care nu este un produs al companiei şi un Produs de detaliu sau Subiect care este un produs al companiei.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai produse de tipul „Subiect al detaliului” sau „Detaliu” pot fi asociate cu un Grup de produse de detaliu</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipul de „Grup de produse” sau „Grup de mostre” sau „Grup de detalii” este permis.</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai tipul de „Comandă” este permis</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Numai produse de tipul „Mostră” sau „BRC” pot fi asociate cu un Grup de produse de mostră</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Data de start şi Data de finalizare trebuie populate dacă este definită o Cantitate</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Datele de început şi sfârşit valide sunt necesare.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

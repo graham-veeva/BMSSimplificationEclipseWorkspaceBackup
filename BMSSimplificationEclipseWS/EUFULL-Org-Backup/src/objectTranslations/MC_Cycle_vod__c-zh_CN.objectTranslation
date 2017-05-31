@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MC 周期</value>
+    </caseValues>
+    <fields>
+        <label>激活编辑的目标</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>如为 true，而且 MC_Target_vod 对象上存在“pull-through”字段，则当 MCCP 整合运行时，其将填充“pull-through”字段。不建议经常对此进行设置，只在需要填充“pull-through”值时进行设置。</help>
+        <label>计算 Pull Through</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>描述</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>结束日期</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>扩展过度阈值</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>开始日期</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>状态</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>已完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>进行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>已计划</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>未达到阈值</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>拜访周期定义</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>开始日期不能大于等于结束日期。</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ταξινόμηση </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ταξινομήσεις </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ταξινόμηση </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ταξινομήσεις </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ταξινόμηση </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ταξινομήσεις </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Ταξινόμηση </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Ταξινομήσεις </value>
+    </caseValues>
+    <fields>
+        <label>Ομάδα λογαριασμού</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τύπος καταγραφής λογαριασμού</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Φαρμακείο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Χονδρέμπορος</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Όλα τα υπόλοιπα</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ομάδα ταξινόμησης</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία τέλους</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εξωτερικό αναγνωριστικό</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τύπος εγγραφής παρακολούθησης απογραφής</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Παρακολούθηση απογραφής</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Τύπος καταγραφής παραγγελίας</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Απευθείας</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Μεταφορά</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Όριο προϊόντος</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <recordTypes>
+        <label>IM ταξινόμηση</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM ταξινόμησης</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Η ημερομηνία έναρξης είναι μετά την ημερομηνία λήξης</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ένα όριο ταξινόμησης προϊόντος δεν μπορεί να έχει εμφανίσει το τμήμα Όλα τα άλλα</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Προεπισκόπηση</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

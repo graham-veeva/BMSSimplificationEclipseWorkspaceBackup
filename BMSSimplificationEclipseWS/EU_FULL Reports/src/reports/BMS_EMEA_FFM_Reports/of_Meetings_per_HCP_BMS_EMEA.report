@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Product_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Status_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.Start_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>Medical_Event_vod__c.End_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Specialty_BMS_EMEA__c</field>
+    </columns>
+    <description>Provides a list of Meetings where the HCP was registered as an Attendee</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Event_Attendee_vod__c.Status_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name># of Meetings per HCP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Medical_Event_vod__c$Event_Attendee_vod__c@Event_Attendee_vod__c.Account_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Medical_Event_vod__c.Start_Date_vod__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

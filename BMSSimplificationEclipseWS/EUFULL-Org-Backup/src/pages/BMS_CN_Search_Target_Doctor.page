@@ -1,0 +1,48 @@
+<apex:page standardController="Retargeting_BMS_CN__c" extensions="BMS_CN_RetargetingExt" standardStylesheets="true">
+     <apex:form >
+        <apex:pageBlock mode="edit"  id="block">
+            <apex:pageMessages />
+            <apex:pageBlockSection title="检索条件" columns="1" >
+                  <apex:pageBlockSectionItem >
+                          <apex:outputLabel value="医生"></apex:outputLabel>
+                          <apex:panelGroup >
+                                <apex:inputField value="{! Retargeting_BMS_CN__c.Doctor_Name_BMS_CN__c}" required="true"/>
+                          </apex:panelGroup>
+                  </apex:pageBlockSectionItem>
+                  <apex:pageBlockSectionItem >
+                          <apex:outputLabel >科室</apex:outputLabel>
+                          <apex:panelGroup >
+                                <apex:inputField value="{! Retargeting_BMS_CN__c.Department_BMS_CN__c}" required="true" />
+                          </apex:panelGroup>
+                  </apex:pageBlockSectionItem>
+                  <apex:pageBlockSectionItem >
+                          <apex:outputLabel >医院</apex:outputLabel>
+                          <apex:panelGroup >
+                                <apex:inputField value="{! Retargeting_BMS_CN__c.Retargeting_Hospital_BMS_CN__c}" required="true" />
+                                <apex:commandButton value="查找" action="{! search}"  rerender="block" status="status" />
+                                <apex:commandButton value="新建" action="{! create}"  rerender="block" status="status" rendered="{! actList.size == 0 }" />
+                          </apex:panelGroup>
+                  </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:actionStatus id="status" startText="查找中..."/>
+            <apex:pageBlockSection title="检索结果" id="resultsBlock" columns="1" rendered="{!  NOT(ISNULL(actList)) && NOT(actList.size == 0) }">
+                    <apex:pageBlockTable value="{! actList }" var="act" >
+                            <apex:column headerValue="操作">
+                                <apex:commandButton value="添加" action="{!add}" reRender="block">
+                                        <apex:param name="MasterID" value="{! act.Id}"/>
+                                </apex:commandButton>
+                            </apex:column>
+                            <apex:column value="{! act.BP_ID_BMS_CORE__c}" headerValue="医生代码"/>
+                            <apex:column value="{! act.Lastname}" headerValue="医生"/>
+                            <apex:column value="{! act.Department_BMS_CN__c}" headerValue="科室"/>
+                            <apex:column value="{! act.Primary_Parent_vod__r.BP_ID_BMS_CORE__c}" headerValue="医院代码"/>
+                            <apex:column value="{! act.Primary_Parent_vod__r.name}" headerValue="医院"/>
+                            <apex:column value="{! act.Gender_vod__c}" headerValue="性别"/>
+                            <apex:column value="{! act.Administrative_Title_BMS_CN__c}" headerValue="职务"/>
+                            <apex:column value="{! act.Technical_Title_BMS_CN__c}" headerValue="职称"/>
+
+                    </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

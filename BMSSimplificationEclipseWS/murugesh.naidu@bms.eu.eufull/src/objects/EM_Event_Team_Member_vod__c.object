@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <description>The event for which the person is a team member.</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Event Team Members</relationshipLabel>
+        <relationshipName>EM_Event_Team_Member_vod</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Role_vod__c</fullName>
+        <description>Role of an event team member. Team members will automatically have read/write access to an event. Roles can be used in the Event Configuration Page Layout Engine. Custom values can be added to this fied.</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Organizer_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vendor_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approver_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cohost_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service Coordinator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certifier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Editor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Read Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Team_Member_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>System users who are part of an event team.</description>
+        <externalId>false</externalId>
+        <label>Team Member</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Event_Team_Members_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Activity_Team_Member_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>Team Member for the Simple EM Event</description>
+        <label>Simple Event Team Member</label>
+        <picklistValues>
+            <picklist>Role_vod__c</picklist>
+            <values>
+                <fullName>Editor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Coordinator</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

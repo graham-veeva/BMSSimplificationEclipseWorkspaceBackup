@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regel evenement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regels evenement</value>
+    </caseValues>
+    <fields>
+        <label>Velden accountdeelnemers</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>CLM-presentatie</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Evenementregels</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Velden contact deelnemer</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Land overschrijven</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Regels evenement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>E-mailsjabloon</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Regels evenement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Configuratie evenement</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Regels evenement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type filter</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Verplicht</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Optioneel (standaard uit)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Optioneel (standaard aan)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type materiaal</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Materiaal</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Evenementtypes die materiaal gebruiken</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Velden online-registratie</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kwalificatie</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Regels evenement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Buiten mijn territorium zoeken</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Velden  spreker</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Velden gebruiker deelnemer</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inloopvelden</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam</nameFieldLabel>
+    <recordTypes>
+        <label>Velden deelnemer</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Materiaal</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Velden online-registratie</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Velden speaker</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Kwalificatie spreker</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Inloopvelden</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Een enkele regel kan niet zowel e-mailsjabloon als CLM-presentatie ingevuld hebben. Maak afzonderlijke regels voor deze twee items.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Een enkele regel kan niet zowel materiaal als CLM-presentatie ingevuld hebben. Maak afzonderlijke regels voor deze twee items.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Een enkele regel kan niet zowel Materiaal als E-mailsjabloon ingevuld hebben. Maak afzonderlijke regels voor deze twee items.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

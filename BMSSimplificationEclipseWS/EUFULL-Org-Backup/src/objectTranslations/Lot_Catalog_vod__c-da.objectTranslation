@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Partikatalog</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Partikatalog</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Partikatalog</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Partikatalog</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Partikatalog</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Partikatalog</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Udløbsdato</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Post-id</label>
+        <name>Item_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Eksternt id for partikatalog</label>
+        <name>Lot_Catalog_External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Partikatalog</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Prøvebeskrivelse</label>
+        <name>Sample_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prøve</label>
+        <name>Sample_vod__c</name>
+        <picklistValues>
+            <masterLabel>ELIQUIS 5MG BMS 1283086</masterLabel>
+            <translation><!-- ELIQUIS 5MG BMS 1283086 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 20mg</masterLabel>
+            <translation><!-- ERBITUX 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 40mg</masterLabel>
+            <translation><!-- ERBITUX 40mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 10mg</masterLabel>
+            <translation><!-- SPRYCEL 10mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 20mg</masterLabel>
+            <translation><!-- SPRYCEL 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 40mg</masterLabel>
+            <translation><!-- SPRYCEL 40mg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tilbagehold parti</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label>Måleenhed</label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Kasse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Æsker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation><!-- Unit --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Partinr. bør være No_Lot_vod for virtuelle partier.</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produktnavnfeltet er påkrævet for at oprette en Partikatalogoptegnelse for et ikke-prøveprodukt uden Partinr.</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Undertryk parti skal markeres, når partinummernavnet &apos;No_Lot_vod&apos; bruges.</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Enten er Prøvefeltet eller Produkt påkrævet for at oprette en Partikatalogoptegnelse for et Prøveprodukt med Partinr.</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Opret prøvepartinumre</label>
+        <name>Create_Sample_Lots_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

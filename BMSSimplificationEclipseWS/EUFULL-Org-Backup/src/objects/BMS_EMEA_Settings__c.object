@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>VPRO Nov 2013: custom settings used to store EMEA variables (record type ID etc.).</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Call_DateTime_RTs__c</fullName>
+        <defaultValue>&quot;BMS_EMEA_Access_Interaction,BMS_EMEA_HQ_Interaction,BMS_EMEA_MSL_Interaction,BMS_EMEA_Sales_Rep_Interaction&quot;</defaultValue>
+        <description>Call recordtypes that are affected by the DateTime privacy protection trigger.
+Add the DeveloperNames of the call recordtypes to be processed by the trigger.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Add the DeveloperNames of the call recordtypes to be processed by the trigger.</inlineHelpText>
+        <label>Call_DateTime_RTs</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Cycle_Plan_Interaction_Channels__c</fullName>
+        <defaultValue>&quot;Face-to-Face,Remote E-Detailing&quot;</defaultValue>
+        <description>Interaction_Channel_BMS_CORE__c values taken into consideration for the Cycle plan call counting. Only added to EMEA cycle plans.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Add the picklist values to be INCLUDED, separated by commas.</inlineHelpText>
+        <label>Cycle_Plan_Interaction_Channels</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_BMS_EMEA__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Nov 2013: external ID of the Custom Settings</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>H2O_Meeting_Attendee_Report_ID__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>H2O_Meeting_Attendee_Report_ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MeetingPlan_RT_Face2Face__c</fullName>
+        <description>VPRO Nov 2013: Record Type ID of the RT &quot;MeetingPlan_RT_Face2Face&quot; from the Medical Event object. Used in buttons.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MeetingPlan_RT_Face2Face</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MeetingPlan_RT_Remote__c</fullName>
+        <description>VPRO Nov 2013: Record Type ID of the RT &quot;BMS_EMEA_1_Meeting_Plan_Remote&quot; from the Medical Event object. Used in buttons.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MeetingPlan_RT_Remote</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Attendee_Report_ID__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Attendee_Report_ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Contract_Meeting_ID_Field__c</fullName>
+        <description>VPRO EMEA March 2014: ID of the Meeting_BMS_EMEA__c field. Used in custom buttons.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the Meeting_Contract_BMS_EMEA__c.Meeting_BMS_EMEA__c field. Used in custom buttons.</inlineHelpText>
+        <label>Meeting_Contract_Meeting_ID_Field</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Contract_Planning_RTID__c</fullName>
+        <description>VPRO EMEA Mar 2014: RecordType ID of Meeting Contracts when the FFM Step is &apos;Meeting Planning&apos;. Used in a custom button.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Meeting_Contract_BMS_EMEA__c  object: ID of of the record type BMS_EMEA_Meeting_Contract. Used in a custom button.</inlineHelpText>
+        <label>Meeting_Contract_Planning_RTID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Contract_Planning_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Contract&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Contracts when the FFM Step is &apos;Meeting Planning&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Contract_Planning_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Contract_PostExecPTA_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Contract PostExec PTA&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Contracts when the FFM Step is &apos;Meeting Post-Execution with PTA Review&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Contract_PostExecPTA_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Contract_PostExec_RTID__c</fullName>
+        <description>VPRO EMEA Mar 2014: RecordType ID of Meeting Contracts when the FFM Step is &apos;Meeting Post-Execution&apos;. Used in a custom button.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Meeting_Contract_BMS_EMEA__c object: ID of of the record type BMS_EMEA_Meeting_Contract_PostExec. Used in a custom button.</inlineHelpText>
+        <label>Meeting_Contract_PostExec_RTID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Contract_PostExec_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Contract PostExec&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Contracts when the FFM Step is &apos;Meeting Post-Execution&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Contract_PostExec_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Material_Meeting_ID_Field__c</fullName>
+        <description>VPRO EMEA March 2014: ID of the Meeting_BMS_EMEA__c field. Used in custom buttons.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>ID of the Meeting_Material_BMS_EMEA__c.Meeting_BMS_EMEA__c field. Used in custom buttons.</inlineHelpText>
+        <label>Meeting_Material_Meeting_ID_Field</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Material_Planning_RTID__c</fullName>
+        <description>VPRO EMEA Mar 2014: RecordType ID of Meeting Materials when the FFM Step is &apos;Meeting Planning&apos;. Used in a custom button.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Meeting_Material_BMS_EMEA__c object: ID of of the record type BMS_EMEA_Meeting_Material. Used in a custom button.</inlineHelpText>
+        <label>Meeting_Material_Planning_RTID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Material_Planning_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Material&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Materials when the FFM Step is &apos;Meeting Planning&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Material_Planning_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Material_PostExecPTA_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Material PostExec PTA&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Materials when the FFM Step is &apos;Meeting Post-Execution with PTA Review&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Material_PostExecPTA_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Material_PostExec_RTID__c</fullName>
+        <description>VPRO EMEA Mar 2014: RecordType ID of Meeting Materials when the FFM Step is &apos;Meeting Post-Execution&apos;. Used in a custom button.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Meeting_Material_BMS_EMEA__c object: ID of of the record type BMS_EMEA_Meeting_Material_PostExec. Used in a custom button.</inlineHelpText>
+        <label>Meeting_Material_PostExec_RTID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Material_PostExec_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Material PostExec&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Materials when the FFM Step is &apos;Meeting Post-Execution&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Material_PostExec_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Speaker_Planning_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Speakers&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Speakers when the FFM Step is &apos;Meeting Planning&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Speaker_Planning_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Speaker_PostExecPTA_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Speakers PostExec PTA&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Speakers when the FFM Step is &apos;Meeting Post-Execution with PTA Review&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Speaker_PostExecPTA_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Speaker_PostExec_RTName__c</fullName>
+        <defaultValue>&quot;BMS - EMEA - Meeting Speakers PostExec&quot;</defaultValue>
+        <description>VPRO EMEA Mar 2014: RecordType name of Meeting Speakers when the FFM Step is &apos;Meeting Post-Execution&apos;. Custom Setting used in a trigger which will update the record type based on the Meeting phase (Meeting Plan, PostExec, PostExec with PTA Review).</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Speaker_PostExec_RTName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Speaker_Report_ID__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Meeting_Speaker_Report_ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Meeting_Custom_Fields__c</fullName>
+        <description>API name of fields to be added to the custom section on the NewMeeting_BMS_EMEA VF page, separated by semicolons.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of fields to be added to the custom section on the NewMeeting_BMS_EMEA VF page, separated by semicolons.</inlineHelpText>
+        <label>New_Meeting_Custom_Fields</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>New_Meeting_button_Recordtype__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>DeveloperName of the record types used in the &quot;New Meeting&quot; customized button.</inlineHelpText>
+        <label>New Meeting button Recordtype</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>BMS EMEA Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

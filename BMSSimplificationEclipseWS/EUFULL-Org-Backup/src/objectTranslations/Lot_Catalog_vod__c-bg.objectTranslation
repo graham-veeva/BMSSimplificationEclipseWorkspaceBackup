@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Партиден каталог</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Партидни каталози</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Id --></label>
+        <name>Item_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен Ид на партиден каталог</label>
+        <name>Lot_Catalog_External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Продукт</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Партиден каталог</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sample Description --></label>
+        <name>Sample_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample --></label>
+        <name>Sample_vod__c</name>
+        <picklistValues>
+            <masterLabel>ELIQUIS 5MG BMS 1283086</masterLabel>
+            <translation><!-- ELIQUIS 5MG BMS 1283086 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 20mg</masterLabel>
+            <translation><!-- ERBITUX 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERBITUX 40mg</masterLabel>
+            <translation><!-- ERBITUX 40mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 10mg</masterLabel>
+            <translation><!-- SPRYCEL 10mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 20mg</masterLabel>
+            <translation><!-- SPRYCEL 20mg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPRYCEL 40mg</masterLabel>
+            <translation><!-- SPRYCEL 40mg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Спри партидата</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation><!-- Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation><!-- Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation><!-- Unit --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>&quot;Партида №&quot; трябва да бъде No_Lot_vod за виртуални партиди.</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Полето &quot;Име на продукт&quot; е задължително при създаване на запис в партидния каталог за немострен продукт, който няма номер на партида.</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Опцията &quot;Спри партидата&quot; трябва да бъде отметната, когато използвате име &apos;No_Lot_vod&apos; Партида №.</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Или полето &quot;Мостра&quot;, или &quot;Продукт&quot; са задължителни при създаване на запис в партидния каталог за мострен продукт, който има номер на партида.</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Sample_Lots_vod --></label>
+        <name>Create_Sample_Lots_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

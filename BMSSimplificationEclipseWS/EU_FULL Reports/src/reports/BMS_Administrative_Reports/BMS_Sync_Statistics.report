@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Type_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Version_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Duration_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Successful_Sync_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Media_Processed_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Download_Processed_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Start_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Completed_Datetime_vod__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>BMS - Sync Statistics</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sync_Tracking_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sync_Tracking_vod__c.Sync_Completed_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

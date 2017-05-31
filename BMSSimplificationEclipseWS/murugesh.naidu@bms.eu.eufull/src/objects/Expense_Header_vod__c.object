@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Event_Recordtype_Dev_Name_Simple_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.RecordType.DeveloperName</formula>
+        <label>Event Recordtype Dev Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_vod__c</fullName>
+        <description>The entity that incurred the expense</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Incurred Service Provider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Simple_Formula_HCPTS__c</fullName>
+        <description>Yes/No, based on Payee&apos;s ERS Value</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Payee_Vendor_vod__r.ERS_Simple_HCPTS__c)</formula>
+        <inlineHelpText>Yes/No, based on Payee&apos;s ERS Value</inlineHelpText>
+        <label>Invoice?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Status_HCPTS_S1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Payment Requested will trigger the payment to the HCP!
+Manual Payment Entry should only be used for documentation only. This will not trigger an interface update.</inlineHelpText>
+        <label>Payment Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Payment Requested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manual Payment Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Processed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Set by SAP nightly process</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Set by SAP nightly process</inlineHelpText>
+        <label>PO#/Concur ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Code_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Code</label>
+        <picklist>
+            <controllingField>Tax_Market_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>BA - BE 21%</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BE - BE 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BZ - BE 0% Charities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BQ - BE 0% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BR - BE - 0% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA - FR - 20%</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YA - FR - 20% Claim at payment</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FZ - FR - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RA - FR - 20% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SA - FR - 20% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA - IT - 22%</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IW - IT - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RA - IT - 21% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SA - IT - 22% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA - ES - 21%</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EZ - ES - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QA - ES - 21% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QB - ES - 21% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PG - UK - 20%</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PE - UK - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RD - UK - EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SB - UK - Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+                <controllingFieldValues>France</controllingFieldValues>
+                <controllingFieldValues>Italy</controllingFieldValues>
+                <controllingFieldValues>Spain</controllingFieldValues>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Market_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Market</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>France</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Liable_Simple_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Payee_Vendor_vod__r.VAT_Liable_HCPTS__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicates if the Payee is VAT Liable</inlineHelpText>
+        <label>VAT Liable?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Expense_Header</fullName>
+        <active>true</active>
+        <description>RT for Simplification</description>
+        <label>Simple Expense Header</label>
+        <picklistValues>
+            <picklist>Payment_Status_HCPTS_S1__c</picklist>
+            <values>
+                <fullName>Manual Payment Entry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Code_HCPTS__c</picklist>
+            <values>
+                <fullName>BA - BE 21%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE - BE 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BQ - BE 0%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BR - BE - 0%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BZ - BE 0%25 Charities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EZ - ES - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FZ - FR - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IW - IT - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - ES - 21%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - FR - 20%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - IT - 22%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE - UK - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PG - UK - 20%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA - ES - 21%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QB - ES - 21%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RA - FR - 20%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RA - IT - 21%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RD - UK - EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SA - FR - 20%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SA - IT - 22%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SB - UK - Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YA - FR - 20%25 Claim at payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Market_HCPTS__c</picklist>
+            <values>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Cannot_Edit_Expense_Header</fullName>
+        <active>true</active>
+        <description>Cannot Edit EH if the status has been changed from In Draft</description>
+        <errorConditionFormula>AND(
+Event_vod__r.RecordType.DeveloperName = &apos;Simple_Activity_HCPTS&apos;,
+OR(
+ISPICKVAL(PRIORVALUE(Status_vod__c),&quot;PO Requested&quot;),
+ISPICKVAL(PRIORVALUE(Status_vod__c),&quot;PO Pending&quot;),
+ISPICKVAL(PRIORVALUE(Status_vod__c),&quot;PO Created&quot;)),
+OR(
+ISCHANGED(Status_vod__c),
+ISCHANGED(Payee_vod__c),
+ISCHANGED( Incurred_Expense_vod__c),
+ISCHANGED( Requested_Currency_HCPTS__c),
+ISCHANGED( Actual_vod__c),
+ISCHANGED( Event_vod__c),
+ISCHANGED(Purchase_Order_Number__c),
+ISCHANGED(Committed_vod__c),
+ISCHANGED(Expense_Line_Items_Number_HCPTS__c),
+ISCHANGED(Material_Group__c)
+),
+$Profile.Name &lt;&gt;  &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;)</errorConditionFormula>
+        <errorMessage>You cannot edit the Expense once it has been Requested.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Edit_Expense_Header_after_Payment</fullName>
+        <active>true</active>
+        <description>Validation Rule to not edit expense header if a payment has been requested.</description>
+        <errorConditionFormula>AND(
+Event_vod__r.RecordType.DeveloperName = &apos;Simple_Activity_HCPTS&apos;,
+OR(
+ISPICKVAL(PRIORVALUE( Payment_Status_HCPTS_S1__c),&quot;Payment Requested&quot;),
+ISPICKVAL(PRIORVALUE( Payment_Status_HCPTS_S1__c),&quot;Payment Pending&quot;),
+ISPICKVAL(PRIORVALUE( Payment_Status_HCPTS_S1__c),&quot;Payment Processed&quot;)),
+OR(
+ISCHANGED(Payment_Status_HCPTS_S1__c),
+ISCHANGED( Tax_Market_HCPTS__c ),
+ISCHANGED(  Tax_Code_HCPTS__c )
+),
+$Profile.Name &lt;&gt;  &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;)</errorConditionFormula>
+        <errorMessage>You cannot edit the expense header after the PO has been created and Payment has been requested.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Need_Vendor_to_Request_PO_Simplified</fullName>
+        <active>false</active>
+        <description>You must have an Expense Approver, at least 1 expense line andTax Market and Tax Code must be selected</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Status_vod__c , &apos;PO Requested&apos;),
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+OR(
+Committed_vod__c  &lt;= 0,
+ISBLANK(Event_vod__r.Approver_ID_HCPTS__c)))</errorConditionFormula>
+        <errorMessage>You must have an Expense Approver and your Committed amount must be greater than 0.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_PO_Request_for_Manual_Payment</fullName>
+        <active>true</active>
+        <description>You can not request a PO for Manual Payment Entry. Please change the status back to Draft.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Payment_Status_HCPTS_S1__c, &quot;Manual Payment Entry&quot;),
+NOT(ISPICKVAL(Status_vod__c, &quot;Draft&quot;)
+))</errorConditionFormula>
+        <errorMessage>You can not request a PO for Manual Payment Entry. Please change the status back to Draft.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Payment_Request_Validation</fullName>
+        <active>true</active>
+        <description>To Request Payment, you must have a PO# and select the Tax Market and Tax Code.</description>
+        <errorConditionFormula>AND(  
+ISPICKVAL(Payment_Status_HCPTS_S1__c, &apos;Payment Requested&apos;),
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+OR(
+ISBLANK(Purchase_Order_Number__c),
+ISBLANK(TEXT(Tax_Code_HCPTS__c)),
+ISBLANK(TEXT(Tax_Market_HCPTS__c))))</errorConditionFormula>
+        <errorMessage>To Request Payment, you must have a PO# and select the Tax Market and Tax Code.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_to_Request_PO_Simplified</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Status_vod__c , &apos;PO Requested&apos;), 
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;, 
+OR( 
+Committed_vod__c &lt;= 0, 
+ISBLANK(Event_vod__r.Approver_ID_HCPTS__c)))</errorConditionFormula>
+        <errorMessage>You must have a PO Approver and at least one Expense Line to Request a PO</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>MC cyklusplanoversigt</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>MC cyklusplanoversigt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>MC cyklusplanoversigt</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>MC cyklusplanoversigter</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>MC cyklusplanoversigter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>MC cyklusplanoversigter</value>
+    </caseValues>
+    <fields>
+        <label>Opnåelse</label>
+        <name>Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanal</label>
+        <name>Cycle_Channel_vod__c</name>
+        <relationshipLabel>Cyklusplanoversigter</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cyklusplan</label>
+        <name>Cycle_Plan_vod__c</name>
+        <relationshipLabel>Cyklusplanoversigt</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Detaljeret gruppe</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>MC-cyklusplanopsummering (Detaljeret gruppe)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Interaktioner optjent</label>
+        <name>Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interaktioner mål</label>
+        <name>Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label>Senest beregnet</label>
+        <name>Last_Calculated_vod__c</name>
+    </fields>
+    <fields>
+        <label>% af alle mål</label>
+        <name>Percent_All_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>MC cyklusplanoversigter</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Tidsplan overholdes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Over opnået</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Under opnået</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Oversigt for</label>
+        <name>Summary_For_vod__c</name>
+    </fields>
+    <fields>
+        <label>Team Virkeliggørelsen</label>
+        <name>Team_Attainment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teamsamarbejde optjent</label>
+        <name>Team_Interactions_Earned_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teamsamarbejde mål</label>
+        <name>Team_Interactions_Goal_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Status --></label>
+        <name>Team_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>On_Schedule_vod</masterLabel>
+            <translation>Tidsplan overholdes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over_Reached_vod</masterLabel>
+            <translation>Over opnået</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under_Reached_vod</masterLabel>
+            <translation>Under opnået</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>Veeva_External_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Plan Summary --></nameFieldLabel>
+    <recordTypes>
+        <label>Kanal</label>
+        <name>Channel_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Produkt</label>
+        <name>Product_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Linea assortimento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Linee assortimento</value>
+    </caseValues>
+    <fields>
+        <label>Assortimento</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Linee assortimento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Comprimere per impostazione predefinita?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sezione padre</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Linee assortimento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Prodotto</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Linee assortimento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Etichetta sezione</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ordinamento</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label>Prodotto assortimento Medicina interna</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sezione assortimento Medicina interna</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Prodotto assortimento OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Sezione assortimento OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Le Linee di assortimento OM possono essere associate solo con Assortimenti OM, mentre le Linee di assortimento Medicina interna possono essere associate solo con Assortimenti di Medicina interna</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>È possibile eseguire il controllo solo per il tipo di record IM_Assortment_Section_vod o OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Impossibile collegare una sezione a una sezione padre</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile specificare una sezione e un prodotto nello stesso record.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

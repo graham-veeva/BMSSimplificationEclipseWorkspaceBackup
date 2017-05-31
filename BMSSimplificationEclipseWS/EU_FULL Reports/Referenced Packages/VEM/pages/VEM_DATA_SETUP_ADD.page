@@ -1,0 +1,68 @@
+<apex:page standardController="VEM__Setup_Data_Objects__c" extensions="VEM.VEM_DATA_SETUP_ADD_CONT">
+<apex:form >
+<apex:sectionHeader title="VEM Data Setup" subtitle="{!VEM__Setup_Data_Objects__c.VEM__Table_Name__c}"/>
+<apex:pageBlock mode="edit" title="" id="mainBlock">
+    <apex:pageMessages />
+    <apex:pageBlockButtons location="both">
+        <apex:commandButton value="Save" action="{!Save}"  />
+        <apex:commandButton value="Cancel" action="{!Cancel}"  />        
+    </apex:pageBlockButtons>
+    <apex:pageBlockSection title="Setup Data Information" columns="1" collapsible="false">             
+        <apex:outputText value="{!VEM__Setup_Data_Objects__c.Id}" rendered="false"/>
+        <apex:outputField value="{!VEM__Setup_Data_Objects__c.Name}"/>
+        <apex:inputField value="{!VEM__Setup_Data_Objects__c.VEM__Table_Name__c}"/>
+        <apex:inputField value="{!VEM__Setup_Data_Objects__c.VEM__External_Id__c}"/>
+        <apex:inputField value="{!VEM__Setup_Data_Objects__c.VEM__Label_Name__c}"/>
+        <apex:inputField value="{!VEM__Setup_Data_Objects__c.VEM__Notes__c}"/>
+    </apex:pageBlockSection>
+    <apex:pageBlockTable value="{!sdoFields}" var="item" id="sdoFields" rendered="{!sdoFields.size>0}">
+        <apex:column >
+            <apex:commandLink action="{!deleteRow}" reRender="sdoFields" value="Delete" rendered="{!item.sdoField.id != null}">
+                <apex:param name="fieldRecId" value="{!item.sdoField.id}"/>                        
+            </apex:commandLink>
+        </apex:column>
+        <apex:column >
+            <apex:facet name="header">{!$ObjectType.VEM__Field__c.fields.VEM__FieldName__c.label}</apex:facet>
+            <apex:inputField value="{!item.sdoField.VEM__FieldName__c}"/>
+        </apex:column>            
+        <apex:column >
+            <apex:facet name="header">{!$ObjectType.VEM__Field__c.fields.VEM__Contains__c.label}</apex:facet>
+            <apex:inputField value="{!item.sdoField.VEM__Contains__c}"/>
+        </apex:column>                        
+        <apex:column >
+            <apex:facet name="header">{!$ObjectType.VEM__Table__c.fields.Name.label}</apex:facet>        
+            <apex:inputField value="{!item.sdoObject.Name}" required="true" rendered="{!item.sdoField.VEM__Table__c == null}"/>
+            <apex:outputField value="{!item.sdoObject.Name}" rendered="{!item.sdoField.VEM__Table__c != null}"/>
+        </apex:column>                        
+        <apex:column >        
+            <apex:facet name="header">{!$ObjectType.VEM__Table__c.fields.VEM__External_Id__c.label}</apex:facet>        
+            <apex:inputField value="{!item.sdoObject.VEM__External_Id__c}" rendered="{!item.sdoField.VEM__Table__c == null}"/>
+            <apex:outputField value="{!item.sdoObject.VEM__External_Id__c}" rendered="{!item.sdoField.VEM__Table__c != null}"/>
+        </apex:column>            
+        <apex:column >        
+            <apex:facet name="header">{!$ObjectType.VEM__Table__c.fields.VEM__Id_Field__c.label}</apex:facet>        
+            <apex:inputField value="{!item.sdoObject.VEM__Id_Field__c}" rendered="{!item.sdoField.VEM__Table__c == null}"/>
+            <apex:outputField value="{!item.sdoObject.VEM__Id_Field__c}" rendered="{!item.sdoField.VEM__Table__c != null}"/>
+        </apex:column>   
+        <apex:column >        
+            <apex:facet name="header">{!$ObjectType.VEM__Field__c.fields.CreatedbyId.label}</apex:facet>
+            <apex:outputField value="{!item.sdoField.CreatedbyId}"/>
+        </apex:column> 
+        <apex:column >        
+            <apex:facet name="header">{!$ObjectType.VEM__Field__c.fields.CreatedDate.label}</apex:facet>
+            <apex:outputField value="{!item.sdoField.CreatedDate}"/>
+        </apex:column> 
+        <apex:column >        
+            <apex:facet name="header">{!$ObjectType.VEM__Field__c.fields.LastModifiedbyId.label}</apex:facet>
+            <apex:outputField value="{!item.sdoField.LastModifiedbyId}"/>
+        </apex:column> 
+        <apex:column >        
+            <apex:facet name="header">{!$ObjectType.VEM__Field__c.fields.LastModifiedDate.label}</apex:facet>
+            <apex:outputField value="{!item.sdoField.LastModifiedDate}"/>
+        </apex:column>          
+    </apex:pageBlockTable>
+    <br/>
+    <apex:commandLink action="{!addRow}" reRender="mainBlock" rendered="{!VEM__Setup_Data_Objects__c.Id!=null}">Add a new lookup</apex:commandLink>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

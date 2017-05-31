@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO Nov 2013: object used to store Product Catalog records that can be selected by Meeting Initiators for both Therapeutic Area and Product lookups.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>External_ID_BMS_SHARED__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Feb 2014: external ID used for data loading</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Therapeutic_Area_BMS_EMEA__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>VPRO Jan-2014: lookup to the same object to handle a parent-to-child relationship between Therapeutic Areas and Products.</description>
+        <externalId>false</externalId>
+        <label>Therapeutic Area</label>
+        <referenceTo>Master_File_Products_BMS_EMEA__c</referenceTo>
+        <relationshipLabel>Master File Products</relationshipLabel>
+        <relationshipName>Parent_Master_File_Products_BMS_EMEA</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: Product Type from the Product Catalog to distinguish Products from Therapeutic Area</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Therapeutic Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compound</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Master File Product</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Product_Type_BMS_EMEA__c</columns>
+        <columns>Parent_Therapeutic_Area_BMS_EMEA__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>External_ID_BMS_SHARED__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ - Generic Owner</label>
+        <queue>BMS_EMEA_CZ_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK - Generic Owner</label>
+        <queue>BMS_EMEA_DK_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI - Generic Owner</label>
+        <queue>BMS_EMEA_FI_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR - Generic Owner</label>
+        <queue>BMS_EMEA_FR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Generic Owner</label>
+        <queue>BMS_EMEA_GB_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR - Generic Owner</label>
+        <queue>BMS_EMEA_GR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - Generic Owner</label>
+        <queue>BMS_EMEA_IE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT - Generic Owner</label>
+        <queue>BMS_EMEA_IT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_Medical_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - Medical</label>
+        <queue>BMS_EMEA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO - Generic Owner</label>
+        <queue>BMS_EMEA_NO_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU - Generic Owner</label>
+        <queue>BMS_EMEA_RU_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE - Generic Owner</label>
+        <queue>BMS_EMEA_SE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_Sales_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - Sales</label>
+        <queue>BMS_EMEA_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Generic_Owner_Master_File_Products_BMS_EMEA</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR - Generic Owner</label>
+        <queue>BMS_EMEA_TR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Master File Products Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Master File Products</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Product_Type_BMS_EMEA__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Type_BMS_EMEA__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

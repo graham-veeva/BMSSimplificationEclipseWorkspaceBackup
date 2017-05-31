@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>BMS EU MSM Trial Scope Report HTML</name>
+    <style>freeForm</style>
+    <subject>Clinical Trial Scope Report - {!Trial_Scope_Report_BMS__c.Clinical_Trial_Protocol_BMS__c} - {!Trial_Scope_Report_BMS__c.Date_BMS__c}</subject>
+    <textOnly>Clinical Trial: {!Trial_Scope_Report_BMS__c.Clinical_Trial_Protocol_BMS__c}Clinical Trial Site: {!Trial_Scope_Report_BMS__c.Clinical_Trial_Site_BMS__c}{!Trial_Scope_Report_BMS__c.Other_Clinical_Trial_Site_BMS__c}Investigator: {!Trial_Scope_Report_BMS__c.Customer_BMS__c}MSL: {!Trial_Scope_Report_BMS__c.OwnerFullName}
+Clinical Trial Scope Report Notes{!Trial_Scope_Report_BMS__c.Scope_Documentation_Notes_BMS__c}</textOnly>
+    <type>html</type>
+</EmailTemplate>

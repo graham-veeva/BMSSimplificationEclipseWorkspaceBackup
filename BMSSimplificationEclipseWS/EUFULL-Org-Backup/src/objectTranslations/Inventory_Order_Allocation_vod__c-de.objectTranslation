@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Bestand Bestellzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Bestand Bestellzuordnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Bestand Bestellzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Bestand Bestellzuordnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Bestand Bestellzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Bestand Bestellzuordnungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Bestand Bestellzuordnung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Bestand Bestellzuordnungen</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zuordnung Enddatum</label>
+        <name>Allocation_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocation Family --></label>
+        <name>Allocation_Family_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>Zuordnung Startdatum</label>
+        <name>Allocation_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datumsausnahmen zulassen</label>
+        <name>Allow_Date_Exceptions_vod__c</name>
+        <picklistValues>
+            <masterLabel>DoNothing_vod</masterLabel>
+            <translation>Nichts tun</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Verhindern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Genehmigung erforderlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Warnen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Mengenausnahmen zulassen</label>
+        <name>Allow_Quantity_Exceptions_vod__c</name>
+        <picklistValues>
+            <masterLabel>DoNothing_vod</masterLabel>
+            <translation>Nichts tun</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Verhindern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Genehmigung erforderlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Warnen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS PRODUCT ID --></label>
+        <name>BMS_Product_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Beschreibung</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Delete_District --></label>
+        <name>District_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- District ID --></label>
+        <name>District_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mindestmenge bei Einzelbestellung</label>
+        <name>Minimum_Single_Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestellung Enddatum</label>
+        <name>Order_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestellung Startdatum</label>
+        <name>Order_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordnete Zuordnungs-ID</label>
+        <name>Parent_Allocation_Id_vod__c</name>
+        <relationshipLabel>Bestand Bestellzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Remaining --></label>
+        <name>Percent_Remaining_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Bestand Bestellzuordnungsmenge</label>
+        <name>Product_Order_Allocation_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Bestand Bestellzuordnungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Delete_Region ID --></label>
+        <name>Region_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Allocation --></label>
+        <name>Remaining_Allocation_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Gesamtbestellmenge</label>
+        <name>Total_Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Benutzer-Zuordnungsgruppe</label>
+        <name>User_Allocation_Group_vod__c</name>
+        <picklistValues>
+            <masterLabel>Group A</masterLabel>
+            <translation>Gruppe A</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>User_Email_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Benutzer</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Bestand Bestellzuordnungen</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Inventory Order Allocation Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Startdatum kann nicht nach Enddatum liegen</errorMessage>
+        <name>VEEVA_DATES_MISMATCH_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Mindestbestellmenge darf nicht größer sein als Zuordnungsmenge</errorMessage>
+        <name>VEEVA_MINIMUM_ORDER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bestellzeitraum muss innerhalb Zuordnungszeitraum liegen</errorMessage>
+        <name>VEEVA_ORDER_DATES_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Menge kann nicht kleiner als 0 sein</errorMessage>
+        <name>VEEVA_QUANTITIES_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Die zugewiesene Quantität kann nicht geringer sein als erfüllte Quantität.</errorMessage>
+        <name>VEEVA_QUANTITY_FULFILLED_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

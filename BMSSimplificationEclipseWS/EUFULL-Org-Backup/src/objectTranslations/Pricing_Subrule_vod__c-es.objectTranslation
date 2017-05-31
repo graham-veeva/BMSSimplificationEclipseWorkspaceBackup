@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Subregla de precios</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Subreglas de precios</value>
+    </caseValues>
+    <fields>
+        <label>Tipo de comparación</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Valor de lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Cantidad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Recuento de SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cantidad máxima</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad mínima</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Regla de precios</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Subreglas de precios</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Producto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Subreglas de precios</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Los elementos del kit no son compatibles como producto de comparación</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La cantidad máxima debe ser superior o igual que la cantidad mínima.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El recuento de SKU debe ser &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

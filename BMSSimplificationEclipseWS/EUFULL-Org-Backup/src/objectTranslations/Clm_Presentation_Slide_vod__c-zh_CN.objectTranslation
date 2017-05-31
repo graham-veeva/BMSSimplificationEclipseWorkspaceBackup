@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CLM 演示幻灯片</value>
+    </caseValues>
+    <fields>
+        <label>CLM 演示</label>
+        <name>Clm_Presentation_vod__c</name>
+        <relationshipLabel>CLM 演示幻灯片</relationshipLabel>
+    </fields>
+    <fields>
+        <label>显示顺序</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>外部编号</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>主要信息</label>
+        <name>Key_Message_vod__c</name>
+        <relationshipLabel>CLM 演示幻灯片</relationshipLabel>
+    </fields>
+    <fields>
+        <label>强制幻灯片</label>
+        <name>Mandatory_Slides_vod__c</name>
+    </fields>
+    <fields>
+        <label>移动 ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>子演示文稿</label>
+        <name>Sub_Presentation_vod__c</name>
+        <relationshipLabel>CLM 演示文稿幻灯片（子演示文稿）</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- CLM Presentation Slide Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>您无法让父系演示作为子系演示来参考自身。</errorMessage>
+        <name>NO_REFER_TO_MAIN_PRESENTATION</name>
+    </validationRules>
+</CustomObjectTranslation>

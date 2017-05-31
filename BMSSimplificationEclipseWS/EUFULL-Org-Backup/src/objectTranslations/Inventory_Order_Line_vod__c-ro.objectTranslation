@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Linia comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Linie a comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Liniile comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Linii ale comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Liniei comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Liniei comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Liniilor comenzii de inventar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Liniilor comenzii de inventar</value>
+    </caseValues>
+    <fields>
+        <label><!-- Carrier Name --></label>
+        <name>Carrier_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Comentarii ale excepţiei</label>
+        <name>Exception_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gravitatea excepţiei</label>
+        <name>Exception_Severity_vod__c</name>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Prevenire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Necesită aprobare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Avertizare</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipul excepţiei</label>
+        <name>Exception_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Date_vod</masterLabel>
+            <translation>Dată</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityDate_vod</masterLabel>
+            <translation>Cantitatea şi Data</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Cantitate</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Atribuire a comenzii de inventar</label>
+        <name>Inventory_Order_Allocation_vod__c</name>
+        <relationshipLabel>Linii ale comenzii de inventar</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Antet al comenzii de inventar</label>
+        <name>Inventory_Order_Header_vod__c</name>
+        <relationshipLabel>Linii ale comenzii de inventar</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stare a liniei comenzii de inventar</label>
+        <name>Inventory_Order_Line_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Anulat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Finalizat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Process_vod</masterLabel>
+            <translation>În procesare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Nou</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Transmis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory Order Status --></label>
+        <name>Inventory_Order_Status_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>Număr lot</label>
+        <name>Lot_Number_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Cantitate a comenzii îndeplinite</label>
+        <name>Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantitate a comenzii UOM</label>
+        <name>Order_Quantity_UOM_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Casetă</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carton</masterLabel>
+            <translation>Cutie de carton</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation>Cutie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cantitate a comenzii</label>
+        <name>Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Doc Number --></label>
+        <name>Pick_Doc_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Produs</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Linii ale comenzii de inventar</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dată de livrare solicitată</label>
+        <name>Requested_Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantitate livrată SAP</label>
+        <name>SAP_Delivered_Qty_BMS_CA__c</name>
+    </fields>
+    <fields>
+        <label>Status comandă SAP</label>
+        <name>SAP_Order_Status_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label>Data expedierii</label>
+        <name>Shipment_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Număr borderou de expediţie</label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Inventory Order Line Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Data de livrare nu poate fi înainte de data de creare a comenzii</errorMessage>
+        <name>VEEVA_DELIVERY_DATE_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cantitatea comenzii nu poate fi mai mică de 0</errorMessage>
+        <name>VEEVA_NEGATIVE_QUANTITY</name>
+    </validationRules>
+</CustomObjectTranslation>

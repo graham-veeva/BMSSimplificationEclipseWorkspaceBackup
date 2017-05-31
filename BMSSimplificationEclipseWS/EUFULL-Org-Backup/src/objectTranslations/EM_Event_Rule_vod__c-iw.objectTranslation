@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>כלל אירוע</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>כלל אירוע</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>כללי אירוע</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>כללי אירוע</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Attendee Fields --></label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- CLM Presentation --></label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel><!-- Event Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>שדות פרטי קשר של המשתתף</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Override --></label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel><!-- Event Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email Template --></label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel><!-- Event Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Configuration --></label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel><!-- Event Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Type --></label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation><!-- Mandatory_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation><!-- Optional_Off_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation><!-- Optional_On_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Material Type --></label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel><!-- Event Types Using Material --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Online Registration Fields --></label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualification --></label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel><!-- Event Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>חפש מחוץ לטריטוריה שלי</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speaker Fields --></label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>שדות פרטי קשר של המשתמש</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Walk-In Fields --></label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Attendee_Fields_vod --></label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Material_vod --></label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Online_Registration_Fields_vod --></label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Speaker_Fields_vod --></label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Speaker_Qualification_vod --></label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Walk-In Fields --></label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A single rule cannot have both Email Template and CLM Presentation populated. Please create separate rules for these two items. --></errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A single rule cannot have both Material and CLM Presentation populated. Please create separate rules for these two items. --></errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A single rule cannot have both Material and Email Template populated. Please create separate rules for these two items. --></errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

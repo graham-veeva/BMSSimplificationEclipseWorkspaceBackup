@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Diapositive de présentation ADV</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Diapositives de présentation ADV</value>
+    </caseValues>
+    <fields>
+        <label>Présentation CLM</label>
+        <name>Clm_Presentation_vod__c</name>
+        <relationshipLabel>Diapositives de présentation CLM</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ordre d&apos;affichage</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Message-clé</label>
+        <name>Key_Message_vod__c</name>
+        <relationshipLabel>Diapositives de présentation CLM</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Diapositives obligatoires</label>
+        <name>Mandatory_Slides_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobile</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sous-présentation</label>
+        <name>Sub_Presentation_vod__c</name>
+        <relationshipLabel>Diapositives de présentation CLM (Sous-présentation)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Veeva External ID --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- CLM Presentation Slide Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas faire en sorte que la présentation parent fasse référence à elle-même en tant que sous-présentation.</errorMessage>
+        <name>NO_REFER_TO_MAIN_PRESENTATION</name>
+    </validationRules>
+</CustomObjectTranslation>

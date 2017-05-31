@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Relatie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Relaties</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Source Country --></label>
+        <name>Account_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Onderliggende relatie</label>
+        <name>Child_affiliation_vod__c</name>
+        <relationshipLabel>Relaties</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Opmerkingen</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trigger uitschakelen</label>
+        <name>Disable_Trigger_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Van account</label>
+        <name>From_Account_vod__c</name>
+        <relationshipLabel>Relaties (van account)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Van contactpersoon</label>
+        <name>From_Contact_vod__c</name>
+        <relationshipLabel>Relaties (van contactpersoon)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Invloed</label>
+        <name>Influence_vod__c</name>
+        <picklistValues>
+            <masterLabel>Has influence</masterLabel>
+            <translation>Heeft invloed</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is influenced</masterLabel>
+            <translation>Wordt beïnvloed</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No influence</masterLabel>
+            <translation>Geen invloed</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ID mobiel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bovenliggende waarde</label>
+        <name>Parent_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relatiesterkte</label>
+        <name>Relationship_Strength_vod__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>Zwak</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Gemiddeld</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Sterk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Rol</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Access Relationship</masterLabel>
+            <translation><!-- Access Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliated with</masterLabel>
+            <translation>Gerelateerd aan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Relationship</masterLabel>
+            <translation><!-- HQ Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Relationship</masterLabel>
+            <translation><!-- Medical Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Relationship</masterLabel>
+            <translation><!-- Sales Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Therapeutisch gebied</label>
+        <name>Therapeutic_Area_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>Cardiologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Medicine</masterLabel>
+            <translation>Traumageneeskunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Medicine</masterLabel>
+            <translation>Gezinsarts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation>Huisarts</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Medicine</masterLabel>
+            <translation>Inwendige geneeskunde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>Oncologie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Anders</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrics</masterLabel>
+            <translation>Pediatrie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Aantal relaties naar-account</label>
+        <name>To_Account_Affiliation_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID naar-account</label>
+        <name>To_Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Naam naar-account</label>
+        <name>To_Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Recordtype naar-account</label>
+        <name>To_Account_Record_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Naar account</label>
+        <name>To_Account_vod__c</name>
+        <relationshipLabel>Relaties (naar account)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Naar contactpersoon</label>
+        <name>To_Contact_vod__c</name>
+        <relationshipLabel>Relaties (naar contactpersoon)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vernietigen</label>
+        <name>destroy_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- AffiliationNumber --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Account t/m mag niet hetzelfde zijn als Account vanaf</errorMessage>
+        <name>DUP_TO_FROM_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Contactpersoon t/m mag niet hetzelfde zijn als Contactpersoon vanaf</errorMessage>
+        <name>DUP_TO_FROM_CONTACT</name>
+    </validationRules>
+</CustomObjectTranslation>

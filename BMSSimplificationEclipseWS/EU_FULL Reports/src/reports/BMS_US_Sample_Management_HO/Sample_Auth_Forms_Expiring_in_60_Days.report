@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Concatenated_Address_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Sample_Authorization_Cert_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Form_Flag_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Address_vod__c.Form_Expiration_Date_BMS_SHARED__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Sample Auth Forms Expiring in 60 Days</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Address_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Address_vod__c.Form_Expiration_Date_BMS_SHARED__c</dateColumn>
+        <interval>INTERVAL_NEXT60</interval>
+    </timeFrameFilter>
+</Report>

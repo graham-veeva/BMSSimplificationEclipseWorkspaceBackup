@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Медицинский аспект</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Медицинские аспекты</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Медицинский аспект</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Медицинские аспекты</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Медицинского аспекта</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Медицинских аспектов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Медицинскому аспекту</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Медицинским аспектам</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Медицинским аспектом</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Медицинскими аспектами</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Медицинскиом аспекте</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Медицинских аспектах</value>
+    </caseValues>
+    <fields>
+        <label>Организация</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Медицинские аспекты</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Клиническое исследование</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Медицинские аспекты</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Дата</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Описание</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор ссылки на объект</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Взаимодействие</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Медицинские аспекты</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Медицинское мероприятие</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Медицинские аспекты</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Другой источник</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Снять блокировку</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Публикация</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Медицинские аспекты</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Статус</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Сохранено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Отправлено</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Резюме</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Разблокировать</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Именах медицинских аспектов</nameFieldLabel>
+    <recordTypes>
+        <label>Ключевые медицинские аспекты</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Чтобы сохранить или отправить ключевые медицинские аспекты, необходимо Описание</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Чтобы сохранить или отправить ключевые медицинские аспекты, необходимы краткие выводы</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Отправка</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

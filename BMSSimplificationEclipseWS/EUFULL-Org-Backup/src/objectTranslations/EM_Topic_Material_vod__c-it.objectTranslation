@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Materiale argomento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Materiali argomento</value>
+    </caseValues>
+    <fields>
+        <label>Presentazione CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Materiali argomento</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Modello e-mail</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Materiali argomento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Tipo di materiale</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Materiale</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Argomenti che utilizzano materiale</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Argomento</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Materiali argomento (Argomento)</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label>Materiale argomento</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Non è possibile popolare sia il campo Modello e-mail che il campo Presentazione CLM di una regola singola. Creare regole distinte per questi due articoli.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile popolare sia il campo Materiale che il campo Presentazione CLM di un materiale argomento singolo. Creare regole distinte per questi due articoli.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Non è possibile popolare sia il campo Materiale e il campo Modello e-mail di un materiale argomento singolo. Creare regole separate per questi due articoli.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

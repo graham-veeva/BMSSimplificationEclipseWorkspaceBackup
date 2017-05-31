@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object stores all Key Messages to be used in Interaction Reporting and on Product Strategies</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_vod__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Determines whether this key message should appear in the call report as a possible message to deliver by the rep.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CDN_Path_vod__c</fullName>
+        <description>Location of the content in the CDN</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CDN Path</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CLM_ID_vod__c</fullName>
+        <description>CLM ID for the slide corresponding to this key message.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CLM ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CLM_Tracking_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CLM Tracking ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Category_vod__c</fullName>
+        <description>Allows the Key Message to be categorized e.g. Efficacy or Safety.</description>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Efficacy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tolerability</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Efficiencies</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>General</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stakeholder Engagement Plan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Country_Code_BMS_EMEA__c</fullName>
+        <description>VPRO Dec 2013: created the field that will store the Country Code where the Key Message must be used.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Reaction_vod__c</fullName>
+        <description>Comma Separated List of available reactions for a key message. If this field is empty, the default values from the Call2_Key_Messages_vod.Reaction_vod picklist will be used. Use &quot;,a,b,c&quot; to have the default value be blank.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Custom Reaction</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Deactivate_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Deactivate Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deactivate_Date_BMS_US__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Deactivate Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Text area that contains the text of the message.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Detail_Group_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Product Catalog records of type Detail Group.</description>
+        <externalId>false</externalId>
+        <label>Detail Group</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Key Messages (Detail Group)</relationshipLabel>
+        <relationshipName>Key_Messages_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Actions_vod__c</fullName>
+        <description>Contains a list of user actions that are disabled when selected. Values: Swipe, Pinch To Exit
+
+Swipe: When selected, the swipe action to move forward to the next slide/back to the previous slide is disabled. Creative Agencies will need to code the transition to the next/previous slide
+
+Pinch To Exit: When selected, pinching to exit the media player is disabled. This is to allow for proper pinch and anti-pinch zoom in / out on PDF files.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contains a list of user actions that are disabled.
+Swipe: When selected, the swipe action to move forward to the next slide/back to the previous slide is disabled.
+Pinch To Exit: When selected, pinching to exit the media player is disabled.</inlineHelpText>
+        <label>Disable Actions</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Navigation_Bar_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>History_Buttons_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rotation_Lock_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zoom_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Swipe_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pinch_To_Exit_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Display_Order_vod__c</fullName>
+        <description>A way to determine the order in which the key message appears on the call report.  Lower number takes priority over a higher number.  Lower numbers display to the left of higher numbers.</description>
+        <externalId>false</externalId>
+        <label>Display Order</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_BMS_SHARED__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Dec-2013: field used to load data</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Force_Type_BMS_SHARED__c</fullName>
+        <description>VPRO LATAM Jun-2015: Created to drive the Sharing Rules</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Field Force Type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Shared_Resource_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes if a Key Message is a CLM Shared resource</description>
+        <externalId>false</externalId>
+        <label>Is Shared Resource</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Language_vod__c</fullName>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <picklist>
+            <picklistValues>
+                <fullName>en_US</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>es</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>de</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>zh_CN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>nl</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>da</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>pt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ru</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>tk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>no</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>sv</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>it</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>el</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>hu</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>cs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MNG_Number_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MNG Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MNG_Number_BMS_US__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MNG Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Message_BMS_EMEA__c</fullName>
+        <description>VPRO - November 2013 - BMS EMEA Requirements: New field creates in order to provide better insight on CLM usage and enable aggregated report on multiple countries.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Marketing Message</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Media_File_CRC_vod__c</fullName>
+        <description>The device uses this field to determine if the local media is in the correct version. Matching is based on the file names.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Media File CRC</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Media_File_Name_vod__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Name of the Media File (including the file extension). A media file is linked to a key message using this field. The file name is case sensitive.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Media File Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Media_File_Size_vod__c</fullName>
+        <externalId>false</externalId>
+        <label>Media File Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medical_Material_Type_BMS_CN__c</fullName>
+        <description>To store Medical common topic values, all imported by managed servcies
+Field type changed from picklist to text by Kobe on Jun 19th, 2013</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Medical Material Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Off_Label_BMS_CN__c</fullName>
+        <description>To track Medical content focus on-off label</description>
+        <externalId>false</externalId>
+        <label>On-Off Label</label>
+        <picklist>
+            <picklistValues>
+                <fullName>On Label</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off Label</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Strategy_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>A lookup to the product strategy assigned to this key message.  A key message can be associated with a product or a product strategy, or both, or none.</description>
+        <externalId>false</externalId>
+        <label>Product Strategy</label>
+        <referenceTo>Product_Strategy_vod__c</referenceTo>
+        <relationshipLabel>Key Messages</relationshipLabel>
+        <relationshipName>Key_Message_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the product in the product catalog. This product is the topic of the key message. A key message can be associated with a product or a product strategy, or both, or none.</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Key Messages</relationshipLabel>
+        <relationshipName>Key_Message_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Segment_vod__c</fullName>
+        <description>Holds the segment for which this key message should be displayed. If blank, then this key message will be displayed for accounts that are not aligned to a segment</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Segment</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shared_Resource_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the shared resources which the key message references</description>
+        <externalId>false</externalId>
+        <label>Shared Resource</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Selected Key Message must have Is_Shared_Resource_vod enabled.</errorMessage>
+            <filterItems>
+                <field>Key_Message_vod__c.Is_Shared_Resource_vod__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Key_Message_vod__c</referenceTo>
+        <relationshipLabel>Shared Key Messages</relationshipLabel>
+        <relationshipName>Shared_Key_Messages_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Slide_Version_vod__c</fullName>
+        <description>Version of the CLM slide.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Slide Version</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of the slide on the CDN. A piece of content will either be &apos;Approved&apos;, &apos;Staged&apos;, or &apos;Expired&apos;</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staged_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_Description_BMS_US__c</fullName>
+        <description>VPRO - December 2012 - BMS Global Requirements &amp; Design: MM users to choose Tactics (key messages) discussed during an interaction that link to Strategic Descriptions on the back end (field left off of page layout) for Home Office/Marketing  reporting purposes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Strategic Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Strategic_Imperative_BMS_US__c</fullName>
+        <description>VPRO - December 2012 - BMS Global Requirements &amp; Design: MM users to choose Tactics (key messages) discussed during an interaction that link to Strategic Imperatives on the back end (field left off of page layout) for Home Office/Marketing  reporting purposes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Strategic Imperative</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Strategy_Name_BMS_US__c</fullName>
+        <description>VPRO - December 2012 - BMS Global Requirements &amp; Design: MM users to choose Tactics (key messages) discussed during an interaction that link to Strategies on the back end (field left off of page layout) for Home Office/Marketing  reporting purposes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Strategy Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tactic_Name_BMS_US__c</fullName>
+        <description>VPRO - March 2013 - BMS Global Requirements &amp; Design: MM users must choose a unique tactic name on the front end (combo of tactic name and strategy) but Home Office/Marketing will use the generic Tactic Name for reporting purposes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Tactic Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VExternal_Id_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External Id used by Veeva CRM for integration with Vault. Can be populated to aid in data loading.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Veeva External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Vault_DNS_vod__c</fullName>
+        <description>Vault DNS of the document.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vault DNS</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vault_Doc_Id_vod__c</fullName>
+        <description>Vault Id of the document</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vault Document ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vault_External_Id_vod__c</fullName>
+        <description>External ID from Vault</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vault External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vault_GUID_vod__c</fullName>
+        <description>Global Unique Identifier for Vault instance where this document resides.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vault GUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vault_Last_Modified_Date_Time_vod__c</fullName>
+        <description>Last modified date time of the content as reported by Vault.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vault Last Modified Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Vehicle_vod__c</fullName>
+        <description>Used to record what collateral is used to deliver the Key Message. Comma separated list of message vehicles. The master list of message vehicles is kept in Call_Key_Messages_vod.Vehicle_vod.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vehicle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>iOS_Viewer_vod__c</fullName>
+        <description>Use WKWebView for improved view of HTML CLM on iOS 10 or later. Leave blank to use legacy view of HTML CLM.</description>
+        <externalId>false</externalId>
+        <label>iOS Viewer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>WKWebView_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Key Message</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Description_vod__c</columns>
+        <columns>Active_vod__c</columns>
+        <columns>Media_File_Name_vod__c</columns>
+        <columns>Language_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_AT_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - AT Medical</label>
+        <queue>BMS_EMEA_AT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Access</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE - Access</label>
+        <language>en_US</language>
+        <queue>BMS_EMEA_BE_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE Medical</label>
+        <queue>BMS_EMEA_BE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Sales</fullName>
+        <columns>NAME</columns>
+        <columns>Active_vod__c</columns>
+        <columns>Category_vod__c</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE Sales</label>
+        <language>en_US</language>
+        <queue>BMS_EMEA_BE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_BE_EPM_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - BE - EPM</label>
+        <queue>BMS_EMEA_BX_BE_EPM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_BE_Sales_Key_Message_vod</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - BE - Sales</label>
+        <language>en_US</language>
+        <queue>BMS_EMEA_BX_BE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_NL_EPM_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - NL - EPM</label>
+        <queue>BMS_EMEA_BX_NL_EPM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_NL_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - NL - Sales</label>
+        <queue>BMS_EMEA_BX_NL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH - Access</label>
+        <queue>BMS_EMEA_CH_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH - Generic Owner</label>
+        <queue>BMS_EMEA_CH_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH Medical</label>
+        <queue>BMS_EMEA_CH_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Sales_Key_Message_vod</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH Sales</label>
+        <language>en_US</language>
+        <queue>BMS_EMEA_CH_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ - Access</label>
+        <queue>BMS_EMEA_CZ_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ - Generic Owner</label>
+        <queue>BMS_EMEA_CZ_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Medical</label>
+        <queue>BMS_EMEA_CZ_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Sales</label>
+        <queue>BMS_EMEA_CZ_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Access</fullName>
+        <columns>NAME</columns>
+        <columns>Active_vod__c</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE - Access</label>
+        <language>en_US</language>
+        <queue>BMS_EMEA_DE_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Medical</label>
+        <queue>BMS_EMEA_DE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_EMPLICITI_P10_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (EMPLICITI - P10)</label>
+        <queue>BMS_EMEA_DE_Sales_EMPLICITI_P10</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Linie_54_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (Linie 54)</label>
+        <queue>BMS_EMEA_DE_Sales_Linie_54</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Linie_55_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (Linie 55)</label>
+        <queue>BMS_EMEA_DE_Sales_Linie_55</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OPDL_S10_R10_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OPDL - S10 &amp; R10)</label>
+        <queue>BMS_EMEA_DE_Sales_OPDL_S10_R10</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OPD_IVA_Lunge3_0_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OPD IVA Lunge3.0)</label>
+        <queue>BMS_EMEA_DE_Sales_OPD_IVA_Lunge3_0</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OPD_YER_Kombi_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OPD + YER Kombi)</label>
+        <queue>BMS_EMEA_DE_Sales_OPD_YER_Kombi</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OpdivoLung_S10_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OpdivoLung - S10)</label>
+        <queue>BMS_EMEA_DE_Sales_OpdivoLung_S10</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Opdivo_RCC_T10_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (Opdivo RCC IVA)</label>
+        <queue>BMS_EMEA_DE_Sales_Opdivo_RCC_IVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK - Access</label>
+        <queue>BMS_EMEA_DK_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK - Generic Owner</label>
+        <queue>BMS_EMEA_DK_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Medical</label>
+        <queue>BMS_EMEA_DK_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Sales</label>
+        <queue>BMS_EMEA_DK_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_ES_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - ES Medical</label>
+        <queue>BMS_EMEA_ES_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI - Access</label>
+        <queue>BMS_EMEA_FI_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI - Generic Owner</label>
+        <queue>BMS_EMEA_FI_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Medical</label>
+        <queue>BMS_EMEA_FI_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Sales</label>
+        <queue>BMS_EMEA_FI_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR FAM</label>
+        <queue>BMS_EMEA_FR_FAM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Access_Key_Message_vod1</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR - Access</label>
+        <queue>BMS_EMEA_FR_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR - Generic Owner</label>
+        <queue>BMS_EMEA_FR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_KAM_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR KAM</label>
+        <queue>BMS_EMEA_FR_KAM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Medical</label>
+        <queue>BMS_EMEA_FR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_PF_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR PF Sales</label>
+        <queue>BMS_EMEA_FR_PF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Sales</label>
+        <queue>BMS_EMEA_FR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FT_DAFALGAN_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FT - DAFALGAN Sales</label>
+        <queue>BMS_EMEA_FT_DAFALGAN_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Eliquis_SPAF_Apodi_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Eliquis SPAF (Apodi)</label>
+        <queue>BMS_EMEA_GB_Eliquis_SPAF_Apodi</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Eliquis_VTE_DVA_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Eliquis VTE DVA</label>
+        <queue>BMS_EMEA_GB_Eliquis_VTE_DVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Generic Owner</label>
+        <queue>BMS_EMEA_GB_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_KCM_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - KCM</label>
+        <queue>BMS_EMEA_GB_KCM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB Medical</label>
+        <queue>BMS_EMEA_GB_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB Sales</label>
+        <queue>BMS_EMEA_GB_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Access</label>
+        <queue>BMS_EMEA_GR_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR - Generic Owner</label>
+        <queue>BMS_EMEA_GR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Medical</label>
+        <queue>BMS_EMEA_GR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Sales</label>
+        <queue>BMS_EMEA_GR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU - Access</label>
+        <queue>BMS_EMEA_HU_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Medical</label>
+        <queue>BMS_EMEA_HU_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Sales</label>
+        <queue>BMS_EMEA_HU_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - Generic Owner</label>
+        <queue>BMS_EMEA_IE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_KCM_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - KCM</label>
+        <queue>BMS_EMEA_IE_KCM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_KCM_National_Regional_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - KCM National Regional</label>
+        <queue>BMS_EMEA_IE_KCM_National_Regional</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE Medical</label>
+        <queue>BMS_EMEA_IE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE Sales</label>
+        <queue>BMS_EMEA_IE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL - Access</label>
+        <queue>BMS_EMEA_IL_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL - Generic Owner</label>
+        <queue>BMS_EMEA_IL_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL Medical</label>
+        <queue>BMS_EMEA_IL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL Sales</label>
+        <queue>BMS_EMEA_IL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Access</label>
+        <queue>BMS_EMEA_IT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT - Generic Owner</label>
+        <queue>BMS_EMEA_IT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Medical</label>
+        <queue>BMS_EMEA_IT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Sales</label>
+        <queue>BMS_EMEA_IT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NDS_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NDS Access</label>
+        <queue>BMS_EMEA_NDS_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NL_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NL Medical</label>
+        <queue>BMS_EMEA_NL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO - Access</label>
+        <queue>BMS_EMEA_NO_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO - Generic Owner</label>
+        <queue>BMS_EMEA_NO_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Medical</label>
+        <queue>BMS_EMEA_NO_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Sales</label>
+        <queue>BMS_EMEA_NO_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Sales</label>
+        <queue>BMS_EMEA_PF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL Medical</label>
+        <queue>BMS_EMEA_PL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Opdivo_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL Opdivo Sales</label>
+        <queue>BMS_EMEA_PL_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Access</label>
+        <queue>BMS_EMEA_PT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT - Generic Owner</label>
+        <queue>BMS_EMEA_PT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Medical</label>
+        <queue>BMS_EMEA_PT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Sales</label>
+        <queue>BMS_EMEA_PT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RO_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RO Medical</label>
+        <queue>BMS_EMEA_RO_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU - Access</label>
+        <queue>BMS_EMEA_RU_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU - Generic Owner</label>
+        <queue>BMS_EMEA_RU_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU Medical</label>
+        <queue>BMS_EMEA_RU_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU Sales</label>
+        <queue>BMS_EMEA_RU_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE - Access</label>
+        <queue>BMS_EMEA_SE_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE - Generic Owner</label>
+        <queue>BMS_EMEA_SE_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Medical</label>
+        <queue>BMS_EMEA_SE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Sales</label>
+        <queue>BMS_EMEA_SE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR - Access</label>
+        <queue>BMS_EMEA_TR_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR - Generic Owner</label>
+        <queue>BMS_EMEA_TR_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Medical</label>
+        <queue>BMS_EMEA_TR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Sales</label>
+        <queue>BMS_EMEA_TR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_UI_KCM_National_Regional_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - KCM National Regional</label>
+        <queue>BMS_EMEA_GB_KCM_National_Regional</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_UI_KCM_National_Regional_Key_Message_vod1</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - UI - KCM National Regional</label>
+        <queue>BMS_EMEA_UI_KCM_National_Regional</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_UKI_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - UKI Access</label>
+        <queue>BMS_EMEA_UKI_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_UKI_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - UKI Sales</label>
+        <queue>BMS_EMEA_UKI_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Access</label>
+        <queue>BMS_MEA_GULF_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF  Generic Owner</label>
+        <queue>BMS_MEA_GULF_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Medical</label>
+        <queue>BMS_MEA_GULF_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Sales (DVA)</label>
+        <queue>BMS_MEA_GULF_Sales_DVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Sales_Key_Message_vod1</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Sales</label>
+        <queue>BMS_MEA_GULF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Access</label>
+        <queue>BMS_MEA_SA_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA  Generic Owner</label>
+        <queue>BMS_MEA_SA_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Medical</label>
+        <queue>BMS_MEA_SA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Sales_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Sales (DVA)</label>
+        <queue>BMS_MEA_SA_Sales_DVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Sales_Key_Message_vod1</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Sales</label>
+        <queue>BMS_MEA_SA_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Access_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA Access</label>
+        <queue>BMS_MEA_ZA_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Generic_Owner_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA  Generic Owner</label>
+        <queue>BMS_MEA_ZA_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Medical_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA Medical</label>
+        <queue>BMS_MEA_ZA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_SAles_Key_Message_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA SAles</label>
+        <queue>BMS_MEA_ZA_SAles</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MSL_Sales_Product_Catalog</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - ONC MSL/Sales Owner</label>
+        <language>en_US</language>
+        <queue>BMSMSLSalesOwner</queue>
+    </listViews>
+    <listViews>
+        <fullName>BMS_Onc_Sales_Owner</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>BMS - ONC Sales Owner</label>
+        <language>en_US</language>
+        <queue>BMSSalesOwner</queue>
+    </listViews>
+    <listViews>
+        <fullName>BMS_Sales_Sampling</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <filterScope>Queue</filterScope>
+        <filters>
+            <field>Product_vod__c</field>
+            <operation>equals</operation>
+            <value>ONGLYZA</value>
+        </filters>
+        <label>BMS - Sales (Sampling)</label>
+        <language>en_US</language>
+        <queue>BMS_Sales_Sampling</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>FT_Key_Messages_BMS_EMEA</fullName>
+        <columns>NAME</columns>
+        <columns>Country_Code_BMS_EMEA__c</columns>
+        <columns>Product_vod__c</columns>
+        <columns>CLM_ID_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Active_vod__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Country_Code_BMS_EMEA__c</field>
+            <operation>equals</operation>
+            <value>FR,fr,pf,PF</value>
+        </filters>
+        <filters>
+            <field>CLM_ID_vod__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>FT Key Messages</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>BMS_EMEA_CO_ORDINATORS</group>
+            <group>BMS_EMEA_FT_CMO</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TT</fullName>
+        <columns>NAME</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Description_vod__c</columns>
+        <columns>Active_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Media_File_Name_vod__c</columns>
+        <columns>Language_vod__c</columns>
+        <columns>Country_Code_BMS_EMEA__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_vod__c</field>
+            <operation>equals</operation>
+            <value>opdivo</value>
+        </filters>
+        <label>TT</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Message</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Key Messages</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Description_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Strategy_vod__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Description_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Strategy_vod__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Description_vod__c</searchFilterFields>
+        <searchFilterFields>Product_vod__c</searchFilterFields>
+        <searchFilterFields>Product_Strategy_vod__c</searchFilterFields>
+        <searchResultsAdditionalFields>Description_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Strategy_vod__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

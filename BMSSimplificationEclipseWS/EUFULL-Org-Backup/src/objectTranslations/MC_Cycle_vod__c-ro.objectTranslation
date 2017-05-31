@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ciclu MC</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ciclu MC</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Cicluri MC</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Cicluri MC</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ciclu MC</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ciclu MC</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Cicluri MC</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Cicluri MC</value>
+    </caseValues>
+    <fields>
+        <label>Activare obiective editate</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Dacă „adevărat” şi câmpul de transpunere există pentru obiectul MC_Target_vod, când integrarea MCCP este activă, va popula câmpurile cu transpunere. Nu se recomandă să setaţi aceasta frecvent, ci doar când valorile de transpunere trebuie să fie populate.</help>
+        <label>Determinare câmpuri cu transpunere</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Descriere</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data finalizării</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID extern</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Peste limită</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data începerii</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stare</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Finalizat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>În desfăşurare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Planificat</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sub limită</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Definiţie ciclu</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Data începerii nu poate fi mai mare decât sau egală cu Data finalizării.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

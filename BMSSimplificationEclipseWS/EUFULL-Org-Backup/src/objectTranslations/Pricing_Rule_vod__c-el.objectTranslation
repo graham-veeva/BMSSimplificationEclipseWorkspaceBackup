@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Κανόνας τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Κανόνες τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Κανόνας τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Κανόνες τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Κανόνας τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Κανόνες τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Κανόνας τιμολόγησης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Κανόνες τιμολόγησης</value>
+    </caseValues>
+    <fields>
+        <label>Ομάδα λογαριασμών</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Λογαριασμός</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Κανόνες τιμολόγησης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ενεργό</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Χειριστής κανόνα αλυσίδας</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>ΚΑΙ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>Η</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Κανόνας αλυσίδας</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προϊόν σύγκρισης</label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel>Κανόνες τιμολόγησης (Προϊόν σύγκρισης)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τύπος σύγκρισης</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Τιμή λίστας</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation>Καθαρή τιμή</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Ποσότητα προϊόντος</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Συμβόλαιο</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Κανόνες τιμολόγησης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Κανόνας συμψηφισμού</label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης παράδοσης</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Παραγγελία παράδοσης</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης παράδοσης</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μέγιστη παράλειψη έκπτωσης</label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Παράλειψη έκπτωσης</label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label>Έκπτωση</label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εξωτερική αναγνωριστική ταυτότητα</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μέγιστα δωρεάν αγαθά</label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μέγιστο ποσοστό δωρεάν αγαθών</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ποσοστό δωρεάν αγαθών</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label>Δωρεάν αγαθά</label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όριο</label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Λίστα τιμών</label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ελάχιστο χρονικό πλαίσιο παράδοσης</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ελάχιστο καθαρής τιμής</label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Καθαρή τιμή</label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εκστρατεία παραγγελίας</label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel>Κανόνες τιμολόγησης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ανώτερο όριο πληρωμών</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πληρωμή</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αγοριαία αξία</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ομάδα τιμολόγησης</label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τύπος σύγκρισης προϊόντος</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Τιμή λίστας</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Ποσότητα προϊόντος</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Μέγιστο προϊόν</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ελάχιστο προϊόν</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προϊόν</label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Κανόνες τιμολόγησης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Μέγιστη ποσότητα</label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ελάχιστη ποσότητα</label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>Περιγραφή κανόνα</label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προτεινόμενη τιμή λιανικής</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κείμενο πρότασης</label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όριο πρότασης</label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Κανόνας επιπέδου μάρκας</label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Περίοδος παράδοσης</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας έκπτωσης</label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας ποσοστού δωρεάν αγαθών</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας δωρεάν αγαθών</label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας ορίου</label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας λίστας τιμών</label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας όρων πληρωμής</label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Κανόνας επιπέδου ομάδας προϊόντων</label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Πρέπει να οριστεί μόνο ένας λογαριασμός και μία ομάδα λογαριασμών.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο ο τύπος προϊόντος των &apos;Λεπτομερειών&apos; επιτρέπεται</errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο ένα από τον Κανόνα Προϊόντος Αλυσίδας και Συμψηφισμού πρέπει να τσεκαριστεί</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το προϊόν σύγκρισης πρέπει να είναι κενό</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο κανόνας αλυσίδας δεν μπορεί να είναι παραγγελία παράδοσης</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο κανόνας αλυσίδας δε μπορεί να είναι το δεσμευτικό όριο.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο παράγοντας του κανόνα αλυσίδας πρέπει να είναι είτε ΚΑΙ είτε Η</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το προϊόν πρέπει να έχει αξία και δεν μπορεί να ισούται με το στοιχείο σετ</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η μέγιστη ποσότητα πρέπει να είναι μεγαλύτερη από την ελάχιστη ποσότητα.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο τύπος σύγκρισης &apos;Καθαρή αξία΄&apos; δεν υποστηρίζεται.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η έκπτωση δεν μπορεί να είναι αρνητική.</errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Οι κανόνες περιορισμού παράδοσης παραγγελίας δεν μπορούν να συνδέονται σε ένα συγκεκριμένο προϊόν.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο οι κανόνες περιορισμού μπορούν να σημειωθούν ως παράδοση παραγγελίας.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η ημερομηνία λήξης παράδοσης πρέπει να είναι μεγαλύτερη από την ημερομηνία έναρξης</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Αν ο τύπος προϊόντος = &quot;Παραγγελία&quot;, οι ημερομηνίες έναρξης και λήξης πρέπει να συμπληρωθούν</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το προϊόν μπορεί να είναι &quot;άδειο&quot; ή του τύπου &quot;παραγγελία&quot;</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η ημερομηνία έναρξης παράδοσης πρέπει να είναι ίση ή μεγαλύτερη από τον κανόνα έναρξη ημερομηνίας</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το προϊόν μπορεί να είναι κενό ή τύπου &quot;Παραγγελία&quot; και &quot;Στοιχείο σετ&quot;.</errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το μέγιστο παράλειψης έκπτωσης είναι χαμηλότερο από την έκπτωση</errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η ημερομηνία έναρξης είναι μετά την ημερομηνία λήξης</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το μέγιστο ποσοστό δωρεάν αγαθών δεν μπορεί να συμπληρωθεί για τους κανόνες δωρεάν αγαθών</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο τύπος σύγκρισης &quot;Λίστα αξίας&quot; δεν υποστηρίζεται.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το μέγιστο των δωρεάν αγαθών δεν υποστηρίζεται.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Επιτρέπεται μόνο ο τύπος προϊόντος &quot;Παραγγελία&quot;</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το μέγιστο δωρεάν αγαθών είναι χαμηλότερο από τα δωρεάν αγαθά</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το στοιχείο κιτ δεν επιτρέπεται στη Συμφωνία Συμψηφισμού.</errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το προϊόν μπορεί να είναι κενό ή τύπου &quot;Παραγγελία&quot; &quot;Λεπτομέρεια&quot; &quot;Ομάδα προϊόντων&quot; &quot;Στοιχείο σετ&quot;.</errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο ο τύπος προϊόντος &apos;Παραγγελία&apos; και το &apos;Στοιχείο κιτ&quot; επιτρέπονται.</errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η μέγιστη ποσότητα πρέπει να είναι μεγαλύτερη από την ελάχιστη ποσότητα.</errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Αν είναι συμπληρωμένο το χρονικό πλαίσιο παράδοσης σε λεπτά, οι ημερομηνίες έναρξης και λήξης παράδοσης πρέπει να είναι κενές</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Αν είναι συμπληρωμένο το χρονικό πλαίσιο παράδοσης σε λεπτά, το Product_vod πρέπει να είναι κενό</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Η καθαρή τιμή και η παράλειψη έκπτωση εμφανίζονται ταυτόχρονα.</errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το ελάχιστο καθαρής τιμής είναι μεγαλύτερο από την καθαρή τιμή</errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Οι κανόνες των όρων πληρωμής δεν υποστηρίζουν την Επιστροφή λόγω Συμψηφισμού Προϊόντων.</errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ο κανόνας των όρων πληρωμής δεν υποστηρίζει τον τύπο προϊόντος του στοιχείου κιτ.</errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο τύποι προϊόντων Παραγγελία, Λεπτομέρειες, [κενό] ή Ομάδα Προϊόντος επιτρέπονται. Και όταν το προϊόν δεν είναι κενό, το τετραγωνάκι Κανόνας Συμψηφισμού πρέπει να είναι επιλεγμένο.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Απαιτείται έγκυρος τύπος σύγκρισης προϊόντος</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Το προϊόν πρέπει να είναι διαφορετικό από το Προϊόν Συμψηφισμού και όχι κενό.</errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Μόνο ο τύπος προϊόντος &apos;Ομάδα Προϊόντος&apos;&apos; επιτρέπεται</errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Απαιτείται ελάχιστο προϊόν ή μέγιστο προϊόν</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

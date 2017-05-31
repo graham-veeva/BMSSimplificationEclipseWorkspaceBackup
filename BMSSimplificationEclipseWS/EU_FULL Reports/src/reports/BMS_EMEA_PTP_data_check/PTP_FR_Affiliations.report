@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Affiliation_vod__c.Influence_vod__c</field>
+    </columns>
+    <columns>
+        <field>Affiliation_vod__c.Role_vod__c</field>
+    </columns>
+    <columns>
+        <field>Affiliation_vod__c.To_Account_vod__c</field>
+    </columns>
+    <columns>
+        <field>Affiliation_vod__c.From_Account_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Affiliation_vod__c.Account_Source_Country_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>FR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_NAME</column>
+            <operator>equals</operator>
+            <value>Javier Ortiz</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>PTP - FR Affiliations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Affiliation_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Affiliation_vod__c.From_Account_vod__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

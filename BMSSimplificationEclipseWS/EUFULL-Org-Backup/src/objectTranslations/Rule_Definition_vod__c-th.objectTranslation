@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>นิยามกฎ</value>
+    </caseValues>
+    <fields>
+        <help>บ่งชี้เมื่อกฎถูกใช้งานอยู่ใน Salesforce.com</help>
+        <label>ใช้งานอยู่</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>ชื่อฟิลด์ที่ข้อความแสดงข้อผิดพลาดระดับฟิลด์จะปรากฏขึ้น</help>
+        <label>แสดงผลฟิลด์</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>สูตรกฎ</help>
+        <label>สูตรเงื่อนไขข้อผิดพลาด</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>ข้อความแสดงข้อผิดพลาดสำหรับกฎ</help>
+        <label>ข้อความหลัก</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>อ็อบเจ็กต์ที่กฏการตรวจสอบนี้ประจำอยู่</help>
+        <label>อ็อบเจ็กต์</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>นิยามของกฎ</relationshipLabel>
+    </fields>
+    <fields>
+        <label>คำสั่งซื้อ</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>บ่งชี้เมื่อ Veeva พบไวยากรณ์ที่ไม่สนับสนุนในนิยามกฎ</help>
+        <label>สนับสนุน</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>Id ภายนอกสำหรับเร็กคอร์ด รูปแบบคือ [ชื่อกฎ]::[ชนิดเร็กคอร์ด.ชื่อ]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>บรรทัดตัวกรองการค้นหา SFDC</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>กฎ SFDC</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

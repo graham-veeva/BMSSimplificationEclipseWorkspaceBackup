@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify the Rep when the coaching report is submitted by their manager</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>Notify the Rep BMS Canada</name>
+    <style>formalLetter</style>
+    <subject>New Coaching report created</subject>
+    <textOnly>Dear {!Coaching_Report_vod__c.Employee_vod__c} 
+
+A new coaching report has been created for you. Please go over it and acknowledge receipt of the same.
+
+
+{!Coaching_Report_vod__c.Link}
+
+
+Sincerely,
+{!Coaching_Report_vod__c.CreatedBy}</textOnly>
+    <type>html</type>
+</EmailTemplate>

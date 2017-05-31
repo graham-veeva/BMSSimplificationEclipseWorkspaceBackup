@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuration d&apos;événement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurations d&apos;événement</value>
+    </caseValues>
+    <fields>
+        <label>Date de fin</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;événement</label>
+        <name>Event_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de début</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <label>Configuration d&apos;événement</label>
+        <name>Event_Configuration_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La date de fin ne doit pas être antérieure à la date de début.</errorMessage>
+        <name>StartDateBeforeEndDate</name>
+    </validationRules>
+</CustomObjectTranslation>

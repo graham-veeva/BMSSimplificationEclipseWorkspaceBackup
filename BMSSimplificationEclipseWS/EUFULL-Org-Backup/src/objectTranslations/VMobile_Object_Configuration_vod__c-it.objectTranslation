@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configurazione oggetto VMobile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurazioni oggetti VMobile</value>
+    </caseValues>
+    <fields>
+        <label>Campo di ricerca account</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Attivo</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome oggetto figlio</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Relazione figlio</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dispositivo</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>&quot;Attivare per forzare aggiornamento di oggetti con clausola &quot;&quot;Where&quot;&quot; aggiornata o che usano modello di condivisione privato. È possibile che i tempi di sincronizzazione aumentino.&quot;</help>
+        <label>Attiva sincronizzazione migliorata</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>Escludi elenco campi</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>Limita campi a elenco</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>Include le informazioni sugli allegati durante la sincronizzazione dell&apos;oggetto.</help>
+        <label>Includi allegati</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Includi oggetti correlati</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>Solo metadati</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome oggetto</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome oggetto padre</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profilo</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome profilo</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Campo relazione</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome relazione</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>Riga figlio e padre</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>Sincronizzazione completa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>Correlato a livello superiore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>Livello superiore</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>&quot;Clausola &quot;&quot;Where&quot;&quot;&quot;</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label>TABLET</label>
+        <name>TABLET</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>È necessario specificare il nome oggetto.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>È necessario specificare il nome oggetto padre e il nome relazione sui VMOC che fanno riferimento a un oggetto di livello principale</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

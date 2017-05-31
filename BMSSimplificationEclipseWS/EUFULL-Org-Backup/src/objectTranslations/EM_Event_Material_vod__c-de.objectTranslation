@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Activity Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Activity Materials</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Activity Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Activity Materials</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Activity Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Activity Materials</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Activity Material</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Activity Materials</value>
+    </caseValues>
+    <fields>
+        <label>Gültigkeit</label>
+        <name>Active_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Tatsächlichen Erledigungsstatus für Action Item angeben.Der Nutzer muss erst einen, der angegebenen Erledigungstadien setzen, bevor die Action item als vollständig gilt und den nächsten Status erreicht.</help>
+        <label>Tatsächlicher Erfüllungsstatus</label>
+        <name>Actual_Completion_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Vollständig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Externally Managed</masterLabel>
+            <translation>Extern geführt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>In Arbeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation>Nicht zutreffend</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wenn Kontrollkästchen für &quot;Anhang benötigt&quot; markiert ist, dann muss mindestens ein Anhang hinzugefügt werden, bevor der nächste Activity Status erreicht werden kann.</help>
+        <label>Ausführen vor (Status)</label>
+        <name>Applicable_Activity_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation>Archiviert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certifier Approved</masterLabel>
+            <translation>Vom Experten genehmigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed_vod</masterLabel>
+            <translation>Geschlossen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Business Approval</masterLabel>
+            <translation>BU Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Certification</masterLabel>
+            <translation>Experten Review</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Closeout</masterLabel>
+            <translation>Abschluss</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Exception Review</masterLabel>
+            <translation>Ausnahmeüberprüfung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Execution</masterLabel>
+            <translation>Durchführung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Planning</masterLabel>
+            <translation>Planung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Post-Execution</masterLabel>
+            <translation>Nach-Durchführung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation>Service Coordinator Review</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Certifier Approval</masterLabel>
+            <translation>Ausstehende Experten Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Final Approval</masterLabel>
+            <translation>Ausstehende endgültige Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Reapproval</masterLabel>
+            <translation>Ausstehende erneute Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Reviewer Approval</masterLabel>
+            <translation>Ausstehende Prüfer Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_Approval_vod</masterLabel>
+            <translation>Ausstehende Genehmigung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Abgelehnt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested_vod</masterLabel>
+            <translation>Angefragt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reschedule</masterLabel>
+            <translation>Verschoben</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reviewer Approved</masterLabel>
+            <translation>Genehmigt vom Prüfer</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Genehmigungsdatum von externen System</help>
+        <label>Genehmigungsdatum</label>
+        <name>Approval_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Basissprache Name</label>
+        <name>Base_Language_Name_vod__c</name>
+    </fields>
+    <fields>
+        <help>Kanal</help>
+        <label>Kanal</label>
+        <name>Channel_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>E-Mail</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face-to-Face</masterLabel>
+            <translation>Persönlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation>Drucken</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>CLM-Präsentation</label>
+        <name>Clm_Presentation_vod__c</name>
+        <relationshipLabel>Veranstaltungsmaterialien</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By__c</name>
+    </fields>
+    <fields>
+        <label>Aktueller Materialstatus</label>
+        <name>Current_Material_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beschreibung</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>E-Mail Vorlage</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Activity Materialien</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Activity</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Activity Materialien</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Auslaufdatum (von externen System)</help>
+        <label>Auslaufdatum</label>
+        <name>Expiration_Date_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help>ID von externen System</help>
+        <label>ID</label>
+        <name>Item_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>URL des Materials auf externen Quelle</help>
+        <label>Link</label>
+        <name>Item_Location_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Aus externem System</help>
+        <label>Materialtyp</label>
+        <name>Item_Type__c</name>
+        <picklistValues>
+            <masterLabel>Action Item</masterLabel>
+            <translation><!-- Action Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agenda</masterLabel>
+            <translation>Agenda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handouts</masterLabel>
+            <translation>Informationsblätter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation</masterLabel>
+            <translation>Einladung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roster</masterLabel>
+            <translation>Liste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sign-in Sheet</masterLabel>
+            <translation>Anwesenheitsliste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slide Deck</masterLabel>
+            <translation>Präsentationsfolien</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By__c</name>
+    </fields>
+    <fields>
+        <help>Mögliche Erledigungsstadien für Action Item hier angeben. Der Nutzer muss einen der Erledigungstadien auswählen um das Action Item zu vervollständigen.</help>
+        <label>Erforderlicher Erfüllungsstatus</label>
+        <name>Mandated_Completion_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Storniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation>Vollständig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Externally Managed</masterLabel>
+            <translation>Extern geführt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>In Arbeit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation>Nicht zutreffend</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Wenn Häkchen gesetzt, muss das Action Item als &quot;Vollständig&quot; markiert werden, bevor Action Item erfüllt ist und nächster Status erreicht werden kann.</help>
+        <label>Pflichtangabe?</label>
+        <name>Mandatory_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Materialtyp</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verwendetes Material</label>
+        <name>Material_Used_vod__c</name>
+    </fields>
+    <fields>
+        <label>Topic Liste</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Activity Materialien</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Name</label>
+        <name>Name_vod__c</name>
+    </fields>
+    <fields>
+        <help>Veeva Kennzeichen</help>
+        <label>Notizen</label>
+        <name>Notes_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <help>Zweck der Materialien - Ad Board, Klinische Studien etc.</help>
+        <label>Zweck</label>
+        <name>Purpose_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Ad Board</masterLabel>
+            <translation><!-- Ad Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial</masterLabel>
+            <translation>Klinische Studie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Erforderlich</label>
+        <name>Required_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wenn Kontrollkästchen markiert ist, dann muss ein Anhang hinzugefügt werden, bevor der nächste Activity Status erreicht werden kann.</help>
+        <label>Anhang erforderlich?</label>
+        <name>Requires_Attachment_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Wert eintragen um hinzuweisen das Material von Referent erstellt wurde/ dessen Besitz ist.</help>
+        <label>Referent</label>
+        <name>Speaker_HCPTS__c</name>
+        <relationshipLabel>Activity Materialien</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Untertyp</label>
+        <name>Subtype_vod__c</name>
+        <picklistValues>
+            <masterLabel>Follow_Up_vod</masterLabel>
+            <translation>Folgeaktivität</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation_vod</masterLabel>
+            <translation>Einladung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reminder_vod</masterLabel>
+            <translation>Erinnerung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save_The_Date_vod</masterLabel>
+            <translation>Termin vormerken</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Auswahlmenü Zielgruppe</help>
+        <label>Zielgruppe</label>
+        <name>Target_Audience_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advocacy</masterLabel>
+            <translation>Interessenvertretung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Access</masterLabel>
+            <translation><!-- Field Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Medical</masterLabel>
+            <translation><!-- Field Medical --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Action Item</label>
+        <name>Action_Item_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Agenda</label>
+        <name>Agenda_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Teilnehmer Liste</label>
+        <name>Attendee_List_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM-Präsentation</label>
+        <name>CLM_Presentation_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>E-Mail-Vorlage</label>
+        <name>Email_Template_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Material</label>
+        <name>Material_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Präsentation</label>
+        <name>Presentation_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Einladungsvorlage ausdrucken</label>
+        <name>Print_Invitation_Template_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Anmeldevorlage drucken</label>
+        <name>Print_Sign_In_Template_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simple Material --></label>
+        <name>Simple_Material_HCPTS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Der &quot;Ausführen vor&quot; Status kann nicht leer bleiben für Action Items und/oder Materialien, die angehängt werden müssen.</errorMessage>
+        <name>Applicable_Activity_Status_Spec</name>
+    </validationRules>
+</CustomObjectTranslation>

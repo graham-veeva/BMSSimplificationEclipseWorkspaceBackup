@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Händelseregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Händelseregel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Händelseregel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Händelseregler</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Händelseregler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Händelseregler</value>
+    </caseValues>
+    <fields>
+        <label>Deltagarfält för konto</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>CLM-presentation</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Händelseregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Deltagarfält för kontakt</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Åsidosättande av land</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Händelseregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mall för e-post</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Händelseregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Händelsekonfiguration</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Händelseregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externt ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Filtertyp</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Obligatoriskt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Valfritt (standard av)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Valfritt (standard på)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Materialtyp</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Händelsetyper som använder material</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Fält för registrering online</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kvalifikation</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Händelseregler</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sök utanför mitt område</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Talarfält</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Deltagarfält för användare</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fält för deltagare utan inbjudan</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namn</nameFieldLabel>
+    <recordTypes>
+        <label>Deltagarfält</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Material</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Fält för registrering online</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Talarfält</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Talarkvalificering</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Fält för deltagare utan inbjudan</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>En enskild regel kan inte ha både mallarna för e-post och CLM-presentation ifyllda. Skapa separata regler för dessa två poster.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En enskild regel kan inte ha både material och CLM-presentation ifyllda. Skapa separata regler för dessa två poster.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>En enskild regel kan inte ha både mallarna för material och e-post ifyllda. Skapa separata regler för dessa två poster.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

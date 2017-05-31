@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Product_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Description_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Action_BMS__c.Due_Date_BMS__c</field>
+    </columns>
+    <description>Report to display all past due actions for a given user by account.</description>
+    <filter>
+        <criteriaItems>
+            <column>Action_BMS__c.Due_Date_BMS__c</column>
+            <operator>lessThan</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Action_BMS__c.Status_BMS__c</column>
+            <operator>equals</operator>
+            <value>Not Completed</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Action_BMS__c.Account_BMS__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - All - Actions: Past Due / Account</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Action_BMS__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Action_BMS__c.Completion_Date_BMS__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

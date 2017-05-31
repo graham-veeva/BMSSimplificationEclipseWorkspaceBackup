@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Veranstaltungsregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Veranstaltungsregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Veranstaltungsregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Veranstaltungsregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Veranstaltungsregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Veranstaltungsregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Veranstaltungsregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Veranstaltungsregeln</value>
+    </caseValues>
+    <fields>
+        <label>Account-Teilnehmerfelder</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activity Typ</label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>CLM-Präsentation</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Veranstaltungsregeln</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kontaktfelder Teilnehmer</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Land geändert in</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Veranstaltungsregeln</relationshipLabel>
+    </fields>
+    <fields>
+        <label>E-Mail-Vorlage</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Veranstaltungsregeln</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Veranstaltungskonfiguration</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Veranstaltungsregeln</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Filtertyp</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Obligatorisch</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Optional (Standard aus)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Optional (Standard an)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Materialtyp</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Veranstaltungstypen, die Material verwenden</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Online-Registrierungsfelder</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Qualifikation</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Veranstaltungsregeln</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Außerhalb meines Gebiets suchen</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Referentenbereich</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Benutzerfelder Teilnehmer</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unangemeldete Teilnehmer Felder</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Teilnehmerfelder</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Material</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Online-Registrierungsfelder</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Referentenbereich</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Referentenqualifikation</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Unangemeldete Teilnehmer Felder</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Durch eine einzige Regel können nicht E-Mail-Vorlage und CLM-Präsentation gefüllt werden. Erstellen Sie separate Regeln für diese beiden Elemente.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Durch eine einzige Regel können nicht Material und CLM-Präsentation gefüllt werden. Erstellen Sie separate Regeln für diese beiden Elemente.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bei einer einzigen Regel darf nicht sowohl die Materialvorlage als auch die E-Mail-Vorlage ausgefüllt sein. Legen Sie separate Regeln für diese beiden Artikel an.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Territoriumbudget</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Territoriumbudgetten</value>
+    </caseValues>
+    <fields>
+        <label>Actief</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Huidige hoeveelheid</label>
+        <name>Current_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Huidige waarde</label>
+        <name>Current_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beschrijving</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Laatste transactie</label>
+        <name>Last_Transaction_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Territoriumbudgetten</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beginhoeveelheid</label>
+        <name>Start_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beginwaarde</label>
+        <name>Start_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Goedgekeurd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>Gesloten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Nieuw</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Approval</masterLabel>
+            <translation>Goedkeuring aanvragen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Territorium</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation>Algemeen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>Verkoop</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Territory Budget Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Begindatum kan niet later zijn dan einddatum</errorMessage>
+        <name>VEEVA_DATES_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

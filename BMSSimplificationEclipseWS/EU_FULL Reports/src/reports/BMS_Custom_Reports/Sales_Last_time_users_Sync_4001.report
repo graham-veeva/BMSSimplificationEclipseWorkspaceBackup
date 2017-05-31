@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Type_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Start_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Completed_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Duration_vod__c</field>
+    </columns>
+    <description>Step 400: Last users sync</description>
+    <format>Tabular</format>
+    <name>Sales - Last time users Sync 400</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sync_Tracking_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sync_Tracking_vod__c.Sync_Completed_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

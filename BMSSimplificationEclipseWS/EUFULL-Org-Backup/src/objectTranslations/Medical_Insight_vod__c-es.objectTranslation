@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Conocimiento médico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Conocimientos médicos</value>
+    </caseValues>
+    <fields>
+        <label>Cuenta</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Conocimientos médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ensayo clínico</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Conocimientos médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Fecha</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Descripción</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID de referencia de entidad</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interacción</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Conocimientos médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Evento médico</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Conocimientos médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Otro origen</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anular bloqueo</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publicación</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Conocimientos médicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Estado</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Guardado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Enviado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Resumen</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Desbloquear</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre de Conocimiento médico</nameFieldLabel>
+    <recordTypes>
+        <label>Conocimiento médico clave aprendido</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Se requiere una Descripción para guardar o enviar un Conocimiento médico clave aprendido</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se requiere un Resumen para guardar o enviar un Conocimiento médico clave aprendido</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Enviar</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

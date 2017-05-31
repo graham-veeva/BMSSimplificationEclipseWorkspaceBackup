@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>VMobile-Objektkonfiguration</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>VMobile-Objektkonfigurationen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>VMobile-Objektkonfiguration</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>VMobile-Objektkonfigurationen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>VMobile-Objektkonfiguration</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>VMobile-Objektkonfigurationen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>VMobile-Objektkonfiguration</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>VMobile-Objektkonfigurationen</value>
+    </caseValues>
+    <fields>
+        <label>Account-Nachschlagefeld</label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Name untergeordnetes Objekt</label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Untergeordnete Beziehung</label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gerät</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Durch Aktivieren dieser Option wird eine Aktualisierung von Objekten erzwungen, die ein privates Freigabemodell verwenden oder für die eine aktualisierte WHERE-Klausel gilt. Dadurch dauert die Synchronisierung möglicherweise länger.</help>
+        <label>Erweiterte Synchronisierung aktivieren</label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label>Liste ausgeschlossener Felder</label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label>Grenzwert Felder auf Liste</label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help>Informationen zu Anhängen bei der Objektsynchronisierung einschließen.</help>
+        <label>Anhänge beifügen</label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Verwandte Objekte einschließen</label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nur Metadaten</label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label>Objektname</label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Name übergeordnetes Objekt</label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profil</label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Profilname</label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beziehungsfeld</label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beziehungsbezeichnung</label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation>Untergeordnete und übergeordnete Zeile</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation>Vollständige Synchronsierung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation>Mit oberer Ebene verwandt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation>Obere Ebene</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>WHERE-Klausel</label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- TABLET --></label>
+        <name>TABLET</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Die Objektbezeichnung muss angegeben werden.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bei VMOCs, die mit einem Objekt der obersten Ebene verbunden sind, müssen die Bezeichnung des übergeordneten Objekts und die Bezeichnung der Beziehung angegeben werden.</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

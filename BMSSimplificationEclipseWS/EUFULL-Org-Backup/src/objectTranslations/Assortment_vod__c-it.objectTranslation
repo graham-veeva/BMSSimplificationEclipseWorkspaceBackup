@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assortimento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assortimenti</value>
+    </caseValues>
+    <fields>
+        <label>Gruppo di account</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo di record account</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Farmacia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Grossista</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tutti gli altri</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gruppo assortimento</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di fine</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo di record monitoraggio inventario</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Monitoraggio inventario</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo di record ordine</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Diretto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Trasferimento</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Limite prodotto</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data di inizio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label>Assortimento Medicina interna</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Assortimento OM</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Data di inizio successiva a data di fine</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>In Assortimento limite prodotto, la sezione Tutti gli altri non può essere visualizzata</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Anteprima</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerinnen hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerinnen hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerinnen hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Teilnehmer hinzufügen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Teilnehmerinnen hinzufügen</value>
+    </caseValues>
+    <fields>
+        <label>Unternehmen</label>
+        <name>Company_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>DHG ist erforderlich</label>
+        <name>DHG_is_required_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Funktion /Fachbereich / Spezialisierung</label>
+        <name>Function_TherArea_Specialty_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Veranstaltung</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Geplante Teilnehmer</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Vorgeschlagene Teilnehmerzahl lt. Master</help>
+        <label>Anzahl</label>
+        <name>Number_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Gesponserte Teilnehmer</label>
+        <name>Sponsored_Participant_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help>Nutzereingabe</help>
+        <label><!-- z_DELETE_Number --></label>
+        <name>User_Number_BMS_EMEA__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Meeting Planned Participant Name --></nameFieldLabel>
+    <recordTypes>
+        <label>BMS - EMEA - Teilnehmer</label>
+        <name>BMS_EMEA_Audience</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BMS - EMEA - BMS Mitarbeiter</label>
+        <name>BMS_EMEA_BMS_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BMS - EMEA - Mitarbeiter der Allianz-Firma</label>
+        <name>BMS_EMEA_JV_Partner_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BMS - EMEA - Referent / Berater</label>
+        <name>BMS_EMEA_Speaker</name>
+    </recordTypes>
+    <recordTypes>
+        <label>BMS- EMEA - Gesponsert</label>
+        <name>BMS_EMEA_Sponsored</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to edit or delete a record as the Meeting has passed the Planning phase. --></errorMessage>
+        <name>BMS_EMEA_FFM_No_Modification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sie sind nicht befugt, Felder zu verändern, da sie Co-Autor des Meetings sind</errorMessage>
+        <name>BMS_EMEA_FFM_Plan_Participant_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Territory_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.TA_BMS__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Account_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Address_Line_1_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.City_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.State_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Zip_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Sample_vod__c.Product_vod__c</field>
+    </columns>
+    <description>Submitted interactions with the promotional item ORENCIA SUBQ PATIENT STARTER PACK WITH COLD CASE-BELLY BAND</description>
+    <filter>
+        <criteriaItems>
+            <column>Call2_vod__c.Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Submitted_vod,Submitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call2_Sample_vod__c.Product_vod__c</column>
+            <operator>startsWith</operator>
+            <value>ORENCIA SUBQ PATIENT STARTER PACK WITH COLD CASE-BELLY BAND</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>BMS- Interactions with Promotional Items</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Call2_vod__c$Call2_Sample_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Assignment_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ред от асортимент</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Редове от асортимент</value>
+    </caseValues>
+    <fields>
+        <label>Асортимент</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Редове от асортимент</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Да се свива ли по подразбиране?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Родителски раздел</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Редове от асортимент</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Продукт</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Редове от асортимент</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Етикет на раздел</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Сортиране</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Продукт от асортимент с ИМ</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Раздел от асортимент с ИМ</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Продукт от асортимент с УП</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Раздел от асортимент с УП</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Редовете за асортименти с УП може да бъдат свързани единствено с асортименти с УП, а редовете за асортименти с ИМ може да бъдат свързани единствено с асортименти с ИМ</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Може да бъде отметнато само за запис от тип IM_Assortment_Section_vod или OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Разделът не може да бъде свързан с родителски раздел</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Разделът и продуктът не могат да бъдат указани в един и същ запис.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

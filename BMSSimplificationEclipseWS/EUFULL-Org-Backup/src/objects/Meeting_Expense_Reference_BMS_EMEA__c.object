@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO Jan-2014:  Req 821: &quot;During the Meeting Post-Execution phase, the system must provide the ability to add Expense References&quot;</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>External_ID_BMS_SHARED__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Feb 2014: external ID used for data loading</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_sent_to_accounting_BMS_EMEA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>VPRO Jan-2014: Meeting Expense References have a Type, a Reference, and a Checkbox to flag whether the invoice was sent to accounting.</description>
+        <externalId>false</externalId>
+        <label>Invoice sent to accounting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_BMS_EMEA__c</fullName>
+        <description>VPRO Jan-2014: Meeting Expense References are child records from Meetings.</description>
+        <externalId>false</externalId>
+        <label>Meeting</label>
+        <referenceTo>Medical_Event_vod__c</referenceTo>
+        <relationshipLabel>Meeting Expense References</relationshipLabel>
+        <relationshipName>Meeting_Expense_References</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Reference_No_BMS_EMEA__c</fullName>
+        <description>VPRO Jan-2014: Meeting Expense References have a Type, a Reference, and a Checkbox to flag whether the invoice was sent to accounting.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Reference No</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_Category_BMS_EMEA__c</fullName>
+        <description>VPRO Jan-2014: Meeting Expense References have a Type, a Reference, and a Checkbox to flag whether the invoice was sent to accounting.</description>
+        <externalId>false</externalId>
+        <label>Type/Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Concur Expenses</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAP PO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Meeting Expense Reference</label>
+    <nameField>
+        <displayFormat>MER-{0000000}</displayFormat>
+        <label>Meeting Expense Reference Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Meeting Expense References</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>BMS_EMEA_FFM_Expense_Reference_Co_Author</fullName>
+        <active>true</active>
+        <description>VPRO 7 March 2014: Validation to not allow a co-author of the meeting to modify any fields.</description>
+        <errorConditionFormula>AND(
+$User.Id &lt;&gt; Meeting_BMS_EMEA__r.OwnerId,
+TEXT(Meeting_BMS_EMEA__r.FFM_Step_BMS_EMEA__c) = &apos;Meeting Post-Execution&apos;,
+OR( 
+$Profile.Name = &apos;BMS - EMEA - REP - MSL&apos;, 
+$Profile.Name = &apos;BMS - EMEA - REP - SALES&apos;) 
+)</errorConditionFormula>
+        <errorDisplayField>External_ID_BMS_SHARED__c</errorDisplayField>
+        <errorMessage>You are not allowed to change any fields as you are co-author of the Meeting.</errorMessage>
+    </validationRules>
+</CustomObject>

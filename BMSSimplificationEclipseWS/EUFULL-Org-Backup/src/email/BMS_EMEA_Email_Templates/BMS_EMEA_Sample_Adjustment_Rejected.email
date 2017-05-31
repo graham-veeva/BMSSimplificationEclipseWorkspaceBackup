@@ -1,0 +1,15 @@
+<messaging:emailTemplate subject="{!$ObjectType.Sample_Adjustment_Request_BMS_SHARED__c.label} - {!relatedTo.Name} - {!relatedTo.Owner.Name}: {!$Label.BMS_EMEA_FFM_Refusal_Notification} " recipientType="User" relatedToType="Sample_Adjustment_Request_BMS_SHARED__c">
+<messaging:htmlEmailBody >
+{!$Label.BMS_EMEA_FFM_Dear_Initiator} {!$Label.BMS_EMEA_FFM_Requester},<br></br>
+<br>{!$Label.BMS_EMEA_FFM_Request_Refused}: </br>
+<p>
+{!$Label.BMS_EMEA_FFM_Description} {!$ObjectType.Sample_Adjustment_Request_BMS_SHARED__c.label}:<br></br>
+- {!$ObjectType.Sample_Adjustment_Request_BMS_SHARED__c.fields.Name.label}:  {!relatedTo.Name} <br></br>
+- {!$ObjectType.Sample_Adjustment_Request_BMS_SHARED__c.fields.Reason_BMS_SHARED__c.label}: {!relatedTo.Reason_BMS_SHARED__c} <br></br>
+</p>
+
+
+<apex:outputLink value="{!relatedto.BMS_EMEA_URL__c}">{!$Label.BMS_EMEA_FFM_Link}</apex:outputLink>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

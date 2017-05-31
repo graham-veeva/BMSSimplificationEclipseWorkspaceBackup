@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Zugewiesene Needs</value>
+    </caseValues>
+    <fields>
+        <label>Ist Kosten</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Need Name</label>
+        <name>Budget_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- WBS/CC --></label>
+        <name>Budget_vod__c</name>
+        <relationshipLabel>Zugewiesene Needs</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Gebuchte Kosten</label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label>Erstellt von</label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Geplante Kosten</label>
+        <name>Estimate_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zu verplanendes Budget</label>
+        <name>Estimated_Remaining_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activity storniert</label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label>Activity</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Zugewiesene Needs</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fehler bei geplanter Kosten Übertragung</label>
+        <name>Failure_Inheriting_Expense_Estimates__c</name>
+    </fields>
+    <fields>
+        <label>Primär</label>
+        <name>Is_Need__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Änderung von</label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Warten auf geplante Kosten Übertragung</label>
+        <name>Waiting_for_Expense_Estimate_Inheritance__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Veranstaltungsbudget</label>
+        <name>Event_Budget_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WBS/CC --></label>
+        <name>WBS_CC_Simple_HCPTS</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>Veranstaltungs-Teammitglied</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage>Bitte einen Need auswählen dessen Enddatum nach dem Activity Enddatum liegt.</errorMessage>
+        <name>Need_End_Date_After_Atvty_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bitte einen Need auswählen dessen Startdatum nach dem Activity Startdatum liegt.</errorMessage>
+        <name>Need_Start_Date_Before_Atvty_Start_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Vertragsleistung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Vertragsleistungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Vertragsleistung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Vertragsleistungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Vertragsleistung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Vertragsleistungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Vertragsleistung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Vertragsleistungen</value>
+    </caseValues>
+    <fields>
+        <help>Übergeordnetes Vertragsobjekt</help>
+        <label>Vertrag</label>
+        <name>Contract_HCPTS__c</name>
+        <relationshipLabel>Vertragsleistungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vertragsunterart</label>
+        <name>Contract_Subtype_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Vertragsart</label>
+        <name>Contract_Type_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Freies Feld in dem zusätzliche Information zur der Leistung wie z.B. das Thema hinzugefügt werden können. Diese werden im Vertrag am Ende der jeweiligen Leistungszeile (ohne Komma) aufgeführt. Max. Länge 255 Zeichen</help>
+        <label>Vertragsleistungsdetail</label>
+        <name>Service_Description_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help>Service Suche</help>
+        <label>Auswahl Vertragsleistung</label>
+        <lookupFilter>
+            <informationalMessage>Zeigt Vertragsleistungen an.</informationalMessage>
+        </lookupFilter>
+        <name>Service_HCPTS__c</name>
+        <relationshipLabel>Vertragsleistungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Vertragsleistungsname</label>
+        <name>Service_Name_HCPTS__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Vertragsleistungs ID</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Contract Type and/or Subtype on Contract Description does not match with values on Contract --></errorMessage>
+        <name>Contract_Type_Subtype_Must_Match</name>
+    </validationRules>
+</CustomObjectTranslation>

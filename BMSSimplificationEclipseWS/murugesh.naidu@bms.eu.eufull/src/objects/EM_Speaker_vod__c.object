@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Provider_Type_Simple_Formula_HCPTS__c</fullName>
+        <description>If Customer reference exists, value is either HCP for Individual Customers or HCO for Org Customers</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Account_vod__c), &apos;&apos; ,
+     IF(Account_vod__r.IsPersonAccount,  $Label.Audience_Provider_Type_HCP ,
+        $Label.Audience_Provider_Type_HCO
+        )
+)</formula>
+        <inlineHelpText>If Customer reference exists, value is either HCP for Individual Customers or HCO for Org Customers</inlineHelpText>
+        <label>Provider Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_Type_HCPTS__c</fullName>
+        <description>Hourly
+Daily
+Fixed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hourly
+Daily
+Fixed</inlineHelpText>
+        <label>Rate Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Daily</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>The status of a speaker.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Nominated_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Year_to_Date_Utilization_vod__c</fullName>
+        <description>Number of times a speaker has spoken this year to date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of times a speaker has spoken this year to date.</inlineHelpText>
+        <label>Year to Date Utilization</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Service_Provider_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>Service Provider</description>
+        <label>Service Provider</label>
+        <picklistValues>
+            <picklist>Rate_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Daily</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hourly</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Eligible_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Speaker_vod</fullName>
+        <active>true</active>
+        <description>Speaker</description>
+        <label>Speaker_vod</label>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nominated_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

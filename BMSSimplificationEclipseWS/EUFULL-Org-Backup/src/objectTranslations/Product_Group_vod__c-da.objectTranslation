@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Produktgruppe</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Produktgruppe</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Produktgruppe</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Produktgrupper</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Produktgrupper</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Produktgrupper</value>
+    </caseValues>
+    <fields>
+        <label>Beskrivelse</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Slutdato</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produktkatalog</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Produktgrupper (produktkatalog)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Produktgrupper</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mængde</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Startdato</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Du kan ikke linke en Detaljeret gruppe, der ikke er et Virksomhedsprodukt til Produktdetaljer eller Emne, som er et Virksomhedsprodukt.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kun produkter af typen &quot;Emnedetaljer&quot; eller &quot;Detaljer&quot; kan forbindes med en Detaljeret produktgruppe</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kun prd.typen &apos;Produktgruppe&apos; er tilladt</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kun typen &apos;Bestilling&apos; er tilladt</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kun produkter af typen &quot;prøve&quot; eller &quot;svarkort&quot; kan tilknyttes til en prøveproduktgruppe</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Startdato og slutdato skal populeres, hvis en kvantitet defineres</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Gyldig startdato og slutdato kræves.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

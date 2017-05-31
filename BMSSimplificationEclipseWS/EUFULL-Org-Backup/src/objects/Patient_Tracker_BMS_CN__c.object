@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Patient Tracker</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Patient Tracker</relationshipLabel>
+        <relationshipName>Patient_Tracker</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Baraclude_ETV_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Baraclude patient share among total ETV (%)</description>
+        <externalId>false</externalId>
+        <label>Baraclude patient share among total ETV</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Cycle_Period_BMS_CN__c</fullName>
+        <description>Cycle Period</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Cycle Period</label>
+        <length>7</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ETV_ARV_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>ETV patient share among total ARV (%)</description>
+        <externalId>false</externalId>
+        <label>ETV patient share among total ARV</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lamivudine_ARV_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Lamivudine patient share among total ARV (%)</description>
+        <externalId>false</externalId>
+        <label>Lamivudine patient share among total ARV</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Mobile ID</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Continue_Mono_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Continue Monopril Patients</description>
+        <externalId>false</externalId>
+        <label>Number of Continue Monopril Patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_New_Monopril_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of New Monopril Patients</description>
+        <externalId>false</externalId>
+        <label>Number of New Monopril Patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paraplatin_Actual_LC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Paraplatin Actual LC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Lung Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paraplatin_Actual_OC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Paraplatin Actual OC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Ovarian Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paraplatin_Actual_Other_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Num of Paraplatin Actual Other patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Other patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paraplatin_Planned_LC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Paraplatin Planned LC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Lung Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paraplatin_Planned_OC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Paraplatin Planned OC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Ovarian Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paraplatin_Planned_Other_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Num of Paraplatin Planned Other patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Other patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Actual_BC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Actual BC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Breast Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Actual_LC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Actual LC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Lung Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Actual_OC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Actual OC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Ovarian Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Actual_Other_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Actual Other patients</description>
+        <externalId>false</externalId>
+        <label>Num of Actual Other patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Planned_BC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Planned BC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Breast Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Planned_LC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Planned LC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Lung Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Planned_OC_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Planned OC patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Ovarian Cancer patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Taxol_Planned_Other_Patients_BMS_CN__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Number of Taxol Planned Other patients</description>
+        <externalId>false</externalId>
+        <label>Num of Planned Other patients</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Patient Tracker</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PT-{0000000000}</displayFormat>
+        <label>Patient Tracker Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Patient Tracker</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>ETV_ARV_Plus_Lamivudine_ARV_BMS_CN</fullName>
+        <active>true</active>
+        <description>ETV/ARV＋Lamivudine/ARV&lt;=100%</description>
+        <errorConditionFormula>OR((ETV_ARV_BMS_CN__c + Lamivudine_ARV_BMS_CN__c)&gt;1.0,(ETV_ARV_BMS_CN__c + Lamivudine_ARV_BMS_CN__c)&lt;0.0)</errorConditionFormula>
+        <errorMessage>The value you input does not match ETV/ARV＋Lamivudine/ARV &lt;= 100%.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_Planned_Patient_Trakcer_BMS_CN</fullName>
+        <active>true</active>
+        <description>Prevent user to change planned patient tracker after 10th day of each month</description>
+        <errorConditionFormula>AND(DAY(TODAY())&gt;10,
+OR(ISCHANGED( Taxol_Planned_BC_Patients_BMS_CN__c ),
+ISCHANGED( Taxol_Planned_LC_Patients_BMS_CN__c ),
+ISCHANGED( Taxol_Planned_OC_Patients_BMS_CN__c ),
+ISCHANGED( Taxol_Planned_Other_Patients_BMS_CN__c ),
+ISCHANGED( Paraplatin_Planned_LC_Patients_BMS_CN__c ),
+ISCHANGED( Paraplatin_Planned_OC_Patients_BMS_CN__c ),
+ISCHANGED( Paraplatin_Planned_Other_Patients_BMS_CN__c )))</errorConditionFormula>
+        <errorMessage>Planned patients tracker values cannot be change after 10th day of each month.</errorMessage>
+    </validationRules>
+</CustomObject>

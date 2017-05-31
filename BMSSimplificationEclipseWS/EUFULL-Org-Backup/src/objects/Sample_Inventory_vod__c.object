@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>Sample_Inventory_Edit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Scontrol</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Sample_Inventory_New</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Scontrol</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Sample_Inventory_View</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Scontrol</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Sample Inventory represents the header record for a physical inventory of all Sample Lots for a specific user.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Audit_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Audit checkbox represents a field to designate of the Sample Inventory being conducted is a yearly Audit.  Access to be controlled by Field Level Security</description>
+        <externalId>false</externalId>
+        <label>Audit</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BMS_Code_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Code ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Country_Code_BMS_SHARED__c</fullName>
+        <description>VPRO BMS EMEA 6-Feb-2014: created the field, used by any Region, sourced from the User Source Country field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Owner:User.User_Source_Country_BMS_CORE__c )</formula>
+        <label>BMS Country Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_Territory_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Territory ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District_BMS_SHARED__c</fullName>
+        <description>VPRO - February 2013 - BMS Global Requirements &amp; Design: User District stamp field via workflow for Sampling team. Used for reporting only.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>District</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Inventory_For_vod__r.BMS_Employee_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BMS Employee ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inventory_Date_Time_vod__c</fullName>
+        <description>The User entered Date and time that the Inventory count occured.  This is the effective date of the Sample Inventory counts.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inventory Date Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_For_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Inventory For represents the User that the physical inventory is being conducted for.  Selection of the Inventory For fields determines the User that the Sample Inventory Line Items that will be displayed.</description>
+        <externalId>false</externalId>
+        <label>Inventory For</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sample_Inventory_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_From_Date_vod__c</fullName>
+        <description>Inventory From Date is the Date of the last Submitted Inventory.  The Inventory From Date is populated from the Submitted Date of the most recently Submitted Sample Inventory.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inventory From Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Type_vod__c</fullName>
+        <description>Inventory Type represents the type of physical inventory being conducted.</description>
+        <externalId>false</externalId>
+        <label>Inventory Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Year-end</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Close-Out Inventory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rep Inventory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Inventory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management Inventory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Manager_Inventory_BMS_EMEA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>VPRO - February 2013 - BMS EMEA CORE Requirements &amp; Design: Custom field to denote if an inventory record was entered by a manager.  This field is only editable by manager-level users.</description>
+        <externalId>false</externalId>
+        <label>Manager Inventory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Created_Datetime_vod__c</fullName>
+        <description>Time when the sample inventory was created on a mobile device.  Will be blank it if was created online.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile Created Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>System field used by mobile products to aid synchronization.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Last_Modified_Datetime_vod__c</fullName>
+        <description>Time when the sample inventory was last modified on a mobile device.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile Last Modified Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>No_Sample_Lots_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, a User is able to Save/Submit a Sample Inventory when there are no Sample Inventory Line Items [Sample Lots] for the User.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, a User is able to Save/Submit a Sample Inventory when there are no Sample Inventory Line Items [Sample Lots] for the User.</inlineHelpText>
+        <label>Zero Inventory Record</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Inventory_Date_Time_vod__c</fullName>
+        <description>The Previous Inventory Date Time field is a system generated Datetime that is based upon the last submitted Inventory and the value of the Inventory Date Time field.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Previous Inventory Date Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Region_BMS_SHARED__c</fullName>
+        <description>VPRO - February 2013 - BMS Global Requirements &amp; Design: User Region stamp field via workflow for Sampling team. Used for reporting only.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Region Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Force_ID_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Force_Name_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sales Force Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status represents the current status of the Inventory.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Saved_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Submitted_Date_vod__c</fullName>
+        <description>Submitted Date is the date that the Inventory has been Submitted.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Submitted Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Submitted_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if the inventory been submitted.  Default value is false.</description>
+        <externalId>false</externalId>
+        <label>Submitted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Territory_BMS_SHARED__c</fullName>
+        <description>VPRO - February 2013 - BMS Global Requirements &amp; Design: User Territory stamp field via workflow for Sampling team. Used for reporting only.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Intelligent ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Business_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Business Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Function_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Function Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Sales_Area_Code_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Sales Area Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory_Type_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Territory Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Inventory_Count_BMS_SHARED__c</fullName>
+        <description>Count of all sample quantities recorded in the inventory. Used for the validation rule based on the zero inventory count field.</description>
+        <externalId>false</externalId>
+        <label>Total Inventory Count</label>
+        <summarizedField>Sample_Inventory_Item_vod__c.Count_vod__c</summarizedField>
+        <summaryForeignKey>Sample_Inventory_Item_vod__c.Inventory_Name_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Unlock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Unlock checkbox is used by the VBioPharma application to determine if a user has access to Unlock a Sample Inventory that has been Submitted.  Access is controlled by Field Level security on the Unlock checkbox.</description>
+        <externalId>false</externalId>
+        <label>Unlock</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Sample Inventory</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Inventory_Type_vod__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Submitted_Date_vod__c</columns>
+        <columns>Inventory_From_Date_vod__c</columns>
+        <columns>Inventory_For_vod__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>INV-{000000000}</displayFormat>
+        <label>Inventory Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sample Inventories</pluralLabel>
+    <recordTypes>
+        <fullName>External_Inventory_BMS_US</fullName>
+        <active>true</active>
+        <description>Inventory specific to external inventory vendors</description>
+        <label>External Inventory</label>
+        <picklistValues>
+            <picklist>Inventory_Type_vod__c</picklist>
+            <values>
+                <fullName>Close-Out Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Inventory</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Saved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>General_Inventory_BMS_US</fullName>
+        <active>true</active>
+        <description>Inventory record type for all users</description>
+        <label>General Inventory</label>
+        <picklistValues>
+            <picklist>Inventory_Type_vod__c</picklist>
+            <values>
+                <fullName>Close-Out Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep Inventory</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Saved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Management_Inventory_BMS_US</fullName>
+        <active>true</active>
+        <description>Inventory record type for all managers</description>
+        <label>Management Inventory</label>
+        <picklistValues>
+            <picklist>Inventory_Type_vod__c</picklist>
+            <values>
+                <fullName>Close-Out Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management Inventory</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Saved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Rep_Inventory_BMS_US</fullName>
+        <active>true</active>
+        <description>Inventory record type for all reps</description>
+        <label>Rep Inventory</label>
+        <picklistValues>
+            <picklist>Inventory_Type_vod__c</picklist>
+            <values>
+                <fullName>Close-Out Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep Inventory</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Saved_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Inventory_For_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Inventory_Type_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Submitted_Date_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Inventory_Type_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>Save_vod</fullName>
+        <availability>online</availability>
+        <description>Save button on Sample Inventory page</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Save</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>javascript:return true</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_vod</fullName>
+        <availability>online</availability>
+        <description>Submit button on Sample Inventory page</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>javascript:return true</url>
+    </webLinks>
+</CustomObject>

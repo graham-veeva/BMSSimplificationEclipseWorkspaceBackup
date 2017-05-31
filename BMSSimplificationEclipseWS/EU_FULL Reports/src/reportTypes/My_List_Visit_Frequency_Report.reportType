@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>RAD_Interaction_Detail_Rpt__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>This report type will be used for My List Visit Frequency MSL report</description>
+    <label>My List Visit Frequency Report</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Name</displayNameOverride>
+            <field>Account_Name_Assigned_HCP__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>My YTD Activity</displayNameOverride>
+            <field>YTD_Activity_My_List_Visit__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>My Last Activity Date</displayNameOverride>
+            <field>Last_Activity_Date_My_List_Visit_Freq__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Overall Sphere of Influence</displayNameOverride>
+            <field>Overall_Sphere_of_Influence_Assigned_HCP__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account: Specialty</displayNameOverride>
+            <field>Specialty__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Therapeutic Area</displayNameOverride>
+            <field>Therapeutic_Area__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>MSL Full Name</displayNameOverride>
+            <field>MSL_Full_Name_Assigned_HCP__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Territory_My_List_Visit_Freq__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RecordType</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Region__c</field>
+            <table>RAD_Interaction_Detail_Rpt__c</table>
+        </columns>
+        <masterLabel>My List Visit Frequency Report</masterLabel>
+    </sections>
+</ReportType>

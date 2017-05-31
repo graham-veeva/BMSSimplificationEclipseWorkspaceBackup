@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Call2_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Detailed_Products_vod__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$HBV_Rating_BMS_US__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Interactions by HBV Tier Rating</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Interactions__c</reportType>
+    <scope>tmteam</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Call2_vod__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

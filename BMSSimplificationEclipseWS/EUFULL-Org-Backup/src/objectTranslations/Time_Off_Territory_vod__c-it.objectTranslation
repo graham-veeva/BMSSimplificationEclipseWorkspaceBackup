@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Territorio permesso/ferie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Territorio permesso/ferie</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attendee# --></label>
+        <name>Attendee_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendees*Time --></label>
+        <name>Attendees_Time_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments_BMS__c</name>
+    </fields>
+    <fields>
+        <label>Data</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS__c</name>
+    </fields>
+    <fields>
+        <label>Ore permesso/ferie</label>
+        <name>Hours_off_vod__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ore</label>
+        <name>Hours_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID cellulare</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Lookup --></label>
+        <name>Owner_Lookup_BMS_CORE__c</name>
+        <relationshipLabel><!-- Time Off Territory --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Motivo</label>
+        <name>Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration Work_cn</masterLabel>
+            <translation><!-- Administration Work_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administration Work_cn_med</masterLabel>
+            <translation><!-- Administration Work_cn_med --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved Leave (DBM approval required)</masterLabel>
+            <translation><!-- Approved Leave (DBM approval required) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation><!-- Coaching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Training</masterLabel>
+            <translation><!-- Commercial Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compensation Time</masterLabel>
+            <translation><!-- Compensation Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference</masterLabel>
+            <translation><!-- Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference_cn</masterLabel>
+            <translation><!-- Conference_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developmental Assignment</masterLabel>
+            <translation><!-- Developmental Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Episodic Activities_cn_med</masterLabel>
+            <translation><!-- Episodic Activities_cn_med --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excused Absence</masterLabel>
+            <translation>Assenza giustificata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Based Project</masterLabel>
+            <translation><!-- HQ Based Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illness</masterLabel>
+            <translation><!-- Illness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illness / Accident</masterLabel>
+            <translation><!-- Illness / Accident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inclement Weather (DBM approval required)</masterLabel>
+            <translation><!-- Inclement Weather (DBM approval required) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Meeting</masterLabel>
+            <translation><!-- Internal Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Meeting (DBM approval required)</masterLabel>
+            <translation><!-- Medical Meeting (DBM approval required) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Strategy / DAS Work</masterLabel>
+            <translation><!-- Medical Strategy / DAS Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Strategy Work</masterLabel>
+            <translation><!-- Medical Strategy Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Training</masterLabel>
+            <translation><!-- Medical Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting - Medical / Management</masterLabel>
+            <translation><!-- Meeting - Medical / Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting / TC - Brand Team (Commercial)</masterLabel>
+            <translation><!-- Meeting / TC - Brand Team (Commercial) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting with Customers</masterLabel>
+            <translation><!-- Meeting with Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Absence</masterLabel>
+            <translation><!-- Other Absence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Emergency</masterLabel>
+            <translation><!-- Personal Emergency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Meeting</masterLabel>
+            <translation><!-- Sales Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sick Leave_cn</masterLabel>
+            <translation><!-- Sick Leave_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statutory Holiday</masterLabel>
+            <translation><!-- Statutory Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training - Field</masterLabel>
+            <translation><!-- Training - Field --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training - National</masterLabel>
+            <translation><!-- Training - National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training - RCO / GDO / Other</masterLabel>
+            <translation><!-- Training - RCO / GDO / Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training - Sales</masterLabel>
+            <translation><!-- Training - Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training - Self</masterLabel>
+            <translation><!-- Training - Self --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training_cn</masterLabel>
+            <translation><!-- Training_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel / Transfer / Tour</masterLabel>
+            <translation><!-- Travel / Transfer / Tour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unplanned Event_cn</masterLabel>
+            <translation><!-- Unplanned Event_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacation</masterLabel>
+            <translation>Ferie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacation / Personal Holiday</masterLabel>
+            <translation><!-- Vacation / Personal Holiday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacation_cn</masterLabel>
+            <translation><!-- Vacation_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work in Territory</masterLabel>
+            <translation>Lavoro sul territorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work out of Territory</masterLabel>
+            <translation>Lavoro Fuori Dal Territorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sickness and illness_cn</masterLabel>
+            <translation><!-- sickness and illness_cn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>time in lieu_cn</masterLabel>
+            <translation><!-- time in lieu_cn --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Training Times --></label>
+        <name>Sales_Training_Times_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label>Ora inizio</label>
+        <name>Start_Time_vod__c</name>
+        <picklistValues>
+            <masterLabel>10:00 AM</masterLabel>
+            <translation>ore 10.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:30 AM</masterLabel>
+            <translation>ore 10.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00 AM</masterLabel>
+            <translation>ore 11.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:30 AM</masterLabel>
+            <translation>ore 11.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00 PM</masterLabel>
+            <translation>ore 24.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:30 PM</masterLabel>
+            <translation>ore 00.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:00 PM</masterLabel>
+            <translation>ore 13.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1:30 PM</masterLabel>
+            <translation>ore 13.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:00 PM</masterLabel>
+            <translation>ore 14.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2:30 PM</masterLabel>
+            <translation>ore 14.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:00 PM</masterLabel>
+            <translation>ore 15.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3:30 PM</masterLabel>
+            <translation>ore 15.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:00 PM</masterLabel>
+            <translation>ore 16.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4:30 PM</masterLabel>
+            <translation>ore 16.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5:00 PM</masterLabel>
+            <translation>ore 17.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:00 AM</masterLabel>
+            <translation>ore 08.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8:30 AM</masterLabel>
+            <translation>ore 08.30</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:00 AM</masterLabel>
+            <translation>ore 09.00</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9:30 AM</masterLabel>
+            <translation>ore 09.30</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>In corso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>In sospeso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rifiutato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Reason --></label>
+        <name>Sub_Reason_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Administrative Tasks</masterLabel>
+            <translation><!-- Administrative Tasks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisory boards</masterLabel>
+            <translation><!-- Advisory boards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attending commercial training</masterLabel>
+            <translation><!-- Attending commercial training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Trial Support</masterLabel>
+            <translation><!-- Clinical Trial Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-visit</masterLabel>
+            <translation>Affiancamento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching</masterLabel>
+            <translation>Coaching</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congress</masterLabel>
+            <translation><!-- Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Visit</masterLabel>
+            <translation>Visita a Clienti</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivering commercial training</masterLabel>
+            <translation><!-- Delivering commercial training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Medical Training</masterLabel>
+            <translation><!-- Field Medical Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Activities</masterLabel>
+            <translation><!-- Internal Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Projects / Internal Meetings</masterLabel>
+            <translation><!-- Internal Projects / Internal Meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MSM Training</masterLabel>
+            <translation><!-- MSM Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Applicable</masterLabel>
+            <translation><!-- Non Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Work in Territory</masterLabel>
+            <translation>Altra attività sul territorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promo or non promo medical review</masterLabel>
+            <translation><!-- Promo or non promo medical review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Conference</masterLabel>
+            <translation><!-- Sales Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Force/Other BMS Staff Training</masterLabel>
+            <translation><!-- Sales Force/Other BMS Staff Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support to access/formulary submissions</masterLabel>
+            <translation><!-- Support to access/formulary submissions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub_Type --></label>
+        <name>Sub_Type_BMS_CN__c</name>
+        <picklistValues>
+            <masterLabel>Attend Congress</masterLabel>
+            <translation><!-- Attend Congress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coaching and Development</masterLabel>
+            <translation><!-- Coaching and Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deliver Commercial Training</masterLabel>
+            <translation><!-- Deliver Commercial Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISR Support</masterLabel>
+            <translation><!-- ISR Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Project Work</masterLabel>
+            <translation><!-- Internal Project Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Training Meeting</masterLabel>
+            <translation><!-- Medical Training Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparation for Advisory Board</masterLabel>
+            <translation><!-- Preparation for Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepare for Scientific Interaction</masterLabel>
+            <translation><!-- Prepare for Scientific Interaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promo or Non-Promo Medical Review</masterLabel>
+            <translation><!-- Promo or Non-Promo Medical Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Learning</masterLabel>
+            <translation><!-- Self-Learning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support of BMS Clinical Trials</masterLabel>
+            <translation><!-- Support of BMS Clinical Trials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support to Access/Formulary Submissions</masterLabel>
+            <translation><!-- Support to Access/Formulary Submissions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Territori</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Durata</label>
+        <name>Time_vod__c</name>
+        <picklistValues>
+            <masterLabel>2 Days</masterLabel>
+            <translation>2 giorni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Days</masterLabel>
+            <translation>3 giorni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Days</masterLabel>
+            <translation>4 giorni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Days</masterLabel>
+            <translation>5 giorni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM Off</masterLabel>
+            <translation>Permesso - Mattina</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Day</masterLabel>
+            <translation>Intera giornata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation>Orario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM Off</masterLabel>
+            <translation>Permesso - Pomeriggio</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Source Country --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- TOT ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- BMS - CANADA - TOT --></label>
+        <name>BMS_CANADA_TOT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - CA - Time In Territory --></label>
+        <name>BMS_CA_Time_In_Territory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS-CHINA-MED-TOT --></label>
+        <name>BMS_CHINA_MED_TOT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS-CHINA-Sales-TOT --></label>
+        <name>BMS_CHINA_Sales_TOT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS-CHINA-Statutory  Holiday --></label>
+        <name>BMS_CHINA_Statutory_Holiday</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bms - Emea - Tot</label>
+        <name>BMS_EMEA_TOT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - TOT Sales --></label>
+        <name>BMS_EMEA_TOT_Sales</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - MEA - TOT Med --></label>
+        <name>BMS_MEA_TOT_Med</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - MEA - TOT Sales --></label>
+        <name>BMS_MEA_TOT_Sales</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS-US-TOT --></label>
+        <name>BMS_US_TOT</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

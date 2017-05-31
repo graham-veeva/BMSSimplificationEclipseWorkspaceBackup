@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regla de precio</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reglas de precio</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Operador de regla de cadena</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>Y</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>O</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Regla de cadena</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Producto_Comparación</label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel>Reglas de precios (Producto_Comparación)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comparison Type --></label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation><!-- List Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation><!-- Net Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation><!-- Product Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Contrato</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Reglas de precios</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Regla_Producto_Cruzado</label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha de final de entrega</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pedido de entrega</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha de inicio de entrega</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Override Max --></label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Override --></label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Goods Max --></label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Porcentaje máximo de bonificación</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Porcentaje de bonificación</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Goods --></label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Bound --></label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tiempo mínimo de entrega</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price Min --></label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price --></label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Campaign --></label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Pago máximo</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pago</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Libro de precios</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Group --></label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de comparación de producto</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Valor de lista</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Cantidad de producto</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Producto máximo</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Producto mínimo</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maximum Quantity --></label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Quantity --></label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Description --></label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Precio de venta sugerido</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestion Text --></label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestion Threshold --></label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Brand_Level_Rule_vod --></label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Periodo de entrega</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Discount_Rule_vod --></label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regla de porcentaje de bonificación</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Free_Goods_Rule_vod --></label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Limit_Rule_vod --></label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- List_Price_Rule_vod --></label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payment_Terms_Rule_vod --></label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product_Group_Level_Rule_vod --></label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Sólo puede especificarse una cuenta y un grupo de cuentas.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo el tipo de producto &quot;Detalle&quot; está permitido</errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Únicamente debería seleccionarse una regla de cadena y de productos cruzados</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto de comparación debe estar en blanco</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La regla de cadena no puede ser un pedido de entrega</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La regla de cadena no puede ser un vínculo de límite.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El operador de regla de cadena debe ser AND u OR</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto debe tener un valor y no puede ser igual que el elemento del kit</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La cantidad máxima debe ser superior a la cantidad mínima.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No es compatible el tipo de comparación &apos;Valor neto&apos;.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El descuento no puede ser negativo</errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Las reglas de límite de pedido de entrega no pueden asociarse a un producto concreto.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo las reglas de límite pueden etiquetarse como pedido de entrega.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La fecha de finalización de entrega debe ser posterior a la fecha de inicio de entrega</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Si el tipo de producto = ‘Pedido’, los campos de inicio de entrega y fechas de finalización deben cumplimentarse</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto puede ser ‘vacío’ o del tipo ‘pedido’</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La fecha de inicio de entrega debe ser igual o posterior a la fecha de inicio de regla.</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto puede estar vacío o de tipo &apos;Pedido&apos; y &apos;Elemento del kit&apos;.</errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El valor de Máximo de anulación de descuento es inferior al valor de Descuento</errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La fecha de inicio es posterior a la de fin</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Porcentaje máximo de bonificación no se puede cumplimentar para reglas de bonificaciones regulares</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El tipo de comparación &apos;Valor de lista&apos; no es compatible.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El máximo de bonificación no es compatible.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo se permite el tipo de producto de &apos;Pedido&apos; y &apos;Elemento de pedido&apos;</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El valor de Máximo de bonificación es inferior al de Bonificación</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El elemento del kit no está permitido en Devolución de productos cruzados.</errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto puede estar vacío o de tipo &apos;Pedido&apos; y &apos;Detalle&apos;, &apos;Grupo_Producto&apos;, &apos;Elemento del kit&apos;.</errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo los tipos de producto &apos;Pedido&apos; y &apos;Elemento del kit&apos; están permitidos</errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La cantidad máxima debe ser superior a la cantidad mínima.</errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Si se cumplimenta el tiempo de entrega mínimo, Fecha de inicio de entrega y Fecha de final de entrega deben estar vacíos</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Si se cumplimenta Límite mínimo de entrega, Product_vod debe estar vacío</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Precio neto y Descuento anulado están presentes a la vez</errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El valor de Mínimo de precio neto es superior al de Precio neto</errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term Rules don&apos;t support Cross Product Rebate. --></errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Terms Rule does not support Kit Item product type. --></errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo los tipos de producto Pedido, Detalle, [vacío] o Grupo de productos están permitidos. Y cuando el producto no está vacío, debe seleccionar la casilla de verificación Regla de productos cruzados.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se requiere un tipo de comparación de producto válido</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Producto debe ser diferente a Producto de comparación y no puede estar vacío.</errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Solo el tipo de producto &apos;Grupo de productos&apos; está permitido</errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se requiere un mínimo o un máximo de producto</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

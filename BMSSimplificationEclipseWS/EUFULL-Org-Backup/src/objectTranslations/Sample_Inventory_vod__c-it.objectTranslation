@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventario campione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventari campioni</value>
+    </caseValues>
+    <fields>
+        <label>Audit</label>
+        <name>Audit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Country Code --></label>
+        <name>BMS_Country_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Employee ID --></label>
+        <name>Employee_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Data/ora inventario</label>
+        <name>Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inventario per</label>
+        <name>Inventory_For_vod__c</name>
+        <relationshipLabel>Inventari campioni</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data inizio inventario</label>
+        <name>Inventory_From_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo inventario</label>
+        <name>Inventory_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation>Annuale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close-Out Inventory</masterLabel>
+            <translation>Close-out</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Inventory</masterLabel>
+            <translation>Inventario Esterno</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Inventory</masterLabel>
+            <translation>Manutenzione Inventario</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation>Mensile</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation>Trimestrale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rep Inventory</masterLabel>
+            <translation>Inventario Isf</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year-end</masterLabel>
+            <translation>Fine anno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manager Inventory --></label>
+        <name>Manager_Inventory_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Data/ora creazione cellulare</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID cellulare</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data/ora ultima modifica cellulare</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <help>Se questo campo è selezionato, un utente è in grado di salvare o inviare un inventario di campioni se non sono presenti voci di inventario campioni [lotti di campioni] per l&apos;utente.</help>
+        <label>Nessun lotto campione</label>
+        <name>No_Sample_Lots_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data/ora inventario precedente</label>
+        <name>Previous_Inventory_Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Stato</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Inviato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Data di invio</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Inviato</label>
+        <name>Submitted_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Conta Totale Inventario</label>
+        <name>Total_Inventory_Count_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Sblocca</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Inventory Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Inventario Esterno</label>
+        <name>External_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Inventario Generale</label>
+        <name>General_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Manutenzione Inventario</label>
+        <name>Management_Inventory_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Inventario Isf</label>
+        <name>Rep_Inventory_BMS_US</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>Salva</label>
+        <name>Save_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Invia</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

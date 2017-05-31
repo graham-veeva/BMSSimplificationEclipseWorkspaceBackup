@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bản dịch Thông báo Quy tắc</value>
+    </caseValues>
+    <fields>
+        <help>Mã ISO ngôn ngữ mà bản dịch này tuân theo.</help>
+        <label>Ngôn ngữ</label>
+        <name>Language_vod__c</name>
+    </fields>
+    <fields>
+        <help>Bản dịch Thông báo lỗi cho quy tắc.</help>
+        <label>Bản dịch Thông báo</label>
+        <name>Message_Translation_vod__c</name>
+    </fields>
+    <fields>
+        <help>Tham chiếu tới bản ghi Định nghĩa Quy tắc tương ứng với bản dịch thông báo này.</help>
+        <label>Định nghĩa Quy tắc</label>
+        <name>Rule_Definition_vod__c</name>
+        <relationshipLabel>Bản dịch Thông báo Quy tắc</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Id Ngoại cho bản ghi. Định dạng là [RULE NAME]::[RecordType.Name]::[Language_vod]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Message Translation Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Bản dịch Thông báo Quy tắc SFDC</label>
+        <name>SFDC_Rule_Message_Translation_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

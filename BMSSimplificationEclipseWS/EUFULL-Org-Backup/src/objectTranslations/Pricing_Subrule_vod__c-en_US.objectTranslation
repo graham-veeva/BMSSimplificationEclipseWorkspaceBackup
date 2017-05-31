@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pricing Subrule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pricing Subrules</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comparison Type --></label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>List Value</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Quantity</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>SKU Count</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maximum Quantity --></label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Quantity --></label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Rule --></label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel><!-- Pricing Subrules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Pricing Subrules --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Kit Items are not supported as Comparison Product --></errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The maximum quantity must be greater or equal to the minimum quantity. --></errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SKU Count must be &gt; 0 --></errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

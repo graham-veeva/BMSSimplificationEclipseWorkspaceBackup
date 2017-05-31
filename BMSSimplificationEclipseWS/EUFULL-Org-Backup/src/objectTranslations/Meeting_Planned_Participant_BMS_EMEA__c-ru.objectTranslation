@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value><!-- Meeting Planned Participant --></value>
+    </caseValues>
+    <fields>
+        <label>Компания</label>
+        <name>Company_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- DHG is required --></label>
+        <name>DHG_is_required_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Терапевтическая область/Специализация</label>
+        <name>Function_TherArea_Specialty_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Собрание</label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel>Предполагаемые участники собрания</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Количество, указанное в соответствующем мастер-файле.</help>
+        <label>Количество</label>
+        <name>Number_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Спонсируемый участник</label>
+        <name>Sponsored_Participant_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <help><!-- User input --></help>
+        <label><!-- z_DELETE_Number --></label>
+        <name>User_Number_BMS_EMEA__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Planned Participant Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Аудитория</label>
+        <name>BMS_EMEA_Audience</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Сотрудник BMS</label>
+        <name>BMS_EMEA_BMS_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Сотрудник участника совместного предприятия</label>
+        <name>BMS_EMEA_JV_Partner_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Выступающий / консультант</label>
+        <name>BMS_EMEA_Speaker</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Спонсируемый специалист здравоохранения</label>
+        <name>BMS_EMEA_Sponsored</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Вы не можете редактировать или удалять запись после того, как собрание пройдет фазу планирования.</errorMessage>
+        <name>BMS_EMEA_FFM_No_Modification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Вы не можете изменять какие-либо поля, так как вы являетесь соавтором собрания.</errorMessage>
+        <name>BMS_EMEA_FFM_Plan_Participant_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ciclo de MC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ciclos de MC</value>
+    </caseValues>
+    <fields>
+        <label>Activar objetivos editados</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Si es verdadero y existen los campos Salir adelante en el objeto MC_Target_vod, cuando la integración MCCP se ejecute cumplimentará los campos Salir adelante. Se recomienda definir esto solo cuando sea necesario cumplimentar los valores de salir adelante.</help>
+        <label>Calcular Salir adelante</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Descripción</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha de finalización</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Umbral superado</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fecha de inicio</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Estado</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Completado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>En progreso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Detalles planificados</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Umbral no alcanzado</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Definición de ciclo</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>La fecha de inicio no puede ser posterior o igual a la fecha de finalización.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

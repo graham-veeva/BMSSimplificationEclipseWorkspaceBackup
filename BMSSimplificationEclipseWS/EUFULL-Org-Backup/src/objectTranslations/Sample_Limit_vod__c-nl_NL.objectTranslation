@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Monsterlimiet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Monsterlimieten</value>
+    </caseValues>
+    <fields>
+        <help>Alleen persoonsrecordtype gebruiken</help>
+        <label>Accounttypen</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Monsterlimieten</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label>Txn-maken uitschakelen</label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Uitgegeven bedrag</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Uitgegeven hoeveelheid</label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limiet bekrachtigen</label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groeps-ID</label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limietbedrag</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limiet per bezoek</label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>Limiethoeveelheid</label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Monsterlimieten</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Resterend bedrag</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Resterende hoeveelheid</label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lopende periode</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type monsterlimiet</label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation>Account-Gebruiker-Per Bezoek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation>Account-Per Bezoek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation>Gebruiker-Per Bezoek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation>Account-Monsterproductgroep-Per Bezoek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>Account-Gebruiker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>Account</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation>Gebruiker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>Account-Monsterproductgroep</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Gesplitste periode</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation>12Maanden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Jaar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sjabloongroep</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sjabloon in gebruik</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Unieke sjabloonsleutel</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gebruiker</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Monsterlimieten</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Record kan niet worden opgeslagen. Limietbedrag kan niet kleiner zijn dan 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Record kan niet worden opgeslagen.  Limiethoeveelheid moet groter zijn dan of gelijk zijn aan 0.</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Een sjabloon monsterlimiet kan niet voor zowel hoeveelheid als waarde in hetzelfde sjabloon worden aangemaakt.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>U kunt geen gebruiker opgeven bij het aanmaken van limieten voor een monsterproductgroep.</errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Record kan niet worden opgeslagen. De volgende velden zijn verplicht: Einddatum</errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Record kan niet worden opgeslagen. De volgende velden zijn verplicht: Product</errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Record kan niet worden opgeslagen. De volgende velden zijn verplicht: Begindatum</errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Record kan niet worden opgeslagen. De volgende velden zijn verplicht: Account of gebruiker</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Als Accounttype is ingesteld Product, Limiethoeveelheid, Begin-/einddatum verplicht</errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Account en Accounttype OF Gebruiker en Accounttype  kunnen niet allebei worden ingesteld</errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lopende periode moet leeg zijn als Accounttype leeg is</errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Einddatum moet na Begindatum vallen</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>als Gesplitste periode is ingesteld, moet lopende periode 24 zijn</errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Gesplitste periode  kan niet worden ingesteld als Accounttype leeg is</errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sub-aturan Penetapan Harga</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sub-aturan Penetapan Harga</value>
+    </caseValues>
+    <fields>
+        <label>Jenis Perbandingan</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Nilai Daftar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Jumlah</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>Jumlah SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Jumlah Maksimum</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jumlah Minimum</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Aturan Penetapan Harga</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Sub-aturan Penetapan Harga</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produk</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Sub-aturan Penetapan Harga</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Kelengkapan Item tidak didukung sebagai Produk Pembanding</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jumlah maksimum harus lebih besar atau sama dengan jumlah minimum.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jumlah SKU harus &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

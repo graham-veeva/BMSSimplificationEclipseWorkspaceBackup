@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Datenzuordnungsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Datenzuordnungsvorlagen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Datenzuordnungsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Datenzuordnungsvorlagen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Datenzuordnungsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Datenzuordnungsvorlagen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Datenzuordnungsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Datenzuordnungsvorlagen</value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gruppen</label>
+        <name>Buckets_vod__c</name>
+    </fields>
+    <fields>
+        <label>Spaltentitel</label>
+        <name>Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <help>Wenn in der Datei die Spaltenbezeichnungen in der ersten Zeile dieser Vorlage stehen sollen, aktivieren Sie dieses Kästchen.</help>
+        <label>Eingeschlossene Spaltenbezeichnungen</label>
+        <name>Column_Labels_Included_vod__c</name>
+    </fields>
+    <fields>
+        <label>Enthält Ziele?</label>
+        <name>Contains_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dezimalstellen</label>
+        <name>Decimal_Places_vod__c</name>
+    </fields>
+    <fields>
+        <help>Für den Marktumsatzanalyse-Bericht geben Sie nur eine Umsatzdatendatei mit dem Maßstab &quot;Monatlich&quot; an. Die Umsatzdaten müssen außerdem die Verschreiber-ID, die Markt-ID und die Produktgruppen-ID umfassen.</help>
+        <label>Marktumsatzanalyse-Bericht aktivieren</label>
+        <name>Enable_Market_Sales_Analysis_Report_vod__c</name>
+    </fields>
+    <fields>
+        <label>Für Offline-Gebrauch aktivieren</label>
+        <name>Enable_for_Offline_vod__c</name>
+    </fields>
+    <fields>
+        <label>Arzneimittelliste f. Mitarb.: Bezeichn.</label>
+        <name>Formulary_For_Rep_Label_vod__c</name>
+        <picklistValues>
+            <masterLabel>First_Column_Label_vod</masterLabel>
+            <translation>Erste Spaltenbezeichnung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Ohne</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second_Column_Label_vod</masterLabel>
+            <translation>Zweite Spaltenbezeichnung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Typ &apos;Inkrementelles Laden&apos;</label>
+        <name>Incremental_Load_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Full_vod</masterLabel>
+            <translation>Ganz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental_vod</masterLabel>
+            <translation>Schrittweise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial_vod</masterLabel>
+            <translation>Teilweise</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Inkrementell</label>
+        <name>Incremental_vod__c</name>
+    </fields>
+    <fields>
+        <label>Märkte zugeordnet?</label>
+        <name>Markets_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Account-Grenzwert außer Kraft setzen</label>
+        <name>Override_Account_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zahler/Plan zugeordnet?</label>
+        <name>Payer_Plan_Mapped_vod__c</name>
+    </fields>
+    <fields>
+        <label>Skalierung</label>
+        <name>Scale_vod__c</name>
+        <picklistValues>
+            <masterLabel>Month_vod</masterLabel>
+            <translation>Monatlich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week_vod</masterLabel>
+            <translation>Wöchentlich</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Zweite Spaltenbezeichnung</label>
+        <name>Second_Column_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Territoriumsnamen eingeschlossen?</label>
+        <name>Territory_Names_Included_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Data Map Template Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Wählen Sie einen gültigen Auswahllistenwert aus.  Achten Sie beim Laden von Daten darauf, dass Sie den Hauptauswahllistenwert und nicht die übersetzte Bezeichnung verwenden.</errorMessage>
+        <name>VALIDATE_FORM_FOR_REP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Der Marktumsatzanalyse-Bericht kann nur dann ausgewählt werden, wenn der Maßstab &quot;Monatlich&quot; ausgewählt ist und das Kontrollkästchen &quot;Zahler/Plan zugeordnet&quot; nicht aktiviert ist.</errorMessage>
+        <name>VALIDATE_FOR_MARKET_SALES_REPORT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Stellen Sie sicher, dass die Spaltenbezeichnung keines der folgenden Zeichen enthält: : \ / ? * [ ]</errorMessage>
+        <name>VEEVA_EXCEL_CHARACTER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es sind zwischen 0 und 4 Dezimalstellen zulässig.</errorMessage>
+        <name>VEEVA_VALIDATE_DECIMAL_PLACES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wählen Sie einen gültigen Auswahllistenwert aus. Achten Sie beim Laden von Daten darauf, dass Sie den Hauptauswahllistenwert und nicht die übersetzte Bezeichnung verwenden.</errorMessage>
+        <name>VEEVA_VALIDATE_SCALE</name>
+    </validationRules>
+</CustomObjectTranslation>

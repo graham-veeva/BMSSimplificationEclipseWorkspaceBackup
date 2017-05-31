@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template used to notify team members that they have been assigned to an Activity</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Activity Team Member Template</name>
+    <style>none</style>
+    <subject>Activity:{!EM_Event_vod__c.Name}- Role:{!EM_Event_Team_Member_vod__c.Role_vod__c}</subject>
+    <type>text</type>
+</EmailTemplate>

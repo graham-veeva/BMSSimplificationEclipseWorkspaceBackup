@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Budget_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The budget being accessed by the event.</description>
+        <externalId>false</externalId>
+        <label>WBS/CC</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>EM_Budget_vod__c.Status_vod__c</field>
+                <operation>equals</operation>
+                <value>Available_For_Use_vod</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>EM_Budget_vod__c</referenceTo>
+        <relationshipLabel>WBS/CCs</relationshipLabel>
+        <relationshipName>EM_Event_Budget_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>WBS_CC_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>WBS/CC Information</description>
+        <label>WBS/CC</label>
+    </recordTypes>
+</CustomObject>

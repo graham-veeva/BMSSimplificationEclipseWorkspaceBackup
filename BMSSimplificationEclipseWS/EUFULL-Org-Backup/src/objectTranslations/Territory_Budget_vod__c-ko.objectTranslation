@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>지역 예산</value>
+    </caseValues>
+    <fields>
+        <label>활성</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>현재 수량</label>
+        <name>Current_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>현재 가치</label>
+        <name>Current_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>설명</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>마감 날짜</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>최종 거래</label>
+        <name>Last_Transaction_vod__c</name>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>영역 예산</relationshipLabel>
+    </fields>
+    <fields>
+        <label>시작 날짜</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>시작 수량</label>
+        <name>Start_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>시작 가치</label>
+        <name>Start_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>상태</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>승인됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation>마감됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>새로 만들기</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submit for Approval</masterLabel>
+            <translation>승인을 위해 제출</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>영역</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>유형</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation>일반</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation>마케팅</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>제품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>판매</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Territory Budget Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>시작 날짜는 마감 날짜보다 늦을 수 없습니다.</errorMessage>
+        <name>VEEVA_DATES_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

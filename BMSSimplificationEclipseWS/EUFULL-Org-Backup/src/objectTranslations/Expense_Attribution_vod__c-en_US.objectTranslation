@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Expense Attribution</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Expense Attributions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual --></label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Line --></label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expense Type --></label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Account) --></label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Attendee) --></label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Speaker) --></label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Team Member) --></label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense Type --></label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Account</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Attendee</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Event Speaker</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Event Team Member</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Vendor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Venue</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Vendor) --></label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense (Venue) --></label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel><!-- Expense Attributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Incurred Expense --></label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <recordTypes>
+        <label>Event Expense Attribution</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

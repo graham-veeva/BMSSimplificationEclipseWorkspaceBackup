@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Meeting Expense Reference --></value>
+    </caseValues>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice sent to accounting --></label>
+        <name>Invoice_sent_to_accounting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting --></label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Meeting Expense References --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reference No --></label>
+        <name>Reference_No_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type/Category --></label>
+        <name>Type_Category_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Concur Expenses</masterLabel>
+            <translation><!-- Concur Expenses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP PO</masterLabel>
+            <translation><!-- SAP PO --></translation>
+        </picklistValues>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Expense Reference Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change any fields as you are co-author of the Meeting. --></errorMessage>
+        <name>BMS_EMEA_FFM_Expense_Reference_Co_Author</name>
+    </validationRules>
+</CustomObjectTranslation>

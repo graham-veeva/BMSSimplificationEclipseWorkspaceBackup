@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Start_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Sync_Completed_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Upload_Processed_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sync_Tracking_vod__c.Successful_Sync_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Sync_Tracking_vod__c.Media_Processed_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Sync_Tracking_vod__c.Successful_Sync_vod__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>FR- Dates de synchronisation</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sync_Tracking_vod__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sync_Tracking_vod__c.Sync_Completed_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_LAST30</interval>
+    </timeFrameFilter>
+</Report>

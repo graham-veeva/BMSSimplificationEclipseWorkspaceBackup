@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>이벤트 규칙</value>
+    </caseValues>
+    <fields>
+        <label>계정 참석자 필드</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>CLM 프레젠테이션</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>이벤트 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>참석자 연락처 필드</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>국가 무시</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>이벤트 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>이메일 템플릿</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>이벤트 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>이벤트 구성</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>이벤트 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>필터 유형</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>필수</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>선택 사항(기본값: 꺼짐)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>선택 사항(기본값: 켜짐)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>자료 유형</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>자료</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>자료 사용 이벤트 유형</relationshipLabel>
+    </fields>
+    <fields>
+        <label>온라인 등록 필드</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>자격 요건</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>이벤트 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>내 Territory 외부에서 검색</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>연사 필드</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>사용자 참석자 필드</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>워크인 필드</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <nameFieldLabel>이름</nameFieldLabel>
+    <recordTypes>
+        <label>참석자 필드</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>자료</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>온라인 등록 필드</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>연사 필드</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>연사 자격 요건</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>워크인 필드</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>하나의 규칙으로 &apos;이메일 템플릿&apos;과 &apos;CLM 프레젠테이션&apos; 필드를 둘 다 채울 수는 없습니다. 이 두 가지 항목에 대하여 별도의 규칙을 생성하여 주십시오.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>하나의 규칙으로 &apos;자료&apos;와 &apos;CLM 프레젠테이션&apos; 필드를 둘 다 채울 수는 없습니다. 이 두 가지 항목에 대하여 별도의 규칙을 생성하여 주십시오.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>하나의 규칙에 &apos;자료&apos;와 &apos;이메일 템플릿&apos; 필드를 둘 다 채울 수는 없습니다. 이 두 가지 항목에 대하여 별도의 규칙을 생성하여 주십시오.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

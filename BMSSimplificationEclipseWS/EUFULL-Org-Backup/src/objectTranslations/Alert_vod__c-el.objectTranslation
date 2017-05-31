@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ειδοποίηση</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ειδοποιήσεις</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ειδοποίηση</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ειδοποιήσεις</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ειδοποίηση</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ειδοποιήσεις</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Ειδοποίηση</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Ειδοποιήσεις</value>
+    </caseValues>
+    <fields>
+        <label>Ημερομηνία ενεργοποίησης</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κείμενο ειδοποίησης</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Απορριπτέο</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερ/ώρα πρόσφατης ειδοπ προώθησης APNS</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εκτεταμένος σύνδεσμος αναφοράς</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναφορά σύνδεσης</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προτεραιότητα</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation>Σημαντικό</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Κανονικό</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>Επείγον</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Δημόσιο</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση ειδοποίησης προώθησης APNS</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Επεξεργασμένα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>Σε ουρά</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Σφάλμα: ο εκτεταμένος σύνδεσμος αναφοράς και τα πεδία συνδέσμου αναφοράς δεν μπορούν να δημοσιευθούν στην ίδια ειδοποίηση.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>出席者</value>
+    </caseValues>
+    <fields>
+        <label>アカウント</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>出席者</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This picklist value is set by code/trigger to match the Developer name of Activity Record type. Activity recordtype dev names should not be changed --></help>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory_Board</masterLabel>
+            <translation><!-- Advisory_Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits_Booths_and_Displays</masterLabel>
+            <translation><!-- Exhibits_Booths_and_Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP_Sponsorship</masterLabel>
+            <translation><!-- HCP_Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal_Speaking</masterLabel>
+            <translation><!-- Internal_Speaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other_Consulting</masterLabel>
+            <translation><!-- Other_Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preceptorship</masterLabel>
+            <translation><!-- Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R_D_Committee</masterLabel>
+            <translation><!-- R_D_Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker_Meeting</masterLabel>
+            <translation><!-- Speaker_Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker_Training</masterLabel>
+            <translation><!-- Speaker_Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard_Rep_Presentation</masterLabel>
+            <translation><!-- Standard_Rep_Presentation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>住所 1</label>
+        <name>Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>住所 2</label>
+        <name>Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ariba SOW Number --></label>
+        <name>Ariba_SOW_Number_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>出席者名</label>
+        <name>Attendee_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>出席者タイプ</label>
+        <name>Attendee_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Audience Type --></label>
+        <name>Audience_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Alliance Employee</masterLabel>
+            <translation><!-- Alliance Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMS Employee</masterLabel>
+            <translation><!-- BMS Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation><!-- Journalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse Practitioner</masterLabel>
+            <translation><!-- Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation><!-- Patient --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Advocacy Group</masterLabel>
+            <translation><!-- Patient Advocacy Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacist</masterLabel>
+            <translation><!-- Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technician</masterLabel>
+            <translation><!-- Technician --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Formula field evaluates to HCP, HCO or Employee value depending on Attendee data and relationship to User or Account or blank for Contact --></help>
+        <label><!-- Attendee Type --></label>
+        <name>Audience_Type_Simple_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can Generate Contract --></label>
+        <name>Can_Generate_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>都市</label>
+        <name>City_vod__c</name>
+    </fields>
+    <fields>
+        <label>コンタクト</label>
+        <name>Contact_vod__c</name>
+        <relationshipLabel>出席者</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contract Party reference to which this Letter will need to be sent --></help>
+        <label><!-- Contract Party --></label>
+        <name>Contract_Party_HCPTS__c</name>
+        <relationshipLabel><!-- Attendee --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- By default, this is the same as Attendee Name/HCP Name if Attendee is an Account/Customer. The user however can update/override this to another name if they so wish --></help>
+        <label><!-- Contract Party Name --></label>
+        <name>Contract_Party_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Subtype --></label>
+        <name>Contract_Subtype_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Attendee for Preceptorship</masterLabel>
+            <translation><!-- Attendee for Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship to Congress</masterLabel>
+            <translation><!-- Sponsorship to Congress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Sponsorship</masterLabel>
+            <translation><!-- Sponsorship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide two digit country code for the Attendee. --></help>
+        <label><!-- Country Reference --></label>
+        <name>Country_ref_HCPTS__c</name>
+        <relationshipLabel><!-- Attendee --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>認証情報</label>
+        <name>Credentials_vod__c</name>
+        <picklistValues>
+            <masterLabel>DO</masterLabel>
+            <translation><!-- DO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>なし</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RN</masterLabel>
+            <translation><!-- RN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RNP</masterLabel>
+            <translation><!-- RNP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Global Customer Master ID --></label>
+        <name>Customer_Master_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- ESVisible_HCPTS --></label>
+        <name>ESVisible_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>メールアドレス</label>
+        <name>Email_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yes indicates that this Attendee requires Employer Consent. --></help>
+        <label><!-- Employer Consent Required? --></label>
+        <name>Employer_Consent_Required_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify status of EC capture stage/step --></help>
+        <label><!-- Employer Consent Status --></label>
+        <name>Employer_Consent_Status_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent for Signature</masterLabel>
+            <translation><!-- Sent for Signature --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>終了時間</label>
+        <name>End_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>エンティティ参照 ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>イベント</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>出席者</relationshipLabel>
+    </fields>
+    <fields>
+        <label>外部 ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>名</label>
+        <name>First_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>ふりがな</label>
+        <name>Furigana_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+        <picklistValues>
+            <masterLabel>ar</masterLabel>
+            <translation><!-- ar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bg</masterLabel>
+            <translation><!-- bg --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cs</masterLabel>
+            <translation><!-- cs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>da</masterLabel>
+            <translation><!-- da --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>de</masterLabel>
+            <translation><!-- de --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>el</masterLabel>
+            <translation><!-- el --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_GB</masterLabel>
+            <translation><!-- en_GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>en_US</masterLabel>
+            <translation><!-- en_US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es</masterLabel>
+            <translation><!-- es --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>es_MX</masterLabel>
+            <translation><!-- es_MX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fi</masterLabel>
+            <translation><!-- fi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>fr</masterLabel>
+            <translation><!-- fr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hr</masterLabel>
+            <translation><!-- hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>hu</masterLabel>
+            <translation><!-- hu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>in</masterLabel>
+            <translation><!-- in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>it</masterLabel>
+            <translation><!-- it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iw</masterLabel>
+            <translation><!-- iw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ja</masterLabel>
+            <translation><!-- ja --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ko</masterLabel>
+            <translation><!-- ko --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>nl_NL</masterLabel>
+            <translation><!-- nl_NL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no</masterLabel>
+            <translation><!-- no --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pl</masterLabel>
+            <translation><!-- pl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_BR</masterLabel>
+            <translation><!-- pt_BR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pt_PT</masterLabel>
+            <translation><!-- pt_PT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ro</masterLabel>
+            <translation><!-- ro --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>姓</label>
+        <name>Last_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>食事オプトイン</label>
+        <name>Meal_Opt_In_vod__c</name>
+    </fields>
+    <fields>
+        <label>食事の好み</label>
+        <name>Meal_Preference_vod__c</name>
+        <picklistValues>
+            <masterLabel>Vegetarian</masterLabel>
+            <translation>ベジタリアン</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>モバイル ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Signers --></label>
+        <name>Number_of_Signers_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>オンライン登録ステータス</label>
+        <name>Online_Registration_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Dismissed_vod</masterLabel>
+            <translation>却下</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs_Reconciliation_vod</masterLabel>
+            <translation>要調整</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_Account_vod</masterLabel>
+            <translation>既存のアカウントで確認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_User_vod</masterLabel>
+            <translation>既存のユーザで確認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_New_Account_vod</masterLabel>
+            <translation>新規アカウントで確認済み</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>Organization__c</name>
+    </fields>
+    <fields>
+        <label>組織</label>
+        <name>Organization_vod__c</name>
+    </fields>
+    <fields>
+        <label>ロックを上書き</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>電話</label>
+        <name>Phone_vod__c</name>
+    </fields>
+    <fields>
+        <label>処方者</label>
+        <name>Prescriber_vod__c</name>
+        <picklistValues>
+            <masterLabel>No_vod</masterLabel>
+            <translation>いいえ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes_vod</masterLabel>
+            <translation>はい</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Professional ID --></label>
+        <name>Professional_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status updated by Logistics provider based on attendee response. Not editable. --></help>
+        <label><!-- Registration Status --></label>
+        <name>Registration_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related ICF (Previously collected) --></label>
+        <name>Related_ICF_HCPTS__c</name>
+        <relationshipLabel><!-- Attendee --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Service_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation><!-- Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chairperson / Moderator</masterLabel>
+            <translation><!-- Chairperson / Moderator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Congress Services</masterLabel>
+            <translation><!-- Congress Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation><!-- Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trainer / Educator</masterLabel>
+            <translation><!-- Trainer / Educator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>署名日時</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>署名</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>署名者</label>
+        <name>Signee_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsorship Letter --></label>
+        <name>Sponsorship_Letter_HCPTS__c</name>
+        <relationshipLabel><!-- Attendee --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>開始時間</label>
+        <name>Start_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ステータス</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Accepted_vod</masterLabel>
+            <translation>承諾</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>承認済み</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attended_vod</masterLabel>
+            <translation>出席</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared_Signature_vod</masterLabel>
+            <translation>クリアされた署名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did not Attend</masterLabel>
+            <translation><!-- Did not Attend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invited_vod</masterLabel>
+            <translation>招待</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>指名</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>却下</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed_vod</masterLabel>
+            <translation>署名入り</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walked In/Attended</masterLabel>
+            <translation><!-- Walked In/Attended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stub Mobile Id --></label>
+        <name>Stub_Mobile_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stub SFDC Id --></label>
+        <name>Stub_SFDC_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Id --></label>
+        <name>Tax_Id_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Tax Id --></help>
+        <label><!-- Tax Id Type --></label>
+        <name>Tax_Id_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>EIN</masterLabel>
+            <translation><!-- EIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ITIN</masterLabel>
+            <translation><!-- ITIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSN</masterLabel>
+            <translation><!-- SSN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>タイトル</label>
+        <name>Title_vod__c</name>
+    </fields>
+    <fields>
+        <label>ユーザ</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>出席者</relationshipLabel>
+    </fields>
+    <fields>
+        <label>車両・船舶・航空機番号</label>
+        <name>Vessel_Number_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc --></help>
+        <label><!-- View Contracting Buttons --></label>
+        <name>View_Online_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>予定外出席者参照 ID</label>
+        <name>Walk_In_Reference_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>予定外出席者ステータス</label>
+        <name>Walk_In_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Dismissed_vod</masterLabel>
+            <translation>却下</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs_Reconciliation_vod</masterLabel>
+            <translation>要調整</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_Account_vod</masterLabel>
+            <translation>既存のアカウントに調整</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_Existing_User_vod</masterLabel>
+            <translation>既存のユーザに調整</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled_To_New_Account_vod</masterLabel>
+            <translation>新規アカウントに調整</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Zip_Code_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>郵便番号</label>
+        <name>Zip_vod__c</name>
+    </fields>
+    <nameFieldLabel>出席者 ID</nameFieldLabel>
+    <recordTypes>
+        <label>出席者</label>
+        <name>Attendee_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simple Attendee --></label>
+        <name>Simple_Attendee_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsoredAccount --></label>
+        <name>SponsoredAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsoredContact --></label>
+        <name>SponsoredContact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SponsoredUser --></label>
+        <name>SponsoredUser</name>
+    </recordTypes>
+    <sharingReasons>
+        <label>イベントチームメンバー</label>
+        <name>Event_Team_Member_vod</name>
+    </sharingReasons>
+    <validationRules>
+        <errorMessage><!-- There cannot be more than 10 signers. --></errorMessage>
+        <name>Cannot_have_more_than_10_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There must be at least one signer to generate a contract. --></errorMessage>
+        <name>ContractGen_Need_Signers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Selected Contract Subtype is not applicable to Activity type --></errorMessage>
+        <name>Contract_Subtype_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract must not be already Activated --></errorMessage>
+        <name>SponshorshipLetter_Status_Activated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Subtype cannot be blank. --></errorMessage>
+        <name>SponsorshipLetterSubtype_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Event must be in In Planning status --></errorMessage>
+        <name>SponsorshipLetter_Event_In_Planning</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Related sponsorship letter must be populated --></errorMessage>
+        <name>SponsorshipLetter_Need_Related</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_Sponsorship_Letter_Template --></label>
+        <name>Generate_Sponsorship_Letter_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Sponsorship_Letter_HCPTS --></label>
+        <name>Send_Sponsorship_Letter_HCPTS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Setup_Sponsorship_Letter_HCPTS --></label>
+        <name>Setup_Sponsorship_Letter_HCPTS</name>
+    </webLinks>
+</CustomObjectTranslation>

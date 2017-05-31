@@ -1,0 +1,19 @@
+<apex:page standardcontroller="VEM__Environment__c" extensions="VEM.VEM_ENVIRONMENT" recordsetvar="environments">
+<apex:form >
+<apex:pageBlock title="Environment Manager">
+    <apex:pageBlockButtons location="top">
+        <apex:commandButton action="{!create}" value="New Environment" id="theButton"/>
+    </apex:pageBlockButtons>
+    <apex:panelgroup id="theTable">
+        <apex:pageblocktable value="{!environments}" var="env" border="1" cellspacing="2" cellpadding="2" rowClasses="odd,even">
+            <apex:column headerValue="" >
+                <apex:outputLink value="../{!env.Id}">View</apex:outputLink>
+            </apex:column>
+            <apex:repeat value="{!$ObjectType.VEM__Environment__c.FieldSets.VEM__ENVIRONMENT}" var="i"> 
+                <apex:column value="{!env[i]}" /><br/>
+            </apex:repeat>
+        </apex:pageblocktable>
+    </apex:panelgroup>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

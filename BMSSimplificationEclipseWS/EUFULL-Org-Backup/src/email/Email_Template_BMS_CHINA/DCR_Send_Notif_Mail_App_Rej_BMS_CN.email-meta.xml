@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>BMS CN - DCR Send Approved/Reject Notification Mail</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>BMS CN - DCR Send Approved/Reject Notification Mail</name>
+    <style>freeForm</style>
+    <subject>{!Data_Change_Request_BMS_CN__c.Name} is {!Data_Change_Request_BMS_CN__c.Status_BMS_CN__c}</subject>
+    <textOnly>Dear {!Data_Change_Request_BMS_CN__c.OwnerLastName},
+
+The request: {!Data_Change_Request_BMS_CN__c.Name} is {!Data_Change_Request_BMS_CN__c.Status_BMS_CN__c}.
+{!Data_Change_Request_BMS_CN__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

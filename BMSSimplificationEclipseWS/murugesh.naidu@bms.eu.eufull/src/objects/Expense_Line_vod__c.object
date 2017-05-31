@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Actual_vod__c</fullName>
+        <description>Paid expense.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Updated by SAP in funding currency</inlineHelpText>
+        <label>Actual Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Committed_vod__c</fullName>
+        <description>Committed expense.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Updated by SAP in funding currency</inlineHelpText>
+        <label>Committed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <validationRules>
+        <fullName>Cannot_Edit_Expense_Lines_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>You cannot edit the Expense once it has been Requested.</description>
+        <errorConditionFormula>AND( 
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+OR( 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c,&quot;PO Requested&quot;), 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c,&quot;PO Pending&quot;), 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c,&quot;PO Created&quot;)), 
+OR( 
+ISCHANGED( Expense_Type_vod__c ), 
+ISCHANGED( Event_Budget_vod__c),
+ISCHANGED( Actual_vod__c ),
+ISCHANGED( Committed_vod__c )),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;
+)</errorConditionFormula>
+        <errorMessage>You cannot edit the Expense once it has been Requested.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Committed_Greater_than_0_to_request_PO</fullName>
+        <active>true</active>
+        <description>The committed amount must be greater than zero to request a PO/Payment.</description>
+        <errorConditionFormula>AND( 
+OR(
+ISPICKVAL( Expense_Header_vod__r.Status_vod__c  , &apos;PO Requested&apos;), 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c , &apos;Payment Requested&apos;)),
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+Committed_vod__c &lt;= 0)</errorConditionFormula>
+        <errorMessage>The committed amount must be greater than zero to request a PO/Payment.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Only_Enter_Actuals_for_Manual_Payment</fullName>
+        <active>true</active>
+        <description>You can only enter actuals for Manual Payment Entry</description>
+        <errorConditionFormula>AND(
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+NOT(ISPICKVAL(Expense_Header_vod__r.Payment_Status_HCPTS_S1__c,&quot;Manual Payment Entry&quot;)),  
+Actual_vod__c &gt; 0 ,
+$Profile.Name &lt;&gt;  &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;)</errorConditionFormula>
+        <errorMessage>You can only enter actuals for Manual Payment Entry</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>กฎย่อยของราคา</value>
+    </caseValues>
+    <fields>
+        <label>ชนิดการเปรียบเทียบ</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>ค่ารายการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>จำนวน</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>นับ SKU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>จำนวนสูงสุด</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนต่ำสุด</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>กฎราคา</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>กฎย่อยของราคา</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ผลิตภัณฑ์</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>กฎย่อยของราคา</relationshipLabel>
+    </fields>
+    <nameFieldLabel>ชื่อ</nameFieldLabel>
+    <validationRules>
+        <errorMessage>ไม่สนับสนุน รายการชุดอุปกรณ์ เป็น การเปรียบเทียบผลิตภัณฑ์</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>จำนวนสูงสุดต้องมากกว่าหรือเท่ากับจำนวนต่ำสุด</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>นับ SKU ต้องเป็น &gt; 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

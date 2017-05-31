@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>제품 그룹</value>
+    </caseValues>
+    <fields>
+        <label>설명</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>마감 일자</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>제품 카탈로그</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>제품 그룹(제품 카탈로그)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>제품 그룹</relationshipLabel>
+    </fields>
+    <fields>
+        <label>수량</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>시작 일자</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>회사 제품이 아닌 세부 그룹은 회사 제품인 세부 제품 또는 항목과 연결할 수 없습니다.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;세부 항목&quot; 또는 &quot;세부 &quot;제품 유형만 세부 제품 그룹에 연결할 수 있습니다.</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품 그룹&apos; 유형만 허용됩니다.</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주문&apos; 유형만 허용됩니다.</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;샘플&quot; 또는 &quot;BRC&quot; 유형 제품만 샘플 제품군과 연결될 수 있습니다.</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>수량을 정의한 경우 시작 날짜와 종료 날짜 필드를 채워야 합니다.</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>올바른 시작 일자 및 마감 일자가 필요합니다.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

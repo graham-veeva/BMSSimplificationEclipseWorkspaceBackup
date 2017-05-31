@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Sample_Inventory_vod__c.Employee_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Inventory_vod__c.Inventory_For_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Inventory_Item_vod__c.Sample_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Inventory_Item_vod__c.Count_vod__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Inventory_Item_vod__c.Expected_Quantity_vod__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>DE-Zwischen Endinventur Muster RE</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Sample_Inventory_vod__c$Sample_Inventory_Item_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Sample_Inventory_vod__c.Inventory_For_vod__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Sample_Inventory_vod__c.Inventory_Date_Time_vod__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

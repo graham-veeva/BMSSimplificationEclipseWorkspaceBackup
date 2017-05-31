@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Partner będący klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Partnerzy będący klientami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Partnera będącego klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Partnerów będących klientami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Partnera będącego klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Partnerów będących klientami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Partnerowi będącemu klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Partnerom będącym klientami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Partnerem będącym klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Partnerami będącymi klientami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Partnerze będącym klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Partnerach będącymi klientami</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Partnerze będący klientem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Partnerzy będący klientami</value>
+    </caseValues>
+    <fields>
+        <label>ID partnera będącego klientem</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Klient</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Partnerzy będący klientami</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Umowa</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Partnerzy będący klientami</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Domyślne</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobilny</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Typ zamówienia</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Bezpośredni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Przeniesienie</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Priorytet</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hurtownik</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Lokalizacja dostawy</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Płatnik</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Cennik</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Hurtownik</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Wymagany jest klient.</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

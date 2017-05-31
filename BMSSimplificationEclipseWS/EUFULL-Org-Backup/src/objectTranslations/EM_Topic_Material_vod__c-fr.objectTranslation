@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Document relatif au sujet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Documents relatifs au sujet</value>
+    </caseValues>
+    <fields>
+        <label>Présentation CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Documents relatifs au sujet</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Modèle d&apos;e-mail</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Documents liés au thème</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Type de document</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Document</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Sujets utilisant des documents</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Sujet</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Documents sur le sujet (Sujet)</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <label>Document relatif au sujet</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Les champs Modèle d&apos;e-mail et Présentation CLM ne peuvent pas être renseignés tous les deux pour une règle unique. Veuillez créer des règles distinctes pour ces deux éléments.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Les champs Documentation et Présentation CLM ne peuvent pas être renseignés tous les deux pour un document à thème unique. Veuillez créer des règles distinctes pour ces deux éléments.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un document à thème unique ne peut pas avoir à la fois les champs Document et Modèle d&apos;e-mail renseignés. Veuillez créer des règles distinctes pour ces deux éléments.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

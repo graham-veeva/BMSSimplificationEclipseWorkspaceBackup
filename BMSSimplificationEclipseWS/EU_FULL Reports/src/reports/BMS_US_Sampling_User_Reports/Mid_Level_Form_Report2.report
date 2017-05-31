@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Name</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Mid_Level_Prescriber_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Mid_Level_BP_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Authorizing_Prescriber_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Authorizing_Prescriber_BPID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Signature_Date_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Form_Expiration_Date_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Sample_Status_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Owner</field>
+    </columns>
+    <columns>
+        <field>Sample_Authorization_Form_BMS_SHARED__c$Rep_Territory_BMS_SHARED__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Mid-Level Form Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Mid_Level_Authorization_Form__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Sample_Authorization_Form_BMS_SHARED__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

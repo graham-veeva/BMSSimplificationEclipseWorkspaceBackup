@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Организация-партнер</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Организации-партнеры</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Организацию-партнер</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Организации-партнеры</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Организации-партнера</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Организаций-партнеров</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Организации-партнеру</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Организациям-партнерам</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Организацией-партнером</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Организациями-партнерами</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Организации-партнере</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Организациях-партнерах</value>
+    </caseValues>
+    <fields>
+        <label>Идентификатор организации-партнера</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Организация</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Организации-партнеры</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Контракт</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Организации-партнеры</relationshipLabel>
+    </fields>
+    <fields>
+        <label>По умолчанию</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор мобильного устройства</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип заказа</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Прямой</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Передать</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Приоритет</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Оптовый продавец</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Место поставки</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Плательщик</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Прайс-лист</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Оптовый продавец</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Поле Организация является обязательным.</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

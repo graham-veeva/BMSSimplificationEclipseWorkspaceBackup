@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Kostnadstillskrivningen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Kostnadstillskrivning</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Kostnadstillskrivning</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Kostnadstillskrivningarna</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Kostnadstillskrivningar</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Kostnadstillskrivningar</value>
+    </caseValues>
+    <fields>
+        <label>Verklig</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Utgiftsrad</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Utgiftstyp</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått (konto)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått (deltagare)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått (talare)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått (gruppmedlem)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Typ av kostnad som uppstått</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Konto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Deltagare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Händelsetalare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Händelse gruppmedlem</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Säljare</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Plats</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått (säljare)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått (plats)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Tillskrivningar av kostnad</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Kostnad som uppstått</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Betalningsdatum</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Tilldelning avhändelsekostnad</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

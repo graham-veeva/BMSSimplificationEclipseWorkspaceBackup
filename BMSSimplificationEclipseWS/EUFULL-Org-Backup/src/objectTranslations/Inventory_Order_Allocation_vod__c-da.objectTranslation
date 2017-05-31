@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Inventory Order Allocation --></value>
+    </caseValues>
+    <fields>
+        <label>Aktiv</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tildelingsslutdato</label>
+        <name>Allocation_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocation Family --></label>
+        <name>Allocation_Family_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>Tildelingsstartdato</label>
+        <name>Allocation_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tillad datoundtagelser</label>
+        <name>Allow_Date_Exceptions_vod__c</name>
+        <picklistValues>
+            <masterLabel>DoNothing_vod</masterLabel>
+            <translation>Gør intet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Forhindr</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Kræv godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Advar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tillad mængdeundtagelser</label>
+        <name>Allow_Quantity_Exceptions_vod__c</name>
+        <picklistValues>
+            <masterLabel>DoNothing_vod</masterLabel>
+            <translation>Gør intet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Forhindr</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Kræv godkendelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Advar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS PRODUCT ID --></label>
+        <name>BMS_Product_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivelse</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Delete_District --></label>
+        <name>District_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- District ID --></label>
+        <name>District_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Eksternt id</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mindste mængde for enkel bestilling</label>
+        <name>Minimum_Single_Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestillingsslutdato</label>
+        <name>Order_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bestillingsstartdato</label>
+        <name>Order_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Overliggende tildelings-id</label>
+        <name>Parent_Allocation_Id_vod__c</name>
+        <relationshipLabel>Beholdningsbestillingstildelinger</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Remaining --></label>
+        <name>Percent_Remaining_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Tildelingsmængde f beholdn.-bestillinger</label>
+        <name>Product_Order_Allocation_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Beholdningsbestillingstildelinger</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Region_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- z_Delete_Region ID --></label>
+        <name>Region_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Allocation --></label>
+        <name>Remaining_Allocation_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Bestilt mængde i alt</label>
+        <name>Total_Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Brugertildelingsgruppe</label>
+        <name>User_Allocation_Group_vod__c</name>
+        <picklistValues>
+            <masterLabel>Group A</masterLabel>
+            <translation>Gruppe A</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>User_Email_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Bruger</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Beholdningsbestillingstildelinger</relationshipLabel>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Inventory Order Allocation Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Startdatoen kan ikke ligge efter slutdatoen</errorMessage>
+        <name>VEEVA_DATES_MISMATCH_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Mindste bestillingsmængde kan ikke være større end den tildelte mængde</errorMessage>
+        <name>VEEVA_MINIMUM_ORDER_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bestillingsdatoer skal ligge inden for tildelingsdatoerne</errorMessage>
+        <name>VEEVA_ORDER_DATES_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Mængden må ikke være mindre end 0</errorMessage>
+        <name>VEEVA_QUANTITIES_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Den tildelte mængde kan ikke være mindre end den opfyldte mængde.</errorMessage>
+        <name>VEEVA_QUANTITY_FULFILLED_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

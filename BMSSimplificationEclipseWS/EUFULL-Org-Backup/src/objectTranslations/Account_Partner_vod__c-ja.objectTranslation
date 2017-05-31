@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>アカウント パートナー</value>
+    </caseValues>
+    <fields>
+        <label>アカウント パートナー ID</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>アカウント</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>アカウント パートナー</relationshipLabel>
+    </fields>
+    <fields>
+        <label>契約</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>アカウント パートナー</relationshipLabel>
+    </fields>
+    <fields>
+        <label>デフォルト</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>モバイル ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>注文タイプ</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>直接</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>転送</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>優先度</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>卸</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>配送場所</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>支払者</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>プライスブック</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>卸売</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>アカウントが必要です。</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

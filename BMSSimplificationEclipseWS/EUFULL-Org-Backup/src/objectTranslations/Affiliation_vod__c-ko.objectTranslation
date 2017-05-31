@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>관계</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Source Country --></label>
+        <name>Account_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>하위 관계</label>
+        <name>Child_affiliation_vod__c</name>
+        <relationshipLabel>관계</relationshipLabel>
+    </fields>
+    <fields>
+        <label>비고</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>트리거 사용 안 함</label>
+        <name>Disable_Trigger_vod__c</name>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>시작 계정</label>
+        <name>From_Account_vod__c</name>
+        <relationshipLabel>관계(시작 계정)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>시작 연락처</label>
+        <name>From_Contact_vod__c</name>
+        <relationshipLabel>관계(시작 연락처)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>영향</label>
+        <name>Influence_vod__c</name>
+        <picklistValues>
+            <masterLabel>Has influence</masterLabel>
+            <translation>영향을 줌</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is influenced</masterLabel>
+            <translation>영향을 받음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No influence</masterLabel>
+            <translation>영향 없음</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>모바일 ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>상위</label>
+        <name>Parent_vod__c</name>
+    </fields>
+    <fields>
+        <label>친밀도</label>
+        <name>Relationship_Strength_vod__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation>약함</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation>보통</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation>강함</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>역할</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Access Relationship</masterLabel>
+            <translation><!-- Access Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affiliated with</masterLabel>
+            <translation>관계된 대상</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Relationship</masterLabel>
+            <translation><!-- HQ Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Relationship</masterLabel>
+            <translation><!-- Medical Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Relationship</masterLabel>
+            <translation><!-- Sales Relationship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>치료 영역</label>
+        <name>Therapeutic_Area_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation>심장학</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Medicine</masterLabel>
+            <translation>응급 의약품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Medicine</masterLabel>
+            <translation>가정의학과</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice</masterLabel>
+            <translation>일반과</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Medicine</masterLabel>
+            <translation>내과 약품</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation>종양학</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>기타</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatrics</masterLabel>
+            <translation>소아과</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>관련 계정 수</label>
+        <name>To_Account_Affiliation_Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>관련 계정 식별자</label>
+        <name>To_Account_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>관련 계정 이름</label>
+        <name>To_Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>관련 계정 레코드 유형</label>
+        <name>To_Account_Record_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>대상 계정</label>
+        <name>To_Account_vod__c</name>
+        <relationshipLabel>관계(대상 계정)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>대상 연락처</label>
+        <name>To_Contact_vod__c</name>
+        <relationshipLabel>관계(대상 연락처)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>파괴</label>
+        <name>destroy_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- AffiliationNumber --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>대상 계정은 시작 계정과 같을 수 없습니다.</errorMessage>
+        <name>DUP_TO_FROM_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>대상 연락처는 시작 연락처와 같을 수 없습니다.</errorMessage>
+        <name>DUP_TO_FROM_CONTACT</name>
+    </validationRules>
+</CustomObjectTranslation>

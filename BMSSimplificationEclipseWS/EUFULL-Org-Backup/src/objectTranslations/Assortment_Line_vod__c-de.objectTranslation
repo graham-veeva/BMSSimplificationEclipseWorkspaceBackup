@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Sortimentsortierung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Sortimentsortierungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Sortimentsortierung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Sortimentsortierungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Sortimentsortierung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Sortimentsortierungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Sortimentsortierung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Sortimentsortierungen</value>
+    </caseValues>
+    <fields>
+        <label>Sortiment</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Sortimentsortierungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Standardmäßig reduzieren?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordneter Abschnitt</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Sortimentsortierungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Sortimentsortierungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Beschriftung Abschnitt</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sortierung</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Name</nameFieldLabel>
+    <recordTypes>
+        <label>IM Sortimentsprodukt</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>IM Sortimentsabschnitt</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM: Sortierungsprodukt</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM: Sortimentsabschnitt</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>OM-Sortimentsortierungen können nur mit OM-Sortimenten verbunden werden, IM-Sortimentsortierungen nur mit IM-Sortimenten</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kann nur für den Datensatztyp IM_Assortment_Section_vod oder OM_Assortment_Section_vod ausgewählt werden</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ein Abschnitt kann nicht mit einem übergeordneten Abschnitt verknüpft sein</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ein Abschnitt und ein Produktname können nicht auf demselben Datensatz angegeben werden.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

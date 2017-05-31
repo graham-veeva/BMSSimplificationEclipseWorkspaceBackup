@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Cycle_Plan_Target_vod__c.Visited_BMS_CN__c:SUM/RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg # of Interactions per total Targets</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_44542939</developerName>
+        <masterLabel>Covered</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Visited_BMS_CN__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>0</to>
+            </sourceValues>
+            <value>Not Covered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>0</from>
+            </sourceValues>
+            <value>Covered</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_99798967</developerName>
+        <masterLabel>TL Level</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$TL_Level_BMS_CN__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>International - 1</sourceValue>
+            </sourceValues>
+            <value>International</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>National - 3</sourceValue>
+            </sourceValues>
+            <value>National</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Regional - 3</sourceValue>
+            </sourceValues>
+            <value>Regional</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Actual_Calls_vod__c</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_99798967</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Cycle_Plan_vod__c.Cycle_Plan_Targets__r$Actual_Calls_vod__c</field>
+    </columns>
+    <description>1. Report to show sum of all interactions grouped by TL Level quarterly
+2. Avg # of Interactions per total Targets (e.g. if there is 
+50 International TLs and only 25 calls competed in Q1, 
+this indicates that only 50% of TLs have been covered in 
+Q1)
+SIT</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>Cycle_Plan_vod__c$Start_Date_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_99798967</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS CHINA Medical MSM-TL Level</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cycle_Plans_with_Cycle_Plan_Targets__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Cycle_Plan_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

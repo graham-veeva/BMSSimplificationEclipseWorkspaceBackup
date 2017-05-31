@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Definiţie a regulii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Definiţie a regulii</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Definiţii reguli</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Definiţii reguli</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Definiţie a regulii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Definiţie a regulii</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Definiţii reguli</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Definiţii reguli</value>
+    </caseValues>
+    <fields>
+        <help>Indică dacă regula este activă în Salesforce.com</help>
+        <label>Activ</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>Numele câmpului unde vor apărea mesajele de eroare la nivel de câmp.</help>
+        <label>Afişare câmp</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>Formulă regulă</help>
+        <label>Formulă condiţie de eroare</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>Mesaj de eroare pentru regulă.</help>
+        <label>Mesaj master</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>Obiect pe care se bazează această regulă de validare.</help>
+        <label>Obiect</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>Definiţii reguli</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Comandă</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Indică dacă Veeva a descoperit sintaxă neacceptată în definiţia regulii.</help>
+        <label>Acceptat</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>ID extern pentru înregistrare. Formatul este [RULE NAME]::[RecordType.Name]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Linie filtru interogare SFDC</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Regulă SFDC</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

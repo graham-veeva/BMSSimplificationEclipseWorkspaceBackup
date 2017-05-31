@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Carrier Name --></label>
+        <name>Carrier_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Felkommentarer</label>
+        <name>Exception_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Felets allvarlighetsgrad</label>
+        <name>Exception_Severity_vod__c</name>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Förhindra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Kräver godkännande</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Varna</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Feltyp</label>
+        <name>Exception_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Date_vod</masterLabel>
+            <translation>Datum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityDate_vod</masterLabel>
+            <translation>Kvantitet och datum</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Kvantitet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Inventeringsbeställningsallokering</label>
+        <name>Inventory_Order_Allocation_vod__c</name>
+        <relationshipLabel>Inventeringsbeställningsrader</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Inventeringsbeställningsrubrik</label>
+        <name>Inventory_Order_Header_vod__c</name>
+        <relationshipLabel>Inventeringsbeställningsrader</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Radstatus i inventeringsbeställning</label>
+        <name>Inventory_Order_Line_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Avbruten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Slutförd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Process_vod</masterLabel>
+            <translation>Behandlas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Ny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Sparad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Skickad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory Order Status --></label>
+        <name>Inventory_Order_Status_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lot Number --></label>
+        <name>Lot_Number_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Kvantitet i fullbordad beställning</label>
+        <name>Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beställningskvantitet UOM</label>
+        <name>Order_Quantity_UOM_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Låda</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carton</masterLabel>
+            <translation>Kartong</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation>Förpackning</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Beställningskvantitet</label>
+        <name>Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Doc Number --></label>
+        <name>Pick_Doc_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Inventeringsbeställningsrader</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Begärt leveransdatum</label>
+        <name>Requested_Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Delivered Qty --></label>
+        <name>SAP_Delivered_Qty_BMS_CA__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Status --></label>
+        <name>SAP_Order_Status_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Date --></label>
+        <name>Shipment_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Inventory Order Line Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Leveransdatum kan inte infalla före beställningens tillkomstdatum</errorMessage>
+        <name>VEEVA_DELIVERY_DATE_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Beställningskvantiteten kan inte vara mindre än 0</errorMessage>
+        <name>VEEVA_NEGATIVE_QUANTITY</name>
+    </validationRules>
+</CustomObjectTranslation>

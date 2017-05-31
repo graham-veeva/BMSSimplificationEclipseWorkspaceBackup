@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <description>Report to display the number of addresses in a given territory.  This report is filtered to only include Oncology MSL Territories.</description>
+    <filter>
+        <criteriaItems>
+            <column>Territory.Sales_Force_Name_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>ONC MSL HOME OFFICE,AERO DIGEST/GASTRO INTEST,BREAST/HEME/MEL,MSL ONC BREAST/HEM/MEL DISTIRCT,MSL ONC AD/GI DISTRICT</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory.Sales_Force_Name_BMS_CORE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TERR_DESC</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - PTU - Address Summary/Onc MSL</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Address_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

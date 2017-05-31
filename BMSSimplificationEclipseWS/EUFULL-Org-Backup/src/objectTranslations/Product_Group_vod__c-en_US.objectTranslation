@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Group</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Catalog --></label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel><!-- Product Groups (Product Catalog) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Product Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot link a Detail Group that is not a Company Product to a Detail Product or Topic that is a Company Product. --></errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products of type &quot;Detail Topic&quot; or &quot;Detail&quot; can be associated to a Detail Product Group --></errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Type of &apos;Product Group&apos; or &apos;Sample Product Group&apos; or &apos;Detail Group&apos; is allowed --></errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Type of &apos;Order&apos; is allowed --></errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products of type “Sample”, “BRC”, ” High Value Promotional”,  “Alternative Sample”, &quot;Promotional&quot;, &quot;Reprint&quot; and others can be associated to a Sample Product Group --></errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date and End Date must be populated if a Quantity is defined --></errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid start date and end date are required. --></errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

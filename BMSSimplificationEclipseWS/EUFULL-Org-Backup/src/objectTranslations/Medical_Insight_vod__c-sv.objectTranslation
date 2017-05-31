@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Medicinsk insikt</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Medicinsk insikt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Medicinsk insikt</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Medicinska insikter</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Medicinska insikter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Medicinska insikter</value>
+    </caseValues>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Medicinska insikter</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Klinisk studie</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Medicinska insikter</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beskrivning</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Enhetens referens-ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interaktion</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Medicinska insikter</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Medicinsk händelse</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Medicinska insikter</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Annan källa</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Åsidosätt lås</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publikation</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Medicinska insikter</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Sparad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Skickad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sammanfattning</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lås upp</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namn på medicinsk insikt</nameFieldLabel>
+    <recordTypes>
+        <label>Medicinsk viktig insikt</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Det krävs en beskrivning för att kunna spara eller skicka in en medicinsk viktig insikt</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Det krävs en sammanfattning för att kunna spara eller skicka in en medicinsk viktig insikt</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Skicka</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Meeting Speakers</relationshipLabel>
+        <relationshipName>Meeting_Speakers</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Cost_BMS_EMEA__c</fullName>
+        <description>BMS ACN - December 2015 (Q4 GRM) : If a speaker does not deliver, or delivers partially, a service, total cost will be calculated on basis of &quot;Additional cost&quot; entered by the rep.</description>
+        <externalId>false</externalId>
+        <label>Additional Cost</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1_BMS_IC__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 1</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_to_subtract_BMS_EMEA__c</fullName>
+        <description>VPRO EMEA Aug-2014: field for German, to subtract an amount from the calculated Honoriarium costs. Rationale: real costs agreed with the HCP could differ from the &quot;theoretical&quot; ones.</description>
+        <externalId>false</externalId>
+        <label>Amount to subtract</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BMS_EMEA_Account_Source_Country__c</fullName>
+        <description>VPRO August 2014: Custom field to populate the Country based om the country of the HCP. Workflow will populate the value</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Source Country</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Briefing_mins_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Breakdown of the Estimated Duration of Service. To be entered by user in Minutes.</description>
+        <externalId>false</externalId>
+        <label>Briefing (mins)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chairing_mins_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Breakdown of the Estimated Duration of Service. To be entered by user in Minutes.</description>
+        <externalId>false</externalId>
+        <label>Chairing (mins)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City_BMS_IC__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_BMS_IC__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Compensated_Travel_Time_hrs_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Meeting Speaker Information.</description>
+        <externalId>false</externalId>
+        <label>Compensated Travel Time (hrs)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DHG_Comment_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: field specific to Germany.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>DHG Comment</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DHG_Document_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: specific field for Germany.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>DHG Document</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DHG_is_required_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: field specific to Germany.</description>
+        <externalId>false</externalId>
+        <label>DHG is required</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Delivered_BMS_EMEA__c</fullName>
+        <description>Req 818: If the Speaker meeting was delivered.</description>
+        <externalId>false</externalId>
+        <label>Delivered</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Duration_of_Service_hrs__c</fullName>
+        <description>VPRO March 2014: Meeting Speaker Information.</description>
+        <externalId>false</externalId>
+        <label>Estimated Duration of Service (hrs)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Preparation_Time_hrs_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Meeting Speaker Information.</description>
+        <externalId>false</externalId>
+        <label>Estimated Preparation Time (hrs)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_BMS_SHARED__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO EMEA May 2014: field to be used for data loading</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Has_Rate_Card__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has Rate Card</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Rate_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: Speaker hourly rate. Created as a number field and not currency.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In alignment with Fair Market (see Appendix A)</inlineHelpText>
+        <label>Hourly Rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hourly_honorarium_rate_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Information for Meeting Speaker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In alignment with Fair Market (see Appendix A)</inlineHelpText>
+        <label>Hourly honorarium rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hourly_travel_time_rate_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Meeting Speaker Information.</description>
+        <externalId>false</externalId>
+        <label>Hourly travel time rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_to_Account_BMS_EMEA__c</fullName>
+        <description>Req 818 Sw 18-Feb: if the Invoice has been sent to Accounting</description>
+        <externalId>false</externalId>
+        <label>Invoice to Account</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lock_Rate_Card__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Lock Rate Card</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Meeting_Start_Date_BMS_EMEA__c</fullName>
+        <description>BMS ACN: April 2017 - Field to display Meeting Start Date in the Meeting Speaker Related List on the Customer Card</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Meeting__r.Start_Date_vod__c</formula>
+        <label>Meeting Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Meeting__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Meeting</label>
+        <referenceTo>Medical_Event_vod__c</referenceTo>
+        <relationshipLabel>Meeting Speakers</relationshipLabel>
+        <relationshipName>Meeting_Speakers</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_hours_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: number of hours of the Speaker.</description>
+        <externalId>false</externalId>
+        <label>Number of hours</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Fees_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: extra fees that are not counted as hourly rates.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Honoraria paid for travel time, honoraria paid for preparation Time,  as per Appendix A – add detail breakdown in the comments</inlineHelpText>
+        <label>Other Fees</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_mins_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Breakdown of the Estimated Duration of Service. To be entered by user in Minutes.</description>
+        <externalId>false</externalId>
+        <label>Other (mins)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_code_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: Purchase Order for the Speaker contract.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>PO code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payable_To_BMS_IC__c</fullName>
+        <description>Cheque Payable To</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payable To</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Planned_Expenses_BMS_IC__c</fullName>
+        <description>Planned expenses for the speaker rate card</description>
+        <externalId>false</externalId>
+        <label>Planned Expenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Post_Meeting_Debrief_mins_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Breakdown of the Estimated Duration of Service. To be entered by user in Minutes.</description>
+        <externalId>false</externalId>
+        <label>Post Meeting Debrief (mins)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_BMS_IC__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Postal Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Presentation_mins_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Breakdown of the Estimated Duration of Service. To be entered by user in Minutes.</description>
+        <externalId>false</externalId>
+        <label>Presentation (mins)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Province_BMS_IC__c</fullName>
+        <externalId>false</externalId>
+        <label>Province</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Q_and_A_mins_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Breakdown of the Estimated Duration of Service. To be entered by user in Minutes.</description>
+        <externalId>false</externalId>
+        <label>Q and A (mins)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_Card_Planned_Expenses__c</fullName>
+        <description>Planned expenses for rate card without miscellaneous expenses</description>
+        <externalId>false</externalId>
+        <label>Rate Card Planned Expenses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rate_Card__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rate Card</label>
+        <referenceTo>Rate_Card__c</referenceTo>
+        <relationshipLabel>Meeting Speakers</relationshipLabel>
+        <relationshipName>Meeting_Speakers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role_BMS_CA__c</fullName>
+        <description>Used to identify if the person added to the Meeting is a Speaker, Moderator or Corporate Support</description>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Corporate Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Speaker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Send_Checque_To_BMS_IC__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Send Cheque To</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speaker_Specialty__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Account__r.Specialty_BMS_EMEA__r.Name</formula>
+        <label>Speaker Specialty</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_BMS_EMEA__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Proposed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invited</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HQ Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Total_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: Total of fees (hourly rates + other fees).
+BMS ACN - September 2015: Formula modified so that if the serivice is not delivered (Delivered = No), Total should be 0, else Total of fees (hourly rates + other fees).
+BMS ACN - December 2015 (Q4 GRM) : Formula modified so that if the service is not delivered (Delivered = No) , then Total = Additional Costs.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Delivered_BMS_EMEA__c, &quot;No&quot;),Additional_Cost_BMS_EMEA__c,Hourly_honorarium_rate_BMS_EMEA__c * Estimated_Duration_of_Service_hrs__c + Hourly_honorarium_rate_BMS_EMEA__c * Estimated_Preparation_Time_hrs_BMS_EMEA__c + Hourly_travel_time_rate_BMS_EMEA__c * Compensated_Travel_Time_hrs_BMS_EMEA__c - Amount_to_subtract_BMS_EMEA__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_before_subtraction_BMS_EMEA__c</fullName>
+        <description>VPRO Aug 2014: Total of fees (hourly rates + other fees). Later on this amount could be reduced for Germany.</description>
+        <externalId>false</externalId>
+        <formula>Hourly_honorarium_rate_BMS_EMEA__c * Estimated_Duration_of_Service_hrs__c + Hourly_honorarium_rate_BMS_EMEA__c * Estimated_Preparation_Time_hrs_BMS_EMEA__c + Hourly_travel_time_rate_BMS_EMEA__c * Compensated_Travel_Time_hrs_BMS_EMEA__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total before subtraction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_hrs_BMS_EMEA__c</fullName>
+        <description>BMS EMEA - Feb Mini LRM 2017 : New Field to Meeting Speaker to calculate the Sum of  Breakdown of the Estimated Duration of Service along with Preparation Time and Compensated Travel Time.</description>
+        <externalId>false</externalId>
+        <formula>((Briefing_mins_BMS_EMEA__c +  Presentation_mins_BMS_EMEA__c +  Chairing_mins_BMS_EMEA__c  +  Q_and_A_mins_BMS_EMEA__c + Post_Meeting_Debrief_mins_BMS_EMEA__c  +  Other_mins_BMS_EMEA__c)/60) +  Estimated_Preparation_Time_hrs_BMS_EMEA__c +  Compensated_Travel_Time_hrs_BMS_EMEA__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total (hrs) = Sum of «6 breakdown fields making up ‘Estimated Duration of service (hrs)’ », « Estimated Preparation Time (hrs) » &amp; « Compensated Travel Time (hrs) »</inlineHelpText>
+        <label>Total (hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Service_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Type of Service for the Meeting Speaker.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Type of Service</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_preparation_work_BMS_EMEA__c</fullName>
+        <description>VPRO March 2014: Meeting speaker Information.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Type of preparation work</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Meeting Speaker</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Meeting__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>MS-{0000}</displayFormat>
+        <label>Meeting Speaker BMS Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Meeting Speakers</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>BMS_EMEA_Meeting_Speakers</fullName>
+        <active>true</active>
+        <description>VPRO Oct 2013: record type specific for EMEA Speakers</description>
+        <label>BMS - EMEA - Meeting Speakers</label>
+        <picklistValues>
+            <picklist>DHG_is_required_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Delivered_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_to_Account_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Province_BMS_IC__c</picklist>
+            <values>
+                <fullName>AB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_BMS_CA__c</picklist>
+            <values>
+                <fullName>Corporate Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HQ Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_Meeting_Speakers_PostExec</fullName>
+        <active>true</active>
+        <description>Meeting Speaker related to a Field Force Meeting</description>
+        <label>BMS - EMEA - Meeting Speakers PostExec</label>
+        <picklistValues>
+            <picklist>DHG_is_required_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Delivered_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_to_Account_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Province_BMS_IC__c</picklist>
+            <values>
+                <fullName>AB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_BMS_CA__c</picklist>
+            <values>
+                <fullName>Corporate Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HQ Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_Meeting_Speakers_PostExec_PTA</fullName>
+        <active>true</active>
+        <description>Meeting Speaker related to a Field Force Meeting</description>
+        <label>BMS - EMEA - Meeting Speakers PostExec PTA</label>
+        <picklistValues>
+            <picklist>DHG_is_required_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Delivered_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Invoice_to_Account_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Province_BMS_IC__c</picklist>
+            <values>
+                <fullName>AB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_BMS_CA__c</picklist>
+            <values>
+                <fullName>Corporate Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moderator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_BMS_EMEA__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attended</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HQ Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>BMS_EMEA_FFM_DoS_Check</fullName>
+        <active>true</active>
+        <description>BMS EMEA - Feb Mini LRM 2017 : Validation Rule to check if sum of 6 breakdown fields is equal to Estimated Duration of Service.</description>
+        <errorConditionFormula>IF(AND(OR 
+(ISBLANK(Estimated_Duration_of_Service_hrs__c), Estimated_Duration_of_Service_hrs__c &lt; 0),
+OR(
+ISPICKVAL($User.User_Source_Country_BMS_CORE__c , &apos;GB&apos;),
+ISPICKVAL($User.User_Source_Country_BMS_CORE__c , &apos;IE&apos;),
+ISPICKVAL($User.User_Source_Country_BMS_CORE__c , &apos;UI&apos;))), TRUE,  
+AND(OR(
+ISPICKVAL($User.User_Source_Country_BMS_CORE__c , &apos;GB&apos;),
+ISPICKVAL($User.User_Source_Country_BMS_CORE__c , &apos;IE&apos;),
+ISPICKVAL($User.User_Source_Country_BMS_CORE__c , &apos;UI&apos;)),
+(Estimated_Duration_of_Service_hrs__c  &lt;&gt; 
+ROUND(((Briefing_mins_BMS_EMEA__c + Presentation_mins_BMS_EMEA__c + Chairing_mins_BMS_EMEA__c + Q_and_A_mins_BMS_EMEA__c + Post_Meeting_Debrief_mins_BMS_EMEA__c + Other_mins_BMS_EMEA__c)/60),2))))</errorConditionFormula>
+        <errorDisplayField>Estimated_Duration_of_Service_hrs__c</errorDisplayField>
+        <errorMessage>Estimated Duration of Service should be equal to SUM of 6 Breakdown Fields.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BMS_EMEA_FFM_Speaker_Co_Author</fullName>
+        <active>true</active>
+        <description>VPRO 7 March 2014: Validation to not allow a co-author of the meeting to modify any fields.</description>
+        <errorConditionFormula>AND(
+$User.Id &lt;&gt;   Meeting__r.OwnerId,
+TEXT( Meeting__r.FFM_Step_BMS_EMEA__c ) = &apos;Meeting Post-Execution&apos;,
+OR( 
+$Profile.Name = &apos;BMS - EMEA - REP - MSL&apos;, 
+$Profile.Name = &apos;BMS - EMEA - REP - SALES&apos;) 
+)</errorConditionFormula>
+        <errorMessage>You are not allowed to change any fields as you are co-author of the Meeting.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BMS_EMEA_FFM_Speaker_CreateWhileApproval</fullName>
+        <active>true</active>
+        <description>BMS EMEA Aug 2014: Prevents users from creating a Speaker while the Meeting is pending approval</description>
+        <errorConditionFormula>AND( 
+ISNEW(), 
+ISPICKVAL(Meeting__r.Status_BMS_CORE__c, &apos;Submitted - Waiting Approval&apos;), 
+TEXT(Meeting__r.FFM_Step_BMS_EMEA__c ) &lt;&gt; &apos;&apos; 
+)</errorConditionFormula>
+        <errorMessage>You can add Speaker while the Meeting is waiting for approval. Please cancel and go back to the Meeting page.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BMS_EMEA_Meeting_Speaker_Comments_Check</fullName>
+        <active>true</active>
+        <description>BMS ACN -  September : Q3 GRM 2016 - Prevent users to save a Meeting Speaker which was not delivered without comments.</description>
+        <errorConditionFormula>AND (ISPICKVAL(Delivered_BMS_EMEA__c, &quot;No&quot;),  ISBLANK(Comments_BMS_IC__c))</errorConditionFormula>
+        <errorDisplayField>Comments_BMS_IC__c</errorDisplayField>
+        <errorMessage>Please enter a reason for not delivering the service!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BMS_EMEA_Meeting_Speaker_Edit_On_Cancel</fullName>
+        <active>true</active>
+        <description>BMS ACN - June 2015 - Prevent users from editing meeting speakers records upon cancellation of meeting.</description>
+        <errorConditionFormula>Meeting__r.RecordType.DeveloperName == &apos;BMS_EMEA_4_Meeting_Cancelled&apos;</errorConditionFormula>
+        <errorMessage>You cannot modify the Speaker of a Cancelled meeting.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BMS_EMEA_Meeting_Speaker_Org_Type</fullName>
+        <active>true</active>
+        <description>BMS ACN - Feb 2016 - Prevent user to create master file if account record type is BMS Organisation.</description>
+        <errorConditionFormula>NOT(Account__r.RecordType.DeveloperName=&apos;BMS_Individual&apos;)</errorConditionFormula>
+        <errorMessage>Account record type cannot be &quot;Organisation&quot; Type.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Print_Contract_Form</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Print Contract Form</masterLabel>
+        <openType>newWindow</openType>
+        <page>EventsManagementContract_BMS</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

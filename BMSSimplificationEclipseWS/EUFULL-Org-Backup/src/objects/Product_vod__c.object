@@ -1,0 +1,3102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The Product Catalog</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>BMS_Product_ID__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>BMS Product ID</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BU_BMS_CN__c</fullName>
+        <description>BU for China</description>
+        <externalId>false</externalId>
+        <label>BU</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ONCO-SPRYCEL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ONCO-TAXOL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OTC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ONCO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Bundle_Pack_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to identify Product Groups that represent a Bundle Pack in Order Management</description>
+        <externalId>false</externalId>
+        <label>Bundle Pack</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Category_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cold_Chain_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes a product as a cold chain sample. Only applicable to products where Product Type is equal to Sample. Used to require a Tag Alert and Status to be associated with a Sample line item in Sample Transactions and Call Samples.</description>
+        <externalId>false</externalId>
+        <label>Cold Chain</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Company_Product_vod__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>When checked, this field denotes a product that is distributed by the company. Only products marked as a company product will displayed in My Setup and be available for detailing on call reports. Un-check for competitor&apos;s products.</description>
+        <externalId>false</externalId>
+        <label>Company Product</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Consumer_site__c</fullName>
+        <description>Link to consumer web site for this product.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Consumer site</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Controlled_Substance_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checking this checkbox denotes the product as a controlled substance. Call reporting and samples management read this value.</description>
+        <externalId>false</externalId>
+        <label>Controlled Substance</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cost_vod__c</fullName>
+        <description>Cost of the product.</description>
+        <externalId>false</externalId>
+        <label>Cost</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Create_Lot_Catalog_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to trigger automatic creation of Lot Catalog record for the following product types: BRC, Alternative Samples, High Value Promotional, Promotional, Reprint, or Custom.</description>
+        <externalId>false</externalId>
+        <label>Create Lot Catalog</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Text area used to describe the product.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Display_Order_vod__c</fullName>
+        <description>The order (top to bottom) that the product will be displayed in. The absolute number is not important, but lower numbered products are displayed above of higher numbered products.</description>
+        <externalId>false</externalId>
+        <label>Display Order</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Distributor_vod__c</fullName>
+        <description>The Distributor field is used to indicate the name of the Company that will be distributing the BRC Sample Product Types to the requesting Physicians.  The Distributor name is displayed on the Signature capture form for all BRC records.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Distributor</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <description>External ID is used only for data loading.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GPDV_Pduct_Type_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GPDV Product Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GPDV_Product_ID_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GPDV Product ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GeoForce_Product_BMS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>GeoForce Product?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Monitoring_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Specifies whether Inventory Monitoring capture is allowed on the product.</description>
+        <externalId>false</externalId>
+        <label>Inventory Monitoring</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Order_UOM_vod__c</fullName>
+        <externalId>false</externalId>
+        <label>Inventory Order UOM</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Carton</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Quantity_Per_Case_vod__c</fullName>
+        <description>Quantity of each ordered item per case</description>
+        <externalId>false</externalId>
+        <label>Inventory Quantity Per Case</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Number_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Item Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>List_Number_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>List Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer_vod__c</fullName>
+        <description>Picklist used to select the manufacturer of the product. To change the list, edit the picklist.</description>
+        <externalId>false</externalId>
+        <label>Manufacturer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>3M Pharmaceuticals Division</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abbott Laboratories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ALTANA Pharma</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alza Corporation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amgen</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AstraZeneca International</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Barr Laboratories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BASF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bayer Corporation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bayer Pharmaceutical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Berlex Laboratories, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Boehringer Ingelheim Pharmaceuticals, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bristol-Myers Squibb Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elan Corporation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eli Lilly and Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endo Pharmaceuticals Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Genentech, Inc</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gilead Sciences</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GlaxoSmithKline</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hoffmann-La Roche</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Janssen-Cilag</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Janssen Pharmaceutica</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Johnson &amp; Johnson</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>King Pharmaceuticals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mead Johnson</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Merck &amp; Co.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Novartis Pharmaceuticals Corporation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Novo Nordisk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NV Organon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Otsuka America Pharmaceuticals, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pfizer Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purdue Pharma L.P.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roche Laboratories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Schein Pharmaceutical, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Schwarz Pharma AG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Schwarz Pharma U.S.A.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sepracor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solvay</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Teva Pharmaceutical Industries</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UCB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ViroPharma Incorporated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wyeth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yamanouchi Pharma Technologies, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>sanofi-aventis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Verteo Biotech, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mithal Pharma</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delbian Pharmaceuticals, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Betral BioSciences, Inc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wagnum Pharma</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Master_Align_Id_vod__c</fullName>
+        <description>Globally unique identifier for this object. This Id is managed by Align</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Master Align Id</label>
+        <length>36</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Cycle_Plans_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>For Detail-type products, checking this box prevents the product from being displayed in the Cycle Plan Target and Account Cycle Plans views. However the product will still be displayed in My Setup and child products can still be selected as samples or promotional items within a Call.</description>
+        <externalId>false</externalId>
+        <label>No Cycle Plans</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_Details_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>For Detail-type products, checking this box prevents the product from showing up in the &quot;Detailing Priority&quot; section of a call report. However the product will still be displayed in My Setup and child products will still be selectable as samples or promotional items.</description>
+        <externalId>false</externalId>
+        <label>No Details</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_Metrics_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is checked the product will not show up in the Ratings and Evaluations section of the Account Profile.</description>
+        <externalId>false</externalId>
+        <label>No Metrics</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>No_Promo_Items_vod__c</fullName>
+        <description>This formula field defines whether the product catalog record appears in the Samples And Promotional Items section on the Call Report. If the result of the formula is TRUE, then the product will not appear on the Samples And Promotional Items section.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASE(Product_Type_vod__c, &apos;Detail&apos;, &apos;TRUE&apos;, &apos;Order&apos;, &apos;TRUE&apos;, &apos;Kit Item&apos;, &apos;TRUE&apos;, &apos;BRC&apos;, &apos;TRUE&apos;, &apos;Market&apos;, &apos;TRUE&apos;, &apos;Submarket&apos;, &apos;TRUE&apos;, &apos;Inventory Monitoring&apos;, &apos;TRUE&apos;, &apos;Product Group&apos;, &apos;TRUE&apos;, &apos;Sample Product Group&apos;, &apos;TRUE&apos;, &apos;FALSE&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>No Promo Items</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to product to associate child products (samples, promotional items...) with their parent product.</description>
+        <externalId>false</externalId>
+        <label>Parent Product</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Product Catalog</relationshipLabel>
+        <relationshipName>Child_products_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pricing_Bound_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If used for a Product Group: Flag used to drive the default Product_Group_Level_Rule. When set to TRUE, only the Product_Group_Level_Rules - associated to the flagged Product Group the user has selected-  will be applied on the Order Line. If used for a Kit Item: flag to define a kit item as pricing relevant. When set to TRUE, the kit item will be included in pricing rule scales.</description>
+        <externalId>false</externalId>
+        <label>Pricing Bound</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pricing_Rule_Quantity_Bound_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the quantity ordered must be in the range specified in the product&apos;s pricing rules. Otherwise, orders for this product can be placed outside the ranges in the product&apos;s pricing rules. The price used in this case will be the base list price, as specified in Product_vod.Cost_vod.</description>
+        <externalId>false</externalId>
+        <label>Pricing Rule Quantity Bound</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product_ID_BMS_CORE__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>BMS Product ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Identifier_vod__c</fullName>
+        <description>Additional attribute to identify products. It is used for searching and adding products when creating orders.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product Identifier</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Source_Country_BMS_CORE__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Source Country</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ca</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>cn</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>us</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PF</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Thumbnail_vod__c</fullName>
+        <description>Stores the picture thumbnail of the product as a Base64 string</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product Thumbnail</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Type_vod__c</fullName>
+        <description>Picklist used to select the type of the product (Detail, Sample, Promotional Item...)</description>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Alternative Sample</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Value Promotional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detail Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detail Topic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sample Product Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Market</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submarket</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sample</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Promotional &amp; Educational Item</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reprint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BRC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kit Item</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inventory Monitoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vouchers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Letters</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Literature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Therapeutic Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Value_vod__c</fullName>
+        <description>Stores and shows the value associated to 1 unit of the selected Product</description>
+        <externalId>false</externalId>
+        <label>Product Value</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product_info__c</fullName>
+        <description>Link to website containing product information.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product info</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Quantity_Per_Case_vod__c</fullName>
+        <description>quantity per case</description>
+        <externalId>false</externalId>
+        <label>Quantity Per Case</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Require_Discussion_vod__c</fullName>
+        <description>Indicates whether or not a product discussion is required when this product is detailed.
+No - No discussion is required when detailing this product.
+Yes - A discussion record will always be required when detailing this product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether or not a product discussion is required when detailing this product.
+No - No discussion required
+Yes - Discussion required</inlineHelpText>
+        <label>Require Discussion</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Require_Key_Message_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Set this value to require a key message when this product is detailed.</description>
+        <externalId>false</externalId>
+        <label>Require Key Message On Detail</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Restricted_States_vod__c</fullName>
+        <description>Contains a comma separated list of state abbreviations where the product cannot be sampled. (i.e. “MA,PA”)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Restricted States</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Restricted_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Defines that a “Detail” product is considered Restricted.  Used for defaulting restricted products on accounts, and unassigned calls.</description>
+        <externalId>false</externalId>
+        <label>Restricted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Material_Number_BMS_SHARED__c</fullName>
+        <description>Stores BMS SAP Product ID</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>SAP Material Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sample_Quantity_Bound_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The Sample Quantity Bound checkbox determines if the User will be restricted to only selecting the values defined in the Sample Quantity field or if the User has the ability to edit the Quantity picklist and enter in a value that is not contained in the Sample Quantity field.</description>
+        <externalId>false</externalId>
+        <label>Sample Quantity Bound</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Sample_Quantity_Picklist_vod__c</fullName>
+        <description>Use this field to change the default values for sample quantity on the mobile device. Comma separated values will be populated in the sample quantity dropdown. If left blank, sample quantity will default to 1 through 20.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sample Quantity</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sample_U_M_vod__c</fullName>
+        <description>The Sample U/M field defines the Units of Measurement for records with a Product Type of BRC or Order.  This field should only be populated for BRC or Order entries.</description>
+        <externalId>false</externalId>
+        <label>Sample U/M</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Carton</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wallet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blister</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Syringe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Schedule_vod__c</fullName>
+        <description>This is the Schedule of the Controlled Substance, for example, IV</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Schedule</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sort_Code_vod__c</fullName>
+        <description>This value is used to custom sort the list of product in order line entry.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sort Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Category_BMS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sub Category</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Area_vod__c</fullName>
+        <description>Picklist used to select the Therapeutic Area of the product such as Analgesics, Cardiology or Dermatology. Edit the picklist to change the Therapeutic Area options.</description>
+        <externalId>false</externalId>
+        <label>Therapeutic Area</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Analgesics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Endocrinology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gastroenterology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Immunoscience</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Infectious Disease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Neurology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opthalmology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Psychiatry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Respiratory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rheumatology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transplant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Urology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Therapeutic_Class_vod__c</fullName>
+        <description>Picklist used to select the Therapeutic Class of the product such as Narcotics or Pain Relief. Therapeutic Class is controlled by the Therapeutic Area picklist.</description>
+        <externalId>false</externalId>
+        <label>Therapeutic Class</label>
+        <picklist>
+            <controllingField>Therapeutic_Area_vod__c</controllingField>
+            <picklistValues>
+                <fullName>Anti-Inflammatory Medicines (NSAIDs)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Analgesics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cox-2 Inhibitors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Analgesics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Muscle Relaxants</fullName>
+                <default>false</default>
+                <controllingFieldValues>Analgesics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Narcotics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Analgesics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pain Relief</fullName>
+                <default>false</default>
+                <controllingFieldValues>Analgesics</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antianginals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antiarrhythmics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Anticoagulants (Blood Thinners)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CHF Agents</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diuretics (Combination &quot;Water&quot; Pills)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diuretics (&quot;Water&quot; Pills)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (ACE Inhibitors)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Alpha Blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Angiotensin Blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Beta-blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Calcium Channel Blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Combination ACE Inhibitors)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Combination Angiotensin Blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Combination Beta-blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Combination Calcium Channel Blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Long-acting Calcium Channel Blockers)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Miscellaneous)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Blood Pressure (Miscellaneous Combination Products )</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Cholesterol (Others)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High Cholesterol (Statins)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vasodilators</fullName>
+                <default>false</default>
+                <controllingFieldValues>Cardiology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Acne</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foot Ulcers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hair Loss</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Topical Antibiotics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Topical Antifungals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Topical Dermatologics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Topical Steroids</fullName>
+                <default>false</default>
+                <controllingFieldValues>Dermatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Androgens</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contraceptives</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diabetes (DPP-4 Inhibitors)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diabetes (Injection Hypoglycemic)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diabetes (Insulins)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Diabetes (Oral Hypoglycemics)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Estrogens</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Estrogens (Combination Products)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Growth Hormone</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Infertility</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Osteoporosis</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Progestins</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thyroid Hormones</fullName>
+                <default>false</default>
+                <controllingFieldValues>Endocrinology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antiemetics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bowel Cathartics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gallstones</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>H2-blockers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hepatitis</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inflammatory Bowel Disease (IBD)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Irritable Bowel (Antispasmodics)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Irritable Bowel Syndrome (IBS)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proton Pump Inhibitors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ulcers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Weight Loss</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gastroenterology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antibiotics (Miscellaneous)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antifungals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antivirals</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cephalosporins</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HIV (NNRTIs)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HIV (NRTIs)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HIV (Other)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HIV (Protease Inhibitors)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Macrolides</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Penicillins</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quinolones</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sulfa Drugs</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tetracyclines</fullName>
+                <default>false</default>
+                <controllingFieldValues>Infectious Disease</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alzheimer&apos;s Agents</fullName>
+                <default>false</default>
+                <controllingFieldValues>Neurology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migraines</fullName>
+                <default>false</default>
+                <controllingFieldValues>Neurology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multiple Sclerosis</fullName>
+                <default>false</default>
+                <controllingFieldValues>Neurology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Parkinson&apos;s Disease</fullName>
+                <default>false</default>
+                <controllingFieldValues>Neurology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seizures</fullName>
+                <default>false</default>
+                <controllingFieldValues>Neurology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antineoplastics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oncology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aromatase Inhibitors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oncology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hematopoietic Agents</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oncology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hormonal Oncologic Agents</fullName>
+                <default>false</default>
+                <controllingFieldValues>Oncology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Allergy (Ocular)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antibacterials (Ocular)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antifungals (Ocular)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Anti-inflammatories (Ocular)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antivirals (Ocular)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Glaucoma</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Macular Degeneration</fullName>
+                <default>false</default>
+                <controllingFieldValues>Opthalmology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alcohol and Drug Dependence</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antianxiety</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antipsychotics</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attention Deficit Disorder</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bipolar Disorder</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Depression (MAO Inhibitors)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Depression (Miscellaneous)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Depression (SSNRIs)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Depression (SSRIs)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Depression (Tricyclics)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sleep Disorders</fullName>
+                <default>false</default>
+                <controllingFieldValues>Psychiatry</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antibacterials (Otics)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Antihistamines</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IgE Inhibitors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inhalers (Beta Agonists)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inhalers - Combinations and Others</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inhalers (Steroids)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Intranasal Therapies</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leukotriene Blockers</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nicotine Addiction</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oral Steroids</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Steroid/Antibiotic (Otics)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Respiratory</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arthritis</fullName>
+                <default>false</default>
+                <controllingFieldValues>Rheumatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Psoriasis</fullName>
+                <default>false</default>
+                <controllingFieldValues>Rheumatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rheumatology (Miscellaneous)</fullName>
+                <default>false</default>
+                <controllingFieldValues>Rheumatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TNF Inhibitors</fullName>
+                <default>false</default>
+                <controllingFieldValues>Rheumatology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Immunomodulators</fullName>
+                <default>false</default>
+                <controllingFieldValues>Transplant</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BPH</fullName>
+                <default>false</default>
+                <controllingFieldValues>Urology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Erectile Dysfunction</fullName>
+                <default>false</default>
+                <controllingFieldValues>Urology</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Overactive Bladder</fullName>
+                <default>false</default>
+                <controllingFieldValues>Urology</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>User_Aligned_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If true then an entry in the My Setup Products for the a User must exist for the product to be visible on Call Report to a user.  Only applies to BRC and Promotional Items.</description>
+        <externalId>false</externalId>
+        <label>User Aligned</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VExternal_Id_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External Id used by Veeva CRM for integration with Vault. Can be populated to aid in data loading.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Veeva External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>zvod_Custom_Text_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to display a custom text field for the specified product on Sample Transactions and Call Samples.</description>
+        <externalId>false</externalId>
+        <label>Custom Text</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Product Catalog</label>
+    <listViews>
+        <fullName>BMS_Detail_Groups</fullName>
+        <columns>NAME</columns>
+        <columns>Product_ID_BMS_CORE__c</columns>
+        <columns>Product_Type_vod__c</columns>
+        <columns>Display_Order_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type_vod__c</field>
+            <operation>equals</operation>
+            <value>Detail Group</value>
+        </filters>
+        <filters>
+            <field>Company_Product_vod__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>BMS - Detail Groups</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_Detail_Products</fullName>
+        <columns>NAME</columns>
+        <columns>Product_ID_BMS_CORE__c</columns>
+        <columns>Product_Type_vod__c</columns>
+        <columns>Display_Order_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type_vod__c</field>
+            <operation>equals</operation>
+            <value>Detail</value>
+        </filters>
+        <filters>
+            <field>Company_Product_vod__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>BMS - Detail Products</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_Detail_Topics</fullName>
+        <columns>NAME</columns>
+        <columns>Product_ID_BMS_CORE__c</columns>
+        <columns>Product_Type_vod__c</columns>
+        <columns>Display_Order_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type_vod__c</field>
+            <operation>equals</operation>
+            <value>Detail Topic</value>
+        </filters>
+        <filters>
+            <field>Company_Product_vod__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>BMS - Detail Topics</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_AT_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - AT Medical</label>
+        <queue>BMS_EMEA_AT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BE_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BE Medical</label>
+        <queue>BMS_EMEA_BE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_BE_EPM_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - BE - EPM</label>
+        <queue>BMS_EMEA_BX_BE_EPM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_BE_IMMUNO_ONC_MRKT_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - BE - IMMUNO-ONC - MRKT</label>
+        <queue>BMS_EMEA_BX_BE_IMMUNO_ONC_MRKT</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_BE_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - BE - Sales</label>
+        <queue>BMS_EMEA_BX_BE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_NL_EPM_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - NL - EPM</label>
+        <queue>BMS_EMEA_BX_NL_EPM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_BX_NL_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - BX - NL - Sales</label>
+        <queue>BMS_EMEA_BX_NL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Generic_Owner_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH - Generic Owner</label>
+        <queue>BMS_EMEA_CH_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH Medical</label>
+        <queue>BMS_EMEA_CH_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CT Opdivo Sales</label>
+        <queue>BMS_EMEA_CT_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CH_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CH Sales</label>
+        <queue>BMS_EMEA_CH_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CT_Daklinza_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CT Daklinza Sales</label>
+        <queue>BMS_EMEA_CT_Daklinza_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CT_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CT Eliquis Sales</label>
+        <queue>BMS_EMEA_CT_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CT_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CT Orencia Sales</label>
+        <queue>BMS_EMEA_CT_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CT_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CT Sprycel Sales</label>
+        <queue>BMS_EMEA_CT_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CT_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CT Yervoy Sales</label>
+        <queue>BMS_EMEA_CT_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Medical</label>
+        <queue>BMS_EMEA_CZ_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Orencia Sales</label>
+        <queue>BMS_EMEA_CZ_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Sales</label>
+        <queue>BMS_EMEA_CZ_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Sprycel Sales</label>
+        <queue>BMS_EMEA_CZ_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_CZ_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - CZ Yervoy Sales</label>
+        <queue>BMS_EMEA_CZ_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Medical</label>
+        <queue>BMS_EMEA_DE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_EMPLICITI_P10_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (EMPLICITI - P10)</label>
+        <queue>BMS_EMEA_DE_Sales_EMPLICITI_P10</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Linie_54_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (Linie 54)</label>
+        <queue>BMS_EMEA_DE_Sales_Linie_54</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Linie_55_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (Linie 55)</label>
+        <queue>BMS_EMEA_DE_Sales_Linie_55</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OPDL_S10_R10_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OPDL - S10 &amp; R10)</label>
+        <queue>BMS_EMEA_DE_Sales_OPDL_S10_R10</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OPD_IVA_Lunge3_0_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OPD IVA Lunge3.0)</label>
+        <queue>BMS_EMEA_DE_Sales_OPD_IVA_Lunge3_0</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OPD_YER_Kombi_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OPD + YER Kombi)</label>
+        <queue>BMS_EMEA_DE_Sales_OPD_YER_Kombi</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_OpdivoLung_S10_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (OpdivoLung - S10)</label>
+        <queue>BMS_EMEA_DE_Sales_OpdivoLung_S10</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DE_Sales_Opdivo_RCC_T10_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DE Sales (Opdivo RCC IVA)</label>
+        <queue>BMS_EMEA_DE_Sales_Opdivo_RCC_IVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Medical</label>
+        <queue>BMS_EMEA_DK_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Orencia Sales</label>
+        <queue>BMS_EMEA_DK_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Sales</label>
+        <queue>BMS_EMEA_DK_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Sprycel Sales</label>
+        <queue>BMS_EMEA_DK_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_DK_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - DK Yervoy Sales</label>
+        <queue>BMS_EMEA_DK_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_ES_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - ES Medical</label>
+        <queue>BMS_EMEA_ES_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Eliquis Sales</label>
+        <queue>BMS_EMEA_FI_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Medical</label>
+        <queue>BMS_EMEA_FI_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FI_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FI Sales</label>
+        <queue>BMS_EMEA_FI_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Baraclude_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Baraclude Sales</label>
+        <queue>BMS_EMEA_FR_Baraclude_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Dafalgan_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Dafalgan Sales</label>
+        <queue>BMS_EMEA_FR_Dafalgan_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Daklinza_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Daklinza Sales</label>
+        <queue>BMS_EMEA_FR_Daklinza_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Eliquis Sales</label>
+        <queue>BMS_EMEA_FR_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Medical</label>
+        <queue>BMS_EMEA_FR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Opdivo Sales</label>
+        <queue>BMS_EMEA_FR_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Orencia Sales</label>
+        <queue>BMS_EMEA_FR_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_PF_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR PF Sales</label>
+        <queue>BMS_EMEA_FR_PF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Reyataz_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Reyataz Sales</label>
+        <queue>BMS_EMEA_FR_Reyataz_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Sales</label>
+        <queue>BMS_EMEA_FR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Sprycel Sales</label>
+        <queue>BMS_EMEA_FR_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FR_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FR Yervoy Sales</label>
+        <queue>BMS_EMEA_FR_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_FT_DAFALGAN_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - FT - DAFALGAN Sales</label>
+        <queue>BMS_EMEA_FT_DAFALGAN_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Eliquis_SPAF_Apodi_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Eliquis SPAF (Apodi)</label>
+        <queue>BMS_EMEA_GB_Eliquis_SPAF_Apodi</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Eliquis_VTE_DVA_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - Eliquis VTE DVA</label>
+        <queue>BMS_EMEA_GB_Eliquis_VTE_DVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_KCM_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - KCM</label>
+        <queue>BMS_EMEA_GB_KCM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GB_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB Medical</label>
+        <queue>BMS_EMEA_GB_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Daklinza_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Daklinza Sales</label>
+        <queue>BMS_EMEA_GR_Daklinza_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Medical</label>
+        <queue>BMS_EMEA_GR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Opdivo Sales</label>
+        <queue>BMS_EMEA_GR_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Orencia Sales</label>
+        <queue>BMS_EMEA_GR_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Sales</label>
+        <queue>BMS_EMEA_GR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Sprycel Sales</label>
+        <queue>BMS_EMEA_GR_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_GR_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GR Yervoy Sales</label>
+        <queue>BMS_EMEA_GR_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Baraclude_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Baraclude Sales</label>
+        <queue>BMS_EMEA_HU_Baraclude_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Medical</label>
+        <queue>BMS_EMEA_HU_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Opdivo_Yevoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Opdivo Yevoy Sales</label>
+        <queue>BMS_EMEA_HU_Opdivo_Yevoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_HU_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - HU Sales</label>
+        <queue>BMS_EMEA_HU_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_KCM_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE - KCM</label>
+        <queue>BMS_EMEA_IE_KCM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IE_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IE Medical</label>
+        <queue>BMS_EMEA_IE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Generic_Owner_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL - Generic Owner</label>
+        <queue>BMS_EMEA_IL_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL Medical</label>
+        <queue>BMS_EMEA_IL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IL_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IL Sales</label>
+        <queue>BMS_EMEA_IL_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Access_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Access</label>
+        <queue>BMS_EMEA_IT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Baraclude_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Baraclude Sales</label>
+        <queue>BMS_EMEA_IT_Baraclude_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Daklinza_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Daklinza Sales</label>
+        <queue>BMS_EMEA_IT_Daklinza_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Eliquis Sales</label>
+        <queue>BMS_EMEA_IT_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Medical</label>
+        <queue>BMS_EMEA_IT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Opdivo Sales</label>
+        <queue>BMS_EMEA_IT_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Reyataz_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Reyataz Sales</label>
+        <queue>BMS_EMEA_IT_Reyataz_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Sales</label>
+        <queue>BMS_EMEA_IT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Sprycel Sales</label>
+        <queue>BMS_EMEA_IT_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_IT_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - IT Yervoy Sales</label>
+        <queue>BMS_EMEA_IT_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NL_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NL Medical</label>
+        <queue>BMS_EMEA_NL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Medical</label>
+        <queue>BMS_EMEA_NO_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Orencia Sales</label>
+        <queue>BMS_EMEA_NO_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_NO_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - NO Sales</label>
+        <queue>BMS_EMEA_NO_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Baraclude_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Baraclude Sales</label>
+        <queue>BMS_EMEA_PF_Baraclude_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Dafalgan_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Dafalgan Sales</label>
+        <queue>BMS_EMEA_PF_Dafalgan_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Daklinza_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Daklinza Sales</label>
+        <queue>BMS_EMEA_PF_Daklinza_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Efferalgan_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Efferalgan Sales</label>
+        <queue>BMS_EMEA_PF_Efferalgan_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Eliquis Sales</label>
+        <queue>BMS_EMEA_PF_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Opdivo Sales</label>
+        <queue>BMS_EMEA_PF_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Orencia Sales</label>
+        <queue>BMS_EMEA_PF_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Reyataz_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Reyataz Sales</label>
+        <queue>BMS_EMEA_PF_Reyataz_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Sales</label>
+        <queue>BMS_EMEA_PF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Sprycel Sales</label>
+        <queue>BMS_EMEA_PF_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PF_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PF Yervoy Sales</label>
+        <queue>BMS_EMEA_PF_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL Medical</label>
+        <queue>BMS_EMEA_PL_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PL_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PL Opdivo Sales</label>
+        <queue>BMS_EMEA_PL_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Access_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Access</label>
+        <queue>BMS_EMEA_PT_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Baraclude_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Baraclude Sales</label>
+        <queue>BMS_EMEA_PT_Baraclude_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Eliquis Sales</label>
+        <queue>BMS_EMEA_PT_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Generic_Owner_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT - Generic Owner</label>
+        <queue>BMS_EMEA_PT_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Medical</label>
+        <queue>BMS_EMEA_PT_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Opdivo_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Opdivo Sales</label>
+        <queue>BMS_EMEA_PT_Opdivo_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Reyataz_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Reyataz Sales</label>
+        <queue>BMS_EMEA_PT_Reyataz_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Sales</label>
+        <queue>BMS_EMEA_PT_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Sprycel Sales</label>
+        <queue>BMS_EMEA_PT_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_PT_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - PT Yervoy Sales</label>
+        <queue>BMS_EMEA_PT_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RO_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RO Medical</label>
+        <queue>BMS_EMEA_RO_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU Medical</label>
+        <queue>BMS_EMEA_RU_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_RU_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - RU Sales</label>
+        <queue>BMS_EMEA_RU_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Eliquis_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Eliquis Sales</label>
+        <queue>BMS_EMEA_SE_Eliquis_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Medical</label>
+        <queue>BMS_EMEA_SE_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Sales</label>
+        <queue>BMS_EMEA_SE_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Sprycel_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Sprycel Sales</label>
+        <queue>BMS_EMEA_SE_Sprycel_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_SE_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - SE Yervoy Sales</label>
+        <queue>BMS_EMEA_SE_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Baraclude_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Baraclude Sales</label>
+        <queue>BMS_EMEA_TR_Baraclude_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Medical</label>
+        <queue>BMS_EMEA_TR_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Orencia_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Orencia Sales</label>
+        <queue>BMS_EMEA_TR_Orencia_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Sales</label>
+        <queue>BMS_EMEA_TR_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_TR_Yervoy_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - TR Yervoy Sales</label>
+        <queue>BMS_EMEA_TR_Yervoy_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_UI_KCM_National_Regional_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - GB - KCM National Regional</label>
+        <queue>BMS_EMEA_GB_KCM_National_Regional</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_EMEA_UKI_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - EMEA - UKI Sales</label>
+        <queue>BMS_EMEA_UKI_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_Leave_Behinds</fullName>
+        <columns>NAME</columns>
+        <columns>Product_ID_BMS_CORE__c</columns>
+        <columns>Product_Type_vod__c</columns>
+        <columns>Display_Order_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Parent_Product_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type_vod__c</field>
+            <operation>equals</operation>
+            <value>Promotional &amp; Educational Item</value>
+        </filters>
+        <filters>
+            <field>Company_Product_vod__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>BMS - Leave Behinds</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Access_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Access</label>
+        <queue>BMS_MEA_GULF_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Generic_Owner_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF  Generic Owner</label>
+        <queue>BMS_MEA_GULF_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Medical</label>
+        <queue>BMS_MEA_GULF_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Sales (DVA)</label>
+        <queue>BMS_MEA_GULF_Sales_DVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_GULF_Sales_Product_vod1</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - GULF Sales</label>
+        <queue>BMS_MEA_GULF_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Access_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Access</label>
+        <queue>BMS_MEA_SA_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Generic_Owner_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA  Generic Owner</label>
+        <queue>BMS_MEA_SA_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Medical</label>
+        <queue>BMS_MEA_SA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Sales_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Sales (DVA)</label>
+        <queue>BMS_MEA_SA_Sales_DVA</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_SA_Sales_Product_vod1</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - SA Sales</label>
+        <queue>BMS_MEA_SA_Sales</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Access_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA Access</label>
+        <queue>BMS_MEA_ZA_Access</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Generic_Owner_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA  Generic Owner</label>
+        <queue>BMS_MEA_ZA_Generic_Owner</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_Medical_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA Medical</label>
+        <queue>BMS_MEA_ZA_Medical</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_MEA_ZA_SAles_Product_vod</fullName>
+        <filterScope>Queue</filterScope>
+        <label>BMS - MEA - ZA SAles</label>
+        <queue>BMS_MEA_ZA_SAles</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>BMS_Sample</fullName>
+        <columns>NAME</columns>
+        <columns>Therapeutic_Area_vod__c</columns>
+        <columns>Product_ID_BMS_CORE__c</columns>
+        <columns>Display_Order_vod__c</columns>
+        <columns>Parent_Product_vod__c</columns>
+        <columns>Product_Type_vod__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type_vod__c</field>
+            <operation>equals</operation>
+            <value>Sample,BRC</value>
+        </filters>
+        <label>BMS - Sample &amp; BRC</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Product Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Product Catalog</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Parent_Product_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Type_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Therapeutic_Area_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Therapeutic_Class_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Manufacturer_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description_vod__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Parent_Product_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Type_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Therapeutic_Area_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Therapeutic_Class_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Manufacturer_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Description_vod__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Description_vod__c</searchFilterFields>
+        <searchFilterFields>Parent_Product_vod__c</searchFilterFields>
+        <searchFilterFields>Product_Type_vod__c</searchFilterFields>
+        <searchFilterFields>Therapeutic_Area_vod__c</searchFilterFields>
+        <searchFilterFields>Therapeutic_Class_vod__c</searchFilterFields>
+        <searchFilterFields>Company_Product_vod__c</searchFilterFields>
+        <searchResultsAdditionalFields>Parent_Product_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Type_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Therapeutic_Area_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Therapeutic_Class_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Manufacturer_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description_vod__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Controlled_Sub_Schedule_Confirm_vod</fullName>
+        <active>true</active>
+        <description>This validation rules is in place to confirm that a Product, which has been marked as a Controlled Substance has a Schedule.</description>
+        <errorConditionFormula>AND( Controlled_Substance_vod__c ,TRIM( Schedule_vod__c) = &quot;&quot;)</errorConditionFormula>
+        <errorMessage>The Schedule field is required when creating a Controlled Substance Product.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Product_Bundle_Check_vod</fullName>
+        <active>true</active>
+        <description>Verifies that the Product Type is a Product Group if the Bundle Pack field is enabled</description>
+        <errorConditionFormula>Bundle_Pack_vod__c &amp;&amp; !ISPICKVAL(Product_Type_vod__c, &apos;Product Group&apos;)</errorConditionFormula>
+        <errorMessage>Bundle_Pack_vod__c can be set to TRUE only if the product type= Product Group</errorMessage>
+    </validationRules>
+</CustomObject>

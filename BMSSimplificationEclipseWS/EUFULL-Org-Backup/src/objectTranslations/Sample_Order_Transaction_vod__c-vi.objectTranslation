@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Giao dịch đặt hàng thuốc mẫu</value>
+    </caseValues>
+    <fields>
+        <label><!-- ASSMCA --></label>
+        <name>ASSMCA_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id tài khoản</label>
+        <name>Account_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên tài khoản</label>
+        <name>Account_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tài khoản</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Giao dịch đặt hàng thuốc mẫu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dòng địa chỉ 1</label>
+        <name>Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dòng địa chỉ 2</label>
+        <name>Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Điều chỉnh cho</label>
+        <name>Adjust_For_vod__c</name>
+        <relationshipLabel>Giao Dịch Đặt Hàng Thuốc Mẫu (Điều Chỉnh Cho)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày Điều Chỉnh</label>
+        <name>Adjusted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lượng Tác Động Phân Bổ</label>
+        <name>Allocation_Impact_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày gọi</label>
+        <name>Call_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datetime tiếp xúc bán hàng</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id gọi điện</label>
+        <name>Call_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên cuộc tiếp xúc bán hàng</label>
+        <name>Call_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id mẫu tiếp xúc bán hàng</label>
+        <name>Call_Sample_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên mẫu tiếp xúc bán hàng</label>
+        <name>Call_Sample_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thành phố</label>
+        <name>City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhận xét</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đã xác nhận số lượng</label>
+        <name>Confirmed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thông tin đăng nhập</label>
+        <name>Credentials_vod__c</name>
+    </fields>
+    <fields>
+        <label>Văn Bản Tùy Chỉnh</label>
+        <name>Custom_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày hết hạn DEA</label>
+        <name>DEA_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEA # --></label>
+        <name>DEA_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng thái giao hàng</label>
+        <name>Delivery_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cancel_Request_vod</masterLabel>
+            <translation>Hủy yêu cầu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled_vod</masterLabel>
+            <translation>Đã hủy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered_vod</masterLabel>
+            <translation>Đã gửi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Đang xử lý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped_vod</masterLabel>
+            <translation>Đã chuyển hàng</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tuyên bố từ chối trách nhiệm</label>
+        <name>Disclaimer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Không thống nhất</label>
+        <name>Discrepancy_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhà phân phối</label>
+        <name>Distributor_vod__c</name>
+    </fields>
+    <fields>
+        <label>Danh tính nhóm</label>
+        <name>Group_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id Giao Dịch Nhóm</label>
+        <name>Group_Transaction_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lô #</label>
+        <name>Lot_vod__c</name>
+        <relationshipLabel>Giao dịch đặt hàng thuốc mẫu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nhà sản xuất</label>
+        <name>Manufacturer_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lý do</label>
+        <name>Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Destroyed</masterLabel>
+            <translation>Hủy Bỏ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation>Thất lạc</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen</masterLabel>
+            <translation>Mất cắp</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ghi Chú Biên Nhận</label>
+        <name>Receipt_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Đã nhận</label>
+        <name>Received_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id Giao Dịch Đơn Hàng Tham Chiếu</label>
+        <name>Ref_Order_Transaction_Id_vod__c</name>
+        <relationshipLabel>Giao dịch đặt hàng thuốc mẫu</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Nhận yêu cầu</label>
+        <name>Request_Receipt_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lời chào</label>
+        <name>Salutation_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lý do thẻ thuốc mẫu</label>
+        <name>Sample_Card_Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>Application Unavailable</masterLabel>
+            <translation>Ứng dụng không khả dụng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laptop Unavailable</masterLabel>
+            <translation>Máy tính xách tay không khả dụng</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Khác</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Thẻ gửi thuốc mẫu #</label>
+        <name>Sample_Send_Card_vod__c</name>
+    </fields>
+    <fields>
+        <label>U/M thuốc mẫu</label>
+        <name>Sample_U_M__c</name>
+    </fields>
+    <fields>
+        <label>Thuốc mẫu</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dòng địa chỉ chuyển hàng 1</label>
+        <name>Ship_Address_Line_1_vod__c</name>
+    </fields>
+    <fields>
+        <label>Dòng địa chỉ chuyển hàng 2</label>
+        <name>Ship_Address_Line_2_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gửi Ngày Hết Hạn CDS</label>
+        <name>Ship_CDS_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gửi CDS #</label>
+        <name>Ship_CDS_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thành phố chuyển hàng</label>
+        <name>Ship_City_vod__c</name>
+    </fields>
+    <fields>
+        <label>Quốc gia chuyển hàng</label>
+        <name>Ship_Country_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày hết hạn giấy phép chuyển hàng</label>
+        <name>Ship_License_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Trạng thái giấy phép chuyển hàng</label>
+        <name>Ship_License_Status_vod__c</name>
+    </fields>
+    <fields>
+        <label>Giấy phép chuyển hàng</label>
+        <name>Ship_License_vod__c</name>
+    </fields>
+    <fields>
+        <label>Địa Điểm Gửi Hàng</label>
+        <name>Ship_Location_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bang chuyển hàng</label>
+        <name>Ship_State_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mã zip chuyển hàng 4</label>
+        <name>Ship_Zip_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mã zip chuyển hàng</label>
+        <name>Ship_Zip_vod__c</name>
+    </fields>
+    <fields>
+        <label>Id chuyển hàng</label>
+        <name>Shipment_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày ký</label>
+        <name>Signature_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên Hiển Thị Trang Chữ Ký</label>
+        <name>Signature_Page_Display_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chữ ký</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tiểu Bang</label>
+        <name>State_vod__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Trạng thái</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Đã lưu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Đã gửi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ngày gửi</label>
+        <name>Submitted_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Lãnh thổ</label>
+        <name>Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Chuyển đến tên</label>
+        <name>Transfer_To_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chuyển đến</label>
+        <name>Transfer_To_vod__c</name>
+        <relationshipLabel>Giao Dịch Đặt Hàng Thuốc Mẫu (Chuyển Tới)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ngày chuyển</label>
+        <name>Transferred_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Được chuyển từ tên</label>
+        <name>Transferred_From_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Chuyển từ</label>
+        <name>Transferred_From_vod__c</name>
+        <relationshipLabel>Giao Dịch Đặt Hàng Thuốc Mẫu (Chuyển Từ)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Loại</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Adjustment_vod</masterLabel>
+            <translation>Điều chỉnh</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BRC_vod</masterLabel>
+            <translation><!-- BRC_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt_vod</masterLabel>
+            <translation>Biên nhận</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Chuyển</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Boxes</masterLabel>
+            <translation>Hộp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation>Ca</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Mở khóa</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mã zip 4</label>
+        <name>Zip_4_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mã bưu điện</label>
+        <name>Zip_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Transaction Id --></nameFieldLabel>
+    <recordTypes>
+        <label>Điều chỉnh</label>
+        <name>Adjustment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BRC --></label>
+        <name>BRC</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Biên nhận</label>
+        <name>Receipt_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Chuyển</label>
+        <name>Transfer_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Lỗi: Số Lượng &gt; 0</errorMessage>
+        <name>Return_Quantity_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lỗi: Số Lượng &gt; 0</errorMessage>
+        <name>Transfer_Quantity_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Điều Chỉnh Đơn Hàng Mới</label>
+        <name>New_Order_Adjustment_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Chuyển Đơn Hàng Mới</label>
+        <name>New_Order_Transfer_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Gửi</label>
+        <name>Submit_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Mở khóa</label>
+        <name>Unlock_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

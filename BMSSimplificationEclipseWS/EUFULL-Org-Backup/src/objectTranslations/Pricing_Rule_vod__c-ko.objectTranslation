@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>가격 규칙</value>
+    </caseValues>
+    <fields>
+        <label>계정 그룹</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>계정</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>가격 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>활성</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>연계 규칙 연산자</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation><!-- AND_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation><!-- OR_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>연계 규칙</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>비교 제품</label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel>가격 규칙(비교 제품)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>비교 유형</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>목록 가치</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation>순 가치</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>제품 수량</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>계약</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>가격 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>교차 제품 규칙</label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>배달 종료 일자</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>주문 배달</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>배달 시작 일자</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>최대 할인 재정의</label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>할인 조정</label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label>할인</label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label>마감 날짜</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>외부 ID</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>최대 무료 상품</label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>무료 상품 최대 비율</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>무료 상품 비율</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label>무료 상품</label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label>한도</label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>목록 가격</label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>최소 배달 시간 프레임</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label>최소 순 가격</label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>정가</label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>주문 캠페인</label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel>가격 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>최대 결제</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>결제</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>가격표</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label>가격 그룹</label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>제품 비교 유형</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>목록 값</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>제품 수량</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>제품 최대</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>제품 최소</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>가격 규칙</relationshipLabel>
+    </fields>
+    <fields>
+        <label>최대 수량</label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>최소 수량</label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label>규칙 설명</label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>시작 날짜</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>제안된 소매 가격</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>권장 텍스트</label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>권장 임계값</label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label>브랜드 수준 규칙</label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>배달 기간</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>할인 규칙</label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>무료 상품 비율 규칙</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>무료 상품 규칙</label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>한도 규칙</label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>표시 가격 규칙</label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Payment_Terms_Rule_vod --></label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>제품 그룹 수준 규칙</label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>하나의 계정 및 계정 그룹만 지정해야 합니다.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>세부&apos; 제품 유형만 허용됨</errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>사슬 규칙과 교차 제품 규칙 중 하나만을 표시해야 합니다.</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>비교 제품은 비어 있어야 합니다.</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>연계 규칙은 주문 배달이 될 수 없습니다.</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>연계 규칙은 제한이 적용될 수 없습니다.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>연계 규칙 연산자는 AND 또는 OR이 되어야 합니다.</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품에는 값이 있어야 하고 같은 키트 항목일 수 없습니다.</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 수량은 최소 수량보다 커야 합니다.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>비교 유형 &apos;순가치&apos;는 지원되지 않습니다.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>할인은 음수일 수 없습니다.</errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주문 배달 제한 규칙은 특정 제품과 연결할 수 없습니다.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제한 규칙만 주문 배달로 플래그될 수 있습니다.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>배달 종료 일자는 반드시 시작 일자 이후여야 함</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품 유형이 &apos;주문&apos;이면 배당 시작 일자와 종료 일자를 채워야 함</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품은 &apos;비어 있음&apos;이거나 &apos;주문&apos; 유형일 수 있음</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>배달 시작 일자는 규칙 시작 일자와 같거나 커야 함</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품이 비어 있거나 ‘주문’ 및 ‘키트 항목’ 유형일 수 있습니다.</errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 할인 재정의가 할인보다 적습니다.</errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>시작 날짜가 마감 날짜보다 늦습니다.</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 무료 상품 퍼센트는 일반적인 무료 제품 규칙에 채울 수 없습니다.</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>비교 유형 ‘List Value’는 지원되지 않습니다.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 무료 상품은 지원되지 않습니다.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주문&apos; 제품 유형만 허용됩니다.</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 무료 상품이 무료 상품보다 적습니다.</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>교차 제품 리베이트에는 키트 항목이 허용되지 않습니다.</errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품이 비어 있거나 ‘주문’, ‘세부 사항’ 및 ‘제품_그룹’ 및 ‘키트 항목’ 유형일 수 있습니다.</errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주문&apos; 및 &apos;키트 항목&apos; 제품 유형만 허용됩니다.</errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최대 수량은 최소 수량보다 커야 합니다.</errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최소 배달 시간 프레임이 채워져 있을 경우, 배달 시작 일자와 배달 종료 일자는 비어 있어야 함</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최소 배달 시간 프레임이 채워져 있으면 Product_vod는 비어 있어야 함</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>순 가격과 할인 재정의가 모두 존재합니다.</errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>최소 순 가격이 순 가격보다 큽니다.</errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term Rules don&apos;t support Cross Product Rebate. --></errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Terms Rule does not support Kit Item product type. --></errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주문, 세부 사항, [비어 있음] 또는 제품 그룹 제품 유형만 허용됩니다. 제품이 비어 있지 않으면 교차 제품 규칙 확인란을 선택해야 합니다.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>올바른 제품 비교 유형이 필요합니다.</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품은 비교 제품과 다르거나 비어 있지 않아야 합니다.</errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품 그룹&apos; 제품 유형만 허용됨</errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>제품 최소 또는 제품 최대가 필요합니다.</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bahan Topik</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bahan Topik</value>
+    </caseValues>
+    <fields>
+        <label>Penyajian CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Bahan Topik</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Templat Email</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Bahan Topik</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Bahan</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Bahan</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Topik yang Menggunakan Bahan</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Topik</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Bahan Topik (Topik)</relationshipLabel>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Bahan Topik</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Satu aturan tidak boleh diisi Templat Email dan Penyajian CLM. Buat aturan terpisah untuk dua item ini.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Satu bahan topik tidak boleh diisi Bahan dan Penyajian CLM. Buat aturan terpisah untuk dua item ini.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Satu bahan topik tidak boleh diisi Templat Bahan dan Email. Buat aturan terpisah untuk dua item ini.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

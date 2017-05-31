@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>MC κύκλος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>MC κύκλοι</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>MC κύκλος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>MC κύκλοι</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>MC κύκλος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>MC κύκλοι</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>MC κύκλος </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>MC κύκλοι</value>
+    </caseValues>
+    <fields>
+        <label>Επεξεργασία στόχων δραστηριότητας</label>
+        <name>Activate_Edited_Goals_vod__c</name>
+    </fields>
+    <fields>
+        <help>Αν ισχύει και υπάρχει έλξη από τα πεδία στο αντικείμενο MC_Target_vod, όταν η ένταξη MCCP τρέχει θα συμπληρώσετε την έλξη μέσα από τα πεδία. Δεν συνιστάται να το ρυθμίζετε αυτό συχνά, παρά μόνο όταν οι τιμές έλξης πρέπει να συμπληρωθούν.</help>
+        <label>Υπολογισμός έλξης</label>
+        <name>Calculate_Pull_Through_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Περιγραφή</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία λήξης</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εξωτερική αναγνωριστική ταυτότητα</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Υπερκάλυψη ορίου</label>
+        <name>Over_Reached_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Κατάσταση</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Ολοκληρωμένο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Progress_vod</masterLabel>
+            <translation>Σε εξέλιξη</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned_vod</masterLabel>
+            <translation>Σχεδιασμένο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Κάτω από το όριο</label>
+        <name>Under_Reached_Threshold_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Cycle Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Ορισμός κύκλου</label>
+        <name>Cycle_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Η ημερομηνία έναρξης δε μπορεί να είναι μεγαλύτερη από ή ίση με την ημερομηνία λήξης.</errorMessage>
+        <name>StartDate_GreaterThan_EndDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

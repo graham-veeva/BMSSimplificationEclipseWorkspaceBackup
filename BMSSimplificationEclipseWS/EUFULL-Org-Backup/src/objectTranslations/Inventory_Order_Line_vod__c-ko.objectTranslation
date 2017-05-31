@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Inventory Order Line --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Carrier Name --></label>
+        <name>Carrier_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>예외 설명</label>
+        <name>Exception_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>예외 심각도</label>
+        <name>Exception_Severity_vod__c</name>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>방지</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>승인 요구</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>경고</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>예외 유형</label>
+        <name>Exception_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Date_vod</masterLabel>
+            <translation>날짜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityDate_vod</masterLabel>
+            <translation>수량 및 날짜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>수량</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>재고 주문 할당</label>
+        <name>Inventory_Order_Allocation_vod__c</name>
+        <relationshipLabel>재고 주문 라인</relationshipLabel>
+    </fields>
+    <fields>
+        <label>재고 주문 머리글</label>
+        <name>Inventory_Order_Header_vod__c</name>
+        <relationshipLabel>재고 주문 라인</relationshipLabel>
+    </fields>
+    <fields>
+        <label>재고 주문 라인 상태</label>
+        <name>Inventory_Order_Line_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>취소됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>완료됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Process_vod</masterLabel>
+            <translation>처리 중</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>새로 만들기</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>저장됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>제출됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory Order Status --></label>
+        <name>Inventory_Order_Status_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lot Number --></label>
+        <name>Lot_Number_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>주문 달성량</label>
+        <name>Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>주문량 UOM</label>
+        <name>Order_Quantity_UOM_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>상자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carton</masterLabel>
+            <translation>상자</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation>사례</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>주문량</label>
+        <name>Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Doc Number --></label>
+        <name>Pick_Doc_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>제품</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>재고 주문 라인</relationshipLabel>
+    </fields>
+    <fields>
+        <label>요청 받은 배달 날짜</label>
+        <name>Requested_Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Delivered Qty --></label>
+        <name>SAP_Delivered_Qty_BMS_CA__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Status --></label>
+        <name>SAP_Order_Status_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipment Date --></label>
+        <name>Shipment_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <nameFieldLabel><!-- Inventory Order Line Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>배달 날짜는 주문 작성일 이전일 수 없음</errorMessage>
+        <name>VEEVA_DELIVERY_DATE_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>주문량은 1 이상이어야 함</errorMessage>
+        <name>VEEVA_NEGATIVE_QUANTITY</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Advarsel</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Advarsel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Advarsel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Advarsler</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Advarsler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Advarsler</value>
+    </caseValues>
+    <fields>
+        <label>Aktiveringsdato</label>
+        <name>Activation_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Advarselstekst</label>
+        <name>Alert_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kan afvises</label>
+        <name>Dismissible_vod__c</name>
+    </fields>
+    <fields>
+        <label>Udløbsdato</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Seneste autom. meddelelse APNS dato/tid</label>
+        <name>Last_Push_Notify_APNS_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Linkreference lang</label>
+        <name>Link_Reference_Long_vod__c</name>
+    </fields>
+    <fields>
+        <label>Link reference</label>
+        <name>Link_Reference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prioritet</label>
+        <name>Priority_vod__c</name>
+        <picklistValues>
+            <masterLabel>Important</masterLabel>
+            <translation>Vigtigt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>Haster</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Offentlig</label>
+        <name>Public_vod__c</name>
+    </fields>
+    <fields>
+        <label>Atomatisk meddelelse APNS status</label>
+        <name>Push_Notify_APNS_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Udført</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued_vod</masterLabel>
+            <translation>Sat i kø</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Title --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Fejl: Begge linkreference lang- og linkreference-felter må ikke være populeret i samme underretning.</errorMessage>
+        <name>Link_Reference_Long_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

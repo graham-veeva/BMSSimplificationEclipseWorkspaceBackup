@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Membro da equipe do evento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Membros da equipe do evento </value>
+    </caseValues>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Member Description --></label>
+        <name>Description_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>E-mail</label>
+        <name>Email_vod__c</name>
+    </fields>
+    <fields>
+        <label>Evento</label>
+        <name>Event_vod__c</name>
+        <relationshipLabel>Membros da equipe do evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nome do grupo</label>
+        <name>Group_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>ID do dispositivo móvel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorar bloqueio</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Telefone</label>
+        <name>Phone_Number_vod__c</name>
+    </fields>
+    <fields>
+        <label>Função</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approver_vod</masterLabel>
+            <translation>Aprovador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certifier</masterLabel>
+            <translation><!-- Certifier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cohost_vod</masterLabel>
+            <translation>Corresponsável</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor</masterLabel>
+            <translation><!-- Editor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organizer_vod</masterLabel>
+            <translation>Organizador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read Only</masterLabel>
+            <translation><!-- Read Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Coordinator</masterLabel>
+            <translation><!-- Service Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Fornecedor</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Membro da equipe</label>
+        <name>Team_Member_vod__c</name>
+        <relationshipLabel>Membros da equipe do evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Cross Org</masterLabel>
+            <translation><!-- Cross Org --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Simple Event Team Member --></label>
+        <name>Activity_Team_Member_Simple_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Membro da equipe do evento</label>
+        <name>Event_Team_Member_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Grupo</label>
+        <name>Group_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Selecione uma pessoa ou um grupo</errorMessage>
+        <name>Person_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

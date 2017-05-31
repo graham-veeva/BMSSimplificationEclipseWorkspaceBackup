@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Network справочно нанасяне</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Network справочни нанасяния</value>
+    </caseValues>
+    <fields>
+        <label>ИД на търсене на CRM</label>
+        <name>CRM_Lookup_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Стойност от списък за избор на CRM</label>
+        <name>CRM_Picklist_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Име на типа на CRM запис</label>
+        <name>CRM_Record_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Посока</label>
+        <name>Direction_vod__c</name>
+        <picklistValues>
+            <masterLabel>Bidirectional_vod</masterLabel>
+            <translation>Двупосочен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound_vod</masterLabel>
+            <translation>Входящи</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound_vod</masterLabel>
+            <translation>Изходящи</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Network нанасяне на поле</label>
+        <name>Network_Field_Mapping_vod__c</name>
+        <relationshipLabel>Нанасяне на справка</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Код на Network справка</label>
+        <name>Network_Reference_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Уникален ключ</label>
+        <name>Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label>Бележки за проверката</label>
+        <name>Validation_Notes_vod__c</name>
+    </fields>
+    <fields>
+        <help>Състояние на проверката на нанасянето</help>
+        <label>Състояние на проверката</label>
+        <name>Validation_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Invalid_vod</masterLabel>
+            <translation>Невалиден</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unvalidated_vod</masterLabel>
+            <translation>Не е проверен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid_vod</masterLabel>
+            <translation>Валиден</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Network Reference Mapping ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Boolean_vod --></label>
+        <name>Boolean_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Търсене</label>
+        <name>Lookup_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Списък за избор</label>
+        <name>Picklist_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Тип на записа</label>
+        <name>Record_Type_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

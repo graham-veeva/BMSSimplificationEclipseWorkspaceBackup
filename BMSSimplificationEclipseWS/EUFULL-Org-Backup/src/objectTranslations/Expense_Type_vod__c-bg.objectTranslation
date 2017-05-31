@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Тип разходи</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Типове разходи</value>
+    </caseValues>
+    <fields>
+        <label>Активен</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Държава</label>
+        <name>Country_vod__c</name>
+        <relationshipLabel>Типове разходи</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Код на разход</label>
+        <name>Expense_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label>Идентификатор на тип разход</label>
+        <name>Expense_Type_Identifier_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен ИД</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Включено в тавана за говорителя</label>
+        <name>Included_In_Speaker_Cap_vod__c</name>
+    </fields>
+    <fields>
+        <label>Разход за храна</label>
+        <name>Meal_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип родителски разход</label>
+        <name>Parent_Expense_Type_vod__c</name>
+        <relationshipLabel>Подтип на разход</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Категория на разходите</label>
+        <name>Expense_Type_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

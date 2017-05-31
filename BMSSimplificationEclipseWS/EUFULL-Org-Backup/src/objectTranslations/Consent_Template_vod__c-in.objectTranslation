@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Templat Persetujuan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Templat Persetujuan</value>
+    </caseValues>
+    <fields>
+        <label>Tanggal Efektif Kalender</label>
+        <name>Calendar_Effective_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Selesai</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Batas Kedaluwarsa</label>
+        <name>Expiration_Threshold_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Kedaluwarsa</label>
+        <name>Expiration_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Calendar_vod</masterLabel>
+            <translation>Kalender</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolling_vod</masterLabel>
+            <translation>Bergulir</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tanggal Mulai</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>Nama Templat</nameFieldLabel>
+    <recordTypes>
+        <label>Templat Persetujuan Trial Material</label>
+        <name>Sample_Consent_Template_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Tanggal Efektif Kalender harus diisi bila Jenis Kedaluwarsa adalah Kalender</errorMessage>
+        <name>Required_Effective_Date_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bidang yang wajib diisi hilang</errorMessage>
+        <name>Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tanggal Selesai tidak boleh lebih awal dari Tanggal Mulai</errorMessage>
+        <name>Start_End_Date_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

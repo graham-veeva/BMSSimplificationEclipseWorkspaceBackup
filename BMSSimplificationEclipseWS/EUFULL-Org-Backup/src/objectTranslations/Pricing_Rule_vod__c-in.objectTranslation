@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Aturan Penetapan Harga</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Aturan Penetapan Harga</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Group --></label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Operator Aturan Rantai</label>
+        <name>Chain_Rule_Operator_vod__c</name>
+        <picklistValues>
+            <masterLabel>AND_vod</masterLabel>
+            <translation>DAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR_vod</masterLabel>
+            <translation>ATAU</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Aturan Rantai</label>
+        <name>Chain_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comparison_Product --></label>
+        <name>Comparison_Product_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules (Comparison_Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comparison Type --></label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation><!-- List Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net Value</masterLabel>
+            <translation><!-- Net Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation><!-- Product Quantity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Kontrak</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Aturan Penetapan Harga</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cross_Product_Rule --></label>
+        <name>Cross_Product_Rule_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Selesai Pengiriman</label>
+        <name>Delivery_End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pesanan Pengiriman</label>
+        <name>Delivery_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Mulai Pengiriman</label>
+        <name>Delivery_Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Override Max --></label>
+        <name>Discount_Override_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Override --></label>
+        <name>Discount_Override_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Goods Max --></label>
+        <name>Free_Goods_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Persentase Maks Barang Gratis</label>
+        <name>Free_Goods_Percentage_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Persentase Barang Gratis</label>
+        <name>Free_Goods_Percentage_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Goods --></label>
+        <name>Free_Goods_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Bound --></label>
+        <name>Limit_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Price --></label>
+        <name>List_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kerangka Waktu Pengiriman Minimum</label>
+        <name>Min_Delivery_Time_Frame_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price Min --></label>
+        <name>Net_Price_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Price --></label>
+        <name>Net_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Campaign --></label>
+        <name>Order_Campaign_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Maks Pembayaran</label>
+        <name>Payment_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pembayaran</label>
+        <name>Payment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Buku Harga</label>
+        <name>Price_Book_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Group --></label>
+        <name>Pricing_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Produk Pembanding</label>
+        <name>Product_Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List Value</masterLabel>
+            <translation>Nilai Daftar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Quantity</masterLabel>
+            <translation>Jumlah Produk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produk Maksimum</label>
+        <name>Product_Maximum_vod__c</name>
+    </fields>
+    <fields>
+        <label>Produk Minimum</label>
+        <name>Product_Minimum_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Pricing Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maximum Quantity --></label>
+        <name>Quantity_Max_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minimum Quantity --></label>
+        <name>Quantity_Min_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Description --></label>
+        <name>Rule_Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Harga Ritel yang Disarankan</label>
+        <name>Suggested_Retail_Price_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestion Text --></label>
+        <name>Suggestion_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suggestion Threshold --></label>
+        <name>Suggestion_Threshold_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Pricing Rule Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Brand_Level_Rule_vod --></label>
+        <name>Brand_Level_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Periode Pengiriman</label>
+        <name>Delivery_Period_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Discount_Rule_vod --></label>
+        <name>Discount_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Aturan Persentase Barang Gratis</label>
+        <name>Free_Goods_Percentage_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Free_Goods_Rule_vod --></label>
+        <name>Free_Goods_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Limit_Rule_vod --></label>
+        <name>Limit_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- List_Price_Rule_vod --></label>
+        <name>List_Price_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Aturan Jangka Pembayaran</label>
+        <name>Payment_Terms_Rule_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product_Group_Level_Rule_vod --></label>
+        <name>Product_Group_Level_Rule_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Hanya satu Account dan Grup Account yang harus dicantumkan.</errorMessage>
+        <name>Account_And_Account_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only product type of &apos;Detail&apos; is allowed --></errorMessage>
+        <name>Brand_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Hanya salah satu dari Rantai dan Aturan Lintas Produk yang harus dicentang</errorMessage>
+        <name>Chain_And_Cross_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produk Pembanding harus kosong</errorMessage>
+        <name>Chain_Comparison_Product_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Aturan Rantai tidak boleh berupa Pesanan Pengiriman</errorMessage>
+        <name>Chain_Delivery_Order_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Aturan Rantai tidak boleh terikat batas.</errorMessage>
+        <name>Chain_Limit_Bound_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Operator Aturan Rantai harus DAN atau ATAU</errorMessage>
+        <name>Chain_Operator_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produk harus memiliki nilai dan tidak boleh sama dengan Kelengkapan Item</errorMessage>
+        <name>Chain_Products_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jumlah Maksimum harus lebih besar daripada Jumlah Minimum.</errorMessage>
+        <name>Comp_Prod_Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tipe Perbandingan &apos;Nilai Bersih&apos; tidak didukung.</errorMessage>
+        <name>Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount may not be negative. --></errorMessage>
+        <name>DISCOUNT_NOT_NEG</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Aturan Batas Pesanan Pengiriman tidak boleh dikaitkan dengan produk tertentu.</errorMessage>
+        <name>Delivery_Order_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Hanya Aturan Batas yang dapat ditandai sebagai Pesanan Pengiriman.</errorMessage>
+        <name>Delivery_Order_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tanggal Selesai Pengiriman harus lebih besar dari tanggal Mulai Pengiriman</errorMessage>
+        <name>Delivery_Period_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jika jenis produk= ‘Pesanan’, Tanggal Mulai dan Tanggal Selesai harus diisi</errorMessage>
+        <name>Delivery_Period_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Produk dapat kosong atau dari jenis &apos;pesanan&apos;</errorMessage>
+        <name>Delivery_Rule_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tanggal Mulai Pengiriman harus sama atau lebih besar dari Tanggal Mulai</errorMessage>
+        <name>Delivery_Start_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product can be empty or of type &apos;Order&apos; and &apos;Kit Item&apos;. --></errorMessage>
+        <name>Discount_Rule_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Discount Override Max is lower than Discount --></errorMessage>
+        <name>Discount_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Persentase Maks Barang Gratis tidak dapat diisi dikarenakan aturan Barang Gratis biasa</errorMessage>
+        <name>Free_Good_No_Percent_Max_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jenis Perbandingan ‘Nilai Daftar’ tidak didukung.</errorMessage>
+        <name>Free_Good_Percent_Comp_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Barang Gratis Maks. tidak didukung.</errorMessage>
+        <name>Free_Good_Percent_Max_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Hanya Tipe produk &apos;Pesanan&apos; dan &apos;Item Kelengkapan&apos; yang diizinkan.</errorMessage>
+        <name>Free_Good_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Maksimal Barang Gratis lebih rendah daripada Barang Gratis</errorMessage>
+        <name>Free_Goods_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Kit Item is not allowed in Cross Product Rebate. --></errorMessage>
+        <name>Kit_Item_Product_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product can be empty or of type &apos;Order&apos;,&apos;Detail&apos;,&apos;Product_Group&apos;,&apos;Kit Item&apos;. --></errorMessage>
+        <name>Limit_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only product type of &apos;Order&apos; and &apos;Kit Item&apos; is allowed --></errorMessage>
+        <name>List_Price_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Maximum Quantity must be greater than the Minimum Quantity. --></errorMessage>
+        <name>Max_Greater_than_Min_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jika Kerangka Waktu Pengiriman Min diisi, Tanggal Mulai Pengiriman dan Tanggal Selesai Pengiriman harus kosong</errorMessage>
+        <name>Min_Delivery_Time_Frame_Date_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jika Kerangka Waktu Pengiriman Min diisi, Product_vod harus kosong</errorMessage>
+        <name>Min_Delivery_Time_Frame_Prod_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Net Price and Discount Override all present --></errorMessage>
+        <name>Net_Price_Discount_Override_exclude_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Net Price Min is greater than net price --></errorMessage>
+        <name>Net_Price_rule_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Aturan Jangka Pembayaran tidak mendukung Rabat Produk Silang.</errorMessage>
+        <name>PaymentTermsRule_CrossProductRebate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Aturan Jangka Pembayaran tidak mendukung jenis produk Kelengkapan Item Produk.</errorMessage>
+        <name>PaymentTermsRule_KitItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Hanya Tipe produk Pesanan, Detail, [kosong] atau Grup Produk yang diizinkan. Dan jika produk tidak kosong, kotak centang Aturan Lintas Produk harus dicentang.</errorMessage>
+        <name>Product_Comparison_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jenis Produk Pembanding Valid Diperlukan</errorMessage>
+        <name>Product_Comparison_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product must be different than Comparison Product and not empty. --></errorMessage>
+        <name>Product_Comparison_and_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only product type of &apos;Product Group&apos; is allowed --></errorMessage>
+        <name>Product_Group_Level_Rule_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Minimum Produk atau Maksimum Produk Diperlukan</errorMessage>
+        <name>Product_Min_Max_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

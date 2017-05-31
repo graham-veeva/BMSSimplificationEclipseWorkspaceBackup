@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Kế hoạch sản phẩm</value>
+    </caseValues>
+    <fields>
+        <label>Hoạt động</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>% hoàn thành</label>
+        <name>Complete__c</name>
+    </fields>
+    <fields>
+        <label>Mô tả</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nhóm Chi tiết</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>Kế hoạch Sản phẩm (Nhóm Chi tiết)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Sản phẩm</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Kế hoạch sản phẩm</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Trạng thái</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Được phê duyệt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In  Progress</masterLabel>
+            <translation>Đang xử lý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Đang chờ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Bị từ chối</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- Product Plan Name --></nameFieldLabel>
+    <webLinks>
+        <label>Cập nhật chuẩn đo</label>
+        <name>Update_Metrics</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO Oct 2013: Object part of the Field Force Meeting module for BMS EMEA. Child object of Master File to store Planned Participants (high-level information tracked per Participant type).</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>External_ID_BMS_SHARED__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Feb 2014: external ID used for data loading</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fields_Delivered_BMS_EMEA__c</fullName>
+        <externalId>false</externalId>
+        <label>Fields Delivered</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fields_Planned_BMS_EMEA__c</fullName>
+        <externalId>false</externalId>
+        <label>Fields Planned</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MF_Planned_BMS_EMEA__c</fullName>
+        <externalId>false</externalId>
+        <label>MF Planned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Master_File_BMS_EMEA__c</fullName>
+        <description>VPRO Oct 2013: parent Master File of the record.</description>
+        <externalId>false</externalId>
+        <label>Master File</label>
+        <referenceTo>Master_File_BMS_EMEA__c</referenceTo>
+        <relationshipLabel>Master File Participants</relationshipLabel>
+        <relationshipName>Master_File_Participants</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Number_all_Meetings_BMS_EMEA__c</fullName>
+        <description>VPRO Oct 2013: number of participants per Event multiplied by Target number of Meetings.</description>
+        <externalId>false</externalId>
+        <formula>Number_per_Meeting_BMS_EMEA__c * Master_File_BMS_EMEA__r.Targeted_number_of_Meetings_BMS_EMEA__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number for all Meetings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_per_Meeting_BMS_EMEA__c</fullName>
+        <description>VPRO Oct 2013: Number of Planned Participants per Meeting</description>
+        <externalId>false</externalId>
+        <label>Number per Meeting</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TherArea_Expertise_Specialty_BMS_EMEA__c</fullName>
+        <description>VPRO Oct 2013: additional information to qualify the Planned Participants.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Therapeutic Area/Expertise/Specialty</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Master File Participant</label>
+    <nameField>
+        <displayFormat>MFP-{00000}</displayFormat>
+        <label>Master File Participant Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Master File Participants</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>BMS_EMEA_Audience</fullName>
+        <active>true</active>
+        <description>Non sponsored or contracted individuals attending event</description>
+        <label>BMS - EMEA - Audience</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_BMS_Employee</fullName>
+        <active>true</active>
+        <description>BMS Employee planned participants</description>
+        <label>BMS - EMEA - BMS Employee</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_JV_Partner_Employee</fullName>
+        <active>false</active>
+        <description>JV Employee Planned Participants</description>
+        <label>BMS - EMEA - JV Partner Employee</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_Speaker</fullName>
+        <active>true</active>
+        <description>Speaker planned participants</description>
+        <label>BMS - EMEA - Speaker</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_Sponsored</fullName>
+        <active>true</active>
+        <description>Details of individuals with whom BMS will sponsor to a third party event</description>
+        <label>BMS - EMEA - Sponsored</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

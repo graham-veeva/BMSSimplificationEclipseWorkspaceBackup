@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Account_Source_Country_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>PC_SALUTATION</field>
+    </columns>
+    <columns>
+        <field>PC_LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Customer_Type_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Account.Title_formula_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Account.Specialty_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Parent_vod__c</field>
+    </columns>
+    <columns>
+        <field>Account.OneKey_ID_BMS_CORE__c</field>
+    </columns>
+    <columns>
+        <field>Account.BP_ID_BMS_CORE__c</field>
+    </columns>
+    <description>Use this report to indicate what customer should be loaded in the training environment after applying your own filters</description>
+    <format>Tabular</format>
+    <name>EMEA - Training Customers Template</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

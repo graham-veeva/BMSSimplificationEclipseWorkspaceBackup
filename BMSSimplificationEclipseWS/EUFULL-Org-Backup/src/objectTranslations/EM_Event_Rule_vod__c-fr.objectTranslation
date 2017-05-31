@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Règle d&apos;événement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Règles d&apos;événement</value>
+    </caseValues>
+    <fields>
+        <label>Champs Compte Participant</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Présentation CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Règles d&apos;événement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Champs de contact des participants</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Non-prise en compte du pays</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Règles d&apos;événement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Modèle d&apos;e-mail</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Règles de l&apos;événement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Configuration d&apos;événement</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Règles d&apos;événement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type de filtre</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Obligatoire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Facultatif (désactivé par défaut)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Facultatif (activé par défaut)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type de document</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Document</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Types d&apos;événements utilisant des documents</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Champs d&apos;inscription en ligne</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualification --></label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Règles d&apos;événement</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Rechercher en dehors de mon secteur</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Contrat de conférencier</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Champs de participants utilisateurs</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Zones d&apos;entrée</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <label>Champs Participant</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Document</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Champs d&apos;inscription en ligne</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contrat de conférencier</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Qualification du conférencier</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Zones d&apos;entrée</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Les champs Modèle d&apos;e-mail et Présentation CLM ne peuvent pas être renseignés tous les deux pour une règle unique. Veuillez créer des règles distinctes pour ces deux éléments.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Les champs Documentation et Présentation CLM ne peuvent pas être renseignés tous les deux pour une règle unique. Veuillez créer des règles distinctes pour ces deux éléments.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Une règle unique ne peut pas avoir à la fois les champs Document et Modèle d&apos;e-mail renseignés. Veuillez créer des règles distinctes pour ces deux éléments.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

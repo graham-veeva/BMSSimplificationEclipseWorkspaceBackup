@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grup Produk</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grup Produk</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Catalog --></label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel><!-- Product Groups (Product Catalog) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Product Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Jumlah</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- You cannot link a Detail Group that is not a Company Product to a Detail Product or Topic that is a Company Product. --></errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products of type &quot;Detail Topic&quot; or &quot;Detail&quot; can be associated to a Detail Product Group --></errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Type of &apos;Product Group&apos; or &apos;Sample Product Group&apos; or &apos;Detail Group&apos; is allowed --></errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Type of &apos;Order&apos; is allowed --></errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Hanya produk bertipe “Trial Material”, “BRC”, “Promosional”, “Promosional Bernilai Tinggi”, “Trial Material Alternatif”, “Cetak Ulang”, dan lainnya yang dapat dikaitkan dengan Grup Produk Trial Material</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tanggal Mulai dan Tanggal Selesai harus diisi jika Jumlah ditentukan</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid start date and end date are required. --></errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>FK_NAME</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>YTD Interactions</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Record Count</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Address_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Sub_Type_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Intent_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Detailed_Products_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <description>DASHBOARD - Report to display interactions against my list.</description>
+    <filter>
+        <criteriaItems>
+            <column>Call2_vod__c.TSF_My_List_BMS__c</column>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>BMS - MSL - YTD My List Interactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call2_vod__c@Call2_vod__c.Account_vod__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Call_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

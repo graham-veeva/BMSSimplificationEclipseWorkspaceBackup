@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Coaching_Report_vod__c.Territory_Business_Code_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Territory_Region_Code_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.BMS_Territory_ID_BMS_SHARED__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Employee_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Review_Date__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Prescribe_Info_Left_behind_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Transparency_Notice_Left_behind_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.RMP_Left_behind_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Presentation_of_recommendations_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Compliance_to_Ethical_Rules_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Coaching_Report_vod__c.Has_valid_version_leave_behinds_BMS_EMEA__c</field>
+    </columns>
+    <description>avec 6 questions dont màj des remis</description>
+    <format>Tabular</format>
+    <name>FR Coaching reports Charte VM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Coaching_Report_vod__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Coaching_Report_vod__c.Contact_Date_BMS__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

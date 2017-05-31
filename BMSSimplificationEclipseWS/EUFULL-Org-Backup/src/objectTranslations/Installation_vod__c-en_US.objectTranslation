@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Installation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Installations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>Environment_vod__c</name>
+        <relationshipLabel><!-- Installations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Installer --></label>
+        <name>Installer_vod__c</name>
+        <relationshipLabel><!-- Installations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>Release_vod__c</name>
+        <relationshipLabel><!-- Installations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting Sign-Off</masterLabel>
+            <translation><!-- Waiting Sign-Off --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

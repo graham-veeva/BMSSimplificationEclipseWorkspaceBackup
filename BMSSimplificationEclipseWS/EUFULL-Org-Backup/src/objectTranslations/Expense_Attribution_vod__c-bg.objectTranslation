@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Разходен атрибут</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Разходни атрибути</value>
+    </caseValues>
+    <fields>
+        <label>Действителен</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ред за разход</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип на разход</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Направени разходи (Клиент)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Направени разходи (Участник)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Направени разходи (Говорител)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Направени разходи (Член на екипа)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Тип на направения разход</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Клиент</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Участник</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Говорител на събитие</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Член на екип за събитие</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Доставчик</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Място на провеждане</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Направени разходи (Доставчик)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Направени разходи (Място на провеждане)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Разходни атрибути</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Направени разходи</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Дата на плащане</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Разходен атрибут за събитие</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

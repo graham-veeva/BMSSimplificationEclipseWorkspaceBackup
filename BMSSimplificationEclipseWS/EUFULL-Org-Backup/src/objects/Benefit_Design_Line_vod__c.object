@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A Benefit Design Line is a child of a Benefit Design. It represents the formulary information for one product for a specific benefit design.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Benefit_Design_vod__c</fullName>
+        <description>Link to the parent Benefit Design.</description>
+        <externalId>false</externalId>
+        <label>Benefit Design</label>
+        <referenceTo>Benefit_Design_vod__c</referenceTo>
+        <relationshipLabel>Benefit Design Lines</relationshipLabel>
+        <relationshipName>Benefit_Design_Line_vod</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Competitor_vod__c</fullName>
+        <description>Indicates whether the product is a competitor product. If true, product is a competitor; otherwise it is a company product. Evaluated from the Competitor_vod field in Formulary_Product_vod object. Not visible in the page layout - used only by the application.</description>
+        <externalId>false</externalId>
+        <formula>Product_vod__r.Competitor_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Copay_Source_vod__c</fullName>
+        <description>Copay (Source) value for this benefit design line.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Copay (Source)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Copay_vod__c</fullName>
+        <description>Copay for this benefit deisgn line.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Copay</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID is used for data loading only.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_Discrepancy_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Status_vod__c,&quot;&quot;),&quot;No Confilct&quot;,IF(TEXT(Status_Source_vod__c)&lt;&gt; TEXT(Status_vod__c),&quot;Conflict&quot;,&quot;No Conflict&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Notes: Discrepancy?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_Source_vod__c</fullName>
+        <description>This data is meant to be loaded and refreshed by the customer from the source data provider, such as MediMedia and not changed by end users. If the Notes field is filled in, it will override the Notes (Source) field in the display of the formulary control.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notes (Source)</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Notes_vod__c</fullName>
+        <description>Notes about any restrictions or status for this product on this benefit design.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product is a lookup the Formulary Product object. Note that this is not a lookup to the product catalog that is used for sampling and detailing.  This field is required because every benefit design line relates to a product.</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Formulary_Products_vod__c</referenceTo>
+        <relationshipLabel>Benefit Design Lines</relationshipLabel>
+        <relationshipName>Product_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Protocol_Recommendation_Submitted_BMS_CA__c</fullName>
+        <externalId>false</externalId>
+        <label>Protocol Recommendation Submitted</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Y</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Restrictions_Source_vod__c</fullName>
+        <description>This data is meant to be loaded and refreshed by the customer from the source data provider, such as MediMedia and not changed by end users. If the Restrictions field is filled in, it will override the Restrictions (Source) field in the display of the formulary control.</description>
+        <externalId>false</externalId>
+        <label>Restrictions (Source)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Restrictions_vod__c</fullName>
+        <description>Restriction codes for this product in this benefit design line. For example, one of the codes might be &apos;PA&apos;, which stands for Prior Auth. The valid values in this field are controlled by the value of the type field, because not all restriction codes are valid for all types of benefit designs.</description>
+        <externalId>false</externalId>
+        <label>Restrictions</label>
+        <picklist>
+            <picklistValues>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Y</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status_Source_vod__c</fullName>
+        <description>This data is meant to be loaded and refreshed by the customer from the source data provider, such as MediMedia and not changed by end users. If the Status field is filled in, it will override the Status (Source) field in the display of the formulary control.</description>
+        <externalId>false</externalId>
+        <label>Status (Source)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NOT COVERED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OFF PDL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ON PDL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PATIENT PAYS THE DIFFERENCE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status codes for this product in this benefit design line. For example, one of the codes might be &apos;Tier 1&apos;.  The valid values in this field are controlled by the value of the type field, because not all status values are valid for all types of benefit designs.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <controllingField>Type_vod__c</controllingField>
+            <picklistValues>
+                <fullName>IN PROCESS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Group Benefits Drug Plan</controllingFieldValues>
+                <controllingFieldValues>Provincial Formulary</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NOT COVERED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NOT ON</fullName>
+                <default>false</default>
+                <controllingFieldValues>Group Benefits Drug Plan</controllingFieldValues>
+                <controllingFieldValues>Provincial Formulary</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OFF PDL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ON</fullName>
+                <default>false</default>
+                <controllingFieldValues>Group Benefits Drug Plan</controllingFieldValues>
+                <controllingFieldValues>Provincial Formulary</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ON PDL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REFUSED</fullName>
+                <default>false</default>
+                <controllingFieldValues>Group Benefits Drug Plan</controllingFieldValues>
+                <controllingFieldValues>Provincial Formulary</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TIER 9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type_vod__c</fullName>
+        <description>The type field is the type of benefit design (commercial, VA, Medicade, etc.)  It is populated by a trigger, which pulls down the value from the type field on the parent benefit design object. The type field needs to be replicated to the benefit design line object so that it can control the dependent picklists for status and restrictions.</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>COMMERCIAL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COMMERCIAL (BCBS)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COMMERCIAL (MEDICAID)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DISCOUNT PRESCRIPTION PROGRAMS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DOD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMPLOYER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Group Benefits Drug Plan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HMO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HMO - Medicaid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MA-PD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MEDICARE MA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MEDICARE PDP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MEDICARE SN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MUNICIPAL PLAN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PBM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PDP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>POS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Provincial Formulary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>STATE MEDICAID</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UNION</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Benefit Design Line</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>Linenumber</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Benefit Design Lines</pluralLabel>
+    <recordTypes>
+        <fullName>BMS_Canada_KAMs</fullName>
+        <active>true</active>
+        <description>Used for BMS Canada KAM and DNS Users</description>
+        <label>BMS - Canada KAMs</label>
+        <picklistValues>
+            <picklist>Protocol_Recommendation_Submitted_BMS_CA__c</picklist>
+            <values>
+                <fullName>N</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Y</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Restrictions_Source_vod__c</picklist>
+            <values>
+                <fullName>OR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ST</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Restrictions_vod__c</picklist>
+            <values>
+                <fullName>N</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Y</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Source_vod__c</picklist>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOT COVERED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OFF PDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON PDL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PATIENT PAYS THE DIFFERENCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TIER 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>IN PROCESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOT ON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REFUSED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_vod__c</picklist>
+            <values>
+                <fullName>COMMERCIAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMERCIAL %28BCBS%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMERCIAL %28MEDICAID%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DISCOUNT PRESCRIPTION PROGRAMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DOD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMPLOYER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group Benefits Drug Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HMO - Medicaid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-PD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEDICARE MA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEDICARE PDP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEDICARE SN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MUNICIPAL PLAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PBM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provincial Formulary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STATE MEDICAID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Mehrkanal-Einwilligung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Mehrkanal-Einwilligungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>die Mehrkanal-Einwilligung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>die Mehrkanal-Einwilligungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>der Mehrkanal-Einwilligung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>der Mehrkanal-Einwilligungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>der Mehrkanal-Einwilligung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>der Mehrkanal-Einwilligungen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum/Uhrzeit erfassen</label>
+        <name>Capture_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kanalwert</label>
+        <name>Channel_Value_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum/Zeit für Einwilligungsbestätigung</label>
+        <name>Consent_Confirm_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einwilligungszeile</label>
+        <name>Consent_Line_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Einwilligungstyp</label>
+        <name>Consent_Type_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Inhaltstyp</label>
+        <name>Content_Type_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Einwilligungstext</label>
+        <name>Default_Consent_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Detailgruppe</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligungen (Detailgruppe)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Digital Profile ID --></label>
+        <name>Digital_Profile_ID_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Haftungsausschlusstext</label>
+        <name>Disclaimer_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externe ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letztes Gerät</label>
+        <name>Last_Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Blackberry_vod</masterLabel>
+            <translation>BlackBerry</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data_Load_vod</masterLabel>
+            <translation>Datenladevorgang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile_vod</masterLabel>
+            <translation>Mobil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online_vod</masterLabel>
+            <translation><!-- Online_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPhone_vod</masterLabel>
+            <translation><!-- iPhone_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ablaufdatum</label>
+        <name>Opt_Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Teilnahmeart</label>
+        <name>Opt_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Opt_In_Pending_vod</masterLabel>
+            <translation>Opt-In ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt_In_vod</masterLabel>
+            <translation>Opt-in</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt_Out_vod</masterLabel>
+            <translation>Opt-out</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Veranstaltungstyp</label>
+        <name>Optout_Event_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Bounced_vod</masterLabel>
+            <translation>Unzustellbar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consent_Capture_vod</masterLabel>
+            <translation>Einwilligungs-Erfassung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marked_Spam_vod</masterLabel>
+            <translation>Als Spam markiert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsubscribed_vod</masterLabel>
+            <translation>Abgemeldet</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Produkt</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligung</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID für zugehörige Transaktion</label>
+        <name>Related_Transaction_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vorlagendaten Mustereinwilligung</label>
+        <name>Sample_Consent_Template_Data_vod__c</name>
+    </fields>
+    <fields>
+        <label>Vorlage Mustereinwilligung</label>
+        <name>Sample_Consent_Template_vod__c</name>
+        <relationshipLabel>Mehrkanal-Einwilligungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Gesendete E-Mail</label>
+        <name>Sent_Email_vod__c</name>
+        <relationshipLabel>Multichannel-Einwilligungen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum und Uhrzeit der Signatur</label>
+        <name>Signature_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID für Einwilligung in Papierform</label>
+        <name>Signature_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Signaturdaten</label>
+        <name>Signature_vod__c</name>
+    </fields>
+    <fields>
+        <label>status</label>
+        <name>Status_BMS_EMEA__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Unterkanalschlüssel</label>
+        <name>Sub_Channel_Key_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Opt Number --></nameFieldLabel>
+    <recordTypes>
+        <label>Approved Email</label>
+        <name>Approved_Email_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS EMEA Digital Profile --></label>
+        <name>BMS_EMEA_Digital_Profile</name>
+    </recordTypes>
+    <recordTypes>
+        <label>CLM</label>
+        <name>CLM_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Verpflichten</label>
+        <name>Engage_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Mustereinwilligung</label>
+        <name>Sample_Consent_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please get the consent from Veeva CRM --></errorMessage>
+        <name>BMS_Mandatory_Check_For_DT_Capture</name>
+    </validationRules>
+</CustomObjectTranslation>

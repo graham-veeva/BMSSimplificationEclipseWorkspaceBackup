@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cấu Hình Sự Kiện </value>
+    </caseValues>
+    <fields>
+        <label>Ngày kết thúc</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại sự kiện</label>
+        <name>Event_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày Bắt Đầu</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>Tên</nameFieldLabel>
+    <recordTypes>
+        <label>Cấu Hình Sự Kiện</label>
+        <name>Event_Configuration_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Ngày kết thúc phải bằnghoặc lớn hơn ngày bắt đầu.</errorMessage>
+        <name>StartDateBeforeEndDate</name>
+    </validationRules>
+</CustomObjectTranslation>

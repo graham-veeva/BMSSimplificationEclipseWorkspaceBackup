@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Datenänderungsantrag</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Datenänderungsanträge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Datenänderungsantrag</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Datenänderungsanträge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Datenänderungsantrags</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Datenänderungsanträge</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Datenänderungsantrag</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Datenänderungsanträgen</value>
+    </caseValues>
+    <fields>
+        <label>Account: externe ID</label>
+        <name>Account_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Datenänderungsanträge</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Adresse: externe ID</label>
+        <name>Address_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anschrift</label>
+        <name>Address_vod__c</name>
+        <relationshipLabel>Datenänderungsanträge</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Untergeordneter Account: externe ID</label>
+        <name>Child_Account_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Untergeordneter Account</label>
+        <name>Child_Account_vod__c</name>
+        <relationshipLabel>Datenänderungsanträge</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Landzuordnung</label>
+        <name>Country_Mapping_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>DCR: externe ID</label>
+        <name>DCR_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCR Record Type --></label>
+        <name>DCR_Record_Type_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCR URL --></label>
+        <name>DCR_URL_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Datum/Uhrzeit</label>
+        <name>Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fehler</label>
+        <name>Error_vod__c</name>
+    </fields>
+    <fields>
+        <label>Externer Status</label>
+        <name>External_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE_CANCELLED</masterLabel>
+            <translation>„Abgebrochen“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_NEW</masterLabel>
+            <translation>„Neu“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PARTIALLYPROCESSED</masterLabel>
+            <translation>„Teilweise verabeitet“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PENDINGREVIEW</masterLabel>
+            <translation>„Püfung ausstehend“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PROCESSED</masterLabel>
+            <translation>„Verarbeitet“ ändern</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Mobil-Erstellung: Datum/Uhrzeit</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Letzte Mobil-Änderung: Datum/Uhrzeit</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mastermodus Network-Kunde</label>
+        <name>Network_Customer_Master_Mode_vod__c</name>
+    </fields>
+    <fields>
+        <label>Notizen</label>
+        <name>Notes_vod__c</name>
+    </fields>
+    <fields>
+        <label>Übergeordneten Datenänderungsantrag</label>
+        <name>Parent_Data_Change_Request_vod__c</name>
+        <relationshipLabel>Untergeordnete Datenänderungsanfragen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Beschlussmitteilung</label>
+        <name>Resolution_Note_vod__c</name>
+    </fields>
+    <fields>
+        <label>Antwort: Datum/Uhrzeit</label>
+        <name>Response_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ergebnis</label>
+        <name>Result_vod__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE_ACCEPTED</masterLabel>
+            <translation>„Angenommen“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_ALREADYAPPLIED</masterLabel>
+            <translation>„Bereits angewendet“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_MODIFIED</masterLabel>
+            <translation>„Geändert“ ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PARTIAL</masterLabel>
+            <translation>Teilweise ändern</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_REJECTED</masterLabel>
+            <translation>„Abgelehnt“ ändern</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Gesendet: Datum/Uhrzeit</label>
+        <name>Sent_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled_vod</masterLabel>
+            <translation>Deaktiviert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_vod</masterLabel>
+            <translation>Ausstehend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Bearbeitet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Übermittelt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Typ</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Delete_vod</masterLabel>
+            <translation>Löschen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit_vod</masterLabel>
+            <translation>Bearbeiten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Neu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Language --></label>
+        <name>User_Language_BMS_EMEA__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Data Change Request Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Account_vod --></label>
+        <name>Account_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Anschrift</label>
+        <name>Address_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Untergeordneter Account</label>
+        <name>Child_Account_vod</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- DCR_Link --></label>
+        <name>DCR_Link</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Дефиниция на правило</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Дефиниции на правила</value>
+    </caseValues>
+    <fields>
+        <help>Показва дали правилото е активно в Salesforce.com</help>
+        <label>Активен</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>Име на полето, където ще се показват съобщенията за грешка.</help>
+        <label>Поле за показване</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>Формула за правило</help>
+        <label>Формула за състоянието на грешка</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>Съобщение за грешка в правило.</help>
+        <label>Съобщение образец</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>Обект, в кой се намира това правило за проверка.</help>
+        <label>Обект</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>Дефиниции на правила</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Поръчка</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Показва дали Veeva е намерила неподдържан синтаксис в дефиниция на правило.</help>
+        <label>Поддържани</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>Външен Ид за записа. Форматът е [ИМЕ НА ПРАВИЛО]::[Име на Тип_на_записа]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Ред за филтър за търсене в SFDC</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC правило</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

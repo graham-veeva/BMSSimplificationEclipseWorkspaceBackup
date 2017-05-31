@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bermacam-Macam</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bermacam-Macam</value>
+    </caseValues>
+    <fields>
+        <label>Grup Account</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Catatan Account</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Apotek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Pedagang Grosir</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Semua yang Lain</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grup Bermacam-Macam</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Selesai</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Eksternal</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jenis Catatan Pemantauan Inventaris</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Monitor Inventaris</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Jenis Catatan Pesanan</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Langsung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation><!-- Transfer_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Terikat Produk</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tanggal Mulai</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel>Nama</nameFieldLabel>
+    <recordTypes>
+        <label>Bermacam-Macam IM</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bermacam-Macam OM</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Tanggal mulai setelah tanggal akhir</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bermacam-Macam Terikat Produk tidak bisa menerima bagian Semua Lainnya yang ditampilkan</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Pratinjau</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

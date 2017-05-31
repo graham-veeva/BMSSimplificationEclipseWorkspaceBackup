@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account_Territory_Loader_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>Account_Territory_Loader_vod__c$Territory_vod__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account_Territory_Loader_vod__c$Territory_vod__c</column>
+            <operator>contains</operator>
+            <value>;BE</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>PTP - BE Accounts to Territories (ATL)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ATL_BMS__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account_Territory_Loader_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

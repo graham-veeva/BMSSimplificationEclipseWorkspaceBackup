@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Odozva na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Odozvy na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Odozvu na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Odozvy na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Odozvy na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Odoziev na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Odozve na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Odozvám na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Odozvou na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Odozvami na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Odozve na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Odozvách na plnenie lekárskeho šetrenia</value>
+    </caseValues>
+    <fields>
+        <label>Postúpiť na hodnotenie</label>
+        <name>Assign_To_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Postúpiť používateľovi</label>
+        <name>Assign_To_User_vod__c</name>
+        <relationshipLabel>Odozvy na vykonanie lekárskeho šetrenia (postúpiť používateľovi)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dokončil(a)</label>
+        <name>Completed_By_vod__c</name>
+        <relationshipLabel>Odozvy na vykonanie lekárskeho šetrenia (vyplnil)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dátum/čas dokončenia</label>
+        <name>Completed_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Materiály plnenia</label>
+        <name>Fulfillment_Materials_vod__c</name>
+    </fields>
+    <fields>
+        <label>Odozva na plnenie</label>
+        <name>Fulfillment_Response_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcia</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Odozvy na plnenie lekárskeho šetrenia</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Plnenie lekárskeho šetrenia</label>
+        <name>Medical_Inquiry_Fulfillment_vod__c</name>
+        <relationshipLabel>Odozvy na plnenie lekárskeho šetrenia</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Spôsob</label>
+        <name>Method_vod__c</name>
+        <picklistValues>
+            <masterLabel>Email_vod</masterLabel>
+            <translation>E-mail</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face_to_Face_vod</masterLabel>
+            <translation>Priamo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fax_vod</masterLabel>
+            <translation>Fax</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail_vod</masterLabel>
+            <translation>Pošta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone_vod</masterLabel>
+            <translation>Telefón</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Dátum a čas vytvorený mobilom</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID mobilného zariadenia</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Postúpiť?</label>
+        <name>Reassign_vod__c</name>
+    </fields>
+    <fields>
+        <label>Stav</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Dokončené</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Nové</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Uložené</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Identifikátoroch odozvy na plnenie lekár</nameFieldLabel>
+    <recordTypes>
+        <label>Odozva na plnenie lekárskeho šetrenia</label>
+        <name>Medical_Inquiry_Fulfillment_Response_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

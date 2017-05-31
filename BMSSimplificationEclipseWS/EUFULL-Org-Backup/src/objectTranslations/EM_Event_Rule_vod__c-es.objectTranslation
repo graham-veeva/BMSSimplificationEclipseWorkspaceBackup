@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regla de evento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reglas de evento</value>
+    </caseValues>
+    <fields>
+        <label>Campos de asistentes de la cuenta</label>
+        <name>Account_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Presentación CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Reglas de evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Campos de contactos asistentes</label>
+        <name>Contact_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Country --></label>
+        <name>Country_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Anular país</label>
+        <name>Country_Override_vod__c</name>
+        <relationshipLabel>Reglas de evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Plantilla de correo electrónico</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Reglas de evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Configuración de evento</label>
+        <name>Event_Configuration_vod__c</name>
+        <relationshipLabel>Reglas de evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de filtro</label>
+        <name>Filter_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Mandatory_vod</masterLabel>
+            <translation>Obligatorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_Off_vod</masterLabel>
+            <translation>Optativo (apagado por defecto)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optional_On_vod</masterLabel>
+            <translation>Optativo (encendido por defecto)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo de material</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Tipos de evento que utilizan el material</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Campos de registro en línea</label>
+        <name>Online_Registration_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Calificación</label>
+        <name>Qualification_vod__c</name>
+        <relationshipLabel>Reglas de evento</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Buscar fuera de mi territorio</label>
+        <name>Search_Outside_Territory_vod__c</name>
+    </fields>
+    <fields>
+        <label>Campos de orador</label>
+        <name>Speaker_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Campos de usuarios asistentes</label>
+        <name>User_Attendee_Fields_vod__c</name>
+    </fields>
+    <fields>
+        <label>Campos ambulatorios</label>
+        <name>Walk_In_Fields_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <recordTypes>
+        <label>Campos de asistente</label>
+        <name>Attendee_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Material</label>
+        <name>Material_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Campos de registro en línea</label>
+        <name>Online_Registration_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Campos de orador</label>
+        <name>Speaker_Fields_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Cualificación de orador</label>
+        <name>Speaker_Qualification_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Campos ambulatorios</label>
+        <name>Walk_In_Fields_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Una única regla no puede tener consignados tanto Plantilla de correo electrónico como Presentación de CLM. Cree reglas separadas para estos dos elementos.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Una única regla no puede tener consignados tanto Material como Presentación de CLM. Cree reglas separadas para estos dos elementos.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Una única regla no puede tener consignados tanto Material como Plantilla de correo electrónico. Cree reglas separadas para estos dos elementos.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

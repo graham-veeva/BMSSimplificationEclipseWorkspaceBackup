@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Тематичен материал</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Тематични материали</value>
+    </caseValues>
+    <fields>
+        <label>CLM презентация</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Тематични материали</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Шаблон за имейл</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Тематични материали</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Външен ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Тип на материала</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Материал</label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Теми, използващи материала</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Тема</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Материали за темата (Тема)</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Тематичен материал</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Едно единствено правило не може да има попълнени позиции за CLM презентация и имейл шаблон. Създайте отделни правила за тези две позиции.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Един единствен тематичен материал не може да има попълнени позиции за материал и CLM презентация. Създайте отделни правила за тези две позиции.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Един единствен тематичен материал не може да има попълнени позиции за материал и имейл шаблон. Създайте отделни правила за тези две позиции.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

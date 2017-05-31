@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Riga ordine di inventario</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Righe ordine di inventario</value>
+    </caseValues>
+    <fields>
+        <label><!-- Carrier Name --></label>
+        <name>Carrier_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Commenti eccezione</label>
+        <name>Exception_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Gravità eccezione</label>
+        <name>Exception_Severity_vod__c</name>
+        <picklistValues>
+            <masterLabel>Prevent_vod</masterLabel>
+            <translation>Previeni</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Require_Approval_vod</masterLabel>
+            <translation>Richiedi approvazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warn_vod</masterLabel>
+            <translation>Avvisa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tipo di eccezione</label>
+        <name>Exception_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Date_vod</masterLabel>
+            <translation>Data</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityDate_vod</masterLabel>
+            <translation>Quantità e data</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Quantità</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Allocazione ordine di inventario</label>
+        <name>Inventory_Order_Allocation_vod__c</name>
+        <relationshipLabel>Righe ordine di inventario</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Intestazione ordine di inventario</label>
+        <name>Inventory_Order_Header_vod__c</name>
+        <relationshipLabel>Righe ordine di inventario</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stato riga ordine di inventario</label>
+        <name>Inventory_Order_Line_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Annullato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed_vod</masterLabel>
+            <translation>Completato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In_Process_vod</masterLabel>
+            <translation>In elaborazione</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Nuovo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Salvato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Inviato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory Order Status --></label>
+        <name>Inventory_Order_Status_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>Numero Di Lotto</label>
+        <name>Lot_Number_BMS_CORE__c</name>
+    </fields>
+    <fields>
+        <label>Quantità ordinata</label>
+        <name>Order_Fulfilled_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>UDM quantità ordine</label>
+        <name>Order_Quantity_UOM_vod__c</name>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation>Casella</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carton</masterLabel>
+            <translation>Cartone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation>Cassa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Quantità ordinabile</label>
+        <name>Order_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Doc Number --></label>
+        <name>Pick_Doc_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Prodotto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Righe ordine di inventario</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data di consegna richiesta</label>
+        <name>Requested_Delivery_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sap Quantità Consegnata</label>
+        <name>SAP_Delivered_Qty_BMS_CA__c</name>
+    </fields>
+    <fields>
+        <label>Sap Stato Della Richiesta</label>
+        <name>SAP_Order_Status_BMS_Shared__c</name>
+    </fields>
+    <fields>
+        <label>Data Di Spedizione</label>
+        <name>Shipment_Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Numero Di Tracking</label>
+        <name>Tracking_Number_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- User_Source_Country_BMS_CORE --></label>
+        <name>User_Source_Country_BMS_CORE__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Inventory Order Line Number --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La data di consegna non può essere precedente alla data di creazione dell&apos;ordine</errorMessage>
+        <name>VEEVA_DELIVERY_DATE_CHECK</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La quantità dell&apos;ordine non può essere minore di 0</errorMessage>
+        <name>VEEVA_NEGATIVE_QUANTITY</name>
+    </validationRules>
+</CustomObjectTranslation>

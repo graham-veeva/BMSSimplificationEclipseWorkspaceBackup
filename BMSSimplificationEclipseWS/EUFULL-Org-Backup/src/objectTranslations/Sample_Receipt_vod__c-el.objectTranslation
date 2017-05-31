@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Παραλαβή δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Παραλαβές δειγμάτων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Παραλαβή δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Παραλαβές δειγμάτων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Παραλαβή δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Παραλαβές δειγμάτων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Παραλαβή δείγματος</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Παραλαβές δειγμάτων</value>
+    </caseValues>
+    <fields>
+        <label>Κατάσταση κρύας αλυσίδας</label>
+        <name>Cold_Chain_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>In Range</masterLabel>
+            <translation>Σε εμβέλεια</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not In Range</masterLabel>
+            <translation>Εκτός εμβέλειας</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Σχόλια</label>
+        <name>Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Επιβεβαιωμένη ποσότητα</label>
+        <name>Confirmed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προσαρμοσμένο κείμενο</label>
+        <name>Custom_Text_vod__c</name>
+    </fields>
+    <fields>
+        <label>Όνομα αριθμού παρτίδας</label>
+        <name>Lot_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αριθμός παρτίδας</label>
+        <name>Lot_vod__c</name>
+        <relationshipLabel>Παραλαβές δειγμάτων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Ποσότητα</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason_BMS_SHARED__c</name>
+        <picklistValues>
+            <masterLabel>No discrepancy</masterLabel>
+            <translation><!-- No discrepancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over-ship</masterLabel>
+            <translation><!-- Over-ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short-ship</masterLabel>
+            <translation><!-- Short-ship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Void transaction</masterLabel>
+            <translation><!-- Void transaction --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Σχόλια παραλαβής</label>
+        <name>Receipt_Comments_vod__c</name>
+    </fields>
+    <fields>
+        <label>Παρελήφθη</label>
+        <name>Received_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωρ συναλλαγής αναφοράς παραγγελίας</label>
+        <name>Ref_Order_Transaction_Id_vod__c</name>
+        <relationshipLabel>Παραλαβές δείγματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Αναγνωριστικό συναλλαγής αναφοράς</label>
+        <name>Ref_Transaction_Id_vod__c</name>
+        <relationshipLabel>Παραλαβές δείγματος</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Δείγμα</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωριστική ταυτότητα αποστολής</label>
+        <name>Shipment_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αριθμός ετικέτας ειδοποίησης</label>
+        <name>Tag_Alert_Number_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία μεταφοράς</label>
+        <name>Transferred_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μεταφέρθηκε από όνομα</label>
+        <name>Transferred_From_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μεταφέρθηκε από</label>
+        <name>Transferred_From_vod__c</name>
+        <relationshipLabel>Λήψης δειγμάτων</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Receipt Id --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If the confirmed quantity does not equal the quantity, you must enter the receipt description. --></errorMessage>
+        <name>BMS_EMEA_Confirmed_Quantity_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Receipt comments must match one of the following values exactly: &quot;Short-Ship&quot;, &quot;Over-Ship&quot;, &quot;Void Transaction&quot;, &quot;Refused Delivery&quot; --></errorMessage>
+        <name>BMS_EMEA_Receipt_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the confirmed quantity does not equal the quantity, you must enter the receipt description. --></errorMessage>
+        <name>BMS_US_Confirmed_Quantity_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Receipt comments must match one of the following values exactly: &quot;Short-Ship&quot;, &quot;Over-Ship&quot;, &quot;Void Transaction&quot;, &quot;Refused Delivery&quot; --></errorMessage>
+        <name>BMS_US_Receipt_Comments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Σφάλμα: Επιβεβαιωμένη ποσότητα &gt;= 0</errorMessage>
+        <name>Confirmed_Quantity_Quantity_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

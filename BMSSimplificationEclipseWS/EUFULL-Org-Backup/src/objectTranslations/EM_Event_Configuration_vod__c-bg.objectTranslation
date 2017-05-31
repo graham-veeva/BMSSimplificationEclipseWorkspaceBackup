@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Конфигуриране на събитие</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Конфигурирания на събития</value>
+    </caseValues>
+    <fields>
+        <label>Крайна дата</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип на събитие</label>
+        <name>Event_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен ИД</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Начална дата</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Конфигуриране на събитие</label>
+        <name>Event_Configuration_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Крайната дата трябва да бъде след или еднаква с началната дата.</errorMessage>
+        <name>StartDateBeforeEndDate</name>
+    </validationRules>
+</CustomObjectTranslation>

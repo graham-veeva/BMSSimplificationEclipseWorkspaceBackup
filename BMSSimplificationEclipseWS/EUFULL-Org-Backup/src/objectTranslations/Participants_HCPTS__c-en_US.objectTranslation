@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Participants</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Participants</value>
+    </caseValues>
+    <fields>
+        <help><!-- Lookup to an Activity  - Only applies if you are creating a Participant record on an Activity. This field must be blank if you are creating a Participant record on a Need. This will should auto-populate on the UI if you are creating this from an Activity --></help>
+        <label><!-- Activity --></label>
+        <name>Activity_HCPTS__c</name>
+        <relationshipLabel><!-- Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Parent Need - Only applies if you are creating a Participant record on the Need. This field must be blank if you are creating a Participant record on an Activity. This field will auto-populate on the UI if creating from a Need/Budget detail page --></help>
+        <label><!-- Need --></label>
+        <name>Budget_HCPTS__c</name>
+        <relationshipLabel><!-- Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- # per Activity --></label>
+        <name>Max_per_Event_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participant Type --></label>
+        <name>Participant_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Audience- BMS Employee</masterLabel>
+            <translation><!-- Audience- BMS Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- HCP</masterLabel>
+            <translation><!-- Audience- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- JV Employee</masterLabel>
+            <translation><!-- Audience- JV Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- Nurse Practitioner</masterLabel>
+            <translation><!-- Audience- Nurse Practitioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- Pharmacist</masterLabel>
+            <translation><!-- Audience- Pharmacist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audience- Technicians</masterLabel>
+            <translation><!-- Audience- Technicians --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider(s)</masterLabel>
+            <translation><!-- Service Provider(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsored Attendees</masterLabel>
+            <translation><!-- Sponsored Attendees --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specialty 2 for Participants being defined --></help>
+        <label><!-- Specialty 2 --></label>
+        <name>Specialty_2_HCPTS__c</name>
+        <relationshipLabel><!-- Participants (Specialty 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specialty information for Participants to Invite --></help>
+        <label><!-- Specialty --></label>
+        <name>Specialty_HCPTS__c</name>
+        <relationshipLabel><!-- Participants --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Therapeutic area of Participants to invite --></help>
+        <label><!-- Therapeutic Area --></label>
+        <name>Therapeutic_Area_HCPTS__c</name>
+        <relationshipLabel><!-- Participants --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Budget and Guidance information is already Approved. You may not save/add Participants to Approved Budget/Need. --></errorMessage>
+        <name>CannotAddParticipantstoApprovedBudget</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Lekársky postreh</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Lekárske postrehy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Lekársky postreh</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Lekárske postrehy</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Lekárskeho postrehu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Lekárskych postrehov</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Lekárskemu postrehu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Lekárskym postrehom</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Lekárskym postrehom</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Lekárskymi postrehmi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Lekárskom postrehu</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Lekárskych postrehoch</value>
+    </caseValues>
+    <fields>
+        <label>Účet</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Lekárske postrehy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Klinická skúška</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Lekárske postrehy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Dátum</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Popis</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Referenčný identifikátor subjektu</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interakcia</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Lekárske postrehy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Zdravotnícka udalosť</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Lekárske postrehy</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Iný zdroj</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prekonať blokovanie</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Publikácia</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Lekárske postrehy</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stav</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Uložené</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Potvrdené</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Súhrn</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Odomknúť</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Názov lekárskeho postrehu</nameFieldLabel>
+    <recordTypes>
+        <label>Kľúčový lekársky postreh</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Na uloženie alebo odoslanie Kľúčového lekárskeho postrehu je nutný popis</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Na uloženie alebo odoslanie Kľúčového lekárskeho postrehu je nutný súhrn</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Potvrdiť</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

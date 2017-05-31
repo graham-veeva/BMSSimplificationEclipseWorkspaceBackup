@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TERR_NAME</field>
+    </columns>
+    <columns>
+        <field>TERR_DESC</field>
+    </columns>
+    <description>Report to display the Territories associated with a given sales force.  This report is filtered to only include IMM Sales territories.</description>
+    <filter>
+        <criteriaItems>
+            <column>Territory.Sales_Force_Name_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>BMSOI ORENCIA,ORENCIA DISTRICTS</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Territory.Sales_Force_Name_BMS_CORE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - PTU - Territory Summary/IMM Sales</name>
+    <params>
+        <name>user</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Territory</reportType>
+    <showDetails>true</showDetails>
+</Report>

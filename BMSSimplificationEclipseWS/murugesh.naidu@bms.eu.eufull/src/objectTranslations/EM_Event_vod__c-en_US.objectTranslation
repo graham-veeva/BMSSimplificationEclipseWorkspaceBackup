@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>EM Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>EM Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Event Format --></label>
+        <name>Activity_Format_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>In Person</masterLabel>
+            <translation><!-- In Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual</masterLabel>
+            <translation><!-- Virtual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual/In-Person</masterLabel>
+            <translation><!-- Virtual/In-Person --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event ID --></label>
+        <name>Activity_ID_2_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>Activity_Status_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>Activity_Type_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Event - for eg - Speaker Meeting, Advisory Board etc --></help>
+        <label><!-- Event Type --></label>
+        <name>Activity_Type_Simple_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board</masterLabel>
+            <translation><!-- Advisory Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibits Booths &amp; Displays</masterLabel>
+            <translation><!-- Exhibits Booths &amp; Displays --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Preceptorship</masterLabel>
+            <translation><!-- HCP Preceptorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Sponsorship</masterLabel>
+            <translation><!-- HCP Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Consulting</masterLabel>
+            <translation><!-- Other Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Provider Training</masterLabel>
+            <translation><!-- Service Provider Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker Meeting</masterLabel>
+            <translation><!-- Speaker Meeting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Choose yes or no depending on whether this activity is Before, during or after an International Congress? --></help>
+        <label><!-- Before, during or after Int&apos;l Congress? --></label>
+        <name>Before_during_or_after_a_Congress__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue city to be fed from Integration --></help>
+        <label><!-- Confirmed Venue City --></label>
+        <name>City_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue country to be fed from Integration --></help>
+        <label><!-- Confirmed Venue Country --></label>
+        <name>Country_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- CyberGrants ID --></label>
+        <name>Cybergrant_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue Address Line 1 to be fed from Integration --></help>
+        <label><!-- Confirmed Venue Address --></label>
+        <name>Location_Address_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue Address Line 2 to be fed from Integration --></help>
+        <label><!-- Confirmed Venue Address Line 2 --></label>
+        <name>Location_Address_Line_2_Confirmed_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue name fed from Integration --></help>
+        <label><!-- Confirmed Venue --></label>
+        <name>Location_vod_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Venue --></label>
+        <name>Location_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Event --></label>
+        <name>Parent_Event_vod__c</name>
+        <relationshipLabel><!-- EM Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Product/TA --></label>
+        <name>Secondary_Product_TA_Simplified__c</name>
+        <relationshipLabel><!-- EM Events (Secondary Product/TA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Send Event Details Report Email --></label>
+        <name>Send_Activity_Details_Report_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logistics ID --></label>
+        <name>Starcite_ID_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Request Estimates&quot; to send event data and gather initial estimates from the logistics provider. --></help>
+        <label><!-- Logistics Request Status --></label>
+        <name>Starcite_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>Meeting Registration Complete</masterLabel>
+            <translation><!-- Meeting Registration Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Registration Pending</masterLabel>
+            <translation><!-- Meeting Registration Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Registration Updated</masterLabel>
+            <translation><!-- Meeting Registration Updated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Estimates</masterLabel>
+            <translation><!-- Request Estimates --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Confirmed Venue State fed from Integration --></help>
+        <label><!-- Confirmed Venue State / Province --></label>
+        <name>State_Province_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved_vod</masterLabel>
+            <translation>Approved</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled_vod</masterLabel>
+            <translation>Canceled</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed_vod</masterLabel>
+            <translation>Archived</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Business Approval</masterLabel>
+            <translation><!-- In Business Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Closeout</masterLabel>
+            <translation><!-- In Closeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Draft</masterLabel>
+            <translation><!-- In Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Execution</masterLabel>
+            <translation><!-- In Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Planning</masterLabel>
+            <translation><!-- In Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Post-Execution</masterLabel>
+            <translation><!-- In Post-Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Service Coordinator Review</masterLabel>
+            <translation><!-- In Service Coordinator Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_Approval_vod</masterLabel>
+            <translation>Pending Approval</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event</masterLabel>
+            <translation><!-- Post-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event-PostApproval</masterLabel>
+            <translation>Post-Event</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Event</masterLabel>
+            <translation><!-- Pre-Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected_vod</masterLabel>
+            <translation>Rejected</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specify the travel and accommodation details for each of the participants if available. Identify the air and rail requirements. Identify the accommodation for the participants if available. --></help>
+        <label><!-- Travel and Accommodations --></label>
+        <name>Travel_Accomodations_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Behind the scenes field to indicate that this activity was approved at some point --></help>
+        <label><!-- WasApproved --></label>
+        <name>WasApproved_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Layout --></label>
+        <name>zvod_Event_Layout_vod__c</name>
+    </fields>
+    <layouts>
+        <layout>BMS_Simple_ApprovedPostEvent</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_Pending_Approval</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_PrePostEvent</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_Read_Only</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_Read_Only_Restricted</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BMS_Simple_SysAdmin</layout>
+        <sections>
+            <label><!-- Additional Details --></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics Support --></label>
+            <section>Logistics Support</section>
+        </sections>
+        <sections>
+            <label><!-- Venue Information --></label>
+            <section>Venue Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Simple Activity --></label>
+        <name>Simple_Activity_HCPTS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Approve_vod --></label>
+        <name>Approve_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Attendee_Reconciliation_vod --></label>
+        <name>Attendee_Reconciliation_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Cancel Event</label>
+        <name>Cancel_Event_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_vod --></label>
+        <name>Close_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Closeout_BMS --></label>
+        <name>Closeout_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Execute_BMS --></label>
+        <name>Execute_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Invitations_vod --></label>
+        <name>Generate_Invitations_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Sign_In_vod --></label>
+        <name>Generate_Sign_In_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- In_Planning_BMS --></label>
+        <name>In_Planning_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Manage_Attendees_vod --></label>
+        <name>Manage_Attendees_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Meeting_Attendees --></label>
+        <name>Meeting_Attendees</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PostEvent --></label>
+        <name>PostEvent</name>
+    </webLinks>
+    <webLinks>
+        <label>Move to Post Event</label>
+        <name>PostEventPostApproval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Post_Execution_BMS --></label>
+        <name>Post_Execution_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reapprove_BMS --></label>
+        <name>Reapprove_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recall_Approval_Request_vod --></label>
+        <name>Recall_Approval_Request_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recall_BMS --></label>
+        <name>Recall_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Record_a_Call_vod --></label>
+        <name>Record_a_Call_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject_vod --></label>
+        <name>Reject_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Replan_BMS --></label>
+        <name>Replan_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reschedule_vod --></label>
+        <name>Reschedule_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email_vod --></label>
+        <name>Send_Email_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_Approval_vod --></label>
+        <name>Submit_for_Approval_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_SFDC_Approval_BMS --></label>
+        <name>Submit_for_SFDC_Approval_BMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unlock_PostApproval --></label>
+        <name>Unlock_PostApproval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unlock_vod --></label>
+        <name>Unlock_vod</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Signatures_vod --></label>
+        <name>View_Signatures_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

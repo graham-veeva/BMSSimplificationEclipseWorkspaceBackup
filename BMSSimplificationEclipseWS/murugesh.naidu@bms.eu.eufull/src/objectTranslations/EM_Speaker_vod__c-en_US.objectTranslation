@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Provider</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Providers</value>
+    </caseValues>
+    <fields>
+        <help><!-- If Customer reference exists, value is either HCP for Individual Customers or HCO for Org Customers --></help>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type_Simple_Formula_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hourly
+Daily
+Fixed --></help>
+        <label><!-- Rate Type --></label>
+        <name>Rate_Type_HCPTS__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Eligible_vod</masterLabel>
+            <translation>Eligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired_vod</masterLabel>
+            <translation>Ineligible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nominated_vod</masterLabel>
+            <translation>Nominated</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of times a speaker has spoken this year to date. --></help>
+        <label><!-- Year to Date Utilization --></label>
+        <name>Year_to_Date_Utilization_vod__c</name>
+    </fields>
+    <layouts>
+        <layout>BMS Simplified Speaker Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Tiering Information --></label>
+            <section>Tiering Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Service Provider --></label>
+        <name>Service_Provider_Simple_HCPTS</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Speaker</label>
+        <name>Speaker_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

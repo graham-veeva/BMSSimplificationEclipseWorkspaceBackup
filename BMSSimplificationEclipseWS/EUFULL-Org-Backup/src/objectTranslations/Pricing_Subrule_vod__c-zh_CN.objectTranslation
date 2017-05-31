@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>定价子规则</value>
+    </caseValues>
+    <fields>
+        <label>比较类型</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>价目表价值</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>数量</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>SKU 数目</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>最大数量</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>最小数量</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>定价规则</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>定价子规则</relationshipLabel>
+    </fields>
+    <fields>
+        <label>产品</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>定价子规则</relationshipLabel>
+    </fields>
+    <nameFieldLabel>名称</nameFieldLabel>
+    <validationRules>
+        <errorMessage>配套项目无法作为比较产品得到支持</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>最大数量必须大于等于最小数量。</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SKU 数目必须大于 0</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

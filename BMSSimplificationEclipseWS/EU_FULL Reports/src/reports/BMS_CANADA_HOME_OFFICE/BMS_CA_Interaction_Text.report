@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Call2_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r.Call2_Discussion_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Detailed_Products_vod__c</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r.Call2_Discussion_vod__r$Comments__c</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Pre_Call_Notes_vod__c</field>
+    </columns>
+    <columns>
+        <field>Account.Call2_vod__r$Next_Call_Notes_vod__c</field>
+    </columns>
+    <description>Texte d&apos;Interaction : Interaction Text</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Call2_vod__r$RecordType</column>
+            <operator>equals</operator>
+            <value>Call2_vod__c.BMS_CAN_KAM_DNS_Interaction,Call2_vod__c.BMS_CAN_SA_Interaction,Call2_vod__c.BMS_CAN_Sales_Rep_Interaction</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Call2_vod__r$Status_vod__c</column>
+            <operator>equals</operator>
+            <value>Submitted_vod,Submitted</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Interaction Text / Texte d&apos;Interaction</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Interactions_and_Discussion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

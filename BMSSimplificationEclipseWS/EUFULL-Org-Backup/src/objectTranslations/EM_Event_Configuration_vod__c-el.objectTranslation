@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ρύθμιση εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ρυθμίσεις εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ρύθμιση εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ρυθμίσεις εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ρύθμιση εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ρυθμίσεις εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Ρύθμιση εκδήλωσης </value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Ρυθμίσεις εκδήλωσης </value>
+    </caseValues>
+    <fields>
+        <label>Ημερομηνία λήξης</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τύπος εκδήλωσης</label>
+        <name>Event_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Εξωτερική αναγνωριστική ταυτότητα</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία έναρξης</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Όνομα</nameFieldLabel>
+    <recordTypes>
+        <label>Ρύθμιση Εκδήλωσης</label>
+        <name>Event_Configuration_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Η ημερομηνία λήξης πρέπει να είναι ίση ή μεγαλύτερη από την ημερομηνία έναρξης.</errorMessage>
+        <name>StartDateBeforeEndDate</name>
+    </validationRules>
+</CustomObjectTranslation>

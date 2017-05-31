@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Конфигурация за обект VMobile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Конфигурации за обекти VMobile</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Lookup Field --></label>
+        <name>Account_Lookup_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Object Name --></label>
+        <name>Child_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Relationship --></label>
+        <name>Child_Relationship_vod__c</name>
+    </fields>
+    <fields>
+        <label>Устройство</label>
+        <name>Device_vod__c</name>
+        <picklistValues>
+            <masterLabel>Tablet_vod</masterLabel>
+            <translation><!-- Tablet_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinModern_vod</masterLabel>
+            <translation><!-- WinModern_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>iPad_vod</masterLabel>
+            <translation><!-- iPad_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enable to force a refresh on objects which use a Private sharing model or have an updated Where clause. May cause an in increase sync times. --></help>
+        <label><!-- Enable Enhanced Sync --></label>
+        <name>Enable_Enhanced_Sync_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclude Field List --></label>
+        <name>Exclude_Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limits the columns sent to the client device to the comma separated list of fields.  This should be used with care and a large amount of testing. --></help>
+        <label><!-- Limit Fields To List --></label>
+        <name>Field_List_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include attachment information when synchronizing object. --></help>
+        <label><!-- Include Attachments --></label>
+        <name>Include_Attachments_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Related Objects --></label>
+        <name>Include_Related_Objects_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meta Data Only --></label>
+        <name>Meta_Data_Only_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object Name --></label>
+        <name>Parent_Object_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile --></label>
+        <name>Profile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Name --></label>
+        <name>Profile_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Field --></label>
+        <name>Relationship_Field_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Name --></label>
+        <name>Relationship_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T</masterLabel>
+            <translation><!-- T --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Where Clause --></label>
+        <name>Where_Clause_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- VMobile Object Configuration Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- TABLET --></label>
+        <name>TABLET</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Трябва да е посочено името на обекта.</errorMessage>
+        <name>Object_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Името на родителския обект и името на отношението трябва да са посочени във VMOC, който се отнася до обекта от най-високо ниво</errorMessage>
+        <name>Parent_Object_Name_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

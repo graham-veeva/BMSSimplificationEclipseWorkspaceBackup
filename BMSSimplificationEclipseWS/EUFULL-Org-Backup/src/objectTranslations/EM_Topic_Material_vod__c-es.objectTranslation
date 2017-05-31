@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Material de tema</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Materiales de tema</value>
+    </caseValues>
+    <fields>
+        <label>Presentación CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Materiales de tema</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Plantilla de correo electrónico</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Materiales de tema</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de material</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Temas que utilizan el material</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Tema</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Materiales de tema (Tema)</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <recordTypes>
+        <label>Material de tema</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Una única regla no puede tener consignados tanto Plantilla de correo electrónico como Presentación de CLM. Cree reglas separadas para estos dos elementos.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un único material de tema no puede tener consignados tanto Material como Presentación de CLM. Cree reglas separadas para estos dos elementos.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un único material de tema no puede tener consignados tanto Material como Plantilla de correo electrónico. Cree reglas separadas para estos dos elementos.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

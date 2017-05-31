@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Atribuirea cheltuielii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Atribuire cheltuială</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Atribuirile cheltuielii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Atribuiri cheltuială</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Atribuirii cheltuielii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Atribuirii cheltuielii</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Atribuirilor cheltuielii</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Atribuirilor cheltuielii</value>
+    </caseValues>
+    <fields>
+        <label>Real</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Linie cheltuială</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tip de cheltuială</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată (cont)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată (participant)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată (vorbitor)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată (membru al echipei)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tip de cheltuială suportată</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Cont</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Participant</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Vorbitor eveniment</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Membru echipă eveniment</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Vânzător</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Loc</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată (vânzător)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată (loc)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Atribuiri cheltuială</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Cheltuială suportată</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data plăţii</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nume</nameFieldLabel>
+    <recordTypes>
+        <label>Atribuire cheltuială eveniment</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

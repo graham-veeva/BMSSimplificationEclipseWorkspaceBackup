@@ -1,0 +1,5172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Number_HCPTS__c</fullName>
+        <description>Account Number</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Act_Type_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Activity_Source_2__r.Activity_Type_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Product_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Activity_Source_2__r.Activity_Product_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Source_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Event Speaker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only associated Speaker Activities will return in the search results.</inlineHelpText>
+        <label>Source Activity</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Speaker is not associated to this Activity</errorMessage>
+            <filterItems>
+                <field>$Source.Speaker_HCPTS__c</field>
+                <operation>equals</operation>
+                <valueField>EM_Event_Speaker_vod__c.Speaker_vod__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>EM_Event_Speaker_vod__c</referenceTo>
+        <relationshipLabel>Information Collection Forms</relationshipLabel>
+        <relationshipName>Information_Collection_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1_HCPTS__c</fullName>
+        <description>Address Line 1</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_2_HCPTS__c</fullName>
+        <description>Address Line 2</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alt_Email_HCPTS__c</fullName>
+        <description>Alternative Contact Information (Name and information)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Additional Email</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alt_Full_Name_HCPTS__c</fullName>
+        <description>Additional Contact Information</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Additional Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alt_Phone_Number_HCPTS__c</fullName>
+        <description>Alternative Contact Information (Name and information)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Additional Phone Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alternate_Contact_Info_HCPTS__c</fullName>
+        <description>Alternate Contact Information for HCO/HCP</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Alternate Contact Info</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BP_ID_BMS_CORE_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Master ID</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Address_HCPTS__c</fullName>
+        <description>Bank Address</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank Address</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bank_Branch_Number_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank Branch Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_City_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Country_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_District_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank District</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Name_HCPTS__c</fullName>
+        <description>Bank Name</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Number_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Postal_Code_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank Postal Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_State_Province_HCPTS__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Bank State/Province</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Binary_Signature_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Binary Signature</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Board_Certified_Specialty_HCPTS__c</fullName>
+        <description>Indicates if HCP has a Board Certified Specialty</description>
+        <externalId>false</externalId>
+        <label>Board Certified Specialty?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Checkbox_HCP_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check if a Medical Professional or not</description>
+        <externalId>false</externalId>
+        <label>Service Provider is not HCP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>City_HCPTS__c</fullName>
+        <description>City</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_for_VMT_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comments for VMT</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Conflict_of_Interest_HCPTS__c</fullName>
+        <description>Indicates if HCO/HCP has a conflict of interest based on answers from IFC document</description>
+        <externalId>false</externalId>
+        <label>Conflict of Interest</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Consent_to_Disclosure_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Yes/No: I consent to the disclosure in an individual mode.</description>
+        <externalId>false</externalId>
+        <label>Consent to Disclosure?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Address_same_as_Contact_HCPTS__c</fullName>
+        <description>Contract Address Same as Contact Address Address?</description>
+        <externalId>false</externalId>
+        <label>Contract Address same as Contact?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contract_City_HCPTS__c</fullName>
+        <description>Contract Party Address - City</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Country_HCPTS__c</fullName>
+        <description>Contract Party Address Country</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Country Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Address_Line_1_HCPTS__c</fullName>
+        <description>Contract Party Address Line 1</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Address Line 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Address_Line_2_HCPTS__c</fullName>
+        <description>Contract Party Address Line 2</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Different_than_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>zContract Party is Entity</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_District_HCPTS__c</fullName>
+        <description>Contract Party District (Address)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party District</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Tax_ID_2_HCPTS__c</fullName>
+        <description>Contract Party Tax ID 2. In Brazil, If Entity = Inscricao Estadual; If HCP = RG</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Tax ID 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Tax_ID_3_HCPTS__c</fullName>
+        <description>Contract Party Tax ID 3. In BR, if Entity = Inscricao Municipall; If HCP = INSS/PIS</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Tax ID 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Text_HCPTS__c</fullName>
+        <description>Text Field to Update Contract Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Type_HCPTS__c</fullName>
+        <description>Field to indicate if the Contract Party is an Individual or Entity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to indicate if the Contract Party is an Individual or Entity</inlineHelpText>
+        <label>Contract Party Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_VAT_ID_HCPTS__c</fullName>
+        <description>Contract Party VAT ID mapped to Ind. Tax Identification Number and Tax Identification Number</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party VAT ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_is_HCP_HCPTS__c</fullName>
+        <description>Field to determine if tax fields are relevant to Individual or Entity tax IDs</description>
+        <externalId>false</externalId>
+        <label>Contract Party is HCP?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Postal_Code_HCPTS__c</fullName>
+        <description>Contract Party Address Postal Code</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Postal Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_State_HCPTS__c</fullName>
+        <description>Contract Party Address State or Province</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Tax_ID_HCPTS__c</fullName>
+        <description>Federal Tax ID of Contracting Party</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party Tax ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracting_Party_HCPTS__c</fullName>
+        <description>Contracting Party</description>
+        <externalId>false</externalId>
+        <label>Contracting Party Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Country_Formula_HCPTS__c</fullName>
+        <description>Formula field to populate ICF Country from the Speaker&apos;s Country record</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Speaker_HCPTS__r.Country_Lookup_HCPTS__r.Alpha_2_Code_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Provider Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_HCPTS__c</fullName>
+        <description>Country</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zCountry</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the Country_vod lookup for the Contract Party - this value will get populated manually or via matchup between the Alpha code value of the Country and the hidden field called Contract_Country_HCPTS. This is a BMS Custom field and NOT a Veeva VOD field. But we had to name the API name as _vod since EM_Vendor_vod has a COuntry_vod field and Process Contract Party will copy over matching field names from ICF to EM_Vendor_vod</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to the Country_vod lookup for the Contract Party - this value will get populated manually or via matchup between the Alpha code value of the Country and the hidden field called Contract_Country_HCPTS</inlineHelpText>
+        <label>Contract Party Country</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipLabel>Information Collection Forms</relationshipLabel>
+        <relationshipName>Information_Collection_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Create_Vendor_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If true, create Vendor Record</description>
+        <externalId>false</externalId>
+        <label>Process Contract Party</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credentials_vod_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Professional Designation</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BMR-Billing Manager (Staff)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Currency_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Currency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Decline_FFS_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if Fee-For-Service was declined</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check the box to decline Fee-For-Service Payments.</inlineHelpText>
+        <label>Decline FFS</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Decline_FSS_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if Fee-For-Service was declined</description>
+        <externalId>false</externalId>
+        <label>Decline FFS</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Decline_OOP_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if Out-Of-Pocket expenses was declined</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check the box to decline reimbursement for Out-of-Pocket expenses.</inlineHelpText>
+        <label>Decline OOP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>District_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>District</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Echosign_Document_Link_HCPTS__c</fullName>
+        <description>Link to ES Signed Document</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to ES Signed Document</inlineHelpText>
+        <label>Echosign Document Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Email_Address_for_e_signature_HCPTS__c</fullName>
+        <description>Email Address (for e-signature)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email Address (for e-signature)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Formula_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Speaker_HCPTS__r.Email_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_HCPTS__c</fullName>
+        <description>Email of Consultant or HCO</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employer_Consent_Required_Formula_HCPTS__c</fullName>
+        <description>Yes if  Employment status question is &apos;Hospital&apos; or  &apos;Hospital &amp; Self-Employed&apos;, No if &apos;Self-Employed&apos;, Blank if Employment status question is Unanswered</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(
+     OR( ISPICKVAL(Employment_Status_HCPTS__c, &apos;Hospital&apos;),
+         ISPICKVAL(Employment_Status_HCPTS__c, &apos;Hospital &amp; Self-Employed&apos;)
+       ) ,
+    &apos;Yes&apos;, 
+    IF(ISBLANK(TEXT(Employment_Status_HCPTS__c)), &apos;&apos;, &apos;No&apos;)
+)</formula>
+        <inlineHelpText>Yes if  Employment status question is &apos;Hospital&apos; or  &apos;Hospital &amp; Self-Employed&apos;, No if &apos;Self-Employed&apos;, Blank if Employment status question is Unanswered</inlineHelpText>
+        <label>Employer Consent Required (Formula)?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employment_Status_HCPTS__c</fullName>
+        <description>Specify Employment status for the Service Provider</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Employment status for the Service Provider</inlineHelpText>
+        <label>Employment Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospital &amp; Self-Employed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Entity_Contract_Party_Tax_ID_HCPTS__c</fullName>
+        <description>Tax ID when Contract Party is entity</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zEntity Tax ID (CIF)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Contract_Party_VAT_ID_HCPTS__c</fullName>
+        <description>Vat ID when Contract Party is Entity</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Entity VAT ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Name_2_HCPTS__c</fullName>
+        <description>Entity/HCO Name 2</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Entity Name 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Name_HCPTS__c</fullName>
+        <description>Name of Entity for Contracting Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Entity Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Tax_ID_HCPTS__c</fullName>
+        <description>Tax identification Number</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zEntity Tax ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expired_Formula_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <formula>ICF_End_Date_HCPTS__c &lt; TODAY()</formula>
+        <label>Expired?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expired_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to indicate if ICF is Expired</description>
+        <externalId>false</externalId>
+        <label>Expired</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fax_HCPTS__c</fullName>
+        <description>Fax</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finder_Num_BMS_CA_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Finder Num</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Name_HCPTS__c</fullName>
+        <description>First Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Graduation_Year_BMS_CA_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Graduation Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Header_Profile_Information_HCPTS__c</fullName>
+        <description>Profile Information</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Header - Profile Information</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IBAN_Number_HCPTS__c</fullName>
+        <description>IBAN Number</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>IBAN #</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ICF_End_Date_HCPTS__c</fullName>
+        <description>Date of ICF Expiration Calculated for 2 years after the Signature Date. Formula to acknowlege leap year.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(
+  AND(
+    MONTH( Signature_Date_HCPTS__c ) = 2,
+    DAY( Signature_Date_HCPTS__c ) = 29,
+    NOT( 
+      OR( 
+        MOD( YEAR( Signature_Date_HCPTS__c ), 400 ) = 0, 
+        AND( 
+          MOD( YEAR( Signature_Date_HCPTS__c ), 4 ) = 0,
+          MOD( YEAR( Signature_Date_HCPTS__c ), 100 ) != 0
+        )
+      )
+    ) 
+  ),
+  DATE( YEAR( Signature_Date_HCPTS__c ) + 2, 3, 1),
+  DATE( YEAR( Signature_Date_HCPTS__c ) + 2, MONTH( Signature_Date_HCPTS__c ), 
+  DAY( Signature_Date_HCPTS__c ) )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ICF Expiry Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ICF_ID_HCPTS__c</fullName>
+        <description>ICF ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>SPKR_Formula_HCPTS__c &amp;&quot;-&quot; &amp; &quot;ICF&quot; &amp;&quot;-&quot; &amp; Country_Formula_HCPTS__c &amp;&quot;-&quot;  &amp;TEXT(ICF_Type_HCPTS__c) &amp;&quot;-&quot; &amp; TEXT(Signature_Date_HCPTS__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ICF ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ICF_System_ID_HCPTS__c</fullName>
+        <displayFormat>ICF-{0}</displayFormat>
+        <externalId>true</externalId>
+        <label>ICF System ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ICF_System_ID__c</fullName>
+        <description>ICF System ID</description>
+        <displayFormat>ICF-{0}</displayFormat>
+        <externalId>true</externalId>
+        <label>ICF System ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ICF_Type_HCPTS__c</fullName>
+        <description>ICF Type</description>
+        <externalId>false</externalId>
+        <label>ICF Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HCP/Non-HCP Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ICF_to_Speaker_Mapping__c</fullName>
+        <defaultValue>&apos;Address_Line_1_HCPTS__c:Address_Line_1_HCTPS__c;Address_Line_2_HCPTS__c:Address_Line_2_HCPTS__c;District_HCPTS__c:District_HCPTS__c;City_HCPTS__c:City_HCPTS__c;State_HCPTS__c:State_Province_HCPTS__c;Postal_Code_HCPTS__c:Zip_Code_HCPTS__c;Phone_Number_HCPTS__c:Phone_HCPTS__c;Email_HCPTS__c:Email_HCPTS__c;First_Name_HCPTS__c:First_Name_vod__c;Last_Name_HCPTS__c:Last_Name_vod__c;Middle_Name_HCPTS__c:Middle_vod_HCPTS__c;Mobile_HCPTS__c:Mobile_HCPTS__c;Fax_HCPTS__c:Fax_HCPTS__c;Graduation_Year_BMS_CA_HCPTS__c:Graduation_Year_BMS_CA_HCPTS__c;License_State_BMS_HCPTS__c:License_State_BMS_HCPTS__c;Specialty_HCPTS__c:Specialty_1_vod_HCPTS__c;Employer_Consent_Required_Formula_HCPTS__c:Employer_Consent_Required_HCPTS__c;Title_HCPTS__c:Title_HCPTS__c;Alternate_Contact_Info_HCPTS__c:Alternate_Contact_Info_HCPTS__c&apos;</defaultValue>
+        <description>Mapping of fields to copy from the ICF back to the Speaker when the ICF is signed manually</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ICF to Speaker Mapping</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>INSS_PIS_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zINSS/PIS</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Incoterm_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter CIF or other. Please explain if other.</inlineHelpText>
+        <label>Incoterm</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Individual_VAT_ID_HCPTS__c</fullName>
+        <description>VAT ID when HCP is Contract Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Individual VAT ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inscriao_Estadual_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zInscriao Estadual</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inscriao_Municipal_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zInscriao Municipal</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Name_2_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Name 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Name_HCPTS__c</fullName>
+        <description>Last Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_State_BMS_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>License State</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Middle_Name_HCPTS__c</fullName>
+        <description>Middle Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Middle Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_HCPTS__c</fullName>
+        <description>Mobile</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Mobile</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name_of_Legal_Entity_HCPTS__c</fullName>
+        <description>Name of Legal Entity</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>HCO Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PST_BMS_CA_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>PST</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payee_CM_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Contract Party CM ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payee_Vendor_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Vendor ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Currency_HCPTS__c</fullName>
+        <description>Currency in which Contract Party should be paid</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currency in which Contract Party should be paid</inlineHelpText>
+        <label>Payment Currency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Number_HCPTS__c</fullName>
+        <description>Phone Number</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_HCPTS__c</fullName>
+        <description>Postal Code</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Postal Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Language_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Text(Speaker_HCPTS__r.Language_HCPTS__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Preferred Language</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Preferred_Name_vod_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Preferred Name</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Parent_vod_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Primary Parent</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professional_Degree_HCPTS__c</fullName>
+        <description>Professional Degree</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Professional Degree</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professional_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Professional ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professional_Title_HCPTS__c</fullName>
+        <description>HCP Professional Title (Head of Oncology, Associate Professor, etc...)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP Professional Title (Head of Oncology, Associate Professor, etc...)</inlineHelpText>
+        <label>Professional Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RG_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zRG</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Routing_Number_HCPTS__c</fullName>
+        <description>Routing or Transit Routing Number</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Routing Number/Transit Routing Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SPKR_Formula_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Speaker_HCPTS__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Provider</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Provider_HCPTS__c</fullName>
+        <description>Indicates who is the service provider</description>
+        <externalId>false</externalId>
+        <label>Service Provider</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Signature_Date_HCPTS__c</fullName>
+        <description>ICF Signature Date</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signature Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Signature_Date_Time_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signature Date/Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Signature_HCPTS__c</fullName>
+        <description>Signature</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Please sign your name if you manually filled out and signed this ICF</inlineHelpText>
+        <label>Manual Signature</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_2_Email_HCPTS__c</fullName>
+        <description>Signer 2 Email</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer 2 Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_2_Name_HCPTS__c</fullName>
+        <description>Signer 2 Name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer 2 Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_2_Phone_HCPTS__c</fullName>
+        <description>Signer 2 Phone</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer 2 Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_2_Title_HCPTS__c</fullName>
+        <description>Signer 2 Title</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer 2 Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_Email_HCPTS__c</fullName>
+        <description>Authorized Signer&apos;s Email for Contracting Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Primary Signatory</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_Name_HCPTS__c</fullName>
+        <description>Authorized Signer&apos;s Name for Contracting Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer&apos;s Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_Phone_HCPTS__c</fullName>
+        <description>Authorized Signer&apos;s Phone for Contracting Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer&apos;s Phone</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signer_Title_HCPTS__c</fullName>
+        <description>Authorized Signer&apos;s Title for Contracting Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Signer&apos;s Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sort_Code_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sort Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_Activity_Formula_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Activity_Source_2__r.Activity_Name_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source Activity Formula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Speaker_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Provider</label>
+        <referenceTo>EM_Speaker_vod__c</referenceTo>
+        <relationshipLabel>Information Collection Forms</relationshipLabel>
+        <relationshipName>Information_Collection_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_is_Contract_Party_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Service Provider is Contract Party?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_to_ICF_Mapping__c</fullName>
+        <defaultValue>&apos;Address_Line_1_HCTPS__c:Address_Line_1_HCPTS__c;Address_Line_1_HCTPS__c:Contract_Party_Address_Line_1_HCPTS__c;Address_Line_2_HCPTS__c:Address_Line_2_HCPTS__c;Address_Line_2_HCPTS__c:Contract_Party_Address_Line_2_HCPTS__c;District_HCPTS__c:District_HCPTS__c;District_HCPTS__c:Contract_Party_District_HCPTS__c;City_HCPTS__c:City_HCPTS__c;City_HCPTS__c:Contract_City_HCPTS__c;State_Province_HCPTS__c:State_HCPTS__c;State_Province_HCPTS__c:Contract_State_HCPTS__c;Zip_Code_HCPTS__c:Postal_Code_HCPTS__c;Zip_Code_HCPTS__c:Contract_Postal_Code_HCPTS__c;Phone_HCPTS__c:Phone_Number_HCPTS__c;Email_HCPTS__c:Email_HCPTS__c;First_Name_vod__c:First_Name_HCPTS__c;Last_Name_vod__c:Last_Name_HCPTS__c;Middle_vod_HCPTS__c:Middle_Name_HCPTS__c;Mobile_HCPTS__c:Mobile_HCPTS__c;Fax_HCPTS__c:Fax_HCPTS__c;Graduation_Year_BMS_CA_HCPTS__c:Graduation_Year_BMS_CA_HCPTS__c;License_State_BMS_HCPTS__c:License_State_BMS_HCPTS__c;Specialty_1_vod_HCPTS__c:Specialty_HCPTS__c;Name:Contract_Party_Text_HCPTS__c;Country_Lookup_HCPTS__c:Country_vod__c;Name:Entity_Name_HCPTS__c;Title_HCPTS__c:Title_HCPTS__c;Alternate_Contact_Info_HCPTS__c:Alternate_Contact_Info_HCPTS__c&apos;</defaultValue>
+        <description>These fields are mapped from the Speaker to ICF on ICF creation</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Speaker to ICF Mapping</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Specialty_HCPTS__c</fullName>
+        <description>Board Certified Specialty</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Specialty</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_HCPTS__c</fullName>
+        <description>State</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statement_Contact_HCPTS__c</fullName>
+        <description>Statement Contact for ICF auto-generated</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Statement Contact</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statement_Refusal_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Statement Refusal</description>
+        <externalId>false</externalId>
+        <label>Statement Refusal</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status_HCPTS__c</fullName>
+        <description>Status of ICF</description>
+        <externalId>false</externalId>
+        <label>ICF Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Signed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting for Counter-Signature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting for Counter-Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled / Declined</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Created</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Specialty_HCPTS__c</fullName>
+        <description>Board Certified Sub-Specialty</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Sub-Specialty</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Swift_Code_HCPTS__c</fullName>
+        <description>Swift /BIC Code</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Swift /BIC Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tax_Address_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to indicate if tax address is same as contact info address. If True, address information should match.</description>
+        <externalId>false</externalId>
+        <label>Tax Address Same As Contact Address</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tax_ID_National_ID_HCPTS__c</fullName>
+        <description>Tax ID when HCP is Contract Party</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zIndividual Tax ID (DNI)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Template_ID_HCPTS__c</fullName>
+        <description>Template ID for ICF Echosign Form</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+Speaker_HCPTS__r.Country_HCPTS__c = &apos;Spain&apos;,
+Preferred_Language_HCPTS__c = &apos;Spanish&apos;,
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;HCP/Non-HCP Services&apos;)),
+&quot;a4xZ00000004MrlIAE&quot;,
+IF(
+AND(
+Speaker_HCPTS__r.Country_HCPTS__c = &apos;Spain&apos;,
+Preferred_Language_HCPTS__c = &apos;Spanish&apos;,
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;HCO Services&apos;)),
+&quot;a4xZ00000004MrnIAE&quot;,
+IF(
+AND(
+Speaker_HCPTS__r.Country_HCPTS__c = &apos;Spain&apos;,
+Preferred_Language_HCPTS__c = &apos;Spanish&apos;,
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;Sponsorship&apos;)),
+&quot;a4xZ00000004MrrIAE&quot;,
+IF(
+AND(
+Speaker_HCPTS__r.Country_HCPTS__c = &apos;UK&apos;,
+Preferred_Language_HCPTS__c = &apos;English&apos;,
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;HCP/Non-HCP Services&apos;)),
+&quot;&quot;,
+IF(
+AND(
+Speaker_HCPTS__r.Country_HCPTS__c = &apos;UK&apos;,
+Preferred_Language_HCPTS__c = &apos;English&apos;,
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;HCO Services&apos;)),
+&quot;&quot;,
+IF(
+AND(
+Speaker_HCPTS__r.Country_HCPTS__c = &apos;UK&apos;,
+Preferred_Language_HCPTS__c = &apos;English&apos;,
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;Sponsorship&apos;)),
+&quot;a4xZ00000004MroIAE&quot;,&quot;&quot;
+     )
+    )
+   )  
+  )
+ )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Template ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Test Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Dr., Mr., Mrs., etc...</inlineHelpText>
+        <label>Title</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transparency_Consent_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Yes/No: I do not consent to my Personal Data being disclosed.</description>
+        <externalId>false</externalId>
+        <label>Transparency Consent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Liable_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT Liable?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Registration_Number_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>zVAT Registration Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contract Party Reference</label>
+        <referenceTo>EM_Vendor_vod__c</referenceTo>
+        <relationshipLabel>Information Collection Forms</relationshipLabel>
+        <relationshipName>Information_Collection_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Information Collection Form</label>
+    <listViews>
+        <fullName>All_ICFs</fullName>
+        <columns>NAME</columns>
+        <columns>Status_HCPTS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All ICFs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Draft</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Status_HCPTS__c</columns>
+        <columns>ICF_Type_HCPTS__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </filters>
+        <label>In Draft</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Manually_Signed</fullName>
+        <columns>NAME</columns>
+        <columns>Status_HCPTS__c</columns>
+        <columns>ICF_Type_HCPTS__c</columns>
+        <columns>Signature_Date_HCPTS__c</columns>
+        <columns>Signer_Email_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Signed Manually</value>
+        </filters>
+        <label>Manually Signed</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Information Collection Form Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Information Collection Forms</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>ICF</fullName>
+        <active>true</active>
+        <description>ICF that is editable</description>
+        <label>ICF</label>
+        <picklistValues>
+            <picklist>Board_Certified_Specialty_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Conflict_of_Interest_HCPTS__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Address_same_as_Contact_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contracting_Party_HCPTS__c</picklist>
+            <values>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credentials_vod_HCPTS__c</picklist>
+            <values>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMR-Billing Manager %28Staff%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital %26 Self-Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ICF_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP%2FNon-HCP Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Provider_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled %2F Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VAT_Liable_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ICF_Events</fullName>
+        <active>true</active>
+        <description>ICF Events (Exhibits, Booths and Displays)</description>
+        <label>ICF Events</label>
+        <picklistValues>
+            <picklist>Board_Certified_Specialty_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Conflict_of_Interest_HCPTS__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Address_same_as_Contact_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contracting_Party_HCPTS__c</picklist>
+            <values>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credentials_vod_HCPTS__c</picklist>
+            <values>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMR-Billing Manager %28Staff%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital %26 Self-Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ICF_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP%2FNon-HCP Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Provider_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled %2F Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VAT_Liable_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ICF_HCO_Services</fullName>
+        <active>true</active>
+        <description>ICF HCO Services</description>
+        <label>ICF HCO Services</label>
+        <picklistValues>
+            <picklist>Board_Certified_Specialty_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Conflict_of_Interest_HCPTS__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Address_same_as_Contact_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contracting_Party_HCPTS__c</picklist>
+            <values>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credentials_vod_HCPTS__c</picklist>
+            <values>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMR-Billing Manager %28Staff%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital %26 Self-Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ICF_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP%2FNon-HCP Services</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Provider_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled %2F Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VAT_Liable_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ICF_HCP_Services</fullName>
+        <active>true</active>
+        <description>ICF HCP Services</description>
+        <label>ICF HCP Services</label>
+        <picklistValues>
+            <picklist>Board_Certified_Specialty_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Conflict_of_Interest_HCPTS__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Address_same_as_Contact_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contracting_Party_HCPTS__c</picklist>
+            <values>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credentials_vod_HCPTS__c</picklist>
+            <values>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMR-Billing Manager %28Staff%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital %26 Self-Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ICF_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP%2FNon-HCP Services</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Provider_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled %2F Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VAT_Liable_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ICF_HCP_Sponsorship</fullName>
+        <active>true</active>
+        <description>ICF HCP Sponsorship</description>
+        <label>ICF HCP Sponsorship</label>
+        <picklistValues>
+            <picklist>Board_Certified_Specialty_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Conflict_of_Interest_HCPTS__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Address_same_as_Contact_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contracting_Party_HCPTS__c</picklist>
+            <values>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credentials_vod_HCPTS__c</picklist>
+            <values>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMR-Billing Manager %28Staff%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital %26 Self-Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ICF_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP%2FNon-HCP Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Provider_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled %2F Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VAT_Liable_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ICF_Read_Only</fullName>
+        <active>true</active>
+        <description>ICF that is Read Only</description>
+        <label>ICF Read Only</label>
+        <picklistValues>
+            <picklist>Board_Certified_Specialty_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Conflict_of_Interest_HCPTS__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Address_same_as_Contact_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contracting_Party_HCPTS__c</picklist>
+            <values>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Credentials_vod_HCPTS__c</picklist>
+            <values>
+                <fullName>AUD-Audiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMR-Billing Manager %28Staff%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BSN-Bachelor of Science in Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFO-Chief Financial Officer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMA-Certified Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Nursing Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNA-Certified Registered Nurse Anesthetist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNS-Clinical Nurse Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CR-Cancer Registrar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRP-Chiropractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CW-Case Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DDS-Doctor of Dental Surgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DN-Director Of Nursing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNU-Discharge Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DO-Doctor of Osteopathy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DPM-Doctor of Podiatric Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DST-Dosimetrist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPD-Epidemiologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FIN-Financial Counselor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HE-Health Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICO-Insurance Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPN-Licensed Practical Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT-Lab Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MA-Medical Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MD-Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA-Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ND-Naturopathic Doctor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE-Nurse Educator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NM-Nurse Midwife</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NP-Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NTR-Nutritionist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OD-Doctor of Optometry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMGR-Office Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONN-Oncology Nurse Navigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHE-Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA-Physician Assistant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAD-Policy Advisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PADM-Practice Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHI-Pharmacist Intern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHMD-PharmD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHR-Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHT-Pharmacy Technician</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PN-Psychiatric Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSY-Psychologist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PhD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RC-Research Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMGR-Reimbursement Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RN-Registered Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPH-Registered Pharmacist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RS-Reimbursement Specialist</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RT-Radiation Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SW-Social Worker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO-Transplant Coordinator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US-Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VMD-Veterinary Medical Doctor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital %26 Self-Employed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Employed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ICF_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCO Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP%2FNon-HCP Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HKD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TWD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_Provider_HCPTS__c</picklist>
+            <values>
+                <fullName>HCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled %2F Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Signature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signed Manually</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VAT_Liable_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Speaker_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ICF_Type_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contract_Party_Text_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contract_Party_Address_Line_1_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Country_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Signature_Date_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ICF_End_Date_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Activity_Product_HCPTS__c</lookupFilterFields>
+        <lookupFilterFields>Act_Type_HCPTS__c</lookupFilterFields>
+        <lookupFilterFields>Speaker_HCPTS__c</lookupFilterFields>
+        <lookupFilterFields>Contract_Party_Text_HCPTS__c</lookupFilterFields>
+        <lookupFilterFields>Address_Line_1_HCPTS__c</lookupFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Contract_Party_Text_HCPTS__c</searchFilterFields>
+        <searchFilterFields>Speaker_HCPTS__c</searchFilterFields>
+        <searchFilterFields>Status_HCPTS__c</searchFilterFields>
+        <searchFilterFields>ICF_Type_HCPTS__c</searchFilterFields>
+        <searchFilterFields>Contract_Party_Address_Line_1_HCPTS__c</searchFilterFields>
+        <searchFilterFields>Act_Type_HCPTS__c</searchFilterFields>
+        <searchResultsAdditionalFields>Speaker_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Address_Line_1_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contract_Party_Text_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contract_Party_Address_Line_1_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Country_HCPTS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Banking_Info_Required_to_Sign_Manually</fullName>
+        <active>false</active>
+        <description>If Decline OOP is not checked, the following banking fields are required to sign manually: Name, Address, City, District, State/Province, Postal Code, Country, Number (4 digits), Branch Number (4 digits), Account Number, IBAN, CPF/CNPJ.</description>
+        <errorConditionFormula>AND(
+  ISPICKVAL(Status_HCPTS__c, &quot;Signed Manually&quot;) 
+  ,
+  Decline_OOP_HCPTS__c = false
+  ,
+  OR(
+    ISBLANK(Bank_Name_HCPTS__c),
+    ISBLANK(Bank_Address_HCPTS__c),
+    ISBLANK(Bank_City_HCPTS__c),
+    ISBLANK(Bank_District_HCPTS__c),
+    ISBLANK(Bank_State_Province_HCPTS__c),
+    ISBLANK(Bank_Postal_Code_HCPTS__c),
+    ISBLANK(Bank_Country_HCPTS__c),
+    ISBLANK(Account_Number_HCPTS__c),
+    OR(
+      ISBLANK(Bank_Number_HCPTS__c),
+      LEN(Bank_Number_HCPTS__c)&lt;&gt;4
+    ),
+    OR(
+      ISBLANK(Bank_Branch_Number_HCPTS__c),
+      LEN(Bank_Branch_Number_HCPTS__c)&lt;&gt;4
+    ),
+    ISBLANK(IBAN_Number_HCPTS__c),
+    ISBLANK(Contract_Tax_ID_HCPTS__c)
+  )
+)</errorConditionFormula>
+        <errorMessage>If Decline OOP is not checked, the following banking fields are required to sign manually: Name, Address, City, District, State/Province, Postal Code, Country, Number (4 digits), Branch Number (4 digits), Account Number, IBAN, CPF/CNPJ.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ICF_Required_to_Submit_for_Signature</fullName>
+        <active>true</active>
+        <description>The following is required to submit an ICF for Signature:
+Speaker, Speaker&apos;s Country, Speaker&apos;s Preferred Language and Source Activity</description>
+        <errorConditionFormula>AND
+(
+ISPICKVAL(Status_HCPTS__c, &apos;Out for Signature&apos;),
+ISBLANK(Speaker_HCPTS__c),
+ISBLANK(Activity_Source_2__c),
+ISBLANK(Country_Formula_HCPTS__c),
+ISBLANK(Preferred_Language_HCPTS__c)
+)</errorConditionFormula>
+        <errorMessage>The following is required to submit an ICF for Signature:
+Speaker, Speaker&apos;s Country, Speaker&apos;s Preferred Language and Source Activity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_to_Sign_Manually_Events</fullName>
+        <active>true</active>
+        <description>The Following Is Require to Sign: Contract Party Country, Signature, Signer&apos;s Name, Signer&apos;s Title, Signer&apos;s Email, Phone, Address Line 1, City, Postal Code</description>
+        <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;ICF_Events&apos;,
+ISPICKVAL(Status_HCPTS__c, &quot;Signed Manually&quot;),
+ISBLANK(Signer_Name_HCPTS__c) ||
+ISBLANK(Signer_Title_HCPTS__c) ||
+ISBLANK(Signer_Email_HCPTS__c) ||
+ISBLANK ( Signature_Date_HCPTS__c )  || 
+ISBLANK( Address_Line_1_HCPTS__c ) || 
+ISBLANK( City_HCPTS__c ) || 
+ISBLANK( Postal_Code_HCPTS__c ) || 
+ISBLANK( Phone_Number_HCPTS__c ) ||
+ISBLANK( Country_vod__c )
+
+)</errorConditionFormula>
+        <errorMessage>The Following Is Require to Sign: Contract Party Country, Signer&apos;s Name, Signer&apos;s Title, Signer&apos;s Email, Phone, Address Line, City, Postal Code</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_to_Sign_Manually_HCOServices</fullName>
+        <active>true</active>
+        <description>The Following Is Required to Sign: Contract Party Country, Entity Name, Address Line 1, City, Postal Code,  Signature Date.</description>
+        <errorConditionFormula>AND(
+ispickval(ICF_Type_HCPTS__c, &apos;HCO Services&apos;),
+ISPICKVAL(Status_HCPTS__c, &quot;Signed Manually&quot;),
+ISBLANK(Entity_Name_HCPTS__c) ||
+ISBLANK ( Signature_Date_HCPTS__c )  || 
+ISBLANK( Address_Line_1_HCPTS__c ) ||
+ISBLANK( City_HCPTS__c ) ||
+ISBLANK( Postal_Code_HCPTS__c ) ||
+ISBLANK( Country_vod__c ) 
+
+)</errorConditionFormula>
+        <errorMessage>The Following Is Required to Sign: Entity Name, Signature Date, Address Line, City, Postal Code, Contract Party Country</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_to_Sign_Manually_HCPServices</fullName>
+        <active>true</active>
+        <description>The Following Is Required to Sign: Contract Party Country, Contract Party, Signer&apos;s Name, Signer&apos;s Title, Signer&apos;s Email, Address Line 1, City, Postal Code</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(ICF_Type_HCPTS__c, &apos;HCP/Non-HCP Services&apos;),
+ISPICKVAL(Status_HCPTS__c, &quot;Signed Manually&quot;),
+ISBLANK(Contract_Party_Text_HCPTS__c) ||
+ISBLANK ( Signature_Date_HCPTS__c )  || 
+ISBLANK( Address_Line_1_HCPTS__c ) || 
+ISBLANK( City_HCPTS__c ) || 
+ISBLANK( Postal_Code_HCPTS__c ) || 
+ISBLANK( Country_vod__c )
+
+)</errorConditionFormula>
+        <errorMessage>The Following Is Required to Sign: Contract Party Name, Signature Date, Address Line, City, Postal Code, Contract Party Country</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_to_Sign_Manually_Sponsorship</fullName>
+        <active>true</active>
+        <description>The Following Is Required to Sign: Contract Party Country, First Name, Last Name, Professional Title, Email, Phone, Address Line, City, Postal Code</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Status_HCPTS__c, &quot;Signed Manually&quot;),
+RecordType.DeveloperName = &apos;ICF_HCP_Sponsorship&apos;,
+ISBLANK(First_Name_HCPTS__c ) ||
+ISBLANK(Last_Name_HCPTS__c ) ||
+ISBLANK(Email_HCPTS__c ) ||
+ISBLANK ( Signature_Date_HCPTS__c )  || 
+ISBLANK( Address_Line_1_HCPTS__c ) || 
+ISBLANK( City_HCPTS__c ) || 
+ISBLANK( Postal_Code_HCPTS__c ) || 
+ISBLANK( Phone_Number_HCPTS__c )  || 
+ISBLANK( Country_vod__c )
+
+)</errorConditionFormula>
+        <errorMessage>The Following Is Required to Sign: First Name, Last Name, Email, Phone, Address Line, City, Postal Code, Contract Party Country</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Create_Contract_Party_HCPTS</fullName>
+        <availability>online</availability>
+        <description>Creates Contract Party record from information on the ICF</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Process Contract Party</masterLabel>
+        <openType>noSidebar</openType>
+        <page>VPROF_CreateContractPartyFromICF</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Generate_ICF_Template</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Generate ICF</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;ServerUrl={!API.Partner_Server_URL_270}
+&amp;Id={!Information_Collection_Form__c.Id}
+&amp;QVar0Id={!$Setup.Conga_and_Echosign_Ids__c.ICF_Template_Selection__c}?pv0={!Information_Collection_Form__c.ICF_Type_HCPTS__c}~pv1={!Information_Collection_Form__c.Country_vodId__c}~pv2={!Information_Collection_Form__c.Preferred_Language_HCPTS__c}
+&amp;TemplateId={QVar0}
+&amp;QueryId=[ServProv]{!$Setup.Conga_and_Echosign_Ids__c.Service_Provider_Details_for_ICF__c}?pv0={!Information_Collection_Form__c.Speaker_HCPTSId__c}
+&amp;DS7={!IF(User.Profile=&quot;System Administrator&quot;, 0, 3)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_ICF_via_Echosign_HCTPS</fullName>
+        <availability>online</availability>
+        <description>Send ICF via Echosign</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send ICF via Echosign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+var agreementId = sforce.apex.execute(&quot;VPROF_Javascript_Utilities&quot;,&quot;getEchosignAgreementIdForICF&quot;,{ICFId:&quot;{!Information_Collection_Form__c.Id}&quot;});
+
+if(agreementId == &quot;Error&quot;){
+    window.confirm(&quot;There were no Agreements with this Country, Language and ICF Type.&quot;);
+}else{
+    window.open(&quot;/apex/echosign_dev1__AgreementTemplateProcess?masterId={!Information_Collection_Form__c.Id}&amp;DS7Preview=1&amp;DS7=4&amp;templateId=&quot;+agreementId);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Unlock_ICF_HCPTS</fullName>
+        <availability>online</availability>
+        <description>Unlocks the ICF and assigns a rectype based on ICF type</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Unlock ICF</masterLabel>
+        <openType>sidebar</openType>
+        <page>VPROF_UnlockICF</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

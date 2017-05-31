@@ -1,0 +1,84 @@
+<apex:page renderAs="pdf" standardStylesheets="false" controller="SignatureReports" sidebar="false" showHeader="false">
+<head>
+<style type="text/css" media="print,screen" >
+    body {font-family: Times-Roman; font-size: 11pt;}
+    thead {
+        display:table-header-group;
+    }
+    tbody {
+        display:table-row-group;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+    @page {
+        @bottom-center {
+            content: "Page " counter(page) " of " counter(pages);
+        }
+    }
+
+</style>
+</head>
+    <apex:pageBlock title="Signature Administration">
+    <apex:form >
+        <center>
+        <table  border="0" width="80%" >
+        <thead>
+        <tr >
+        <th  style="background-color:blue;color:white" width="20%" >
+        Last Name
+        </th>
+        <th  style="background-color:blue;color:white" width="20%" >
+        First Name
+        </th>
+        <th  style="background-color:blue;color:white" width="20%" >
+        Rep Name
+        </th>
+        <th  style="background-color:blue;color:white" width="20%" >
+        Call Name
+        </th>
+        <th  style="background-color:blue;color:white" width="20%" >
+        Signature Date/Time
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+        <apex:repeat value="{!sigAdminCalls}" var="callwImg">
+        <tr ><td colspan="5">
+        <table width="100%">
+        <tr>
+        <td width="20%" >
+        <apex:outputField value="{!callwImg.call.Account_vod__r.lastname}"/>
+        </td>
+        <td width="20%" >
+        <apex:outputField value="{!callwImg.call.Account_vod__r.firstname}"/>
+        </td>
+        <td width="20%" >
+        <apex:outputField value="{!callwImg.call.CreatedBy.Name}"/>
+        </td>
+        <td width="20%" >
+        <apex:outputField value="{!callwImg.call.Name}"/>
+        </td>
+        <td width="20%" >
+        <apex:outputField value="{!callwImg.call.Signature_Date_vod__c}"/>
+        </td>
+        </tr>
+        <tr>
+        <td   colspan="5" align="center" style="border-bottom: 1px solid black">
+        <apex:outputPanel rendered="{!callwImg.imgId != ''}">
+            <img  src="{!baseURL}/servlet/servlet.ImageServer?id={!callwImg.imgId}&oid={!$Organization.Id}"/>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!callwImg.imgId == ''}">
+            <h2>No signature</h2>
+        </apex:outputPanel>
+        </td>
+        </tr>
+        </table>
+        </td></tr>
+        </apex:repeat> 
+        </tbody>
+        </table>
+        </center>
+        </apex:form>
+    </apex:pageBlock> 
+</apex:page>

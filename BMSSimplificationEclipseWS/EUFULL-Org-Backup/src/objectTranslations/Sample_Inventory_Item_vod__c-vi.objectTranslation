@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mục thuốc mẫu tồn kho</value>
+    </caseValues>
+    <fields>
+        <label>Tổng số</label>
+        <name>Count_vod__c</name>
+    </fields>
+    <fields>
+        <label>Khác biệt</label>
+        <name>Difference_vod__c</name>
+    </fields>
+    <fields>
+        <label>Số lượng dự kiến</label>
+        <name>Expected_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ngày hết hạn</label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tên hàng tồn kho</label>
+        <name>Inventory_Name_vod__c</name>
+        <relationshipLabel>Mục thuốc mẫu tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Lô #</label>
+        <name>Lot_Lookup_vod__c</name>
+        <relationshipLabel>Mục thuốc mẫu tồn kho</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Lô #</label>
+        <name>Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID di động</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thuốc mẫu</label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mở khóa</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Sample Inventory Item Number --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Lỗi: Tổng số &gt;= 0</errorMessage>
+        <name>Sample_Inventory_Count_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

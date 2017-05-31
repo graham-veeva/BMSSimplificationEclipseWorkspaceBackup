@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>注文キャンペーン</value>
+    </caseValues>
+    <fields>
+        <label>アカウントグループ</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>アカウントタイプ</label>
+        <name>Account_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Channel Partner / Reseller</masterLabel>
+            <translation>代理店パートナー/リセラー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Channel</masterLabel>
+            <translation>カスタマー - チャネル</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Direct</masterLabel>
+            <translation>カスタマー - 直接</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installation Partner</masterLabel>
+            <translation>インストールパートナー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional_vod</masterLabel>
+            <translation>ドクター</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>見込み客</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Partner</masterLabel>
+            <translation>技術パートナー</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>有効</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>デフォルト</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>説明</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>終了日</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>注文キャンペーン制約</label>
+        <name>Order_Campaign_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>注文レコードタイプ</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>すべて</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>直接</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>転送</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>開始日</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Order Campaign Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Start date after end date --></errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BMS_Letterhead</letterhead>
+    <name>Approval Email_HTML</name>
+    <style>freeForm</style>
+    <subject>New Test!</subject>
+    <textOnly>You have received an approval request from {!EM_Event_History_vod__c.CreatedBy}. 
+
+Project Owner: {!EM_Event_History_vod__c.Project_Owner_HCPTS__c} 
+Event ID: {!EM_Event_History_vod__c.Activity_ID_HCPTS__c} 
+Product: {!EM_Event_History_vod__c.Product_TA_HCPTS__c} 
+Start Date: {!EM_Event_History_vod__c.Start_Date_HCPTS__c} 
+End Date: {!EM_Event_History_vod__c.End_Time_HCPTS__c} 
+
+Please click this link to access the request and complete it: 
+{!EM_Event_History_vod__c.00NZ0000001kRgA} 
+
+
+New one: {!EM_Event_History_vod__c.Event_vod__c} 
+New One 2: {!EM_Event_vod__c.Link} 
+
+
+
+Regards, 
+Field Meeting Approval Administrator 
+(This email is only for information, please do not reply )</textOnly>
+    <type>html</type>
+</EmailTemplate>

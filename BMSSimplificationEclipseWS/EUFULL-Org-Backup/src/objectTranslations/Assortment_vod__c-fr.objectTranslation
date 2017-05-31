@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assortiment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assortiments</value>
+    </caseValues>
+    <fields>
+        <label>Groupe de comptes</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;enregistrement de compte</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Pharmacie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Grossiste</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Tous les autres</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groupe d&apos;assortiments</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de fin</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Type d&apos;enreg. pour relevé d&apos;inventaire</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Relevé de stock</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Type d&apos;enregistrement de commande</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation><!-- Direct_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Transfert</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Liste stricte de produits</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Date de début</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <label>Assortiment de Relevé de Stock</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Assortiment OM</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>La date de début est postérieure à la date de fin.</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le champ Tous les Autres ne peut être sélectionné si l&apos;assortiment est marqué comme Liste Stricte de Produits</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Aperçu</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

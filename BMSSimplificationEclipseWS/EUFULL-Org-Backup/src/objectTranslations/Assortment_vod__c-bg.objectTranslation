@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Асортимент</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Асортименти</value>
+    </caseValues>
+    <fields>
+        <label>Група клиенти</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип на запис за клиент</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Аптека</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Търговец на едро</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Всички други</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Асортиментна група</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Крайна дата</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Външен ID</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип на запис на инвентарен мониторинг</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Инвентарен мониторинг</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Тип на запис за поръчка</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Директен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Предаване</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Обвързване на продукт</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Начална дата</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име</nameFieldLabel>
+    <recordTypes>
+        <label>Асортимент с ИМ</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Асортимент с УП</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Началната дата е след крайната дата</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Асортимент със свързани продукти не може да има показан раздел „Всички други“</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Визуализация</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

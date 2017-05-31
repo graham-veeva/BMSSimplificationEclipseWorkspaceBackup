@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Directory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Directory</value>
+    </caseValues>
+    <fields>
+        <label>Ordine di visualizzazione</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID esterno</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Livello</label>
+        <name>Level_vod__c</name>
+    </fields>
+    <fields>
+        <label>Directory padre</label>
+        <lookupFilter>
+            <errorMessage>Il valore non esiste o non corrisponde ai criteri del filtro</errorMessage>
+        </lookupFilter>
+        <name>Parent_Directory_vod__c</name>
+        <relationshipLabel>Directory</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Directory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CLM_vod --></label>
+        <name>CLM_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

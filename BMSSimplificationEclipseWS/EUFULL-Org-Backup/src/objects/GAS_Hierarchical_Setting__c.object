@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_Search_Field_Set__c</fullName>
+        <defaultValue>&apos;Name,FirstName,LastName,Specialty_1_vod__c,RecordTypeId,CreatedById,Primary_Parent_vod__c&apos;</defaultValue>
+        <description>List of fields, delimited by string, to use as search fields for the Account.  Sample value:
+Name,FirstName,LastName,Specialty_1_vod__c.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Search Field Set</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Address_Search_Field_Set__c</fullName>
+        <defaultValue>&apos;Name,City_vod__c,State_vod__c,Zip_vod__c,Phone_vod__c,RecordTypeId&apos;</defaultValue>
+        <description>List of fields, delimited by commas, of Address fields to search on. Sample value:
+Name,City_vod__c,State_vod__c,Zip_vod__c,Phone_vod__c</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Search Field Set</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Align_Multiple_Territory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, align an Account to multiple territories if the user is in more than one territory</description>
+        <externalId>false</externalId>
+        <label>Align Multiple Territory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CodeTableNames_BMS_EMEA__c</fullName>
+        <description>VPRO EMEA June-2014: list of semicolons separated API names of Lookup objects used in GAS search layout.  If not populated, Specialty_BMS_EMEA__c and Title_BMS_EMEA__c are the only 2 lookup object names referred.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>List of semicolons separated API names of Lookup objects used in GAS search layout.  If not populated, Specialty_BMS_EMEA__c and Title_BMS_EMEA__c are the only 2 lookup object names referred.</inlineHelpText>
+        <label>CodeTableNames_BMS_EMEA</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Do_Criteria_Based_Filtering__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If unchecked, criteria based filtering is completely turned off</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If unchecked, criteria based filtering is completely turned off</inlineHelpText>
+        <label>Do Criteria Based Filtering</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_CB_Filter_Retain_Mode__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, criteria based filter results are included instead of being excluded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, criteria based filter results are included instead of being excluded</inlineHelpText>
+        <label>Enable CB Filter Retain Mode</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_Summary_View__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, users will be able to view a pre-defined summary of the Account prior to adding it to their teritories</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, users will be able to view a pre-defined summary of the Account prior to adding it to their teritories</inlineHelpText>
+        <label>Enable Summary View</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <description>External ID for migrations</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_ATT__c</fullName>
+        <defaultValue>&apos;Add To Territory&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - ATT</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_CLEAR__c</fullName>
+        <defaultValue>&apos;Clear&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - CLEAR</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_CONTAINS__c</fullName>
+        <defaultValue>&apos;Contains&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - CONTAINS</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_Cancel__c</fullName>
+        <defaultValue>&apos;Cancel&apos;</defaultValue>
+        <description>Text for GAS Cancel Button</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Text for GAS Cancel Button</inlineHelpText>
+        <label>GAS Message - CANCEL</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_EM__c</fullName>
+        <defaultValue>&apos;Exact Match&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - EM</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_INTERR__c</fullName>
+        <defaultValue>&apos;The customer is already in your territory.  No changes made&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - INTERR</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_Lookup__c</fullName>
+        <defaultValue>&apos;Lookup&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - LOOKUP</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_MANYALIGN__c</fullName>
+        <defaultValue>&apos;You are currently aligned in more than one territory&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - MANYALIGN</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_NOMATCH__c</fullName>
+        <defaultValue>&apos;No matching records found.  Please modify your search criteria&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - NOMATCH</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_NONE__c</fullName>
+        <defaultValue>&apos;-None-&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - NONE</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_NOTALIGNED__c</fullName>
+        <defaultValue>&apos;You are currently not aligned in any territories&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - NOTALIGNED</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_NameSearch__c</fullName>
+        <defaultValue>&apos;You may not search on both Name and First/Last Name&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - NAMESEARCH</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_NoCriteria__c</fullName>
+        <defaultValue>&apos;No search criteria entered&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - NOCRIT</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_RESULTS__c</fullName>
+        <defaultValue>&apos;Results&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - RESULTS</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_SELECT__c</fullName>
+        <defaultValue>&apos;Select&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - SELECT</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_SFA__c</fullName>
+        <defaultValue>&apos;Search For Account&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - SFA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_SFPA__c</fullName>
+        <defaultValue>&apos;Search For Parent Account&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - SFPA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_STARTS_WITH__c</fullName>
+        <defaultValue>&apos;Starts With&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - SW</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_SUCCESS__c</fullName>
+        <defaultValue>&apos;The customer has been successfully added to your territory&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - SUCCESS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_Search__c</fullName>
+        <defaultValue>&apos;Search&apos;</defaultValue>
+        <description>GAS Search Button text</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>GAS Search Button text</inlineHelpText>
+        <label>GAS Message - SEARCH</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Message_TOO_MANY__c</fullName>
+        <defaultValue>&apos;More than allowed number of records found. Please narrow your search criteria&apos;</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>GAS Message - TOO MANY</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GAS_Msg_Acct_StrtsWith_Contains_Label__c</fullName>
+        <defaultValue>&apos;Starts With&apos;</defaultValue>
+        <description>This is the label - If value (GAS_Msg_Acct_StrtsWith_Contains_Value__c) is &quot;Starts with&quot;, this will typically also be Starts with. If the value is &quot;Contains&quot;, this will also typically be Contains.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the label - If value (GAS_Msg_Acct_StrtsWith_Contains_Value__c) is &quot;Starts with&quot;, this will typically also be Starts with. If the value is &quot;Contains&quot;, this will also typically be Contains.</inlineHelpText>
+        <label>GAS Msg Acct StrtsWith Contains Label</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GAS_Msg_Acct_StrtsWith_Contains_Value__c</fullName>
+        <defaultValue>&apos;Starts With&apos;</defaultValue>
+        <description>This value must be either &apos;Starts With&apos; or &apos;Contains&apos;. If Starts With, then GAS performs a Starts With search on Account Name, First Name &amp; Last Name search parameters. Else a Contains search</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>This value must be either &apos;Starts With&apos; or &apos;Contains&apos;. If Starts With, then GAS performs a Starts With search on Account Name, First Name &amp; Last Name search parameters. Else a Contains search</inlineHelpText>
+        <label>GAS Message - Accnt SWorContains Value</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Include_Public_Group_based_filtering__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, then Public Group Entity type filtering is enabled. Since this feature is resource intensive and involves loading up the Territory tree, Role tree and Public Group tree for EVERY GAS Search, it is turned off by default. Should only be turned ON if Public Groups based filtering is being used</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, then Public Group Entity type filtering is enabled. Should only be turned ON if Public Groups based filtering is being used.</inlineHelpText>
+        <label>Include Public Group based filtering</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MAX_Allowed_Distinct_Accounts__c</fullName>
+        <defaultValue>20</defaultValue>
+        <description>Max allowed distinct accounts. Be careful with this as it may impact performance. Typically 20 is the default but you may bump this upto 50 to 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Max allowed distinct accounts. Be careful with this as it may impact performance. Typically 20 is the default but you may bump this upto 50 to 100</inlineHelpText>
+        <label>MAX Allowed Distinct Accounts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Result_Field_Set__c</fullName>
+        <defaultValue>&apos;Name,Specialty_1_vod__c,RecordTypeId,CreatedDate,CreatedById,ADD.Name,ADD.City_vod__c,ADD.State_vod__c,ADD.Zip_vod__c,ADD.Primary_vod__c&apos;</defaultValue>
+        <description>List of fields, delimited by comma, to display in search results.  If any of these are Address fields, they must be prefixed by &apos;ADD.&apos;.  Sample value:
+Name,ADD.Name,ADD.City_vod__c,ADD.State_vod__c,ADD.Zip_vod__c,Specialty_1_vod__c,ADD.Primary_vod__c</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Result Field Set</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Show_All_Addresses__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, display all addresses for an Account; otherwise, only display primary address. If no primary address, display the first one found.</description>
+        <externalId>false</externalId>
+        <label>Show_All_Addresses</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Summary_View_Default_Acct_Field_Set_Name__c</fullName>
+        <defaultValue>&apos;VPROF_Default_Account_Summary&apos;</defaultValue>
+        <description>Name of the Account field set to be used to display Account fields summary by default. If one exists for the specific Recordtype (follows @@RectypeName@@FieldSetName naming convention for the FieldSet name), then that field set will be used</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Account field set to be used to display Account fields summary by default. If one exists for the specific Recordtype (follows @@RectypeName@@FieldSetName naming convention for the FieldSet name), then that field set will be used</inlineHelpText>
+        <label>Summary View Default Acct Field Set Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_View_Delimiter_String__c</fullName>
+        <defaultValue>&apos;@@&apos;</defaultValue>
+        <description>2 character delimiter string used to designate start and stop of the Record Type Developer Name in Field Set name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>2 character delimiter string used to designate start and stop of the Record Type Developer Name in Field Set name</inlineHelpText>
+        <label>Summary View Delimiter String</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_View_Hyperlink_Field_Name__c</fullName>
+        <defaultValue>&apos;Name&apos;</defaultValue>
+        <description>API Field Name of a field on Account object that needs to be hyperlinked in the GAS Results to show the Account Summary</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>API Field Name of a field on Account object that needs to be hyperlinked in the GAS Results to show the Account Summary</inlineHelpText>
+        <label>Summary View Hyperlink Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_View_Page_Title__c</fullName>
+        <defaultValue>&apos;Account Summary&apos;</defaultValue>
+        <description>Account Summary Page title</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Account Summary Page title</inlineHelpText>
+        <label>Summary View Page Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_View_Section_Background_Color__c</fullName>
+        <defaultValue>&apos;#880000&apos;</defaultValue>
+        <description>Background color as specified by HTML CSS Standards. For eg: .#880000
+
+Reference URL: http://www.w3schools.com/cssref/css_colors.asp for details</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Background color as specified by HTML CSS Standards. For eg: .#880000
+
+Reference URL: http://www.w3schools.com/cssref/css_colors.asp for details</inlineHelpText>
+        <label>Summary View Section Background Color</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary_View_Section_Title__c</fullName>
+        <defaultValue>&apos;Account Information&apos;</defaultValue>
+        <description>Summary View Section Title</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Summary View Section Title</inlineHelpText>
+        <label>Summary View Section Title</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Track_Alignment_History__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If checked, Account alignment changes will be recorded in the custom object GAS_Alignment_History_vts__c</description>
+        <externalId>false</externalId>
+        <label>Track Alignment History</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UserCountries_BMS_EMEA__c</fullName>
+        <description>VPRO EMEA June-2014: Used in case 1 user cover more than one  countries.  Set it only in this case! Values must be quoted and separated with commas. Example: &apos;DE&apos;,&apos;AT&apos;</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Values must be quoted and separated with commas. Example: &apos;DE&apos;,&apos;AT&apos;</inlineHelpText>
+        <label>UserCountries_BMS_EMEA</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>GAS Hierarchical Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

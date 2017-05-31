@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Překlad zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Překlady zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Překlad zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Překlady zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Překladu zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Překladů zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Překladu zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Překladům zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Překladem zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Překlady zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Překladu zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Překladech zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Překlad zprávy pravidla</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Překlady zprávy pravidla</value>
+    </caseValues>
+    <fields>
+        <help>Kód ISO jazyka, kterému tento překlad odpovídá.</help>
+        <label>Jazyk</label>
+        <name>Language_vod__c</name>
+    </fields>
+    <fields>
+        <help>Překlad chybové zprávy pro pravidlo.</help>
+        <label>Překlad zprávy</label>
+        <name>Message_Translation_vod__c</name>
+    </fields>
+    <fields>
+        <help>Reference k záznamu definice pravidla, kterého se týká tento překlad zprávy.</help>
+        <label>Definice pravidla</label>
+        <name>Rule_Definition_vod__c</name>
+        <relationshipLabel>Překlady zprávy pravidla</relationshipLabel>
+    </fields>
+    <fields>
+        <help>Externí ID záznamu. Formát je [RULE NAME]::[RecordType.Name]::[Language_vod]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Rule Message Translation Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Překlad zprávy pravidla SFDC</label>
+        <name>SFDC_Rule_Message_Translation_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

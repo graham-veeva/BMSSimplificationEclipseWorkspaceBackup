@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de produtos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupos de produtos</value>
+    </caseValues>
+    <fields>
+        <label>Descrição</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de conclusão</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Catálogo de produtos</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Grupos de produtos (catálogo de produtos)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Grupos de produtos</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Quantidade</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de início</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Não é possível vincular um Grupo de detalhes que não é um Produto da empresa a um Produto ou Tópico de detalhe que seja um Produto da empresa.</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Só os produtos do tipo &quot;&quot;Tópico do detalhe&amp;&quot;&quot; ou &quot;&quot;Detalhe&quot;&quot; podem ser associados a um Grupo de produtos de detalhe&quot;</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Só se permite o tipo &quot;&quot;Grupo de produtos&quot;&quot;&quot;</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Só se permite o tipo &quot;&quot;Pedido&quot;&quot;&quot;</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Apenas produtos do tipo &quot;&quot;Amostra&quot;&quot; ou &quot;&quot;BRC&quot;&quot; podem ser associados a um Grupo de produtos de amostra&quot;</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>As datas inicial e final devem ser especificadas quando a quantidade é definida</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>São obrigatórias data de início e data de conclusão válidas.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

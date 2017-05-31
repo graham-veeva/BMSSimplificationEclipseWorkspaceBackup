@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Στόχος επίσκεψης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Στόχοι επισκέψεων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Στόχος επίσκεψης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Στόχοι επισκέψεων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Στόχος επίσκεψης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Στόχοι επισκέψεων</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Στόχος επίσκεψης</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Στόχοι επισκέψεων</value>
+    </caseValues>
+    <fields>
+        <label>Πλάνο Λογαριασμού</label>
+        <name>Account_Plan_vod__c</name>
+        <relationshipLabel>Σκοποί Επίσκεψης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τακτική λογαριασμού</label>
+        <name>Account_Tactic_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Λογαριασμός</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attendees --></label>
+        <name>Attendees_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label>Στόχος επιχειρησιακού γεγονότος</label>
+        <name>Business_Event_Target_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Επιχειρησιακό γεγονός</label>
+        <name>Business_Event_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>CLM ανταλλαγή μηνυμάτων</label>
+        <name>CLM_Messaging_vod__c</name>
+    </fields>
+    <fields>
+        <label>Παρουσίαση CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Στόχοι επίσκεψης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Επίσκεψη</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Σχόλιο</label>
+        <name>Comment_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ολοκληρώθηκε</label>
+        <name>Completed_Flag_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Report --></label>
+        <name>Completed_Report_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Συνεργάτης σύμβασης</label>
+        <name>Contract_Partner_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Συμβόλαιο</label>
+        <lookupFilter>
+            <errorMessage><!-- Contracts must be activated templates --></errorMessage>
+        </lookupFilter>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Σκοποί κλήσης</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Ημερομηνία</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μέθοδος παράδοσης</label>
+        <name>Delivery_Method_vod__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation>Επίσκεψη</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DM</masterLabel>
+            <translation>Απευθείας ταχυδρομείο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FAX</masterLabel>
+            <translation>Φαξ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NCW_vod</masterLabel>
+            <translation>Μη συμβατό με</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Άλλο</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Από</label>
+        <name>From_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πληροφορίες</label>
+        <name>Information_vod__c</name>
+    </fields>
+    <fields>
+        <label>Τύπος παρακολούθησης απογραφής</label>
+        <name>Inventory_Monitoring_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Παρακολούθηση απογραφής</label>
+        <name>Inventory_Monitoring_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location_BMS_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting --></label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Interaction Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Αναγνωριστική ταυτότητα κινητού</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Λόγος μη συμμόρφωσης</label>
+        <name>NCW_Reason_vod__c</name>
+        <picklistValues>
+            <masterLabel>No time</masterLabel>
+            <translation>Δεν υπάρχει ώρα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Άλλο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass this MS</masterLabel>
+            <translation>Περάστε αυτόν τον ειδικό αγοράς</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall</masterLabel>
+            <translation>Ανάκληση</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Όνομα</label>
+        <name>Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Μη εκτελέσιμο</label>
+        <name>Non_Executable_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αριθμός ενθέτων συσκευασίας</label>
+        <name>Number_Of_PIs_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αριθμός ασθενών</label>
+        <name>Number_Of_Patients_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective Title --></label>
+        <name>Objective_Title_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Ενεργοποιημένο από προεπιλογή</label>
+        <name>On_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ολοκλήρωση με ένα κλικ</label>
+        <name>One_Click_Completion_vod__c</name>
+    </fields>
+    <fields>
+        <label>Σκοπός μητρικού</label>
+        <name>Parent_Objective_vod__c</name>
+        <relationshipLabel>Στόχοι επίσκεψης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Τακτική πλάνου</label>
+        <name>Plan_Tactic_vod__c</name>
+        <relationshipLabel>Σκοποί Επίσκεψης</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Προκαταρκτική επεξήγηση</label>
+        <name>Pre_Explain_Flag_vod__c</name>
+    </fields>
+    <fields>
+        <label>Προαπαιτούμενο</label>
+        <name>Prerequisite_vod__c</name>
+        <relationshipLabel>Σκοποί επίσκεψης (προαπαιτούμενο)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Προϊόν</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Στόχοι επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Περιοδικός</label>
+        <name>Recurring_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αιτία πρότασης</label>
+        <name>Suggestion_Reason_vod__c</name>
+    </fields>
+    <fields>
+        <label>Πρόταση</label>
+        <name>Suggestion_vod__c</name>
+        <relationshipLabel>Σκοποί επισκέψεων</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Προς</label>
+        <name>To_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Αναγνωσιμότητα</label>
+        <name>Visibility_vod__c</name>
+        <picklistValues>
+            <masterLabel>All_vod</masterLabel>
+            <translation>Όλα</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner_vod</masterLabel>
+            <translation>Ιδιοκτήτης</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- BMS EMEA --></label>
+        <name>BMS_EMEA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS KAM --></label>
+        <name>BMS_KAM_CORE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CLM --></label>
+        <name>CLM_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Συνεργάτης συμβολαίου</label>
+        <name>Contract_Partner_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Συμβόλαιο</label>
+        <name>Contract_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EPPV --></label>
+        <name>EPPV_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Παρακολούθηση απογραφής</label>
+        <name>Inventory_Monitoring_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PI --></label>
+        <name>PI_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Launch --></label>
+        <name>Product_Launch_BMS_US</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Πρόταση</label>
+        <name>Suggestion_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Οι σκοποί επίσκεψης του συνεταίρου σύμβασης δεν πρέπει να συμπίπτουν</errorMessage>
+        <name>Recurring_Contract_Partner</name>
+    </validationRules>
+    <webLinks>
+        <label>Ανάθεση σκοπού επίσκεψης σε τακτικό</label>
+        <name>Assign_Call_Objective_To_Tactic</name>
+    </webLinks>
+</CustomObjectTranslation>

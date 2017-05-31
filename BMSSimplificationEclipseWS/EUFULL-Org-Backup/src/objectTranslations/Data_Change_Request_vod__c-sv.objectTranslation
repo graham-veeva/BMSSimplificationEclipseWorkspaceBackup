@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Dataändringsbegäran </value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Dataändringsbegäran </value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Dataändringsbegäran </value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Dataändringsbegäranden</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Dataändringsbegäranden</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Dataändringsbegäranden</value>
+    </caseValues>
+    <fields>
+        <label>Konto externt ID</label>
+        <name>Account_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Dataändringsbegäranden</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Adress externt ID</label>
+        <name>Address_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Adress</label>
+        <name>Address_vod__c</name>
+        <relationshipLabel>Dataändringsbegäranden</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Externt ID underordnat konto</label>
+        <name>Child_Account_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Underordnat konto</label>
+        <name>Child_Account_vod__c</name>
+        <relationshipLabel>Dataändringsbegäranden</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Landmappning</label>
+        <name>Country_Mapping_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>DCR externt ID</label>
+        <name>DCR_External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCR Record Type --></label>
+        <name>DCR_Record_Type_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCR URL --></label>
+        <name>DCR_URL_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label>Datum och tid</label>
+        <name>Date_Time_vod__c</name>
+    </fields>
+    <fields>
+        <label>Fel</label>
+        <name>Error_vod__c</name>
+    </fields>
+    <fields>
+        <label>Extern status</label>
+        <name>External_Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE_CANCELLED</masterLabel>
+            <translation>Ändring annullerad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_NEW</masterLabel>
+            <translation>Ändring ny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PARTIALLYPROCESSED</masterLabel>
+            <translation>Ändring delvis behandlad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PENDINGREVIEW</masterLabel>
+            <translation>Ändring avvaktar granskning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PROCESSED</masterLabel>
+            <translation>Ändring behandlad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Datum och tid för mobilskapande</label>
+        <name>Mobile_Created_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mobil-ID</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum och tid då mobilen senast ändrades</label>
+        <name>Mobile_Last_Modified_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Network-kund masterläge</label>
+        <name>Network_Customer_Master_Mode_vod__c</name>
+    </fields>
+    <fields>
+        <label>Anteckningar</label>
+        <name>Notes_vod__c</name>
+    </fields>
+    <fields>
+        <label>Överordnad dataändringsbegäran</label>
+        <name>Parent_Data_Change_Request_vod__c</name>
+        <relationshipLabel>Dataändringsbegäranden</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Lösningskommentar</label>
+        <name>Resolution_Note_vod__c</name>
+    </fields>
+    <fields>
+        <label>Svarsdatum och svarstid</label>
+        <name>Response_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Resultat</label>
+        <name>Result_vod__c</name>
+        <picklistValues>
+            <masterLabel>CHANGE_ACCEPTED</masterLabel>
+            <translation>Ändring accepterad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_ALREADYAPPLIED</masterLabel>
+            <translation>Ändring redan utförd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_MODIFIED</masterLabel>
+            <translation>Ändring modifierad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_PARTIAL</masterLabel>
+            <translation>Ändra partiell</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHANGE_REJECTED</masterLabel>
+            <translation>Ändring avvisad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Sänt datum och tid</label>
+        <name>Sent_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled_vod</masterLabel>
+            <translation>Avbruten</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending_vod</masterLabel>
+            <translation>Väntande</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processed_vod</masterLabel>
+            <translation>Bearbetat</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Skickad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Typ</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Delete_vod</masterLabel>
+            <translation>Ta bort</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit_vod</masterLabel>
+            <translation>Redigera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_vod</masterLabel>
+            <translation>Ny</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Language --></label>
+        <name>User_Language_BMS_EMEA__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Data Change Request Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Konto</label>
+        <name>Account_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Adress</label>
+        <name>Address_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Underordnat konto</label>
+        <name>Child_Account_vod</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- DCR_Link --></label>
+        <name>DCR_Link</name>
+    </webLinks>
+</CustomObjectTranslation>

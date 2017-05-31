@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>מוצרים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>מוצרים</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>אוספי מוצרים</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>אוספי מוצרים</value>
+    </caseValues>
+    <fields>
+        <label>קבוצת חשבון</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>סוג רשומת חשבון</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>בית מרקחת</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>סיטונאי</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>כל האחרים</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>קבוצת מוצרים</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>תאריך סיום</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventory Monitoring Record Type --></label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation><!-- Inventory_Monitoring_vod --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>סוג רשומת הזמנה</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>ישיר</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>העבר</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Bound --></label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>תאריך התחלה</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם</nameFieldLabel>
+    <recordTypes>
+        <label><!-- IM Assortment --></label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>אוסף מוצרים של OM</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>תאריך התחלה אחרי תאריך סיום</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Product Bound Assortment cannot have the All Others section displayed --></errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>תצוגה מקדימה</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

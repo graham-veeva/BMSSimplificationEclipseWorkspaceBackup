@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>テリトリー予算トランザクション</value>
+    </caseValues>
+    <fields>
+        <label>説明</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>数量</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>テリトリー予算</label>
+        <name>Territory_Budget_vod__c</name>
+        <relationshipLabel>テリトリー予算トランザクション</relationshipLabel>
+    </fields>
+    <fields>
+        <label>トランザクション日</label>
+        <name>Transaction_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>値</label>
+        <name>Value_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Territory Budget Transaction Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>無効な予算に対するトランザクションは作成できません</errorMessage>
+        <name>VEEVA_ACTIVE_BUDGET_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

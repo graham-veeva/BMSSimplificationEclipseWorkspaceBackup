@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Đối Tác Tài Khoản</value>
+    </caseValues>
+    <fields>
+        <label>ID Đối Tác Tài Khoản</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tài khoản</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Các Đối Tác Tài Khoản</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Hợp đồng</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Các Đối Tác Tài Khoản</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Mặc Định</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Di Động</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Loại Đơn Đặt Hàng</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Trực Tiếp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Chuyển</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Ưu Tiên</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Người Bán Sỉ</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Địa Điểm Giao Hàng</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Người thanh toán</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Bảng Giá</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Người bán sỉ</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Yêu cầu Tài Khoản</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

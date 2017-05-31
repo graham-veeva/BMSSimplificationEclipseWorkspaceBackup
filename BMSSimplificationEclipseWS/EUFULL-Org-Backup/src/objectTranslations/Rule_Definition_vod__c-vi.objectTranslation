@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Định nghĩa Quy tắc</value>
+    </caseValues>
+    <fields>
+        <help>Cho biết Quy tắc này có hiệu lực trong Salesforce.com hay không</help>
+        <label>Hiệu lực</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <help><!-- CRC --></help>
+        <label><!-- CRC --></label>
+        <name>CRC_vod__c</name>
+    </fields>
+    <fields>
+        <help>Tên Trường nơi xuất hiện thông báo lỗi mức Trường.</help>
+        <label>Hiển thị Trường</label>
+        <name>Display_Field_vod__c</name>
+    </fields>
+    <fields>
+        <help>Công thức Quy tắc</help>
+        <label>Công thức Điều kiện lỗi</label>
+        <name>Error_Condition_Formula_vod__c</name>
+    </fields>
+    <fields>
+        <help>Thông báo lỗi cho quy tắc.</help>
+        <label>Thông báo chính</label>
+        <name>Master_Message_vod__c</name>
+    </fields>
+    <fields>
+        <help>Đối tượng chứa quy tắc xác nhận này.</help>
+        <label>Đối tượng</label>
+        <name>Object_vod__c</name>
+        <relationshipLabel>Định nghĩa Quy tắc</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Đơn đặt hàng</label>
+        <name>Order_vod__c</name>
+    </fields>
+    <fields>
+        <help>Cho biết liệu Veeva có tìm thấy cú pháp chưa được hỗ trợ trong định nghĩa quy tắc hay không.</help>
+        <label>Được hỗ trợ</label>
+        <name>Supported_vod__c</name>
+    </fields>
+    <fields>
+        <help>Id Ngoại cho bản ghi. Định dạng là [RULE NAME]::[RecordType.Name]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Definition Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Dòng Bộ Lọc Tra Cứu SFDC</label>
+        <name>SFDC_Lookup_Filter_Line_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Quy tắc SFDC</label>
+        <name>SFDC_Rule_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

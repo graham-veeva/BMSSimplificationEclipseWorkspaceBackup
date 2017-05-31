@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Thư mục</value>
+    </caseValues>
+    <fields>
+        <label>Hiển thị Đơn đặt hàng</label>
+        <name>Display_Order_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID Ngoại</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mức</label>
+        <name>Level_vod__c</name>
+    </fields>
+    <fields>
+        <label>Thư mục cha</label>
+        <lookupFilter>
+            <errorMessage>Gí trị không tồn tại hay không khớp với các tiêu chí lọc</errorMessage>
+        </lookupFilter>
+        <name>Parent_Directory_vod__c</name>
+        <relationshipLabel>Các thư mục</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Directory Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- CLM_vod --></label>
+        <name>CLM_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

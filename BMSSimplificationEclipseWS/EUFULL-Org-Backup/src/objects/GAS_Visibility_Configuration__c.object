@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Defines criteria to control visibility of Accounts returned in the GAS search. By default, GAS searches the entire realm of the Organization for Account/Addresses matching specified criteria. By configuring GVC objects, we can curtail this realm based on specific criteria specified in the GVC object. Think of it as similar to a VMOC where clause.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Lookup_Field_API_Name__c</fullName>
+        <description>This is the lookup field&apos;s API name that references the Account object in cases where the criteria is specified for a Child object like Address_vod__c. For eg, for Address_vod__c, the value for this field will be Account_vod__c</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the lookup field&apos;s API name that references the Account object in cases where the criteria is specified for a Child object like Address_vod__c. For eg, for Address_vod__c, the value for this field will be Account_vod__c</inlineHelpText>
+        <label>Account Lookup Field API Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Only Active CVCs are used to build criteria for Available lists. Please note that all validations relating to uniqueness still apply even for inactive records. So you may still not have two CVCs for the same Entity in active and inactive state. This is just convenience to turn on/off for a certain entity something.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only Active CVCs are used to build criteria for Available lists</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Custom_Criteria__c</fullName>
+        <description>Supported special Keywords: VOD_SF_USER_ID - Salesforce ID of the mobile user
+VOD_SF_PROFILEID - Profile ID of the mobile user
+VOD_MY_ORGID - Salesforce organization ID
+VOD_USER_LANG_CD - Value of User.LanuageLocaleKey
+VOD_MY_TERRITORY - Returns a comma-separated list of the mobile user&apos;s territory names (NOT Ids)
+VOD_RECORDTYPE_ID - Retrieve a RecordType ID by name, e.g. @@VOD_RECORDTYPE_ID:Professional@@ corresponding to Object API Name 
+VOD_SF_USER:&lt;fieldName&gt; - Retrieves the value of the Logged In User&apos;s User.fieldName. For eg: User.Country_code__c will return a single quote encapsulated &apos;US&apos; from the Logged in User&apos;s User Record</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>SOQL where (without the word &quot;where&quot;) clause that will execute on the specified Object API Name. Keywords (see desc for details):VOD_SF_USER:&lt;fieldName&gt; , VOD_SF_USER_ID, VOD_SF_PROFILEID .... more in Description</inlineHelpText>
+        <label>Custom Exclusion Criteria</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Entity_ID__c</fullName>
+        <description>Auto-populated to 18 character SFDC ID of the Entity name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto-populated to 18 character SFDC ID of the Entity name</inlineHelpText>
+        <label>Entity ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entity_Type__c</fullName>
+        <description>Specifies Entity type - each entity may only have one record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies Entity type - each entity may only have one record</inlineHelpText>
+        <label>Entity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Public Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organization</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profile</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Exclusive_criteria__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, then this condition is &quot;AND&quot;ed with other CVCs that may exist for the logged in User. Only works with Custom Criteria, i.e., &quot;Use Custom Criteria&quot;. is checked/true</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, then this condition is &quot;AND&quot;ed with other CVCs that may exist for the logged in User. Only works with Custom Criteria, i.e., &quot;Use Custom Criteria&quot;. is checked/true</inlineHelpText>
+        <label>Exclusive criteria?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_2__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID for migrations across SFDC orgs</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Entity_Id__c + Object_API_Name__c</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Entity_Id__c + Object_API_Name__c</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Object_API_Name__c</fullName>
+        <description>The Object API name on which the custom criteria will be applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Object API name on which the custom criteria will be applicable</inlineHelpText>
+        <label>Object API Name</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Account</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Address_vod__c</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Child_Account_vod__c</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>GAS Criteria-Based Filter</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Custom_Criteria__c</columns>
+        <columns>Account_Lookup_Field_API_Name__c</columns>
+        <columns>Active__c</columns>
+        <columns>Exclusive_criteria__c</columns>
+        <columns>External_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Org_GCFs</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Account_Lookup_Field_API_Name__c</columns>
+        <columns>Active__c</columns>
+        <columns>Exclusive_criteria__c</columns>
+        <columns>Custom_Criteria__c</columns>
+        <columns>External_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Organization</value>
+        </filters>
+        <label>Org GCFs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Profile_GCFs</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Account_Lookup_Field_API_Name__c</columns>
+        <columns>Active__c</columns>
+        <columns>Exclusive_criteria__c</columns>
+        <columns>Custom_Criteria__c</columns>
+        <columns>External_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Profile</value>
+        </filters>
+        <label>Profile GCFs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Public_Group_GCFs</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Account_Lookup_Field_API_Name__c</columns>
+        <columns>Active__c</columns>
+        <columns>Exclusive_criteria__c</columns>
+        <columns>Custom_Criteria__c</columns>
+        <columns>External_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Public Group</value>
+        </filters>
+        <label>Public Group GCFs</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>User_GCFs</fullName>
+        <columns>NAME</columns>
+        <columns>Entity_Type__c</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Account_Lookup_Field_API_Name__c</columns>
+        <columns>Active__c</columns>
+        <columns>Exclusive_criteria__c</columns>
+        <columns>Custom_Criteria__c</columns>
+        <columns>External_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>User</value>
+        </filters>
+        <label>User GCFs</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Entity Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>GAS Criteria-Based Filters</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

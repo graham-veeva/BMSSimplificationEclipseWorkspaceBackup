@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ข้อผิดพลาดการประชุมทางโทรศัพท์</value>
+    </caseValues>
+    <fields>
+        <label>แอคเคาต์</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>วันที่เวลาที่สัมภาษณ์ทางโทรศัพท์</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทการสัมภาษณ์ทางโทรศัพท์</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>เหตุผล</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>การเข้าถึงแอคเคาต์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>การสัมภาษณ์ทางโทรศัพท์ถูกล็อค</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>การเข้าถึงอ็อบเจ็กต์</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ผู้ใช้</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>ข้อผิดพลาดในการสัมภาษณ์ทางโทรศัพท์</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ข้อความ XML</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <webLinks>
+        <label>ลบ</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>แก้ไข</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

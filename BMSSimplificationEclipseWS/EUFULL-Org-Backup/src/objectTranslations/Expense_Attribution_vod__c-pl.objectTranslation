@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Przypisanie wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Przypisania wydatków</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Przypisanie wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Przypisania wydatków</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Przypisania wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Przypisań wydatków</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Przypisaniu wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Przypisaniom wydatków</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Przypisaniem wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Przypisaniami wydatków</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Przypisaniu wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Przypisaniach wydatków</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>false</plural>
+        <value>Przypisanie wydatku</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Vocative</caseType>
+        <plural>true</plural>
+        <value>Przypisania wydatków</value>
+    </caseValues>
+    <fields>
+        <label>Rzeczywisty</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Pozycja wydatków</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Typ wydatków</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki (klient)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki (uczestnik)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki (mówca)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki (członek zespołu)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Typ naliczonego wydatku</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Klient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Uczestnik</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Mówca zdarzenia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Członek zespołu zdarzenia</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Dostawa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Miejsce</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki (dostawca)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki (miejsce)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Przypisania wydatków</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Naliczone wydatki</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data płatności</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa</nameFieldLabel>
+    <recordTypes>
+        <label>Przypisanie wydatków zdarzenia</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

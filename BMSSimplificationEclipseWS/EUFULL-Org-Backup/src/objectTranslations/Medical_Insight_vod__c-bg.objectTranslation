@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Вътрешна медицинска информация</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Вътрешна медицинска информация</value>
+    </caseValues>
+    <fields>
+        <label>Клиент</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Вътрешна медицинска информация</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Клинично проучване</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Вътрешна медицинска информация</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Дата</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Описание</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Референтен ID на лицето</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Взаимодействие</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Вътрешна медицинска информация</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Медицинско събитие</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Вътрешна медицинска информация</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Друг източник</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Промени заключването</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Публикация</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Вътрешна медицинска информация</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Състояние</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Записано</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Подадено</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Резюме</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Отключи</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Име на вътрешна медицинска информация</nameFieldLabel>
+    <recordTypes>
+        <label>Основна вътр. медицинска информация</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Необходимо е описание, за да запишете или подадете основна вътрешна медицинска информация</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Необходимо е резюме, за да запишете или подадете основна вътрешна медицинска информация</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Подай</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

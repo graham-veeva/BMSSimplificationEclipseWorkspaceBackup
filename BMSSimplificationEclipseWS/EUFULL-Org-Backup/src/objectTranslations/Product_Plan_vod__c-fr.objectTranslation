@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan Produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plans Produit</value>
+    </caseValues>
+    <fields>
+        <label>Actif</label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>% terminé</label>
+        <name>Complete__c</name>
+    </fields>
+    <fields>
+        <label>Description</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Groupe de Mention</label>
+        <name>Detail_Group_vod__c</name>
+        <relationshipLabel>Plans Produits (Groupe de Mention)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produit</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Plans des produits</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation>Approuvé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In  Progress</masterLabel>
+            <translation>En cours de traitement</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>En suspens</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation>Rejeté</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Product Plan Name --></nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label>Mettre à jour les mesures</label>
+        <name>Update_Metrics</name>
+    </webLinks>
+</CustomObjectTranslation>

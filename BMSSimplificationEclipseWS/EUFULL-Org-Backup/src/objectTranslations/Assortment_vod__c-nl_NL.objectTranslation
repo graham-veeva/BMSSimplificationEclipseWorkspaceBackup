@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Assortiment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Assortimenten</value>
+    </caseValues>
+    <fields>
+        <label>Accountgroep</label>
+        <name>Account_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Accountrecordtype</label>
+        <name>Account_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Pharmacy_vod</masterLabel>
+            <translation>Apotheek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesaler_vod</masterLabel>
+            <translation>Groothandel</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Alle overige</label>
+        <name>All_Others_vod__c</name>
+    </fields>
+    <fields>
+        <label>Assortimentgroep</label>
+        <name>Assortment_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Recordtype voorraadbewaking</label>
+        <name>Inventory_Monitoring_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Inventory_Monitoring_vod</masterLabel>
+            <translation>Voorraadbewaking</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Orderrecordtype</label>
+        <name>Order_Record_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation><!-- Direct_vod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Overdracht</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Productgebonden</label>
+        <name>Product_Bound_vod__c</name>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam</nameFieldLabel>
+    <recordTypes>
+        <label>VB-assortiment</label>
+        <name>IM_Assortment_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>OM-assortiment</label>
+        <name>OM_Assortment_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Begindatum na einddatum</errorMessage>
+        <name>EndDate_After_StartDate_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Bij een productgebonden assortiment kan niet de sectie alle anderen worden weergegeven</errorMessage>
+        <name>ProductBound_CannotHave_AllOthers_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Voorbeeld</label>
+        <name>Assortment_Preview_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

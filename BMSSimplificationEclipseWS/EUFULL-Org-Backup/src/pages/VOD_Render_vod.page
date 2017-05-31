@@ -1,0 +1,8 @@
+<apex:page standardStylesheets="true">
+<apex:composition template="{!$Page.VODRedirect_Scroll_1800_vod}"/>
+<script type="text/javascript"> 
+   var oType = "{!$CurrentPage.parameters.oType}";
+   var queryParams = "&{!$CurrentPage.parameters.queryParams}";
+   com.vod309.redirect.redirect(oType, queryParams);
+</script>
+</apex:page>

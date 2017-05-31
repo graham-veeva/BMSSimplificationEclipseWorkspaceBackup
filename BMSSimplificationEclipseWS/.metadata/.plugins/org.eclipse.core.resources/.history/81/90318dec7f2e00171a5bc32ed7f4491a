@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>Expense_Header_Edit_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Expense_Header_Edit_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Expense_Header_View_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Aggregates details of an expense line, such as the payee, the person who incurred the expense, and the payment status. Represents an invoice.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_Agreement_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp;Incurred_Expense_Speaker_vod__r.Event_Speaker_Contract_HCPTS__c ,&apos;Activity Agreement&apos;)</formula>
+        <label>Activity Agreement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_vod__c</fullName>
+        <description>Actual Expense.</description>
+        <externalId>false</externalId>
+        <label>Actual Amount in Funding Currency</label>
+        <summarizedField>Expense_Line_vod__c.Actual_vod__c</summarizedField>
+        <summaryForeignKey>Expense_Line_vod__c.Expense_Header_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Committed_Requested_Currency_HCPTS__c</fullName>
+        <description>Rollup summary of Committed Amount in Requested Currency</description>
+        <externalId>false</externalId>
+        <label>Committed Amount in Requested Currency</label>
+        <summarizedField>Expense_Line_vod__c.Committed_Amount_in_Requested_HCPTS__c</summarizedField>
+        <summaryForeignKey>Expense_Line_vod__c.Expense_Header_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Committed_vod__c</fullName>
+        <description>Committed expense.</description>
+        <externalId>false</externalId>
+        <label>Committed Amount in Funding Currency</label>
+        <summarizedField>Expense_Line_vod__c.Committed_vod__c</summarizedField>
+        <summaryForeignKey>Expense_Line_vod__c.Expense_Header_vod__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Company_Code_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Inherited_Budget_Need_HCPTS__r.Company_Code_HCPTS__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conga_Invoice_Group__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>&quot;Invoice-&quot; + TEXT(Payee_Vendor_vod__r.Country_vod__r.Country_Name_vod__c) + &quot;-&quot; + Payee_Vendor_vod__r.Preferred_Language_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Conga Invoice Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Name_2_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Payee_Vendor_vod__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payee Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Center_Code_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Inherited_Budget_Need_HCPTS__r.Cost_Center_Code_HCPTS__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost Center Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The country that the expense is associated with.</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipName>Expense_Header_Country_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Event_vod__r.Inherited_Budget_Need_HCPTS__r.Currency_HCPTS__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Document_Type_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Invoice - Hourly Fees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice - Fixed Fees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice - Reimbursable Expenses Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Event_Canceled_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked automatically if the associated activity is canceled.</description>
+        <externalId>false</externalId>
+        <label>Activity Canceled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Event_Recordtype_Dev_Name_Simple_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.RecordType.DeveloperName</formula>
+        <label>Event Recordtype Dev Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Event that the expense is associated with.</description>
+        <externalId>false</externalId>
+        <label>Activity</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipName>Expense_Header_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Line_Items_Number_HCPTS__c</fullName>
+        <description>Rollup Summary- Number of Expense Line Items</description>
+        <externalId>false</externalId>
+        <label># of Expense Line Items</label>
+        <summaryForeignKey>Expense_Line_vod__c.Expense_Header_vod__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>ID of the Expense Header</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Generate_Invoice_Validation_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>If(
+  OR(
+     ISBLANK(Purchase_Order_Number__c),
+     ISBLANK(Vendor_ID_2_HCPTS__c),
+     AND(
+       NOT(ISPICKVAL(Status_vod__c ,&quot;PO Created&quot;)),
+       NOT(ISPICKVAL(Status_vod__c ,&quot;PO Updated&quot;))
+     )
+  )
+  ,
+  &quot;Requirements not met&quot;
+  ,
+  &quot;Requirements met&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Generate Invoice Validation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Generate_Invoice__c</fullName>
+        <description>+ IF( ISPICKVAL( Document_Type_HCPTS__c , &quot;Invoice for Fees - Fixed&quot;) , &quot;a4zZ00000000SZE,a4zZ00000000SfI&quot;, &quot;a4zZ00000000S9q&quot;)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( 
+&quot;https://composer.congamerge.com&quot; + 
+&quot;?sessionId=&quot; +  $Api.Session_ID +
+&quot;&amp;serverUrl=&quot; +  $Api.Partner_Server_URL_290 + 
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;CurrencyCulture=de-DE&quot; + 
+
+&quot;&amp;TemplateGroup=&quot; + Conga_Invoice_Group__c +
+&quot;&amp;CongaEmailTemplateGroup=none&quot; +
+&quot;&amp;SelectTemplates=2&quot; + 
+&quot;&amp;DefaultPDF=1&quot; + 
+&quot;&amp;DC=&quot; + IF(Generate_Invoice_Validation_HCPTS__c = &quot;Requirements met&quot;,&quot;0&quot;,&quot;1&quot;) +
+&quot;&amp;DCL=&quot; + $Label.VPROF_Invoice_Error +
+&quot;&amp;DS3=1&quot; +
+
+&quot;&amp;QueryId=[Event]&quot; + $Setup.Conga_and_Echosign_Ids__c.Expense_Invoice_Event__c + &quot;?pv0=&quot; +   Event_vod__r.Id  +
+&quot;,[Speaker]&quot; + $Setup.Conga_and_Echosign_Ids__c.Expense_Invoice_Speaker__c + &quot;?pv0=&quot; +  Incurred_Expense_Speaker_vod__r.Id +
+&quot;,[Fees]&quot; + $Setup.Conga_and_Echosign_Ids__c.Expense_Invoice_Fees__c + &quot;?pv0=&quot; +  Incurred_Expense_Speaker_vod__r.Event_Speaker_Contract_HCPTS__r.Id + &quot;,[ContractParty]&quot; + $Setup.Conga_and_Echosign_Ids__c.Expense_Invoice_Contract_Party__c + &quot;?pv0=&quot; +  Payee_Vendor_vod__r.Id  + &quot;,[ExpLines]&quot; + $Setup.Conga_and_Echosign_Ids__c.Expense_Invoice_Exp_Lines__c + &quot;?pv0=&quot; +  Id  + &quot;,[ActAgreement]&quot; +  $Setup.Conga_and_Echosign_Ids__c.Expense_Invoice_Act_Agreement__c  + &quot;?pv0=&quot; + Id +
+&quot;&amp;SC0=1&quot; + 
+&quot;&amp;AC0=1&quot; + 
+&quot;&amp;SC1=Attachments&quot; + 
+&quot;&amp;DS7Preview=1&quot; +
+&quot;&amp;DS7=0&quot; +
+&quot;&amp;OFN=Activity+Invoice+for+&quot;  +
+SUBSTITUTE(
+  SUBSTITUTE(
+       SUBSTITUTE(
+           SUBSTITUTE(
+               SUBSTITUTE(
+                   SUBSTITUTE(
+                       SUBSTITUTE(
+                           SUBSTITUTE(
+                               SUBSTITUTE(
+                                   Payee_Vendor_vod__r.Name,
+                                   &quot;#&quot;,
+                                   &quot;&quot;),
+                               &quot;$&quot;,
+                               &quot;&quot;),
+                           &quot;%&quot;,
+                           &quot;&quot;),
+                       &quot;&amp;&quot;,
+                       &quot;&quot;),
+                   &quot;\\&quot;,
+                   &quot;&quot;),
+               &quot;?&quot;,
+               &quot;&quot;),
+           &quot;/&quot;,
+           &quot;&quot;),
+       &quot;!&quot;,
+       &quot;&quot;),
+    &quot;*&quot;,
+&quot;&quot;)
+
+, &quot;Generate Invoice&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Generate Invoice</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_Account_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The account that incurred an expense.</description>
+        <externalId>false</externalId>
+        <label>Incurred Expense (Account)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Incurred_Expense_Account_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_Attendee_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The attendee that incurred an expense</description>
+        <externalId>false</externalId>
+        <label>Incurred Expense (Attendee)</label>
+        <referenceTo>EM_Attendee_vod__c</referenceTo>
+        <relationshipName>Incurred_Expense_Attendee_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_Speaker_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Service Provider that incurred an expense</description>
+        <externalId>false</externalId>
+        <label>Incurred Expense (Service Provider)</label>
+        <referenceTo>EM_Event_Speaker_vod__c</referenceTo>
+        <relationshipName>Incurred_Expense_Speaker_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_Team_Member_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The team member that incurred an expense</description>
+        <externalId>false</externalId>
+        <label>Incurred Expense (Team Member)</label>
+        <referenceTo>EM_Event_Team_Member_vod__c</referenceTo>
+        <relationshipName>Incurred_Expense_Team_Member_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_Vendor_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The vendor that incurred an expense</description>
+        <externalId>false</externalId>
+        <label>Incurred Expense (Vendor)</label>
+        <referenceTo>EM_Vendor_vod__c</referenceTo>
+        <relationshipName>Incurred_Expense_Vendor_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_Venue_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The venue that incurred an expense</description>
+        <externalId>false</externalId>
+        <label>Incurred Expense (Venue)</label>
+        <referenceTo>EM_Venue_vod__c</referenceTo>
+        <relationshipName>Incurred_Expense_Venue_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Incurred_Expense_vod__c</fullName>
+        <description>The entity that incurred the expense</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Incurred Service Provider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Simple_Formula_HCPTS__c</fullName>
+        <description>Yes/No, based on Payee&apos;s ERS Value</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Payee_Vendor_vod__r.ERS_Simple_HCPTS__c)</formula>
+        <inlineHelpText>Yes/No, based on Payee&apos;s ERS Value</inlineHelpText>
+        <label>Invoice?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_Date_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>LastModifiedBy.FirstName &amp; &apos; &apos; &amp;  LastModifiedBy.LastName  &amp; &apos; &apos; &amp; TEXT( LastModifiedDate )</formula>
+        <label>Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Material_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Material Group</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HCPT02</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCPT03</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCPT01</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISVO06</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS25</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Field used by mobile products for synchronization.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>OriginatingSystemReferenceID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>OriginatingSystemReferenceID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Override_Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Helper field for data loads.</description>
+        <externalId>false</externalId>
+        <label>Override Lock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PO_Create_Date_HCPTS__c</fullName>
+        <description>PO Create Date</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>PO Create Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Account_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The account that was paid.</description>
+        <externalId>false</externalId>
+        <label>Payee (Account)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Payee_Account_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Attendee_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The attendee that was paid</description>
+        <externalId>false</externalId>
+        <label>Payee (Attendee)</label>
+        <referenceTo>EM_Attendee_vod__c</referenceTo>
+        <relationshipName>Payee_Attendee_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Speaker_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Service Provider that was paid</description>
+        <externalId>false</externalId>
+        <label>Payee (Service Provider)</label>
+        <referenceTo>EM_Event_Speaker_vod__c</referenceTo>
+        <relationshipName>Payee_Speaker_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Team_Member_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The team member that was paid.</description>
+        <externalId>false</externalId>
+        <label>Payee (Team Member)</label>
+        <referenceTo>EM_Event_Team_Member_vod__c</referenceTo>
+        <relationshipName>Payee_Team_Member_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Vendor_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The vendor that was paid.</description>
+        <externalId>false</externalId>
+        <label>Payee Lookup</label>
+        <referenceTo>EM_Vendor_vod__c</referenceTo>
+        <relationshipName>Payee_Vendor_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Venue_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The venue that was paid.</description>
+        <externalId>false</externalId>
+        <label>Payee (Venue)</label>
+        <referenceTo>EM_Venue_vod__c</referenceTo>
+        <relationshipName>Payee_Venue_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Payee_vod__c</fullName>
+        <description>The entity that was paid</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payee</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Date_vod__c</fullName>
+        <description>Date the payment was made.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Due_Date_vod__c</fullName>
+        <description>Date the payment is due</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payment Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Status_HCPTS_S1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Payment Requested will trigger the payment to the HCP!
+Manual Payment Entry should only be used for documentation only. This will not trigger an interface update.</inlineHelpText>
+        <label>Payment Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Payment Requested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manual Payment Entry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Processed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Plant_Code_Name_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Inherited_Budget_Need_HCPTS__r.Company_Code_HCPTS__r.Plant_Code_HCPTS__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Plant Code Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Processor_ID_HCPTS__c</fullName>
+        <description>BMS ID of person who created the Expense Header</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CreatedBy.BMS_Employee_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Coordinator ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Set by SAP nightly process</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <inlineHelpText>Set by SAP nightly process</inlineHelpText>
+        <label>PO#/Concur ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Org_HCPTS__c</fullName>
+        <description>Purchase Org</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP Purchase Org</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requested_Currency_HCPTS__c</fullName>
+        <description>This field captures the requested currency of the HCP</description>
+        <externalId>false</externalId>
+        <label>Requested Currency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SEK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Company_Code_HCPTS__c</fullName>
+        <description>Company Code from SAP- used to ensure SAP Company Code and the Company Code on the Budget match</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP Company Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Cost_Center_Code_HCPTS__c</fullName>
+        <description>Cost Center Code from SAP- used to ensure SAP Cost Center Code and the Cost Center Code on the Budget match</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP Cost Center Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_WBS_Code_HCPTS__c</fullName>
+        <description>WBS Code from SAP- used to ensure SAP WBS Code and the WBS Code on the Budget match</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP WBS Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Split_Lines_vod__c</fullName>
+        <description>Determines if an expense header contains split expense lines or not. If yes, the incurred expense parties are set on the expense lines, rather than the expense header.</description>
+        <externalId>false</externalId>
+        <label>Split Lines?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of payment</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Unpaid_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paid_in_Full_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partial_Payment_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ready for SAP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PO Requested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PO Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PO Created</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concur Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PO Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PO Updated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concur Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Code_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Code</label>
+        <picklist>
+            <controllingField>Tax_Market_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>BA - BE 21%</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BE - BE 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BZ - BE 0% Charities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BQ - BE 0% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BR - BE - 0% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA - FR - 20%</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>YA - FR - 20% Claim at payment</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FZ - FR - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RA - FR - 20% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SA - FR - 20% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>France</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA - IT - 22%</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IW - IT - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RA - IT - 21% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SA - IT - 22% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Italy</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA - ES - 21%</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EZ - ES - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QA - ES - 21% EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QB - ES - 21% Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>Spain</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PG - UK - 20%</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PE - UK - 0% Domestic</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RD - UK - EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SB - UK - Non-EU Reverse Charge</fullName>
+                <default>false</default>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <controllingFieldValues>Belgium</controllingFieldValues>
+                <controllingFieldValues>France</controllingFieldValues>
+                <controllingFieldValues>Italy</controllingFieldValues>
+                <controllingFieldValues>Spain</controllingFieldValues>
+                <controllingFieldValues>United Kingdom</controllingFieldValues>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Market_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Market</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>France</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>true</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Title_HCPTS__c</fullName>
+        <description>Expense Header Title (Activity ID + Speaker Name)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Activity_ID_2_HCPTS__c &amp; &quot;-&quot; &amp; Contract_Party_Name_2_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VAT_Liable_Simple_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Payee_Vendor_vod__r.VAT_Liable_HCPTS__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicates if the Payee is VAT Liable</inlineHelpText>
+        <label>VAT Liable?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_ID_2_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Payee_Vendor_vod__r.Vendor_ID_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAP Vendor ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Incurred_Expense_Speaker_vod__r.Related_ICF_HCPTS__r.Vendor_HCPTS__r.External_ID_vod__c</formula>
+        <label>SAP Vendor ID (from Contract)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Mat_Group_Concat_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Payee_Vendor_vod__r.Vendor_Mat_Group_Concat_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payee Mat. Group Concat</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WBS_Code_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Inherited_Budget_Need_HCPTS__r.WBS_Number_HCPTS__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>WBS Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Expense</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Event_vod__c</columns>
+        <columns>Vendor_ID_HCPTS__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Purchase_Order_Number__c</columns>
+        <columns>Payment_Due_Date_vod__c</columns>
+        <columns>Payee_Account_vod__c</columns>
+        <columns>Payee_Vendor_vod__c</columns>
+        <columns>Contract_Party_Name_2_HCPTS__c</columns>
+        <columns>Created_By_HCTPS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>EH-{0000000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Expenses</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Event_Expense_Header_vod</fullName>
+        <active>true</active>
+        <description>Event Expense Header</description>
+        <label>Event_Expense_Header_vod</label>
+        <picklistValues>
+            <picklist>Document_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Invoice - Fixed Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice - Hourly Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice - Reimbursable Expenses Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Material_Group__c</picklist>
+            <values>
+                <fullName>HCPT01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISVO06</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Requested_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PO Requested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Simple_Expense_Header</fullName>
+        <active>true</active>
+        <description>RT for Simplification</description>
+        <label>Simple Expense Header</label>
+        <picklistValues>
+            <picklist>Document_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Invoice - Fixed Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice - Hourly Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice - Reimbursable Expenses Only</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Material_Group__c</picklist>
+            <values>
+                <fullName>HCPT01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISVO06</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Status_HCPTS_S1__c</picklist>
+            <values>
+                <fullName>Manual Payment Entry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Requested_Currency_HCPTS__c</picklist>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Split_Lines_vod__c</picklist>
+            <values>
+                <fullName>No_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PO Requested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Code_HCPTS__c</picklist>
+            <values>
+                <fullName>BA - BE 21%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE - BE 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BQ - BE 0%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BR - BE - 0%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BZ - BE 0%25 Charities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EZ - ES - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FZ - FR - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IW - IT - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - ES - 21%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - FR - 20%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA - IT - 22%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE - UK - 0%25 Domestic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PG - UK - 20%25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA - ES - 21%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QB - ES - 21%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RA - FR - 20%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RA - IT - 21%25 EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RD - UK - EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SA - FR - 20%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SA - IT - 22%25 Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SB - UK - Non-EU Reverse Charge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YA - FR - 20%25 Claim at payment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tax_Market_HCPTS__c</picklist>
+            <values>
+                <fullName>Belgium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spain</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <sharingReasons>
+        <fullName>Event_Team_Member_vod__c</fullName>
+        <label>Event Team Member</label>
+    </sharingReasons>
+    <validationRules>
+        <fullName>Cannot_Edit_Expense_Header</fullName>
+        <active>true</active>
+        <description>Cannot Edit EH if the status has been changed from In Draft</description>
+        <errorConditionFormula>AND(
+Event_vod__r.RecordType.DeveloperName = &apos;Simple_Activity_HCPTS&apos;,
+OR(
+ISPICKVAL(PRIORVALUE(Status_vod__c),&quot;PO Requested&quot;),
+ISPICKVAL(PRIORVALUE(Status_vod__c),&quot;PO Pending&quot;),
+ISPICKVAL(PRIORVALUE(Status_vod__c),&quot;PO Created&quot;)),
+OR(
+ISCHANGED(Status_vod__c),
+ISCHANGED(Payee_vod__c),
+ISCHANGED( Incurred_Expense_vod__c),
+ISCHANGED( Requested_Currency_HCPTS__c),
+ISCHANGED( Actual_vod__c),
+ISCHANGED( Event_vod__c),
+ISCHANGED(Purchase_Order_Number__c),
+ISCHANGED(Committed_vod__c),
+ISCHANGED(Expense_Line_Items_Number_HCPTS__c),
+ISCHANGED(Material_Group__c)
+),
+$Profile.Name &lt;&gt;  &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;)</errorConditionFormula>
+        <errorMessage>You cannot edit the Expense once it has been Requested.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Edit_Expense_Header_after_Payment</fullName>
+        <active>true</active>
+        <description>Validation Rule to not edit expense header if a payment has been requested.</description>
+        <errorConditionFormula>AND(
+Event_vod__r.RecordType.DeveloperName = &apos;Simple_Activity_HCPTS&apos;,
+OR(
+ISPICKVAL(PRIORVALUE( Payment_Status_HCPTS_S1__c),&quot;Payment Requested&quot;),
+ISPICKVAL(PRIORVALUE( Payment_Status_HCPTS_S1__c),&quot;Payment Pending&quot;),
+ISPICKVAL(PRIORVALUE( Payment_Status_HCPTS_S1__c),&quot;Payment Processed&quot;)),
+OR(
+ISCHANGED(Payment_Status_HCPTS_S1__c),
+ISCHANGED( Tax_Market_HCPTS__c ),
+ISCHANGED(  Tax_Code_HCPTS__c )
+),
+$Profile.Name &lt;&gt;  &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;)</errorConditionFormula>
+        <errorMessage>You cannot edit the expense header after the PO has been created and Payment has been requested.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Material_Groups_are_Valid</fullName>
+        <active>false</active>
+        <description>This rule will cause an Error if the User selects a Material Group from the picklist that is NOT the Primary or Secondary Material Group on the Payee Record</description>
+        <errorConditionFormula>CONTAINS( text(Material_Group__c),  Vendor_Mat_Group_Concat_HCPTS__c )</errorConditionFormula>
+        <errorDisplayField>Material_Group__c</errorDisplayField>
+        <errorMessage>Please select a valid Material Group</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incurred_Expense_required_for_DOCT</fullName>
+        <active>false</active>
+        <description>If the Payee&apos;s Account Group is DOCT the incurred expense is required</description>
+        <errorConditionFormula>AND(ISPICKVAL(Payee_Vendor_vod__r.Account_Group_HCPTS__c,&quot;DOCT&quot;), ISBLANK(Incurred_Expense_vod__c))</errorConditionFormula>
+        <errorMessage>If the Payee&apos;s Account Group is DOCT then incurred expense is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Need_Vendor_to_Request_PO</fullName>
+        <active>true</active>
+        <description>If SAP Vendor ID = Null, Cannot request PO
+SAP Vendor is required when requesting a PO
+Requested Currency is required when Requesting a PO
+Committed Amount in Requested Currency cannot be less than or equal to 0</description>
+        <errorConditionFormula>AND(ISPICKVAL( Status_vod__c , &apos;PO Requested&apos;),OR(Committed_Requested_Currency_HCPTS__c  &lt;= 0,ISBLANK(TEXT(Requested_Currency_HCPTS__c)),ISBLANK( Vendor_ID_2_HCPTS__c ),ISBLANK(Text(Material_Group__c))))</errorConditionFormula>
+        <errorMessage>Status cannot be changed to PO Requested until the following criteria are met: 
+SAP Vendor ID is populated.
+Requested Currency is set in the Expense Header.
+Committed Amount is greater than zero in Expense line.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Need_Vendor_to_Request_PO_Simplified</fullName>
+        <active>false</active>
+        <description>You must have an Expense Approver, at least 1 expense line andTax Market and Tax Code must be selected</description>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Status_vod__c , &apos;PO Requested&apos;),
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+OR(
+Committed_vod__c  &lt;= 0,
+ISBLANK(Event_vod__r.Approver_ID_HCPTS__c)))</errorConditionFormula>
+        <errorMessage>You must have an Expense Approver and your Committed amount must be greater than 0.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_PO_Request_for_Manual_Payment</fullName>
+        <active>true</active>
+        <description>You can not request a PO for Manual Payment Entry. Please change the status back to Draft.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Payment_Status_HCPTS_S1__c, &quot;Manual Payment Entry&quot;),
+NOT(ISPICKVAL(Status_vod__c, &quot;Draft&quot;)
+))</errorConditionFormula>
+        <errorMessage>You can not request a PO for Manual Payment Entry. Please change the status back to Draft.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PO_Pending_Lock</fullName>
+        <active>false</active>
+        <description>Prevents PO Pending status by end users (non-integration users)</description>
+        <errorConditionFormula>AND( ISPICKVAL(Status_vod__c, &apos;PO Pending&apos;),  OR(  $UserRole.Name &lt;&gt; &apos;V - System Administrator&apos;, $User.ProfileId  &lt;&gt; &apos;System Administrator&apos;))</errorConditionFormula>
+        <errorMessage>Selection invalid. Please select another status.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PO_Requested_Update</fullName>
+        <active>true</active>
+        <description>Validation Rule updating the expense header to read &apos;PO Requested&apos; when the contract is ready to be invoiced.</description>
+        <errorConditionFormula>AND( 
+NOT(Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;), 
+NOT(ISBLANK( Incurred_Expense_Speaker_vod__c)), 
+Incurred_Expense_Speaker_vod__r.Ready_to_Invoice_HCPTS__c = &apos;No&apos;, ISPICKVAL(Status_vod__c ,&apos;PO Requested&apos;))</errorConditionFormula>
+        <errorMessage>PO can only be requested if the related contract is activated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Payment_Request_Validation</fullName>
+        <active>true</active>
+        <description>To Request Payment, you must have a PO# and select the Tax Market and Tax Code.</description>
+        <errorConditionFormula>AND(  
+ISPICKVAL(Payment_Status_HCPTS_S1__c, &apos;Payment Requested&apos;),
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+OR(
+ISBLANK(Purchase_Order_Number__c),
+ISBLANK(TEXT(Tax_Code_HCPTS__c)),
+ISBLANK(TEXT(Tax_Market_HCPTS__c))))</errorConditionFormula>
+        <errorMessage>To Request Payment, you must have a PO# and select the Tax Market and Tax Code.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_to_Request_PO_Simplified</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Status_vod__c , &apos;PO Requested&apos;), 
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;, 
+OR( 
+Committed_vod__c &lt;= 0, 
+ISBLANK(Event_vod__r.Approver_ID_HCPTS__c)))</errorConditionFormula>
+        <errorMessage>You must have a PO Approver and at least one Expense Line to Request a PO</errorMessage>
+    </validationRules>
+</CustomObject>

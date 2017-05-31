@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Patient Tracker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Patient Tracker</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Patient Tracker --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Baraclude patient share among total ETV --></label>
+        <name>Baraclude_ETV_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cycle Period --></label>
+        <name>Cycle_Period_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- ETV patient share among total ARV --></label>
+        <name>ETV_ARV_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lamivudine patient share among total ARV --></label>
+        <name>Lamivudine_ARV_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Continue Monopril Patients --></label>
+        <name>Number_of_Continue_Mono_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of New Monopril Patients --></label>
+        <name>Number_of_New_Monopril_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Lung Cancer patients --></label>
+        <name>Paraplatin_Actual_LC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Ovarian Cancer patients --></label>
+        <name>Paraplatin_Actual_OC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Other patients --></label>
+        <name>Paraplatin_Actual_Other_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Lung Cancer patients --></label>
+        <name>Paraplatin_Planned_LC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Ovarian Cancer patients --></label>
+        <name>Paraplatin_Planned_OC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Other patients --></label>
+        <name>Paraplatin_Planned_Other_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Breast Cancer patients --></label>
+        <name>Taxol_Actual_BC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Lung Cancer patients --></label>
+        <name>Taxol_Actual_LC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Ovarian Cancer patients --></label>
+        <name>Taxol_Actual_OC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Actual Other patients --></label>
+        <name>Taxol_Actual_Other_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Breast Cancer patients --></label>
+        <name>Taxol_Planned_BC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Lung Cancer patients --></label>
+        <name>Taxol_Planned_LC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Ovarian Cancer patients --></label>
+        <name>Taxol_Planned_OC_Patients_BMS_CN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Planned Other patients --></label>
+        <name>Taxol_Planned_Other_Patients_BMS_CN__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The value you input does not match ETV/ARV＋Lamivudine/ARV &lt;= 100%. --></errorMessage>
+        <name>ETV_ARV_Plus_Lamivudine_ARV_BMS_CN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Planned patients tracker values cannot be change after 10th day of each month. --></errorMessage>
+        <name>Lock_Planned_Patient_Trakcer_BMS_CN</name>
+    </validationRules>
+</CustomObjectTranslation>

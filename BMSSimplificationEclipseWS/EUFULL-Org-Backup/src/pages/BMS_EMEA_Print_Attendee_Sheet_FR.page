@@ -1,0 +1,305 @@
+<apex:page standardController="Medical_Event_vod__c" standardStylesheets="true" extensions="BMS_EMEA_Print_Attendee_Sheet_FR" showHeader="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf">
+
+<html>
+<head>
+<style>
+@page{
+size: A4 landscape;
+}
+</style>
+</head>
+</html>
+
+
+<head>
+
+<apex:form >
+ <div style="width:100%;"> 
+   <p align="center">  
+      <apex:image url="{!imageURL}" > </apex:image>
+   </p>      
+  </div> 
+</apex:form>
+
+<html>
+
+<apex:form >
+  <div style="width:100%; font-weight:bold; font-family:Calibri (Body)"> 
+    <p align="center">  
+       <apex:outputLabel value="{!$Label.BMS_EMEA_FFM_Sheet_Name}"/>
+    </p>      
+   </div> 
+</apex:form>
+
+<body>
+
+<apex:form >
+  <div style="width:100%; font-size:80%; font-style:italic; font-family:Calibri"> 
+    <p align="left">  
+       <apex:outputLabel value="{!$Label.BMS_EMEA_FFM_Disclaimer}" />
+    </p>      
+   </div> 
+</apex:form>
+
+<apex:form style="font-size:10px;font-weight:bold;">
+ <apex:pageBlock >
+  <apex:pageBlockSection columns="1" id="blockInfo"> 
+    
+    <apex:outputField value="{!medicalEvent.Name}" label="{!$Label.BMS_EMEA_FFM_Event_Name_FR}"/> &nbsp;
+    <apex:outputField value="{!medicalEvent.Start_Date_vod__c}" label="{!$Label.BMS_EMEA_FFM_Event_Date_FR}"/> &nbsp;
+    
+    <apex:outputField value="{!medicalEvent.FMAS_Meeting_ID_BMS_EMEA__c}" label="{!$Label.BMS_EMEA_FFM_Event_Venue_FR}"/>
+              
+   </apex:pageBlockSection>
+  </apex:pageBlock>
+</apex:form>
+
+
+    
+&nbsp;
+&nbsp;
+<apex:form > 
+<apex:pageBlock >
+<apex:pageBlockSection >
+
+     <apex:inputText value="{!attendeeHeader}" label="{!$Label.BMS_EMEA_FFM_Attendee_Header}" style="font-size:10px;font-weight:bold;font-family:Calibri (Body)"/>
+     &nbsp;
+     &nbsp;
+     
+
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+<apex:form >
+
+<apex:variable var="rowcount" value="{!1}" />
+<apex:pageBlock >
+    <apex:pageBlockTable value="{!eventAttendees}" var="ea" id="eventAttendees"  columns="11" cellspacing="0" cellpadding="1" border="1" style="page-break-after:always;font-size:10px;line-height:30px" rendered="{!IF(eventAttendees.size>0,'true','false')}">
+
+<apex:column width="1%">
+         <apex:facet name="header">#</apex:facet>
+        {!rowcount} <apex:variable var="rowcount" value="{!rowcount+1}" />
+    </apex:column>
+
+
+        <apex:column width="10%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Name}</apex:facet>
+            <apex:outputText value="{!ea.Account_vod__r.LastName}"/>
+            <!--<apex:outputText value="{!IF(ea.Account_vod__r.LastName!=null,ea.Account_vod__r.LastName + ' , ' + ea.Account_vod__r.FirstName,'           ')}"/> -->
+        </apex:column>
+         <apex:column width="10%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Last_Name}</apex:facet>
+            <apex:outputText value="{!ea.Account_vod__r.FirstName}"/>
+        <!--    <apex:outputText value="{!IF(ea.Account_vod__r.LastName!=null,ea.Account_vod__r.ShippingStreet + ' , ' + ea.Account_vod__r.ShippingCity + ' , ' + ea.Account_vod__r.ShippingPostalCode,' ')}"/>&nbsp; -->
+        </apex:column>
+      
+    <apex:column width="10%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Speciality}</apex:facet>
+            <apex:outputText value="{!IF(ea.Account_vod__r.Individual_Sub_Type_BMS_EMEA__c!=null || ea.Account_vod__r.Specialty_formula_BMS_EMEA__c!=null, ea.Account_vod__r.Individual_Sub_Type_BMS_EMEA__c + ' / ' + ea.Account_vod__r.Specialty_formula_BMS_EMEA__c,'           ')}"/>
+        </apex:column>
+        <apex:column width="2%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Main_Institution}</apex:facet>
+            <apex:outputText value="{!IF(ea.Account_vod__r.Main_Institution_BMS_EMEA__r.Name!=null, ea.Account_vod__r.Main_Institution_BMS_EMEA__r.Name  + ' / ' + ea.Account_vod__r.ShippingCity,'           ')}"/>
+        </apex:column>
+        
+          <apex:column width="5%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_RPPS}</apex:facet>
+            <apex:outputText value="{!ea.Account_vod__r.Local_ID_BMS_EMEA__c}"/>
+        </apex:column>
+                  <apex:column width="5%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_University}</apex:facet>
+            
+        </apex:column>
+             <apex:column width="5%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_University_Cycle}</apex:facet>
+            
+        </apex:column>
+        
+                          <apex:column width="5%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Year_In_Cycle}</apex:facet>
+            
+        </apex:column>
+        
+            <apex:column width="5%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Attendance}</apex:facet>
+            
+        </apex:column>
+             <apex:column width="5%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Comments}</apex:facet>
+            
+        </apex:column>
+        
+        <!--
+          <apex:column width="10%" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'DE'}">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_HCP_DHG}</apex:facet>
+            <apex:inputText value="{!HCPDHG}"/>
+        </apex:column>-->
+        </apex:pageBlockTable> 
+        </apex:pageBlock>
+  
+        </apex:form>
+        
+        &nbsp;
+&nbsp;
+<apex:form > 
+<apex:pageBlock >
+<apex:pageBlockSection >
+
+     <apex:inputText value="{!speakerHeader}" label="{!$Label.BMS_EMEA_FFM_Speaker_Header}" style="font-size:10px;font-weight:bold;font-family:Calibri (Body)"/>
+     &nbsp;
+     &nbsp;
+     
+
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+        
+  <apex:form >
+  <apex:variable var="rowcount" value="{!1}" />
+    <apex:dataTable value="{!meetingSpeaker}" var="msp" id="meetingSpeaker" columns="10" cellspacing="0" cellpadding="1" border="1" style="page-break-after:always;font-size:10px;line-height:30px" rendered="{!IF(meetingSpeaker.size>0,'true','false')}">
+  
+         <apex:column >
+         <apex:facet name="header">#</apex:facet>
+        {!rowcount} <apex:variable var="rowcount" value="{!rowcount+1}" />
+    </apex:column>
+
+        <apex:column width="20%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Name}</apex:facet>
+            <apex:outputText value="{!msp.Account__r.LastName}"/>
+           <!-- <apex:outputText value="{!IF(msp.Account__r.LastName!=null,msp.Account__r.LastName + ' , ' + msp.Account__r.FirstName,'           ')}"/>   -->
+        </apex:column>
+         <apex:column width="20%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Last_Name}</apex:facet>
+            <apex:outputText value="{!msp.Account__r.FirstName}"/>&nbsp;
+        </apex:column>
+   
+    <apex:column width="15%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Speciality}</apex:facet>
+            <apex:outputText value="{!IF(msp.Account__r.Individual_Sub_Type_BMS_EMEA__c!=null || msp.Account__r.Specialty_formula_BMS_EMEA__c!=null, msp.Account__r.Individual_Sub_Type_BMS_EMEA__c + ' / ' + msp.Account__r.Specialty_formula_BMS_EMEA__c,'           ')}"/>
+        </apex:column>
+        <apex:column width="20%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Main_Institution}</apex:facet>
+            <apex:outputText value="{!IF(msp.Account__r.Main_Institution_BMS_EMEA__r.Name!=null,msp.Account__r.Main_Institution_BMS_EMEA__r.Name + ' / ' + msp.Account__r.ShippingCity,'           ')}"/>
+        </apex:column>
+         <apex:column width="15%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_RPPS}</apex:facet>
+            <apex:outputText value="{!msp.Account__r.Local_ID_BMS_EMEA__c}"/>
+        </apex:column>
+         <apex:column >
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Attendance}</apex:facet>
+            
+        </apex:column>
+             <apex:column >
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Comments}</apex:facet>
+            
+        </apex:column>
+
+        
+        </apex:dataTable>
+        
+ </apex:form>
+ 
+ 
+      &nbsp;
+     &nbsp;
+          &nbsp;
+     &nbsp;
+ 
+         &nbsp;
+&nbsp;
+
+ 
+
+<apex:form > 
+<apex:pageBlock >
+<apex:pageBlockSection >
+
+     <apex:inputText value="{!blankTableHeader}" label="{!$Label.BMS_EMEA_FFM_Contributors}" style="font-size:10px;font-weight:bold;font-family:Calibri (Body)"/>
+     &nbsp;
+     &nbsp;
+     
+
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+    
+    
+    <apex:form >
+   
+    <apex:pageBlock >
+        <apex:pageblockSection >
+        
+            <apex:pageblocktable value="{!nullList}" var="Li"   cellspacing="0" cellpadding="1" border="1" width="100%" style="font-size:10px;line-height:50px">
+            
+           <apex:variable var="rowcounts" value="{!0}" />
+                     <apex:column headerValue="#" width="2%">
+                     
+        
+        {!rowcounts} <apex:variable var="rowcounts" value="{!rowcounts+1}" />
+        </apex:column>
+
+               <apex:column headerValue="{!$Label.BMS_EMEA_FFM_Name}" width="10%">
+         
+         </apex:column> 
+         <apex:column headerValue="{!$Label.BMS_EMEA_FFM_Last_Name}"  width="10%">
+       
+         </apex:column>
+<apex:column headerValue="{!$Label.BMS_EMEA_FFM_Function}" width="10%">
+       
+         </apex:column>
+<apex:column headerValue="{!$Label.BMS_EMEA_FFM_Signature_FR}" width="10%">
+       
+         </apex:column>
+            </apex:pageblocktable>
+            
+        </apex:pageblockSection>
+    </apex:pageBlock>
+</apex:form>
+
+<apex:form >
+
+  <div style="width:100%; font-size:80%; font-style:italic; font-family:Calibri"> 
+    <p align="left">  
+       <apex:outputLabel value="{!$Label.BMS_EMEA_FFM_Disclaimer2}" />
+    </p>      
+   </div> 
+</apex:form>
+<!--
+-----------------------  
+        
+  <apex:form >
+    <apex:dataTable value="{!meetingSpeaker}" var="msp" id="meetingSpeaker" cellpadding="4"  border="1" rendered="{!IF(meetingSpeaker.size>0,'true','false')}">
+        <apex:column width="25%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Name}</apex:facet>
+            <apex:outputText value="{!IF(msp.Account__r.LastName!=null,msp.Account__r.LastName + ' , ' + msp.Account__r.FirstName,'           ')}"/>
+        </apex:column>
+         <apex:column width="25%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Last_Name}</apex:facet>
+            <apex:outputText value="{!IF(msp.Account__r.FirstName!=null,msp.Account__r.FirstName,' ')}"/>&nbsp;
+        </apex:column>
+   
+    <apex:column width="20%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Speciality}</apex:facet>
+            <apex:inputText value="{!SpecialtyTA}"/>
+        </apex:column>
+        <apex:column width="40%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Main_Institution}</apex:facet>
+            <apex:inputText value="{!Institution}"/>
+        </apex:column>
+         <apex:column width="40%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_RPPS}</apex:facet>
+            <apex:inputText value="{!msp.Account__r.Local_ID_BMS_EMEA__c}"/>
+        </apex:column>
+          <apex:column width="10%" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'DE'}">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_HCP_DHG}</apex:facet>
+            <apex:inputText value="{!HCPDHG}"/>
+        </apex:column>
+        
+        </apex:dataTable>
+ </apex:form>-->
+ 
+    
+</body>
+</html>
+</head>
+</apex:page>

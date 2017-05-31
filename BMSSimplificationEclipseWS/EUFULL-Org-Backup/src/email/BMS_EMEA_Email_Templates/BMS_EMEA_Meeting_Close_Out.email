@@ -1,0 +1,47 @@
+<messaging:emailTemplate subject="{!$ObjectType.Medical_Event_vod__c.label} - {!relatedTo.Name}: {!$Label.BMS_EMEA_FFM_Close_Out} " recipientType="User" relatedToType="Medical_Event_vod__c">
+
+          
+
+<messaging:htmlEmailBody >
+{!$Label.BMS_EMEA_FFM_Dear_Initiator} {!$Label.BMS_EMEA_FFM_Requester},<br></br>
+<br></br>
+
+<p>
+{!$Label.BMS_EMEA_FFM_Request_Approved} <br></br>
+</p>
+
+{!$ObjectType.Medical_Event_vod__c.fields.Status_BMS_CORE__c.label}:  {!$Label.BMS_EMEA_FFM_Close_Out} <br></br> 
+
+<p>
+{!$Label.BMS_EMEA_FFM_Description} {!$ObjectType.Medical_Event_vod__c.label}:<br></br>
+{!$ObjectType.Medical_Event_vod__c.fields.Event_Number_BMS__c.label}:  {!relatedTo.Event_Number_BMS__c} <br></br> 
+{!$ObjectType.Medical_Event_vod__c.fields.Name.label}:  {!relatedTo.Name}<br></br>  
+{!$ObjectType.Medical_Event_vod__c.fields.MF_Therapeutic_Area_BMS_EMEA__c.label} {!$Label.BMS_EMEA_FFM_And} {!$ObjectType.Medical_Event_vod__c.fields.MF_Product_Compound_BMS_EMEA__c.label}:  {!relatedTo.MF_Therapeutic_Area_BMS_EMEA__c} {!$Label.BMS_EMEA_FFM_And} {!relatedTo.MF_Product_Compound_BMS_EMEA__c} <br></br>
+
+{!$ObjectType.Medical_Event_vod__c.fields.FFM_Activity_Type_BMS_EMEA__c.label}: {!relatedTo.FFM_Activity_Type_BMS_EMEA__c} <br></br>
+{!$ObjectType.Medical_Event_vod__c.fields.Country_MasterFile_BMS_EMEA__c.label}: {!relatedTo.Country_MasterFile_BMS_EMEA__c} <br></br>
+{!$ObjectType.Medical_Event_vod__c.fields.Start_Date_vod__c.label} {!$Label.BMS_EMEA_FFM_And} {!$ObjectType.Medical_Event_vod__c.fields.End_Date_vod__c.label}: 
+ <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                 <apex:param value="{!relatedTo.Planned_Start_Date_BMS_EMEA__c}" /> 
+                            </apex:outputText> -
+<apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                 <apex:param value="{!relatedTo.Planned_End_Date_BMS_EMEA__c}" /> 
+                            </apex:outputText>   
+<br></br>
+{!$ObjectType.Medical_Event_vod__c.fields.Comments_BMS_EMEA__c.label}:{!relatedTo.Comments_BMS_EMEA__c} <br></br>
+</p>
+
+<apex:outputLink value="{!relatedto.BMS_EMEA_URL__c}">{!$Label.BMS_EMEA_FFM_Link}</apex:outputLink>
+
+
+<br></br>
+<br></br>
+
+{!$Label.BMS_EMEA_Reagrds},<br></br>
+{!$Label.BMS_EMEA_FFM_Admin} <br></br>
+{!$Label.BMS_EMEA_Email_No_reply} 
+
+</messaging:htmlEmailBody>
+
+
+</messaging:emailTemplate>

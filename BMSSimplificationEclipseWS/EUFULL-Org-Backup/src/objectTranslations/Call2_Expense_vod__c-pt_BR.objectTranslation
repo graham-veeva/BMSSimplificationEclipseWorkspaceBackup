@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Despesa de visita</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Despesas de visita</value>
+    </caseValues>
+    <fields>
+        <label>Conta</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Despesas de interação (contas)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Valor</label>
+        <name>Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de participante</label>
+        <name>Attendee_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Contact_vod</masterLabel>
+            <translation>Contato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_vod</masterLabel>
+            <translation>Evento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group_Account_vod</masterLabel>
+            <translation>Conta de grupo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Person_Account_vod</masterLabel>
+            <translation>Conta pessoal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User_vod</masterLabel>
+            <translation>Usuário</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Visita</label>
+        <name>Call2_vod__c</name>
+        <relationshipLabel>Despesas de interação</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Data</label>
+        <name>Call_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Contato</label>
+        <name>Contact_vod__c</name>
+        <relationshipLabel>Despesas de interação (contatos)</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID de referência da entidade</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>É visita-raiz?</label>
+        <name>Is_Parent_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID do dispositivo móvel</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Nota</label>
+        <name>Note_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorar bloqueio</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tipo</label>
+        <name>Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Meals</masterLabel>
+            <translation>Refeições</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Costs</masterLabel>
+            <translation>Outros custos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Usuário</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Despesas de interação</relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel><!-- Interaction Expense Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- BMS - EMEA Sales Standard Rep Presentation --></label>
+        <name>BMS_EMEA_Sales_Standard_Rep_Presentation</name>
+    </recordTypes>
+</CustomObjectTranslation>

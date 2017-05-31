@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Material de tópico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Materiais de tópicos</value>
+    </caseValues>
+    <fields>
+        <label>Apresentação de CLM</label>
+        <name>CLM_Presentation_vod__c</name>
+        <relationshipLabel>Materiais de tópicos</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label>Modelo de e-mail</label>
+        <name>Email_Template_vod__c</name>
+        <relationshipLabel>Materiais do tópico</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID externo</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Material --></help>
+        <label><!-- Item Name --></label>
+        <name>Material_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Tipo de material</label>
+        <name>Material_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Material --></label>
+        <name>Material_vod__c</name>
+        <relationshipLabel>Tópicos que utilizam o material</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Name of topic --></help>
+        <label><!-- Topic Name --></label>
+        <name>Topic_Name_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label>Tópico</label>
+        <name>Topic_vod__c</name>
+        <relationshipLabel>Materiais de tópicos (tópico)</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do material de tópico</nameFieldLabel>
+    <recordTypes>
+        <label>Material de tópico</label>
+        <name>Topic_Material_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Não é possível preencher tanto o modelo de e-mail quanto a apresentação de CLM de uma única regra. É necessário criar regras à parte para esses dois itens.</errorMessage>
+        <name>Email_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível preencher tanto o material quanto a apresentação de CLM de um único material de tópico. É necessário criar regras à parte para esses dois itens.</errorMessage>
+        <name>Material_CLM_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Um único material do tópico não pode ter Material e Modelo de e-mail preenchidos. Crie regras separadas para esses dois itens.</errorMessage>
+        <name>Material_Email_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

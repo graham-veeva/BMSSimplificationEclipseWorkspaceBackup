@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transactie territoriumbudget</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transacties territoriumbudget</value>
+    </caseValues>
+    <fields>
+        <label>Beschrijving</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Hoeveelheid</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Territoriumbudget</label>
+        <name>Territory_Budget_vod__c</name>
+        <relationshipLabel>Transacties territoriumbudget</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Transactiedatum</label>
+        <name>Transaction_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Waarde</label>
+        <name>Value_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Territory Budget Transaction Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Voor een inactief budget kan geen transactie worden aangemaakt</errorMessage>
+        <name>VEEVA_ACTIVE_BUDGET_CHECK</name>
+    </validationRules>
+</CustomObjectTranslation>

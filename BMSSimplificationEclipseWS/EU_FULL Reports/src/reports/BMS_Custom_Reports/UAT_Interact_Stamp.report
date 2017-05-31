@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.BPA_ID_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.BP_ID_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.BMS_Employee_ID__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>UAT - Interact Stamp</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call2_vod__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

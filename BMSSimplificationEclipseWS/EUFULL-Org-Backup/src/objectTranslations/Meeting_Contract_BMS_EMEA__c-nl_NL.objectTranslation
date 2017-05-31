@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Meeting Contract --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Details of standard contracts to be used for this activity. --></help>
+        <label><!-- Contract --></label>
+        <name>Contract_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Meeting --></label>
+        <name>FFM_Step_Meeting_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- FFM Step Original --></label>
+        <name>FFM_Step_Original_BMS_EMEA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting --></label>
+        <name>Meeting_BMS_EMEA__c</name>
+        <relationshipLabel><!-- Meeting Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ref No --></label>
+        <name>Ref_No_BMS_EMEA__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Meeting Contract Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- BMS - EMEA - Meeting Contract --></label>
+        <name>BMS_EMEA_Meeting_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - Meeting Contract PostExec --></label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BMS - EMEA - Meeting Contract PostExec PTA --></label>
+        <name>BMS_EMEA_Meeting_Contract_PostExec_PTA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to change any fields as you are co-author of the Meeting. --></errorMessage>
+        <name>BMS_EMEA_FFM_Contract_Co_Author</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contracts created during the Meeting Planning phase cannot be modified during the Post-Execution phase. Please Cancel. --></errorMessage>
+        <name>BMS_EMEA_PlanContractsNOKPostExecution</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Contract_BMS_EMEA --></label>
+        <name>New_Contract_BMS_EMEA</name>
+    </webLinks>
+</CustomObjectTranslation>

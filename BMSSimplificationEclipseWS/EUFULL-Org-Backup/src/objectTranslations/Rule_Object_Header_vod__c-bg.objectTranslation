@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Заглавка на обект с правило</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Заглавки на обекти с правило</value>
+    </caseValues>
+    <fields>
+        <help>Показва кои устройства понастоящем използват дефинираната логика за обекта.</help>
+        <label>Устройства</label>
+        <name>Devices_vod__c</name>
+    </fields>
+    <fields>
+        <help>Брой на правилата за проверка на обекта</help>
+        <label>Брой на правилата за проверка</label>
+        <name>Number_Validation_Rules_vod__c</name>
+    </fields>
+    <fields>
+        <label>Предикатна логика</label>
+        <name>Predicate_vod__c</name>
+    </fields>
+    <fields>
+        <help>Състояние на общото разполагане на обекта</help>
+        <label>Състояние</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Disabled_vod</masterLabel>
+            <translation>Забранен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enabled_vod</masterLabel>
+            <translation>Разрешен</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Външен Ид за записа. Форматът е [Име на обект]</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Rule Object Header Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Заглавка за филтър за търсене в SFDC</label>
+        <name>SFDC_Lookup_Filter_Header_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Заглавка на обект с SFDC правило</label>
+        <name>SFDC_Rule_Object_Header_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

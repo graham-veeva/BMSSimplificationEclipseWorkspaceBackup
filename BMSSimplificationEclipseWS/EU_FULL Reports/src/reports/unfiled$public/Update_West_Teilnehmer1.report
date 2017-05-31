@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EM_Event_vod__c$Name</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c$Start_Time_vod__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c$Activity_Id_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.EM_Attendee_Event_vod__r$Name</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.EM_Attendee_Event_vod__r$Attendee_Name_vod__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.EM_Attendee_Event_vod__r$Status_vod__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.EM_Attendee_Event_vod__r$Registration_Status_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.EM_Attendee_Event_vod__r$Employer_Consent_Required_HCPTS__c</field>
+    </columns>
+    <columns>
+        <field>EM_Event_vod__c.EM_Attendee_Event_vod__r$Employer_Consent_Status_HCPTS__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>EM_Event_vod__c$Name</column>
+            <operator>contains</operator>
+            <value>update west</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Update West Teilnehmer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>EM_Activities_with_Audience__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>EM_Event_vod__c.EM_Attendee_Event_vod__r$Attendee_Name_vod__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>EM_Event_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

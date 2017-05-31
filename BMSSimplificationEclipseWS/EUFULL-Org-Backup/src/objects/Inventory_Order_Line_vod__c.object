@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Carrier_Name_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Carrier Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exception_Comments_vod__c</fullName>
+        <description>User entered comments regarding the request to be granted an exemption for ordering in excess of the allocation quantity.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Exception Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exception_Severity_vod__c</fullName>
+        <description>This field controls how the error will be handled by the online application</description>
+        <externalId>false</externalId>
+        <label>Exception Severity</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Prevent_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warn_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Require_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Exception_Type_vod__c</fullName>
+        <description>This field identifies which attribute gave rise to an exception</description>
+        <externalId>false</externalId>
+        <label>Exception Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>QuantityDate_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Date_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantity_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Order_Allocation_vod__c</fullName>
+        <description>Row ID for Inventory Order Allocation record against which the order line is being recorded.</description>
+        <externalId>false</externalId>
+        <label>Inventory Order Allocation</label>
+        <referenceTo>Inventory_Order_Allocation_vod__c</referenceTo>
+        <relationshipLabel>Inventory Order Lines</relationshipLabel>
+        <relationshipName>Inventory_Order_Lines_vod</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Inventory_Order_Header_vod__c</fullName>
+        <description>Row ID for Order Header record for which the order line is being created</description>
+        <externalId>false</externalId>
+        <label>Inventory Order Header</label>
+        <referenceTo>Inventory_Order_vod__c</referenceTo>
+        <relationshipLabel>Inventory Order Lines</relationshipLabel>
+        <relationshipName>Inventory_Order_Lines_vod</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Inventory_Order_Line_Status_vod__c</fullName>
+        <description>This field identifies the status of this order line. The online application managers New, Save and Submitted. The customer&apos;s integration with their fulfillment system can use the other delivered values.</description>
+        <externalId>false</externalId>
+        <label>Inventory Order Line Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Saved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In_Process_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Order_Status_BMS_US__c</fullName>
+        <description>Used for reporting</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Inventory_Order_Header_vod__r.Order_Status_vod__c)</formula>
+        <label>Inventory Order Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lot_Number_BMS_CORE__c</fullName>
+        <description>VPRO - January 2013 - BMS Global Requirements &amp; Design: Lot number of the product order from SAP</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Lot Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Fulfilled_Quantity_vod__c</fullName>
+        <description>The quantity fulfilled from this order. The fulfilled quantity is used to decrement the available allocation.</description>
+        <externalId>false</externalId>
+        <label>Total Ordered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Quantity_UOM_vod__c</fullName>
+        <description>The unit of measure for the order quantity.</description>
+        <externalId>false</externalId>
+        <label>Order Quantity UOM</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Box</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Case</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Carton</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Order_Quantity_vod__c</fullName>
+        <description>The quantity being ordered.</description>
+        <externalId>false</externalId>
+        <label>Order Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pick_Doc_Number_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Pick Doc Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Inventory Order Lines</relationshipLabel>
+        <relationshipName>Inventory_Order_Lines_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Delivery_Date_vod__c</fullName>
+        <description>The requested date for the order line to be delivered to the Ordered For user.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Requested Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Delivered_Qty_BMS_CA__c</fullName>
+        <description>Track Delivered Qty at prod level per Order</description>
+        <externalId>false</externalId>
+        <label>SAP Delivered Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Order_Status_BMS_Shared__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP Order Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipment_Date_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Shipment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Tracking_Number_BMS_SHARED__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Tracking Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Source_Country_BMS_CORE__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Inventory_Order_Header_vod__r.Owner_Lookup_BMS_CORE__r.User_Source_Country_BMS_CORE__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User_Source_Country_BMS_CORE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Inventory Order Line</label>
+    <nameField>
+        <displayFormat>IOL-{0000000}</displayFormat>
+        <label>Inventory Order Line Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Inventory Order Lines</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>VEEVA_DELIVERY_DATE_CHECK</fullName>
+        <active>true</active>
+        <description>This rule enforces that the requested delivery date is not before the order create date.</description>
+        <errorConditionFormula>Requested_Delivery_Date_vod__c &lt;  Inventory_Order_Header_vod__r.Order_Create_Date_vod__c</errorConditionFormula>
+        <errorMessage>Delivery date cannot be before the order create date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>VEEVA_NEGATIVE_QUANTITY</fullName>
+        <active>true</active>
+        <description>This validation rule enforces that the quantity ordered is not a negative number.</description>
+        <errorConditionFormula>Order_Quantity_vod__c &lt; 0</errorConditionFormula>
+        <errorMessage>Order quantity cannot be less than 0</errorMessage>
+    </validationRules>
+</CustomObject>

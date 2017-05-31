@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Atribuição de despesas</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Atribuições de despesas</value>
+    </caseValues>
+    <fields>
+        <label>Real</label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label>Linha de despesa</label>
+        <name>Expense_Line_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo de despesa</label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>Despesas incorridas (conta)</label>
+        <name>Incurred_Expense_Account_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Despesas incorridas (participante)</label>
+        <name>Incurred_Expense_Attendee_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Despesas incorridas (apresentador)</label>
+        <name>Incurred_Expense_Speaker_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Despesas incorridas (membro da equipe)</label>
+        <name>Incurred_Expense_Team_Member_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Tipo de despesas incorridas</label>
+        <name>Incurred_Expense_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account_vod</masterLabel>
+            <translation>Conta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendee_vod</masterLabel>
+            <translation>Participante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Speaker_vod</masterLabel>
+            <translation>Apresentador do evento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event_Team_Member_vod</masterLabel>
+            <translation>Membro da equipe do evento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor_vod</masterLabel>
+            <translation>Fornecedor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venue_vod</masterLabel>
+            <translation>Local</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Despesas incorridas (fornecedor)</label>
+        <name>Incurred_Expense_Vendor_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Despesas incorridas (local)</label>
+        <name>Incurred_Expense_Venue_vod__c</name>
+        <relationshipLabel>Atribuições de despesas</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Despesas incorridas</label>
+        <name>Incurred_Expense_vod__c</name>
+    </fields>
+    <fields>
+        <label>Data de pagamento</label>
+        <name>Payment_Date_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <recordTypes>
+        <label>Atribuição de despesas do evento</label>
+        <name>Event_Expense_Attribution_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

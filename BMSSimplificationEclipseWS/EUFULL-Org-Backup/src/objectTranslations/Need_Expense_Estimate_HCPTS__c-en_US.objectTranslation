@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Need Expense Estimate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Need Expense Estimates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual --></label>
+        <name>Actual_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed --></label>
+        <name>Committed_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_HCTPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimate Per Activity --></label>
+        <name>Estimate_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Canceled --></label>
+        <name>Event_Canceled_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Type Code --></label>
+        <name>Expense_Type_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Type Name --></label>
+        <name>Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expense Type --></label>
+        <name>Expense_Type_vod__c</name>
+        <relationshipLabel><!-- Need Expense Estimates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By --></label>
+        <name>Last_Modified_By_HCPTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need --></label>
+        <name>Need__c</name>
+        <relationshipLabel><!-- Expense Estimates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Expense Type Code --></label>
+        <name>Parent_Expense_Type_Code_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Expense Type Name --></label>
+        <name>Parent_Expense_Type_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- zvod_Expense_Type_vod --></label>
+        <name>zvod_Expense_Type_vod__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Budget &amp; Guidance information is already Approved. You may not save/add Expense Estimates to Approved Budget/Need. --></errorMessage>
+        <name>CannotAddExpEstimatestoApprovedBudget</name>
+    </validationRules>
+</CustomObjectTranslation>

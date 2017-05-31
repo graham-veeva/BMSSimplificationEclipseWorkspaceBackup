@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Mötesfel</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Mötesfel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Mötesfel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Mötesfel</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Mötesfel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Mötesfel</value>
+    </caseValues>
+    <fields>
+        <label>Konto</label>
+        <name>Account_vod__c</name>
+    </fields>
+    <fields>
+        <label>Datum och tid för mötet</label>
+        <name>Call_Datetime_vod__c</name>
+    </fields>
+    <fields>
+        <label>Mötestyp</label>
+        <name>Call_Type_vod__c</name>
+    </fields>
+    <fields>
+        <label>Orsak</label>
+        <name>Cause_vod__c</name>
+        <picklistValues>
+            <masterLabel>Account Access</masterLabel>
+            <translation>Kontotillgång</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Locked</masterLabel>
+            <translation>Möte låst</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Access</masterLabel>
+            <translation>Objekttillgång</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Användare</label>
+        <name>User_vod__c</name>
+        <relationshipLabel>Mötesfel</relationshipLabel>
+    </fields>
+    <fields>
+        <label>XML-text</label>
+        <name>XML_Text_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Interaction Error Name --></nameFieldLabel>
+    <webLinks>
+        <label>Ta bort</label>
+        <name>Delete_vod</name>
+    </webLinks>
+    <webLinks>
+        <label>Korrigera</label>
+        <name>Resolve_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Productgroep</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Productgroepen</value>
+    </caseValues>
+    <fields>
+        <label>Beschrijving</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Einddatum</label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Align Id --></label>
+        <name>Master_Align_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Productcatalogus</label>
+        <name>Product_Catalog_vod__c</name>
+        <relationshipLabel>Productgroepen (productcatalogus)</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Productgroepen</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Hoeveelheid</label>
+        <name>Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Begindatum</label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel><!-- Product Group Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Een Detailgroep die niet een Bedrijfsproduct is, mag niet worden gekoppeld aan een Detailproduct of Onderwerp dat een Bedrijfsproduct is</errorMessage>
+        <name>Detail_Group_Company_Product_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producten van het type &apos;Detailonderwerp&apos; of &apos;Detail&apos; kunnen worden gekoppeld aan een Detailproductgroep</errorMessage>
+        <name>Detail_Group_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen type &apos;Productgroep&apos; of &apos;Monsterproductgroep&apos; of &apos;Detailgroep&apos; is toegestaan</errorMessage>
+        <name>Group_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen type &apos;Order&apos; is toegestaan</errorMessage>
+        <name>Order_Prod_Type_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Alleen producten van het type &quot;Monster&quot; of &quot;BRC&quot; kunnen worden gekoppeld aan een monsterproductgroep</errorMessage>
+        <name>Sample_Prod_Type_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Als een Hoeveelheid is opgegeven, moeten Startdatum en Einddatum zijn ingevuld.</errorMessage>
+        <name>Valid_Date_Bundle_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Er is een geldige startdatum en einddatum nodig.</errorMessage>
+        <name>Valid_Date_Sample_Group_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

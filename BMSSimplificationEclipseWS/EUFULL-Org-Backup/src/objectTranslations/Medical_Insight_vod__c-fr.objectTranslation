@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Informations médicales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Informations médicales</value>
+    </caseValues>
+    <fields>
+        <label>Compte</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Informations médicales</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Essai clinique</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Informations médicales</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID de référence d&apos;entité</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interaction --></label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Informations médicales</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Événement médical</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Informations médicales</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Autre source</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Ignorer le Verrouillage</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publication --></label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Informations médicales</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Statut</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Enregistré</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Envoyé</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Résumé</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Déverrouiller</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom des informations médicales</nameFieldLabel>
+    <recordTypes>
+        <label>Informations médicales clés</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Une description est nécessaire pour enregistrer ou soumettre des informations médicales clés</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Un résumé est nécessaire pour enregistrer ou envoyer des informations médicales clés</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Envoyer</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

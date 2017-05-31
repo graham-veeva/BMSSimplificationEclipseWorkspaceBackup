@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ligne d&apos;assortiment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lignes d&apos;assortiment</value>
+    </caseValues>
+    <fields>
+        <label>Assortiment</label>
+        <name>Assortment_vod__c</name>
+        <relationshipLabel>Lignes d&apos;assortiment</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Réduire par défaut ?</label>
+        <name>Collapse_By_Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>ID externe</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Section parent</label>
+        <lookupFilter>
+            <errorMessage><!-- Parent Assortment Line Section Label should not be blank --></errorMessage>
+        </lookupFilter>
+        <name>Parent_Section_vod__c</name>
+        <relationshipLabel>Lignes d&apos;assortiment</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Produit</label>
+        <lookupFilter>
+            <errorMessage><!-- OM Assortment Products can only be Product Type Order or Detail, and IM Assortment Products can only be Product Type Inventory Monitoring or Detail, or have Inventory Monitoring checked --></errorMessage>
+        </lookupFilter>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Lignes d&apos;assortiment</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Étiquette de section</label>
+        <name>Section_Label_vod__c</name>
+    </fields>
+    <fields>
+        <label>Tri</label>
+        <name>Sorting_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <recordTypes>
+        <label>Assortiment de Relevé de Stock - Produit</label>
+        <name>IM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Assortiment de Relevé de Stock - Section</label>
+        <name>IM_Assortment_Section_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Produit d&apos;assortiment OM</label>
+        <name>OM_Assortment_Product_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Section d&apos;assortiment OM</label>
+        <name>OM_Assortment_Section_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Les lignes d&apos;assortiment OM peuvent uniquement être associées à des assortiments OM et les lignes d&apos;assortiment IM ne peuvent être associées qu&apos;à des assortiments IM</errorMessage>
+        <name>Assortment_Line_Header_Mismatch_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Ne peut être coché que pour les types d&apos;enregistrement IM_Assortment_Section_vod ou OM_Assortment_Section_vod</errorMessage>
+        <name>Assortment_Section_Collapse_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Une section ne peut pas être liée à une section parent.</errorMessage>
+        <name>Section_linked_to_Section</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Une section et un produit ne peuvent pas être spécifiés sur le même enregistrement.</errorMessage>
+        <name>Section_with_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

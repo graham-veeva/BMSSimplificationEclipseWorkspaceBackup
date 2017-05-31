@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TSF_vod__c$Account_vod__c</field>
+    </columns>
+    <columns>
+        <field>TSF_vod__c$YTD_Activity_vod__c</field>
+    </columns>
+    <columns>
+        <field>TSF_vod__c$Last_Activity_Date_vod__c</field>
+    </columns>
+    <columns>
+        <field>TSF_vod__c$Account_vod__c.Overall_Sphere_of_Influence_BMS__c</field>
+    </columns>
+    <columns>
+        <field>TSF_vod__c$Account_vod__c.Specialty_1_vod__c</field>
+    </columns>
+    <description>Report to display visit frequency against MSL My List.</description>
+    <filter>
+        <criteriaItems>
+            <column>TSF_vod__c$My_List__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TSF_vod__c$Territory_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - MSL - Visit Frequency Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>TSF__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>TSF_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

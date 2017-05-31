@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Call2_Discussion_vod__c$Id</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Call2_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Patient_Type_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Incremental_Shift_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Driver_Reason_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Key_Messages_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Material_BMS_CN__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$zvod_Product_Map_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_Discussion_vod__c$Barrier_Reason_BMS_CN__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>CN_Interaction Discussion</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Interaction_Discussions_CN__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_Discussion_vod__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

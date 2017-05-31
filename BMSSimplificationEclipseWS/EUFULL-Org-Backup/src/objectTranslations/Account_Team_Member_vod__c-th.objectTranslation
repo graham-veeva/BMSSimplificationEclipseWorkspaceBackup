@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>สมาชิกทีมแอคเคาต์</value>
+    </caseValues>
+    <fields>
+        <label>แผนแอคเคาต์</label>
+        <name>Account_Plan_vod__c</name>
+        <relationshipLabel>สมาชิกทีมแอคเคาต์</relationshipLabel>
+    </fields>
+    <fields>
+        <label>ID ภายนอก</label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>บทบาท</label>
+        <name>Role_vod__c</name>
+        <picklistValues>
+            <masterLabel>Executive Sponsor</masterLabel>
+            <translation>ผู้สนับสนุน</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Account Manager</masterLabel>
+            <translation>ผู้จัดการแอคเคาต์หลัก</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Rep</masterLabel>
+            <translation><!-- Sales Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team Member</masterLabel>
+            <translation>สมาชิกทีม</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ชื่อสมาชิกทีม</label>
+        <name>Team_Member_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label>สมาชิกทีม</label>
+        <name>Team_Member_vod__c</name>
+        <relationshipLabel>สมาชิกทีมแอคเคาต์</relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- ID --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Account_Team_Member_vod --></label>
+        <name>Account_Team_Member_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

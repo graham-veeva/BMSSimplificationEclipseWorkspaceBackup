@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>규칙 개체 헤더</value>
+    </caseValues>
+    <fields>
+        <help>현재 개체를 위해 정의된 논리를 활용하는 장치가 어떤 것인지 표시합니다.</help>
+        <label>장비</label>
+        <name>Devices_vod__c</name>
+    </fields>
+    <fields>
+        <help>개체에 대한 검증 규칙의 수.</help>
+        <label>검증 규칙 수</label>
+        <name>Number_Validation_Rules_vod__c</name>
+    </fields>
+    <fields>
+        <label>세부 설명</label>
+        <name>Predicate_vod__c</name>
+    </fields>
+    <fields>
+        <help>전반적인 개체 배치 상태.</help>
+        <label>상태</label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Disabled_vod</masterLabel>
+            <translation>사용 안 함</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enabled_vod</masterLabel>
+            <translation>사용</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>레코드에 대한 외부 ID. 형식은 [Object Name]입니다.</help>
+        <label><!-- VExternal Id --></label>
+        <name>VExternal_Id_vod__c</name>
+    </fields>
+    <nameFieldLabel><!-- Rule Object Header Name --></nameFieldLabel>
+    <recordTypes>
+        <label>SFDC 검색 필터 헤더</label>
+        <name>SFDC_Lookup_Filter_Header_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>SFDC 규칙 개체 헤더</label>
+        <name>SFDC_Rule_Object_Header_vod</name>
+    </recordTypes>
+</CustomObjectTranslation>

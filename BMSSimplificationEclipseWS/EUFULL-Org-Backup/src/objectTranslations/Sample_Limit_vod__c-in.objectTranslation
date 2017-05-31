@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Batas Trial Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Batas Trial Material</value>
+    </caseValues>
+    <fields>
+        <help>Tipe rekaman Hanya Gunakan Orang</help>
+        <label>Daftar Account</label>
+        <name>Account_Types_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel><!-- Sample Limits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Country --></label>
+        <name>BMS_EMEA_Account_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Txn Create --></label>
+        <name>Disable_Txn_Create_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jumlah yang Diberikan</label>
+        <name>Disbursed_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disbursed Quantity --></label>
+        <name>Disbursed_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enforce Limit --></label>
+        <name>Enforce_Limit_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Id --></label>
+        <name>Group_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Jumlah Batas</label>
+        <name>Limit_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Per Call --></label>
+        <name>Limit_Per_Call_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Quantity --></label>
+        <name>Limit_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel><!-- Sample Limits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>Jumlah Tersisa</label>
+        <name>Remaining_Amount_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Quantity --></label>
+        <name>Remaining_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Periode Perputaran</label>
+        <name>Rolling_Period_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Limit Type --></label>
+        <name>Sample_Limit_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation><!-- 01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation><!-- 02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation><!-- 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation><!-- 04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Periode Pembagian</label>
+        <name>Split_Period_vod__c</name>
+        <picklistValues>
+            <masterLabel>12Months</masterLabel>
+            <translation><!-- 12Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation>Tahun</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Grup Template</label>
+        <name>Template_Group_vod__c</name>
+    </fields>
+    <fields>
+        <label>Template yang Digunakan</label>
+        <name>Template_In_Use_vod__c</name>
+    </fields>
+    <fields>
+        <label>Kunci Unik Template</label>
+        <name>Template_Unique_Key_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User_vod__c</name>
+        <relationshipLabel><!-- Sample Limits --></relationshipLabel>
+    </fields>
+    <nameFieldLabel><!-- Sample Limit Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Catatan tidak dapat disimpan. Jumlah Batas tidak boleh kurang dari 0.</errorMessage>
+        <name>LIMIT_AMOUNT_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Catatan tidak dapat disimpan. Jumlah Batas tidak boleh kurang dari 0</errorMessage>
+        <name>LIMIT_VALUE_GT_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Templat Batas Trial Material tidak dapat dibuat untuk jumlah dan nilai dalam templat yang sama.</errorMessage>
+        <name>No_SLT_Both</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot specify a user when creating limits for a sample product group. --></errorMessage>
+        <name>No_User_Sample_Product_Group_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: End Date --></errorMessage>
+        <name>REQUIRE_END_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: Product --></errorMessage>
+        <name>REQUIRE_PRODUCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record could not be saved. The following fields are required: Start Date --></errorMessage>
+        <name>REQUIRE_START_DATE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Catatan tidak dapat disimpan. Diperlukan Field berikut ini: Account Atau Pengguna</errorMessage>
+        <name>REQUIRE_USER_OR_ACCOUNT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Jika tipe Account diatur, Produk,Kuantitas Batas,Tanggal mulai/selesai Wajib</errorMessage>
+        <name>STL_MandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Account dan Tipe Account ATAU Pengguna dan Tipe Account tidak dapat diatur secara bersamaan</errorMessage>
+        <name>STL_NoAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Periode Perputaran harus kosong jika Tipe Account kosong</errorMessage>
+        <name>STL_RollingPeriod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Tgl Selesai hrs lebih akhir dr Tgl Mulai</errorMessage>
+        <name>STM_datetime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>jika Periode Pembagian diatur, periode perputaran harus 24</errorMessage>
+        <name>SplitPeriodRolling</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Periode Pembagian tidak dapat diatur jika Tipe Account kosong</errorMessage>
+        <name>SplitPeriod_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

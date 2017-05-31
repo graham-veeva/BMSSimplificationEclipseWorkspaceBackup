@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Medizinischer Einblick</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Medizinische Einblicke</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Medizinischen Einblick</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Medizinische Einblicke</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Medizinischen Einblicks</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Medizinischer Einblicke</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Medizinischem Einblick</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Medizinischen Einblicken</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Medizinische Einblicke</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Klinische Studie</label>
+        <name>Clinical_Trial_vod__c</name>
+        <relationshipLabel>Medizinische Einblicke</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Datum</label>
+        <name>Date_vod__c</name>
+    </fields>
+    <fields>
+        <label>Beschreibung</label>
+        <name>Description_vod__c</name>
+    </fields>
+    <fields>
+        <label>Entitätenreferenz-ID</label>
+        <name>Entity_Reference_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>Interaktion</label>
+        <name>Interaction_vod__c</name>
+        <relationshipLabel>Medizinische Einblicke</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Medizinische Veranstaltung</label>
+        <name>Medical_Event_vod__c</name>
+        <relationshipLabel>Medizinische Einblicke</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile Id --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sonstige Quelle</label>
+        <name>Other_Source_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sperre außer Kraft setzen</label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label>Veröffentlichung</label>
+        <name>Publication_vod__c</name>
+        <relationshipLabel>Medizinische Einblicke</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_vod__c</name>
+        <picklistValues>
+            <masterLabel>Saved_vod</masterLabel>
+            <translation>Gespeichert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted_vod</masterLabel>
+            <translation>Übermittelt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Zusammenfassung</label>
+        <name>Summary_vod__c</name>
+    </fields>
+    <fields>
+        <label>Sperre aufheben</label>
+        <name>Unlock_vod__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Bezeichnung für medizinischen Einblick</nameFieldLabel>
+    <recordTypes>
+        <label>Wichtiger medizinischer Einblick</label>
+        <name>Key_Medical_Insight_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Zum Speichern oder Übermitteln eines wichtigen medizinischen Einblicks ist eine Beschreibung erforderlich.</errorMessage>
+        <name>Description_Required_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Zum Speichern oder Übermitteln eines wichtigen medizinischen Einblicks ist eine Zusammenfassung erforderlich.</errorMessage>
+        <name>Summary_Required_vod</name>
+    </validationRules>
+    <webLinks>
+        <label>Übermitteln</label>
+        <name>Submit_vod</name>
+    </webLinks>
+</CustomObjectTranslation>

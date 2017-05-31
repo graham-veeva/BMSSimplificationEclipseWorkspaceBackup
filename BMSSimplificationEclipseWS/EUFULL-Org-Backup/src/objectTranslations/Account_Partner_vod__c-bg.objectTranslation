@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Партньор клиент</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Партньори клиенти</value>
+    </caseValues>
+    <fields>
+        <label>ИД на партньор клиент</label>
+        <name>Account_Partner_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Клиент</label>
+        <name>Account_vod__c</name>
+        <relationshipLabel>Партньори клиенти</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Договор</label>
+        <name>Contract_vod__c</name>
+        <relationshipLabel>Партньори клиенти</relationshipLabel>
+    </fields>
+    <fields>
+        <label>По подразбиране</label>
+        <name>Default_vod__c</name>
+    </fields>
+    <fields>
+        <label>Мобилен ИД</label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label>Тип на поръчка</label>
+        <name>Order_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>Direct_vod</masterLabel>
+            <translation>Директен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer_vod</masterLabel>
+            <translation>Предаване</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Приоритет</label>
+        <name>Priority_vod__c</name>
+    </fields>
+    <fields>
+        <label>Търговец на едро</label>
+        <name>Wholesaler_vod__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Account Partner Name --></nameFieldLabel>
+    <recordTypes>
+        <label>Място на доставка</label>
+        <name>Delivery_Location_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Платец</label>
+        <name>Payer_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Книга на цените</label>
+        <name>Price_Book_vod</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Търговец на едро</label>
+        <name>Wholesaler_vod</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Изисква се клиент.</errorMessage>
+        <name>Account_Optional_For_PriceBook_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

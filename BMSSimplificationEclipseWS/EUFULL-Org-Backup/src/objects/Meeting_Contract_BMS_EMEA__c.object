@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>VPRO Oct 2013: Object part of the Field Force Meeting module for BMS EMEA. Child object of Master File to store Contracts to be delivered as part of the related Meetings.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contract_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: Name of the Contract.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Details of standard contracts to be used for this activity.</inlineHelpText>
+        <label>Contract</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_BMS_SHARED__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>VPRO Feb 2014: external ID used for data loading</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>FFM_Step_Meeting_BMS_EMEA__c</fullName>
+        <description>VPRO EMEA Feb 2014: FFM Step from the Meeting. Used in a validation rule.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Meeting_BMS_EMEA__r.FFM_Step_BMS_EMEA__c )</formula>
+        <label>FFM Step Meeting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FFM_Step_Original_BMS_EMEA__c</fullName>
+        <description>VPRO EMEA Feb 2014: FFM Step from the Meeting, populated through a workflow. Created once the Material is created. Used in a validation rule.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>FFM Step Original</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: parent Meeting.</description>
+        <externalId>false</externalId>
+        <label>Meeting</label>
+        <referenceTo>Medical_Event_vod__c</referenceTo>
+        <relationshipLabel>Meeting Contracts</relationshipLabel>
+        <relationshipName>Meeting_Contracts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ref_No_BMS_EMEA__c</fullName>
+        <description>VPRO Nov 2013: field used in Meeting Contracts layouts.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Ref No</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Meeting Contract</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Contract_BMS_EMEA__c</columns>
+        <columns>Ref_No_BMS_EMEA__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>MC-{00000}</displayFormat>
+        <label>Meeting Contract Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Meeting Contracts</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>BMS_EMEA_Meeting_Contract</fullName>
+        <active>true</active>
+        <description>Meeting Material related to a Field Force Meeting</description>
+        <label>BMS - EMEA - Meeting Contract</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_Meeting_Contract_PostExec</fullName>
+        <active>true</active>
+        <description>Meeting Contract related to a Field Force Meeting</description>
+        <label>BMS - EMEA - Meeting Contract PostExec</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>BMS_EMEA_Meeting_Contract_PostExec_PTA</fullName>
+        <active>true</active>
+        <description>Meeting Contract related to a Field Force Meeting</description>
+        <label>BMS - EMEA - Meeting Contract PostExec PTA</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>BMS_EMEA_FFM_Contract_Co_Author</fullName>
+        <active>true</active>
+        <description>VPRO 7 March 2014: Validation to not allow a co-author of the meeting to modify any fields.</description>
+        <errorConditionFormula>AND( 
+$User.Id &lt;&gt;  Meeting_BMS_EMEA__r.OwnerId,
+TEXT(Meeting_BMS_EMEA__r.FFM_Step_BMS_EMEA__c) = &apos;Meeting Post-Execution&apos;,
+OR(
+$Profile.Name = &apos;BMS - EMEA - REP - MSL&apos;, 
+$Profile.Name = &apos;BMS - EMEA - REP - SALES&apos;)
+)</errorConditionFormula>
+        <errorDisplayField>Contract_BMS_EMEA__c</errorDisplayField>
+        <errorMessage>You are not allowed to change any fields as you are co-author of the Meeting.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BMS_EMEA_PlanContractsNOKPostExecution</fullName>
+        <active>true</active>
+        <description>VPRO EMEA Feb 2014: Contracts created during the Meeting Plan phase cannot be modified during the Post-Execution phase (expect for the Used field).</description>
+        <errorConditionFormula>AND( 
+OR( 
+ISCHANGED(Contract_BMS_EMEA__c), 
+ISCHANGED(Meeting_BMS_EMEA__c)
+), 
+RecordType.DeveloperName &lt;&gt; &apos;BMS_EMEA_Meeting_Contract_PostExec_PTA&apos;, 
+FFM_Step_Meeting_BMS_EMEA__c = &apos;Meeting Post-Execution&apos;, 
+FFM_Step_Original_BMS_EMEA__c = &apos;Meeting Planning&apos; 
+)</errorConditionFormula>
+        <errorMessage>Contracts created during the Meeting Planning phase cannot be modified during the Post-Execution phase. Please Cancel.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_Contract_BMS_EMEA</fullName>
+        <availability>online</availability>
+        <description>VPRO EMEA March 2014: creation of a new Contract through a custom button so that the Record Type is already populated.</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Contract</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/27.0/connection.js&quot;)} 
+
+if (&apos;{!Medical_Event_vod__c.FFM_Step_BMS_EMEA__c}&apos; == &apos;Meeting Planning&apos;) { 
+window.location = &apos;/{!$ObjectType.Meeting_Contract_BMS_EMEA__c}/e?&amp;RecordType={!$Setup.BMS_EMEA_Settings__c.Meeting_Contract_Planning_RTID__c}&amp;CF{!$Setup.BMS_EMEA_Settings__c.Meeting_Contract_Meeting_ID_Field__c}_lkid={!Medical_Event_vod__c.Id}&amp;CF{!$Setup.BMS_EMEA_Settings__c.Meeting_Contract_Meeting_ID_Field__c}=&apos;+encodeURIComponent(&quot;{!Medical_Event_vod__c.Name}&quot;);}
+
+else if (&apos;{!Medical_Event_vod__c.FFM_Step_BMS_EMEA__c}&apos; == &apos;Meeting Post-Execution&apos;) { 
+window.location = &apos;/{!$ObjectType.Meeting_Contract_BMS_EMEA__c}/e?&amp;RecordType={!$Setup.BMS_EMEA_Settings__c.Meeting_Contract_PostExec_RTID__c}&amp;CF{!$Setup.BMS_EMEA_Settings__c.Meeting_Contract_Meeting_ID_Field__c}_lkid={!Medical_Event_vod__c.Id}&amp;CF{!$Setup.BMS_EMEA_Settings__c.Meeting_Contract_Meeting_ID_Field__c}=&apos;+encodeURIComponent(&quot;{!Medical_Event_vod__c.Name}&quot;);}</url>
+    </webLinks>
+</CustomObject>

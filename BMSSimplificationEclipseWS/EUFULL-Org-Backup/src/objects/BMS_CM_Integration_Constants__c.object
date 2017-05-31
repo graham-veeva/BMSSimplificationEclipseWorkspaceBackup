@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This holds the BMS customer master integration related constants and error messages.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountRecordTypeConvertedDeveloperName__c</fullName>
+        <description>This is the record type the Account needs to be converted to, upon successful integration with Customer Master.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the record type the Account needs to be converted to, upon successful integration with Customer Master.</inlineHelpText>
+        <label>AccountRecordTypeConvertedDeveloperName</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountRecordTypeDeveloperName__c</fullName>
+        <description>This is the record type, developer name of the Account pushed to BMS.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the record type, developer name of the Account pushed to BMS.</inlineHelpText>
+        <label>AccountRecordTypeDeveloperName</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AppId__c</fullName>
+        <description>Integration credentials.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration credentials.</inlineHelpText>
+        <label>AppId</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClientCertificateName__c</fullName>
+        <description>Integration Credentials.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration Credentials.</inlineHelpText>
+        <label>ClientCertificateName</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClientId__c</fullName>
+        <description>Integration credentials.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration credentials.</inlineHelpText>
+        <label>ClientId</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ConvertedAccountType__c</fullName>
+        <defaultValue>&apos;NPRS&apos;</defaultValue>
+        <description>The AccountType value to be set, when the Account is integrated with BMS Customer Master.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The AccountType value to be set, when the Account is integrated with BMS Customer Master.</inlineHelpText>
+        <label>ConvertedAccountType</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndPoint__c</fullName>
+        <description>Integration BMS endpoint.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration BMS endpoint.</inlineHelpText>
+        <label>EndPoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>GenericError__c</fullName>
+        <defaultValue>&apos;Error. Please contact BMS system administrator.&apos;</defaultValue>
+        <description>Integration error messages.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration error messages.</inlineHelpText>
+        <label>GenericError</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Password__c</fullName>
+        <description>Integration Credentials.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration Credentials.</inlineHelpText>
+        <label>Password</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RequestTimeOut__c</fullName>
+        <defaultValue>20000</defaultValue>
+        <externalId>false</externalId>
+        <label>RequestTimeOut</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TimeOutError__c</fullName>
+        <defaultValue>&apos;Error:Timeout.&apos;</defaultValue>
+        <description>Integration error messages.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration error messages.</inlineHelpText>
+        <label>TimeOutError</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserId__c</fullName>
+        <description>Integration credentials.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration credentials.</inlineHelpText>
+        <label>UserId</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserName__c</fullName>
+        <description>Integration Credentials.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Integration Credentials.</inlineHelpText>
+        <label>UserName</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>BMS CM Integration Constants</label>
+    <visibility>Public</visibility>
+</CustomObject>

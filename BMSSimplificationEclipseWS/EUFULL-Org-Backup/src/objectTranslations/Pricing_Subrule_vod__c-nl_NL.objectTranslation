@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prijssubregel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prijssubregels</value>
+    </caseValues>
+    <fields>
+        <label>Type vergelijking</label>
+        <name>Comparison_Type_vod__c</name>
+        <picklistValues>
+            <masterLabel>List_Value_vod</masterLabel>
+            <translation>Lijstwaarde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quantity_vod</masterLabel>
+            <translation>Hoeveelheid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SKU_Count_vod</masterLabel>
+            <translation>SKU-telling</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Maximumhoeveelheid</label>
+        <name>Max_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Minimumhoeveelheid</label>
+        <name>Min_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label>Prijsregel</label>
+        <name>Pricing_Rule_vod__c</name>
+        <relationshipLabel>Prijssubregels</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Prijssubregels</relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Pakketitems worden niet ondersteund als vergelijkingsproduct</errorMessage>
+        <name>Kit_Item_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>De maximumhoeveelheid moet groter zijn dan of gelijk zijn aan de minimumhoeveelheid.</errorMessage>
+        <name>Min_Max_Check_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>SKU-telling moet &gt; 0 zijn</errorMessage>
+        <name>SKU_Count_Min_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

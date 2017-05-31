@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Details what should be copied to an activity when a new activity budget is added</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Applicable_Need_Record_Types__c</fullName>
+        <description>The developer names of the need activity types that should activate inheritance</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>The developer names of the need activity types that should activate inheritance</inlineHelpText>
+        <label>Applicable Need Record Types</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Header_Field_Mapping_2__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Header Field Mapping 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Header_Field_Mapping_3__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Header Field Mapping 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Header_Field_Mapping_4__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Header Field Mapping 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Header_Field_Mapping_5__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Header Field Mapping 5</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Header_Field_Mapping__c</fullName>
+        <description>These fields will be copied from the need to the event. The format should be sourceField:activityField;sourceField2:activityField2...</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>These fields will be copied from the need to the event. The format should be sourceField:activityField;sourceField2:activityField2...</inlineHelpText>
+        <label>Header Field Mapping</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Inherit_Expense_Esimates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this box is checked, when the need is inherited, the existing expense estimates on the event will be deleted and the expense estimates on the need will be copied over to the activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this box is checked, when the need is inherited, the existing expense estimates on the event will be deleted and the expense estimates on the need will be copied over to the activity.</inlineHelpText>
+        <label>Inherit Expense Esimates?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inherit_Participants__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this box is checked, the participants on the need will be copied to the activity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this box is checked, the participants on the need will be copied to the activity.</inlineHelpText>
+        <label>Inherit Participants?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>BMSNeedToEventInheritance</label>
+    <visibility>Public</visibility>
+</CustomObject>

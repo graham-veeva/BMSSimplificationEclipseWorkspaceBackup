@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>การตั้งค่าระยะตัวอย่าง</value>
+    </caseValues>
+    <fields>
+        <label>จำเป็นต้องใช้ CDS</label>
+        <name>CDS_Required_vod__c</name>
+    </fields>
+    <fields>
+        <label>รหัสประจำภายนอก</label>
+        <name>External_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label>การตั้งค่า</label>
+        <name>Setting_vod__c</name>
+        <picklistValues>
+            <masterLabel>BRC_Sample_Only_vod</masterLabel>
+            <translation>เฉพาะตัวอย่าง BRC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand_Sample_Only_vod</masterLabel>
+            <translation>ส่งมอบเฉพาะตัวอย่าง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No_Sample_vod</masterLabel>
+            <translation>ไม่มีตัวอย่าง</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel><!-- State Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>ไม่สามารถกำหนดข้อกำหนด CDS และวิธีการจัดส่งในเร็กคอร์ดเดียวกัน</errorMessage>
+        <name>CDSRequired_DeliverySetting_vod</name>
+    </validationRules>
+</CustomObjectTranslation>

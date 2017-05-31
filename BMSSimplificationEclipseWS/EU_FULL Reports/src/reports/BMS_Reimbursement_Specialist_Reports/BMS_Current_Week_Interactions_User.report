@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Account_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Intent_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Interaction_Sub_Type_BMS__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Call_Datetime_vod__c</field>
+    </columns>
+    <columns>
+        <field>Call2_vod__c.Detailed_Products_vod__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <description>Report to display current week interactions.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Call2_vod__c.Call_Date_vod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BMS - Current Week Interactions (User)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Call2_vod__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Call2_vod__c.Call_Datetime_vod__c</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

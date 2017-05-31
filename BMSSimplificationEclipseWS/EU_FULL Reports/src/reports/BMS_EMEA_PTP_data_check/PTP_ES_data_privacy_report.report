@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.No_Profiling_Consent_Granted_BMS_EMEA__c</field>
+    </columns>
+    <columns>
+        <field>Account.Profiling_Check_Performed_BMS_EMEA_ES__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Account.Account_Source_Country_BMS_CORE__c</column>
+            <operator>equals</operator>
+            <value>ES</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Profiling_Check_Performed_BMS_EMEA_ES__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.No_Profiling_Consent_Granted_BMS_EMEA__c</column>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Account_Source_Country_BMS_CORE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PTP - ES data privacy report</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

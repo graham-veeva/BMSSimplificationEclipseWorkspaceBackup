@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A release available for deployment</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines whether the Release is viewable within the VEM.  Inactivate older releases to remove from migration path.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description of package</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>New_Release__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The new release that deprecates this release (either inactivated or combined within VEM)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The new release that deprecates this release (either inactivated or combined within VEM)</inlineHelpText>
+        <label>New Release</label>
+        <referenceTo>Package__c</referenceTo>
+        <relationshipLabel>Releases</relationshipLabel>
+        <relationshipName>New_Releases</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PL_Man__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use if enabling the picklist manager for this release.  This may only be relevant to customers using the CORE.</inlineHelpText>
+        <label>Use Picklist Manager</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PackageType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Selection of what from the package will be migrated</description>
+        <externalId>false</externalId>
+        <label>Package Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>All</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>All - Ignore List Views</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Profiles</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Translations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Package</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Release</label>
+    <listViews>
+        <fullName>Active</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Description__c</columns>
+        <columns>Type__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>2. Active</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>1. All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Data</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Data</value>
+        </filters>
+        <label>4. All Data</label>
+    </listViews>
+    <listViews>
+        <fullName>InActive</fullName>
+        <columns>NAME</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>3. Inactive</label>
+    </listViews>
+    <listViews>
+        <fullName>PLM</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PL_Man__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>7. Using Picklist Manager</label>
+    </listViews>
+    <listViews>
+        <fullName>Profile</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PackageType__c</field>
+            <operation>equals</operation>
+            <value>Profiles</value>
+        </filters>
+        <label>5. All Profile Only</label>
+    </listViews>
+    <listViews>
+        <fullName>Translations</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <columns>Description__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PackageType__c</field>
+            <operation>equals</operation>
+            <value>Translations</value>
+        </filters>
+        <label>6. Translation Only</label>
+    </listViews>
+    <nameField>
+        <displayFormat>REL{00000}</displayFormat>
+        <label>Release</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Releases</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <listViewButtons>VEM_Swap_Status</listViewButtons>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>VEM_Swap_Status</fullName>
+        <availability>online</availability>
+        <description>Swap status from active to inactive or vice versa</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Swap Status</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)} 
+var userList = {!GETRECORDIDS($ObjectType.Package__c)};
+var url = parent.location.href; 
+
+var SelectedIds=&apos;&apos;; 
+for(var i=0;i &lt; userList.length; i++)
+{
+SelectedIds+=&quot;&apos;&quot;+userList[i]+&quot;&apos;,&quot;;
+}
+SelectedIds=SelectedIds.substring(0,SelectedIds.length - 1);
+
+var updatedList = [];
+
+if (userList[0] == null) 
+{ 
+alert(&quot;Please select at least one record&quot;);
+} 
+else
+{ 
+var answer = confirm(&quot;Click ok to confirm the status swap&quot;);  
+if (answer==true)  {
+
+	var strQuery=&quot;Select Id,VEM__Active__c from VEM__Package__c where ID  in (&quot;+SelectedIds+&quot;)&quot;; 
+	var result = sforce.connection.query(strQuery);
+	var records = result.getArray(&quot;records&quot;);
+
+	for (var n=0; n&lt;records.length; n++) 
+	{ 
+	var i = new sforce.SObject(&quot;VEM__Package__c&quot;);                                              
+		i.Id = records[n].Id;
+
+		if (records[n].get(&quot;VEM__Active__c&quot;) == &apos;true&apos;)
+		{
+			i.VEM__Active__c = false;
+		} else 
+		{
+			i.VEM__Active__c = true;
+		}
+
+		updatedList.push(i);	
+	}               
+
+	var upresult = sforce.connection.update(updatedList); 
+	if (upresult[0].getBoolean(&quot;success&quot;))
+	{
+		parent.location.href = url;
+	}
+	else
+	{
+		alert(&quot;Error occurred in update :&quot; + upresult[0]);
+	}
+}
+}</url>
+    </webLinks>
+</CustomObject>

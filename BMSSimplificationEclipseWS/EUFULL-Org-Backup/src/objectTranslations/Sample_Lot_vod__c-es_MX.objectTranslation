@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lote de muestra</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lotes de muestras</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active_vod__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad asignada</label>
+        <name>Allocated_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Code ID --></label>
+        <name>BMS_Code_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- BMS Territory ID --></label>
+        <name>BMS_Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculated Quantity --></label>
+        <name>Calculated_Quantity_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- District ID --></label>
+        <name>District_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Date to disburse --></label>
+        <name>Expiration_Date_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>Producto</label>
+        <name>Product_vod__c</name>
+        <relationshipLabel>Lote de muestra</relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Force ID --></label>
+        <name>Sales_Force_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Force Name --></label>
+        <name>Sales_Force_Name_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Lot --></label>
+        <name>Sample_Lot_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label>ID lote</label>
+        <name>Sample_Lot_Id_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample --></label>
+        <name>Sample_vod__c</name>
+    </fields>
+    <fields>
+        <label>Suprimir lote</label>
+        <name>Suppress_Lot_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Business Code --></label>
+        <name>Territory_Business_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Function Code --></label>
+        <name>Territory_Function_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>Territory_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Intelligent ID --></label>
+        <name>Territory_Intelligent_ID_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Region Code --></label>
+        <name>Territory_Region_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Sales Area Code --></label>
+        <name>Territory_Sales_Area_Code_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Type --></label>
+        <name>Territory_Type_BMS_SHARED__c</name>
+    </fields>
+    <fields>
+        <label><!-- U/M --></label>
+        <name>U_M_vod__c</name>
+        <picklistValues>
+            <masterLabel>Blister</masterLabel>
+            <translation><!-- Blister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box</masterLabel>
+            <translation><!-- Box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation><!-- Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Syringe</masterLabel>
+            <translation><!-- Syringe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit</masterLabel>
+            <translation><!-- Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallet</masterLabel>
+            <translation><!-- Wallet --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel><!-- Lot # --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>El número de lote debería ser No_Lot_vod para lotes virtuales.</errorMessage>
+        <name>Non_Sample_Lot_Name_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El campo Nombre de producto es obligatorio para crear un ejemplo de registro de lotes para un producto que no sea de muestra sin número de lote.</errorMessage>
+        <name>Non_Sample_Required_Fields_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Suppress Lot (Suprimir lote) debe estar marcado cuando se utiliza el nombre de número de lote &apos;No_Lot_vod&apos;.</errorMessage>
+        <name>Non_Sample_Suppress_Lot_vod</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El campo Muestra o Producto es obligatorio para crear un ejemplo de registro de lotes para un producto de muestra con número de lote.</errorMessage>
+        <name>Sample_Required_Fields_vod</name>
+    </validationRules>
+</CustomObjectTranslation>
