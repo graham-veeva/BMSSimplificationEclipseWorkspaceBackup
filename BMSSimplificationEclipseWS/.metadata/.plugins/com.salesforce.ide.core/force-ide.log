@@ -1894,3 +1894,68 @@ java.lang.NullPointerException
  WARN [2017-05-31 18:06:52,479] (ConnectionFactory.java:clearCache:220) - Clearing the following cached connections
  WARN [2017-05-31 18:06:52,494] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
  WARN [2017-05-31 18:06:52,495] (MetadataFactory.java:clearCache:128) - Clearing the following cached metadata stubs
+ WARN [2017-06-01 16:57:55,870] (ConnectionFactory.java:clearCache:220) - Clearing the following cached connections
+ WARN [2017-06-01 16:57:55,925] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
+ WARN [2017-06-01 16:57:55,926] (MetadataFactory.java:clearCache:128) - Clearing the following cached metadata stubs
+ WARN [2017-06-02 11:05:43,050] (ConnectionFactory.java:clearCache:217) - No cached connections
+ WARN [2017-06-02 11:05:43,124] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
+ WARN [2017-06-02 11:05:43,125] (MetadataFactory.java:clearCache:125) - No cached metadata stubs
+ERROR [2017-06-02 12:40:23,093] (SyncServiceListenerBroadcaster.java:handleException:59) - Error executing a contributed ISyncServiceListener
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1067)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1001)
+	at com.salesforce.ide.core.services.ProjectService$1.run(ProjectService.java:2137)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.salesforce.ide.core.services.ProjectService.handleRetrieveResult(ProjectService.java:2133)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshSourceFolder(RefreshResourceActionController.java:214)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.handleSourceRefresh(RefreshResourceActionController.java:172)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshResources(RefreshResourceActionController.java:127)
+	at com.salesforce.ide.ui.handlers.RefreshResourceHandler$1.execute(RefreshResourceHandler.java:87)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+ WARN [2017-06-03 06:03:21,735] (ConnectionFactory.java:clearCache:220) - Clearing the following cached connections
+ WARN [2017-06-03 06:03:21,739] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
+ WARN [2017-06-03 06:03:21,740] (MetadataFactory.java:clearCache:128) - Clearing the following cached metadata stubs
+ERROR [2017-06-05 15:46:05,564] (SyncServiceListenerBroadcaster.java:handleException:59) - Error executing a contributed ISyncServiceListener
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1067)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1001)
+	at com.salesforce.ide.core.services.ProjectService$1.run(ProjectService.java:2137)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.salesforce.ide.core.services.ProjectService.handleRetrieveResult(ProjectService.java:2133)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshSourceFolder(RefreshResourceActionController.java:214)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.handleSourceRefresh(RefreshResourceActionController.java:172)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshResources(RefreshResourceActionController.java:127)
+	at com.salesforce.ide.ui.handlers.RefreshResourceHandler$1.execute(RefreshResourceHandler.java:87)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
