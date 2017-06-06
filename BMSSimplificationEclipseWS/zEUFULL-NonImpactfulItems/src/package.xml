@@ -29,8 +29,14 @@
         <name>HomePageLayout</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CustomLabels</name>
+        <members>Prevent_Role_Overwrite</members>
+        <members>Audience_Provider_Type_Contact</members>
+        <members>Audience_Provider_Type_Employee</members>
+        <members>Audience_Provider_Type_HCO</members>
+        <members>Audience_Provider_Type_HCP</members>
+        <members>EM_EVENT_VOD_OBJ_ID</members>
+        <members>View_Standard_Detail_Page</members>
+        <name>CustomLabel</name>
     </types>
     <types>
         <members>EM_Attendee_vod__c-BMS_HCPTS_Attendee_Layout</members>
@@ -156,6 +162,341 @@
         <members>Expense_Line_vod__c-BMS Simple Expense Line Readonly Layout</members>
         <members>Expense_Line_vod__c-Event Expense Line Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>EM_Attendee_vod__c.Ariba_SOW_Number_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Audience_Type_Simple_Formula_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Attendee_Type_vod__c</members>
+        <members>EM_Attendee_vod__c.Country_ref_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Employer_Consent_Required_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Employer_Consent_Status_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Event_vod__c</members>
+        <members>EM_Attendee_vod__c.Audience_Type_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Registration_Status_HCPTS__c</members>
+        <members>EM_Attendee_vod__c.Status_vod__c</members>
+        <members>EM_Attendee_vod__c.View_Online_HCPTS__c</members>
+        <members>EM_Budget_vod__c.Activity_Type_HCPTS__c</members>
+        <members>EM_Budget_vod__c.Budget_Identifier_vod__c</members>
+        <members>EM_Budget_vod__c.Cybergrant_ID_HCPTS__c</members>
+        <members>EM_Budget_vod__c.Estimated_Number_of_Activities_HCPTS__c</members>
+        <members>EM_Budget_vod__c.Parent_Budget_vod__c</members>
+        <members>EM_Budget_vod__c.WBS_Number_HCPTS__c</members>
+        <members>EM_Budget_vod__c.Status_vod__c</members>
+        <members>EM_Event_Budget_vod__c.Event_vod__c</members>
+        <members>EM_Event_Budget_vod__c.Event_Canceled_vod__c</members>
+        <members>EM_Event_Budget_vod__c.Budget_vod__c</members>
+        <members>EM_Event_History_vod__c.Ending_Status_Simple_HCPTS__c</members>
+        <members>EM_Event_History_vod__c.Event_vod__c</members>
+        <members>EM_Event_History_vod__c.Activity_ID_HCPTS__c</members>
+        <members>EM_Event_History_vod__c.Activity_Name_HCPTS__c</members>
+        <members>EM_Event_History_vod__c.Starting_Status_Simple_HCPTS__c</members>
+        <members>EM_Event_Material_vod__c.Applicable_Activity_Status_HCPTS__c</members>
+        <members>EM_Event_Material_vod__c.Event_vod__c</members>
+        <members>EM_Event_Material_vod__c.Item_Id_HCPTS__c</members>
+        <members>EM_Event_Material_vod__c.Name_vod__c</members>
+        <members>EM_Event_Material_vod__c.Item_Type__c</members>
+        <members>EM_Event_Speaker_vod__c.Ariba_SOW_Number_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Employer_Consent_Required_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Employer_Consent_Status_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Event_vod__c</members>
+        <members>EM_Event_Speaker_vod__c.Provider_Type_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Provider_Type_Simple_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Provider_Type_Formula_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Registration_Status_HCPTS__c</members>
+        <members>EM_Event_Speaker_vod__c.Status_vod__c</members>
+        <members>EM_Event_Speaker_vod__c.View_Online_HCPTS__c</members>
+        <members>EM_Event_Team_Member_vod__c.Email_HCPTS__c</members>
+        <members>EM_Event_Team_Member_vod__c.Event_vod__c</members>
+        <members>EM_Event_Team_Member_vod__c.Role_vod__c</members>
+        <members>EM_Event_Team_Member_vod__c.Team_Member_vod__c</members>
+        <members>EM_Event_vod__c.Before_during_or_after_a_Congress__c</members>
+        <members>EM_Event_vod__c.Need_Definition_HCPTS__c</members>
+        <members>EM_Event_vod__c.Need_ID__c</members>
+        <members>EM_Event_vod__c.Location_vod__c</members>
+        <members>EM_Event_vod__c.Location_vod_HCPTS__c</members>
+        <members>EM_Event_vod__c.Location_Address_vod__c</members>
+        <members>EM_Event_vod__c.Location_Address_Line_2_vod__c</members>
+        <members>EM_Event_vod__c.Location_Address_Line_2_Confirmed_HCPTS__c</members>
+        <members>EM_Event_vod__c.Location_Address_Confirmed_HCPTS__c</members>
+        <members>EM_Event_vod__c.City_vod__c</members>
+        <members>EM_Event_vod__c.City_Confirmed_HCPTS__c</members>
+        <members>EM_Event_vod__c.Country_Confirmed_HCPTS__c</members>
+        <members>EM_Event_vod__c.Confirmed_Venue_Postal_Code_HCPTS__c</members>
+        <members>EM_Event_vod__c.State_Province_HCPTS__c</members>
+        <members>EM_Event_vod__c.Congress_Names_HCPTS__c</members>
+        <members>EM_Event_vod__c.Cybergrant_ID_HCPTS__c</members>
+        <members>EM_Event_vod__c.Activity_Format_HCPTS__c</members>
+        <members>EM_Event_vod__c.Activity_ID_2_HCPTS__c</members>
+        <members>EM_Event_vod__c.zvod_Event_Layout_vod__c</members>
+        <members>EM_Event_vod__c.Activity_Id_HCPTS__c</members>
+        <members>EM_Event_vod__c.Activity_Status_HCPTS__c</members>
+        <members>EM_Event_vod__c.Activity_Type_Formula_HCPTS__c</members>
+        <members>EM_Event_vod__c.Activity_Type_Simple_HCPTS__c</members>
+        <members>EM_Event_vod__c.Food_and_Beverage_HCPTS__c</members>
+        <members>EM_Event_vod__c.Full_Location_HCPTS__c</members>
+        <members>EM_Event_vod__c.Ground_Transportation_HCPTS__c</members>
+        <members>EM_Event_vod__c.Inherited_Budget_Need_HCPTS__c</members>
+        <members>EM_Event_vod__c.Starcite_ID_HCPTS__c</members>
+        <members>EM_Event_vod__c.Starcite_Id_2_HCPTS__c</members>
+        <members>EM_Event_vod__c.Starcite_Request_Status__c</members>
+        <members>EM_Event_vod__c.Meeting_Rooms_HCPTS__c</members>
+        <members>EM_Event_vod__c.Parent_Event_vod__c</members>
+        <members>EM_Event_vod__c.Audio_Visual_Support_HCPTS__c</members>
+        <members>EM_Event_vod__c.Secondary_Product_TA_Simplified__c</members>
+        <members>EM_Event_vod__c.Send_Activity_Details_Report_Email__c</members>
+        <members>EM_Event_vod__c.Status_vod__c</members>
+        <members>EM_Event_vod__c.Travel_Accomodations_HCPTS__c</members>
+        <members>EM_Event_vod__c.WasApproved_HCPTS__c</members>
+        <members>EM_Expense_Estimate_vod__c.Event_vod__c</members>
+        <members>EM_Expense_Estimate_vod__c.Event_Canceled_vod__c</members>
+        <members>EM_Expense_Estimate_vod__c.Event_Budget_vod__c</members>
+        <members>EM_Speaker_Qualification_vod__c.External_ID_vod__c</members>
+        <members>EM_Speaker_vod__c.Provider_Type_Simple_Formula_HCPTS__c</members>
+        <members>EM_Speaker_vod__c.Rate_Type_HCPTS__c</members>
+        <members>EM_Speaker_vod__c.Hourly_Rate_HCPTS__c</members>
+        <members>EM_Speaker_vod__c.Status_vod__c</members>
+        <members>EM_Speaker_vod__c.Year_to_Date_Utilization_vod__c</members>
+        <members>EM_Vendor_vod__c.Account_Number_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Contract_Party_Address_Line_2_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Contract_Party_District_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.ERS_Simple_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Industry_Code_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Contract_Party_is_HCP_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Vendor_Mat_Group_Concat_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Status_vod__c</members>
+        <members>EM_Vendor_vod__c.Contract_Party_Type_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Primary_Material_Group_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.PII_Data_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Service_Provider_Reference_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Contract_State_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.Contract_Tax_ID_HCPTS__c</members>
+        <members>EM_Vendor_vod__c.VAT_Registration_ID_HCPTS__c</members>
+        <members>Event_Attendee_vod__c.Status_vod__c</members>
+        <members>Expense_Header_vod__c.Actual_vod__c</members>
+        <members>Expense_Header_vod__c.Committed_vod__c</members>
+        <members>Expense_Header_vod__c.Event_vod__c</members>
+        <members>Expense_Header_vod__c.Event_Canceled_vod__c</members>
+        <members>Expense_Header_vod__c.Event_Recordtype_Dev_Name_Simple_HCPTS__c</members>
+        <members>Expense_Header_vod__c.Incurred_Expense_vod__c</members>
+        <members>Expense_Header_vod__c.Invoice_Simple_Formula_HCPTS__c</members>
+        <members>Expense_Header_vod__c.Payee_Vendor_vod__c</members>
+        <members>Expense_Header_vod__c.Vendor_Mat_Group_Concat_HCPTS__c</members>
+        <members>Expense_Header_vod__c.Contract_Party_Name_2_HCPTS__c</members>
+        <members>Expense_Header_vod__c.Payment_Status_HCPTS_S1__c</members>
+        <members>Expense_Header_vod__c.Purchase_Order_Number__c</members>
+        <members>Expense_Header_vod__c.Tax_Code_HCPTS__c</members>
+        <members>Expense_Header_vod__c.Tax_Market_HCPTS__c</members>
+        <members>Expense_Header_vod__c.VAT_Liable_Simple_HCPTS__c</members>
+        <members>Expense_Line_vod__c.Actual_vod__c</members>
+        <members>Expense_Line_vod__c.Committed_vod__c</members>
+        <members>Expense_Line_vod__c.Event_vod__c</members>
+        <members>Expense_Line_vod__c.Event_Budget_vod__c</members>
+        <members>Expense_Line_vod__c.Funding_Currency_HCPTS__c</members>
+        <members>Medical_Event_vod__c.Status_vod__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>EM_Attendee_vod__c.Simple_Attendee_HCPTS</members>
+        <members>EM_Budget_vod__c.Budget_vod</members>
+        <members>EM_Event_Budget_vod__c.WBS_CC_Simple_HCPTS</members>
+        <members>EM_Event_Material_vod__c.Simple_Material_HCPTS</members>
+        <members>EM_Event_Speaker_vod__c.Simplified_Event_Speaker_HCPTS</members>
+        <members>EM_Event_Team_Member_vod__c.Activity_Team_Member_Simple_HCPTS</members>
+        <members>EM_Event_vod__c.Advisory_Board</members>
+        <members>EM_Event_vod__c.Congress_vod</members>
+        <members>EM_Event_vod__c.Cross_Org</members>
+        <members>EM_Event_vod__c.Event_Purchase</members>
+        <members>EM_Event_vod__c.Exhibits_Booths_and_Displays</members>
+        <members>EM_Event_vod__c.HCP_Sponsorship</members>
+        <members>EM_Event_vod__c.Internal_Speaking</members>
+        <members>EM_Event_vod__c.Investigator_Meeting_vod</members>
+        <members>EM_Event_vod__c.Other_Consulting</members>
+        <members>EM_Event_vod__c.Preceptorship</members>
+        <members>EM_Event_vod__c.R_D_Committee</members>
+        <members>EM_Event_vod__c.Round_Table_vod</members>
+        <members>EM_Event_vod__c.Simple_Activity_HCPTS</members>
+        <members>EM_Event_vod__c.Speaker_Meeting</members>
+        <members>EM_Event_vod__c.Speaker_Program_vod</members>
+        <members>EM_Event_vod__c.Speaker_Series</members>
+        <members>EM_Event_vod__c.Speaker_Training</members>
+        <members>EM_Event_vod__c.Standard_Rep_Presentation</members>
+        <members>EM_Expense_Estimate_vod__c.Expense_Estimate_Simple</members>
+        <members>EM_Speaker_vod__c.Service_Provider_Simple_HCPTS</members>
+        <members>EM_Vendor_vod__c.Payee_Simple_HCPTS</members>
+        <members>EM_Vendor_vod__c.Vendor_vod</members>
+        <members>Event_Attendee_vod__c.Simple_Attendee_HCPTS</members>
+        <members>Expense_Header_vod__c.Simple_Expense_Header</members>
+        <members>Expense_Header_vod__c.Event_Expense_Header_vod</members>
+        <members>Expense_Line_vod__c.Event_Expense_Line_vod</members>
+        <members>Medical_Event_vod__c.Simple_Activity_HCPTS</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>EM_Budget_vod__c.My_Needs_DE</members>
+        <members>EM_Budget_vod__c.My_Needs</members>
+        <members>EM_Budget_vod__c.All_Needs_DE</members>
+        <members>EM_Budget_vod__c.All_Needs</members>
+        <members>EM_Budget_vod__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>EM_Budget_vod__c.Need_Owner_HCPTS__c</members>
+        <name>SharingReason</name>
+    </types>
+    <types>
+        <members>EM_Budget_vod__c.Company_Cd_Required_for_Available_Budget</members>
+        <members>EM_Budget_vod__c.Must_Have_Company_Code</members>
+        <members>EM_Event_Budget_vod__c.Need_End_Date_After_Atvty_Start_Date</members>
+        <members>EM_Event_Budget_vod__c.Need_Start_Date_Before_Atvty_Start_Date</members>
+        <members>EM_Event_Team_Member_vod__c.Prevent_Role_Updates_to_existing_records</members>
+        <members>EM_Event_vod__c.Must_fill_Congress_Info</members>
+        <members>EM_Event_vod__c.Must_fill_Congress_Info_2</members>
+        <members>EM_Event_vod__c.Must_have_a_Primary_Assigned_Need</members>
+        <members>EM_Event_vod__c.Must_Provider_Venue_Country</members>
+        <members>EM_Vendor_vod__c.BMS_EMEA_EM_Vendor_ID_Must_be_ten_digits</members>
+        <members>Expense_Header_vod__c.Cannot_Edit_Expense_Header</members>
+        <members>Expense_Header_vod__c.Cannot_Edit_Expense_Header_after_Payment</members>
+        <members>Expense_Header_vod__c.Check_Material_Groups_are_Valid</members>
+        <members>Expense_Header_vod__c.Incurred_Expense_required_for_DOCT</members>
+        <members>Expense_Header_vod__c.Need_Vendor_to_Request_PO</members>
+        <members>Expense_Header_vod__c.Need_Vendor_to_Request_PO_Simplified</members>
+        <members>Expense_Header_vod__c.No_PO_Request_for_Manual_Payment</members>
+        <members>Expense_Header_vod__c.Payment_Request_Validation</members>
+        <members>Expense_Header_vod__c.PO_Pending_Lock</members>
+        <members>Expense_Header_vod__c.PO_Requested_Update</members>
+        <members>Expense_Header_vod__c.Required_to_Request_PO_Simplified</members>
+        <members>Expense_Line_vod__c.Cannot_Edit_Expense_Lines_Simple_HCPTS</members>
+        <members>Expense_Line_vod__c.Committed_Greater_than_0_to_request_PO</members>
+        <members>Expense_Line_vod__c.Only_Enter_Actuals_for_Manual_Payment</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>EM_Budget_vod__c.Update_Budget_Identifier_for_Simple_Need</members>
+        <members>EM_Budget_vod__c.Update_Budget_Identifier_to_NEED_ID</members>
+        <members>EM_Budget_vod__c.Approval_Status_Business_Approved</members>
+        <members>EM_Budget_vod__c.Approval_Status_to_Draft</members>
+        <members>EM_Budget_vod__c.Availability_Status_to_Draft</members>
+        <members>EM_Budget_vod__c.In_Activation</members>
+        <members>EM_Budget_vod__c.Increase_Version_0_1</members>
+        <members>EM_Budget_vod__c.Increase_Version_1</members>
+        <members>EM_Budget_vod__c.Need_Sent_for_Approval</members>
+        <members>EM_Budget_vod__c.Need_Update_Approval_Status_Review_Appr</members>
+        <members>EM_Budget_vod__c.Need_Update_to_In_Activiation</members>
+        <members>EM_Budget_vod__c.Rec_Type_to_Serial_Need</members>
+        <members>EM_Budget_vod__c.Update_Approval_Status_To_Approved</members>
+        <members>EM_Budget_vod__c.Update_Approval_Status_to_Draft</members>
+        <members>EM_Budget_vod__c.Update_Budget_Status_to_Expired</members>
+        <members>EM_Budget_vod__c.Update_Budget_Status_vod_to_Available</members>
+        <members>EM_Budget_vod__c.Update_Recordtype_to_Partial_Lock</members>
+        <members>EM_Budget_vod__c.Update_Rectype_to_Serial_Open</members>
+        <members>EM_Budget_vod__c.Update_Status_to_Rejected</members>
+        <members>EM_Budget_vod__c.Update_Status_to_Rejected_By_Certifier</members>
+        <members>EM_Budget_vod__c.Update_Status_to_Rejected_By_Reviewer</members>
+        <members>EM_Budget_vod__c.Update_Status_to_Review_Completed</members>
+        <members>EM_Budget_vod__c.Update_Status_vod_to_Draft</members>
+        <members>EM_Event_Team_Member_vod__c.Activity_BMS_Employee_ID</members>
+        <members>EM_Event_Team_Member_vod__c.EM_Activity_Approver_Email_Unique_Na</members>
+        <members>EM_Event_Team_Member_vod__c.EM_Status_Processor_Review</members>
+        <members>EM_Event_Team_Member_vod__c.Processor_Country</members>
+        <members>EM_Event_Team_Member_vod__c.Processor_Email</members>
+        <members>EM_Event_Team_Member_vod__c.Processor_Email_HCPTS</members>
+        <members>EM_Event_Team_Member_vod__c.Processor_Name</members>
+        <members>EM_Event_Team_Member_vod__c.Processor_Phone</members>
+        <members>EM_Event_Team_Member_vod__c.Update_Approver_Email_on_Activity</members>
+        <members>EM_Event_Team_Member_vod__c.Update_Certifier_on_Activity</members>
+        <members>EM_Event_vod__c.Activity_Updated_Logistics_Support</members>
+        <members>EM_Event_vod__c.Null_Approver_Email</members>
+        <members>EM_Event_vod__c.Populate_Date_Put_In_Processor_Review</members>
+        <members>EM_Event_vod__c.Update_Activity_ID</members>
+        <members>EM_Event_vod__c.Update_Activity_Name</members>
+        <members>EM_Event_vod__c.Update_Event_to_Approved</members>
+        <members>EM_Event_vod__c.Update_Event_to_Pending_Approval</members>
+        <members>EM_Event_vod__c.Update_Event_to_Pre_Event</members>
+        <members>EM_Event_vod__c.Update_WasApproved_to_True</members>
+        <members>EM_Event_vod__c.UpdateEventStatusPostEventApproval</members>
+        <members>EM_Speaker_vod__c.Address_HCPTS</members>
+        <members>EM_Speaker_vod__c.Address_Update1</members>
+        <members>EM_Speaker_vod__c.Address_Update2</members>
+        <members>EM_Speaker_vod__c.Address_vod_Update</members>
+        <members>EM_Speaker_vod__c.City_HCPTS</members>
+        <members>EM_Speaker_vod__c.Country_HCPTS</members>
+        <members>EM_Speaker_vod__c.Email_HCPTS</members>
+        <members>EM_Speaker_vod__c.Fax</members>
+        <members>EM_Speaker_vod__c.First_Name_HCPTS</members>
+        <members>EM_Speaker_vod__c.IsPersonAccount</members>
+        <members>EM_Speaker_vod__c.IsPersonAccount_HCPTS</members>
+        <members>EM_Speaker_vod__c.Last_Name_HCPTS</members>
+        <members>EM_Speaker_vod__c.Middle_HCPTS</members>
+        <members>EM_Speaker_vod__c.Mobile_HCPTS</members>
+        <members>EM_Speaker_vod__c.Phone_HCPTS</members>
+        <members>EM_Speaker_vod__c.Postal_Code</members>
+        <members>EM_Speaker_vod__c.Speaker_Update_Master_ID</members>
+        <members>EM_Speaker_vod__c.Speaker_Updated_Customer_ID</members>
+        <members>EM_Speaker_vod__c.Specialty_HCPTS</members>
+        <members>EM_Speaker_vod__c.State_HCPTS</members>
+        <members>EM_Speaker_vod__c.Update_Title_Field_on_Service_Provider</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+    <types>
+        <members>EM_Budget_vod__c.Expire Simple Budget after End Date</members>
+        <members>EM_Budget_vod__c.In Activation Field Update</members>
+        <members>EM_Budget_vod__c.Update Budget Identifier to NeedID Format</members>
+        <members>EM_Budget_vod__c.Update Budget Identifier to SIMPLE NeedID Format</members>
+        <members>EM_Budget_vod__c.Notify Processor of Need Assignment</members>
+        <members>EM_Event_History_vod__c.Notify Approver of Activity</members>
+        <members>EM_Event_History_vod__c.Notify PO and SC Activity Approved</members>
+        <members>EM_Event_History_vod__c.Notify PO and SC Activity Rejected</members>
+        <members>EM_Event_Team_Member_vod__c.Activity%3A Update Approver ID</members>
+        <members>EM_Event_Team_Member_vod__c.Alert Team Member</members>
+        <members>EM_Event_Team_Member_vod__c.Alert Team Member 2%2E0 %28Simple%29</members>
+        <members>EM_Event_Team_Member_vod__c.Change Status to Processor Review</members>
+        <members>EM_Event_Team_Member_vod__c.EM Service Coordinator Update Activity</members>
+        <members>EM_Event_Team_Member_vod__c.Set Approver Email on Activity</members>
+        <members>EM_Event_vod__c.EM Activity - Email to Creator on Close</members>
+        <members>EM_Event_vod__c.EM Activity Canceled</members>
+        <members>EM_Event_vod__c.Notify Approver if Actual Cost %3E Estimated Cost</members>
+        <members>EM_Event_vod__c.Notify EM Owner and SC of Status Change</members>
+        <members>EM_Event_vod__c.Notify Owner 7 Days after Event</members>
+        <members>EM_Event_vod__c.Update Activity ID</members>
+        <members>EM_Event_vod__c.Update PostEvent to PostEventPostApproval</members>
+        <members>EM_Speaker_vod__c.Account Info Copy HCPTS</members>
+        <members>EM_Speaker_vod__c.Account Info Copy HCPTS2</members>
+        <members>EM_Speaker_vod__c.Service Provider Address Merge</members>
+        <members>EM_Speaker_vod__c.Service Provider Address Merge MANUAL</members>
+        <members>EM_Speaker_vod__c.Speaker IsPerson Association</members>
+        <members>EM_Speaker_vod__c.Speaker not IsPerson Association</members>
+        <members>EM_Speaker_vod__c.Speaker Update Customer Master ID</members>
+        <members>EM_Speaker_vod__c.Speaker%3A Update Address Field</members>
+        <members>EM_Speaker_vod__c.Speaker%3A Update Master ID</members>
+        <name>WorkflowRule</name>
+    </types>
+    <types>
+        <members>Task</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>EM_Event_History_vod__c.EM_Activity_Rejected_Email</members>
+        <members>EM_Event_History_vod__c.Notify_Approver_of_Activity</members>
+        <members>EM_Event_History_vod__c.Notify_PO_and_SC_Activity_Approved</members>
+        <members>EM_Event_History_vod__c.Notify_PO_and_SC_Activity_Rejected</members>
+        <members>EM_Event_Team_Member_vod__c.Notify_EM_2_0_User_of_addition_to_team</members>
+        <members>EM_Event_Team_Member_vod__c.Processor_Review_Email</members>
+        <members>EM_Event_Team_Member_vod__c.Send_Email_Alert_To_Support_Member</members>
+        <members>EM_Event_vod__c.EM_7_Day_after_end_date_notification</members>
+        <members>EM_Event_vod__c.Em_Activity_Canceled_HCPTS</members>
+        <members>EM_Event_vod__c.EM_Email_Creator_Activity_is_Closed</members>
+        <members>EM_Event_vod__c.Notify_Activity_Approver_when_Budget_Exceeded_Estimates</members>
+        <members>EM_Event_vod__c.Notify_EM_User_of_Status_Change</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>VPROF_EMAttendeeBeforeInsert</members>
+        <members>VPROF_Workflows</members>
+        <members>VPROF_ExpenseLine_BeforeInsert_BeforeUpdate</members>
+        <members>VPROF_AutoAssignRecordTypeBeforeInsert</members>
+        <members>VPROF_EventHistoryBeforeIns</members>
+        <members>MaterialGroupValidation</members>
+        <name>ApexTrigger</name>
     </types>
     <version>37.0</version>
 </Package>
