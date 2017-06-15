@@ -1,0 +1,115 @@
+<apex:page renderAs="pdf" standardStylesheets="false" controller="SignatureReports" sidebar="false" showHeader="false">
+<head>
+<style type="text/css" media="print,screen" >
+    body {font-family: Times-Roman; font-size: 11pt;}
+    thead {
+        display:table-header-group;
+    }
+    tbody {
+        display:table-row-group;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+    
+    @page {
+        /* Landscape orientation */
+        size:landscape;
+        @bottom-center {
+            content: "Page " counter(page) " of " counter(pages);
+        }
+    }
+
+</style>
+</head>
+
+    <apex:pageBlock title="Signature Audit Report">
+    <apex:form >
+    
+    <apex:repeat value="{!SignatureReceipts}" var="signRcpt">
+
+        <table border="0" width="100%" style="font-size:15px;">
+        <tr>
+            <td width="23%">
+                <apex:outputText style="font-size:15px;font-weight:bold;" value="{!signRcpt.call.Account_vod__r.name}"/>
+                <apex:outputText style="font-size:15px;font-weight:bold;" value="- {!signRcpt.call.Account_vod__r.Credentials_vod__c}"/>
+                <br />
+                <apex:outputText style="font-size:13px;" value="BP ID = {!signRcpt.call.Account_vod__r.BP_ID__c}"/>
+            </td>
+            <td width="47%">
+                {!signRcpt.call.Address_vod__c}
+            </td>
+            <td width="30%">
+                <apex:outputField value="{!signRcpt.call.Signature_Date_vod__c}" />
+            </td>
+        </tr>        
+        </table>
+
+        <table  border="0" width="100%" style="font-size:12px;">
+            <tr >
+            <th width="27%" style="background-color:blue;color:white;">&nbsp;</th>
+            <th  width="73%" align="left" style="background-color:blue;color:white;font-size:17px;font-weight:bold">
+            &nbsp;Vantage Signature Capture
+            </th>
+            </tr>
+        </table>
+        
+        <table border="0" width="100%" style="font-size:12px;" cellpadding="1px">       
+            <tr>
+                <td width="25%" valign="top" align="left" style="border-bottom: 1px solid #C0C0C0">
+                    <table border="0">
+                        <tr><td>Qty</td><td>Sample</td></tr>
+                        <apex:repeat value="{!signRcpt.cs}" var="sample">
+                            <tr>
+                                <td style="font-size:13px;">{!FLOOR(sample.Quantity_vod__c)}</td>
+                                <td style="font-size:12px;">{!sample.Sample_Lot_BMS_SHARED__c}</td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                </td>
+                <td width="5%" align="left" style="border-bottom: 1px solid #C0C0C0">
+                </td>
+                <td width="70%" align="left" style="border-bottom: 1px solid #C0C0C0"> 
+                    {!signRcpt.call.Account_vod__r.name} 
+                    {!signRcpt.call.Address_vod__c} 
+                    License Number {!signRcpt.call.License_vod__c} 
+                    Call Sample Date&nbsp;<apex:outputField value="{!signRcpt.cs[0].Call_Date_vod__c}" />
+                    <br />
+     
+                    <apex:outputPanel rendered="{!signRcpt.imgId != ''}">
+                    <img border="0" src="/servlet/servlet.ImageServer?id={!signRcpt.imgId}&oid={!$Organization.Id}"/>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!signRcpt.imgId == ''}">
+                    <h3>No signature</h3>
+                    </apex:outputPanel>
+                </td>
+            </tr>
+
+            <tr>
+                <td nowrap="nowrap" width="25%" align="left">
+                    <table border="0" cellpadding="1px" style="font-size:13px;">
+                        <tr><td style="width:75px">Rep Name:  </td><td>{!signRcpt.call.CreatedBy.Name}</td></tr>
+                        <tr><td style="width:75px">Territory: </td><td>{!signRcpt.call.CreatedBy.BMS_Territory_ID_BMS_SHARED__c}</td></tr> 
+                        <tr><td style="width:75px">Visit ID: </td><td>{!signRcpt.call.Name}</td></tr> 
+                    </table>           
+                </td>
+                <td width="5%" align="left"></td>
+                <td width="70%" align="left" style="font-size:12px;">
+                   {!signRcpt.call.Disclaimer_vod__c} 
+                   <apex:outputField value="{!signRcpt.cs[0].Call_Date_vod__c}" />
+                </td>
+            </tr>
+        
+        </table>
+
+        <p />
+        <!-- apex:outputText style="font-style:italic;font-size:2px;">{!signRcpt.call.Id} : {!signRcpt.call.Name} </apex:outputText -->        
+        <hr style="border:2px solid #ACACAC;" />
+
+        <p />
+    </apex:repeat>  
+ 
+    </apex:form>
+    </apex:pageBlock> 
+        
+</apex:page>

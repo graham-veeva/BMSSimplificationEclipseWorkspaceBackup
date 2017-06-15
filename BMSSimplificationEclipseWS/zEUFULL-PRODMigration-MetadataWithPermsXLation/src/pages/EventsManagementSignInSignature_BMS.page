@@ -1,0 +1,68 @@
+<apex:page standardController="Medical_Event_vod__c" extensions="EventsManagementSignInSignature_BMS" showHeader="false">
+<html>
+ <head>
+ 
+
+ </head>
+ <body>
+<h2><b><apex:outputField value="{!medicalEvent.Name}"/></b></h2>
+<table style="text-align: left; width: 100%;" border="0"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td colspan="2" rowspan="1">Event Number &nbsp; &nbsp;<apex:outputField value="{!medicalEvent.Event_Number_BMS__c}"/></td>
+      <td>
+&nbsp; &nbsp;</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td style="vertical-align: top;" colspan="1"
+ rowspan="4"><apex:outputField value="{!medicalEvent.Venue_BMS_IC__c}"/><br/>
+ 
+ <apex:outputField value="{!medicalEvent.Address_Line_1_BMS_IC__c}"/><br/>
+ <apex:outputField value="{!medicalEvent.City_BMS__c}"/>,&nbsp;
+ <apex:outputField value="{!medicalEvent.State_BMS__c}"/>&nbsp;&nbsp;<apex:outputField value="{!medicalEvent.Postal_Code_BMS_IC__c}"/>
+</td>
+      <td>Start
+Date &nbsp; &nbsp; <apex:outputField value="{!medicalEvent.Start_Date_vod__c}"/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>End
+Date &nbsp; &nbsp; <apex:outputField value="{!medicalEvent.End_Date_vod__c}"/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>&nbsp;
+<br/>&nbsp;
+<!-- here -->
+    <apex:dataTable value="{!displayEventAttendees}" var="ea" id="eventAttendees" columnsWidth="50%,50%" cellpadding="4" cellspacing="4">
+        <apex:column >
+            <apex:facet name="header">Name</apex:facet>
+            <apex:outputText value="{!ea.Name}"/>
+        </apex:column>
+        <apex:column >
+            <apex:facet name="header">Specialty</apex:facet>
+            <apex:outputText value="{!ea.Specialty}"/>
+        </apex:column>
+        <apex:column >
+            <apex:facet name="header">Signature</apex:facet>
+            <apex:outputPanel rendered="{!ea.HasSignature}">
+              <img src="data:image/png;base64,{!ea.Signature}" />
+
+            </apex:outputPanel>
+        </apex:column>
+        
+    </apex:dataTable> 
+ </body>
+</html>
+</apex:page>

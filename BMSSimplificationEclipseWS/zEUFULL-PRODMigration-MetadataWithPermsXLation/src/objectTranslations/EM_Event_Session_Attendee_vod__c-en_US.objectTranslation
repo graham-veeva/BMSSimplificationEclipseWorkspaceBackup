@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event Session Attendee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Event Session Attendees</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attendee Name --></label>
+        <name>Attendee_Name_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee --></label>
+        <name>Attendee_vod__c</name>
+        <relationshipLabel><!-- Event Session Attendees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Session --></label>
+        <name>Event_Session_vod__c</name>
+        <relationshipLabel><!-- Event Session Attendees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile ID --></label>
+        <name>Mobile_ID_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Lock --></label>
+        <name>Override_Lock_vod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Speaker --></label>
+        <name>Speaker_vod__c</name>
+        <relationshipLabel><!-- Event Session Attendees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team Member --></label>
+        <name>Team_Member_vod__c</name>
+        <relationshipLabel><!-- Event Session Attendees --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label>Event Session Attendee</label>
+        <name>Event_Session_Attendee_vod</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

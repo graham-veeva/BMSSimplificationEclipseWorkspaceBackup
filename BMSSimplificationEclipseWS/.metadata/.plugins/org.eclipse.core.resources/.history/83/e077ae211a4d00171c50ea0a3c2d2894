@@ -1,0 +1,6 @@
+<apex:page standardController="Account">
+  <i><center>{!$Label.BMS_Security_Message}</center></i>
+  <br>
+  </br>
+  <center><apex:image rendered="{!IF(Account.Erbitux_Drop_BMS__c,true,false)}" url="{!IF(Account.Erbitux_Drop_BMS__c,URLFOR($Resource.BMS_Exclamation_Point),null)}"></apex:image><b><Font Color ="FF0000">{!IF((Account.Erbitux_Drop_BMS__c),"    Please note that this physician is categorized as Drop for Erbitux as per CIA requirements    ","")}</font></b><apex:image rendered="{!IF(Account.Erbitux_Drop_BMS__c,true,false)}" url="{!IF(Account.Erbitux_Drop_BMS__c,URLFOR($Resource.BMS_Exclamation_Point),null)}"></apex:image></center>
+</apex:page>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>List of venues that can be used for events in Veeva Event Management.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Address_Line_2_vod__c</fullName>
+        <description>Address line 2 of an event. If using a venue list, this is filled in automatically.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_vod__c</fullName>
+        <description>Address of an event. If using a venue list, this is filled in automatically.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City_vod__c</fullName>
+        <description>City of an event. If using a venue list, this is filled in automatically.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Reference_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Venue Country</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Venue Country</inlineHelpText>
+        <label>Country Reference</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipLabel>Venues</relationshipLabel>
+        <relationshipName>Venues</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Formatted_Address_vod__c</fullName>
+        <description>Concatenation of address fields. This formula can be modified to display a venue address in a different format.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Address_vod__c +
+IF(ISBLANK( Address_Line_2_vod__c ), &quot;&quot;, &quot;, &quot; + Address_Line_2_vod__c) +
+IF(ISBLANK( City_vod__c ), &quot;&quot;, &quot;, &quot; + City_vod__c) +
+IF(ISBLANK( State_Province_vod__c ), &quot;&quot;, &quot;, &quot; + State_Province_vod__c) +
+IF(ISBLANK( Postal_Code_vod__c ), &quot;&quot;, &quot;, &quot; + Postal_Code_vod__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Formatted Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_HCPTS__c</fullName>
+        <description>Phone Number</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_vod__c</fullName>
+        <description>Postal code of an event. If using a venue list, this is filled in automatically.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Province_vod__c</fullName>
+        <description>State or province of an event. If using a venue list, this is filled in automatically.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State / Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Used to determine if a venue is eligible for use</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inactive_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Venue</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Address_vod__c</columns>
+        <columns>City_vod__c</columns>
+        <columns>Country_Reference_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Loaded_by_Veeva</fullName>
+        <columns>NAME</columns>
+        <columns>Address_vod__c</columns>
+        <columns>City_vod__c</columns>
+        <columns>Country_Reference_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Created_By_HCTPS__c</field>
+            <operation>contains</operation>
+            <value>Caro</value>
+        </filters>
+        <label>Loaded by Veeva</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Venues</pluralLabel>
+    <recordTypes>
+        <fullName>Venue_vod</fullName>
+        <active>true</active>
+        <description>Venue</description>
+        <label>Venue_vod</label>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>City_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>State_Province_vod__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Country_Reference_HCPTS__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>City_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>State_Province_vod__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Country_Reference_HCPTS__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>City_vod__c</searchFilterFields>
+        <searchFilterFields>State_Province_vod__c</searchFilterFields>
+        <searchFilterFields>Country_Reference_HCPTS__c</searchFilterFields>
+        <searchResultsAdditionalFields>City_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>State_Province_vod__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Country_Reference_HCPTS__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Cost Center Details for EM</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Cost Center Active</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Company_Code_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Company code associated to this Cost center number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company code associated to this Cost center number</inlineHelpText>
+        <label>Company Code Details</label>
+        <referenceTo>Company_Code_Details_HCPTS__c</referenceTo>
+        <relationshipLabel>Cost Center Details</relationshipLabel>
+        <relationshipName>Cost_Center_Details</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Company_Code_Purchase_Org_Country__c</fullName>
+        <description>Formula field that combines the Company code, Purchase Org and Country information so that it is easier for users to pick the right cost center</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Company_Code_HCPTS__r.Name &amp; &apos;:&apos; &amp;  Company_Code_HCPTS__r.Purchase_Org_HCPTS__r.Name &amp; &apos;:&apos; &amp;  TEXT(Company_Code_HCPTS__r.Purchase_Org_HCPTS__r.Country_HCPTS__r.Country_Name_vod__c)</formula>
+        <inlineHelpText>Formula field that combines the Company code, Purchase Org and Country information so that it is easier for users to pick the right cost center</inlineHelpText>
+        <label>Company Code: Purchase Org: Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Center_Name_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Cost Center Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date_HCPTS__c</fullName>
+        <description>Cost Center End Date</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_HCPTS__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Cost Center External ID</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date_HCPTS__c</fullName>
+        <description>Cost Center Start Date</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Cost Center Details</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Cost_Center_Name_HCPTS__c</columns>
+        <columns>Active_HCPTS__c</columns>
+        <columns>Company_Code_Purchase_Org_Country__c</columns>
+        <columns>Company_Code_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Cost Center Code</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Cost Center Details</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Cost_Center_Name_HCPTS__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Active_HCPTS__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

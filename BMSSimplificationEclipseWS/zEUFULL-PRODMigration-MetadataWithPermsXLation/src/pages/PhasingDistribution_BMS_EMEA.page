@@ -1,0 +1,497 @@
+<apex:page standardController="Master_File_BMS_EMEA__c" extensions="PhasingDistribution_BMS_EMEA">
+<apex:form id="form1">
+<apex:pageMessages id="msg"/>
+
+<apex:pageBlock >
+                <apex:pageBlockTable value="{!MasterFile}" var="Meetings">  
+                   
+                    <apex:column width="6%" > 
+                        <apex:commandLink value="Edit" style="color:blue" rerender="form1" rendered="{!Meetings.Id != currentId}">
+                            <apex:param assignTo="{!currentId}" name="a" value="{!Meetings.Id}"/>
+                        </apex:commandlink>
+                        
+                        <apex:commandLink value="Save" style="color:blue" action="{!SaveBMS}" rerender="form1" rendered="{!Meetings.Id == currentId}"/>
+                        <apex:outputPanel rendered="{!Meetings.Id == currentId}">&nbsp;|&nbsp;</apex:outputPanel>
+                        <apex:commandLink value="Cancel" style="color:blue" action="{!CancelBMS}" rerender="form1" rendered="{!Meetings.Id == currentId}"/>
+                   </apex:column>                                      
+                   
+                    <apex:column width="10%" headerValue="Source">
+                        <apex:outputText value="Targeted Meetings"/>
+                    </apex:column>
+
+                    <apex:column width="5%" headerValue="Jan" >
+                        <apex:outputField value="{!Meetings.Meetings_January_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                            <apex:inputField style="width:50px" value="{!Meetings.Meetings_January_BMS_EMEA__c}"  rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=1 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=1}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>  
+                                      
+                    
+                    
+                    <apex:column width="5%" headerValue="Feb" >
+                        <apex:outputField value="{!Meetings.Meetings_February_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meetings_February_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=2 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=2}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="Mar" >
+                        <apex:outputField value="{!Meetings.Meetings_March_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meetings_March_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=3 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=3}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="Apr" >
+                        <apex:outputField value="{!Meetings.Meetings_April_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meetings_April_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=4 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=4}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="May" >
+                        <apex:outputField value="{!Meetings.Meeting_May_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_May_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=5 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=5}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="Jun" >
+                        <apex:outputField value="{!Meetings.Meeting_June_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_June_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=6 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=6}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="Jul" >
+                        <apex:outputField value="{!Meetings.Meeting_July_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_July_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=7 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=7}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="Aug" >
+                        <apex:outputField value="{!Meetings.Meeting_August_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_August_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=8 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=8}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="Sep" > 
+                        <apex:outputField value="{!Meetings.Meeting_September_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_September_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=9 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=9}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="Oct" >
+                        <apex:outputField value="{!Meetings.Meeting_October_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_October_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=10 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=10}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="Nov" >
+                        <apex:outputField value="{!Meetings.Meeting_November_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_November_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=11 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=11}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>   
+                    
+                    <apex:column width="5%" headerValue="Dec" >
+                        <apex:outputField value="{!Meetings.Meeting_Dec_BMS_EMEA__c}" rendered="{!Meetings.Id != currentId}"/>
+                        <div name="inputmonth">
+                        <apex:inputField style="width:50px" value="{!Meetings.Meeting_Dec_BMS_EMEA__c}" rendered="{!Meetings.Id == currentId && VALUE(Meetings.Start_Date_BMS_EMEA__c) <=12 && VALUE(Meetings.End_Date_BMS_EMEA__c) >=12}" onkeyup="handleKeyPress()"/>
+                        </div>
+                    </apex:column>       
+     
+                    <apex:column width="10%" headerValue="Objective Total" >
+                        <div id="ObjectiveTotal">
+                            <apex:outputField value="{!Meetings.Objective_Total_BMS_EMEA__c}"/>
+                        </div>
+                    </apex:column>                       
+
+                    <apex:column width="10%" headerValue="Amount" >
+                        <div id="TargetNum">
+                        <!-- <apex:outputField value="{!Meetings.Targeted_number_of_Meetings_BMS_EMEA__c}"/> -->
+                        <apex:outputField value="{!Meetings.Total_Budget_all_Events_BMS_EMEA__c}"/>
+                        </div>
+                    </apex:column>   
+                                        
+                </apex:pageBlockTable>
+               
+               
+               
+               
+               
+                 <apex:pageBlockTable value="{!MasterFile}" var="Meetings">  
+                   
+                    <apex:column width="6%"> 
+                   </apex:column>                                      
+                   
+                    <apex:column width="10%" headerValue="">
+                        <apex:outputText value="Planned Meetings"/>
+                    </apex:column>
+
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Jan_Planned_BMS_EMEA__c}" />
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Feb_Planned_BMS_EMEA__c}" />
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Mar_Planned_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Apr_Planned_BMS_EMEA__c}" />
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                       <apex:outputText style="width:50px" value="{!Meetings.RollUp_May_Planned_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Jun_Planned_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Jul_Planned_BMS_EMEA__c}" />
+                     </apex:column>  
+                     
+                    <apex:column width="5%" headerValue="">
+                         <apex:outputText style="width:50px" value="{!Meetings.RollUp_Aug_Planned_BMS_EMEA__c}" />
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue=""> 
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Sep_Planned_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Oct_Planned_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Nov_Planned_BMS_EMEA__c}" />
+                    </apex:column>   
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Dec_Planned_BMS_EMEA__c}" />
+                    </apex:column>                  
+                   
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputText style="width:50px" value="{!Meetings.Total_number_of_Meeting_Plans_BMS_EMEA__c}" />
+                    </apex:column> 
+                       
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputText style="width:50px" value="{!Meetings.Total_Planned_Cost_BMS_EMEA__c }" />
+                    </apex:column>  
+                                           
+                </apex:pageBlockTable>
+                
+                
+                <apex:pageBlockTable value="{!MasterFile}" var="Meetings">  
+                   
+                    <apex:column width="6%"> 
+                   </apex:column>                                      
+                   
+                    <apex:column width="10%" headerValue="">
+                        <apex:outputText value="Completed Meetings"/>
+                    </apex:column>
+
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Jan_Completed_BMS_EMEA__c}" />
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Feb_Completed_BMS_EMEA__c}" />
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Mar_Completed_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Apr_Completed_BMS_EMEA__c}" />
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                       <apex:outputText style="width:50px" value="{!Meetings.RollUp_May_Completed_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Jun_Completed_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Jul_Completed_BMS_EMEA__c}" />
+                     </apex:column>  
+                     
+                    <apex:column width="5%" headerValue="">
+                         <apex:outputText style="width:50px" value="{!Meetings.RollUp_Aug_Completed_BMS_EMEA__c}" />
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue=""> 
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Sep_Completed_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Oct_Completed_BMS_EMEA__c}" />
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Nov_Completed_BMS_EMEA__c}" />
+                    </apex:column>   
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.RollUp_Dec_Completed_BMS_EMEA__c}" />
+                    </apex:column>                  
+                   
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputText style="width:50px" value="{!Meetings.Total_number_of_Meeting_PostExc_BMS_EMEA__c}" />
+                    </apex:column> 
+                       
+                    <apex:column width="10%" headerValue="" >
+                       <apex:outputText style="width:50px" value="{!Meetings.Total_Actual_Cost_BMS_EMEA__c }" />
+                    </apex:column>  
+                                           
+                </apex:pageBlockTable>
+
+            <!--    <apex:pageBlockTable value="{!MasterFile}" var="Meetings" columnsWidth="50px">  
+                   
+                    <apex:column width="6%"> 
+                   </apex:column>                                      
+                   
+                    <apex:column width="10%" headerValue="">
+                        <apex:outputText value="Audience Participants"/>
+                    </apex:column>
+
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_January_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_February_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_March_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_April_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_May_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_June_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_July_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_August_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue=""> 
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_September_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_October_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_November_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>   
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_Dec_BMS_EMEA__c*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>                  
+                   
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputText value="{!NULLVALUE(Meetings.Objective_Total_BMS_EMEA__c,0)*NULLVALUE(Meetings.of_Audience_Participants_BMS_EMEA__c,0)}" />
+                    </apex:column> 
+                 
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputField value="{!Meetings.of_Audience_Participants_BMS_EMEA__c}"/>
+                    </apex:column> 
+                                          
+                </apex:pageBlockTable> 
+                
+                
+                <apex:pageBlockTable value="{!MasterFile}" var="Meetings" columnsWidth="50px">  
+                   
+                    <apex:column width="6%"> 
+                   </apex:column>                                      
+                   
+                    <apex:column width="10%" headerValue="">
+                        <apex:outputText value="BMS Employees"/>
+                    </apex:column>
+
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_January_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_February_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_March_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_April_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_May_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_June_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_July_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_August_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue=""> 
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_September_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_October_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_November_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>   
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_Dec_BMS_EMEA__c*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>                  
+                   
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputText value="{!NULLVALUE(Meetings.Objective_Total_BMS_EMEA__c,0)*NULLVALUE(Meetings.of_BMS_Employees_BMS_EMEA__c,0)}" />
+                    </apex:column> 
+
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputField value="{!Meetings.of_BMS_Employees_BMS_EMEA__c}"/>
+                    </apex:column> 
+                                          
+                </apex:pageBlockTable>                 
+
+
+
+              <apex:pageBlockTable value="{!MasterFile}" var="Meetings" columnsWidth="50px">  
+                   
+                    <apex:column width="6%" > 
+                   </apex:column>                                      
+                   
+                    <apex:column width="10%" headerValue="">
+                        <apex:outputText value="JV Partner Employees"/>
+                    </apex:column>
+
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_January_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_February_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_March_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meetings_April_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_May_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_June_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_July_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_August_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>  
+                    
+                    <apex:column width="5%" headerValue=""> 
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_September_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_October_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column> 
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_November_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>   
+                    
+                    <apex:column width="5%" headerValue="">
+                        <apex:outputText style="width:50px" value="{!Meetings.Meeting_Dec_BMS_EMEA__c*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" rendered="{!Meetings.Id != currentId}"/>
+                    </apex:column>                  
+                   
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputText value="{!NULLVALUE(Meetings.Objective_Total_BMS_EMEA__c,0)*NULLVALUE(Meetings.of_JV_Partner_Employees_BMS_EMEA__c,0)}" />
+                    </apex:column> 
+
+                    <apex:column width="10%" headerValue="" >
+                        <apex:outputField value="{!Meetings.of_JV_Partner_Employees_BMS_EMEA__c}"/>
+                    </apex:column> 
+                                          
+                </apex:pageBlockTable>   -->   
+                                 
+</apex:pageBlock>
+<script type="text/javascript">
+     
+      function handleKeyPress(){
+            
+          var targetnum = document.getElementById('TargetNum');
+          targetnum = targetnum.getElementsByTagName("SPAN")[0];
+          
+          var objtot = document.getElementById('ObjectiveTotal');
+          objtot = objtot.getElementsByTagName("SPAN")[0];
+          
+          var montotal = 0;
+          
+          var monthValues = document.getElementsByName('inputmonth');
+          
+          for(var i = 0; i < monthValues.length; i++){
+              if(monthValues[i].getElementsByTagName("INPUT").length > 0){
+              var k = monthValues[i].getElementsByTagName("INPUT")[0].value;
+              montotal += (!isNaN(k))?Number(k):0;
+              objtot.innerHTML = montotal; 
+              objtot.style.color = (objtot.innerHTML != targetnum.innerHTML)?'red':'';
+              objtot.style.font = (objtot.innerHTML != targetnum.innerHTML)?'bold 18px arial,serif':'';
+              }
+          }
+          
+      }
+      
+      handleKeyPress();
+      
+</script>
+</apex:form>
+</apex:page>

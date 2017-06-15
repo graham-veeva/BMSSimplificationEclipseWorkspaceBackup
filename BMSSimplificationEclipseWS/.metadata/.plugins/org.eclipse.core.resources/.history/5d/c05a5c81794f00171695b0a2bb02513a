@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Applicable_Activity_Status_HCPTS__c</fullName>
+        <description>Status field that corresponds to the Required checkbox. If this value is anything other than Not Applicable, the Required Attachment check is performed before the Activity moves into the specified status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the &quot;Need Attachment&quot; is checked, then this material must have an Attachment added under Notes &amp; Attachment for the Event status indicated in this field</inlineHelpText>
+        <label>Applicable Event Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Archived</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certifier Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Certifier Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Final Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Reapproval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Reviewer Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Requested_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reschedule</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reviewer Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The event that is associated with the material</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Event Materials</relationshipLabel>
+        <relationshipName>Event_Materials</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Item_Id_HCPTS__c</fullName>
+        <description>Item Id from external system</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Item Id from external system</inlineHelpText>
+        <label>Item Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Type__c</fullName>
+        <description>Sourced from External System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sourced from External System</inlineHelpText>
+        <label>Item Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Action Item</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name_vod__c</fullName>
+        <description>Used to store the material&apos;s name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Item Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Material_HCPTS</fullName>
+        <active>true</active>
+        <description>Approved Material for EM Activities</description>
+        <label>Simple Material</label>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

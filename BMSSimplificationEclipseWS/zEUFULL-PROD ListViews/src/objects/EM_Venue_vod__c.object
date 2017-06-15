@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Address_vod__c</columns>
+        <columns>City_vod__c</columns>
+        <columns>Country_Reference_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Loaded_by_Veeva</fullName>
+        <columns>NAME</columns>
+        <columns>Address_vod__c</columns>
+        <columns>City_vod__c</columns>
+        <columns>Country_Reference_HCPTS__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Created_By_HCTPS__c</field>
+            <operation>contains</operation>
+            <value>Caro</value>
+        </filters>
+        <label>Loaded by Veeva</label>
+        <language>en_US</language>
+    </listViews>
+</CustomObject>

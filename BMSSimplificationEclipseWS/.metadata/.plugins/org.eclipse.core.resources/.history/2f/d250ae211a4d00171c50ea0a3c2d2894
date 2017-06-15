@@ -1,0 +1,10 @@
+<apex:page showHeader="false" sidebar="false" standardController="User">
+
+<apex:iframe height="2200px" scrolling="true" frameborder="no" src="https://javelin.zsservices.com/BMS/IdentityManager-SF/app/Web/login.aspx?SessionId={!$Api.Session_ID}&ServerURL={!URLENCODE($Api.Partner_Server_URL_90)}&PartnerKey=C43A074FE34020011C9D39AB62E523ADEA48F7EE57710C31165D964C0F193663&ReturnUrl=https%3A%2F%2Fjavelin.zsservices.com%2FBMS%2F0017%2DOnTAP%2FWeb%2FView%2FStatus%5FForm%2FBO%2F{!User.Username}%3FrenderMode%3D0%26displayMode%3D0%26chrome%3Dfalse%26renderAll%3Dtrue"> 
+
+<style type="text/css">h2 {display:none !important;}</style>
+</apex:iframe>
+  
+
+
+</apex:page>

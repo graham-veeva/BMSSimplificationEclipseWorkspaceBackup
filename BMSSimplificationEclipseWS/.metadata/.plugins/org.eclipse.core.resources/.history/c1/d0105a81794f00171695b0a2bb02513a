@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Ariba_SOW_Number_HCPTS__c</fullName>
+        <description>Ariba SOW Number</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Ariba SOW Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Attendee_Type_vod__c</fullName>
+        <description>This field defines what type of Attendee has been selected for the Event. This formula can be modified to meet the naming conventions of a Customer&apos;s organization.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Account_vod__c)), $Label.ACCOUNT_vod, 
+                IF(NOT(ISBLANK(Contact_vod__c)), $Label.CONTACT_vod, 
+                IF(NOT(ISBLANK(User_vod__c)), $Label.USER_vod, 
+                IF(NOT(ISBLANK(TEXT(Walk_In_Status_vod__c))), $Label.WALK_IN_vod, 
+                $Label.ONLINE_REGISTRANT_vod))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attendee Type OOTB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audience_Type_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Legacy Audience Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BMS Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nurse Practitioner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmacist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technician</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alliance Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Journalist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Patient</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Patient Advocacy Group</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Audience_Type_Simple_Formula_HCPTS__c</fullName>
+        <description>Formula field evaluates to HCP, HCO or Employee value depending on Attendee data and relationship to User or Account or blank for Contact table</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASE(1, IF(NOT(ISBLANK(User_vod__c)), 1, 0),  $Label.Audience_Provider_Type_Employee 
+       , IF(NOT(ISBLANK(Contact_vod__c)), 1, 0),  &apos;&apos;
+       , IF(AND(NOT(ISBLANK(Account_vod__c)),Account_vod__r.IsPersonAccount ), 1, 0), $Label.Audience_Provider_Type_HCP
+       , IF(AND(NOT(ISBLANK(Account_vod__c)),NOT(Account_vod__r.IsPersonAccount) ), 1, 0), $Label.Audience_Provider_Type_HCO
+       , &apos;&apos;
+     )</formula>
+        <inlineHelpText>Formula field evaluates to HCP, HCO or Employee value depending on Attendee data and relationship to User or Account or blank for Contact</inlineHelpText>
+        <label>Attendee Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_ref_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The reference to Country. Needs to be populated to do Sponsorship Letter template lookup.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide two digit country code for the Attendee.</inlineHelpText>
+        <label>Country Reference</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipLabel>Attendee</relationshipLabel>
+        <relationshipName>Audience</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Employer_Consent_Required_HCPTS__c</fullName>
+        <description>Yes indicates that this Attendee requires Employer Consent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Yes indicates that this Attendee requires Employer Consent.</inlineHelpText>
+        <label>Employer Consent Required?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Employer_Consent_Status_HCPTS__c</fullName>
+        <description>Specify status of EC capture stage/step</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify status of EC capture stage/step</inlineHelpText>
+        <label>Employer Consent Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sent for Signature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The activity that the attendee has been invited to.</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Attendee</relationshipLabel>
+        <relationshipName>EM_Attendee_Event_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Registration_Status_HCPTS__c</fullName>
+        <description>Status updated by Logistics provider based on attendee response. Not editable.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Status updated by Logistics provider based on attendee response. Not editable.</inlineHelpText>
+        <label>Registration Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of the person invited to the medical event.</description>
+        <externalId>false</externalId>
+        <label>Veeva Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Nominated_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invited_vod</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Attended_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Signed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleared_Signature_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Walked In/Attended</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Declined_Simple</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>View_Online_HCPTS__c</fullName>
+        <description>Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&apos;/&apos; &amp; Id &amp; &apos;?nooverride=1&apos;, $Label.View_Standard_Detail_Page ,&quot;_self&quot;)</formula>
+        <inlineHelpText>Clicking this link displays the Standard page to the user. Useful to perform Contracting operations like Generate Contract, ICF etc</inlineHelpText>
+        <label>View Contracting Buttons</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Simple_Attendee_HCPTS</fullName>
+        <active>true</active>
+        <description>Attendee recordtype for Simplified Build</description>
+        <label>Simple Attendee</label>
+        <picklistValues>
+            <picklist>Audience_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Alliance Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMS Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nurse Practitioner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacist</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employer_Consent_Required_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employer_Consent_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent for Signature</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Accepted_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attended_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined_Simple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Attend</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invited_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

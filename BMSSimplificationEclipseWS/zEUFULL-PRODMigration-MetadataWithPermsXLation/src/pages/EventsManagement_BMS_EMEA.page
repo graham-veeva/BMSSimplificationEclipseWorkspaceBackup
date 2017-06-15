@@ -1,0 +1,132 @@
+<apex:page standardController="Medical_Event_vod__c" extensions="EventsManagement_BMS_EMEA">
+<head>
+  <apex:stylesheet value="{!URLFOR($Resource.BMS_EMEA_Jquery, 'jquery-ui.css')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.BMS_EMEA_Jquery, 'jquery.min.js')}"/>
+  <apex:includeScript value="{!URLFOR($Resource.BMS_EMEA_Jquery, 'jquery-ui.min.js')}"/>
+  <!-- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> -->
+
+<script language="javascript">  
+ 
+       function setFocusOnLoad() {}
+       
+       function updateCost(hours,costId,totalCostId) {
+            var cost = document.getElementById(costId);
+            var totalCost = document.getElementById(totalCostId);
+            
+            if (!isNaN(parseFloat(cost.innerHTML.replace('$','')))) {
+                totalCost.innerHTML = '$' + (parseFloat(hours.value) * parseFloat(cost.innerHTML.replace('$',''))).toFixed(2);
+                
+            }
+            updateTotalCost();
+        } 
+        function updateFixedCost(cost,totalFixedCostId) {
+            //alert('updateFixedCost');
+            var totalFixedCost = document.getElementById(totalFixedCostId);
+            if (!isNaN(parseFloat(cost.value))) {
+                totalFixedCost.innerHTML = '$' + parseFloat(cost.value).toFixed(2);
+            }    
+           
+            updateTotalCost();
+        }
+        function updateTotalCost() {
+            //alert('starting update total cost');
+            var totalCostSum = 0;
+            $j = jQuery.noConflict();
+            $j('[id$=totalCost]').each(function() {
+                //alert(this);
+                var num = parseFloat(($j(this).html()).replace(/[^0-9\.]+/g, ""));
+                if (!isNaN(num) && num != null) {
+                    //alert(num);
+                    totalCostSum += num;
+                }                
+            });
+            $j('[id$=totalFixedCost]').each(function() {
+                //alert(this);
+                var num = parseFloat(($j(this).html()).replace(/[^0-9\.]+/g, ""));
+                if (!isNaN(num) && num != null) {
+                    //alert(num);
+                    totalCostSum += num;
+                }                
+            });
+            
+            $j('#[id$=totalCostSum]').html('$'+totalCostSum.toFixed(2));
+            //alert('totalcostsum ' + totalCostSum); 
+        } 
+      function drawPercentBar(width, percent, color, background) 
+      { 
+        var pixels = width * (percent / 100); 
+        if (!background) { background = "none"; }
+     
+        document.write("<div style=\"position: relative; line-height: 1em; background-color: " 
+    
+                       + background + "; border: 1px solid black; width: " 
+                       + width + "px\">"); 
+        document.write("<div style=\"height: 1.5em; width: " + pixels + "px; background-color: "
+                       + color + ";\"></div>"); 
+        document.write("<div style=\"position: absolute; text-align: center; padding-top: .25em; width: " 
+                       + width + "px; top: 0; left: 0\">" + percent + "%</div>"); 
+    
+        document.write("</div>"); 
+      } 
+
+
+
+
+
+    </script>
+</head>
+<apex:form >
+    <apex:pageMessages />
+
+    
+
+    <apex:outputPanel id="closeOut">    
+
+ <apex:pageBlock >        
+          <apex:outputText style="color:red;" value="{!$Label.BMS_EMEA_FFM_Required_Documents}" rendered="{!medicalEvent.Attachment_Validated_BMS_EMEA__c == false}"/>        
+        
+          <apex:pageBlockTable value="{!files}" var="f">
+            <apex:column headerValue="Description">
+                <apex:outputText value="{!f.Description}" id="descriptionOutputText" Rendered="{!IF(f.Description != null,'true','false')}"/>
+                <apex:inputText value="{!f.Description}" id="descriptionInputText" Rendered="{!IF(f.Description == null,'true','false')}"/>
+            </apex:column>
+            <apex:column headerValue="Required?">
+                <apex:outputText value="{!IF(f.IsRequired, 'Yes', 'No')}" />
+            </apex:column>
+            <apex:column headerValue="Uploaded Date"> 
+            <apex:outputText value="{!f.attachment.LastModifiedDate}" /> 
+            </apex:column> 
+
+            <apex:column headerValue="Link">
+              <apex:outputLink value="{!URLFOR($Action.Attachment.Download, f.attachment.id)}" target="_blank" rendered="{!f.isUploaded == true}">Download</apex:outputLink>
+              <apex:inputFile value="{!f.newAttachment.body}" filename="{!f.newAttachment.Name}" rendered="{!f.isUploaded == false}" contentType="{!f.newAttachment.ContentType}"/>
+
+            </apex:column>            
+            <apex:column >
+              <apex:commandLink action="{!deleteAttachment}" value="Delete" rendered="{!f.isUploaded == true && NOT(contains(medicalEvent.MeetingRecordTypeDelete_BMS_EMEA__c,f.attachment.id)) && ( (medicalEvent.Status_BMS_CORE__c == 'Saved' && medicalEvent.FFM_Step_BMS_EMEA__c=='Meeting Planning')|| (medicalEvent.Status_BMS_CORE__c == 'Approved' && medicalEvent.FFM_Step_BMS_EMEA__c=='Meeting Post-Execution' ))}">
+                <apex:param name="deleteAttachment" value="{!f.attachment.id}"/> 
+              </apex:commandLink>
+            </apex:column>
+            <apex:column >
+              <apex:image url="{!URLFOR($Resource.RedX)}" rendered="{!f.isUploaded == false}" width="15" height="15"/>
+              <apex:image url="{!URLFOR($Resource.GreenCheck)}" rendered="{!f.isUploaded == true}" width="15" height="15"/> 
+            </apex:column>
+          </apex:pageBlockTable>
+          &nbsp;
+          <br/>
+          <script language="javascript">drawPercentBar(750, {!percentComplete}, 'green'); </script>
+          
+          
+        </apex:pageBlock>
+        <div align="right">
+           
+                 <apex:commandButton action="{!attachDocuments}" value="Attach Documents"/>
+        </div>
+        
+        
+    </apex:outputPanel>
+
+</apex:form>
+</apex:page>

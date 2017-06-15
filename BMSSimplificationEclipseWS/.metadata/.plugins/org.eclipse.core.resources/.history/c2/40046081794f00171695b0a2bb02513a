@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <fields>
+        <fullName>Account_Group_HCPTS__c</fullName>
+        <description>Account Group</description>
+        <externalId>false</externalId>
+        <label>Account Group</label>
+        <picklist>
+            <picklistValues>
+                <fullName>DOCT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VEN1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Number_HCPTS__c</fullName>
+        <description>Payee Account Number</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Account Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Address_Line_2_HCPTS__c</fullName>
+        <description>Payee Address Line 2</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_District_HCPTS__c</fullName>
+        <description>Payee District copied over from ICF</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>District</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_Type_HCPTS__c</fullName>
+        <description>Field to indicate if the Payee is an Individual or Entity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to indicate if the Payee is an Individual or Entity</inlineHelpText>
+        <label>Payee Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Party_is_HCP_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Payee is HCP HCPTS</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contract_State_HCPTS__c</fullName>
+        <description>Payee State/Province</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Tax_ID_HCPTS__c</fullName>
+        <description>Payee Tax ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Tax ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ERS_Simple_HCPTS__c</fullName>
+        <description>Indicates Invoice type - fed from SAP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates Invoice type - fed from SAP</inlineHelpText>
+        <label>ERS</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Code_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Industry Code</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0100-HCP(Individual)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0101-HCO (Entity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0102-Non-HCP (Individual or Entity)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>0000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PII_Data_HCPTS__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Contains PII Data which will be encrypted using Force.com Platform Encryption. Preceding ICF Field API names with letters PII_ will ensure that Process Payee button copies the values from ICF to matching fields on this reference object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contains PII Data which will be encrypted using Force.com Platform Encryption. Preceding ICF Field API names with letters PII_ will ensure that Process Payee button copies the values from ICF to matching fields on this reference object</inlineHelpText>
+        <label>PII Data</label>
+        <referenceTo>PII_Data_HCPTS__c</referenceTo>
+        <relationshipName>Contract_Parties</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Material_Group_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Material Group</label>
+        <picklist>
+            <controllingField>Industry_Code_HCPTS__c</controllingField>
+            <picklistValues>
+                <fullName>HCPT01 (HCP Services)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0100-HCP(Individual)</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCPT03 (HCP Sponsorship)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCPT02 (Event Sponsorship)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0101-HCO (Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ITRD09 (Educatoinal Grants)</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+                <controllingFieldValues>0000</controllingFieldValues>
+                <controllingFieldValues>0102-Non-HCP (Individual or Entity)</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Service_Provider_Reference_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Provider Reference</label>
+        <referenceTo>EM_Speaker_vod__c</referenceTo>
+        <relationshipLabel>Payees</relationshipLabel>
+        <relationshipName>Payees</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Used to determine if a vendor is eligible for use. Custom values can be added, though only eligible vendors can be selected for events.</description>
+        <externalId>false</externalId>
+        <label>Payee Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inactive_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VAT_Registration_ID_HCPTS__c</fullName>
+        <description>VAT Registration ID</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>VAT Registration ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Mat_Group_Concat_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>LEFT(Text(Primary_Material_Group_HCPTS__c),6) &amp; &quot;, &quot; &amp;  IF( INCLUDES(Secondary_Material_Group_2_HCPTS__c,&quot;HCPT01 (HCP Services)&quot;), &quot;HCPT01&quot;,&quot;&quot;)&amp; &quot;, &quot; &amp; IF( INCLUDES(Secondary_Material_Group_2_HCPTS__c,&quot;HCPT02 (Event Sponsorship)&quot;), &quot;HCPT02&quot;,&quot;&quot;)&amp; &quot;, &quot; &amp; IF( INCLUDES(Secondary_Material_Group_2_HCPTS__c,&quot;ITRD09 (Educational Grants)&quot;), &quot;ITRD09&quot;,&quot;&quot;)&amp; &quot;, &quot; &amp; IF( INCLUDES(Secondary_Material_Group_2_HCPTS__c,&quot;HCPT03 (HCP Sponsorship)&quot;), &quot;HCPT03&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payee Mat. Group Concat</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Payee_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>Simple Payee</description>
+        <label>Payee</label>
+        <picklistValues>
+            <picklist>Account_Group_HCPTS__c</picklist>
+            <values>
+                <fullName>DOCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VEN1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ERS_Simple_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry_Code_HCPTS__c</picklist>
+            <values>
+                <fullName>0000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0100-HCP%28Individual%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0101-HCO %28Entity%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0102-Non-HCP %28Individual or Entity%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Material_Group_HCPTS__c</picklist>
+            <values>
+                <fullName>HCPT01 %28HCP Services%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT02 %28Event Sponsorship%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT03 %28HCP Sponsorship%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ITRD09 %28Educatoinal Grants%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Vendor_vod</fullName>
+        <active>true</active>
+        <description>Vendor</description>
+        <label>Vendor_vod</label>
+        <picklistValues>
+            <picklist>Account_Group_HCPTS__c</picklist>
+            <values>
+                <fullName>DOCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VEN1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Entity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contract_Party_is_HCP_HCPTS__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry_Code_HCPTS__c</picklist>
+            <values>
+                <fullName>0100-HCP%28Individual%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0101-HCO %28Entity%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>0102-Non-HCP %28Individual or Entity%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Material_Group_HCPTS__c</picklist>
+            <values>
+                <fullName>HCPT01 %28HCP Services%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT02 %28Event Sponsorship%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCPT03 %28HCP Sponsorship%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMMS23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ITRD09 %28Educatoinal Grants%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Eligible_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>BMS_EMEA_EM_Vendor_ID_Must_be_ten_digits</fullName>
+        <active>true</active>
+        <description>This validation rule is to have the 10 digists in the SAP vendor id on Payee</description>
+        <errorConditionFormula>AND (LEN( Vendor_ID_HCPTS__c ) &lt;&gt; 10 , LEN( Vendor_ID_HCPTS__c ) &lt;&gt; 0)</errorConditionFormula>
+        <errorDisplayField>Vendor_ID_HCPTS__c</errorDisplayField>
+        <errorMessage>SAP Vendor ID Must be 10 Digits</errorMessage>
+    </validationRules>
+</CustomObject>

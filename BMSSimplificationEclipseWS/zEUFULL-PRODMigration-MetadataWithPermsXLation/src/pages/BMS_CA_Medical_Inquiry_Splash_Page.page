@@ -1,0 +1,10 @@
+<apex:page sidebar="false" showHeader="false" extensions="NewMedicalInquiryCtrlExtension" standardController="Medical_Inquiry_vod__c" recordSetVar="Medical_Inquiry_vod__c"> 
+  <BR></BR>
+  <center><B><U><h1 style="font-size:100">MEDICAL INQUIRIES</H1></U></B></center>
+  <BR></BR>
+  <center><p style="border:1px solid #FF3333;background-color:#FFC1C1;width:650px">Adverse events MUST NOT be reported on this form. <br></br>Adverse Events MUST be reported by calling 1-800-287-1088 within 24 hours of date of receipt.</p></center>
+  <BR></BR>
+  <apex:form >
+  <center><apex:commandButton action="{!Accept}" value="Continue"/></center>
+  </apex:form>
+</apex:page>

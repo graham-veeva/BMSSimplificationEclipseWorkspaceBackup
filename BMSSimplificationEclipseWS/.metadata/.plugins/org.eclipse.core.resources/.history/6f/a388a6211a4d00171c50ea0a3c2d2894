@@ -1,0 +1,2409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>EM_Event_Material_Edit_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>EM_Event_Material_View_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to associate materials to an individual event.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Active?</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Completion_Status_HCPTS__c</fullName>
+        <description>Provide the actual Completion status for this Action Item. The Activity owner must move the Action item into one of the Completion statuses indicated in the Mandated Completion Status field to proceed to the &quot;Applicable Activity Status&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the actual Completion status for this Action Item. The Activity owner must move the Action item into one of the Completion statuses indicated in the Mandated Completion Status field to proceed to the &quot;Applicable Activity Status&quot;</inlineHelpText>
+        <label>Actual Completion Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Applicable_Activity_Status_HCPTS__c</fullName>
+        <description>Status field that corresponds to the Required checkbox. If this value is anything other than Not Applicable, the Required Attachment check is performed before the Activity moves into the specified status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the &quot;Need Attachment&quot; is checked, then this material must have an Attachment added under Notes &amp; Attachment for the Event status indicated in this field</inlineHelpText>
+        <label>Applicable Event Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Archived</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certifier Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Certifier Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Final Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Reapproval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Reviewer Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Requested_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reschedule</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reviewer Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Date_HCPTS__c</fullName>
+        <description>Approval Date - from external system</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Approval Date - from external system</inlineHelpText>
+        <label>Approval Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Base_Language_Name_vod__c</fullName>
+        <description>Used to store the material&apos;s name in the base language</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Channel_HCPTS__c</fullName>
+        <description>Channel</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Channel</inlineHelpText>
+        <label>Channel</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Clm_Presentation_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to associate an event material with a CLM presentation</description>
+        <externalId>false</externalId>
+        <label>CLM Presentation</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+            <filterItems>
+                <field>Clm_Presentation_vod__c.Status_vod__c</field>
+                <operation>equals</operation>
+                <value>Approved_vod</value>
+            </filterItems>
+            <filterItems>
+                <field>Clm_Presentation_vod__c.Status_vod__c</field>
+                <operation>equals</operation>
+                <value>Staged_vod</value>
+            </filterItems>
+            <filterItems>
+                <field>Clm_Presentation_vod__c.Status_vod__c</field>
+                <operation>equals</operation>
+                <value></value>
+            </filterItems>
+            <filterItems>
+                <field>Clm_Presentation_vod__c.Event_Content_vod__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Clm_Presentation_vod__c</referenceTo>
+        <relationshipName>Event_Materials</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Created_By__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Material_Status_vod__c</fullName>
+        <description>Displays the current status of the material used on the event. This uses a formula to copy the status from the Material in real-time, and can be used to run a report to discover if future events are using expired materials</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Text(Material_vod__r.Status_vod__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Material Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Description of the material</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Template_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to associate an event material with an email template</description>
+        <externalId>false</externalId>
+        <label>Email Template</label>
+        <referenceTo>Approved_Document_vod__c</referenceTo>
+        <relationshipName>Event_Materials_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The event that is associated with the material</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Event Materials</relationshipLabel>
+        <relationshipName>Event_Materials</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date_HCPTS__c</fullName>
+        <description>Expiration Date (Sourced from External System)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Expiration Date (Sourced from External System)</inlineHelpText>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Id_HCPTS__c</fullName>
+        <description>Item Id from external system</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Item Id from external system</inlineHelpText>
+        <label>Item Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Location_HCPTS__c</fullName>
+        <description>URL of this item at the external hosted location</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>URL of this item at the external hosted location</inlineHelpText>
+        <label>Item Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Item_Type__c</fullName>
+        <description>Sourced from External System</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sourced from External System</inlineHelpText>
+        <label>Item Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Action Item</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mandated_Completion_Status_HCPTS__c</fullName>
+        <description>Provide the required Completion status for the Action Item. The Activity owner must move the Action item into one of the Completion statuses indicated in this field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the required Completion status for the Action Item. The Activity owner must move the Action item into one of the Completion statuses indicated in this field</inlineHelpText>
+        <label>Mandated Completion Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Mandatory_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the action item (Activity Material) must be marked as &quot;Complete&quot; before &quot;Applicable Status&quot; reaches for the Activity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the action item (Activity Material) must be marked as &quot;Complete&quot; before &quot;Applicable Status&quot; reaches for the Activity</inlineHelpText>
+        <label>Mandatory?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Material_Type_vod__c</fullName>
+        <description>Stores the untranslated label of the record type of the material.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Material Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Material_Used_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, indicates that a material was used as part of an event</description>
+        <externalId>false</externalId>
+        <label>Material Used</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Material_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The material being used on the event</description>
+        <externalId>false</externalId>
+        <label>Topic Lookup</label>
+        <referenceTo>EM_Catalog_vod__c</referenceTo>
+        <relationshipName>Event_Materials_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Name_vod__c</fullName>
+        <description>Used to store the material&apos;s name</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Item Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_HCPTS__c</fullName>
+        <description>Veeva attribute</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Veeva attribute</inlineHelpText>
+        <label>Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Override_Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Helper field for data loads.</description>
+        <externalId>false</externalId>
+        <label>Override Lock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Purpose_HCPTS__c</fullName>
+        <description>Purpose for materials - Ad Board, Clinical Trial etc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Purpose for materials - Ad Board, Clinical Trial etc</inlineHelpText>
+        <label>Purpose</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Required_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Attachment_HCPTS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this is checked, an Attachment must be added to this Activity material before moving the Activity to Applicable Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, an Attachment must be added to this Activity material before moving the Activity to Applicable Status</inlineHelpText>
+        <label>Needs Attachment?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Speaker_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Populate this Lookup to indicate Materials owned/provided by the Speaker</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populate this Lookup to indicate Materials owned/provided by the Speaker</inlineHelpText>
+        <label>Speaker</label>
+        <referenceTo>EM_Speaker_vod__c</referenceTo>
+        <relationshipName>Activity_Materials2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Subtype_vod__c</fullName>
+        <description>Used to indicate the subtype of the material.</description>
+        <externalId>false</externalId>
+        <label>Subtype</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Target_Audience_HCPTS__c</fullName>
+        <description>Advocacy
+Field Medical
+Field Access</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Advocacy
+Field Medical
+Field Access</inlineHelpText>
+        <label>Target Audience</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Event Material</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>EM-{0000000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Event Materials</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Action_Item_HCPTS</fullName>
+        <active>true</active>
+        <description>Used to store checklist items to complete/address/verify</description>
+        <label>Action Item</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Action Item</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Agenda_HCPTS</fullName>
+        <active>false</active>
+        <label>Agenda</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Attendee_List_HCPTS</fullName>
+        <active>false</active>
+        <label>Attendee List</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CLM_Presentation_vod</fullName>
+        <active>true</active>
+        <description>Used to store CLM presentations that are available for use on an Event.</description>
+        <label>CLM_Presentation_vod</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Archived</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certifier Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Certifier Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Final Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Reapproval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Reviewer Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Requested_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reviewer Approved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Action Item</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Email_Template_vod</fullName>
+        <active>true</active>
+        <description>Used to store email templates that are available for use on an Event.</description>
+        <label>Email_Template_vod</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Action Item</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Material_HCPTS</fullName>
+        <active>true</active>
+        <description>Used to store Materials to be used at an Activity</description>
+        <label>Material</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Roster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Presentation_vod</fullName>
+        <active>true</active>
+        <description>Used to associate a presentation to an event</description>
+        <label>Presentation_vod</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Print_Invitation_Template_vod</fullName>
+        <active>true</active>
+        <description>Used to associate print invitation templates to an event</description>
+        <label>Print_Invitation_Template_vod</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Print_Sign_In_Template_vod</fullName>
+        <active>true</active>
+        <description>Used to associate Print Sign In</description>
+        <label>Print_Sign_In_Template_vod</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Exception Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Sign-in Sheet</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Simple_Material_HCPTS</fullName>
+        <active>true</active>
+        <description>Approved Material for EM Activities</description>
+        <label>Simple Material</label>
+        <picklistValues>
+            <picklist>Actual_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Applicable_Activity_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Channel_HCPTS__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face-to-Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Print</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Item_Type__c</picklist>
+            <values>
+                <fullName>Agenda</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handouts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slide Deck</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Mandated_Completion_Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Externally Managed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Purpose_HCPTS__c</picklist>
+            <values>
+                <fullName>Ad Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Trial</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subtype_vod__c</picklist>
+            <values>
+                <fullName>Follow_Up_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invitation_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reminder_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Save_The_Date_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Target_Audience_HCPTS__c</picklist>
+            <values>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Medical</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Applicable_Activity_Status_Spec</fullName>
+        <active>true</active>
+        <description>Applicable Activity Status must be specified if Mandatory or Requires Attachment is checked</description>
+        <errorConditionFormula>AND( 
+     OR( Requires_Attachment_HCPTS__c , Mandatory_HCPTS__c ) , 
+        ISBLANK(TEXT( Applicable_Activity_Status_HCPTS__c )) 
+)</errorConditionFormula>
+        <errorDisplayField>Applicable_Activity_Status_HCPTS__c</errorDisplayField>
+        <errorMessage>Applicable Activity Status cannot be blank for Mandatory Action Items and/or Materials that need Attachment</errorMessage>
+    </validationRules>
+</CustomObject>

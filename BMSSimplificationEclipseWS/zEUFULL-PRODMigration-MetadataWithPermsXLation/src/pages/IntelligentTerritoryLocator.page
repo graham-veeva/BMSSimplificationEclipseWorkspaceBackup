@@ -1,0 +1,38 @@
+<apex:page controller="TerritoryIntelligentLocator" sidebar="false" showHeader="false" tabStyle="Account"> 
+  <apex:form >
+  <apex:pageMessages id="errors" /> 
+  <apex:pageBlock title="Intelligent Territories!" mode="edit"> 
+  <table width="100%" border="0">
+  <tr>
+    <apex:pageBlock mode="edit" id="results">
+     
+        <apex:pageBlockTable value="{!TerritoryIntelligentLocator}" var="Territory">
+ 
+            <apex:column headervalue="Territory">
+                                  <apex:outputField value="{!Territory.name}"/>
+            </apex:column>
+             <apex:column headervalue="Territory Number">
+                                  <apex:outputField value="{!Territory.BMS_Code_ID__c}"/>
+            </apex:column>
+                                          <apex:column headerValue="Salesforce Name">
+                                  <apex:outputField value="{!Territory.Sales_Force_Name_BMS__c}"/>
+            </apex:column>
+                         <apex:column headerValue="Description">
+                                  <apex:outputField value="{!Territory.Description}"/>
+            </apex:column>
+
+           
+        </apex:pageBlockTable>
+ 
+    </apex:pageBlock>
+ 
+
+  </tr>
+  </table>
+ 
+  
+  </apex:pageBlock>
+ 
+  </apex:form>
+ 
+</apex:page>

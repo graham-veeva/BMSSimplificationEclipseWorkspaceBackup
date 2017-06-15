@@ -1,0 +1,10 @@
+<apex:page standardController="Meeting_Speaker_BMS__c" extensions="Event_Management_Contract_Redirect" showHeader="false">
+  <apex:form >
+    <div align="center">
+        <br/><br/><br/><br/><br/>
+        <apex:commandButton action="{!english}" value="Print in English" id="english"/>
+        <br/><br/>
+        <apex:commandButton action="{!french}" value="Print in French" id="french"/>
+    </div>
+  </apex:form>
+</apex:page>

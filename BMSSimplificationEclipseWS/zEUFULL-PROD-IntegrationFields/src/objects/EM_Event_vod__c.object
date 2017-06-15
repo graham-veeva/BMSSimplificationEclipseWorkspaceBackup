@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>City_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed City of an event always fed by INtegration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue city to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Confirmed_Venue_Postal_Code_HCPTS__c</fullName>
+        <description>Confirmed Venue Postal code to be fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue Postal code to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed Venue country to be fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue country to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>mnaidu - 10/27/2016 - Hypercare request - Country of the Venue. If Venue is looked up from the Venue database, system will always overwrite with the Value from the Country of the Looked up Venue</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country of the Venue. If Venue is looked up from the Venue database, system will always overwrite with the Value from the Country of the Looked up Venue, regardless of User specified choice</inlineHelpText>
+        <label>Country</label>
+        <referenceTo>Country_vod__c</referenceTo>
+        <relationshipName>EM_Activities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Attendance_vod__c</fullName>
+        <description>Estimate of the number of people who will attend an event. Used for planning purposes.</description>
+        <externalId>false</externalId>
+        <label>Estimated Attendance</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Address_Confirmed_HCPTS__c</fullName>
+        <description>Confirmed Venue Address Line 1 to be fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue Address Line 1 to be fed from Integration</inlineHelpText>
+        <label>Confirmed Venue Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_vod_HCPTS__c</fullName>
+        <description>Confirmed Venue name fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue name fed from Integration</inlineHelpText>
+        <label>Confirmed Venue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Province_HCPTS__c</fullName>
+        <description>Confirmed Venue State fed from Integration</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmed Venue State fed from Integration</inlineHelpText>
+        <label>Confirmed Venue State / Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

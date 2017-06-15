@@ -1,0 +1,23 @@
+<apex:page showHeader="false" sidebar="fasle" standardcontroller="Error_Log_BMS__c" extensions="Resubmit_to_BMS_CM_Service_Controller" action="{!reSubmitToBMSCM}" >
+  <script> 
+    function refreshPage(){
+
+       window.opener.location.href = '/{!id}';
+         //window.close();
+         self.close();
+       return false;
+    }
+  </script>
+
+<apex:sectionHeader title="Pushing Customer record to" subtitle="BMS CM"   /> 
+<center>
+ <apex:form id="errorStatusform">
+  <apex:outputPanel ><b>Status : </b>
+      <apex:outputPanel >
+          <apex:outputText value="{!resubmitStatus}" />
+      </apex:outputPanel> <br/><br/>
+      <input type="button" value="Close" onclick="refreshPage();" class="btn" />
+  </apex:outputPanel>   
+  </apex:form>
+</center>
+</apex:page>

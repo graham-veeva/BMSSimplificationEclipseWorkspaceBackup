@@ -1,0 +1,51 @@
+<apex:page standardController="EM_Budget_vod__c">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> 
+<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"/>
+<base target="_top" />
+
+<script >
+$j = jQuery.noConflict();
+$j(document).ready(function() {
+$j('a').attr("target","_blank");
+});
+</script > 
+
+
+<script>
+
+var $j = jQuery.noConflict();
+
+ $j(document).ready(function() {  
+      
+      $j("input[name='piSubmit']").hide();
+
+      // get the onClick attribute to the button
+      var oldOCVal = $j("input[name='piRemove']").attr("onClick");
+      // srtip out the link
+      var link = oldOCVal.match(/'([^']+)'/)[1];
+
+      // give the button this new action
+      $j("input[name='piRemove']").attr("onClick","window.parent.location.href='"+link+"'");
+      
+   }); 
+
+ </script>
+
+
+    <apex:relatedList list="ProcessSteps" ></apex:relatedList>
+</apex:page>
+
+<!--
+<apex:page standardController="EM_Budget_vod__c" extensions="HCPTS_ViewApprovalHistController">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!theBudget.ProcessSteps}" var="item">
+            <apex:column value="{!item.SystemModstamp}" headerValue="Date"/>
+            <apex:column value="{!item.StepStatus}" headerValue="Action"/>
+            <apex:column value="{!item.OriginalActorId}" headerValue="Assigned To"/>
+            <apex:column value="{!item.ActorId}" headerValue="Actual Approver"/>
+            <apex:column value="{!item.Comments}"/>
+            <apex:column value="{!item.ProcessInstance.Status}" headerValue="Overall Status"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
+-->

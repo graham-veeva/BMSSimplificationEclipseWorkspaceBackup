@@ -1,0 +1,17 @@
+<apex:page renderAs="pdf" doctype="html-4.01-strict" controller="SignatureReports" sidebar="false" showHeader="false" cache="false">
+
+<html>
+<head>
+
+<style TYPE="text/css">
+body {font-family: Times-Roman; font-size: 12pt;}
+</style>
+</head>
+<body>
+
+<apex:dynamicComponent id="dc" componentValue="{!sigVendorLetterContact}"/>
+
+</body>
+</html>
+
+</apex:page>

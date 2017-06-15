@@ -1,0 +1,23 @@
+<apex:page standardController="Abilify_Drop_Acknowledgement_BMS_US__c" extensions="AbilifyDropController" sidebar="false" showHeader="false">    
+    <apex:form >
+        <apex:pageBlock title="Abilify Drop Acknowledgement" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!abilifydropsave}" value=" Save "></apex:commandButton>
+            </apex:pageBlockButtons>
+                <br></br>
+                <center>                
+                <img src="{!$Resource.BMS_Exclamation_Point}"></img>
+                <font color="red"><B> Please review today's call list and make note of physicians who are Abilify drops as per CIA requirements </B></font>
+                <img src="{!$Resource.BMS_Exclamation_Point}"></img>
+                </center>
+                <br></br> 
+                <center>
+                <b> Acknowledge? </b>
+                &nbsp; &nbsp;
+                <apex:inputField value="{!Abilify_Drop_Acknowledgement_BMS_US__c.Abilify_Drop_Acknowledgement_BMS_US__c}"></apex:inputField>
+                </center>
+            <apex:pageBlockSection columns="1" showHeader="false">
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

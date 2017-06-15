@@ -1,0 +1,105 @@
+<apex:page standardController="Master_File_BMS_EMEA__c" extensions="NewMeeting_BMS_EMEA" >
+    <style>
+        .center{
+        color:red;
+        }
+        
+    </style>
+    
+    <apex:messages styleClass="center" />
+    <apex:form >
+        
+        <apex:pageblock title="New Meeting ">
+        
+            <apex:pageblockbuttons >
+                <apex:commandButton action="{!saveMeeting}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageblockbuttons>
+            
+            <apex:pageblockSection >
+                <apex:inputField value="{!meeting.Master_File_BMS_EMEA__c}" required="true"/>
+                 <apex:outputField value="{!meeting.Status_BMS_CORE__c}"/>
+                 
+                 <apex:inputField value="{!meeting.Name}" required="true"/>
+                 <apex:outputtext value="{!meetingPlanRecId.Name}"/>
+                 
+                 <apex:inputField value="{!meeting.Planned_Start_Date_BMS_EMEA__c}" required="true"/>
+                <apex:inputField value="{!meeting.Meeting_Format_BMS_EMEA__c}" required="true"/>
+                 
+                 
+                 <apex:inputField value="{!meeting.Planned_End_Date_BMS_EMEA__c}" required="true"/>
+                 <apex:pageBlocksectionItem > 
+                    <apex:outputLabel value="Owner"/>
+                    <apex:outputtext value="{!userName}"/>
+                 </apex:pageBlocksectionItem>
+                 
+                 <apex:inputField value="{!meeting.Planned_Duration_BMS_EMEA__c}" required="true"/>
+                 <apex:outputText > </apex:outputText>
+                 <apex:inputField value="{!meeting.Person_to_notify_BMS_EMEA__c}" required="false"/>
+                
+                <apex:outputText > </apex:outputText>
+                
+                
+                
+                
+            </apex:pageblockSection>
+            
+            <apex:pageBlockSection title="Venue Information" collapsible="fales">
+                <apex:inputField value="{!meeting.Location_City_BMS_EMEA__c}" required="true"/>
+                <apex:inputField value="{!meeting.Meeting_Venue_Positive_BMS_EMEA__c}" required="true"/>
+                <apex:inputField value="{!meeting.Name_of_Venue_BMS_EMEA__c}" required="true"/>
+                <apex:inputField value="{!meeting.Reason_Venue_BMS_EMEA__c}" />
+                <apex:inputField value="{!meeting.Type_of_Venue_BMS_EMEA__c}" />
+                <apex:outputText />
+            </apex:pageBlockSection>
+
+             <apex:pageBlockSection title="Other Information Related to Planned Costs" collapsible="false">
+                <apex:inputField value="{!meeting.of_Meals_BMS_EMEA__c}" required="true"/>
+                <apex:inputField value="{!meeting.of_nights_BMS_EMEA__c}" required="true"/>
+                <apex:inputField value="{!meeting.of_tickets_BMS_EMEA__c}" required="true"/>
+                                <apex:outputText > </apex:outputText>
+            </apex:pageBlockSection>
+                    
+            <apex:pageBlockSection title="Planned Cost" collapsible="fales">
+
+                <apex:outputfield value="{!masterFile.Honorarium_Event_Budget_BMS_EMEA__c}"/>
+                <apex:outputfield value="{!meeting.Honorarium_Planned_BMS_EMEA__c}" />
+                                
+                 <apex:outputfield value="{!masterFile.HCPs_registration_fees_Event_BMS_EMEA__c}"/>
+                 <apex:inputField value="{!meeting.HCPs_registration_fees_Planned_BMS_EMEA__c}" />
+                 
+                 <apex:outputfield value="{!masterFile.Sponsorship_of_Event_Budget_BMS_EMEA__c}"/>
+                 <apex:inputField value="{!meeting.Sponsorship_of_Event_Planned_BMS_EMEA__c}" />
+                 
+                 <apex:outputfield value="{!masterFile.Transportation_Budget_Event_BMS_EMEA__c}"/>
+                 <apex:inputField value="{!meeting.Transportation_Planned_BMS_EMEA__c}" />
+                 
+                 <apex:outputfield value="{!masterFile.Meals_Event_Budget_BMS_EMEA__c}"/>
+                 <apex:inputField value="{!meeting.Meals_Planned_BMS_EMEA__c}" />
+                                  
+                 <apex:outputfield value="{!masterFile.Hotel_Event_Budget_BMS_EMEA__c}"/>
+                 <apex:inputField value="{!meeting.Hotel_Planned_BMS_EMEA__c}" />
+                 
+                 <apex:outputfield value="{!masterFile.Other_Costs_Event_Budget_BMS_EMEA__c}"/>
+                <apex:inputField value="{!meeting.Other_Costs_Planned_BMS_EMEA__c}" />
+                
+                <apex:inputField value="{!meeting.Comments_for_Costs_BMS_EMEA__c}" />
+                 
+            
+            </apex:pageBlockSection>
+            
+
+             <apex:pageBlockSection title="Local Requirements / Specifics" collapsible="false">
+                <apex:inputField value="{!meeting.Comments_Local_Requirements_BMS_EMEA__c}" required="false"/>
+            </apex:pageBlockSection>
+            
+            <apex:dynamicComponent componentValue="{!customFields}"/>
+        </apex:pageblock>
+    
+            
+            
+    
+    </apex:form>
+ 
+ 
+</apex:page>

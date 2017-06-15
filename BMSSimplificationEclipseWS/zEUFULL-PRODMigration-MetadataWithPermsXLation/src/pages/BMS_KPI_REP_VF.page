@@ -1,0 +1,126 @@
+<apex:page Controller="BMS_KPI_REP_VF_CNTRL">
+
+<style type="text/css"> 
+
+table.table1 { margin: 1em; border-collapse: collapse; }
+.table1 td, th { padding: .3em; border: 1px #ccc solid; }
+.table1 thead { background: #fc9; }
+
+.oddR { 
+    border-width: 1px;
+    padding: 4px;
+    border-style: solid; 
+    border-color: black;
+    background-color: #f8d8cd;
+}
+.evenR {
+    border-width: 1px;
+    padding: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #fbede8;
+ 
+}
+
+.belowTarget {
+    font-color: red;
+}
+.aboveTarget {
+    font-color: green;
+}
+     
+</style>
+  
+    <apex:sectionHeader title="Rep KPI Summary Report"/>    
+
+ 
+    <apex:outPutPanel id="out"> 
+         <b><apex:outputText value="Rep Name: " id="Name" /></b>
+           <apex:outputText value="Rep.China " id="NameData" />
+        <br/>
+        <b><apex:outputText value="Territory Code: " id="position" /></b>
+            <apex:outputText value="137047" id="positionData"/>       
+        <br/>           
+        <b><apex:outputText value="Current Period: " id="startDate"/></b>
+            <apex:outputText value="2013-1-1" id="startDateData"/>
+        <b><apex:outputText value=" to " id="endDate"/></b>
+            <apex:outputText value="2013-1-15" id="endDateData"/>
+        <br/>
+<!--  
+<apex:detail subject="{!Account.Id}" relatedList="true" relatedListHover="true" />
+</apex:page>
+
+-->
+    <apex:form >
+    <apex:dataTable value="{!RepActivity}" var="pc" id="theTable0" styleClass="table1"> 
+                   <apex:column >
+                        <apex:facet name="header">Target Working Days</apex:facet>
+                        <apex:outputField value="{!pc.Target_Working_Days_BMS_CN__c}" />
+                    </apex:column>
+
+                   <apex:column >
+                        <apex:facet name="header">TOT</apex:facet>
+                        <apex:outputField value="{!pc.TOT_BMS_CN__c}" />
+                    </apex:column>
+
+                   <apex:column >
+                        <apex:facet name="header">MTD Calls</apex:facet>
+                        <apex:outputField value="{!pc.Target_Working_Days_BMS_CN__c}" />
+                    </apex:column>
+
+                   <apex:column >
+                        <apex:facet name="header">MTD Calls/Day</apex:facet>
+                        <apex:outputField value="{!pc.MTD_Calls_Day_BMS_CN__c}" />
+                    </apex:column>
+                   <apex:column >
+                        <apex:facet name="header">Daily Calls(Inv)</apex:facet>
+                        <apex:outputField value="{!pc.Daily_Calls_Inv_BMS_CN__c}" />
+                    </apex:column>
+            </apex:dataTable>  
+            </apex:form>                  
+
+    <apex:form >
+    <apex:dataTable value="{!RepCall}" var="rc" id="theTable1" styleClass="table1"> 
+                   <apex:column >
+                        <apex:facet name="header">Dr Level</apex:facet>
+                        <apex:outputField value="{!rc.Dr_Level_BMS_CN__c}" />
+                     <!--     
+                         <apex:detail subject="{!rc.Id}" relatedList="true" relatedListHover="true" />
+        <apex:column headerValue="Name">
+        <div id="HoverDetail"><a href="/a0ST00000007eD7" id="lookupa0ST00000007eD7" 
+           onblur="LookupHoverDetail.getHover('lookupa0ST00000007eD7').hide();" 
+           onfocus="LookupHoverDetail.getHover('lookupa0ST00000007eD7', '/a0ST00000007eD7/m—retURL=%2Fa0ST00000007eD7&isAjaxRequest=1').show();" 
+           onmouseout="LookupHoverDetail.getHover('lookupa0ST00000007eD7').hide();" 
+           onmouseover="LookupHoverDetail.getHover('lookupa0ST00000007eD7', '/a0ST00000007eD7/m–retURL=%2Fa0ST00000007eD7&isAjaxRequest=1').show();">Object Name</a>
+        </div></apex:column>
+                    
+                     -->
+                    </apex:column>
+
+                   <apex:column >
+                        <apex:facet name="header">Act Call</apex:facet>
+                        <apex:outputField value="{!rc.Act_Call_BMS_CN__c}" />
+                    </apex:column>
+
+                   <apex:column >
+                        <apex:facet name="header">Doctors Visited</apex:facet>
+                        <apex:outputField value="{!rc.Doctors_Visited_BMS_CN__c}" />
+                    </apex:column>
+
+                   <apex:column >
+                        <apex:facet name="header">Call Freq</apex:facet>
+                        <apex:outputField value="{!rc.Call_Freq_BMS_CN__c}" />
+                    </apex:column>
+                   <apex:column >
+                        <apex:facet name="header">Total Dr Num.</apex:facet>
+                        <apex:outputField value="{!rc.Total_Dr_Num_BMS_CN__c}" />
+                    </apex:column>
+                   <apex:column >
+                        <apex:facet name="header">Dr Coverage %</apex:facet>
+                        <apex:outputField value="{!rc.Dr_Coverage_BMS_CN__c}" />
+                    </apex:column>                     
+                    
+            </apex:dataTable>  
+            </apex:form>                  
+    </apex:outPutPanel>
+</apex:page>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Activity_Type_HCPTS__c</fullName>
+        <description>Activity Type at for which this Budget is being defined</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Activity Type at for which this Budget is being defined</inlineHelpText>
+        <label>Activity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exhibits, Booths and Displays</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>R&amp;D Committees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cross Border</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SRP Activity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Identifier_vod__c</fullName>
+        <description>Used in the UI to help end users identify the correct budget. This field should be populated by an admin, and be read-only to end users.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Text field that can be populated with any value that uniquely identifies the budget</inlineHelpText>
+        <label>Budget ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cybergrant_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Cybergrant ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Number_of_Activities_HCPTS__c</fullName>
+        <description>Estimate # of Activities for the Budget</description>
+        <externalId>false</externalId>
+        <label>Estimated Number of Activities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Budget_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Relationship to a parent budget.</description>
+        <externalId>false</externalId>
+        <label>Related Budget</label>
+        <referenceTo>EM_Budget_vod__c</referenceTo>
+        <relationshipLabel>EM Budgets</relationshipLabel>
+        <relationshipName>Parent_Budget_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status of a budget. It must be marked as Available for Use to be selected on an event.</description>
+        <externalId>false</externalId>
+        <label>Availability Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Draft_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Pre-Activation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marked For Delete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WBS_Number_HCPTS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the WBS Code/Number Details</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup the WBS number/code as applicable to this Budget</inlineHelpText>
+        <label>WBS Number</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>WBS_Details_HCPTS__c.Active_HCPTS__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>Only Active WBS Numbers are shown by default</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>WBS_Details_HCPTS__c</referenceTo>
+        <relationshipName>Needs_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Parent_Budget_vod__c</columns>
+        <columns>Start_Date_vod__c</columns>
+        <columns>End_Date_vod__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Approval_Status_HCPTS__c</columns>
+        <columns>Status_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Needs</fullName>
+        <columns>NAME</columns>
+        <columns>Activity_Type_HCPTS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Product_vod__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Budgets</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>BE00000000000_CMPY</roleAndSubordinates>
+            <roleAndSubordinates>BX00000000000_CMPY</roleAndSubordinates>
+            <roleAndSubordinates>NL00000000000_CMPY</roleAndSubordinates>
+            <roleAndSubordinates>UI00000000000_CMPY</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Needs_DE</fullName>
+        <columns>NAME</columns>
+        <columns>Activity_Type_HCPTS__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Product_vod__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Needs</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>DE00000000000_CMPY</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Needs</fullName>
+        <columns>NAME</columns>
+        <columns>Budget_Identifier_vod__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Approval_Status_HCPTS__c</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Topic_HCPTS__c</columns>
+        <columns>Need_Owner_HCPTS__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SC_Needs_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>My Budgets</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>BE00000000000_CMPY</roleAndSubordinates>
+            <roleAndSubordinates>BX00000000000_CMPY</roleAndSubordinates>
+            <roleAndSubordinates>NL00000000000_CMPY</roleAndSubordinates>
+            <roleAndSubordinates>UI00000000000_CMPY</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Needs_DE</fullName>
+        <columns>NAME</columns>
+        <columns>Budget_Identifier_vod__c</columns>
+        <columns>Status_vod__c</columns>
+        <columns>Approval_Status_HCPTS__c</columns>
+        <columns>Product_vod__c</columns>
+        <columns>Topic_HCPTS__c</columns>
+        <columns>Need_Owner_HCPTS__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SC_Needs_HCPTS__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </filters>
+        <label>My Needs</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>DE00000000000_CMPY</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <recordTypes>
+        <fullName>Budget_vod</fullName>
+        <active>true</active>
+        <description>Budget</description>
+        <label>Budget_vod</label>
+        <picklistValues>
+            <picklist>Activity_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>Advisory Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exhibits%2C Booths and Displays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP Sponsorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Speaker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preceptorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>R%26D Committees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speaker Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Available_For_Use_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft_vod</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingReasons>
+        <fullName>Need_Owner_HCPTS__c</fullName>
+        <label>Need Owner</label>
+    </sharingReasons>
+    <validationRules>
+        <fullName>Company_Cd_Required_for_Available_Budget</fullName>
+        <active>true</active>
+        <description>To make a Budget &quot;Active&quot;  you must specify:
+1. A valid WBS &amp; Company Code  
+OR
+2. A valid Cost Center and Company Code</description>
+        <errorConditionFormula>IF(
+
+AND (NOT(ISBLANK(Total_Budget_vod__c)),Total_Budget_vod__c&gt; 0),
+
+AND (
+      ISPICKVAL(Status_vod__c , &apos;Available_For_Use_vod&apos;) ,
+      OR(
+      ISBLANK( Company_Code_HCPTS__c),
+      AND( 
+         ISBLANK( WBS_Number_HCPTS__c ),
+         ISBLANK( Cost_Center_Code_HCPTS__c)
+      )
+)), FALSE
+)</errorConditionFormula>
+        <errorDisplayField>Company_Code_HCPTS__c</errorDisplayField>
+        <errorMessage>To make a Budget &quot;Active&quot;  you must specify:
+1. A valid WBS &amp; Company Code  
+OR
+2. A valid Cost Center and Company Code</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_Have_Company_Code</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Status_vod__c,&apos;Available_For_Use_vod&apos;), 
+ISBLANK(Company_Code_HCPTS__c) 
+)</errorConditionFormula>
+        <errorMessage>To make a Budget &quot;Active&quot; you must specify Company Code</errorMessage>
+    </validationRules>
+</CustomObject>

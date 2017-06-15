@@ -1,0 +1,28 @@
+<apex:page standardController="VEM__Picklist__c" extensions="VEM.VEM_PICKLIST" showHeader="false" sidebar="false" standardStylesheets="true" tabStyle="VEM_PICKLIST_MANAGER__tab">
+<script type="text/javascript" src="{!$Resource.VEM_JQUERY}" />
+<script>
+VEM_JQUERY.noConflict();
+</script>
+<apex:form >
+	<apex:pageBlock id="thegrid" tabStyle="VEM_PICKLIST_MANAGER__tab">
+		<apex:pageBlockTable value="{!gridRows}" var="picklistvalue" id="pbTable">
+			<apex:column value="{!picklistvalue}">
+				<apex:facet name="header">
+					<a href="#"	onclick="if(jQuery(':checkbox:first').attr('checked')){jQuery(':checkbox').attr('checked', false);}else{jQuery(':checkbox').attr('checked', true);}">Picklist Value</a>
+				</apex:facet>
+			</apex:column>
+			<apex:repeat value="{!env}" var="e">
+				<apex:column id="cc" style="text-align:center;">
+					<apex:inputCheckbox id="c" styleClass="selectAll{!e.Name}" value="{!gridColumns[picklistvalue + '.' + e.Name].selected}" rendered="true" />
+					<apex:facet name="header">
+						<center>
+							<a href="#"	onclick="if(jQuery('.selectAll{!e.Name}:first').attr('checked')){jQuery('.selectAll{!e.Name}').attr('checked', false);}else{jQuery('.selectAll{!e.Name}').attr('checked', true);}">{!e.Name}</a>
+						</center>
+					</apex:facet>
+				</apex:column>
+			</apex:repeat>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+	<apex:commandButton action="{!save}" value="  Save  " />
+</apex:form>
+</apex:page>

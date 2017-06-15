@@ -1,0 +1,106 @@
+<apex:page standardController="Medical_Event_vod__c" standardStylesheets="true" extensions="BMS_EMEA_Print_Attendee_Sheet" showHeader="false" renderAs="pdf">
+
+<apex:form >
+      <apex:image url="{!imageURL}"> </apex:image>
+</apex:form>
+
+<html>
+<head>
+<style>
+h1 {
+border:3px solid black;
+padding:5px;
+box-shadow: 3px 3px 0px -1px;
+}
+</style>
+</head>
+
+ 
+<body>
+<center>
+<table  border="2" style="width:100%" align="center">
+  <tr >
+   <th ><h2> {!$Label.BMS_EMEA_FFM_Attendance_Sheet}</h2> </th> 
+  </tr>
+ </table>  
+ </center>
+ 
+&nbsp;
+&nbsp;
+
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection columns="2" id="blockInfo">
+    
+      <apex:outputText value="{!medicalEvent.Owner.name}" style="width:100%" label="{!$Label.BMS_EMEA_FFM_Initiator}"/>
+      <apex:outputField value="{!medicalEvent.FFM_Activity_Type_BMS_EMEA__c}" label="{!$Label.BMS_EMEA_FFM_Activity_Type}"/>
+      <apex:outputField value="{!salesLineUser.BMS_Territory_ID_BMS_SHARED__c}" label="{!$Label.BMS_EMEA_FFM_Sales_Line}"/>
+      <apex:outputField value="{!medicalEvent.Planned_Start_Date_BMS_EMEA__c}" label="{!$Label.BMS_EMEA_FFM_Event_Date}"/>
+      <apex:outputText value="{!Venue}" label="{!$Label.BMS_EMEA_FFM_Venue}" />
+      <apex:outputText value="{!Speaker}" rendered="{!NOT (Speaker==null)}" label="{!$Label.BMS_EMEA_FFM_Speaker}" /> 
+      <apex:outputField value="{!medicalEvent.Event_Number_BMS__c}" label="{!$Label.BMS_EMEA_FFM_Event_Number}"/>
+      <apex:outputField value="{!medicalEvent.Name}" label="{!$Label.BMS_EMEA_FFM_Event_Name}"/>
+      <apex:inputText value="{!startHour}" label="{!$Label.BMS_EMEA_FFM_Start_Hour}"/>
+      <apex:inputText value="{!endHour}" label="{!$Label.BMS_EMEA_FFM_End_Hour}"/>
+                          
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+&nbsp;
+&nbsp;
+
+<apex:form style="font-size:11px;"> 
+<apex:pageBlock >
+<apex:pageBlockSection >
+
+     <apex:inputText value="{!privacyStatement}" label="{!$Label.BMS_EMEA_FFM_Privacy_Statement}"/>
+     &nbsp;
+     &nbsp;
+     <apex:outputText value="{!printAttendee}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'AT'}" />
+     <apex:outputText value="{!printAttendee1}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'BE'}" />
+     <apex:outputText value="{!printAttendee2}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'NL'}" />
+     <apex:outputText value="{!printAttendee3}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'DE'}" />
+     <apex:outputText value="{!printAttendee4}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'ES'}" />
+     <apex:outputText value="{!printAttendee5}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'PL'}" />
+     <apex:outputText value="{!printAttendee6}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'RO'}" />
+     <apex:outputText value="{!printAttendee7}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'UI'}" />
+     <apex:outputText value="{!printAttendee7}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'GB'}" />
+     <apex:outputText value="{!printAttendee7}" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'IE'}" />
+            
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+&nbsp;
+&nbsp;
+    
+<apex:form >
+    <apex:dataTable value="{!eventAttendees}" var="ea" id="eventAttendees" cellpadding="4"  border="1" rendered="{!IF(eventAttendees.size>0,'true','false')}">
+        <apex:column width="25%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Last_First_Name}</apex:facet>
+            <apex:outputText value="{!IF(ea.Account_vod__r.LastName!=null,ea.Account_vod__r.LastName + ' , ' + ea.Account_vod__r.FirstName,'           ')}"/>
+        </apex:column>
+         <apex:column width="25%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Address}</apex:facet>
+            <apex:outputText value="{!IF(ea.Account_vod__r.LastName!=null,ea.Account_vod__r.ShippingStreet + ' , ' + ea.Account_vod__r.ShippingCity + ' , ' + ea.Account_vod__r.ShippingPostalCode,' ')}"/>&nbsp;
+        </apex:column>
+      
+    <apex:column width="20%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Speciality_TA_Org}</apex:facet>
+            <apex:inputText value="{!SpecialtyTA}"/>
+        </apex:column>
+        <apex:column width="40%">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_Signature}</apex:facet>
+            <apex:inputText value="{!Signature}"/>
+        </apex:column>
+          <apex:column width="10%" rendered="{!TEXT($User.User_Source_Country_BMS_CORE__c) == 'DE'}">
+            <apex:facet name="header">{!$Label.BMS_EMEA_FFM_HCP_DHG}</apex:facet>
+            <apex:inputText value="{!HCPDHG}"/>
+        </apex:column>
+        </apex:dataTable>
+ </apex:form>        
+    
+</body>
+</html>
+</apex:page>

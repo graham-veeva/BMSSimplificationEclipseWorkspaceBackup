@@ -1,0 +1,64 @@
+<apex:page extensions="BMS_NewMedicalInquiryCtrlExt" standardController="Medical_Inquiry_vod__c" recordSetVar="Medical_Inquiry_vod__c"> 
+    <apex:outputPanel id="BMS_MISP_US" rendered="{!(ISPICKVAL($User.User_Source_Country_BMS_CORE__c, '') || ISPICKVAL($User.User_Source_Country_BMS_CORE__c, 'US'))}">
+      <BR></BR>
+      <center><B><U><h1 style="font-size:100">MEDICAL INQUIRIES - US</h1></U></B></center>
+       <BR></BR>
+      <center><p style="border:1px solid #FF3333;background-color:#FFC1C1;width:650px">Adverse events MUST NOT be reported on this form. <br></br>Adverse events MUST be reported to 1-866-232-2557 (1-866-AE-CALLS) within 24 hours of date of receipt.</p></center>
+      <BR></BR>
+      <center><p style="border:1px solid #0147FA;background-color:#BCD2EE;width:450px">To speak with a Medical Information Specialist, please have HCP call: <br></br><br></br>1-888-ERBITUX (327-4889) for ERBI Requests <br></br> 1-855-YERVOY-1 (937-8691) for YERV Requests <br></br> and <br></br> 1-800-321-1335 for other BMS Product Requests</p></center>
+    </apex:outputPanel>
+    <apex:outputPanel id="BMS_MISP_CA" rendered="{!ISPICKVAL($User.User_Source_Country_BMS_CORE__c, 'CA')}">
+      <BR></BR>
+      <center><B><U><h1 style="font-size:100">MEDICAL INQUIRIES - CA</h1></U></B></center>
+       <BR></BR>
+      <center><p style="border:1px solid #FF3333;background-color:#FFC1C1;width:650px">
+      <BR></BR>Adverse events MUST NOT be reported on this form. 
+      <BR></BR>
+      <BR></BR>Adverse Events MUST be reported by calling 1-800-287-1088 within 24 hours of date of receipt.
+      </p></center>
+      <BR></BR>
+      <BR></BR>
+    </apex:outputPanel>
+    <apex:outputPanel id="BMS_MISP_CN" rendered="{!ISPICKVAL($User.User_Source_Country_BMS_CORE__c, 'CN')}">
+      <BR></BR>
+      <center><B><U><h1 style="font-size:100">MEDICAL INQUIRIES - CN</h1></U></B></center>
+       <BR></BR>
+      <center><p style="border:1px solid #FF3333;background-color:#FFC1C1;width:650px">
+      <BR>您通过该电子表格自愿提供的信息将被百时美施贵宝/中美上海施贵宝用于以下用途：</BR> 
+      <BR>- 将您的问题提交至施贵宝医学信息部处理和回复 </BR>
+      <BR>- 处理您提交的信息中涉及到的与某一患者治疗或其他该患者医学护理方面相关的确实的或者可疑不良事件</BR> 
+      <BR>- 记录您所提交的问题和相应的回复。 </BR>
+      <BR>请注意您的个人信息可能会被转交到该数据库的所有国美国和其他需要回复您问题的国家，这将会涉及到包括百时美施贵宝集团内部机构和支持该数据库的合同服务商对您的个人信息进行处理。然而，百时美施贵宝已经执行个人信息保护方案以充分保护您的个人信息。 
+根据相应的法律，您可以联系百时美施贵宝进入，纠正，更新或者拒绝对于您的个人信息的处理。联系方式为：</BR>
+     <BR>邮箱：medinfo.china@bms.com 电话:8008208790/4008218790</BR>
+     <BR>通过完成该表格并提交表示您理解并认可上述隐私声明的各项条款</BR></p></center>
+     <BR></BR>
+     <center><p style="border:1px solid #0147FA;background-color:#BCD2EE;width:450px">
+     <BR>Information that you voluntarily provide through this electronic formulaire will be used by Bristol-Myers Squibb/Sino-American Shanghai Squibb (BMS/SASS) for the following purposes: </BR> 
+     <BR>-   to direct your unsolicited request for information to the Bristol Myers Squibb medical information service responsible for preparing and delivering the medical information response; </BR>
+     <BR>-   to process information that you may submit regarding actual or suspected adverse events relating to a patient’s treatment or any other aspect of a patient’s medical care; </BR>
+     <BR>-   to keep a record of submitted requests and associated responses. </BR>
+     <BR>Please note that your personal information will be transferred to the United States, where this formulaire is hosted, and to other countries for the purposes described above and that this may involve the processing of your personal information by organizations within the Bristol-Myers Squibb group as well as contracted service providers engaged to support this website. However, Bristol-Myers Squibb has implemented information protection protocols to ensure that your personal information remains sufficiently protected whether processed within or outside of your home country. 
+
+You may access, rectify, update or object to the processing of your personal information, in accordance with applicable laws, by contacting Bristol-Myers Squibb at:</BR>
+    <BR>Email: Medinfo.china@bms.com, telephone 800-820-8790 /cell 400-821-8790 </BR>
+    <BR>By completing the formulaire and submitting your request you agree to the collection and use of your personal information as described above.</BR></p></center>
+    </apex:outputPanel>
+    
+    <apex:outputPanel id="BMS_MISP_IN" rendered="{!ISPICKVAL($User.User_Source_Country_BMS_CORE__c, 'IN')}">
+      <BR></BR>
+     <center><p style="border:1px solid #0147FA;background-color:#BCD2EE;width:450px">
+     <BR>Information that you voluntarily provide through this electronic formulaire will be used by Bristol-Myers Squibb India for the following purposes:</BR> 
+     <BR>- to direct your unsolicited request for information to the Bristol Myers Squibb medical information service responsible for preparing and delivering the medical information response;</BR>
+     <BR>- to process information that you may submit regarding actual or suspected adverse events relating to a patient’s treatment or any other aspect of a patient’s medical care; </BR>
+     <BR>- to keep a record of submitted requests and associated responses.</BR>
+     <BR>Please note that your personal information will be transferred to the United States, where this formulaire is hosted, and to other countries for the purposes described above and that this may involve the processing of your personal information by organizations within the Bristol-Myers Squibb group as well as contracted service providers engaged to support this website.  You should be aware that privacy laws in the United States and other countries to which your personal information may be transferred may not provide protections equivalent to those in your country of residence.  However, Bristol-Myers Squibb has implemented information protection protocols to ensure that your personal information remains sufficiently protected whether processed within or outside of your home country.</BR>
+     <BR>You may access, rectify, update or object to the processing of your personal information, in accordance with applicable laws, by contacting Bristol-Myers Squibb at:</BR>
+    <BR>Email: medinfo.india@bms.com, telephone 000 800 440 1165</BR>
+    <BR>By completing the formulaire and submitting your request you agree to the collection and use of your personal information as described above.</BR></p></center>
+    </apex:outputPanel>
+    
+  <apex:form >
+  <center><apex:commandButton action="{!Accept}" value="Continue"/></center>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page standardcontroller="Account" extensions="VODRedirectController">
+    <script type="text/javascript">
+        (function() {
+            if(!window.HTMLConfig) {
+                window.HTMLConfig = {   currentObjectID: '{!$CurrentPage.parameters.Id}',
+                                        sessionID:'{!$Api.Session_ID}',
+                                        endpoint:'{!$Api.Partner_Server_URL_240}',
+                                        userID: '{!$User.Id}',
+                                        username: '{!$User.Username}',
+                                        currentObject: 'Account',
+                                        orgID: '{!$Organization.Id}',
+                                        mcEngine: '{!mcUrl}',
+                                        cdnCname: ('{!VodUrl}').split('//')[1].split('/')[0].split('.')[0] === 'qa'?'cdnhtml10':'cdnhtml1'
+                                    };
+            }
+        })();
+    </script>
+    <apex:includeScript value="{!URLFOR($Resource.HTML_Reports_Scripts, '/scripts/vendor.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.HTML_Reports_Scripts, '/scripts/main.js')}"/>
+    <c:VOD_EMBED veevaModule="custom_reports" veevaPage="view-report" objectType="HTML_Report_vod__c" queryParams="&id={!Account.Id}&typ=Account&{!$CurrentPage.parameters.queryParams}" />
+</apex:page>

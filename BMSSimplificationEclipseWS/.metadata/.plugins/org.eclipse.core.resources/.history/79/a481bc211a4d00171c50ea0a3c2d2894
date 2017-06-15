@@ -1,0 +1,212 @@
+<apex:page id="p1" controller="queryCalls" tabStyle="Sample_Report_Query__tab">
+
+
+<script type="text/javascript" src="{!$Resource.datepickerJS}">{"describedby":"fd-dp-aria-describedby"}</script>
+
+        <!-- Add the datepicker's stylesheet -->
+
+<apex:stylesheet value="{!URLFOR($Resource.datepickerCSS, 'datepicker.css')}"/>
+
+<script type="text/javascript">
+
+function checkDateRange(start, end) {
+   // Parse the entries
+   var startDate = Date.parse(start);
+   var endDate = Date.parse(end);
+   // Check the date range, 86400000 is the number of milliseconds in one day
+   var difference = (endDate - startDate) / (86400000 * 7);
+   if (difference < 0) {
+       alert("The start date must come before the end date.");
+       return false;
+   }
+   return true;
+}
+
+function isDate(s)
+{  
+  // make sure it is in the expected format
+  if (s.search(/^\d{2}[\/]\d{2}[\/]\d{4}/g) != 0)
+     return false;
+ 
+  // convert it into a date instance
+  var dt = new Date(Date.parse(s));    
+ 
+  // check the components of the date
+  // since Date instance automatically rolls over each component
+  var arrDateParts = s.split("/");
+     return (
+         dt.getMonth() == arrDateParts[0]-1 &&
+         dt.getDate() == arrDateParts[1] &&
+         dt.getFullYear() == arrDateParts[2]
+     );  
+}
+
+
+function validate () {
+    if (document.getElementById('p1:f1:pb1:pbs11:itatas').value == '') {
+        if (document.getElementById('p1:f1:pb1:pbs11:cdt').value == '') {
+            alert ('Start and End Date must be entered') ;
+            return false;
+        }
+        if (document.getElementById('p1:f1:pb1:pbs11:cdf').value == '') {
+            alert ('Start and End Date must be entered') ;
+            return false;
+        }
+        start = document.getElementById('p1:f1:pb1:pbs11:cdf').value ;
+        end = document.getElementById('p1:f1:pb1:pbs11:cdt').value ;
+        if (!isDate(start)) {
+            alert ('Invalid start date') ;
+            return false;
+        }
+        if (!isDate(end)) {
+            alert ('Invalid end date') ;
+            return false;
+        }
+        if (checkDateRange(start,end)) {
+            searchJS() ;
+        }
+    } else {
+        searchJS()
+    }
+}
+
+function validateDelTmpFiles() {
+    var answer = confirm("Are you sure you want to delete ALL tmpsigxxxx.png documents?");
+    if (!answer) {
+        // do nothing
+    } else {
+        deleteTmpSigFilesJS();
+    }    
+}
+
+function redisplay () {
+        document.getElementById('p1:f1:queryTable').style.display="inline" ;
+        document.getElementById('if1').src = "about:blank" ;
+}
+</script>
+
+<style type="text/css">
+    .loading
+    {
+        position:absolute;
+        top:3.4em;
+        left:45em;
+        padding:4px;
+        z-index:9050;
+    } 
+</style>
+
+<div id="status" >
+   <span id="status.start" style="display: none" class="loading" >
+     <div class="waitingHolder" style="width: 74px; top: 67.6px;">
+       <img src="/img/loading.gif" class="waitingImage" title="Please Wait..." />
+       <span class="waitingDescription">Loading...</span>
+     </div>
+   </span>
+   <span id="status.stop"></span>
+</div>
+
+<A NAME="TOPX"></A>
+
+<apex:outputPanel id="messagesOP">
+<apex:messages style="color:red"/>
+</apex:outputPanel>
+
+<apex:form id="f1">
+
+    <apex:actionFunction name="searchJS" action="{!search}"/>
+        
+    <apex:actionFunction name="deleteTmpSigFilesJS" action="{!deleteTmpSigFiles}" rerender="messagesOP" status="status" />
+        
+    <apex:outputPanel id="queryTable">
+        <table width="700px">
+        <tr><td>
+        <apex:pageBlock id="pb1" title="Call Query">
+            <apex:pageBlockButtons location="top">
+<!--
+                <apex:commandButton value="Search" action="{!search}" rerender="messagesOP" id="theButton"/>
+-->
+            <input type="button" style="cursor:pointer" value="Search" name="Search" onclick="validate()"/>
+
+            <input type="button" style="cursor:pointer" value="Delete TmpSig Files" name="DelTmpSigFiles" onClick="validateDelTmpFiles()" />
+      
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="pbs11" collapsible="false" title="" columns="3">
+
+                    <apex:outputText value="Transaction Ids" /> <apex:outputText value="(Comma separated)" />
+                    <apex:inputTextArea id="itatas" value="{!transactionIds}" cols="100" rows="10" />
+                    
+                    <apex:outputText value="Call Date From"/>
+                    <apex:outputText value="(mm/dd/yyyy)"/>
+                    <apex:inputText id="cdf" value="{!callDateFrom}"/>                   
+
+                    <apex:outputText value="Call Date To"/>
+                    <apex:outputText value="(mm/dd/yyyy)"/>
+                    <apex:inputText id="cdt" value="{!callDateTo}"/>
+                    
+                <apex:repeat value="{!searchFields}" var="sfld">
+
+                    <apex:outputText value="{!sfld.label}"/>
+
+                    <apex:selectRadio style="text-align:left" rendered="{!sfld.has_opt}" value="{!sfld.opt_value}">
+                         <apex:selectOptions rendered="{!sfld.has_opt}" value="{!sfld.opt_options}"/>
+                    </apex:selectRadio>
+                    <apex:outputText rendered="{!AND(sfld.no_opt,NOT(sfld.is_pseduodate))}" value=" "/>
+                    <apex:outputText rendered="{!sfld.is_pseduodate}" value="(mm/dd/yyyy)"/>
+                    
+                    <apex:selectList rendered="{!AND(sfld.is_picklist,NOT(sfld.is_acctlookup))}" size="1" value="{!sfld.value}">
+                        <apex:selectOptions rendered="{!AND(sfld.is_picklist,NOT(sfld.is_acctlookup))}" value="{!sfld.plist}"/>
+                    </apex:selectList>
+                    
+                    <!-- A quick fix to show inputTextArea only for for Visit Name. Request: 07/27/2012 --> 
+                    <!-- apex:inputText rendered="{!AND(sfld.no_picklist,NOT(sfld.is_pseduodate))}"  value="{!sfld.value}"/ -->
+                    <apex:inputText rendered="{!AND(sfld.no_picklist,NOT(sfld.is_pseduodate),NOT(sfld.label=='Visit Name'))}"  value="{!sfld.value}"/>  
+                    <apex:inputTextArea cols="60" rows="3" rendered="{!AND(sfld.no_picklist,NOT(sfld.is_pseduodate),NOT(sfld.label!='Visit Name'))}"  value="{!sfld.value}"/>
+                    <apex:inputText rendered="{!sfld.is_pseduodate}"  id="pseduodate" value="{!sfld.value}"/>
+                    
+                </apex:repeat>
+
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        </td></tr></table>
+        
+    </apex:outputPanel>
+
+</apex:form>
+
+<apex:iframe height="10000px" width="2000px" id="if1"/>
+
+ <script type="text/javascript">
+
+      // <![CDATA[       
+
+        var xxoptsxx = {     
+                formElements:{"p1:f1:pb1:pbs11:cdf":"m-sl-d-sl-Y"},
+        };        
+        datePickerController.createDatePicker(xxoptsxx);
+        xxoptsxx = {     
+                formElements:{"p1:f1:pb1:pbs11:cdt":"m-sl-d-sl-Y"},
+        };        
+        datePickerController.createDatePicker(xxoptsxx);
+        var inputs = document.getElementsByTagName('input'); 
+        for(var k=0;k<inputs.length;k++) { 
+            var xid = inputs[k].id ;
+            if (xid.indexOf("pseduodate") != -1) {
+                var opts = {};
+                opts.formElements = {} ;
+                opts.formElements[xid] = "m-sl-d-sl-Y";
+                datePickerController.createDatePicker(opts);
+            }
+        } 
+
+      // ]]>
+      </script>
+        <apex:outputPanel rendered="{!iframeSrc != '' }" id="iframejs">
+        <script type="text/javascript">
+            //alert ("{!iframeSrc}")  ;
+            document.getElementById('p1:f1:queryTable').style.display="none" ;
+            document.getElementById('if1').src = "{!iframeSrc}" ;
+      </script>
+        </apex:outputPanel>
+
+</apex:page>

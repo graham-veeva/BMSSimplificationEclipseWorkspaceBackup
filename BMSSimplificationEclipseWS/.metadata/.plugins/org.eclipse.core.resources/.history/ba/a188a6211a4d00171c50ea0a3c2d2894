@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores Event History details for events. Used by Veeva Event Management.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Action_Date_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(DATEVALUE(Action_Datetime_vod__c)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(Action_Datetime_vod__c)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(Action_Datetime_vod__c)))</formula>
+        <label>Action Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Action_Datetime_vod__c</fullName>
+        <description>The time the action took place</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Action Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Action_Type_vod__c</fullName>
+        <description>The type of action being logged.</description>
+        <externalId>false</externalId>
+        <label>Action Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Submit_for_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approve_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reject_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel_Event_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reschedule_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Close_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unlock_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Created_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Activity_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Activity_ID_2_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Event ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Name_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Event Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approver_IDs_vod__c</fullName>
+        <description>Stores the IDs of all approvers returned by a Salesforce Approval Flow.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Approver IDs</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Comment_vod__c</fullName>
+        <description>Comments to include when submitting an event for approval, approving an event, or rejecting an event.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate)))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Time_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.End_Time_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Ending_Status_Simple_HCPTS__c</fullName>
+        <description>Picklist value to translate</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Picklist value to translate</inlineHelpText>
+        <label>Ending Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pre-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event-PostApproval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ending_Status_vod__c</fullName>
+        <description>The status that was set after the action occurred.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Ending Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Creator_Email_HCPTS__c</fullName>
+        <description>A before trigger copies value into this field from Event.CreatedBy.Email..required for notifications to Approver/Rejector</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A before trigger copies value into this field from Event.CreatedBy.Email..required for notifications to Approver/Rejector</inlineHelpText>
+        <label>Event Creator Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The event an Event History record is associated to.</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipName>EM_Event_History_Event_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Approver_Group_vod__c</fullName>
+        <description>Stores the name of the queue that is the next approver.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Next Approver Group</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Approver_Role_vod__c</fullName>
+        <description>Stores the role given to the next approver</description>
+        <externalId>false</externalId>
+        <label>Next Approver Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approver_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Next_Approver_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user selected for approval</description>
+        <externalId>false</externalId>
+        <label>Next Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>EM_Event_History_Next_Approver_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Override_Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Helper field for data loads.</description>
+        <externalId>false</externalId>
+        <label>Override Lock</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Activity_ID_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Activity ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Processor_Email_HCPTS__c</fullName>
+        <description>A before trigger copies value into this field from Event.Processor_Email_HCPTS__c..required for notifications to Approver/Rejector</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>A before trigger copies value into this field from Event.Processor_Email_HCPTS__c..required for notifications to Approver/Rejector</inlineHelpText>
+        <label>Processor Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_TA_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Product_HCPTS__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product/TA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Owner_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.CreatedBy.FirstName+&quot; &quot;+ CreatedBy.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Owner</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Date_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_vod__r.Start_Time_vod__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Starting_Status_Simple_HCPTS__c</fullName>
+        <description>Picklist Values to translate</description>
+        <externalId>false</externalId>
+        <label>Starting Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pre-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post-Event-PostApproval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Starting_Status_vod__c</fullName>
+        <description>The initial status when the action occurred.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Starting Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user initiating the action - either submitting an event for approval, approving an event, or rejecting an event.</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>EM_Event_History_User_vod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Event History</label>
+    <nameField>
+        <displayFormat>EH -{0000000000}</displayFormat>
+        <label>Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Event History</pluralLabel>
+    <recordTypes>
+        <fullName>Event_History_vod</fullName>
+        <active>true</active>
+        <description>Event History</description>
+        <label>Event_History_vod</label>
+        <picklistValues>
+            <picklist>Action_Type_vod__c</picklist>
+            <values>
+                <fullName>Approve_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel_Event_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Close_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reject_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reschedule_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit_for_Approval_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlock_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ending_Status_Simple_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canceled_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event-PostApproval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Starting_Status_Simple_HCPTS__c</picklist>
+            <values>
+                <fullName>Approved_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Business Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Closeout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Post-Execution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Service Coordinator Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending_Approval_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post-Event-PostApproval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <sharingReasons>
+        <fullName>Event_Team_Member_vod__c</fullName>
+        <label>Event Team Member</label>
+    </sharingReasons>
+</CustomObject>

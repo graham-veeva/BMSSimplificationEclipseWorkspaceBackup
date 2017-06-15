@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Tax_Code_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Tax_Market_HCPTS__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BA,21</fullName>
+                    <default>false</default>
+                    <label>BA,21</label>
+                </value>
+                <value>
+                    <fullName>BE - BE 0% Domestic</fullName>
+                    <default>false</default>
+                    <label>BE - BE - Input Tax 0% Exempt (according article)</label>
+                </value>
+                <value>
+                    <fullName>BZ - BE 0% Charities</fullName>
+                    <default>false</default>
+                    <label>BZ - BE - Input Tax 0% Zero Rate (e.g. Charities)</label>
+                </value>
+                <value>
+                    <fullName>BQ - BE 0% EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>BQ - BE - Input 0% Acquisition Tax-Services</label>
+                </value>
+                <value>
+                    <fullName>BR - BE - 0% Non-EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>BR - BE - Input 0% Reverse Charge-Services</label>
+                </value>
+                <value>
+                    <fullName>PA - FR - 20%</fullName>
+                    <default>false</default>
+                    <label>PA - FR - 20%</label>
+                </value>
+                <value>
+                    <fullName>YA - FR - 20% Claim at payment</fullName>
+                    <default>false</default>
+                    <label>YA - FR - 20% Claim at payment</label>
+                </value>
+                <value>
+                    <fullName>FZ - FR - 0% Domestic</fullName>
+                    <default>false</default>
+                    <label>FZ - FR - 0% Domestic</label>
+                </value>
+                <value>
+                    <fullName>RA - FR - 20% EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>RA - FR - 20% EU Reverse Charge</label>
+                </value>
+                <value>
+                    <fullName>SA - FR - 20% Non-EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>SA - FR - 20% Non-EU Reverse Charge</label>
+                </value>
+                <value>
+                    <fullName>PA - IT - 22%</fullName>
+                    <default>false</default>
+                    <label>PA - IT - 22%</label>
+                </value>
+                <value>
+                    <fullName>IW - IT - 0% Domestic</fullName>
+                    <default>false</default>
+                    <label>IW - IT - 0% Domestic</label>
+                </value>
+                <value>
+                    <fullName>RA - IT - 21% EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>RA - IT - 21% EU Reverse Charge</label>
+                </value>
+                <value>
+                    <fullName>SA - IT - 22% Non-EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>SA - IT - 22% Non-EU Reverse Charge</label>
+                </value>
+                <value>
+                    <fullName>PA - ES - 21%</fullName>
+                    <default>false</default>
+                    <label>PA - ES - 21%</label>
+                </value>
+                <value>
+                    <fullName>EZ - ES - 0% Domestic</fullName>
+                    <default>false</default>
+                    <label>EZ - ES - 0% Domestic</label>
+                </value>
+                <value>
+                    <fullName>QA - ES - 21% EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>QA - ES - 21% EU Reverse Charge</label>
+                </value>
+                <value>
+                    <fullName>QB - ES - 21% Non-EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>QB - ES - 21% Non-EU Reverse Charge</label>
+                </value>
+                <value>
+                    <fullName>PG - UK - 20%</fullName>
+                    <default>false</default>
+                    <label>PG - UK - 20%</label>
+                </value>
+                <value>
+                    <fullName>PE - UK - 0% Domestic</fullName>
+                    <default>false</default>
+                    <label>PE - UK - 0%</label>
+                </value>
+                <value>
+                    <fullName>RD - UK - EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>RD - UK - 0%</label>
+                </value>
+                <value>
+                    <fullName>SB - UK - Non-EU Reverse Charge</fullName>
+                    <default>false</default>
+                    <label>SB - UK - 0%</label>
+                </value>
+                <value>
+                    <fullName>IL - IE - 23% Input VAT</fullName>
+                    <default>false</default>
+                    <label>IL - IE - 23% Input VAT</label>
+                </value>
+                <value>
+                    <fullName>IE - IE - Input 0.0% Exempt Rate</fullName>
+                    <default>false</default>
+                    <label>IE - IE - Input 0.0% Exempt Rate</label>
+                </value>
+                <value>
+                    <fullName>DR - IE - 0% EC rev charge</fullName>
+                    <default>false</default>
+                    <label>DR - IE - 0% EC rev charge</label>
+                </value>
+                <value>
+                    <fullName>EA - NL - Input VAT 21%</fullName>
+                    <default>false</default>
+                    <label>EA - NL - Input VAT 21%</label>
+                </value>
+                <value>
+                    <fullName>NZ - NL - Input Tax 0% Zero Rated</fullName>
+                    <default>false</default>
+                    <label>NZ - NL - Input Tax 0% Zero Rated</label>
+                </value>
+                <value>
+                    <fullName>FT - NL - Input Tax EU 21%</fullName>
+                    <default>false</default>
+                    <label>FT - NL - Input Tax EU 21%</label>
+                </value>
+                <value>
+                    <fullName>FR - NL - Input Tax Non EU 21%</fullName>
+                    <default>false</default>
+                    <label>FR - NL - Input Tax Non EU 21%</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Belgium</controllingFieldValue>
+                <valueName>BA,21</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Belgium</controllingFieldValue>
+                <valueName>BE - BE 0% Domestic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Belgium</controllingFieldValue>
+                <valueName>BZ - BE 0% Charities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Belgium</controllingFieldValue>
+                <valueName>BQ - BE 0% EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Belgium</controllingFieldValue>
+                <valueName>BR - BE - 0% Non-EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Belgium</controllingFieldValue>
+                <controllingFieldValue>France</controllingFieldValue>
+                <controllingFieldValue>Italy</controllingFieldValue>
+                <controllingFieldValue>Spain</controllingFieldValue>
+                <controllingFieldValue>United Kingdom</controllingFieldValue>
+                <controllingFieldValue>Ireland</controllingFieldValue>
+                <controllingFieldValue>Netherlands</controllingFieldValue>
+                <valueName>Not Applicable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>France</controllingFieldValue>
+                <valueName>PA - FR - 20%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>France</controllingFieldValue>
+                <valueName>YA - FR - 20% Claim at payment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>France</controllingFieldValue>
+                <valueName>FZ - FR - 0% Domestic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>France</controllingFieldValue>
+                <valueName>RA - FR - 20% EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>France</controllingFieldValue>
+                <valueName>SA - FR - 20% Non-EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Italy</controllingFieldValue>
+                <valueName>PA - IT - 22%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Italy</controllingFieldValue>
+                <valueName>IW - IT - 0% Domestic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Italy</controllingFieldValue>
+                <valueName>RA - IT - 21% EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Italy</controllingFieldValue>
+                <valueName>SA - IT - 22% Non-EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spain</controllingFieldValue>
+                <valueName>PA - ES - 21%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spain</controllingFieldValue>
+                <valueName>EZ - ES - 0% Domestic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spain</controllingFieldValue>
+                <valueName>QA - ES - 21% EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Spain</controllingFieldValue>
+                <valueName>QB - ES - 21% Non-EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>United Kingdom</controllingFieldValue>
+                <valueName>PG - UK - 20%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>United Kingdom</controllingFieldValue>
+                <valueName>PE - UK - 0% Domestic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>United Kingdom</controllingFieldValue>
+                <valueName>RD - UK - EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>United Kingdom</controllingFieldValue>
+                <valueName>SB - UK - Non-EU Reverse Charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ireland</controllingFieldValue>
+                <valueName>IL - IE - 23% Input VAT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ireland</controllingFieldValue>
+                <valueName>IE - IE - Input 0.0% Exempt Rate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ireland</controllingFieldValue>
+                <valueName>DR - IE - 0% EC rev charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Netherlands</controllingFieldValue>
+                <valueName>EA - NL - Input VAT 21%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Netherlands</controllingFieldValue>
+                <valueName>NZ - NL - Input Tax 0% Zero Rated</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Netherlands</controllingFieldValue>
+                <valueName>FT - NL - Input Tax EU 21%</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Netherlands</controllingFieldValue>
+                <valueName>FR - NL - Input Tax Non EU 21%</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tax_Market_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Tax Market</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Belgium</fullName>
+                    <default>false</default>
+                    <label>Belgium</label>
+                </value>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                    <label>France</label>
+                </value>
+                <value>
+                    <fullName>Ireland</fullName>
+                    <default>false</default>
+                    <label>Ireland</label>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                    <label>Italy</label>
+                </value>
+                <value>
+                    <fullName>Netherlands</fullName>
+                    <default>false</default>
+                    <label>Netherlands</label>
+                </value>
+                <value>
+                    <fullName>Spain</fullName>
+                    <default>false</default>
+                    <label>Spain</label>
+                </value>
+                <value>
+                    <fullName>United Kingdom</fullName>
+                    <default>false</default>
+                    <label>United Kingdom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

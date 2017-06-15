@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>Expense_Line_Edit_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Expense_Line_Edit_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Expense_Line_View_vod</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contains details of an individual expense line. Represents an individual line on an invoice, broken out by sub-type.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Action_HCPTS__c</fullName>
+        <description>Action on the Expense Line Item</description>
+        <externalId>false</externalId>
+        <label>Action</label>
+        <picklist>
+            <picklistValues>
+                <fullName>NEW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UPDATE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CANCEL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Amount_Requested_Currency1_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Actual_Amount_Requested_Currency_HCPTS__c ) &amp; &apos; &apos; &amp;  Committed_Requested_Currency1_HCPTS__c</formula>
+        <label>zActual Amount in Requested Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Amount_Requested_Currency_HCPTS__c</fullName>
+        <description>Actual amount in Requested Currency (rollup summary field done by system)</description>
+        <externalId>false</externalId>
+        <label>Actual Amount in Requested Currency</label>
+        <summarizedField>SAP_Expense_Line_HCPTS__c.Actual_in_Requested_HCPTS__c</summarizedField>
+        <summaryForeignKey>SAP_Expense_Line_HCPTS__c.Expense_Line_HCPTS__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Amount_in_Funding_Currency1_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT( Actual_vod__c ) &amp; &apos; &apos; &amp; Funding_Currency_HCPTS__c</formula>
+        <label>zActual Amount in Funding Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Requested_Currency_HCPTS__c</fullName>
+        <description>Actual Requested Currency (SAP Upserts)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Actual Requested Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_vod__c</fullName>
+        <description>Paid expense.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Updated by SAP in funding currency</inlineHelpText>
+        <label>Actual Amount in Funding Currency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Check_Number_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Check Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Committed_Amount_Funding_Currency1_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Committed_vod__c) &amp; &apos; &apos; &amp;  Funding_Currency_HCPTS__c</formula>
+        <label>zCommitted Amount in Funding Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Committed_Amount_in_Requested_HCPTS__c</fullName>
+        <description>Committed amount in Requested Currency</description>
+        <externalId>false</externalId>
+        <label>Committed Amount in Requested Currency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Committed_Requested_Currency1_HCPTS__c</fullName>
+        <description>Requested Currency</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>TEXT(Expense_Header_vod__r.Requested_Currency_HCPTS__c)</formula>
+        <label>Requested Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Committed_Requested_Currency_HCPTS__c</fullName>
+        <description>Committed Requested Currency</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Committed Requested Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Committed_vod__c</fullName>
+        <description>Committed expense.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Updated by SAP in funding currency</inlineHelpText>
+        <label>Committed Amount in Funding Currency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Center_HCPTS__c</fullName>
+        <description>Cost Center</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Cost Center</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_of_SAP_Lines_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Count of SAP Lines</label>
+        <summaryForeignKey>SAP_Expense_Line_HCPTS__c.Expense_Line_HCPTS__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_HCTPS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+CreatedById, CreatedBy.FirstName + &quot; &quot; + CreatedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(DAY(DATEVALUE(CreatedDate )))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(CreatedDate )))</formula>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_vod__c</fullName>
+        <description>Description of the expense.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Budget_vod__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>The budget an expense is being paid from. This field must be populated for the expense line to roll up to a budget.</description>
+        <externalId>false</externalId>
+        <label>Event Budget</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Event_vod__c</field>
+                <operation>equals</operation>
+                <valueField>EM_Event_Budget_vod__c.Event_vod__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>EM_Event_Budget_vod__c</referenceTo>
+        <relationshipLabel>Expense Lines</relationshipLabel>
+        <relationshipName>Expense_Line_Expense_Budgets_vod</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Event_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The activity for which an expense was incurred.</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <referenceTo>EM_Event_vod__c</referenceTo>
+        <relationshipLabel>Expense Lines</relationshipLabel>
+        <relationshipName>Expense_Lines_Event_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Detail_Line_Number_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Expense Detail Line Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expense_Estimate_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Optional relationship to roll up actual expenses to individual estimates (e.g. rolling up all meal expenses to the meal estimate).</description>
+        <externalId>false</externalId>
+        <label>Expense Estimate</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>EM_Expense_Estimate_vod__c.Event_vod__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Event_vod__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>EM_Expense_Estimate_vod__c</referenceTo>
+        <relationshipLabel>Expense Estimates</relationshipLabel>
+        <relationshipName>Expense_Line_Expense_Estimates_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Expense_Header_vod__c</fullName>
+        <description>Relationship to an expense header</description>
+        <externalId>false</externalId>
+        <label>Expense Header</label>
+        <referenceTo>Expense_Header_vod__c</referenceTo>
+        <relationshipLabel>Expense Lines</relationshipLabel>
+        <relationshipName>Expense_Lines_vod</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Expense_Line_Number_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <formula>Expense_Header_vod__r.Expense_Line_Items_Number_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expense Line Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expense_Type_Code_vod__c</fullName>
+        <description>Stamped value of the expense type code as the expense was recorded. This value will remain constant even if the expense type changes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Expense Type Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expense_Type_Name_vod__c</fullName>
+        <description>Stamped value of the expense type as the expense was recorded. This value will remain constant even if the expense type changes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Expense Type Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expense_Type_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The type of the expense.</description>
+        <externalId>false</externalId>
+        <label>Expense Type</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Expense_Type_vod__c.Active_vod__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Expense_Type_vod__c</referenceTo>
+        <relationshipLabel>Expense Types</relationshipLabel>
+        <relationshipName>Expense_Line_Expense_Types_vod</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Funding_Currency_HCPTS__c</fullName>
+        <description>WBS/Cost Center Currency</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Event_Budget_vod__r.Budget_vod__r.Company_Code_HCPTS__r.Currency_HCPTS__c</formula>
+        <inlineHelpText>WBS/Cost Center Currency</inlineHelpText>
+        <label>Funding Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hourly_Rate_HCPTS__c</fullName>
+        <description>Hourly Rate</description>
+        <externalId>false</externalId>
+        <label>Hourly Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_By_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+LastModifiedById, LastModifiedBy.FirstName + &quot; &quot; + LastModifiedBy.LastName) + &quot;, &quot; + 
+TEXT(MONTH(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(DAY(DATEVALUE(LastModifiedDate)))+&quot;/&quot;+TEXT(YEAR(DATEVALUE(LastModifiedDate)))</formula>
+        <label>Last Modified By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_Date_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>LastModifiedBy.FirstName &amp; &apos; &apos; &amp; LastModifiedBy.LastName &amp; &apos; &apos; &amp; TEXT( LastModifiedDate )</formula>
+        <label>Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MaterialGroup_HCPTS__c</fullName>
+        <description>MaterialGroup</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MaterialGroup</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Time_Hours_HCPTS__c</fullName>
+        <description>Meeting Time Hours</description>
+        <externalId>false</externalId>
+        <label>Meeting Time Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Field used by mobile products for synchronization.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Mobile ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Of_People_vod__c</fullName>
+        <description>Displays the number of people an expense line is split.</description>
+        <externalId>false</externalId>
+        <label># People</label>
+        <summaryForeignKey>Expense_Attribution_vod__c.Expense_Line_vod__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OriginatingSystemLineNumber_HCPTS__c</fullName>
+        <description>OriginatingSystemLineNumber</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>OriginatingSystemLineNumber</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Override_Lock_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Helper field for data loads.</description>
+        <externalId>false</externalId>
+        <label>Override Lock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Expense_Type_Code_vod__c</fullName>
+        <description>Stamped value of the parent expense type code as the expense was recorded. This value will remain constant even if the expense type changes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parent Expense Type Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Expense_Type_Name_vod__c</fullName>
+        <description>Stamped value of the parent expense type as the expense was recorded. This value will remain constant even if the expense type changes.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Parent Expense Type Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Date_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Document_Number_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Payment Document Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Type_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>F</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Post_Work_Hours_HCPTS__c</fullName>
+        <description>Post Work Hours</description>
+        <externalId>false</externalId>
+        <label>Post-Work Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Work_Hours_HCPTS__c</fullName>
+        <description>Pre-Work Hours</description>
+        <externalId>false</externalId>
+        <label>Pre-Work Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Document_Number_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP Document Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Reference_Number_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>SAP Reference Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sign_Indicator_HCPTS__c</fullName>
+        <description>The sign indicator tells if the document is a reversal or not. If it’s a reversal sign is ‘-‘ and the status is ‘cancelled’.</description>
+        <externalId>false</externalId>
+        <label>Sign Indicator</label>
+        <picklist>
+            <picklistValues>
+                <fullName>+</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>-</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Split_Amount_Per_Person_vod__c</fullName>
+        <description>Average split amount per person. Calculated by dividing the actual amount of the expense lines by the number of times it is split.</description>
+        <externalId>false</externalId>
+        <formula>IF(Number_Of_People_vod__c = 0, 0, Actual_vod__c / Number_Of_People_vod__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Split Amount Person</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_HCPTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Partially Paid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unpaid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Text_Line_HCPTS__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Text Line</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Fixed_Rate_HCPTS__c</fullName>
+        <description>Total Fixed Rate for Expense Line item</description>
+        <externalId>false</externalId>
+        <label>Total Fixed Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Pre_Work_HCPTS__c</fullName>
+        <description>Total amount for pre-work hours</description>
+        <externalId>false</externalId>
+        <formula>Pre_Work_Hours_HCPTS__c  *  Hourly_Rate_HCPTS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Pre-Work</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>WBSElement_HCPTS__c</fullName>
+        <description>WBSElement</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>WBSElement</label>
+        <length>11</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WBS_Cost_Center_HCPTS__c</fullName>
+        <description>IF Cost Center is blank, WBS Code is displayed, else Cost Center</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( 
+   ISBLANK(Event_Budget_vod__r.Budget_vod__r.Cost_Center_Code_HCPTS__r.Name ),
+     Event_Budget_vod__r.Budget_vod__r.WBS_Number_HCPTS__r.Name,
+     Event_Budget_vod__r.Budget_vod__r.Cost_Center_Code_HCPTS__r.Name
+)</formula>
+        <inlineHelpText>IF Cost Center is blank, WBS Code is displayed, else Cost Center</inlineHelpText>
+        <label>WBS/Cost Center</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>zvod_Expense_Type_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this field is on the page layout, the user will see two picklists. One is for selecting an expense type, and the other is for selecting an expense sub-type of the expense line.</description>
+        <externalId>false</externalId>
+        <label>zvod_Expense_Type_vod</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Expense Line</label>
+    <nameField>
+        <displayFormat>EL -{0000000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Expense Lines</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Event_Expense_Line_vod</fullName>
+        <active>true</active>
+        <description>Event Expense Line</description>
+        <label>Event_Expense_Line_vod</label>
+        <picklistValues>
+            <picklist>Action_HCPTS__c</picklist>
+            <values>
+                <fullName>CANCEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPDATE</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type_HCPTS__c</picklist>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>F</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sign_Indicator_HCPTS__c</picklist>
+            <values>
+                <fullName>%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>-</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_HCPTS__c</picklist>
+            <values>
+                <fullName>Partially Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unpaid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Edit_Expense_Lines_Simple_HCPTS</fullName>
+        <active>true</active>
+        <description>You cannot edit the Expense once it has been Requested.</description>
+        <errorConditionFormula>AND( 
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+OR( 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c,&quot;PO Requested&quot;), 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c,&quot;PO Pending&quot;), 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c,&quot;PO Created&quot;)), 
+OR( 
+ISCHANGED( Expense_Type_vod__c ), 
+ISCHANGED( Event_Budget_vod__c),
+ISCHANGED( Actual_vod__c ),
+ISCHANGED( Committed_vod__c )),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;
+)</errorConditionFormula>
+        <errorMessage>You cannot edit the Expense once it has been Requested.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Committed_Greater_than_0_to_request_PO</fullName>
+        <active>true</active>
+        <description>The committed amount must be greater than zero to request a PO/Payment.</description>
+        <errorConditionFormula>AND( 
+OR(
+ISPICKVAL( Expense_Header_vod__r.Status_vod__c  , &apos;PO Requested&apos;), 
+ISPICKVAL(Expense_Header_vod__r.Status_vod__c , &apos;Payment Requested&apos;)),
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+Committed_vod__c &lt;= 0)</errorConditionFormula>
+        <errorMessage>The committed amount must be greater than zero to request a PO/Payment.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Only_Enter_Actuals_for_Manual_Payment</fullName>
+        <active>true</active>
+        <description>You can only enter actuals for Manual Payment Entry</description>
+        <errorConditionFormula>AND(
+Event_vod__r.RecordType.DeveloperName =&apos;Simple_Activity_HCPTS&apos;,
+NOT(ISPICKVAL(Expense_Header_vod__r.Payment_Status_HCPTS_S1__c,&quot;Manual Payment Entry&quot;)),  
+Actual_vod__c &gt; 0 ,
+$Profile.Name &lt;&gt;  &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;BMS - Integration User&quot;)</errorConditionFormula>
+        <errorMessage>You can only enter actuals for Manual Payment Entry</errorMessage>
+    </validationRules>
+</CustomObject>
